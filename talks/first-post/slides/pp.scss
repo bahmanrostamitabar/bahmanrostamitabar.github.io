@@ -1,0 +1,392 @@
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap');
+
+$border-leftright-width: 200px;
+$border-updown-width: 40px;
+
+$slide-width: calc(var(--slide-width) + #{$border-leftright-width} * 2);
+$slide-height: calc(var(--slide-height) + #{$border-updown-width} * 2);
+
+@mixin full-screen {
+  position: absolute;
+  top: -$border-updown-width;
+  right: -$border-leftright-width;
+  height: $slide-height !important;
+  width: $slide-width !important;
+  max-height: $slide-height !important;
+  max-width: $slide-width !important;
+  margin: 0 !important;
+  z-index: -1;
+}
+
+$image-left-ratio: 0.3;
+
+.image-left {
+  @include full-screen;
+  left: -$border-leftright-width;
+  width: calc(#{$slide-width} * #{$image-left-ratio}) !important;
+  max-width: calc(#{$slide-width} * #{$image-left-ratio}) !important;
+}
+
+
+$image-right-ratio: 0.3;
+
+.image-right {
+  @include full-screen;
+  right: -$border-leftright-width;
+  width: calc(#{$slide-width} * #{$image-right-ratio}) !important;
+  max-width: calc(#{$slide-width} * #{$image-right-ratio}) !important;
+}
+
+
+/*-- scss:defaults --*/
+// Override theme settings (see ../template/settings.scss)
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation
+$backgroundColor: #fcfbf9;
+
+// Primary/body text
+$mainFont: 'Jost', sans-serif;
+$mainFontSize: 30px;
+$mainColor: #333;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Abhaya Libre', Impact, sans-serif;
+$headingColor: #090909ff;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 3.00em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+$codeFont: monospace;
+
+// Links and actions
+$linkColor: #CA225E;
+$linkColorHover: darken( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #4682B4;
+$selectionColor: #fff;
+
+// start using css here
+#title-slide > h1 {
+  color: black;
+}
+
+#title-slide .author {
+  color: black;
+}
+
+#title-slide {
+  top: 0 !important;
+}
+
+#title-slide > .author:first-of-type {
+  margin-top: 320px;
+}
+
+
+
+
+
+.reveal p code {
+  color: #CA225E;   // your heading color maybe
+  background: transparent;
+  padding: 0;
+}
+
+
+:root {
+  --classic-blue: #0F4C81;
+  --provence: #638CC7;
+  --baby-blue: #B6CADA;
+  --baby-blue-30: #B6CADA30;
+  --strong-blue: #0070c0;
+  --monument: #7A8387;
+  --stucco: #A58D7F;
+  --peach-quartz: #F5B895;
+  --peach-quartz-30: #F5B89530;
+  --soft-red: #ec6555;
+  --redtidy: #CA225E;
+  --cornhusk: #F4DBB3;
+  --cornhusk-30: #F4DBB330;
+  --opal-gray: #A49E9D;
+  --opal-gray-90: #A49E9D30;
+  --gray10: #AFAFAF;
+  --opal-grey: #cecece;
+  --red: #a5150d;
+  --yellow: #F6C700;
+}
+
+.purple{ color: #c077af; }
+.red { color: #ef342a; }
+.orange { color: #f57125; }
+.blue { color: #3dc3f5; }
+.green { color: #1fb27f; }
+.yellow { color: #faca07; }
+.brown {color: #a84d18; }
+.gray {color: #525252; }
+
+
+/* Font colors */
+.pink {
+  color: var(--peach-quartz);
+}
+
+.sred {
+  color: var(--soft-red);
+}
+
+.remember {
+  color: var(--redtidy);
+}
+.graylight {
+  color: var(--gray10);
+}
+
+.strong-blue {
+  color: var(--strong-blue);
+}
+
+.pull-left {
+  float: left;
+  width: 50% !important;
+  margin-bottom:20px;
+}
+.pull-right {
+  float: right;
+  width: 50% !important;
+  margin-bottom:20px;
+}
+
+/* custom.css */
+.left-code {
+  color: #777;
+  width: 42%;
+  height: 92%;
+  float: left;
+}
+.right-plot {
+  width: 56%;
+  float: right;
+  padding-left: 1%;
+}
+
+img.sticker-float-right {
+  height: 220px;
+  position: absolute;
+  top: -0.5em;
+  right: -1em;
+  z-index: 1;
+}
+
+img.sticker-float-left {
+  height: 220px;
+  position: absolute;
+  top: -0.5em;
+  left: -1em;
+  z-index: 1;
+}
+
+.box.opaque {
+  width: 100%;
+  border-radius: 25px;
+  padding: 5px 0px 5px 25px;
+  background-color: #ffffff;
+}
+
+.reveal .slides section .fragment.blur {
+  filter: blur(5px);
+  opacity: 50%;
+  visibility: visible;
+}
+
+.smaller {
+  font-size: 27.5px;
+  margin-left: 0.85em !important;
+}
+
+
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
+
+.alert {
+  border-color: #ef342a;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.alert-bottom {
+  color: #333;
+  background-color: #fff;
+  border-bottom: 2px solid #004346;
+  border-radius: 0px; /*undo rounded corners*/
+  border-right-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  padding: 23px 10px 1px 10px;
+}
+
+.alert-note {
+  color: #333;
+  background-color: #fff;
+  border-top: 2px solid #004346;
+  border-radius: 0px; /*undo rounded corners*/
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  padding: 23px 10px 21px 10px;
+}
+
+
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  font-style: italic;
+  font-size: 70%;
+}
+
+
+/* Make ALL inline code (not code blocks) the accent color */
+.reveal :not(pre) > code {
+  color: #CA225E !important;
+  background: transparent;
+  padding: 0;
+}
+
+section.title-slide.with-logos {
+  position: relative;
+}
+
+
+/* styles.css */
+.algorithm {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 1em 0;
+  font-family: Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+  position: relative;
+}
+.algorithm::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: #4D59AC;  /* teal accent on left */
+  border-radius: 4px 0 0 4px;
+}
+.algorithm ol {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.algorithm ol ol {
+  list-style-type: lower-alpha;
+  margin-left: 0.8em;
+}
+
+
+
+.flow {
+  background-image: url(https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+	animation: animate 40s linear infinite;
+	font-weight: 900;
+}
+
+@keyframes animate {
+	0% {
+		background-position: left 0px top 10px;
+	}
+	40% {
+		background-position: left 800px top 10px;
+	}
+}
+
+$theme-light: #FFF4E0;
+$theme-yellow: #FFE0A8AA;
+$theme-orange: #D97146;
+$theme-red: #AD5769;
+$theme-grey: #515966;
+$theme-lightgrey: #90A1B8;
+
+$body-bg: $theme-light;
+$body-color: $theme-grey;
+$link-color: $theme-red;
+
+$code-block-font-size: .5em;
+
+/*-- scss:rules --*/
+
+.orange {
+  color: $theme-orange;
+  font-weight: bold;
+}
+
+.red {
+  color: $theme-red;
+  font-weight: bold;
+}
+
+/* code blocks (R chunks) */
+.reveal .sourceCode pre code,
+.reveal pre code {
+  font-size: 1.2em !important;   /* try 0.9em, 1em, etc. */
+  line-height: 1.25;               /* optional: improve readability */
+}
+
+.reveal pre code {
+  max-height: 1000px;
+}
+
+.reveal div.sourceCode pre code {
+    background-color: $theme-yellow;
+}
+
+.reveal .large {
+  background-color: $body-color;
+  color: $theme-yellow;
+}
+
+.reveal .big {
+  background-color: $body-color;
+  color: $theme-yellow;
+  font-size: 2em;      /* makes it 3× the base size */
+  font-weight: 200;   /* optional: make it stand out */
+  line-height: .9;    /* adjust spacing */
+}
+
+.reveal .bigger {
+  font-size: 1.5em;      /* makes it 3× the base size */
+  font-weight: 200;   /* optional: make it stand out */
+  line-height: .9;    /* adjust spacing */
+}
+
+.reveal .footer {
+  color: $theme-grey;
+}
+
+.textcenter {
+  text-align: center;
+}

@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
+
+  <meta name="author" content="Prof.&nbsp;Bahman Rostami-Tabar, Cardiff University">
+  <title>Data analytics with Positron R &amp; Python   🇷🐍</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-837128d24949b465fde16078f88ae37b.css">
+  <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+<meta property="og:title" content="Data analytics with Positron R &amp; Python  🇷🐍">
+<meta property="og:description" content="Business Data Analytics, BST811 &amp; BST851">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="img/carbs_logo.png" data-background-position="left 24px bottom 24px" data-background-repeat="no-repeat" data-background-size="400px" class="quarto-title-block center">
+  <h1 class="title">Data analytics with Positron R &amp; Python <br> 🇷🐍</h1>
+  <p class="subtitle">Business Data Analytics, BST811 &amp; BST851</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Bahman Rostami-Tabar, Cardiff University 
+</div>
+</div>
+</div>
+
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<h3 id="learning-objectives">Learning objectives</h3>
+<ul>
+<li><p>Understanding UI components of Positron</p></li>
+<li><p>Create projects in Positron</p></li>
+<li><p>Describe three main tasks in data analytics using R/Python and how to perform them</p></li>
+<li><p>Describe three important things to know about R/Python</p></li>
+<li><p>Install and load packages</p></li>
+<li><p>Getting help</p></li>
+</ul>
+</div></div>
+
+<img data-src="backgrounds/hierarchy-left.jpeg" class="image-left r-stretch"></section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<h3 id="learning-objectives-1">Learning objectives</h3>
+<ul>
+<li><p><span class="remember">Understanding UI components of Positron</span></p></li>
+<li><p>Create projects in Positron</p></li>
+<li><p>Describe three main tasks in data analytics using R/Python and how to perform them</p></li>
+<li><p>Describe three important things to know about R/Python</p></li>
+<li><p>Install and load packages</p></li>
+<li><p>Getting help</p></li>
+</ul>
+</div></div>
+
+<img data-src="backgrounds/hierarchy-left.jpeg" class="image-left r-stretch"></section>
+<section id="install-software" class="slide level2">
+<h2>Install software</h2>
+<ul>
+<li>Install <a href="https://cran.r-project.org/mirrors.html">R</a></li>
+<li>Install <a href="https://www.python.org/downloads/">Python</a></li>
+<li>Install <a href="https://positron.posit.co/">Positron</a></li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>The first thing to note is that unlike other statistical software programs like Excel that provide <a href="https://en.wikipedia.org/wiki/Point_and_click">point-and-click</a> interfaces, R and Python are an <a href="https://en.wikipedia.org/wiki/Interpreted_language">interpreted language</a>. This means you have to type in commands written in code. In other words, you have to code/program in R and Python.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="positron-ide" class="slide level2" data-background-image="img/ui-positron.jpeg">
+<h2>Positron IDE</h2>
+</section>
+<section id="learning-rpython" class="slide level2">
+<h2>Learning R/Python</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/r_first_then.png" alt="Learnign R/Pytho"></p>
+<figcaption>Learnign R/Python</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<ul>
+<li><p>I know that getting to grips with new software like R &amp; Python can be a little daunting for some people</p></li>
+<li><p>But rest assured, you will get there and it will be worth the effort!</p></li>
+</ul>
+</div></div>
+<p><a href="https://alisonhorst.com/" class="footnote">Illustration by AlLison Horst</a></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<h3 id="learning-objectives-2">Learning objectives</h3>
+<ul>
+<li><p><span class="graylight">Understanding UI components of Positron</span></p></li>
+<li><p><span class="remember">Create projects in Positron</span></p></li>
+<li><p>Describe three main tasks in data analytics using R/Python and how to perform them</p></li>
+<li><p>Describe three important things to know about R and Python</p></li>
+<li><p>Install and load packages</p></li>
+<li><p>Getting help</p></li>
+</ul>
+</div></div>
+
+<img data-src="backgrounds/hierarchy-left.jpeg" class="image-left r-stretch"></section>
+<section id="craeting-new-folderproject" class="slide level2">
+<h2>Craeting new folder/project</h2>
+<p>This should be the fist thing you do when starting a new data analytics project.</p>
+<p>Creating a project:</p>
+<ul>
+<li class="fragment"><p>Automatically sets the folder directory as the <code>working directory</code></p></li>
+<li class="fragment"><p>Makes reading files into R and writing outputs into project directory easy</p></li>
+<li class="fragment"><p>Allows you to use relative path instead of absolute path</p></li>
+<li class="fragment"><p>Allows you to work on multiple projects at the same time</p></li>
+<li class="fragment"><p>Helps you to organise all your files in the same directory which makes reproduction of your result much easier.</p></li>
+</ul>
+<p><a href="https://r4ds.had.co.nz/workflow-projects.html" class="footnote">Learn more</a></p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<h3 id="learning-objectives-3">Learning objectives</h3>
+<ul>
+<li><p><span class="graylight">Understanding UI components of Positron</span></p></li>
+<li><p><span class="graylight">Create projects in Positron</span></p></li>
+<li><p><span class="remember">Describe three main tasks in data analytics using R/Python and how to perform them</span></p></li>
+<li><p>Describe three important things to know about R and Python</p></li>
+<li><p>Install and load packages</p></li>
+<li><p>Getting help</p></li>
+</ul>
+</div></div>
+
+<img data-src="backgrounds/hierarchy-left.jpeg" class="image-left r-stretch"></section>
+<section id="three-tasks-in-data-analytics-using-rpython" class="slide level2">
+<h2>Three tasks in data analytics using R/Python</h2>
+<ol type="1">
+<li class="fragment"><p>Writing codes</p></li>
+<li class="fragment"><p>Producing &amp; looking at outputs</p></li>
+<li class="fragment"><p>Taking notes</p></li>
+</ol>
+</section>
+<section id="writing-codes" class="slide level2">
+<h2>1. Writing codes</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>gapminder <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/gapminder.csv"</span>)<span class="co"># Import data into R</span></span>
+<span id="cb1-2"><a></a>gapminder_filtered <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> <span class="co"># Filter data to show only observation for 2007</span></span>
+<span id="cb1-3"><a></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>)</span>
+<span id="cb1-4"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_filtered,<span class="co">#Create a plot</span></span>
+<span id="cb1-5"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="co">#display variable gdpPercap in x-axis </span></span>
+<span id="cb1-6"><a></a>                     <span class="co">#and lifeExp in y-axis from gapminder_filtered data </span></span>
+<span id="cb1-7"><a></a>                     <span class="at">size =</span> pop, <span class="at">color =</span> continent)) <span class="sc">+</span><span class="co"># assign different point size based on population of countries and assign different colors to different countries  </span></span>
+<span id="cb1-8"><a></a>  <span class="fu">geom_point</span>()<span class="sc">+</span><span class="co">#create a scatter plot</span></span>
+<span id="cb1-9"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP per capita"</span>, <span class="at">y =</span> <span class="st">"Life expectancy"</span>,<span class="co"># cosmatic part pf the graph</span></span>
+<span id="cb1-10"><a></a>       <span class="at">title =</span> <span class="st">"Health and wealth are strongly related"</span>,</span>
+<span id="cb1-11"><a></a>       <span class="at">subtitle =</span> <span class="st">"142 countries; 2007 only"</span>, <span class="at">caption =</span> <span class="st">"Source: The Gapminder Project"</span>,</span>
+<span id="cb1-12"><a></a>       <span class="at">color =</span> <span class="st">"Continent"</span>, <span class="at">size =</span> <span class="st">"Population"</span>) <span class="sc">+</span></span>
+<span id="cb1-13"><a></a>  <span class="fu">theme_classic</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Your <code>code</code> is a set of <code>instructions</code> you give to R/Python to <code>produce something</code>. You will write a lot of code to produce plots. You will also write code to load your data, and to look quickly at tables of that data. Sometimes you will want to summarize, rearrange, subset, or augment your data, or run a statistical model with it.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="taking-notes" class="slide level2">
+<h2>3. Taking notes</h2>
+<p>You will also be <code>writing</code> about <code>what we are doing</code>, and what your <code>results</code> mean. This is just in the form of <code>plain text</code>. When learning how to do something in ggplot, for instance, you will want to make <code>notes</code> to yourself about what you did, why you wrote it this way rather than that, or what this new concept, function, or instruction does. Later, when doing data analysis and making figures, you will be writing up reports.</p>
+<blockquote>
+<p>This figure investigates the association between the GDP per capita and Life expectancy for all countries in the world. The figure shows that there is a strong relationship between GDP per capita and life expectancy. It means that health and welath are strongly related. Although the figure only shows the result for year <span class="math inline">\(2017\)</span>, but this remains valid for all years in the data set. you can change <span class="math inline">\(year == ....\)</span> to investigate it.</p>
+</blockquote>
+</section>
+<section id="performing-these-3-tasks-using" class="slide level2">
+<h2>Performing these 3 tasks using …</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="console">Console</h3>
+<ul>
+<li><p>Console pane is a place where you enter your code and run it.</p></li>
+<li><p>Running a code means telling R/Python to perform an act by giving it commands in the console.</p></li>
+<li><p>Once you open Positron, R/Python awaits your instructions at a command line of its own, denoted by the right angle bracket symbol, <code>&gt;</code>.</p></li>
+<li><p>When you type an instruction and hit Enter, the software interprets it and sends any resulting output back to the console.</p></li>
+</ul>
+<p><a href="https://r4ds.hadley.nz/workflow-basics.html">Learn more</a></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/console.png" alt="Using Console"></p>
+<figcaption>Using Console</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="performing-these-3-tasks-using-1" class="slide level2">
+<h2>Performing these 3 tasks using …</h2>
+<h3 id="console-1">Console</h3>
+<p>✅ Use Console to experiment, to check your work or thoughts on how to solve a problem , or for quick help</p>
+<p>❌ Using Console is not recommended for data analysis projects because whatever you type in Console will be forgotten once you close Rstudio, so you can not work on it later</p>
+<p>❌ It is not only impractical, but also not adapted to working with projects which require more than a few lines of commands</p>
+<p>❌ You can not take notes</p>
+<p>❌ The 3 main tasks are not connected when using Console.</p>
+</section>
+<section id="performing-these-3-tasks-using-2" class="slide level2">
+<h2>Performing these 3 tasks using …</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="script-editor">Script Editor</h3>
+<ul>
+<li><p>An alternative to Console is to use an R/Python <code>script editor</code> that gives you more room to work.</p></li>
+<li><p>The script editor is a great place to put code you care about.</p></li>
+<li><p>You can keep experimenting in the console, but once you have written code that works and does what you want, put it in the script editor and save the file. This will allow you to work on it later.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/rscript.png" alt="Using script"></p>
+<figcaption>Using script</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="performing-these-3-tasks-using-3" class="slide level2">
+<h2>Performing these 3 tasks using …</h2>
+<h3 id="script-editor-1">Script Editor</h3>
+<p>✅ You can have your code open and make comments or notes to yourself by starting a line with the hash character, <code>#</code></p>
+<p>✅ Suitable for any project , especially larger data analytics project</p>
+<p>❌ Comment is only suitable for short notes and not to write your report</p>
+<p>❌ To take note and write your report, you still need to use another tool such as Microsoft Word</p>
+<p>❌ The 3 main tasks are not connected when using Console.</p>
+<p><a href="https://r4ds.hadley.nz/workflow-scripts.html" class="footnote">Learn more</a></p>
+</section>
+<section id="performing-these-3-tasks-using-4" class="slide level2">
+<h2>Performing these 3 tasks using …</h2>
+<p>Combining code, results, text in one document</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="quarto"><a href="https://r4ds.hadley.nz/workflow-scripts.html">Quarto</a></h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/quarto.png" alt="Quarto"></p>
+<figcaption>Quarto</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/rmarkdown.png" alt="Combining code, results, text in one document"></p>
+<figcaption>Combining code, results, text in one document</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="performing-these-3-tasks-using-5" class="slide level2">
+<h2>Performing these 3 tasks using …</h2>
+<h3 id="quarto-1">Quarto</h3>
+<p>✅ Quarto documents are fully reproducible</p>
+<p>✅ It supports dozens of output formats, like PDFs, Word files, HTML, slideshows, power point, and more</p>
+<p>✅ The 3 main tasks are connected when using Quarto</p>
+</section>
+<section id="performing-these-3-tasks-using-6" class="slide level2">
+<h2>Performing these 3 tasks using …</h2>
+<h3 id="quarto-2">Quarto</h3>
+<p>Quarto files are designed to be used in three ways:</p>
+<ul>
+<li class="fragment"><p>For <code>communicating</code> to decision makers, who want to focus on the conclusions, not the code behind the analysis.</p></li>
+<li class="fragment"><p>For <code>collaborating</code> with other data scientists/analysts (including future you!), who are interested in both conclusions, and how you reached them (i.e.&nbsp;the code, algorithm, etc).</p></li>
+<li class="fragment"><p>As an environment in which to do data science, as a <code>modern day lab notebook</code> where you can capture not only what you did, but also what you were thinking.</p></li>
+</ul>
+</section>
+<section>
+<section id="section-4" class="title-slide slide level1 large center">
+<h1></h1>
+<div class="r-fit-text">
+<p><span class="flow">Live Demo</span></p>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<h3 id="learning-objectives-4">Learning objectives</h3>
+<ul>
+<li><p><span class="graylight">Understanding UI components of Positron</span></p></li>
+<li><p><span class="graylight">Create projects in Positron</span></p></li>
+<li><p><span class="graylight">Describe three main tasks in data analytics using R/Python and how to perform them</span></p></li>
+<li><p><span class="remember">Describe three important things to know about R and Python</span></p></li>
+<li><p>Install and load packages</p></li>
+<li><p>Getting help</p></li>
+</ul>
+</div></div>
+
+<img data-src="backgrounds/hierarchy-left.jpeg" class="image-left r-stretch"></section>
+<section id="three-important-things-to-know-about-rpython" class="slide level2">
+<h2>Three important things to know about R/Python</h2>
+<p>Here are some general points to bear in mind about how R/Python is designed. They might help you get a feel for how the language works.</p>
+<ol type="1">
+<li class="fragment"><p>Everything has a name</p></li>
+<li class="fragment"><p>Everything is an object</p></li>
+<li class="fragment"><p>You do things using functions</p></li>
+</ol>
+</section>
+<section id="three-important-things-to-know-about-rpython-1" class="slide level2">
+<h2>Three important things to know about R/Python</h2>
+<h3 id="everything-has-a-name">1. Everything has a name</h3>
+<div class="{fragment}">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>In R/Python, <code>everything</code> you deal with <code>has a name</code>. You refer to things by their names as you examine, use, or modify them. Named entities include variables, data that you have loaded, and functions that you use.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment"><p>Names are <code>case sensitive</code>. The object <code>my_data</code> is not the same as the object <code>My_Data</code>.</p></li>
+<li class="fragment"><p>When choosing names for things, be concise, consistent, and informative.</p></li>
+<li class="fragment"><p>Follow the <a href="https://style.tidyverse.org/">tidyverse style guide</a> and name things in lower case, separating words with the underscore character, _, as needed.</p></li>
+<li class="fragment"><p>You can combine multiple words in naming, e.g.&nbsp;word1_word2_word3.</p></li>
+<li class="fragment"><p><code>Do not use spaces</code> when naming things or typing names</p></li>
+</ul>
+</section>
+<section id="three-important-things-to-know-about-rpython-2" class="slide level2">
+<h2>Three important things to know about R/Python</h2>
+<h3 id="everything-is-an-object">2. Everything is an object</h3>
+<p>Whatever we name in R/python becomes an object. You create objects by assigning them to names as:</p>
+<ul>
+<li><p>In R: <code>object_name &lt;- value</code></p></li>
+<li><p>In Python: <code>object_name = value</code></p></li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>when you create objects by assigning things to names, they come into existence in the software workspace or environment. Some objects are built in to R/Python, some are added via packages, and some are created by the user.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="three-important-things-to-know-about-rpython-3" class="slide level2">
+<h2>Three important things to know about R/Python</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="you-do-things-using-functions">3. You do things using functions</h3>
+<p>You do almost everything using functions. Think of a function as a special kind of <code>object</code> that can <code>perform actions</code> for you. It <code>produces output</code> based on the <code>input</code> that it receives. When we want a function to do something for us, we call it by typing its name, e.g.&nbsp;<code>sum()</code>.</p>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">sum</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="co"># in R</span></span>
+<span id="cb2-2"><a></a></span>
+<span id="cb2-3"><a></a><span class="fu">sum</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]) <span class="co"># in Python</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div></div>
+</section>
+<section id="three-important-things-to-know-about-r" class="slide level2">
+<h2>Three important things to know about R</h2>
+<h3 id="you-do-things-using-functions-1">3. You do things using functions</h3>
+<ul>
+<li class="fragment"><p>Functions can be recognised by the <code>parentheses, ()</code> at the end of their names. This distinguishes them from other objects.</p></li>
+<li class="fragment"><p>The parentheses are what allow us to send information to the function.</p></li>
+<li class="fragment"><p>We call a function by typing its name followed by parentheses, and providing required inputs.</p></li>
+</ul>
+</section>
+<section id="three-important-things-to-know-about-r-1" class="slide level2">
+<h2>Three important things to know about R</h2>
+<h3 id="what-a-function-does">3. What a function does?</h3>
+<ul>
+<li class="fragment"><p>We give the function some information, it acts on that information, and some results come out the other side.</p></li>
+<li class="fragment"><p>Information is given to functions through <code>arguments/inputs</code>. Most functions accept one or more named arguments/inputs. e.g.&nbsp;functionname(argument1, argument2,…)</p></li>
+<li class="fragment"><p>A function’s arguments are the things it needs to know in order to do something.</p></li>
+<li class="fragment"><p>Functions take inputs via their arguments, do something, and return outputs which we call “values”. The value depends on what the function does.</p></li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Whenever you want to perform a task in R or Python, ask yourself: <code>Which function in R or Python can I use to do this?</code></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="where-should-i-find-functions" class="slide level2">
+<h2>Where should I find functions?</h2>
+<ul>
+<li class="fragment"><p>When you install R/Python, you automatically get access to some base functions.</p></li>
+<li class="fragment"><p>The code you write will be more or less complex depending on the task you want to accomplish. Therefore, functions available in base might not be enough for your project.</p></li>
+<li class="fragment"><p>As with other programming languages, you will not have to do everything yourself.</p></li>
+<li class="fragment"><p>Families of useful functions are bundled into <code>packages</code> that you can install, and load into your project, and make use of as you work.</p></li>
+<li class="fragment"><p>You may also end up writing your own functions to produce the results that you need in larger projects.</p></li>
+</ul>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<h3 id="learning-objectives-5">Learning objectives</h3>
+<ul>
+<li><p><span class="graylight">Understanding UI components of Positron</span></p></li>
+<li><p><span class="graylight">Create projects in Positron</span></p></li>
+<li><p><span class="graylight">Describe three main tasks in data analytics using R/Python and how to perform them</span></p></li>
+<li><p><span class="graylight">Describe three important things to know about R and Python</span></p></li>
+<li><p><span class="remember">Install and load packages</span></p></li>
+<li><p>Getting help</p></li>
+</ul>
+</div></div>
+
+<img data-src="backgrounds/hierarchy-left.jpeg" class="image-left r-stretch"></section>
+<section id="how-to-find-packages-for-your-project" class="slide level2">
+<h2>How to find packages for your project?</h2>
+<ul>
+<li class="fragment"><p>Every package has a name. The typical way of discovering packages is just by learning R/Python, in many tutorials and courses the most popular packages are usually mentioned.</p></li>
+<li class="fragment"><p>R Packages are available in <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">CRAN</a> which is a network of servers. There are a huge number of packages available in CRAN, so the easiest way to find the one you want is to google “R package TOPIC”, e.g.&nbsp;R package visualisation! You might do simialr with Python.</p></li>
+<li class="fragment"><p>Python packages can be found here: <a href="https://pypi.org/">PyPI</a></p></li>
+</ul>
+</section>
+<section id="how-to-install-packages" class="slide level2">
+<h2>How to install packages?</h2>
+<ul>
+<li class="fragment"><p>Installing a package means bring the package from its server into your computer.</p></li>
+<li class="fragment"><p>If the package is stable, then you can install it using one of the following options:</p>
+<ul>
+<li class="fragment">If the package is not stable, then you may need to install it from GitHub. We will cover this in later lectures, if required!</li>
+</ul></li>
+<li class="fragment"><p>Once the package is installed, there is no need to reinstall it again. You can update them when needed.</p></li>
+</ul>
+</section>
+<section id="loading-packages" class="slide level2">
+<h2>Loading packages</h2>
+<ul>
+<li><p>Installing a package does not make it accessible for use in your project.</p></li>
+<li><p>To use a package in your project, you need to load it. Each time you quit Positron and reopen it, you need to load packages.</p></li>
+</ul>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>If you run a code and get the error message “there is no package called …”, or similar in Python that might mean the package has not been loaded or installed. You’ll need to first check is loaded, if not install it, then load it.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="packages-r-vs-python" class="slide level2">
+<h2>Packages: R vs Python</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r">R</h3>
+<ul>
+<li>Install: <code>install.packages("tidyverse")</code></li>
+<li>Load: <code>library(tidyverse)</code><br>
+</li>
+<li>List: <code>installed.packages()</code></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="python-pip-venv">Python (pip / venv)</h3>
+<ul>
+<li>Install: <code>python -m pip install pandas</code></li>
+<li>Load: <code>import pandas as pd</code></li>
+<li>List: <code>python -m pip list</code></li>
+</ul>
+</div></div>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<h3 id="learning-objectives-6">Learning objectives</h3>
+<ul>
+<li><p><span class="graylight">Understanding UI components of Positron</span></p></li>
+<li><p><span class="graylight">Create projects in Positron</span></p></li>
+<li><p><span class="graylight">Describe three main tasks in data analytics using R/Python and how to perform them</span></p></li>
+<li><p><span class="graylight">Describe three important things to know about R and Python</span></p></li>
+<li><p><span class="graylight">Install and load packages</span></p></li>
+<li><p><span class="remember">Getting help</span></p></li>
+</ul>
+</div></div>
+
+<img data-src="backgrounds/hierarchy-left.jpeg" class="image-left r-stretch"></section>
+<section id="getting-help-r-and-python" class="slide level2 smaller">
+<h2>Getting help: R and Python</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Task</th>
+<th><strong>R</strong></th>
+<th><strong>Python</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Quick help</strong></td>
+<td><code>?readr::read_csv</code></td>
+<td><code>pd.read_csv?</code></td>
+</tr>
+<tr class="even">
+<td><strong>Examples</strong></td>
+<td><code>example(readr::read_csv)</code></td>
+<td><code>pd.read_csv.__doc__</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Search docs</strong></td>
+<td><code>??keyword</code></td>
+<td><code>pd.read_csv??</code></td>
+</tr>
+<tr class="even">
+<td><strong>Online docs</strong></td>
+<td><code>vignette("readr")</code></td>
+<td><code>python -m pydoc -b</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Community Q&amp;A</strong></td>
+<td><a href="https://stackoverflow.com/questions/tagged/r">Stack Overflow</a>; <a href="https://forum.posit.co/">Posit Community</a></td>
+<td><a href="https://stackoverflow.com/questions/tagged/python">Stack Overflow</a>; <a href="https://www.python.org/community/">Pythoncommunity</a></td>
+</tr>
+<tr class="even">
+<td><strong>Coding Gen-AI tools</strong></td>
+<td>ChatGPT; Claude; GitHub Copilot</td>
+<td>ChatGPT; Claude; GitHub Copilot</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="section-9" class="title-slide slide level1 large center">
+<h1></h1>
+<div class="r-fit-text">
+<p><span class="flow">Live Demo</span></p>
+</div>
+</section>
+<section id="references-resources" class="slide level2">
+<h2>References &amp; resources</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="r-fit-text">
+<p><strong>R</strong></p>
+<ul>
+<li><p>R for Data Science <a href="https://r4ds.hadley.nz/intro.html">Introduction</a></p></li>
+<li><p>R for Data Science <a href="https://r4ds.hadley.nz/workflow-basics.html">Workflow: basics</a></p></li>
+<li><p>R for Data Science <a href="https://r4ds.hadley.nz/workflow-scripts.html">Workflow: scripts and projects</a></p></li>
+</ul>
+<p><strong>Python</strong></p>
+<ul>
+<li><p>Python for Data Science <a href="https://aeturrell.github.io/python4DS/whole-game.html">Introduction</a></p></li>
+<li><p>Python for Data Science <a href="https://aeturrell.github.io/python4DS/workflow-basics.html">Workflow: basics</a></p></li>
+<li><p>Python for Data Science <a href="https://aeturrell.github.io/python4DS/workflow-writing-code.html">Workflow: scripts and projects</a></p></li>
+</ul>
+<p><strong>Positron &amp; Quarto</strong></p>
+<ul>
+<li><p><a href="https://positron.posit.co/">Positron</a></p></li>
+<li><p><a href="https://quarto.org/">Quarto</a> &amp; <a href="https://github.com/mcanouil/awesome-quarto">Quarto Awsome</a></p></li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+
+</div></div>
+</section></section>
+<section id="any-questions-or-thoughts" class="title-slide slide level1 center">
+<h1>Any questions or thoughts? 💬</h1>
+
+
+
+<img data-src="img//follow_us.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

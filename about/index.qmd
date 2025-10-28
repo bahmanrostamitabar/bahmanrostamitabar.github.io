@@ -1,0 +1,36 @@
+---
+title: "Who am I"
+---
+
+I have a Kurdish heritage, born and raised in a small town in the West part of Iran, just half-an hour drive to Kurdish Iraqi border.
+
+After high school, I moved to Tehran and studied Industrial Engineering, receiving my BSc. from K.N.Toosi University of Technology (2004). Following my graduation, I have worked in various companies in different industries as planning engineer in Tehran and South of Iran. I then decided to continue my studies and recieved my MSc in Industrial Engineering from Tarabiat Modares University(2008). After working in the project managemt filed for two years, I decided to pursue my PhD in France. I moved to France in 2009 and recieved my PhD from the University of Bordeuax, France in 2014. Following that, I have spent two years at Ecole Central-Supelec for my post doctoral reserach.
+
+I am now a Professor in Data-Driven Decision Science at Cardiff University.
+
+I am very passionate about forecasting, analytics, modeling and knowledge sharing. I have created Forecasting for Social Good initiative sponsored by the International Institute of forecasters.
+
+I am the founder and the Director of the Data Lab for Social Good Research Group at Cardiff University.
+
+I specialise in the development and application of forecasting and management science tools and techniques. My focus lies in leveraging these methodologies to provide informed insights for planning & decision-making in sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, social sustainability, and governmental policy
+
+## Education
+
+- PhD in Industrial Engineering, 2014, University of Bordeaux
+
+- MSc. in Information Systems, 2010, ECE Paris
+
+- MSc. in Industrial Engineering, 2008, Tarbiat Modares University
+
+- BSc. in Industrial Engineering, 2004, K.N.Toosi University of Technology
+  
+## Research interests
+  
+- Uncertainty and the future
+- Forecasting for Social Good
+- Forecasting by aggregation
+- Time Series Forecasting
+- Health care operations
+- Global health and humanitarian supply chain
+
+

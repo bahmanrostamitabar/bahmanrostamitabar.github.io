@@ -1,0 +1,29 @@
+---
+title: "Bahman Rostami-Tabar"
+subtitle: "Professor"
+image: images/bahman.jpg
+about:
+  template: jolla  # Different templates: jolla, trestles, solana, marquee, or broadside
+  image-shape: round
+  links:
+    - icon: envelope-at-fill  # https://icons.getbootstrap.com/?q=book
+      text: e-mail
+      href: mailto:rostami-tabarb@cardiff.ac.uk
+    - icon: github
+      text: Github
+      href: https://github.com/bahmanrostamitabar
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/
+    - icon: bookmark-star-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?hl=en&user=PeVrdqUAAAAJ
+    - icon: orcid
+      text: ORCID
+      href: https://orcid.org/0000-0002-3730-0045
+---
+
+  I am a Professor of Analytics & Decision Sciences at Cardiff Business School, Cardiff University, UK. I am interested in transforming data into insights for making better decisions. I am the founder and director of [Data Lab for Social Good](https://www.cardiff.ac.uk/research/explore/research-units/data-lab-for-social-good) at Cardiff Business School and the founder of [Forecasting for Social Good (F4SG)](https://forecasters.org/programs/communities/forecasting-for-social-good-f4sg/) i nitiativessponsored by the International Institute of Forecasters. He is also leading the [Uncertainty & the Future](https://www.cardiff.ac.uk/digital-transformation-innovation-institute/work-with-us/uncertainty-and-the-future) theme at the Digital Transformation Innovation Institute.
+
+Bahman is passionate about uncertainty and the future. He specialises in the development and application of probabilistic modelling, forecasting, and operational research tools and techniques, providing informed insights for policy & decision-making processes in facing uncertain futures, and his research has contributed to sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, agriculture and food, social sustainability, and governmental policy. 
+.

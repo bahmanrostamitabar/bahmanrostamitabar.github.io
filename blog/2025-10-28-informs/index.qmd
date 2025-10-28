@@ -1,0 +1,30 @@
+---
+title: "International Symposium of Forecasting, University of Oxford"
+description: "Attending ISF in oxford"
+author: "Harsha"
+date: "5/22/2024"
+image: "cover.jpg"
+categories:
+  - Conference
+  - ISF
+resources:
+  - presentation.pdf
+---
+
+Last week I attended the 42nd International Symposium of Forecasting at the University of Oxford. This was my first in-person conference since the beginning of the Covid-19 pandemic. I met many colleagues and friends and listened to many inspiring talks.
+
+I presented two papers myself and co-authored four others presented by my colleagues and Ph.D. students.
+
+Below you can access these presentations:
+
+Probabilistic Forecasting of hourly Emergency Departement arrivals, in collaboration with Jethro Browell & Ivan Svetunkov
+
+Hierarchical forecasting of vaccine supply chain, in collaboration with John Snow, Inc
+
+Forecasting for unplanned care: a literature review, in collaboration with Mingzhe Shi and Daniel Gartner
+
+Revisiting forecasting for Emergency Department staffing, in collaboration with Shixuan Wang and Stephen Disney
+
+Forecasting length of stay in trauma network, in collaboration with Zihao Wang, Jane Haider and Mohamed Naim
+
+Forecasting for lead-time period by temporal aggregation: Whether to combine and how, in collaboration with Thanos Goltsos and Shixuan Wang
