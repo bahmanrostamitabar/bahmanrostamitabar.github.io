@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "",
+    "section": "",
+    "text": "First Post\n\n\nAn exploration of uncertainty in analytics and operations research.\n\n\n\n\n\nMay 22, 2025\n\n\nBahman\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/first-post/index.html",
+    "href": "talks/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Slides-html  \n   Slides-pdf  \nThis seminar provides practical skills for incorporating AI tools into the research process empowering researchers to save time and improve their research workflow. It is designed to benefit researchers at all levels and addresses key stages of the research workflow. The session features live demonstrations of essential tools, showcasing workflows that span from problem definition to dissemination."
+  },
+  {
+    "objectID": "publications/technical_reports/index.html",
+    "href": "publications/technical_reports/index.html",
+    "title": "Technical Reports",
+    "section": "",
+    "text": "Title\n\n\n\nDescription\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nWe study judgmental forecast adjustments in pre-promotional (normal), promotional and post-promotional periods via behavioral experiments. Forecasters need structured support to make effective adjustments during post-promotional periods. The…\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/journal_articles/index.html",
+    "href": "publications/journal_articles/index.html",
+    "title": "Journal Articles",
+    "section": "",
+    "text": "Author(s)\n\n\n\nTitle\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nBahman Rostami-Tabar\n\n\nED hierarchihcal forecasting\n\n\nEmergency Service, Healthcare, hierarchical reconciliation\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nForecasting\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/2025-10-28-informs/index.html",
+    "href": "blog/2025-10-28-informs/index.html",
+    "title": "International Symposium of Forecasting, University of Oxford",
+    "section": "",
+    "text": "Last week I attended the 42nd International Symposium of Forecasting at the University of Oxford. This was my first in-person conference since the beginning of the Covid-19 pandemic. I met many colleagues and friends and listened to many inspiring talks.\nI presented two papers myself and co-authored four others presented by my colleagues and Ph.D. students.\nBelow you can access these presentations:\nProbabilistic Forecasting of hourly Emergency Departement arrivals, in collaboration with Jethro Browell & Ivan Svetunkov\nHierarchical forecasting of vaccine supply chain, in collaboration with John Snow, Inc\nForecasting for unplanned care: a literature review, in collaboration with Mingzhe Shi and Daniel Gartner\nRevisiting forecasting for Emergency Department staffing, in collaboration with Shixuan Wang and Stephen Disney\nForecasting length of stay in trauma network, in collaboration with Zihao Wang, Jane Haider and Mohamed Naim\nForecasting for lead-time period by temporal aggregation: Whether to combine and how, in collaboration with Thanos Goltsos and Shixuan Wang"
+  },
+  {
+    "objectID": "blog/first-post/index.html",
+    "href": "blog/first-post/index.html",
+    "title": "International Symposium of Forecasting, University of Oxford",
+    "section": "",
+    "text": "Last week I attended the 42nd International Symposium of Forecasting at the University of Oxford. This was my first in-person conference since the beginning of the Covid-19 pandemic. I met many colleagues and friends and listened to many inspiring talks.\nI presented two papers myself and co-authored four others presented by my colleagues and Ph.D. students.\nBelow you can access these presentations:\nProbabilistic Forecasting of hourly Emergency Departement arrivals, in collaboration with Jethro Browell & Ivan Svetunkov\nHierarchical forecasting of vaccine supply chain, in collaboration with John Snow, Inc\nForecasting for unplanned care: a literature review, in collaboration with Mingzhe Shi and Daniel Gartner\nRevisiting forecasting for Emergency Department staffing, in collaboration with Shixuan Wang and Stephen Disney\nForecasting length of stay in trauma network, in collaboration with Zihao Wang, Jane Haider and Mohamed Naim\nForecasting for lead-time period by temporal aggregation: Whether to combine and how, in collaboration with Thanos Goltsos and Shixuan Wang"
+  },
+  {
+    "objectID": "projects/who-evm/index.html",
+    "href": "projects/who-evm/index.html",
+    "title": "Sustainability",
+    "section": "",
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/sustainability/index.html",
+    "href": "projects/sustainability/index.html",
+    "title": "Sustainability",
+    "section": "",
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/forecasting/index.html",
+    "href": "projects/forecasting/index.html",
+    "title": "Time Series Forecasting",
+    "section": "",
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/data_science/third-post/index.html",
+    "href": "projects/data_science/third-post/index.html",
+    "title": "Third Blog Post",
+    "section": "",
+    "text": "The source for any page in your website could also be a Jupyter Notebook. This one is third-post/index.ipynb.\nHere’s an example I borrowed from the Seaborn docs:\n\nimport seaborn as sns\n\nsns.set_theme(style=\"whitegrid\")\n\n# Load the diamonds dataset\ndiamonds = sns.load_dataset(\"diamonds\")\n\n# Plot the distribution of clarity ratings, conditional on carat\nsns.displot(\n    data=diamonds,\n    x=\"carat\", hue=\"cut\",\n    kind=\"kde\", height=4, aspect=1.5,\n    multiple=\"fill\", clip=(0, None),\n    palette=\"ch:rot=-.25,hue=1,light=.75\",   \n)"
+  },
+  {
+    "objectID": "projects/data_science/scond-post/index.html",
+    "href": "projects/data_science/scond-post/index.html",
+    "title": "Second Post",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Amet cursus sit amet dictum sit amet. Eget duis at tellus at urna condimentum. Convallis aenean et tortor at risus viverra. Tincidunt ornare massa eget egestas purus viverra accumsan. Et malesuada fames ac turpis egestas. At imperdiet dui accumsan sit amet. Ut ornare lectus sit amet est placerat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Mattis enim ut tellus elementum sagittis. Dui id ornare arcu odio ut. Natoque penatibus et magnis dis. Libero justo laoreet sit amet cursus sit. Sed faucibus turpis in eu. Tempus iaculis urna id volutpat lacus laoreet.\nPhasellus vestibulum lorem sed risus. Eget felis eget nunc lobortis mattis. Sit amet aliquam id diam maecenas ultricies. Egestas maecenas pharetra convallis posuere morbi. Etiam erat velit scelerisque in dictum non consectetur a erat. Cras fermentum odio eu feugiat pretium nibh ipsum consequat. Viverra accumsan in nisl nisi scelerisque. Et netus et malesuada fames ac. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Eget lorem dolor sed viverra ipsum nunc aliquet. Ultrices dui sapien eget mi proin sed libero enim sed. Ultricies mi eget mauris pharetra et ultrices neque. Ipsum suspendisse ultrices gravida dictum. A arcu cursus vitae congue mauris rhoncus aenean vel. Gravida arcu ac tortor dignissim convallis. Nulla posuere sollicitudin aliquam ultrices."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Data Science\n\n\nMy data sceince projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability\n\n\nMy sustainability projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability\n\n\nMy sustainability projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series Forecasting\n\n\nMy forecasting projects.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/data_science/first-post/index.html",
+    "href": "projects/data_science/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "projects/data_science/index.html",
+    "href": "projects/data_science/index.html",
+    "title": "Data Science",
+    "section": "",
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\nPost description for second post\n\n\n\n\n\nMay 23, 2021\n\n\nAlicia\n\n\n\n\n\n\n\n\n\n\n\n\nThird Blog Post\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\n\n\nMay 24, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/forecasting/first-post/index.html",
+    "href": "projects/forecasting/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "projects/sustainability/first-post/index.html",
+    "href": "projects/sustainability/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "projects/who-evm/first-post/index.html",
+    "href": "projects/who-evm/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bahman Rostami-Tabar",
+    "section": "",
+    "text": "I am a Professor of Analytics & Decision Sciences at Cardiff Business School, Cardiff University, UK. I am interested in transforming data into insights for making better decisions. I am the founder and director of Data Lab for Social Good at Cardiff Business School and the founder of Forecasting for Social Good (F4SG) i nitiativessponsored by the International Institute of Forecasters. He is also leading the Uncertainty & the Future theme at the Digital Transformation Innovation Institute.\nBahman is passionate about uncertainty and the future. He specialises in the development and application of probabilistic modelling, forecasting, and operational research tools and techniques, providing informed insights for policy & decision-making processes in facing uncertain futures, and his research has contributed to sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, agriculture and food, social sustainability, and governmental policy. ."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "",
+    "section": "",
+    "text": "International Symposium of Forecasting, University of Oxford\n\n\nAttending ISF in oxford\n\n\n\n\n\nMay 22, 2024\n\n\nHarsha\n\n\n\n\n\n\n\n\n\n\n\n\nInternational Symposium of Forecasting, University of Oxford\n\n\nAttending ISF in oxford\n\n\n\n\n\nMay 22, 2024\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Who am I",
+    "section": "",
+    "text": "I have a Kurdish heritage, born and raised in a small town in the West part of Iran, just half-an hour drive to Kurdish Iraqi border.\nAfter high school, I moved to Tehran and studied Industrial Engineering, receiving my BSc. from K.N.Toosi University of Technology (2004). Following my graduation, I have worked in various companies in different industries as planning engineer in Tehran and South of Iran. I then decided to continue my studies and recieved my MSc in Industrial Engineering from Tarabiat Modares University(2008). After working in the project managemt filed for two years, I decided to pursue my PhD in France. I moved to France in 2009 and recieved my PhD from the University of Bordeuax, France in 2014. Following that, I have spent two years at Ecole Central-Supelec for my post doctoral reserach.\nI am now a Professor in Data-Driven Decision Science at Cardiff University.\nI am very passionate about forecasting, analytics, modeling and knowledge sharing. I have created Forecasting for Social Good initiative sponsored by the International Institute of forecasters.\nI am the founder and the Director of the Data Lab for Social Good Research Group at Cardiff University.\nI specialise in the development and application of forecasting and management science tools and techniques. My focus lies in leveraging these methodologies to provide informed insights for planning & decision-making in sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, social sustainability, and governmental policy"
+  },
+  {
+    "objectID": "about/index.html#education",
+    "href": "about/index.html#education",
+    "title": "Who am I",
+    "section": "Education",
+    "text": "Education\n\nPhD in Industrial Engineering, 2014, University of Bordeaux\nMSc. in Information Systems, 2010, ECE Paris\nMSc. in Industrial Engineering, 2008, Tarbiat Modares University\nBSc. in Industrial Engineering, 2004, K.N.Toosi University of Technology"
+  },
+  {
+    "objectID": "about/index.html#research-interests",
+    "href": "about/index.html#research-interests",
+    "title": "Who am I",
+    "section": "Research interests",
+    "text": "Research interests\n\nUncertainty and the future\nForecasting for Social Good\nForecasting by aggregation\nTime Series Forecasting\nHealth care operations\nGlobal health and humanitarian supply chain"
+  },
+  {
+    "objectID": "publications/working_papers/index.html",
+    "href": "publications/working_papers/index.html",
+    "title": "Working Papers",
+    "section": "",
+    "text": "Title\n\n\n\nDescription\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nWe study judgmental forecast adjustments in pre-promotional (normal), promotional and post-promotional periods via behavioral experiments. Forecasters need structured support to make effective adjustments during post-promotional periods. The…\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/book_chapters/index.html",
+    "href": "publications/book_chapters/index.html",
+    "title": "Book Chapters",
+    "section": "",
+    "text": "Title\n\n\n\nDescription\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nWe study judgmental forecast adjustments in pre-promotional (normal), promotional and post-promotional periods via behavioral experiments. Forecasters need structured support to make effective adjustments during post-promotional periods. The…\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#section",
+    "href": "talks/first-post/slides/lecture1.html#section",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "",
+    "text": "Learning objectives\n\nUnderstanding UI components of Positron\nCreate projects in Positron\nDescribe three main tasks in data analytics using R/Python and how to perform them\nDescribe three important things to know about R/Python\nInstall and load packages\nGetting help"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#section-1",
+    "href": "talks/first-post/slides/lecture1.html#section-1",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "",
+    "text": "Learning objectives\n\nUnderstanding UI components of Positron\nCreate projects in Positron\nDescribe three main tasks in data analytics using R/Python and how to perform them\nDescribe three important things to know about R/Python\nInstall and load packages\nGetting help"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#install-software",
+    "href": "talks/first-post/slides/lecture1.html#install-software",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Install software",
+    "text": "Install software\n\nInstall R\nInstall Python\nInstall Positron\n\n\n\n\n\n\n\nNote\n\n\nThe first thing to note is that unlike other statistical software programs like Excel that provide point-and-click interfaces, R and Python are an interpreted language. This means you have to type in commands written in code. In other words, you have to code/program in R and Python."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#positron-ide",
+    "href": "talks/first-post/slides/lecture1.html#positron-ide",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Positron IDE",
+    "text": "Positron IDE"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#learning-rpython",
+    "href": "talks/first-post/slides/lecture1.html#learning-rpython",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Learning R/Python",
+    "text": "Learning R/Python\n\n\n\n\n\nLearnign R/Python\n\n\n\n\nI know that getting to grips with new software like R & Python can be a little daunting for some people\nBut rest assured, you will get there and it will be worth the effort!\n\n\nIllustration by AlLison Horst"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#section-2",
+    "href": "talks/first-post/slides/lecture1.html#section-2",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "",
+    "text": "Learning objectives\n\nUnderstanding UI components of Positron\nCreate projects in Positron\nDescribe three main tasks in data analytics using R/Python and how to perform them\nDescribe three important things to know about R and Python\nInstall and load packages\nGetting help"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#craeting-new-folderproject",
+    "href": "talks/first-post/slides/lecture1.html#craeting-new-folderproject",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Craeting new folder/project",
+    "text": "Craeting new folder/project\nThis should be the fist thing you do when starting a new data analytics project.\nCreating a project:\n\nAutomatically sets the folder directory as the working directory\nMakes reading files into R and writing outputs into project directory easy\nAllows you to use relative path instead of absolute path\nAllows you to work on multiple projects at the same time\nHelps you to organise all your files in the same directory which makes reproduction of your result much easier.\n\nLearn more"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#section-3",
+    "href": "talks/first-post/slides/lecture1.html#section-3",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "",
+    "text": "Learning objectives\n\nUnderstanding UI components of Positron\nCreate projects in Positron\nDescribe three main tasks in data analytics using R/Python and how to perform them\nDescribe three important things to know about R and Python\nInstall and load packages\nGetting help"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#three-tasks-in-data-analytics-using-rpython",
+    "href": "talks/first-post/slides/lecture1.html#three-tasks-in-data-analytics-using-rpython",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Three tasks in data analytics using R/Python",
+    "text": "Three tasks in data analytics using R/Python\n\nWriting codes\nProducing & looking at outputs\nTaking notes"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#writing-codes",
+    "href": "talks/first-post/slides/lecture1.html#writing-codes",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "1. Writing codes",
+    "text": "1. Writing codes\n\n\nCode\ngapminder &lt;- read_csv(\"data/gapminder.csv\")# Import data into R\ngapminder_filtered &lt;- gapminder |&gt; # Filter data to show only observation for 2007\n  filter(year == 2007)\nggplot(data = gapminder_filtered,#Create a plot\n       mapping = aes(x = gdpPercap, y = lifeExp, #display variable gdpPercap in x-axis \n                     #and lifeExp in y-axis from gapminder_filtered data \n                     size = pop, color = continent)) +# assign different point size based on population of countries and assign different colors to different countries  \n  geom_point()+#create a scatter plot\n  labs(x = \"GDP per capita\", y = \"Life expectancy\",# cosmatic part pf the graph\n       title = \"Health and wealth are strongly related\",\n       subtitle = \"142 countries; 2007 only\", caption = \"Source: The Gapminder Project\",\n       color = \"Continent\", size = \"Population\") +\n  theme_classic()\n\n\n\n\n\n\n\n\n\nNote\n\n\nYour code is a set of instructions you give to R/Python to produce something. You will write a lot of code to produce plots. You will also write code to load your data, and to look quickly at tables of that data. Sometimes you will want to summarize, rearrange, subset, or augment your data, or run a statistical model with it."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#taking-notes",
+    "href": "talks/first-post/slides/lecture1.html#taking-notes",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "3. Taking notes",
+    "text": "3. Taking notes\nYou will also be writing about what we are doing, and what your results mean. This is just in the form of plain text. When learning how to do something in ggplot, for instance, you will want to make notes to yourself about what you did, why you wrote it this way rather than that, or what this new concept, function, or instruction does. Later, when doing data analysis and making figures, you will be writing up reports.\n\nThis figure investigates the association between the GDP per capita and Life expectancy for all countries in the world. The figure shows that there is a strong relationship between GDP per capita and life expectancy. It means that health and welath are strongly related. Although the figure only shows the result for year \\(2017\\), but this remains valid for all years in the data set. you can change \\(year == ....\\) to investigate it."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using",
+    "href": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Performing these 3 tasks using …",
+    "text": "Performing these 3 tasks using …\n\n\nConsole\n\nConsole pane is a place where you enter your code and run it.\nRunning a code means telling R/Python to perform an act by giving it commands in the console.\nOnce you open Positron, R/Python awaits your instructions at a command line of its own, denoted by the right angle bracket symbol, &gt;.\nWhen you type an instruction and hit Enter, the software interprets it and sends any resulting output back to the console.\n\nLearn more\n\n\n\n\nUsing Console"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-1",
+    "href": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-1",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Performing these 3 tasks using …",
+    "text": "Performing these 3 tasks using …\nConsole\n✅ Use Console to experiment, to check your work or thoughts on how to solve a problem , or for quick help\n❌ Using Console is not recommended for data analysis projects because whatever you type in Console will be forgotten once you close Rstudio, so you can not work on it later\n❌ It is not only impractical, but also not adapted to working with projects which require more than a few lines of commands\n❌ You can not take notes\n❌ The 3 main tasks are not connected when using Console."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-2",
+    "href": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-2",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Performing these 3 tasks using …",
+    "text": "Performing these 3 tasks using …\n\n\nScript Editor\n\nAn alternative to Console is to use an R/Python script editor that gives you more room to work.\nThe script editor is a great place to put code you care about.\nYou can keep experimenting in the console, but once you have written code that works and does what you want, put it in the script editor and save the file. This will allow you to work on it later.\n\n\n\n\n\nUsing script"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-3",
+    "href": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-3",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Performing these 3 tasks using …",
+    "text": "Performing these 3 tasks using …\nScript Editor\n✅ You can have your code open and make comments or notes to yourself by starting a line with the hash character, #\n✅ Suitable for any project , especially larger data analytics project\n❌ Comment is only suitable for short notes and not to write your report\n❌ To take note and write your report, you still need to use another tool such as Microsoft Word\n❌ The 3 main tasks are not connected when using Console.\nLearn more"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-4",
+    "href": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-4",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Performing these 3 tasks using …",
+    "text": "Performing these 3 tasks using …\nCombining code, results, text in one document\n\n\nQuarto\n\n\n\nQuarto\n\n\n\n\n\n\nCombining code, results, text in one document"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-5",
+    "href": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-5",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Performing these 3 tasks using …",
+    "text": "Performing these 3 tasks using …\nQuarto\n✅ Quarto documents are fully reproducible\n✅ It supports dozens of output formats, like PDFs, Word files, HTML, slideshows, power point, and more\n✅ The 3 main tasks are connected when using Quarto"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-6",
+    "href": "talks/first-post/slides/lecture1.html#performing-these-3-tasks-using-6",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Performing these 3 tasks using …",
+    "text": "Performing these 3 tasks using …\nQuarto\nQuarto files are designed to be used in three ways:\n\nFor communicating to decision makers, who want to focus on the conclusions, not the code behind the analysis.\nFor collaborating with other data scientists/analysts (including future you!), who are interested in both conclusions, and how you reached them (i.e. the code, algorithm, etc).\nAs an environment in which to do data science, as a modern day lab notebook where you can capture not only what you did, but also what you were thinking."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#section-5",
+    "href": "talks/first-post/slides/lecture1.html#section-5",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "",
+    "text": "Learning objectives\n\nUnderstanding UI components of Positron\nCreate projects in Positron\nDescribe three main tasks in data analytics using R/Python and how to perform them\nDescribe three important things to know about R and Python\nInstall and load packages\nGetting help"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython",
+    "href": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Three important things to know about R/Python",
+    "text": "Three important things to know about R/Python\nHere are some general points to bear in mind about how R/Python is designed. They might help you get a feel for how the language works.\n\nEverything has a name\nEverything is an object\nYou do things using functions"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython-1",
+    "href": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython-1",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Three important things to know about R/Python",
+    "text": "Three important things to know about R/Python\n1. Everything has a name\n\n\n\n\n\n\n\nNote\n\n\nIn R/Python, everything you deal with has a name. You refer to things by their names as you examine, use, or modify them. Named entities include variables, data that you have loaded, and functions that you use.\n\n\n\n\n\nNames are case sensitive. The object my_data is not the same as the object My_Data.\nWhen choosing names for things, be concise, consistent, and informative.\nFollow the tidyverse style guide and name things in lower case, separating words with the underscore character, _, as needed.\nYou can combine multiple words in naming, e.g. word1_word2_word3.\nDo not use spaces when naming things or typing names"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython-2",
+    "href": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython-2",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Three important things to know about R/Python",
+    "text": "Three important things to know about R/Python\n2. Everything is an object\nWhatever we name in R/python becomes an object. You create objects by assigning them to names as:\n\nIn R: object_name &lt;- value\nIn Python: object_name = value\n\n\n\n\n\n\n\nNote\n\n\nwhen you create objects by assigning things to names, they come into existence in the software workspace or environment. Some objects are built in to R/Python, some are added via packages, and some are created by the user."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython-3",
+    "href": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-rpython-3",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Three important things to know about R/Python",
+    "text": "Three important things to know about R/Python\n\n\n3. You do things using functions\nYou do almost everything using functions. Think of a function as a special kind of object that can perform actions for you. It produces output based on the input that it receives. When we want a function to do something for us, we call it by typing its name, e.g. sum().\n\n\nsum(c(1,2,3)) # in R\n\nsum([1,2,3]) # in Python"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-r",
+    "href": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-r",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Three important things to know about R",
+    "text": "Three important things to know about R\n3. You do things using functions\n\nFunctions can be recognised by the parentheses, () at the end of their names. This distinguishes them from other objects.\nThe parentheses are what allow us to send information to the function.\nWe call a function by typing its name followed by parentheses, and providing required inputs."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-r-1",
+    "href": "talks/first-post/slides/lecture1.html#three-important-things-to-know-about-r-1",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Three important things to know about R",
+    "text": "Three important things to know about R\n3. What a function does?\n\nWe give the function some information, it acts on that information, and some results come out the other side.\nInformation is given to functions through arguments/inputs. Most functions accept one or more named arguments/inputs. e.g. functionname(argument1, argument2,…)\nA function’s arguments are the things it needs to know in order to do something.\nFunctions take inputs via their arguments, do something, and return outputs which we call “values”. The value depends on what the function does.\n\n\n\n\n\n\n\n\nTip\n\n\nWhenever you want to perform a task in R or Python, ask yourself: Which function in R or Python can I use to do this?"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#where-should-i-find-functions",
+    "href": "talks/first-post/slides/lecture1.html#where-should-i-find-functions",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Where should I find functions?",
+    "text": "Where should I find functions?\n\nWhen you install R/Python, you automatically get access to some base functions.\nThe code you write will be more or less complex depending on the task you want to accomplish. Therefore, functions available in base might not be enough for your project.\nAs with other programming languages, you will not have to do everything yourself.\nFamilies of useful functions are bundled into packages that you can install, and load into your project, and make use of as you work.\nYou may also end up writing your own functions to produce the results that you need in larger projects."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#section-6",
+    "href": "talks/first-post/slides/lecture1.html#section-6",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "",
+    "text": "Learning objectives\n\nUnderstanding UI components of Positron\nCreate projects in Positron\nDescribe three main tasks in data analytics using R/Python and how to perform them\nDescribe three important things to know about R and Python\nInstall and load packages\nGetting help"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#how-to-find-packages-for-your-project",
+    "href": "talks/first-post/slides/lecture1.html#how-to-find-packages-for-your-project",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "How to find packages for your project?",
+    "text": "How to find packages for your project?\n\nEvery package has a name. The typical way of discovering packages is just by learning R/Python, in many tutorials and courses the most popular packages are usually mentioned.\nR Packages are available in CRAN which is a network of servers. There are a huge number of packages available in CRAN, so the easiest way to find the one you want is to google “R package TOPIC”, e.g. R package visualisation! You might do simialr with Python.\nPython packages can be found here: PyPI"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#how-to-install-packages",
+    "href": "talks/first-post/slides/lecture1.html#how-to-install-packages",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "How to install packages?",
+    "text": "How to install packages?\n\nInstalling a package means bring the package from its server into your computer.\nIf the package is stable, then you can install it using one of the following options:\n\nIf the package is not stable, then you may need to install it from GitHub. We will cover this in later lectures, if required!\n\nOnce the package is installed, there is no need to reinstall it again. You can update them when needed."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#loading-packages",
+    "href": "talks/first-post/slides/lecture1.html#loading-packages",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Loading packages",
+    "text": "Loading packages\n\nInstalling a package does not make it accessible for use in your project.\nTo use a package in your project, you need to load it. Each time you quit Positron and reopen it, you need to load packages.\n\n\n\n\n\n\n\nWarning\n\n\nIf you run a code and get the error message “there is no package called …”, or similar in Python that might mean the package has not been loaded or installed. You’ll need to first check is loaded, if not install it, then load it."
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#packages-r-vs-python",
+    "href": "talks/first-post/slides/lecture1.html#packages-r-vs-python",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Packages: R vs Python",
+    "text": "Packages: R vs Python\n\n\nR\n\nInstall: install.packages(\"tidyverse\")\nLoad: library(tidyverse)\n\nList: installed.packages()\n\n\nPython (pip / venv)\n\nInstall: python -m pip install pandas\nLoad: import pandas as pd\nList: python -m pip list"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#section-8",
+    "href": "talks/first-post/slides/lecture1.html#section-8",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "",
+    "text": "Learning objectives\n\nUnderstanding UI components of Positron\nCreate projects in Positron\nDescribe three main tasks in data analytics using R/Python and how to perform them\nDescribe three important things to know about R and Python\nInstall and load packages\nGetting help"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#getting-help-r-and-python",
+    "href": "talks/first-post/slides/lecture1.html#getting-help-r-and-python",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "Getting help: R and Python",
+    "text": "Getting help: R and Python\n\n\n\nTask\nR\nPython\n\n\n\n\nQuick help\n?readr::read_csv\npd.read_csv?\n\n\nExamples\nexample(readr::read_csv)\npd.read_csv.__doc__\n\n\nSearch docs\n??keyword\npd.read_csv??\n\n\nOnline docs\nvignette(\"readr\")\npython -m pydoc -b\n\n\nCommunity Q&A\nStack Overflow; Posit Community\nStack Overflow; Pythoncommunity\n\n\nCoding Gen-AI tools\nChatGPT; Claude; GitHub Copilot\nChatGPT; Claude; GitHub Copilot"
+  },
+  {
+    "objectID": "talks/first-post/slides/lecture1.html#references-resources",
+    "href": "talks/first-post/slides/lecture1.html#references-resources",
+    "title": "Data analytics with Positron R & Python  🇷🐍",
+    "section": "References & resources",
+    "text": "References & resources\n\n\n\nR\n\nR for Data Science Introduction\nR for Data Science Workflow: basics\nR for Data Science Workflow: scripts and projects\n\nPython\n\nPython for Data Science Introduction\nPython for Data Science Workflow: basics\nPython for Data Science Workflow: scripts and projects\n\nPositron & Quarto\n\nPositron\nQuarto & Quarto Awsome"
+  }
+]

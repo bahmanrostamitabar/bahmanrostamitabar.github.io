@@ -1,0 +1,66 @@
+[
+  {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/first-post/index.html"
+    ]
+  },
+  {
+    "listing": "/publications/technical_reports/index.html",
+    "items": []
+  },
+  {
+    "listing": "/publications/journal_articles/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/who-evm/index.html",
+    "items": [
+      "/projects/who-evm/first-post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/sustainability/index.html",
+    "items": [
+      "/projects/sustainability/first-post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/forecasting/index.html",
+    "items": [
+      "/projects/forecasting/first-post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/data_science/index.html",
+      "/projects/sustainability/index.html",
+      "/projects/who-evm/index.html",
+      "/projects/forecasting/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/data_science/index.html",
+    "items": [
+      "/projects/data_science/first-post/index.html",
+      "/projects/data_science/scond-post/index.html",
+      "/projects/data_science/third-post/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/first-post/index.html",
+      "/blog/2025-10-28-informs/index.html"
+    ]
+  },
+  {
+    "listing": "/publications/working_papers/index.html",
+    "items": []
+  },
+  {
+    "listing": "/publications/book_chapters/index.html",
+    "items": []
+  }
+]
