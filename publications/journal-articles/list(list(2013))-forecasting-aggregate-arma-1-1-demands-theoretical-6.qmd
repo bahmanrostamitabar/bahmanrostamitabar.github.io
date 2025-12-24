@@ -1,0 +1,10 @@
+---
+title: "Forecasting aggregate ARMA (1, 1) demands: Theoretical analysis of top-down versus bottom-up"
+author: "character(0)"
+date: "list(list(2013))"
+description: "*Proceedings of 2013 international conference on industrial engineering and systems management (IESM)*, Pages 1-8"
+---
+
+*Proceedings of 2013 international conference on industrial engineering and systems management (IESM)*, Pages 1-8
+
+

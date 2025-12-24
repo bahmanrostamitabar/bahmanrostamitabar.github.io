@@ -1,0 +1,111 @@
+---
+title: "Publications"
+toc: true
+css: publications.css
+page-layout: full
+listing:
+  - id: books
+    contents: books
+    sort: "date desc"
+    type: table
+    table-hover: true
+    fields: [date, title, author]
+    field-display-names:
+      date: "Year"
+      title: "Title"
+      author: "Authors"
+    filter-ui: true
+    sort-ui: [date, title]
+    page-size: 20
+  - id: journal-articles
+    contents: journal-articles
+    sort: "date desc"
+    type: table
+    table-hover: true
+    fields: [date, title, author, description]
+    field-display-names:
+      date: "Year"
+      title: "Title"
+      author: "Authors"
+      description: "Journal"
+    filter-ui: true
+    sort-ui: [date, title]
+    page-size: 20
+  - id: working-papers
+    contents: working-papers
+    sort: "date desc"
+    type: table
+    table-hover: true
+    fields: [date, title, author]
+    field-display-names:
+      date: "Year"
+      title: "Title"
+      author: "Authors"
+    filter-ui: true
+    sort-ui: [date, title]
+    page-size: 20
+  - id: book-chapters
+    contents: book-chapters
+    sort: "date desc"
+    type: table
+    table-hover: true
+    fields: [date, title, author, description]
+    field-display-names:
+      date: "Year"
+      title: "Title"
+      author: "Authors"
+      description: "Book"
+    filter-ui: true
+    sort-ui: [date, title]
+    page-size: 20
+  - id: conference-proceedings
+    contents: conference-proceedings
+    sort: "date desc"
+    type: table
+    table-hover: true
+    fields: [date, title, author]
+    field-display-names:
+      date: "Year"
+      title: "Title"
+      author: "Authors"
+    filter-ui: true
+    sort-ui: [date, title]
+    page-size: 20
+  - id: reports
+    contents: reports
+    sort: "date desc"
+    type: table
+    table-hover: true
+    fields: [date, title, author]
+    field-display-names:
+      date: "Year"
+      title: "Title"
+      author: "Authors"
+    filter-ui: true
+    sort-ui: [date, title]
+    page-size: 20
+---
+
+## Books
+::: {#books}
+:::
+
+## Journal Articles
+::: {#journal-articles}
+:::
+
+## Working Papers
+::: {#working-papers}
+:::
+
+## Book Chapters
+::: {#book-chapters}
+:::
+
+## Conference Proceedings
+::: {#conference-proceedings}
+:::
+
+## Reports
+::: {#reports}
+:::

@@ -1,0 +1,10 @@
+---
+title: "A hybrid LSTM method for forecasting demands of medical items in humanitarian operations"
+author: "character(0)"
+date: "list(list(2024))"
+description: "*International Journal of Production Research*, Pages 1-18"
+---
+
+*International Journal of Production Research*, Pages 1-18
+
+

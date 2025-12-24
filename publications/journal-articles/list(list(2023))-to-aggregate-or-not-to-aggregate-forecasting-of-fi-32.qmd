@@ -1,0 +1,10 @@
+---
+title: "To aggregate or not to aggregate: Forecasting of finite autocorrelated demand"
+author: "character(0)"
+date: "list(list(2023))"
+description: "*Journal of the Operational Research Society*, Volume 74, Issue 8, Pages 1840-1859"
+---
+
+*Journal of the Operational Research Society*, Volume 74, Issue 8, Pages 1840-1859
+
+

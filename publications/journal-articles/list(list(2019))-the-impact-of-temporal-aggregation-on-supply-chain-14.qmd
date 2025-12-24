@@ -1,0 +1,10 @@
+---
+title: "The impact of temporal aggregation on supply chains with ARMA (1, 1) demand processes"
+author: "character(0)"
+date: "list(list(2019))"
+description: "*European Journal of Operational Research*, Volume 273, Issue 3, Pages 920-932"
+---
+
+*European Journal of Operational Research*, Volume 273, Issue 3, Pages 920-932
+
+

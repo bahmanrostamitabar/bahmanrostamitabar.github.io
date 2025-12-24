@@ -1,0 +1,10 @@
+---
+title: "Demand forecasting by temporal aggregation"
+author: "character(0)"
+date: "list(list(2013))"
+description: "*Naval Research Logistics (NRL)*, Volume 60, Issue 6, Pages 479-498"
+---
+
+*Naval Research Logistics (NRL)*, Volume 60, Issue 6, Pages 479-498
+
+

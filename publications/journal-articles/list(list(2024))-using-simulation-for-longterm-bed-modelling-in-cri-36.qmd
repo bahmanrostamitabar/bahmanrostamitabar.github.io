@@ -1,0 +1,10 @@
+---
+title: "Using simulation for long-term bed modelling in critical care"
+author: "character(0)"
+date: "list(list(2024))"
+description: "*Journal of Simulation*, Pages 1-17"
+---
+
+*Journal of Simulation*, Pages 1-17
+
+

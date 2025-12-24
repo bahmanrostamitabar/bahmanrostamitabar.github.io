@@ -1,0 +1,10 @@
+---
+title: "The value of forecast accuracy foir emergency department staffing decisions"
+author: "character(0)"
+date: "list(list(2025))"
+description: "*Under review in IEEE Transactions on Engineering Management*"
+---
+
+*Under review in IEEE Transactions on Engineering Management*
+
+

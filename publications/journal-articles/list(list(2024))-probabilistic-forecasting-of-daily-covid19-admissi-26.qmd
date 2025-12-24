@@ -1,0 +1,10 @@
+---
+title: "Probabilistic forecasting of daily COVID-19 admissions using machine learning"
+author: "character(0)"
+date: "list(list(2024))"
+description: "*IMA Journal of Management Mathematics*, Volume 35, Issue 1, Pages 21-43"
+---
+
+*IMA Journal of Management Mathematics*, Volume 35, Issue 1, Pages 21-43
+
+

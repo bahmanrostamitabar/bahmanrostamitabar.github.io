@@ -1,0 +1,10 @@
+---
+title: "Forecasting COVID-19 daily cases using phone call data"
+author: "character(0)"
+date: "list(list(2021))"
+description: "*Applied soft computing*, Volume 100, Pages 106932"
+---
+
+*Applied soft computing*, Volume 100, Pages 106932
+
+

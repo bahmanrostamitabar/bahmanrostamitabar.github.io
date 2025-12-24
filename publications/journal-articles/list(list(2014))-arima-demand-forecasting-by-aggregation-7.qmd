@@ -1,0 +1,10 @@
+---
+title: "ARIMA demand forecasting by aggregation"
+author: "character(0)"
+date: "list(list(2014))"
+description: ""
+---
+
+
+
+

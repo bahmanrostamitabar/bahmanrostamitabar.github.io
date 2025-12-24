@@ -1,0 +1,10 @@
+---
+title: "The impact of advance demand information on the performance of production/inventory systems"
+author: "character(0)"
+date: "list(list(2015))"
+description: "*IFAC-PapersOnLine*, Volume 48, Pages 1744-1749"
+---
+
+*IFAC-PapersOnLine*, Volume 48, Pages 1744-1749
+
+

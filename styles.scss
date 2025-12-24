@@ -19,6 +19,19 @@ $font-size-root: 17px;
   text-align: center;
 }
 
+/* Justify main text */
+.content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
+/* Center title and subtitle text (works for Broadside) */
+.quarto-title-block .title,
+.quarto-title-block .subtitle {
+  text-align: center !important;
+}
 
-
+/* Broadside: widen only the text column, keep photo unchanged */
+.quarto-about-broadside .about-contents > .content {
+  max-width: none;
+}

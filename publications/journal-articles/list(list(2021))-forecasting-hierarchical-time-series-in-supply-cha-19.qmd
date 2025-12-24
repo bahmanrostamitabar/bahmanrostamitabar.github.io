@@ -1,0 +1,10 @@
+---
+title: "Forecasting hierarchical time series in supply chains: An empirical investigation"
+author: "character(0)"
+date: "list(list(2021))"
+description: "*International Journal of Production Research*, Pages 1-20"
+---
+
+*International Journal of Production Research*, Pages 1-20
+
+

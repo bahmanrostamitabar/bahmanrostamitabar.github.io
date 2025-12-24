@@ -1,0 +1,24 @@
+/* Projects grid: smart, minimal styling */
+
+.quarto-grid-item .card {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.quarto-grid-item .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.quarto-grid-item .card-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+.quarto-grid-item .card-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}

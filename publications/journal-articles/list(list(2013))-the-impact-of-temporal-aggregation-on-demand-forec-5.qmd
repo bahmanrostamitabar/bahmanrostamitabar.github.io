@@ -1,0 +1,10 @@
+---
+title: "The impact of temporal aggregation on demand forecasting of ARMA(1, 1) process: Theoretical analysis"
+author: "character(0)"
+date: "list(list(2013))"
+description: "*Manufacturing modelling, management, and control*, Pages 1696-1701"
+---
+
+*Manufacturing modelling, management, and control*, Pages 1696-1701
+
+

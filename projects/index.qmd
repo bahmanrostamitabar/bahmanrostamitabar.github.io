@@ -1,13 +1,18 @@
 ---
 title: "Projects"
 description: "Overview of projects I lead and colead."
-listing: 
-  contents: 
-    - "data_science/*.qmd"
-    - "forecasting/*.qmd"
-    - "sustainability/*.qmd"
-    - "who-evm/*.qmd"
-  type: grid # Explore more listing types; default, grid or table
+listing:
+  contents:
+    - "africast/*.qmd"
+    - "democratising_forecasting/*.qmd"
+    - "summer_school/*.qmd"
+    - "f4sg/*.qmd"
+    - "crosslab_exchange/*.qmd"
+  type: grid
+  sort: "date"
+  sort-ui: true
+  fields: [image, title, description]
   filter-ui: true
+  max-items: 12
 ---
 

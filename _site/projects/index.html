@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4d256d6fcfa5c36343b264362462b80c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2446905701fbf71fc498c770a811c78f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -133,10 +133,10 @@ window.Quarto = {
 
 <meta property="og:title" content="Projects">
 <meta property="og:description" content="Overview of projects I lead and colead.">
-<meta property="og:image" content="../projects/data_science/cover.jpg">
+<meta property="og:image" content="../projects/africast/cover.jpg">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -168,32 +168,17 @@ window.Quarto = {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../supervision/index.html"> 
+<span class="menu-text">Supervision</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Publications</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-publications">    
-        <li>
-    <a class="dropdown-item" href="../publications/journal_articles/index.html">
- <span class="dropdown-text">Journal Publications</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/book_chapters/index.html">
- <span class="dropdown-text">Book Chapters</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/working_papers/index.html">
- <span class="dropdown-text">Working Papers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/technical_reports/index.html">
- <span class="dropdown-text">Technical Reports</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
@@ -203,18 +188,18 @@ window.Quarto = {
             <div class="quarto-navbar-tools tools-wide">
     <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://www.google.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-bookmark-star-fill"></i></a>
+    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mortarboard-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -228,7 +213,7 @@ window.Quarto = {
 </div>
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -246,6 +231,16 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
@@ -253,10 +248,10 @@ window.Quarto = {
 </div>
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="UiUyQ1B5dGhvbiUyQ1F1YXJ0byUyQ1Bvc3Ryb24lMkNNYWNoaW5lJTIwTGVhcm5pbmc=" data-listing-file-modified-sort="1761658092272" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../projects/data_science/index.html" class="quarto-grid-link">
+<a href="../projects/africast/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../projects/data_science/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/africast/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -265,61 +260,14 @@ Data Science
 <div class="card-text listing-description delink">
 <p>My data sceince projects.</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1761658092318" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../projects/sustainability/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="UiUyQ1B5dGhvbiUyQ1F1YXJ0byUyQ1Bvc3Ryb24lMkNNYWNoaW5lJTIwTGVhcm5pbmc=" data-listing-file-modified-sort="1761658092287" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/democratising_forecasting/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../projects/sustainability/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Sustainability
-</h5>
-<div class="card-text listing-description delink">
-<p>My sustainability projects.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1761660039510" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../projects/who-evm/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/who-evm/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Sustainability
-</h5>
-<div class="card-text listing-description delink">
-<p>My sustainability projects.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="UiUyQ1B5dGhvbiUyQ1F1YXJ0byUyQ1Bvc3Ryb24lMkNNYWNoaW5lJTIwTGVhcm5pbmc=" data-listing-file-modified-sort="1761658092287" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../projects/forecasting/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/forecasting/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/democratising_forecasting/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -328,10 +276,53 @@ Time Series Forecasting
 <div class="card-text listing-description delink">
 <p>My forecasting projects.</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
 </div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1766537316659" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/summer_school/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/summer_school/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Summer School
+</h5>
+<div class="card-text listing-description delink">
+<p>My sustainability projects.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1761660039510" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/f4sg/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/f4sg/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sustainability
+</h5>
+<div class="card-text listing-description delink">
+<p>My sustainability projects.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1766536760897" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/crosslab_exchange/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/crosslab_exchange/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sustainability
+</h5>
+<div class="card-text listing-description delink">
+<p>My sustainability projects.</p>
 </div>
 </div>
 </div></a>

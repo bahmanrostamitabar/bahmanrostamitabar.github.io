@@ -1,0 +1,14 @@
+---
+title: "Forecasting: Principles and Practice"
+author:
+  - Rob J Hyndman
+  - George Athanasopoulos
+date: 2021-01-01
+publisher: "OTexts"
+edition: "3rd"
+isbn: "9780987507105"
+image: fpp-cover.png
+links:
+  - text: Website
+    href: https://otexts.com/fpp3/
+---

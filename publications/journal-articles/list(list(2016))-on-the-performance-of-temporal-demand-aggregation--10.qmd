@@ -1,0 +1,10 @@
+---
+title: "On the performance of temporal demand aggregation when optimal forecasting is used"
+author: "character(0)"
+date: "list(list(2016))"
+description: "*International conference on information systems, logistics and supply chain*"
+---
+
+*International conference on information systems, logistics and supply chain*
+
+

@@ -1,13 +1,20 @@
 ---
 title: "Bahman Rostami-Tabar"
-subtitle: "Professor"
+subtitle: "Professor at Cardiff University, UK"
 image: images/bahman.jpg
+
+format:
+  html:
+    grid:
+      body-width: 1000px
+      margin-width: 0px
+
 about:
-  template: jolla  # Different templates: jolla, trestles, solana, marquee, or broadside
+  template: broadside  # Different templates: jolla, trestles, solana, marquee, or broadside
   image-shape: round
   links:
     - icon: envelope-at-fill  # https://icons.getbootstrap.com/?q=book
-      text: e-mail
+      text: E-mail
       href: mailto:rostami-tabarb@cardiff.ac.uk
     - icon: github
       text: Github
@@ -21,6 +28,9 @@ about:
     - icon: orcid
       text: ORCID
       href: https://orcid.org/0000-0002-3730-0045
+    - icon: mortarboard-fill
+      text: University profile
+      href: https://profiles.cardiff.ac.uk/staff/rostami-tabarb
 ---
 
   I am a Professor of Analytics & Decision Sciences at Cardiff Business School, Cardiff University, UK. I am interested in transforming data into insights for making better decisions. I am the founder and director of [Data Lab for Social Good](https://www.cardiff.ac.uk/research/explore/research-units/data-lab-for-social-good) at Cardiff Business School and the founder of [Forecasting for Social Good (F4SG)](https://forecasters.org/programs/communities/forecasting-for-social-good-f4sg/) i nitiativessponsored by the International Institute of Forecasters. He is also leading the [Uncertainty & the Future](https://www.cardiff.ac.uk/digital-transformation-innovation-institute/work-with-us/uncertainty-and-the-future) theme at the Digital Transformation Innovation Institute.

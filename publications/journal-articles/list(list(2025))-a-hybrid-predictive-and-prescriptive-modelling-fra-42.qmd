@@ -1,0 +1,10 @@
+---
+title: "A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning"
+author: "character(0)"
+date: "list(list(2025))"
+description: "*Journal of the Operational Research Society*, Pages 1-25"
+---
+
+*Journal of the Operational Research Society*, Pages 1-25
+
+

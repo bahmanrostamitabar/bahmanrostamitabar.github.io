@@ -1,0 +1,13 @@
+---
+title: "Projects"
+description: "Overview of projects I lead and colead."
+listing: 
+  contents: 
+    - "data_science/*.qmd"
+    - "forecasting/*.qmd"
+    - "sustainability/*.qmd"
+    - "who-evm/*.qmd"
+  type: grid # Explore more listing types; default, grid or table
+  filter-ui: true
+---
+

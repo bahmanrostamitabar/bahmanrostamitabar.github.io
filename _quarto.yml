@@ -16,18 +16,12 @@ website:
         href: about/index.qmd
       - text: Projects
         href: projects/index.qmd
+      - text: Supervision
+        href: supervision/index.qmd
       - text: Talks
         href: talks/index.qmd
       - text: Publications
-        menu: 
-          - text: Journal Publications
-            href: publications/journal_articles/index.qmd
-          - text: Book Chapters
-            href: publications/book_chapters/index.qmd
-          - text: Working Papers
-            href: publications/working_papers/index.qmd
-          - text: Technical Reports
-            href: publications/technical_reports/index.qmd 
+        href: publications/index.qmd
       - text: Blog
         href: blog/index.qmd
     tools:
@@ -35,8 +29,8 @@ website:
         href: https://github.com/
       - icon: linkedin
         href: https://www.linkedin.com/
-      - icon: bookmark-star-fill
-        href: https://www.google.com/
+      - icon: mortarboard-fill
+        href: https://profiles.cardiff.ac.uk/staff/rostami-tabarb
 format:
   html:
     backgroundcolor: "#FFFFFF" # https://www.figma.com/colors/
@@ -44,4 +38,5 @@ format:
     linkcolor: "#0066b2"
     mainfont: "system-ui"   # "Source Sans Pro", "-apple-system", "Segoe UI", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
     theme: [cosmo, styles.scss] # https://quarto.org/docs/output-formats/html-themes.html
+    page-layout: full
 

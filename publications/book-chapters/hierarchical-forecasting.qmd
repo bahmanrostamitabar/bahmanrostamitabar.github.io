@@ -1,0 +1,15 @@
+---
+title: "Hierarchical Time Series Forecasting"
+author:
+  - Bahman Rostami-Tabar
+  - Rob J Hyndman
+date: 2023-01-01
+booktitle: "Handbook of Forecasting"
+publisher: "Springer"
+editors:
+  - Michael Gilliland
+pages: "123–145"
+links:
+  - text: DOI
+    href: https://doi.org/10.1007/978-3-030-xxxx-x_6
+---

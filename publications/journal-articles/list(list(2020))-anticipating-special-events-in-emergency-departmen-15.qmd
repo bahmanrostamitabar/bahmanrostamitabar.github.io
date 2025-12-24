@@ -1,0 +1,10 @@
+---
+title: "Anticipating special events in emergency department forecasting"
+author: "character(0)"
+date: "list(list(2020))"
+description: "*International Journal of Forecasting*"
+---
+
+*International Journal of Forecasting*
+
+

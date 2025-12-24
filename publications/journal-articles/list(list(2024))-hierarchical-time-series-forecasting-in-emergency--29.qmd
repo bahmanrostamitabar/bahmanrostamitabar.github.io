@@ -1,0 +1,10 @@
+---
+title: "Hierarchical time series forecasting in emergency medical services"
+author: "character(0)"
+date: "list(list(2024))"
+description: "*Journal of Service Research*, Pages 10946705241232169"
+---
+
+*Journal of Service Research*, Pages 10946705241232169
+
+

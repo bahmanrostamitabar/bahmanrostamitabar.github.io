@@ -1,0 +1,93 @@
+/* === Reactable base container === */
+.reactable {
+  font-size: 0.95rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* === Header styling === */
+.reactable thead th {
+  background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+  color: #495057;
+  padding: 12px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Center numeric columns cleanly */
+.reactable thead th[aria-sort],
+.reactable tbody td[style*="center"] {
+  text-align: center;
+}
+
+/* === Body cells === */
+.reactable tbody td {
+  padding: 12px 10px;
+  vertical-align: top;
+  line-height: 1.6;
+  color: #343a40;
+}
+
+/* Zebra striping */
+.reactable tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Hover effect */
+.reactable tbody tr:hover {
+  background-color: #e7f3ff;
+}
+
+/* Italic rows (e.g., ongoing students) */
+.reactable tbody tr[style*="italic"] {
+  color: #6c757d;
+}
+
+/* === Links === */
+.reactable a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.reactable a:hover {
+  color: #004999;
+  text-decoration: underline;
+}
+
+/* === Search input === */
+.reactable .reactable-search-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+/* === Column resize handle (subtle) === */
+.reactable .resizer {
+  background-color: #dee2e6;
+}
+
+/* === Compact mode refinements === */
+.reactable.compact tbody td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* === Section spacing harmony with Quarto === */
+h2 {
+  color: #34495e;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* === Page width consistency === */
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}

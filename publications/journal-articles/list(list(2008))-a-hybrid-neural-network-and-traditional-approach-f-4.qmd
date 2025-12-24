@@ -1,0 +1,10 @@
+---
+title: "A hybrid neural network and traditional approach for forecasting lumpy demand"
+author: "character(0)"
+date: "list(list(2008))"
+description: "*Proceedings of the World Academy of Science, Engineering and Technology*, Volume 2"
+---
+
+*Proceedings of the World Academy of Science, Engineering and Technology*, Volume 2
+
+

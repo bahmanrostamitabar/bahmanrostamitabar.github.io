@@ -1,0 +1,10 @@
+---
+title: "Emergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution"
+author: "character(0)"
+date: "list(list(2025))"
+description: "*Under review in Computer in Industry*"
+---
+
+*Under review in Computer in Industry*
+
+

@@ -1,0 +1,164 @@
+---
+title: "PhD and MSc Supervision"
+format: html
+css: supervision.css
+execute:
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+library(readr)
+library(dplyr)
+library(reactable)
+
+
+phd <- read_csv("phd.csv")
+msc <- read_csv("msc.csv")
+```
+
+```{r}
+#| echo: false
+num_phd <- nrow(phd)
+num_msc <- nrow(msc)
+num_phd_grad <- sum(phd$status == "Graduated", na.rm = TRUE)
+num_msc_grad <- sum(msc$status == "Graduated", na.rm = TRUE)
+```
+
+::: {.callout-note}
+## Supervision Overview
+
+I have supervised **`r nrow(phd)`** PhD students (**`r num_phd_grad`** graduated) and  **`r nrow(msc)`** MSc theses (**`r num_msc_grad`** graduated).  
+
+Graduates are currently working in academia, industry, and the public sector.
+:::
+
+
+
+## PhD Supervision
+
+```{r}
+library(reactable)
+
+reactable(
+phd |>
+arrange(desc(graduation_year)) |>
+select(
+name,
+thesis_title,
+graduation_year,
+current_position,
+link
+),
+searchable = TRUE,
+compact = TRUE,
+striped = TRUE,
+highlight = TRUE,
+bordered = FALSE,
+defaultSorted = "graduation_year",
+defaultSortOrder = "desc",
+rowStyle = function(index) {
+if (is.na(phd$graduation_year[index])) {
+list(fontStyle = "italic", background = "#fafafa")
+}
+},
+columns = list(
+name = colDef(
+name = "Name",
+style = list(fontWeight = 500)
+),
+thesis_title = colDef(
+name = "PhD Title",
+minWidth = 360,
+style = list(color = "#444", verticalAlign = "top")
+),
+graduation_year = colDef(
+name = "Year",
+align = "center",
+width = 70,
+style = list(color = "#777")
+),
+current_position = colDef(
+name = "Current Position",
+minWidth = 280,
+style = list(verticalAlign = "top")
+),
+link = colDef(
+name = "Link",
+align = "center",
+width = 50,
+cell = function(value) {
+if (is.na(value) || value == "") "" else {
+htmltools::a("↗", href = value, target = "_blank")
+}
+}
+)
+)
+)
+
+
+```
+
+
+## MSc Supervision
+
+```{r}
+reactable(
+  msc |>
+    arrange(desc(graduation_year)) |>
+    select(
+      name,
+      thesis_title,
+      graduation_year,
+      current_position,
+      link
+    ),
+  searchable = TRUE,
+  compact = TRUE,
+  striped = TRUE,
+  highlight = TRUE,
+  bordered = FALSE,
+  defaultSorted = "graduation_year",
+  defaultSortOrder = "desc",
+  rowStyle = function(index) {
+    if (is.na(msc$graduation_year[index])) {
+      list(fontStyle = "italic", background = "#fafafa")
+    }
+  },
+  columns = list(
+    name = colDef(
+      name = "Name",
+      style = list(fontWeight = 500)
+    ),
+    thesis_title = colDef(
+      name = "MSc Title",
+      minWidth = 320,
+      style = list(color = "#444", verticalAlign = "top")
+    ),
+    graduation_year = colDef(
+      name = "Year",
+      align = "center",
+      width = 70,
+      style = list(color = "#777")
+    ),
+    current_position = colDef(
+      name = "Current Position",
+      minWidth = 260,
+      style = list(verticalAlign = "top")
+    ),
+    link = colDef(
+      name = "Link",
+      align = "center",
+      width = 50,
+      cell = function(value) {
+        if (is.na(value) || value == "") "" else {
+          htmltools::a("↗", href = value, target = "_blank")
+        }
+      }
+    )
+  )
+)
+
+```

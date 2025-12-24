@@ -1,0 +1,10 @@
+---
+title: "A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions"
+author: "character(0)"
+date: "list(list(2025))"
+description: "*Under review in Production and Operations Management*"
+---
+
+*Under review in Production and Operations Management*
+
+

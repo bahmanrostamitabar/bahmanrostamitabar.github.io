@@ -1,0 +1,10 @@
+---
+title: "Neural network approach to lumpy demand forecasting for spare parts in process industries"
+author: "character(0)"
+date: "list(list(2008))"
+description: "*2008 international conference on computer and communication engineering*, Pages 1378-1382"
+---
+
+*2008 international conference on computer and communication engineering*, Pages 1378-1382
+
+

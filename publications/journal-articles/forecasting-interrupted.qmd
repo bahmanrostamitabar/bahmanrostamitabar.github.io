@@ -1,0 +1,17 @@
+---
+title: "Forecasting Interrupted Time Series"
+author:
+  - Bahman Rostami-Tabar
+  - Rob J Hyndman
+date: 2024-06-01
+volume: 76
+number: 4
+pages: "790–803"
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/01605682.2024.xxxxx
+  - text: PDF
+    href: https://example.com/forecasting-interrupted.pdf
+---
+
+

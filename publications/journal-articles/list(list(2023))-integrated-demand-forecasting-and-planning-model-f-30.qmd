@@ -1,0 +1,10 @@
+---
+title: "Integrated demand forecasting and planning model for repairable spare part: An empirical investigation"
+author: "character(0)"
+date: "list(list(2023))"
+description: "*International Journal of Production Research*, Volume 61, Issue 20, Pages 6791-6807"
+---
+
+*International Journal of Production Research*, Volume 61, Issue 20, Pages 6791-6807
+
+

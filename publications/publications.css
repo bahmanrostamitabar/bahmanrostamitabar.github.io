@@ -1,0 +1,181 @@
+/* Publication listings styling */
+.quarto-listing-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.quarto-listing-table th {
+  background-color: #e9ecef;
+  font-weight: 600;
+}
+
+.quarto-listing-table {
+  font-size: 0.95rem;
+}
+
+.quarto-listing-table td {
+  padding: 12px 8px;
+}
+
+/* Publication listings styling */
+.quarto-listing-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.quarto-listing-table th {
+  background-color: #e9ecef;
+  font-weight: 600;
+}
+
+.quarto-listing-table {
+  font-size: 0.95rem;
+}
+
+.quarto-listing-table td {
+  padding: 12px 8px;
+}
+
+/* DataTables styling enhancements */
+.dataTables_wrapper {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.dataTables_filter input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-left: 8px;
+}
+
+.dataTables_length select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+table.dataTable thead th {
+  background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+  color: #495057;
+  padding: 12px;
+}
+
+table.dataTable tbody td {
+  padding: 12px;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: #e7f3ff !important;
+}
+
+/* Links styling */
+table.dataTable a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+table.dataTable a:hover {
+  color: #004999;
+  text-decoration: underline;
+}
+
+/* Filter row styling */
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_length {
+  margin-bottom: 15px;
+}
+
+/* Page title styling */
+h1.title {
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* Section headers */
+h2 {
+  color: #34495e;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Summary statistics styling */
+.quarto-title-meta {
+  margin-bottom: 30px;
+}
+
+/* Improve spacing */
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Pagination styling */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 6px 12px;
+  margin: 0 2px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: #0066cc;
+  color: white !important;
+  border-color: #0066cc;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+/* Info text styling */
+.dataTables_info {
+  color: #6c757d;
+  font-size: 0.9rem;
+  padding-top: 10px;
+}
+
+/* Make table responsive */
+.dataTables_wrapper {
+  overflow-x: auto;
+}
+
+/* Type badges (if you want to add them) */
+.type-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.type-journal {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.type-chapter {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.type-conference {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.type-book {
+  background-color: #f8d

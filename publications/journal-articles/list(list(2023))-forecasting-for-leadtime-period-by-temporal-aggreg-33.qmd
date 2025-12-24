@@ -1,0 +1,10 @@
+---
+title: "Forecasting for lead-time period by temporal aggregation: Whether to combine and how"
+author: "character(0)"
+date: "list(list(2023))"
+description: "*Computers in Industry*, Volume 145, Pages 103803"
+---
+
+*Computers in Industry*, Volume 145, Pages 103803
+
+

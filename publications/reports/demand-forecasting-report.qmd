@@ -1,0 +1,12 @@
+---
+title: "Demand Forecasting for Emergency Medical Services"
+author:
+  - Bahman Rostami-Tabar
+  - NHS Analytics Unit
+date: 2022-03-01
+institution: "National Health Service"
+report-number: "NHS-EMS-2022-04"
+links:
+  - text: PDF
+    href: https://example.com/ems-demand-report.pdf
+---
