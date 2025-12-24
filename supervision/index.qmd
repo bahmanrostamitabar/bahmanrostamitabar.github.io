@@ -10,6 +10,12 @@ execute:
 #| label: setup
 #| message: false
 #| warning: false
+
+install.packages(
+  c("readr", "dplyr", "reactable"),
+  repos = "https://cloud.r-project.org"
+)
+
 library(readr)
 library(dplyr)
 library(reactable)
@@ -40,7 +46,6 @@ Graduates are currently working in academia, industry, and the public sector.
 ## PhD Supervision
 
 ```{r}
-library(reactable)
 
 reactable(
 phd |>
