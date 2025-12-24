@@ -14,18 +14,165 @@
     "text": "Slides-html  \n   Slides-pdf  \nThis seminar provides practical skills for incorporating AI tools into the research process empowering researchers to save time and improve their research workflow. It is designed to benefit researchers at all levels and addresses key stages of the research workflow. The session features live demonstrations of essential tools, showcasing workflows that span from problem definition to dissemination."
   },
   {
-    "objectID": "publications/technical_reports/index.html",
-    "href": "publications/technical_reports/index.html",
-    "title": "Technical Reports",
+    "objectID": "publications/journal-articles/list(list(2019))-the-impact-of-temporal-aggregation-on-supply-chain-14.html",
+    "href": "publications/journal-articles/list(list(2019))-the-impact-of-temporal-aggregation-on-supply-chain-14.html",
+    "title": "The impact of temporal aggregation on supply chains with ARMA (1, 1) demand processes",
     "section": "",
-    "text": "Title\n\n\n\nDescription\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nWe study judgmental forecast adjustments in pre-promotional (normal), promotional and post-promotional periods via behavioral experiments. Forecasters need structured support to make effective adjustments during post-promotional periods. The…\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+    "text": "European Journal of Operational Research, Volume 273, Issue 3, Pages 920-932"
   },
   {
-    "objectID": "publications/journal_articles/index.html",
-    "href": "publications/journal_articles/index.html",
-    "title": "Journal Articles",
+    "objectID": "publications/journal-articles/list(list(2025))-patient-length-of-stay-in-trauma-networks-insights-43.html",
+    "href": "publications/journal-articles/list(list(2025))-patient-length-of-stay-in-trauma-networks-insights-43.html",
+    "title": "Patient length of stay in trauma networks: Insights from advanced modelling",
     "section": "",
-    "text": "Author(s)\n\n\n\nTitle\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nBahman Rostami-Tabar\n\n\nED hierarchihcal forecasting\n\n\nEmergency Service, Healthcare, hierarchical reconciliation\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nForecasting\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+    "text": "Expert Systems with Applications, Pages 127801"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2024))-hierarchical-time-series-forecasting-in-emergency--29.html",
+    "href": "publications/journal-articles/list(list(2024))-hierarchical-time-series-forecasting-in-emergency--29.html",
+    "title": "Hierarchical time series forecasting in emergency medical services",
+    "section": "",
+    "text": "Journal of Service Research, Pages 10946705241232169"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2016))-a-novel-ranking-procedure-for-forecasting-approach-11.html",
+    "href": "publications/journal-articles/list(list(2016))-a-novel-ranking-procedure-for-forecasting-approach-11.html",
+    "title": "A novel ranking procedure for forecasting approaches using data envelopment analysis",
+    "section": "",
+    "text": "Technological Forecasting and Social Change, Volume 111, Pages 235-243\nLink"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-examining-digital-twins-applications-challenges-an-47.html",
+    "href": "publications/journal-articles/list(list(2025))-examining-digital-twins-applications-challenges-an-47.html",
+    "title": "Examining digital twins applications, challenges and benefits in healthcare: A systematic literature review",
+    "section": "",
+    "text": "Under review in IEEE Transactions on Engineering Management"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2013))-demand-forecasting-by-temporal-aggregation-3.html",
+    "href": "publications/journal-articles/list(list(2013))-demand-forecasting-by-temporal-aggregation-3.html",
+    "title": "Demand forecasting by temporal aggregation",
+    "section": "",
+    "text": "Naval Research Logistics (NRL), Volume 60, Issue 6, Pages 479-498"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2024))-a-hybrid-lstm-method-for-forecasting-demands-of-me-34.html",
+    "href": "publications/journal-articles/list(list(2024))-a-hybrid-lstm-method-for-forecasting-demands-of-me-34.html",
+    "title": "A hybrid LSTM method for forecasting demands of medical items in humanitarian operations",
+    "section": "",
+    "text": "International Journal of Production Research, Pages 1-18"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2013))-the-impact-of-temporal-aggregation-on-demand-forec-5.html",
+    "href": "publications/journal-articles/list(list(2013))-the-impact-of-temporal-aggregation-on-demand-forec-5.html",
+    "title": "The impact of temporal aggregation on demand forecasting of ARMA(1, 1) process: Theoretical analysis",
+    "section": "",
+    "text": "Manufacturing modelling, management, and control, Pages 1696-1701"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2024))-probabilistic-forecasting-of-daily-covid19-admissi-26.html",
+    "href": "publications/journal-articles/list(list(2024))-probabilistic-forecasting-of-daily-covid19-admissi-26.html",
+    "title": "Probabilistic forecasting of daily COVID-19 admissions using machine learning",
+    "section": "",
+    "text": "IMA Journal of Management Mathematics, Volume 35, Issue 1, Pages 21-43"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-integrated-demand-forecasting-and-planning-model-f-30.html",
+    "href": "publications/journal-articles/list(list(2023))-integrated-demand-forecasting-and-planning-model-f-30.html",
+    "title": "Integrated demand forecasting and planning model for repairable spare part: An empirical investigation",
+    "section": "",
+    "text": "International Journal of Production Research, Volume 61, Issue 20, Pages 6791-6807"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-towards-socially-responsible-forecasting-identifyi-48.html",
+    "href": "publications/journal-articles/list(list(2025))-towards-socially-responsible-forecasting-identifyi-48.html",
+    "title": "Towards socially responsible forecasting: Identifying and typifying forecasting harms",
+    "section": "",
+    "text": "Under review in International Journal of Forecasting"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-to-aggregate-or-not-to-aggregate-forecasting-of-fi-32.html",
+    "href": "publications/journal-articles/list(list(2023))-to-aggregate-or-not-to-aggregate-forecasting-of-fi-32.html",
+    "title": "To aggregate or not to aggregate: Forecasting of finite autocorrelated demand",
+    "section": "",
+    "text": "Journal of the Operational Research Society, Volume 74, Issue 8, Pages 1840-1859"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2008))-a-hybrid-neural-network-and-traditional-approach-f-4.html",
+    "href": "publications/journal-articles/list(list(2008))-a-hybrid-neural-network-and-traditional-approach-f-4.html",
+    "title": "A hybrid neural network and traditional approach for forecasting lumpy demand",
+    "section": "",
+    "text": "Proceedings of the World Academy of Science, Engineering and Technology, Volume 2"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2017))-demand-forecasting-by-temporal-aggregation-using-o-12.html",
+    "href": "publications/journal-articles/list(list(2017))-demand-forecasting-by-temporal-aggregation-using-o-12.html",
+    "title": "Demand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?",
+    "section": "",
+    "text": "Journal of Business Research, Volume 78, Pages 1-9\nLink"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2008))-neural-network-approach-to-lumpy-demand-forecastin-1.html",
+    "href": "publications/journal-articles/list(list(2008))-neural-network-approach-to-lumpy-demand-forecastin-1.html",
+    "title": "Neural network approach to lumpy demand forecasting for spare parts in process industries",
+    "section": "",
+    "text": "2008 international conference on computer and communication engineering, Pages 1378-1382"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2022))-forecasting-theory-and-practice-18.html",
+    "href": "publications/journal-articles/list(list(2022))-forecasting-theory-and-practice-18.html",
+    "title": "Forecasting: Theory and practice",
+    "section": "",
+    "text": "International Journal of Forecasting"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-the-missing-puzzle-piece-contextual-insights-for-e-45.html",
+    "href": "publications/journal-articles/list(list(2025))-the-missing-puzzle-piece-contextual-insights-for-e-45.html",
+    "title": "The missing puzzle piece: Contextual insights for enhanced pharmaceutical supply chain forecasting",
+    "section": "",
+    "text": "International Journal of Production Research, Pages 1-19"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-the-value-of-forecast-accuracy-foir-emergency-depa-50.html",
+    "href": "publications/journal-articles/list(list(2025))-the-value-of-forecast-accuracy-foir-emergency-depa-50.html",
+    "title": "The value of forecast accuracy foir emergency department staffing decisions",
+    "section": "",
+    "text": "Under review in IEEE Transactions on Engineering Management"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-44.html",
+    "href": "publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-44.html",
+    "title": "A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions",
+    "section": "",
+    "text": "International Journal of Production Research, Pages 1-35"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-a-hybrid-predictive-and-prescriptive-modelling-fra-42.html",
+    "href": "publications/journal-articles/list(list(2025))-a-hybrid-predictive-and-prescriptive-modelling-fra-42.html",
+    "title": "A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning",
+    "section": "",
+    "text": "Journal of the Operational Research Society, Pages 1-25"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2013))-forecasting-aggregate-arma-1-1-demands-theoretical-6.html",
+    "href": "publications/journal-articles/list(list(2013))-forecasting-aggregate-arma-1-1-demands-theoretical-6.html",
+    "title": "Forecasting aggregate ARMA (1, 1) demands: Theoretical analysis of top-down versus bottom-up",
+    "section": "",
+    "text": "Proceedings of 2013 international conference on industrial engineering and systems management (IESM), Pages 1-8"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-the-role-of-technology-in-developing-resilient-sup-38.html",
+    "href": "publications/journal-articles/list(list(2025))-the-role-of-technology-in-developing-resilient-sup-38.html",
+    "title": "The role of technology in developing resilient supply chains: A systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions",
+    "section": "",
+    "text": "Journal of Humanitarian Logistics and Supply Chain Management"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2021))-demand-forecasting-in-supply-chains-a-review-of-ag-23.html",
+    "href": "publications/journal-articles/list(list(2021))-demand-forecasting-in-supply-chains-a-review-of-ag-23.html",
+    "title": "Demand forecasting in supply chains: A review of aggregation and hierarchical approaches",
+    "section": "",
+    "text": "International Journal of Production Research, Pages 1-25"
   },
   {
     "objectID": "blog/2025-10-28-informs/index.html",
@@ -42,88 +189,123 @@
     "text": "Last week I attended the 42nd International Symposium of Forecasting at the University of Oxford. This was my first in-person conference since the beginning of the Covid-19 pandemic. I met many colleagues and friends and listened to many inspiring talks.\nI presented two papers myself and co-authored four others presented by my colleagues and Ph.D. students.\nBelow you can access these presentations:\nProbabilistic Forecasting of hourly Emergency Departement arrivals, in collaboration with Jethro Browell & Ivan Svetunkov\nHierarchical forecasting of vaccine supply chain, in collaboration with John Snow, Inc\nForecasting for unplanned care: a literature review, in collaboration with Mingzhe Shi and Daniel Gartner\nRevisiting forecasting for Emergency Department staffing, in collaboration with Shixuan Wang and Stephen Disney\nForecasting length of stay in trauma network, in collaboration with Zihao Wang, Jane Haider and Mohamed Naim\nForecasting for lead-time period by temporal aggregation: Whether to combine and how, in collaboration with Thanos Goltsos and Shixuan Wang"
   },
   {
-    "objectID": "projects/who-evm/index.html",
-    "href": "projects/who-evm/index.html",
-    "title": "Sustainability",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bahman Rostami-Tabar",
+    "section": "",
+    "text": "I am a Professor of Analytics & Decision Sciences at Cardiff Business School, Cardiff University, UK. I am interested in transforming data into insights for making better decisions. I am the founder and director of Data Lab for Social Good at Cardiff Business School and the founder of Forecasting for Social Good (F4SG) i nitiativessponsored by the International Institute of Forecasters. He is also leading the Uncertainty & the Future theme at the Digital Transformation Innovation Institute.\nBahman is passionate about uncertainty and the future. He specialises in the development and application of probabilistic modelling, forecasting, and operational research tools and techniques, providing informed insights for policy & decision-making processes in facing uncertain futures, and his research has contributed to sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, agriculture and food, social sustainability, and governmental policy. ."
+  },
+  {
+    "objectID": "projects/f4sg/first-post/index.html",
+    "href": "projects/f4sg/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "projects/democratising_forecasting/first-post/index.html",
+    "href": "projects/democratising_forecasting/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "projects/crosslab_exchange/first-post/index.html",
+    "href": "projects/crosslab_exchange/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "projects/summer_school/index.html",
+    "href": "projects/summer_school/index.html",
+    "title": "Summer School",
     "section": "",
     "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/sustainability/index.html",
-    "href": "projects/sustainability/index.html",
-    "title": "Sustainability",
-    "section": "",
-    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/forecasting/index.html",
-    "href": "projects/forecasting/index.html",
-    "title": "Time Series Forecasting",
-    "section": "",
-    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/data_science/third-post/index.html",
-    "href": "projects/data_science/third-post/index.html",
+    "objectID": "projects/africast/third-post/index.html",
+    "href": "projects/africast/third-post/index.html",
     "title": "Third Blog Post",
     "section": "",
     "text": "The source for any page in your website could also be a Jupyter Notebook. This one is third-post/index.ipynb.\nHere’s an example I borrowed from the Seaborn docs:\n\nimport seaborn as sns\n\nsns.set_theme(style=\"whitegrid\")\n\n# Load the diamonds dataset\ndiamonds = sns.load_dataset(\"diamonds\")\n\n# Plot the distribution of clarity ratings, conditional on carat\nsns.displot(\n    data=diamonds,\n    x=\"carat\", hue=\"cut\",\n    kind=\"kde\", height=4, aspect=1.5,\n    multiple=\"fill\", clip=(0, None),\n    palette=\"ch:rot=-.25,hue=1,light=.75\",   \n)"
   },
   {
-    "objectID": "projects/data_science/scond-post/index.html",
-    "href": "projects/data_science/scond-post/index.html",
+    "objectID": "projects/africast/scond-post/index.html",
+    "href": "projects/africast/scond-post/index.html",
     "title": "Second Post",
     "section": "",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Amet cursus sit amet dictum sit amet. Eget duis at tellus at urna condimentum. Convallis aenean et tortor at risus viverra. Tincidunt ornare massa eget egestas purus viverra accumsan. Et malesuada fames ac turpis egestas. At imperdiet dui accumsan sit amet. Ut ornare lectus sit amet est placerat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Mattis enim ut tellus elementum sagittis. Dui id ornare arcu odio ut. Natoque penatibus et magnis dis. Libero justo laoreet sit amet cursus sit. Sed faucibus turpis in eu. Tempus iaculis urna id volutpat lacus laoreet.\nPhasellus vestibulum lorem sed risus. Eget felis eget nunc lobortis mattis. Sit amet aliquam id diam maecenas ultricies. Egestas maecenas pharetra convallis posuere morbi. Etiam erat velit scelerisque in dictum non consectetur a erat. Cras fermentum odio eu feugiat pretium nibh ipsum consequat. Viverra accumsan in nisl nisi scelerisque. Et netus et malesuada fames ac. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Eget lorem dolor sed viverra ipsum nunc aliquet. Ultrices dui sapien eget mi proin sed libero enim sed. Ultricies mi eget mauris pharetra et ultrices neque. Ipsum suspendisse ultrices gravida dictum. A arcu cursus vitae congue mauris rhoncus aenean vel. Gravida arcu ac tortor dignissim convallis. Nulla posuere sollicitudin aliquam ultrices."
+  },
+  {
+    "objectID": "projects/africast/first-post/index.html",
+    "href": "projects/africast/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+  },
+  {
+    "objectID": "projects/africast/index.html",
+    "href": "projects/africast/index.html",
+    "title": "Data Science",
+    "section": "",
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\nPost description for second post\n\n\n\n\n\nMay 23, 2021\n\n\nAlicia\n\n\n\n\n\n\n\n\n\n\n\n\nThird Blog Post\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\n\n\nMay 24, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/summer_school/first-post/index.html",
+    "href": "projects/summer_school/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
   },
   {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Data Science\n\n\nMy data sceince projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability\n\n\nMy sustainability projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability\n\n\nMy sustainability projects.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series Forecasting\n\n\nMy forecasting projects.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nData Science\n\n\nMy data sceince projects.\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series Forecasting\n\n\nMy forecasting projects.\n\n\n\n\n\n\n\n\n\n\n\n\nSummer School\n\n\nMy sustainability projects.\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability\n\n\nMy sustainability projects.\n\n\n\n\n\n\n\n\n\n\n\n\nSustainability\n\n\nMy sustainability projects.\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/data_science/first-post/index.html",
-    "href": "projects/data_science/first-post/index.html",
-    "title": "First Post",
+    "objectID": "projects/crosslab_exchange/index.html",
+    "href": "projects/crosslab_exchange/index.html",
+    "title": "Sustainability",
     "section": "",
-    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/data_science/index.html",
-    "href": "projects/data_science/index.html",
-    "title": "Data Science",
+    "objectID": "projects/democratising_forecasting/index.html",
+    "href": "projects/democratising_forecasting/index.html",
+    "title": "Time Series Forecasting",
     "section": "",
-    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\nPost description for second post\n\n\n\n\n\nMay 23, 2021\n\n\nAlicia\n\n\n\n\n\n\n\n\n\n\n\n\nThird Blog Post\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\n\n\nMay 24, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/forecasting/first-post/index.html",
-    "href": "projects/forecasting/first-post/index.html",
-    "title": "First Post",
+    "objectID": "projects/f4sg/index.html",
+    "href": "projects/f4sg/index.html",
+    "title": "Sustainability",
     "section": "",
-    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+    "text": "First Post\n\n\nPost description for first post\n\n\n\n\n\nMay 22, 2021\n\n\nHarsha\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/sustainability/first-post/index.html",
-    "href": "projects/sustainability/first-post/index.html",
-    "title": "First Post",
+    "objectID": "supervision/index.html",
+    "href": "supervision/index.html",
+    "title": "PhD and MSc Supervision",
     "section": "",
-    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+    "text": "# Downloading packages -------------------------------------------------------\n- Downloading readr from CRAN ...               OK [292.2 Kb in 0.12s]\n- Downloading clipr from CRAN ...               OK [21.4 Kb]\n- Downloading crayon from CRAN ...              OK [39.4 Kb]\n- Downloading hms from CRAN ...                 OK [43.7 Kb]\n- Downloading pkgconfig from CRAN ...           OK [5.9 Kb]\n- Downloading vctrs from CRAN ...               OK [946.4 Kb in 0.15s]\n- Downloading tibble from CRAN ...              OK [574.9 Kb in 0.13s]\n- Downloading magrittr from CRAN ...            OK [275.2 Kb in 0.12s]\n- Downloading pillar from CRAN ...              OK [399.9 Kb in 0.12s]\n- Downloading utf8 from CRAN ...                OK [238.1 Kb in 0.12s]\n- Downloading vroom from CRAN ...               OK [613.4 Kb in 0.14s]\n- Downloading bit64 from CRAN ...               OK [138.7 Kb in 0.11s]\n- Downloading bit from CRAN ...                 OK [297.4 Kb in 0.12s]\n- Downloading tidyselect from CRAN ...          OK [101.2 Kb]\n- Downloading withr from CRAN ...               OK [100.8 Kb]\n- Downloading tzdb from CRAN ...                OK [586.6 Kb in 0.14s]\n- Downloading cpp11 from CRAN ...               OK [285.1 Kb in 0.12s]\n- Downloading progress from CRAN ...            OK [29.8 Kb]\n- Downloading prettyunits from CRAN ...         OK [95.2 Kb in 0.13s]\n- Downloading dplyr from CRAN ...               OK [1.2 Mb in 0.16s]\n- Downloading generics from CRAN ...            OK [46.1 Kb]\n- Downloading reactable from CRAN ...           OK [958.2 Kb in 0.2s]\n- Downloading htmlwidgets from CRAN ...         OK [848.5 Kb in 0.15s]\n- Downloading reactR from CRAN ...              OK [695.7 Kb in 0.14s]\nSuccessfully downloaded 24 packages in 6.8 seconds.\n\nThe following package(s) will be installed:\n- bit         [4.6.0]\n- bit64       [4.6.0-1]\n- clipr       [0.8.0]\n- cpp11       [0.5.2]\n- crayon      [1.5.3]\n- dplyr       [1.1.4]\n- generics    [0.1.4]\n- hms         [1.1.4]\n- htmlwidgets [1.6.4]\n- magrittr    [2.0.4]\n- pillar      [1.11.1]\n- pkgconfig   [2.0.3]\n- prettyunits [1.2.0]\n- progress    [1.2.3]\n- reactable   [0.4.5]\n- reactR      [0.6.1]\n- readr       [2.1.6]\n- tibble      [3.3.0]\n- tidyselect  [1.2.1]\n- tzdb        [0.5.0]\n- utf8        [1.2.6]\n- vctrs       [0.6.5]\n- vroom       [1.6.7]\n- withr       [3.0.2]\nThese packages will be installed into \"~/work/bahmanrostamitabar.github.io/bahmanrostamitabar.github.io/renv/library/R-4.2/x86_64-pc-linux-gnu\".\n\nThe following required system packages are not installed:\n- libx11-dev  [required by clipr]\nThe R packages depending on these system packages may fail to install.\n\nAn administrator can install these packages with:\n- sudo apt install libx11-dev\n\n# Installing packages --------------------------------------------------------\n- Installing clipr ...                          OK [built from source and cached in 1.1s]\n- Installing crayon ...                         OK [built from source and cached in 1.7s]\n- Installing pkgconfig ...                      OK [built from source and cached in 1.0s]\n- Installing vctrs ...                          OK [built from source and cached in 16s]\n- Installing hms ...                            OK [built from source and cached in 1.7s]\n- Installing magrittr ...                       OK [built from source and cached in 1.3s]\n- Installing utf8 ...                           OK [built from source and cached in 10s]\n- Installing pillar ...                         OK [built from source and cached in 3.4s]\n- Installing tibble ...                         OK [built from source and cached in 3.3s]\n- Installing bit ...                            OK [built from source and cached in 5.4s]\n- Installing bit64 ...                          OK [built from source and cached in 5.9s]\n- Installing withr ...                          OK [built from source and cached in 1.6s]\n- Installing tidyselect ...                     OK [built from source and cached in 2.2s]\n- Installing cpp11 ...                          OK [built from source and cached in 1.2s]\n- Installing tzdb ...                           OK [built from source and cached in 11s]\n- Installing prettyunits ...                    OK [built from source and cached in 1.3s]\n- Installing progress ...                       OK [built from source and cached in 1.9s]\n- Installing vroom ...                          OK [built from source and cached in 56s]\n- Installing readr ...                          OK [built from source and cached in 28s]\n- Installing generics ...                       OK [built from source and cached in 1.3s]\n- Installing dplyr ...                          OK [built from source and cached in 9.2s]\n- Installing htmlwidgets ...                    OK [built from source and cached in 1.8s]\n- Installing reactR ...                         OK [built from source and cached in 1.5s]\n- Installing reactable ...                      OK [built from source and cached in 2.0s]\nSuccessfully installed 24 packages in 2.8 minutes."
   },
   {
-    "objectID": "projects/who-evm/first-post/index.html",
-    "href": "projects/who-evm/first-post/index.html",
-    "title": "First Post",
-    "section": "",
-    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae."
+    "objectID": "supervision/index.html#phd-supervision",
+    "href": "supervision/index.html#phd-supervision",
+    "title": "PhD and MSc Supervision",
+    "section": "PhD Supervision",
+    "text": "PhD Supervision"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bahman Rostami-Tabar",
-    "section": "",
-    "text": "I am a Professor of Analytics & Decision Sciences at Cardiff Business School, Cardiff University, UK. I am interested in transforming data into insights for making better decisions. I am the founder and director of Data Lab for Social Good at Cardiff Business School and the founder of Forecasting for Social Good (F4SG) i nitiativessponsored by the International Institute of Forecasters. He is also leading the Uncertainty & the Future theme at the Digital Transformation Innovation Institute.\nBahman is passionate about uncertainty and the future. He specialises in the development and application of probabilistic modelling, forecasting, and operational research tools and techniques, providing informed insights for policy & decision-making processes in facing uncertain futures, and his research has contributed to sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, agriculture and food, social sustainability, and governmental policy. ."
+    "objectID": "supervision/index.html#msc-supervision",
+    "href": "supervision/index.html#msc-supervision",
+    "title": "PhD and MSc Supervision",
+    "section": "MSc Supervision",
+    "text": "MSc Supervision"
   },
   {
     "objectID": "blog/index.html",
@@ -135,37 +317,345 @@
   {
     "objectID": "about/index.html",
     "href": "about/index.html",
-    "title": "Who am I",
+    "title": "About Me",
     "section": "",
-    "text": "I have a Kurdish heritage, born and raised in a small town in the West part of Iran, just half-an hour drive to Kurdish Iraqi border.\nAfter high school, I moved to Tehran and studied Industrial Engineering, receiving my BSc. from K.N.Toosi University of Technology (2004). Following my graduation, I have worked in various companies in different industries as planning engineer in Tehran and South of Iran. I then decided to continue my studies and recieved my MSc in Industrial Engineering from Tarabiat Modares University(2008). After working in the project managemt filed for two years, I decided to pursue my PhD in France. I moved to France in 2009 and recieved my PhD from the University of Bordeuax, France in 2014. Following that, I have spent two years at Ecole Central-Supelec for my post doctoral reserach.\nI am now a Professor in Data-Driven Decision Science at Cardiff University.\nI am very passionate about forecasting, analytics, modeling and knowledge sharing. I have created Forecasting for Social Good initiative sponsored by the International Institute of forecasters.\nI am the founder and the Director of the Data Lab for Social Good Research Group at Cardiff University.\nI specialise in the development and application of forecasting and management science tools and techniques. My focus lies in leveraging these methodologies to provide informed insights for planning & decision-making in sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, social sustainability, and governmental policy"
+    "text": "The following bio and this photo may be used in media releases without further permission.\n\nRob J Hyndman FAA FASSA is a Professor of Statistics in the Department of Econometrics and Business Statistics at Monash University, and an elected Fellow of both the Australian Academy of Science and the Academy of Social Sciences in Australia. He is the author of over 200 research papers and 5 books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. In 2021, he received the Pitman medal from the Statistical Society of Australia. For 40 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.\n\n\n\n\n\n Curriculum Vitae\n\n\n{{&lt; ai google-scholar &gt;}} Google Scholar\n\n\n{{&lt; ai semantic-scholar &gt;}} Semantic Scholar\n\n\n\n\n\n{{&lt; ai orcid &gt;}} ORCID\n\n\n{{&lt; ai scopus &gt;}} Scopus\n\n\n{{&lt; ai arxiv &gt;}} arXiv\n\n\n\n\n\n RePEc\n\n\n GitHub\n\n\n Wikipedia"
+  },
+  {
+    "objectID": "about/index.html#bio",
+    "href": "about/index.html#bio",
+    "title": "About Me",
+    "section": "",
+    "text": "The following bio and this photo may be used in media releases without further permission.\n\nRob J Hyndman FAA FASSA is a Professor of Statistics in the Department of Econometrics and Business Statistics at Monash University, and an elected Fellow of both the Australian Academy of Science and the Academy of Social Sciences in Australia. He is the author of over 200 research papers and 5 books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. In 2021, he received the Pitman medal from the Statistical Society of Australia. For 40 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.\n\n\n\n\n\n Curriculum Vitae\n\n\n{{&lt; ai google-scholar &gt;}} Google Scholar\n\n\n{{&lt; ai semantic-scholar &gt;}} Semantic Scholar\n\n\n\n\n\n{{&lt; ai orcid &gt;}} ORCID\n\n\n{{&lt; ai scopus &gt;}} Scopus\n\n\n{{&lt; ai arxiv &gt;}} arXiv\n\n\n\n\n\n RePEc\n\n\n GitHub\n\n\n Wikipedia"
+  },
+  {
+    "objectID": "about/index.html#address",
+    "href": "about/index.html#address",
+    "title": "About Me",
+    "section": "Address",
+    "text": "Address\nMail: Department of Econometrics & Business Statistics, Monash University, Clayton VIC 3800, Australia.\nOffice: Room 355, 29 Ancora Imparo Way, Clayton campus, Monash University, VIC 3800, Australia."
+  },
+  {
+    "objectID": "about/index.html#qualifications",
+    "href": "about/index.html#qualifications",
+    "title": "About Me",
+    "section": "Qualifications",
+    "text": "Qualifications\n\nB.Sc.(Hons), University of Melbourne, 1988.\nPh.D., University of Melbourne, 1992.\nA.Stat., Statistical Society of Australia, 2000."
+  },
+  {
+    "objectID": "about/index.html#employment-history",
+    "href": "about/index.html#employment-history",
+    "title": "About Me",
+    "section": "Employment history",
+    "text": "Employment history\n\nProfessor, Department of Econometrics & Business Statistics, Monash University, 2003–.\nKNAW Visiting Professor, TU/Eindhoven, Netherlands, 2016.\nVisiting Senior Research Fellow, Mathematical Sciences Institute, Australian National University, 2002.\nAssociate Professor, Department of Econometrics & Business Statistics, Monash University, 2001–2003.\nSenior Lecturer, Department of Econometrics & Business Statistics, Monash University, 1998–2000.\nVisiting Professor, Department of Statistics, Colorado State University, 1998.\nSenior Lecturer, Department of Mathematics and Statistics, Monash University, 1997–1998.\nLecturer, Department of Mathematics and Statistics, Monash University, 1995–1996.\nLecturer, Department of Statistics, University of Melbourne, 1993–1994.\nStatistical consultant, Department of Statistics, University of Melbourne, 1985–1992."
+  },
+  {
+    "objectID": "about/index.html#fellowships",
+    "href": "about/index.html#fellowships",
+    "title": "About Me",
+    "section": "Fellowships",
+    "text": "Fellowships\nI am a fellow of the following organizations:\n\nAustralian Academy of Science\nAcademy of the Social Sciences in Australia\nInternational Institute of Forecasters"
+  },
+  {
+    "objectID": "about/index.html#society-memberships",
+    "href": "about/index.html#society-memberships",
+    "title": "About Me",
+    "section": "Society memberships",
+    "text": "Society memberships\n\nElected member, International Statistical Institute\nMember, International Association for Statistical Computing\nMember, International Association for Statistical Education\nMember, International Society for Business and Industrial Statistics\nMember, Statistical Society of Australia\nMember, Foundation for Open Access Statistics"
+  },
+  {
+    "objectID": "about/index.html#society-leadership",
+    "href": "about/index.html#society-leadership",
+    "title": "About Me",
+    "section": "Society leadership",
+    "text": "Society leadership\n\nDirector, International Institute of Forecasters, 2005–2018.\nMember, Scientific Program Advisory Group, Statistical Society of Australia, 2001–2004\nCentral Council member, Statistical Society of Australia, 1993–1996.\nSecretary, Victorian branch, Statistical Society of Australia, 1993–1995."
+  },
+  {
+    "objectID": "about/index.html#academic-and-research-leadership",
+    "href": "about/index.html#academic-and-research-leadership",
+    "title": "About Me",
+    "section": "Academic and research leadership",
+    "text": "Academic and research leadership\n\nHead, Department of Econometrics & Business Statistics, Monash University. 2019–2022.\nDirector, Business & Economic Forecasting Unit, Monash University. 2001–2017.\nDirector of Consulting, Econometrics and Business Statistics, Monash University. 2000–2014.\nDirector, Monash University Statistical Consulting Service, 1997–1998.\nDirector, Key Centre for Statistical Science, 1996–1998."
+  },
+  {
+    "objectID": "about/index.html#editorial-boards",
+    "href": "about/index.html#editorial-boards",
+    "title": "About Me",
+    "section": "Editorial boards",
+    "text": "Editorial boards\n\nExecutive Editor, The R Journal (2023–2026).\nEditor, Journal of Statistical Software (2011–2025).\nEditor, NEP forecasting report (2005–2025).\nEditor-in-Chief, International Journal of Forecasting (2005–2018).\nAssociate Editor, International Journal of Forecasting (2001–2004, 2019–).\nTheory and Methods Editor, Australian & New Zealand Journal of Statistics (2001–2004)."
+  },
+  {
+    "objectID": "about/index.html#advisory-boards",
+    "href": "about/index.html#advisory-boards",
+    "title": "About Me",
+    "section": "Advisory boards",
+    "text": "Advisory boards\n\nMember of the Scaling committee, Victorian Tertiary Admissions Centre. This committee is responsible for producing the ATAR for VCE students (1994–).\nMember of the ATAR Technical Group for the Australasian Conference of Tertiary Admissions Centres (2003–).\nMember of the National COVID-19 Epidemic Situational Assessment team (2020–2023).\nMember of the Indigenous Statistical and Information Advisory Group for the Australian Institute of Health and Welfare (2017–2023).\nMember of the Methodology Advisory Committee for the Australian Bureau of Statistics (2010–2018)."
+  },
+  {
+    "objectID": "about/index.html#conference-organization",
+    "href": "about/index.html#conference-organization",
+    "title": "About Me",
+    "section": "Conference organization",
+    "text": "Conference organization\n\nChair, IIF Workshop on Forecast Reconciliation, 2023.\nOrganizing committee, UserR! 2018.\nOrganizing committee, Shonan high-dimensional time series workshop, 2018.\nGeneral Chair, International Symposium on Forecasting, 2017.\nProgram Chair, International Symposium on Forecasting, 2012.\nProgram Co-Chair, International Symposium on Forecasting, 2004."
+  },
+  {
+    "objectID": "about/index.html#awards-and-honours",
+    "href": "about/index.html#awards-and-honours",
+    "title": "About Me",
+    "section": "Awards and honours",
+    "text": "Awards and honours\n\nHighly-Cited Researcher, Clarivate Analytics (2025)\nThe Australian Lead Researcher in Probability & Statistics with Application (2024)\nAustralian Awards for University Teaching citation for outstanding contributions to student learning (2022)\nPitman Medal, Statistical Society of Australia (2021)\nVice-Chancellor’s Award for Innovation in Learning and Teaching (2021)\nMSA Teaching Excellence Award for Business and Economics, Monash Student Association (2020)\nDean’s Award for Innovation in Learning and Teaching, Monash Business School (2020)\nCommendation for the Dean’s Award for Research Impact, Monash Business School (2018)\nNominee for MPA Supervisor of the Year, Monash Postgraduate Association (2014)\nDean’s Award for Excellence in Innovation and External Collaboration, Monash Business School (2010)\nHP Innovation Research Award (2010)\nDean’s Award for Excellence in Research, Monash Business School (2008)\nVice-Chancellor’s Award for Postgraduate Supervisor of the Year, Monash University (2008)\nMoran Medal for Statistical Science, Australian Academy of Science (2007)\nAward for excellence in teaching, Monash Science Society (1998)\nFinalist, Channel Ten Young Achiever Awards (1990)\nDwights Prize in Statistics, University of Melbourne (1988)\nNorma McArthur Prize in Statistics, University of Melbourne (1987)\nSecond Maurice H Belz Prize in Statistics, University of Melbourne (1986)"
+  },
+  {
+    "objectID": "about/index.html#in-the-news",
+    "href": "about/index.html#in-the-news",
+    "title": "About Me",
+    "section": "In the news",
+    "text": "In the news\nHere is a list of recent news articles about me."
+  },
+  {
+    "objectID": "about/index.html#trivia",
+    "href": "about/index.html#trivia",
+    "title": "About Me",
+    "section": "Trivia",
+    "text": "Trivia\nMy mathematical genealogy goes back to Leibniz, Bernoulli, Euler, Lagrange and Poisson.\nMy Erdös number is 3 in two different ways.\n\nvia Peter Brockwell / Kai-Lai Chung / Paul Erdös\nvia J. Keith Ord / Peter C Fishburn / Paul Erdös"
+  },
+  {
+    "objectID": "about/index.html#other-interests",
+    "href": "about/index.html#other-interests",
+    "title": "About Me",
+    "section": "Other interests",
+    "text": "Other interests\n\nI play tennis for the Heathmont Parker Reserve Tennis Club, and I’m coached by Ben Longridge.\nPreviously I played cricket for the Heathwood Cricket Club. I’m also an accredited umpire with Cricket Australia."
+  },
+  {
+    "objectID": "about/index.html#family-websites",
+    "href": "about/index.html#family-websites",
+    "title": "About Me",
+    "section": "Family websites",
+    "text": "Family websites\n\nLeanne Hyndman\nTimothy Hyndman\nDave Hyndman\n\nI have a Kurdish heritage, born and raised in a small town in the West part of Iran, just half-an hour drive to Kurdish Iraqi border.\nAfter high school, I moved to Tehran and studied Industrial Engineering, receiving my BSc. from K.N.Toosi University of Technology (2004). Following my graduation, I have worked in various companies in different industries as planning engineer in Tehran and South of Iran. I then decided to continue my studies and recieved my MSc in Industrial Engineering from Tarabiat Modares University(2008). After working in the project managemt filed for two years, I decided to pursue my PhD in France. I moved to France in 2009 and recieved my PhD from the University of Bordeuax, France in 2014. Following that, I have spent two years at Ecole Central-Supelec for my post doctoral reserach.\nI am now a Professor in Data-Driven Decision Science at Cardiff University.\nI am very passionate about forecasting, analytics, modeling and knowledge sharing. I have created Forecasting for Social Good initiative sponsored by the International Institute of forecasters.\nI am the founder and the Director of the Data Lab for Social Good Research Group at Cardiff University.\nI specialise in the development and application of forecasting and management science tools and techniques. My focus lies in leveraging these methodologies to provide informed insights for planning & decision-making in sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, social sustainability, and governmental policy"
   },
   {
     "objectID": "about/index.html#education",
     "href": "about/index.html#education",
-    "title": "Who am I",
+    "title": "About Me",
     "section": "Education",
     "text": "Education\n\nPhD in Industrial Engineering, 2014, University of Bordeaux\nMSc. in Information Systems, 2010, ECE Paris\nMSc. in Industrial Engineering, 2008, Tarbiat Modares University\nBSc. in Industrial Engineering, 2004, K.N.Toosi University of Technology"
   },
   {
     "objectID": "about/index.html#research-interests",
     "href": "about/index.html#research-interests",
-    "title": "Who am I",
+    "title": "About Me",
     "section": "Research interests",
     "text": "Research interests\n\nUncertainty and the future\nForecasting for Social Good\nForecasting by aggregation\nTime Series Forecasting\nHealth care operations\nGlobal health and humanitarian supply chain"
   },
   {
-    "objectID": "publications/working_papers/index.html",
-    "href": "publications/working_papers/index.html",
-    "title": "Working Papers",
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
     "section": "",
-    "text": "Title\n\n\n\nDescription\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nWe study judgmental forecast adjustments in pre-promotional (normal), promotional and post-promotional periods via behavioral experiments. Forecasters need structured support to make effective adjustments during post-promotional periods. The…\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Year - Oldest\n      \n      \n        Year - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nYear\n\n\n\nTitle\n\n\n\nAuthors\n\n\n\n\n\n\n\n\nJan 1, 2021\n\n\nForecasting: Principles and Practice\n\n\nRob J Hyndman, George Athanasopoulos\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "publications/book_chapters/index.html",
-    "href": "publications/book_chapters/index.html",
-    "title": "Book Chapters",
+    "objectID": "publications/index.html#books",
+    "href": "publications/index.html#books",
+    "title": "Publications",
     "section": "",
-    "text": "Title\n\n\n\nDescription\n\n\n\nKeywords\n\n\n\n\n\n\n\n\nHarsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.\n\n\nWe study judgmental forecast adjustments in pre-promotional (normal), promotional and post-promotional periods via behavioral experiments. Forecasters need structured support to make effective adjustments during post-promotional periods. The…\n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Year - Oldest\n      \n      \n        Year - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nYear\n\n\n\nTitle\n\n\n\nAuthors\n\n\n\n\n\n\n\n\nJan 1, 2021\n\n\nForecasting: Principles and Practice\n\n\nRob J Hyndman, George Athanasopoulos\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/index.html#journal-articles",
+    "href": "publications/index.html#journal-articles",
+    "title": "Publications",
+    "section": "Journal Articles",
+    "text": "Journal Articles\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Year - Oldest\n      \n      \n        Year - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nYear\n\n\n\nTitle\n\n\n\nAuthors\n\n\n\nJournal\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nThe value of point of sales information in upstream supply chain forecasting: An empirical investigation\n\n\ncharacter(0) \n\n\nInternational Journal of Production Research, Volume 61, Issue 7, Pages 2162-2177\n\n\n\n\n\n\nInvalid Date\n\n\nDemand forecasting in supply chains: A review of aggregation and hierarchical approaches\n\n\ncharacter(0) \n\n\nInternational Journal of Production Research, Pages 1-25\n\n\n\n\n\n\nInvalid Date\n\n\nChallenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes\n\n\ncharacter(0) \n\n\nJournal of the Operational Research Society, Volume 74, Issue 10, Pages 2215-2226\n\n\n\n\n\n\nInvalid Date\n\n\nThe role of technology in developing resilient supply chains: A systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions\n\n\ncharacter(0) \n\n\nJournal of Humanitarian Logistics and Supply Chain Management\n\n\n\n\n\n\nInvalid Date\n\n\nForecasting hierarchical time series in supply chains: An empirical investigation\n\n\ncharacter(0) \n\n\nInternational Journal of Production Research, Pages 1-20\n\n\n\n\n\n\nInvalid Date\n\n\nForecasting aggregate ARMA (1, 1) demands: Theoretical analysis of top-down versus bottom-up\n\n\ncharacter(0) \n\n\nProceedings of 2013 international conference on industrial engineering and systems management (IESM), Pages 1-8\n\n\n\n\n\n\nInvalid Date\n\n\nAnticipating special events in emergency department forecasting\n\n\ncharacter(0) \n\n\nInternational Journal of Forecasting\n\n\n\n\n\n\nInvalid Date\n\n\nA hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning\n\n\ncharacter(0) \n\n\nJournal of the Operational Research Society, Pages 1-25\n\n\n\n\n\n\nInvalid Date\n\n\nForecasting COVID-19 daily cases using phone call data\n\n\ncharacter(0) \n\n\nApplied soft computing, Volume 100, Pages 106932\n\n\n\n\n\n\nInvalid Date\n\n\nA novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions\n\n\ncharacter(0) \n\n\nInternational Journal of Production Research, Pages 1-35\n\n\n\n\n\n\nInvalid Date\n\n\nInvestigating length of stay patterns and its predictors in the south wales trauma network\n\n\ncharacter(0) \n\n\nAdvances in rehabilitation science and practice, Volume 13, Pages 27536351241237866\n\n\n\n\n\n\nInvalid Date\n\n\nThe value of forecast accuracy foir emergency department staffing decisions\n\n\ncharacter(0) \n\n\nUnder review in IEEE Transactions on Engineering Management\n\n\n\n\n\n\nInvalid Date\n\n\nLooking for the crystal ball in unscheduled care: A systematic literature review of the forecasting process\n\n\ncharacter(0) \n\n\nHealth Care Management Science, Pages 1-17\n\n\n\n\n\n\nInvalid Date\n\n\nThe missing puzzle piece: Contextual insights for enhanced pharmaceutical supply chain forecasting\n\n\ncharacter(0) \n\n\nInternational Journal of Production Research, Pages 1-19\n\n\n\n\n\n\nInvalid Date\n\n\nExploring the association between time series features and forecasting by temporal aggregation using machine learning\n\n\ncharacter(0) \n\n\nNeurocomputing, Pages 126376\n\n\n\n\n\n\nInvalid Date\n\n\nForecasting: Theory and practice\n\n\ncharacter(0) \n\n\nInternational Journal of Forecasting\n\n\n\n\n\n\nInvalid Date\n\n\nA novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions\n\n\ncharacter(0) \n\n\nUnder review in Production and Operations Management\n\n\n\n\n\n\nInvalid Date\n\n\nNeural network approach to lumpy demand forecasting for spare parts in process industries\n\n\ncharacter(0) \n\n\n2008 international conference on computer and communication engineering, Pages 1378-1382\n\n\n\n\n\n\nInvalid Date\n\n\nA note on the forecast performance of temporal aggregation\n\n\ncharacter(0) \n\n\nNaval Research Logistics (NRL)\n\n\n\n\n\n\nInvalid Date\n\n\nDemand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?\n\n\ncharacter(0) \n\n\nJournal of Business Research, Volume 78, Pages 1-9\n\n\n\n\n\n\nInvalid Date\n\n\nOn the performance of temporal demand aggregation when optimal forecasting is used\n\n\ncharacter(0) \n\n\nInternational conference on information systems, logistics and supply chain\n\n\n\n\n\n\nInvalid Date\n\n\nARIMA demand forecasting by aggregation\n\n\ncharacter(0) \n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nThe impact of advance demand information on the performance of production/inventory systems\n\n\ncharacter(0) \n\n\nIFAC-PapersOnLine, Volume 48, Pages 1744-1749\n\n\n\n\n\n\nInvalid Date\n\n\nA hybrid neural network and traditional approach for forecasting lumpy demand\n\n\ncharacter(0) \n\n\nProceedings of the World Academy of Science, Engineering and Technology, Volume 2\n\n\n\n\n\n\nInvalid Date\n\n\nForecasting interrupted time series\n\n\ncharacter(0) \n\n\nJournal of the Operational Research Society, Volume 76, Issue 4, Pages 790-803\n\n\n\n\n\n\nInvalid Date\n\n\nTo aggregate or not to aggregate: Forecasting of finite autocorrelated demand\n\n\ncharacter(0) \n\n\nJournal of the Operational Research Society, Volume 74, Issue 8, Pages 1840-1859\n\n\n\n\n\n\nInvalid Date\n\n\nEmergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution\n\n\ncharacter(0) \n\n\nUnder review in Computer in Industry\n\n\n\n\n\n\nInvalid Date\n\n\nTowards socially responsible forecasting: Identifying and typifying forecasting harms\n\n\ncharacter(0) \n\n\nUnder review in International Journal of Forecasting\n\n\n\n\n\n\nInvalid Date\n\n\nForecasting for lead-time period by temporal aggregation: Whether to combine and how\n\n\ncharacter(0) \n\n\nComputers in Industry, Volume 145, Pages 103803\n\n\n\n\n\n\nInvalid Date\n\n\nIntegrated demand forecasting and planning model for repairable spare part: An empirical investigation\n\n\ncharacter(0) \n\n\nInternational Journal of Production Research, Volume 61, Issue 20, Pages 6791-6807\n\n\n\n\n\n\nInvalid Date\n\n\nProbabilistic forecasting of hourly emergency department arrivals\n\n\ncharacter(0) \n\n\nHealth Systems, Pages 1-17\n\n\n\n\n\n\nInvalid Date\n\n\nProbabilistic forecasting of daily COVID-19 admissions using machine learning\n\n\ncharacter(0) \n\n\nIMA Journal of Management Mathematics, Volume 35, Issue 1, Pages 21-43\n\n\n\n\n\n\nInvalid Date\n\n\nAlliance or apathy? Forecasting’s role in achieving the UN sustainable development goals\n\n\ncharacter(0) \n\n\nForesight: The International Journal of Applied Forecasting, Issue 74\n\n\n\n\n\n\nInvalid Date\n\n\nThe impact of temporal aggregation on demand forecasting of ARMA(1, 1) process: Theoretical analysis\n\n\ncharacter(0) \n\n\nManufacturing modelling, management, and control, Pages 1696-1701\n\n\n\n\n\n\nInvalid Date\n\n\nNon-stationary demand forecasting by cross-sectional aggregation\n\n\ncharacter(0) \n\n\nInternational Journal of Production Economics, Volume 170, Pages 297-309\n\n\n\n\n\n\nInvalid Date\n\n\nA hybrid LSTM method for forecasting demands of medical items in humanitarian operations\n\n\ncharacter(0) \n\n\nInternational Journal of Production Research, Pages 1-18\n\n\n\n\n\n\nInvalid Date\n\n\nA systematic literature review of trauma systems: An operations management perspective\n\n\ncharacter(0) \n\n\nAdvances in Rehabilitation Science and Practice, Volume 14, Pages 27536351241310645\n\n\n\n\n\n\nInvalid Date\n\n\nDemand forecasting by temporal aggregation\n\n\ncharacter(0) \n\n\nNaval Research Logistics (NRL), Volume 60, Issue 6, Pages 479-498\n\n\n\n\n\n\nInvalid Date\n\n\nOn the order-up-to policy with intermittent integer demand and logically consistent forecasts\n\n\ncharacter(0) \n\n\nInternational Journal of Production Economics, Volume 257, Pages 108763\n\n\n\n\n\n\nInvalid Date\n\n\nExamining digital twins applications, challenges and benefits in healthcare: A systematic literature review\n\n\ncharacter(0) \n\n\nUnder review in IEEE Transactions on Engineering Management\n\n\n\n\n\n\nInvalid Date\n\n\nFORECASTING AUTOREGRESSIVE DEMANDS WITH TEMPORAL AGGREGATION\n\n\ncharacter(0) \n\n\n9th international conference on modeling, optimization & SIMulation\n\n\n\n\n\n\nInvalid Date\n\n\nA novel ranking procedure for forecasting approaches using data envelopment analysis\n\n\ncharacter(0) \n\n\nTechnological Forecasting and Social Change, Volume 111, Pages 235-243\n\n\n\n\n\n\nInvalid Date\n\n\nUsing simulation for long-term bed modelling in critical care\n\n\ncharacter(0) \n\n\nJournal of Simulation, Pages 1-17\n\n\n\n\n\n\nInvalid Date\n\n\nHierarchical time series forecasting in emergency medical services\n\n\ncharacter(0) \n\n\nJournal of Service Research, Pages 10946705241232169\n\n\n\n\n\n\nJun 1, 2024\n\n\nForecasting Interrupted Time Series\n\n\nBahman Rostami-Tabar, Rob J Hyndman\n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nPatient length of stay in trauma networks: Insights from advanced modelling\n\n\ncharacter(0) \n\n\nExpert Systems with Applications, Pages 127801\n\n\n\n\n\n\nInvalid Date\n\n\nForecasting for social good\n\n\ncharacter(0) \n\n\nInternational Journal of Forecasting\n\n\n\n\n\n\nInvalid Date\n\n\nThe impact of temporal aggregation on supply chains with ARMA (1, 1) demand processes\n\n\ncharacter(0) \n\n\nEuropean Journal of Operational Research, Volume 273, Issue 3, Pages 920-932\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/index.html#working-papers",
+    "href": "publications/index.html#working-papers",
+    "title": "Publications",
+    "section": "Working Papers",
+    "text": "Working Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Year - Oldest\n      \n      \n        Year - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nYear\n\n\n\nTitle\n\n\n\nAuthors\n\n\n\n\n\n\n\n\nFeb 1, 2025\n\n\nHierarchical Forecasting Models for Emergency Medical Services\n\n\nBahman Rostami-Tabar, Rob J Hyndman\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/index.html#book-chapters",
+    "href": "publications/index.html#book-chapters",
+    "title": "Publications",
+    "section": "Book Chapters",
+    "text": "Book Chapters\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Year - Oldest\n      \n      \n        Year - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nYear\n\n\n\nTitle\n\n\n\nAuthors\n\n\n\nBook\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\nHierarchical Time Series Forecasting\n\n\nBahman Rostami-Tabar, Rob J Hyndman\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/index.html#conference-proceedings",
+    "href": "publications/index.html#conference-proceedings",
+    "title": "Publications",
+    "section": "Conference Proceedings",
+    "text": "Conference Proceedings\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Year - Oldest\n      \n      \n        Year - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nYear\n\n\n\nTitle\n\n\n\nAuthors\n\n\n\n\n\n\n\n\nJul 1, 2024\n\n\nCross-Temporal Forecast Reconciliation\n\n\nDaniele Girolimetto, George Athanasopoulos, Rob J Hyndman\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/index.html#reports",
+    "href": "publications/index.html#reports",
+    "title": "Publications",
+    "section": "Reports",
+    "text": "Reports\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Year - Oldest\n      \n      \n        Year - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nYear\n\n\n\nTitle\n\n\n\nAuthors\n\n\n\n\n\n\n\n\nMar 1, 2022\n\n\nDemand Forecasting for Emergency Medical Services\n\n\nBahman Rostami-Tabar, NHS Analytics Unit\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-the-value-of-point-of-sales-information-in-upstrea-24.html",
+    "href": "publications/journal-articles/list(list(2023))-the-value-of-point-of-sales-information-in-upstrea-24.html",
+    "title": "The value of point of sales information in upstream supply chain forecasting: An empirical investigation",
+    "section": "",
+    "text": "International Journal of Production Research, Volume 61, Issue 7, Pages 2162-2177"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-challenging-the-throwaway-culture-in-hospitals-sch-31.html",
+    "href": "publications/journal-articles/list(list(2023))-challenging-the-throwaway-culture-in-hospitals-sch-31.html",
+    "title": "Challenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes",
+    "section": "",
+    "text": "Journal of the Operational Research Society, Volume 74, Issue 10, Pages 2215-2226"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2021))-forecasting-hierarchical-time-series-in-supply-cha-19.html",
+    "href": "publications/journal-articles/list(list(2021))-forecasting-hierarchical-time-series-in-supply-cha-19.html",
+    "title": "Forecasting hierarchical time series in supply chains: An empirical investigation",
+    "section": "",
+    "text": "International Journal of Production Research, Pages 1-20"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2020))-anticipating-special-events-in-emergency-departmen-15.html",
+    "href": "publications/journal-articles/list(list(2020))-anticipating-special-events-in-emergency-departmen-15.html",
+    "title": "Anticipating special events in emergency department forecasting",
+    "section": "",
+    "text": "International Journal of Forecasting"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2021))-forecasting-covid19-daily-cases-using-phone-call-d-17.html",
+    "href": "publications/journal-articles/list(list(2021))-forecasting-covid19-daily-cases-using-phone-call-d-17.html",
+    "title": "Forecasting COVID-19 daily cases using phone call data",
+    "section": "",
+    "text": "Applied soft computing, Volume 100, Pages 106932"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2024))-investigating-length-of-stay-patterns-and-its-pred-37.html",
+    "href": "publications/journal-articles/list(list(2024))-investigating-length-of-stay-patterns-and-its-pred-37.html",
+    "title": "Investigating length of stay patterns and its predictors in the south wales trauma network",
+    "section": "",
+    "text": "Advances in rehabilitation science and practice, Volume 13, Pages 27536351241237866"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-looking-for-the-crystal-ball-in-unscheduled-care-a-41.html",
+    "href": "publications/journal-articles/list(list(2025))-looking-for-the-crystal-ball-in-unscheduled-care-a-41.html",
+    "title": "Looking for the crystal ball in unscheduled care: A systematic literature review of the forecasting process",
+    "section": "",
+    "text": "Health Care Management Science, Pages 1-17"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-exploring-the-association-between-time-series-feat-28.html",
+    "href": "publications/journal-articles/list(list(2023))-exploring-the-association-between-time-series-feat-28.html",
+    "title": "Exploring the association between time series features and forecasting by temporal aggregation using machine learning",
+    "section": "",
+    "text": "Neurocomputing, Pages 126376"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-49.html",
+    "href": "publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-49.html",
+    "title": "A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions",
+    "section": "",
+    "text": "Under review in Production and Operations Management"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2014))-a-note-on-the-forecast-performance-of-temporal-agg-8.html",
+    "href": "publications/journal-articles/list(list(2014))-a-note-on-the-forecast-performance-of-temporal-agg-8.html",
+    "title": "A note on the forecast performance of temporal aggregation",
+    "section": "",
+    "text": "Naval Research Logistics (NRL)"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2016))-on-the-performance-of-temporal-demand-aggregation--10.html",
+    "href": "publications/journal-articles/list(list(2016))-on-the-performance-of-temporal-demand-aggregation--10.html",
+    "title": "On the performance of temporal demand aggregation when optimal forecasting is used",
+    "section": "",
+    "text": "International conference on information systems, logistics and supply chain"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2015))-the-impact-of-advance-demand-information-on-the-pe-13.html",
+    "href": "publications/journal-articles/list(list(2015))-the-impact-of-advance-demand-information-on-the-pe-13.html",
+    "title": "The impact of advance demand information on the performance of production/inventory systems",
+    "section": "",
+    "text": "IFAC-PapersOnLine, Volume 48, Pages 1744-1749"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-forecasting-interrupted-time-series-35.html",
+    "href": "publications/journal-articles/list(list(2025))-forecasting-interrupted-time-series-35.html",
+    "title": "Forecasting interrupted time series",
+    "section": "",
+    "text": "Journal of the Operational Research Society, Volume 76, Issue 4, Pages 790-803"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-emergency-department-staffing-policy-an-integrated-46.html",
+    "href": "publications/journal-articles/list(list(2025))-emergency-department-staffing-policy-an-integrated-46.html",
+    "title": "Emergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution",
+    "section": "",
+    "text": "Under review in Computer in Industry"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-forecasting-for-leadtime-period-by-temporal-aggreg-33.html",
+    "href": "publications/journal-articles/list(list(2023))-forecasting-for-leadtime-period-by-temporal-aggreg-33.html",
+    "title": "Forecasting for lead-time period by temporal aggregation: Whether to combine and how",
+    "section": "",
+    "text": "Computers in Industry, Volume 145, Pages 103803"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-probabilistic-forecasting-of-hourly-emergency-depa-27.html",
+    "href": "publications/journal-articles/list(list(2023))-probabilistic-forecasting-of-hourly-emergency-depa-27.html",
+    "title": "Probabilistic forecasting of hourly emergency department arrivals",
+    "section": "",
+    "text": "Health Systems, Pages 1-17"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2024))-alliance-or-apathy-forecastings-role-in-achieving--40.html",
+    "href": "publications/journal-articles/list(list(2024))-alliance-or-apathy-forecastings-role-in-achieving--40.html",
+    "title": "Alliance or apathy? Forecasting’s role in achieving the UN sustainable development goals",
+    "section": "",
+    "text": "Foresight: The International Journal of Applied Forecasting, Issue 74"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2015))-nonstationary-demand-forecasting-by-crosssectional-9.html",
+    "href": "publications/journal-articles/list(list(2015))-nonstationary-demand-forecasting-by-crosssectional-9.html",
+    "title": "Non-stationary demand forecasting by cross-sectional aggregation",
+    "section": "",
+    "text": "International Journal of Production Economics, Volume 170, Pages 297-309"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2025))-a-systematic-literature-review-of-trauma-systems-a-39.html",
+    "href": "publications/journal-articles/list(list(2025))-a-systematic-literature-review-of-trauma-systems-a-39.html",
+    "title": "A systematic literature review of trauma systems: An operations management perspective",
+    "section": "",
+    "text": "Advances in Rehabilitation Science and Practice, Volume 14, Pages 27536351241310645"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2023))-on-the-orderupto-policy-with-intermittent-integer--25.html",
+    "href": "publications/journal-articles/list(list(2023))-on-the-orderupto-policy-with-intermittent-integer--25.html",
+    "title": "On the order-up-to policy with intermittent integer demand and logically consistent forecasts",
+    "section": "",
+    "text": "International Journal of Production Economics, Volume 257, Pages 108763"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2012))-forecasting-autoregressive-demands-with-temporal-a-2.html",
+    "href": "publications/journal-articles/list(list(2012))-forecasting-autoregressive-demands-with-temporal-a-2.html",
+    "title": "FORECASTING AUTOREGRESSIVE DEMANDS WITH TEMPORAL AGGREGATION",
+    "section": "",
+    "text": "9th international conference on modeling, optimization & SIMulation"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2024))-using-simulation-for-longterm-bed-modelling-in-cri-36.html",
+    "href": "publications/journal-articles/list(list(2024))-using-simulation-for-longterm-bed-modelling-in-cri-36.html",
+    "title": "Using simulation for long-term bed modelling in critical care",
+    "section": "",
+    "text": "Journal of Simulation, Pages 1-17"
+  },
+  {
+    "objectID": "publications/journal-articles/list(list(2021))-forecasting-for-social-good-16.html",
+    "href": "publications/journal-articles/list(list(2021))-forecasting-for-social-good-16.html",
+    "title": "Forecasting for social good",
+    "section": "",
+    "text": "International Journal of Forecasting"
   },
   {
     "objectID": "talks/first-post/slides/lecture1.html#section",

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Journal Articles</title>
+<title>Publications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -39,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-16286ef0741ca1bcaee98b40db71d4a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4d256d6fcfa5c36343b264362462b80c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,70 +68,26 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../../site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="../../site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="../../site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="../../site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-author','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-author","listing-title","listing-categories","listing-date"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Journal Articles">
+<meta property="og:title" content="Publications">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -165,32 +119,17 @@ window.Quarto = {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../supervision/index.html"> 
+<span class="menu-text">Supervision</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Publications</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-publications">    
-        <li>
-    <a class="dropdown-item" href="../../publications/journal_articles/index.html">
- <span class="dropdown-text">Journal Publications</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../publications/book_chapters/index.html">
- <span class="dropdown-text">Book Chapters</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../publications/working_papers/index.html">
- <span class="dropdown-text">Working Papers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../publications/technical_reports/index.html">
- <span class="dropdown-text">Technical Reports</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
@@ -200,27 +139,27 @@ window.Quarto = {
             <div class="quarto-navbar-tools tools-wide">
     <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://www.google.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-bookmark-star-fill"></i></a>
+    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-bookmark-star-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Journal Articles</h1>
+<h1 class="title">Publications</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -232,67 +171,16 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0dca83aa0eea29b9f0e0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0dca83aa0eea29b9f0e0">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Hyndman Rob J, Rostami-Tabar Bahman (list(2025)) Forecasting interrupted time series. <i>Journal of the Operational Research Society<\/i>, 76(4), 790-803.","Dura Birhanu Shanko, Nadeem Simon Peter, Garza-Reyes Jose Arturo, Alemu Abebe Ejigu, Rostami Tabar Bahman, Zapata Daniel Henao, Kreie Andre (list(2025)) The role of technology in developing resilient supply chains: A systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions. <i>Journal of Humanitarian Logistics and Supply Chain Management<\/i>.","Wang Zihao, Rostami-Tabar Bahman, Haider Jane, Naim Mohamed, Haider Javvad (list(2025)) A systematic literature review of trauma systems: An operations management perspective. <i>Advances in Rehabilitation Science and Practice<\/i>, 14, 27536351241310645.","Shi Mingzhe, Rostami-Tabar Bahman, Gartner Daniel (list(2025)) Looking for the crystal ball in unscheduled care: A systematic literature review of the forecasting process. <i>Health Care Management Science<\/i>, 1-17.","Halgamuwe Hewage Harsha, Rostami-Tabar Bahman (list(2025)) A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning. <i>Journal of the Operational Research Society<\/i>, 1-25.","Wang Zihao, Rostami-Tabar Bahman, Haider Jane, Haider Javvad, Naim Mohamed (list(2025)) Patient length of stay in trauma networks: Insights from advanced modelling. <i>Expert Systems with Applications<\/i>, 127801.","Hewage Harsha Chamara, Rostami-Tabar Bahman, Syntetos Aris, Liberatore Federico, Milano Glenn R (list(2025)) A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions. <i>International Journal of Production Research<\/i>, 1-35.","Bilal Arebu Issa, Rostami-Tabar Bahman, Hewage Harsha Halgamuwe, Bititci Umit Sezer, Fenta Teferi Gedif (list(2025)) The missing puzzle piece: Contextual insights for enhanced pharmaceutical supply chain forecasting. <i>International Journal of Production Research<\/i>, 1-19.","Rostami-Tabar Bahman, Wang Shixuan, Disney Stephen (list(2025)) Emergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution. <i>Under review in Computer in Industry<\/i>.","Monshizadeh , Kumar Maneesh , Rostami-Tabar Bahman (list(2025)) Examining digital twins applications, challenges and benefits in healthcare: A systematic literature review. <i>Under review in IEEE Transactions on Engineering Management<\/i>.","Rostami-Tabar Bahman, Greene Travis, Shmueli Galit, Hyndman Rob (list(2025)) Towards socially responsible forecasting: Identifying and typifying forecasting harms. <i>Under review in International Journal of Forecasting<\/i>.","Hewage Harsha Chamara, Rostami-Tabar Bahman, Syntetos Aris, Liberatore Federico, Milano Glenn R (list(2025)) A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions. <i>Under review in Production and Operations Management<\/i>.","Shi Mingzhe, Rostami-Tabar Bahman, Gartner Daniel (list(2025)) The value of forecast accuracy foir emergency department staffing decisions. <i>Under review in IEEE Transactions on Engineering Management<\/i>.","Rostami-Tabar Bahman, Arora Siddharth, Rendon-Sanchez Juan F, Goltsos Thanos E (list(2024)) Probabilistic forecasting of daily COVID-19 admissions using machine learning. <i>IMA Journal of Management Mathematics<\/i>, 35(1), 21-43.","Rostami-Tabar Bahman, Hyndman Rob J (list(2024)) Hierarchical time series forecasting in emergency medical services. <i>Journal of Service Research<\/i>, 10946705241232169.","Hasni Marwa, Babai M Zied, Rostami-Tabar Bahman (list(2024)) A hybrid LSTM method for forecasting demands of medical items in humanitarian operations. <i>International Journal of Production Research<\/i>, 1-18.","Lentle Debbie, Sachser Victoria, Incze Eduard, Tako Antuela, Rostami-Tabar Bahman, Spencer Craig, Morgan Jennifer (list(2024)) Using simulation for long-term bed modelling in critical care. <i>Journal of Simulation<\/i>, 1-17.","Wang Zihao, Rostami-Tabar Bahman, Haider Jane, Naim Mohamed, Haider Javvad (list(2024)) Investigating length of stay patterns and its predictors in the south wales trauma network. <i>Advances in rehabilitation science and practice<\/i>, 13, 27536351241237866.","Rostami-Tabar Bahman, Gilliland Mike (list(2024)) Alliance or apathy? Forecasting’s role in achieving the UN sustainable development goals. <i>Foresight: The International Journal of Applied Forecasting<\/i>(74).","Kolassa Stephan, Rostami-Tabar Bahman, Siemsen Enno (list(2023)) Demand forecasting for executives and professionals. .","Abolghasemi Mahdi, Rostami-Tabar Bahman, Syntetos Aris (list(2023)) The value of point of sales information in upstream supply chain forecasting: An empirical investigation. <i>International Journal of Production Research<\/i>, 61(7), 2162-2177.","Rostami-Tabar Bahman, Disney Stephen M (list(2023)) On the order-up-to policy with intermittent integer demand and logically consistent forecasts. <i>International Journal of Production Economics<\/i>, 257, 108763.","Rostami-Tabar Bahman, Browell Jethro, Svetunkov Ivan (list(2023)) Probabilistic forecasting of hourly emergency department arrivals. <i>Health Systems<\/i>, 1-17.","Rostami-Tabar Bahman, Mircetic Dejan (list(2023)) Exploring the association between time series features and forecasting by temporal aggregation using machine learning. <i>Neurocomputing<\/i>, 126376.","Babaveisi Vahid, Teimoury Ebrahim, Gholamian Mohammad Reza, Rostami-Tabar Bahman (list(2023)) Integrated demand forecasting and planning model for repairable spare part: An empirical investigation. <i>International Journal of Production Research<\/i>, 61(20), 6791-6807.","Gartner Daniel, Viana Joe, Tabar Bahman Rostami, Pförringer Dominik, Edenharter Günther (list(2023)) Challenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes. <i>Journal of the Operational Research Society<\/i>, 74(10), 2215-2226.","Rostami-Tabar Bahman, Babai M Zied, Syntetos Aris (list(2023)) To aggregate or not to aggregate: Forecasting of finite autocorrelated demand. <i>Journal of the Operational Research Society<\/i>, 74(8), 1840-1859.","Rostami-Tabar Bahman, Goltsos Thanos E, Wang Shixuan (list(2023)) Forecasting for lead-time period by temporal aggregation: Whether to combine and how. <i>Computers in Industry<\/i>, 145, 103803.","Petropoulos Fotios, Apiletti Daniele, Assimakopoulos Vassilios, Babai Mohamed Zied, Barrow Devon K, Taieb Souhaib Ben, Bergmeir Christoph, Bessa Ricardo J, Bijak Jakub, Boylan John E, character(0) (list(2022)) Forecasting: Theory and practice. <i>International Journal of Forecasting<\/i>.","Rostami-Tabar Bahman, Boylan John E. (list(2022)) Forecasting and its beneficiaries. <i>Handbook of operational research<\/i>.","Rostami-Tabar Bahman, Ali Mohammad M, Hong Tao, Hyndman Rob J, Porter Michael D, Syntetos Aris (list(2021)) Forecasting for social good. <i>International Journal of Forecasting<\/i>.","Rostami-Tabar Bahman, Rendon-Sanchez Juan F (list(2021)) Forecasting COVID-19 daily cases using phone call data. <i>Applied soft computing<\/i>, 100, 106932.","Mircetic Dejan, Rostami-Tabar Bahman, Nikolicic Svetlana, Maslaric Marinko (list(2021)) Forecasting hierarchical time series in supply chains: An empirical investigation. <i>International Journal of Production Research<\/i>, 1-20.","Rostami-Tabar Bahman (list(2021)) Business forecasting in developing countries. <i>Business forecasting: The emerging role of artificial intelligence and machine learning<\/i>, 382.","Babai M Zied, Boylan John E, Rostami-Tabar Bahman (list(2021)) Demand forecasting in supply chains: A review of aggregation and hierarchical approaches. <i>International Journal of Production Research<\/i>, 1-25.","Rostami-Tabar Bahman, Ziel Florian (list(2020)) Anticipating special events in emergency department forecasting. <i>International Journal of Forecasting<\/i>.","Rostami-Tabar Bahman, Babai M Zied, Ali Mohammad, Boylan John E (list(2019)) The impact of temporal aggregation on supply chains with ARMA (1, 1) demand processes. <i>European Journal of Operational Research<\/i>, 273(3), 920-932.","Kourentzes Nikolaos, Rostami-Tabar Bahman, Barrow Devon K (list(2017)) Demand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?. <i>Journal of Business Research<\/i>, 78, 1-9.","Rostami-Tabar Bahman, Babai M Zied, Ali Mohammad, Boylan John E (list(2016)) On the performance of temporal demand aggregation when optimal forecasting is used. <i>International conference on information systems, logistics and supply chain<\/i>.","Emrouznejad Ali, Rostami-Tabar Bahman, Petridis Konstantinos (list(2016)) A novel ranking procedure for forecasting approaches using data envelopment analysis. <i>Technological Forecasting and Social Change<\/i>, 111, 235-243.","Rostami-Tabar Bahman, Babai Mohamed Zied, Ducq Yves, Syntetos Aris (list(2015)) Non-stationary demand forecasting by cross-sectional aggregation. <i>International Journal of Production Economics<\/i>, 170, 297-309.","Rostami-Tabar Bahman, Sahin Evren (list(2015)) The impact of advance demand information on the performance of production/inventory systems. <i>IFAC-PapersOnLine<\/i>, 48, 1744-1749.","Rostami-Tabar Bahman (list(2014)) ARIMA demand forecasting by aggregation. .","Bahman Rostami-Tabar Aris Syntetos andYves Ducq (list(2014)) A note on the forecast performance of temporal aggregation. <i>Naval Research Logistics (NRL)<\/i>.","Rostami-Tabar Bahman, Babai M Zied, Syntetos Aris, Ducq Yves (list(2013)) Demand forecasting by temporal aggregation. <i>Naval Research Logistics (NRL)<\/i>, 60(6), 479-498.","Rostami Tabar Bahman, Babai Mohamed Zied, Syntetos Aris, Ducq Yves (list(2013)) The impact of temporal aggregation on demand forecasting of ARMA(1, 1) process: Theoretical analysis. <i>Manufacturing modelling, management, and control<\/i>, 1696-1701.","Rostami-Tabar B, Babai MZ, Syntetos AA, Ducq Y (list(2013)) Forecasting aggregate ARMA (1, 1) demands: Theoretical analysis of top-down versus bottom-up. <i>Proceedings of 2013 international conference on industrial engineering and systems management (IESM)<\/i>, 1-8.","Tabar Bahman Rostami, Ducq Yves, Babai Mohamed Zied, Syntetos Aris (list(2012)) FORECASTING AUTOREGRESSIVE DEMANDS WITH TEMPORAL AGGREGATION. <i>9th international conference on modeling, optimization & SIMulation<\/i>.","Amin-Naseri Mohammad Reza, Tabar B Rostami (list(2008)) Neural network approach to lumpy demand forecasting for spare parts in process industries. <i>2008 international conference on computer and communication engineering<\/i>, 1378-1382.","Nasiri Pour Ali, Rostami-Tabar Bahman, Rahimzadeh Ayoub (list(2008)) A hybrid neural network and traditional approach for forecasting lumpy demand. <i>Proceedings of the World Academy of Science, Engineering and Technology<\/i>, 2."],["article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","manuscript","manuscript","manuscript","manuscript","manuscript","article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","Book","article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","article-journal","Book Chapter","article-journal","article-journal","article-journal","Book Chapter","article-journal","article-journal","article-journal","article-journal","paper-conference","article-journal","article-journal","paper-conference","Thesis","article-journal","article-journal","paper-conference","paper-conference","paper-conference","paper-conference","paper-conference"],[[2025],[2025],[2025],[2025],[2025],[2025],[2025],[2025],[2025],[2025],[2025],[2025],[2025],[2024],[2024],[2024],[2024],[2024],[2024],[2023],[2023],[2023],[2023],[2023],[2023],[2023],[2023],[2023],[2022],[2022],[2021],[2021],[2021],[2021],[2021],[2020],[2019],[2017],[2016],[2016],[2015],[2015],[2014],[2014],[2013],[2013],[2013],[2012],[2008],[2008]],["","","","","","","","","","","","","","","","","","","","<a href=\"https://dfep.netlify.app/\" target=\"_blank\" class=\"btn btn-sm btn-primary\">Link<\/a>","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]],"container":"<table class=\"display compact\">\n  <thead>\n    <tr>\n      <th>Publication<\/th>\n      <th>Type<\/th>\n      <th>Year<\/th>\n      <th>Links<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":25,"order":[[2,"desc"]],"dom":"Bfrtip","buttons":["copy","csv","excel"],"columnDefs":[{"width":"50%","targets":0},{"width":"20%","targets":1},{"width":"10%","targets":2},{"width":"20%","targets":3},{"name":"citation","targets":0},{"name":"type_clean","targets":1},{"name":"year","targets":2},{"name":"links","targets":3}],"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': '#f8f9fa', 'color': '#333'});\n}","autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":["options.initComplete"],"jsHooks":[]}</script>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
+</div>
 
-<th>
-Author(s)
-</th>
 
-<th>
-Title
-</th>
 
-<th>
-Keywords
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="RW1lcmdlbmN5JTIwU2VydmljZSUyQ0hlYWx0aGNhcmUlMkNoaWVyYXJjaGljYWwlMjByZWNvbmNpbGlhdGlvbg==" data-listing-date-sort="1735689600000" data-listing-title-sort="ED hierarchihcal forecasting">
-<td>
-<span class="listing-author">Bahman Rostami-Tabar</span>
-</td>
-<td>
-<a href="https://journals.sagepub.com/doi/10.1177/10946705241232169" class="title listing-title">ED hierarchihcal forecasting</a>
-</td>
-<td>
-<span class="listing-categories">Emergency Service, Healthcare, hierarchical reconciliation</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="UHl0aG9uJTJDTWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMENsZWFuaW5n" data-listing-date-sort="1704067200000" data-listing-title-sort="Forecasting">
-<td>
-<span class="listing-author">Harsha Chamara Hewage, H. Niles Perera, Shari De Baets, Forecast adjustments during post-promotional periods, European Journal of Operational Research.</span>
-</td>
-<td>
-<a href="https://doi.org/10.1016/j.ejor.2021.07.057" class="title listing-title">Forecasting</a>
-</td>
-<td>
-<span class="listing-categories">Python, Machine Learning, Data Cleaning</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -366,7 +254,7 @@ Keywords
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/bahmanrostamitabar\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -380,11 +268,6 @@ Keywords
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

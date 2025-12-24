@@ -6,46 +6,45 @@
     ]
   },
   {
-    "listing": "/publications/technical_reports/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publications/journal_articles/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/who-evm/index.html",
+    "listing": "/projects/summer_school/index.html",
     "items": [
-      "/projects/who-evm/first-post/index.html"
+      "/projects/summer_school/first-post/index.html"
     ]
   },
   {
-    "listing": "/projects/sustainability/index.html",
+    "listing": "/projects/africast/index.html",
     "items": [
-      "/projects/sustainability/first-post/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/forecasting/index.html",
-    "items": [
-      "/projects/forecasting/first-post/index.html"
+      "/projects/africast/first-post/index.html",
+      "/projects/africast/scond-post/index.html",
+      "/projects/africast/third-post/index.html"
     ]
   },
   {
     "listing": "/projects/index.html",
     "items": [
-      "/projects/data_science/index.html",
-      "/projects/sustainability/index.html",
-      "/projects/who-evm/index.html",
-      "/projects/forecasting/index.html"
+      "/projects/africast/index.html",
+      "/projects/democratising_forecasting/index.html",
+      "/projects/summer_school/index.html",
+      "/projects/f4sg/index.html",
+      "/projects/crosslab_exchange/index.html"
     ]
   },
   {
-    "listing": "/projects/data_science/index.html",
+    "listing": "/projects/crosslab_exchange/index.html",
     "items": [
-      "/projects/data_science/first-post/index.html",
-      "/projects/data_science/scond-post/index.html",
-      "/projects/data_science/third-post/index.html"
+      "/projects/crosslab_exchange/first-post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/democratising_forecasting/index.html",
+    "items": [
+      "/projects/democratising_forecasting/first-post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/f4sg/index.html",
+    "items": [
+      "/projects/f4sg/first-post/index.html"
     ]
   },
   {
@@ -56,11 +55,61 @@
     ]
   },
   {
-    "listing": "/publications/working_papers/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publications/book_chapters/index.html",
-    "items": []
+    "listing": "/publications/index.html",
+    "items": [
+      "/publications/books/forecasting-principles-practice.html",
+      "/publications/journal-articles/list(list(2023))-the-value-of-point-of-sales-information-in-upstrea-24.html",
+      "/publications/journal-articles/list(list(2021))-demand-forecasting-in-supply-chains-a-review-of-ag-23.html",
+      "/publications/journal-articles/list(list(2023))-challenging-the-throwaway-culture-in-hospitals-sch-31.html",
+      "/publications/journal-articles/list(list(2025))-the-role-of-technology-in-developing-resilient-sup-38.html",
+      "/publications/journal-articles/list(list(2021))-forecasting-hierarchical-time-series-in-supply-cha-19.html",
+      "/publications/journal-articles/list(list(2013))-forecasting-aggregate-arma-1-1-demands-theoretical-6.html",
+      "/publications/journal-articles/list(list(2020))-anticipating-special-events-in-emergency-departmen-15.html",
+      "/publications/journal-articles/list(list(2025))-a-hybrid-predictive-and-prescriptive-modelling-fra-42.html",
+      "/publications/journal-articles/list(list(2021))-forecasting-covid19-daily-cases-using-phone-call-d-17.html",
+      "/publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-44.html",
+      "/publications/journal-articles/list(list(2024))-investigating-length-of-stay-patterns-and-its-pred-37.html",
+      "/publications/journal-articles/list(list(2025))-the-value-of-forecast-accuracy-foir-emergency-depa-50.html",
+      "/publications/journal-articles/list(list(2025))-looking-for-the-crystal-ball-in-unscheduled-care-a-41.html",
+      "/publications/journal-articles/list(list(2025))-the-missing-puzzle-piece-contextual-insights-for-e-45.html",
+      "/publications/journal-articles/list(list(2023))-exploring-the-association-between-time-series-feat-28.html",
+      "/publications/journal-articles/list(list(2022))-forecasting-theory-and-practice-18.html",
+      "/publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-49.html",
+      "/publications/journal-articles/list(list(2008))-neural-network-approach-to-lumpy-demand-forecastin-1.html",
+      "/publications/journal-articles/list(list(2014))-a-note-on-the-forecast-performance-of-temporal-agg-8.html",
+      "/publications/journal-articles/list(list(2017))-demand-forecasting-by-temporal-aggregation-using-o-12.html",
+      "/publications/journal-articles/list(list(2016))-on-the-performance-of-temporal-demand-aggregation--10.html",
+      "/publications/journal-articles/list(list(2014))-arima-demand-forecasting-by-aggregation-7.html",
+      "/publications/journal-articles/list(list(2015))-the-impact-of-advance-demand-information-on-the-pe-13.html",
+      "/publications/journal-articles/list(list(2008))-a-hybrid-neural-network-and-traditional-approach-f-4.html",
+      "/publications/journal-articles/list(list(2025))-forecasting-interrupted-time-series-35.html",
+      "/publications/journal-articles/list(list(2023))-to-aggregate-or-not-to-aggregate-forecasting-of-fi-32.html",
+      "/publications/journal-articles/list(list(2025))-emergency-department-staffing-policy-an-integrated-46.html",
+      "/publications/journal-articles/list(list(2025))-towards-socially-responsible-forecasting-identifyi-48.html",
+      "/publications/journal-articles/list(list(2023))-forecasting-for-leadtime-period-by-temporal-aggreg-33.html",
+      "/publications/journal-articles/list(list(2023))-integrated-demand-forecasting-and-planning-model-f-30.html",
+      "/publications/journal-articles/list(list(2023))-probabilistic-forecasting-of-hourly-emergency-depa-27.html",
+      "/publications/journal-articles/list(list(2024))-probabilistic-forecasting-of-daily-covid19-admissi-26.html",
+      "/publications/journal-articles/list(list(2024))-alliance-or-apathy-forecastings-role-in-achieving--40.html",
+      "/publications/journal-articles/list(list(2013))-the-impact-of-temporal-aggregation-on-demand-forec-5.html",
+      "/publications/journal-articles/list(list(2015))-nonstationary-demand-forecasting-by-crosssectional-9.html",
+      "/publications/journal-articles/list(list(2024))-a-hybrid-lstm-method-for-forecasting-demands-of-me-34.html",
+      "/publications/journal-articles/list(list(2025))-a-systematic-literature-review-of-trauma-systems-a-39.html",
+      "/publications/journal-articles/list(list(2013))-demand-forecasting-by-temporal-aggregation-3.html",
+      "/publications/journal-articles/list(list(2023))-on-the-orderupto-policy-with-intermittent-integer--25.html",
+      "/publications/journal-articles/list(list(2025))-examining-digital-twins-applications-challenges-an-47.html",
+      "/publications/journal-articles/list(list(2012))-forecasting-autoregressive-demands-with-temporal-a-2.html",
+      "/publications/journal-articles/list(list(2016))-a-novel-ranking-procedure-for-forecasting-approach-11.html",
+      "/publications/journal-articles/list(list(2024))-using-simulation-for-longterm-bed-modelling-in-cri-36.html",
+      "/publications/journal-articles/list(list(2024))-hierarchical-time-series-forecasting-in-emergency--29.html",
+      "/publications/journal-articles/forecasting-interrupted.html",
+      "/publications/journal-articles/list(list(2025))-patient-length-of-stay-in-trauma-networks-insights-43.html",
+      "/publications/journal-articles/list(list(2021))-forecasting-for-social-good-16.html",
+      "/publications/journal-articles/list(list(2019))-the-impact-of-temporal-aggregation-on-supply-chain-14.html",
+      "/publications/working-papers/hierarchical-ems-working-paper.html",
+      "/publications/book-chapters/hierarchical-forecasting.html",
+      "/publications/conference-proceedings/reconciliation-proceedings.html",
+      "/publications/reports/demand-forecasting-report.html"
+    ]
   }
 ]
