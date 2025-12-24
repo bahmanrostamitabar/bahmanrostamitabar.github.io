@@ -1481,7 +1481,7 @@
     "href": "supervision/index.html",
     "title": "PhD and MSc Supervision",
     "section": "",
-    "text": "NoteSupervision Overview\n\n\n\nI have supervised 3 PhD students (2 graduated) and 3 MSc theses (2 graduated).\nGraduates are currently working in academia, industry, and the public sector."
+    "text": "# Downloading packages -------------------------------------------------------\n- Downloading readr from CRAN ...               OK [1.9 Mb in 0.38s]\nSuccessfully downloaded 1 package in 3.3 seconds.\n\nThe following package(s) will be installed:\n- dplyr     [1.1.4]\n- reactable [0.4.5]\n- readr     [2.1.6]\nThese packages will be installed into \"~/Documents/3.engagement/bahmanrostamitabar.github.io/renv/library/macos/R-4.5/aarch64-apple-darwin20\".\n\n# Installing packages --------------------------------------------------------\n- Installing readr ...                          OK [installed binary and cached in 0.11s]\n- Installing dplyr ...                          OK [linked from cache]\n- Installing reactable ...                      OK [linked from cache]\nSuccessfully installed 3 packages in 0.13 seconds."
   },
   {
     "objectID": "supervision/index.html#overview",
