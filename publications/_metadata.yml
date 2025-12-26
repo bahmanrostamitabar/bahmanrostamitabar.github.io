@@ -1,6 +1,6 @@
 format:
   html:
     theme: cosmo
-    css: ../styles.css
+    css: ../stylespublication.css
     toc: true
     include-in-header: _paper-header.html

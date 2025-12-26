@@ -1,5 +1,9 @@
 project:
   type: website
+  resources:
+    - "logo/"
+    - "img/"
+    - "backgrounds/"
 
 website:
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph

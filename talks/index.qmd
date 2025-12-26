@@ -2,7 +2,7 @@
 title: "Talks"
 listing:
   contents:
-    - "202[5-7]/*/index.qmd"
+    - "202[5-6]/*/index.qmd"
   type: table
   sort: "date desc"
   filter-ui: true

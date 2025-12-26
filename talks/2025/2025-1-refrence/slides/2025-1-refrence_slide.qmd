@@ -13,7 +13,6 @@ institute:
   - School of Engineering, University of Swansea
 venue: "EURO Conference"
 location: "Istanbul, Turkey"
-date: 2025-07-01
 execute: 
   cache: true
   warning: false
@@ -33,7 +32,7 @@ format:
       toggleNotesButton: true
 categories: [Quarto, Slides]
 title-slide-attributes:
-  data-background-image: "logo/dl4sg.svg, img/carbs_logo.png, img/carbs_logo.png"
+  data-background-image: "logo/dl4sg.svg, logo/carbs_logo.png, logo/carbs_logo.png"
   data-background-size: "130px, 200px, 200px"
   data-background-position: "right 220px bottom 24px, right bottom 24px, left 24px bottom 24px"
   data-background-repeat: "no-repeat, no-repeat, no-repeat"
@@ -151,7 +150,7 @@ content after the pause
 You can use fragment to delay anything showing, including images, text, formulas, code, plots, etc.
 
 ::: {.fragment}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){width=30% fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){width=30% fig-align="center"}
 :::
 
 # Add footnotes and asides
@@ -191,7 +190,7 @@ use full background image
 
 
 
-## Outline {background-image="/talks/common/backgrounds/hierarchy-left.jpeg" background-size="contain" background-position="right"}
+## Outline {background-image="backgrounds/hierarchy-left.jpeg" background-size="contain" background-position="right"}
 
 -   Understanding UI components of Positron
 -   Create projects in Positron
@@ -207,13 +206,13 @@ This is the main slide, with some desription of events
 This is the main slide, with some desription of events
 
 ::: {layout-ncol="4"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 
 ## 4 images using 4 columns
@@ -224,16 +223,16 @@ This is the main slide, with some desription of events
 
 :::: columns
 ::: {.column width="25%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 ::: {.column width="25%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 ::: {.column width="25%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 ::: {.column width="25%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 ::::
 
@@ -242,11 +241,11 @@ This is the main slide, with some desription of events
 This is the main slide, with some desription of events
 
 ::: {layout-ncol="3"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 
 ## 3 images using 3 columns
@@ -255,13 +254,13 @@ This is the main slide, with some desription of events
 
 :::: columns
 ::: {.column width="33%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 ::: {.column width="33%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 ::: {.column width="33%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){fig-align="center"}
+![](backgrounds/hierarchy-left.jpeg){fig-align="center"}
 :::
 ::::
 
@@ -321,7 +320,7 @@ Sometimes you want to have an image on the left or right side of the slide with 
 
 :::: {.columns}
 ::: {.column width="30%"}
-![](//talks/common/backgrounds/hierarchy-left.jpeg){.image-left}
+![](/backgrounds/hierarchy-left.jpeg){.image-left}
 :::
 
 ::: {.column width="70%"}
@@ -356,7 +355,7 @@ Sometimes you want to have an image on the left or right side of the slide with 
 :::
 
 ::: {.column width="30%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg){.image-right}
+![](backgrounds/hierarchy-left.jpeg){.image-right}
 :::
 ::::
 
@@ -967,7 +966,7 @@ countdown::countdown(minutes = 0, seconds = 15, left = 0, play_sound = TRUE)
 :::
 
 ::: {.column width="40%"}
-![](/talks/common/backgrounds/hierarchy-left.jpeg)
+![](backgrounds/hierarchy-left.jpeg)
 :::
 ::::
 

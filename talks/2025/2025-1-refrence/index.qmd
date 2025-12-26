@@ -1,22 +1,31 @@
 ---
-title: "WHAT WAS LOST: Estimating censored demand in family planning supply chains with the Truncated Conformal Kalman Filter"
-description: "5th Welsh Postgraduate Research Cluster Workshop in Economy, Enterprise and Productivity"
-author: "Harsha Halgamuwe Hewage"
+title: "Making slides with Quarto"
+author: "Bahman Rostami-Tabar"
 date: "2025-09-16"
 image: "cover.jpg"
+venue: "EURO 2025"
+location: "Berlin, Germany"
+# Add these custom fields:
+slides-html: "[View](2025/2025-1-refrence/slides/2025-1-refrence_slide.html){target=\"_blank\"}"
+slides-pdf: "[PDF](2025/2025-1-refrence/slides/2025-1-refrence_slide.pdf){target=\"_blank\"}"
+
 categories:
-  - Forecasting
-  - Inventory
-  - Loss Sales
-  - R
-  - Tobit Kalman Filter
-  - Conformal Prediction
+  - Quarto
+  - Slides
 link-external-newwindow: true
 ---
 
-### Presentation Materials
+## What these slides cover
 
-* [{{< fa display >}} View Slides](slides/2025-1-refrence_slide.html)
-* [{{< fa file-pdf >}} Download Summary](slides/2025-1-refrence_slide.pdf)
+These slides cover the essential elements needed to create clear, effective, and visually appealing presentations using Quarto. They bring together the core components required for high-quality slide design, including structure, styling, layout control, and practical Reveal.js features.
 
-Brief abstract of the talk goes here...
+## Further resources
+
+You can find more details and examples here:
+
+- [Quarto authoring: Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+
+- [Quarto presentations](https://quarto.org/docs/presentations/)
+
+- [Awesome Quarto (curated examples & tools)](https://github.com/mcanouil/awesome-quarto)
+
