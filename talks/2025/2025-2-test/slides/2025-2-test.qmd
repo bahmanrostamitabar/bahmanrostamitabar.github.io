@@ -1,0 +1,98 @@
+---
+title: "Test tables"
+subtitle: "Data Lab"
+author: Bahman Rostami-Tabar
+institute: Data Lab for Social Good, Cardiff Business School, Cardiff University
+venue: "Data Lab Seminars"
+location: "Cardiff, UK"
+execute: 
+  cache: true
+  warning: false
+  message: false
+  echo: false
+format: 
+  revealjs:
+    multiplex: false
+    footer: "{{< fa brands github >}} [bahmanrostamitabar](https://github.com/bahmanrostamitabar) {{< fa brands linkedin >}} [bahman-rostami-tabar](https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/) 🌐 [bahmanrostamitabar.github.io](https://bahmanrostamitabar.github.io/)"
+    theme: ["default", "pp.scss"]
+    slide-number: c/t
+    incremental: false
+    menu: false
+    html-math-method: mathjax
+    chalkboard:
+      theme: chalkboard   # or "whiteboard"
+      toggleNotesButton: true
+categories: [Quarto, Slides]
+title-slide-attributes:
+  data-background-image: "logo/dl4sg.svg, logo/carbs_logo.png, logo/carbs_logo.png"
+  data-background-size: "130px, 200px, 200px"
+  data-background-position: "right 220px bottom 24px, right bottom 24px, left 24px bottom 24px"
+  data-background-repeat: "no-repeat, no-repeat, no-repeat"
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+install.packages(c("tidyverse","kableExtra","broom"))
+
+library(tidyverse)
+library(kableExtra)
+library(broom)
+```
+
+# Tables
+
+Multiple chocie fror tables in R: [kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html), [gt](https://gt.rstudio.com/), [flextable](https://ardata-fr.github.io/flextable-book/), [DT](https://rstudio.github.io/DT/), [reactable](https://glin.github.io/reactable/)
+
+## Manual tables
+
+```{r}
+#| tbl-cap: "Penguin Species Summary Statistics"
+
+data_types <- tribble(
+  ~Species, ~Count, ~Avg_Bill_Length_mm,
+  "Adelie", 152, 38.8,
+  "Chinstrap", 68, 48.3,
+  "Gentoo", 124, 46.0
+)
+
+data_types |> 
+  kbl() |> 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+```
+
+## Table's output from code {.scrollable}
+
+```{r}
+#| tbl-cap: "Motor Trend Car Road Tests"
+mtcars |> 
+  kable() |> 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+```
+
+## Model output tables
+
+```{r}
+#| tbl-cap: "Linear Model Summary for Diamond Prices"
+
+model <- lm(price ~ carat + cut + clarity, data = diamonds)
+
+tidy_model <- tidy(model)
+
+tidy_model |> 
+  kable() |> 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+
+```
+
+## Read tables from CSV {.scrollable}
+
+```{r}
+#| tbl-cap: "Gapminder Data Sample"
+gapminder_data <- read_csv("data/gapminder.csv")
+gapminder_data |> 
+  kable() |> 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+```
+

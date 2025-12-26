@@ -1,0 +1,31 @@
+---
+title: "Test"
+author: "Bahman Rostami-Tabar"
+date: "2025-10-16"
+image: "cover.jpg"
+venue: "OR 2025"
+location: "Berlin, Germany"
+# Add these custom fields:
+slides-html: "[View](2025/2025-2-test/slides/2025-2-test.html){target=\"_blank\"}"
+slides-pdf: "[PDF](2025/2025-2-test/slides/2025-2-test.pdf){target=\"_blank\"}"
+
+categories:
+  - Quarto
+  - Slides
+link-external-newwindow: true
+---
+
+## What these slides cover
+
+These slides cover the essential elements needed to create clear, effective, and visually appealing presentations using Quarto. They bring together the core components required for high-quality slide design, including structure, styling, layout control, and practical Reveal.js features.
+
+## Further resources
+
+You can find more details and examples here:
+
+- [Quarto authoring: Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+
+- [Quarto presentations](https://quarto.org/docs/presentations/)
+
+- [Awesome Quarto (curated examples & tools)](https://github.com/mcanouil/awesome-quarto)
+
