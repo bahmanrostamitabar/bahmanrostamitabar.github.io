@@ -1,14 +1,19 @@
 ---
-title: "Summer School"
-description: "My sustainability projects."
-image: "cover.jpg"
+title: "The Art and Science of Uncertainty: an interdisciplinary Summer School"
+description: "This summer school provides a unique opportunity to develop skills, strengthen networks, and advance creative and interdisciplinary research on uncertainty and the future."
+author: "Bahman Rostami-Tabar"
+date: "2025-11-25"
+image: "ss.png"
 categories:
-  - LCA
-  - Green Tech
-  - Recycle
+  - Uncertainty
+  - Futures
+  - Summer School
+  - Interdisciplinary
+
 listing:
   contents: /
   type: default # Explore more listing types; default, grid or table
   filter-ui: true
 link-external-newwindow: true
 ---
+

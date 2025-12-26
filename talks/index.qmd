@@ -1,9 +1,41 @@
 ---
+title: "Talks"
 listing:
-  contents: 
-    - "first-post/*.qmd"
-  type: default # Explore more listing types; default, grid or table
-  sort: date desc
+  contents:
+    - "202[5-7]/*/index.qmd"
+  type: table
+  sort: "date desc"
   filter-ui: true
-link-external-newwindow: true
+  categories: true
+  fields: [title, date, venue, location, slides-html, slides-pdf]
+page-layout: full
 ---
+
+<style>
+.listing-table td.listing-slides-html a {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #007bff;
+  color: white !important;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.listing-table td.listing-slides-pdf a {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #6c757d;
+  color: white !important;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.listing-table td.listing-slides-html a:hover,
+.listing-table td.listing-slides-pdf a:hover {
+  opacity: 0.85;
+}
+</style>

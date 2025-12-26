@@ -1,0 +1,30 @@
+---
+title: "Towards socially responsible forecasting: Identifying and typifying forecasting harms"
+author: "Bahman Rostami-Tabar, Travis Greene, Galit Shmueli, and Rob Hyndman"
+description: "International Journal of Forecasting"
+year: 2026
+links: []
+---
+
+<!-- <meta name="doi" content="https://doi.org/10.1177/27536351241310645"> -->
+<!-- <meta name="pdf" content="https://example.com/paper.pdf"> -->
+<!-- <meta name="github" content="https://github.com/username/repo"> -->
+<!-- <meta name="code" content="https://gitlab.com/username/repo"> -->
+<!-- <meta name="arxiv" content="https://arxiv.org/abs/2301.12345"> -->
+<!-- <meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123"> -->
+<!-- <meta name="publisher" content="https://journals.sagepub.com/doi/10.1177/27536351241310645"> -->
+<!-- <meta name="data" content="https://zenodo.org/record/1234567"> -->
+<!-- <meta name="slides" content="https://slides.com/username/presentation"> -->
+<!-- <meta name="video" content="https://youtube.com/watch?v=xxxxx"> -->
+<!-- <meta name="demo" content="https://demo.example.com"> -->
+<!-- <meta name="bibtex" content="https://example.com/citation.bib"> -->
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+

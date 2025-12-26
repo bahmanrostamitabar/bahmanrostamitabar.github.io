@@ -1,0 +1,17 @@
+---
+title: "Examining digital twins applications, challenges and benefits in healthcare: A systematic literature review"
+author: "Fatemeh Monshizadeh, Maneesh Kumar, and Bahman Rostami-Tabar"
+description: "IEEE Transactions on Engineering Management"
+year: 2026
+links: []
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+

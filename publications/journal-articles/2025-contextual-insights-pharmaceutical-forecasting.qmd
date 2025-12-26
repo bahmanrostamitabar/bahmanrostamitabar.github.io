@@ -1,0 +1,20 @@
+---
+title: "The missing puzzle piece: contextual insights for enhanced pharmaceutical supply chain forecasting"
+author: "Arebu Issa Bilal, Bahman Rostami-Tabar, Harsha Halgamuwe Hewage, Umit Sezer Bititci, and Teferi Gedif Fenta"
+description: "International Journal of Production Research"
+year: 2025
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/00207543.2025.2546028
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Accurate forecasting in pharmaceutical supply chains is essential for ensuring medicine availability, particularly in low-resource settings. However, many existing approaches rely solely on historical consumption data, provide only point forecasts and fail to account for the operational context and uncertainty inherent in these environments. In this study, we collaborated with experts at the Ethiopian Pharmaceutical Supply Service to identify key contextual factors, such as stock replenishment cycles, fiscal inventory counts and seasonal disease outbreaks and integrated them into forecasting models. Using five years of monthly distribution data (December 2017 to July 2022) for 33 essential medicines, we evaluated a range of forecasting methods, including statistical, machine learning and foundational models. We assessed point and probabilistic forecast accuracy using standard evaluation metrics. Our findings show that incorporating contextual variables significantly improves forecast performance, especially for classical time series models. We recommend investing in the routine collection of contextual indicators and adopting transparent, low complexity forecasting methods that can be sustained in practice. To support reproducibility and wider use, we provide all data, code and the full manuscript as an open, executable Quarto project developed in R and Python.

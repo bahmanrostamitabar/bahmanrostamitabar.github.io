@@ -1,0 +1,22 @@
+---
+title: "WHAT WAS LOST: Estimating censored demand in family planning supply chains with the Truncated Conformal Kalman Filter"
+description: "5th Welsh Postgraduate Research Cluster Workshop in Economy, Enterprise and Productivity"
+author: "Harsha Halgamuwe Hewage"
+date: "2025-09-16"
+image: "cover.jpg"
+categories:
+  - Forecasting
+  - Inventory
+  - Loss Sales
+  - R
+  - Tobit Kalman Filter
+  - Conformal Prediction
+link-external-newwindow: true
+---
+
+### Presentation Materials
+
+* [{{< fa display >}} View Slides](slides/2025-1-refrence_slide.html)
+* [{{< fa file-pdf >}} Download Summary](slides/2025-1-refrence_slide.pdf)
+
+Brief abstract of the talk goes here...

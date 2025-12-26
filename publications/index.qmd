@@ -9,93 +9,94 @@ listing:
     sort: "date desc"
     type: table
     table-hover: true
-    fields: [date, title, author]
+    fields: [year, title, author, image]
     field-display-names:
-      date: "Year"
+      year: "Year"
       title: "Title"
       author: "Authors"
     filter-ui: true
-    sort-ui: [date, title]
+    sort-ui: [year, title]
     page-size: 20
-  - id: journal-articles
-    contents: journal-articles
-    sort: "date desc"
+  - id: working-papers
+    contents: working-papers
+    sort: "year desc"
     type: table
     table-hover: true
-    fields: [date, title, author, description]
+    fields: [year, title, author, description]
     field-display-names:
-      date: "Year"
+      year: "Year"
       title: "Title"
       author: "Authors"
       description: "Journal"
     filter-ui: true
-    sort-ui: [date, title]
+    sort-ui: [year, title]
     page-size: 20
-  - id: working-papers
-    contents: working-papers
-    sort: "date desc"
+  - id: journal-articles
+    contents: journal-articles
+    sort: "year desc"
     type: table
     table-hover: true
-    fields: [date, title, author]
+    fields: [year, title, author, description]
     field-display-names:
-      date: "Year"
+      year: "Year"
       title: "Title"
       author: "Authors"
+      description: "Journal"
     filter-ui: true
-    sort-ui: [date, title]
+    sort-ui: [year, title]
     page-size: 20
   - id: book-chapters
     contents: book-chapters
-    sort: "date desc"
+    sort: "year desc"
     type: table
     table-hover: true
-    fields: [date, title, author, description]
+    fields: [year, title, author, description]
     field-display-names:
-      date: "Year"
+      year: "Year"
       title: "Title"
       author: "Authors"
       description: "Book"
     filter-ui: true
-    sort-ui: [date, title]
+    sort-ui: [year, title]
     page-size: 20
   - id: conference-proceedings
     contents: conference-proceedings
-    sort: "date desc"
+    sort: "year desc"
     type: table
     table-hover: true
-    fields: [date, title, author]
+    fields: [year, title, author]
     field-display-names:
-      date: "Year"
+      year: "Year"
       title: "Title"
       author: "Authors"
     filter-ui: true
     sort-ui: [date, title]
     page-size: 20
-  - id: reports
-    contents: reports
+  - id: phdthesis
+    contents: phdthesis
     sort: "date desc"
     type: table
     table-hover: true
-    fields: [date, title, author]
+    fields: [year, title, author]
     field-display-names:
-      date: "Year"
+      year: "Year"
       title: "Title"
       author: "Authors"
     filter-ui: true
-    sort-ui: [date, title]
-    page-size: 20
+    sort-ui: [year, title]
+    page-size: 1
 ---
 
 ## Books
 ::: {#books}
 :::
 
-## Journal Articles
-::: {#journal-articles}
+## Working Papers (Under Review)
+::: {#working-papers}
 :::
 
-## Working Papers
-::: {#working-papers}
+## Journal Articles
+::: {#journal-articles}
 :::
 
 ## Book Chapters
@@ -106,6 +107,6 @@ listing:
 ::: {#conference-proceedings}
 :::
 
-## Reports
-::: {#reports}
+## PhD Thesis
+::: {#phdthesis}
 :::

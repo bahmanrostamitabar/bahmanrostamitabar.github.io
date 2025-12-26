@@ -1,0 +1,20 @@
+---
+title: "A novel ranking procedure for forecasting approaches using Data Envelopment Analysis"
+author: "Ali Emrouznejad, Bahman Rostami-Tabar, and Konstantinos Petridis"
+description: "Technological Forecasting and Social Change"
+year: 2016
+links:
+  - text: DOI
+    href: https://doi.org/10.1016/j.techfore.2016.07.004
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+To compare the accuracy of different forecasting approaches an error measure is required. Many error measures have been proposed in the literature, however in practice there are some situations where different measures yield different decisions on forecasting approach selection and there is no agreement on which approach should be used. Generally forecasting measures represent ratios or percentages providing an overall image of how well fitted the forecasting technique is to the observations. This paper proposes a multiplicative Data Envelopment Analysis (DEA) model in order to rank several forecasting techniques. We demonstrate the proposed model by applying it to the set of yearly time series of the M3 competition. The usefulness of the proposed approach has been tested using the M3-competition where five error measures have been applied in and aggregated to a single DEA score.

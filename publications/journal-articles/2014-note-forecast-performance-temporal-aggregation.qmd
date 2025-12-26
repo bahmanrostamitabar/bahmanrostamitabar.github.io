@@ -1,0 +1,20 @@
+---
+title: "A note on the forecast performance of temporal aggregation"
+author: "Bahman Rostami-Tabar, Mohamed Zied Babai, Aris Syntetos, and Yves Ducq"
+description: "Naval Research Logistics"
+year: 2014
+links:
+  - text: DOI
+    href: https://doi.org/10.1002/nav.21598
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Earlier research on the effects of nonoverlapping temporal aggregation on demand forecasting showed the benefits associated with such an approach under a stationary AR(1) or MA(1) processes for decision making conducted at the disaggregate level. The first objective of this note is to extend those important results by considering a more general underlying demand process. The second objective is to assess the conditions under which aggregation may be a preferable approach for improving decision making at the aggregate level as well. We confirm the validity of previous results under more general conditions, and we show the increased benefit resulting from forecasting by temporal aggregation at lower frequency time units.

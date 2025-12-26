@@ -1,13 +1,18 @@
 ---
-title: "Data Science"
-description: "My data sceince projects."
+title: "AFRICAST"
+description: "An online forecasting training programme for learners across Africa."
+author: 
+  - name: "Bahman Rostami-Tabar"
+    affiliation: "Cardiff University"
+    url: "https://bahmanrostamitabar.github.io/"
 image: "cover.jpg"
+date: 2024-06-01
 categories:
   - R
-  - Python
-  - Quarto
-  - Postron
-  - Machine Learning
+  - Forecasting
+  - R
+  - LMICs
+  - AFRICAST
 listing:
   contents: /
   type: default # Explore more listing types; default, grid or table

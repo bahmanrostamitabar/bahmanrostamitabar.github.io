@@ -80,42 +80,13 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-year','listing-title','listing-author','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-books'] = new List('listing-books', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-journal-articles .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      page: 20,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-journal-articles'] = new List('listing-journal-articles', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -137,13 +108,42 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-year','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-journal-articles .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-year','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      page: 20,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-journal-articles'] = new List('listing-journal-articles', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-year','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -193,9 +193,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-year','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -214,20 +214,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-reports .list');
+    const listingTargetEl = window.document.querySelector('#listing-phdthesis .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-year','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-reports'] = new List('listing-reports', options);
+    window['quarto-listings']['listing-phdthesis'] = new List('listing-phdthesis', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -240,6 +240,120 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  // Try to get metadata from Quarto's page metadata
+  const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+  let metadata = {};
+  
+  // Try to extract from JSON-LD if available
+  scripts.forEach(script => {
+    try {
+      const data = JSON.parse(script.textContent);
+      if (data.doi) metadata.doi = data.doi;
+      if (data.url) metadata.url = data.url;
+    } catch(e) {}
+  });
+  
+  // Manual extraction from meta tags (we'll add these)
+  const getMeta = (name) => {
+    const el = document.querySelector(`meta[name="${name}"], meta[property="${name}"]`);
+    return el ? el.getAttribute('content') : null;
+  };
+  
+  metadata.doi = getMeta('citation_doi') || getMeta('doi');
+  metadata.pdf = getMeta('citation_pdf_url') || getMeta('pdf');
+  metadata.github = getMeta('github');
+  metadata.code = getMeta('code');
+  metadata.arxiv = getMeta('arxiv');
+  metadata.preprint = getMeta('preprint');
+  metadata.publisher = getMeta('citation_journal_title') || getMeta('publisher');
+  metadata.data = getMeta('data');
+  metadata.slides = getMeta('slides');
+  metadata.video = getMeta('video');
+  metadata.demo = getMeta('demo');
+  metadata.bibtex = getMeta('bibtex');
+  
+  console.log('Extracted metadata:', metadata);
+  
+  const resources = [
+    { key: 'doi', text: 'DOI', icon: '📄', class: 'doi-btn' },
+    { key: 'pdf', text: 'PDF', icon: '📑', class: 'pdf-btn' },
+    { key: 'publisher', text: 'Publisher', icon: '🔗', class: 'publisher-btn' },
+    { key: 'github', text: 'GitHub', icon: '💻', class: 'github-btn' },
+    { key: 'code', text: 'Code', icon: '⚙️', class: 'code-btn' },
+    { key: 'arxiv', text: 'arXiv', icon: '📰', class: 'arxiv-btn' },
+    { key: 'preprint', text: 'Preprint', icon: '📝', class: 'preprint-btn' },
+    { key: 'data', text: 'Data', icon: '📊', class: 'data-btn' },
+    { key: 'slides', text: 'Slides', icon: '🎯', class: 'slides-btn' },
+    { key: 'video', text: 'Video', icon: '🎥', class: 'video-btn' },
+    { key: 'demo', text: 'Demo', icon: '🚀', class: 'demo-btn' },
+    { key: 'bibtex', text: 'BibTeX', icon: '📋', class: 'bibtex-btn' }
+  ];
+  
+  const activeResources = resources.filter(r => metadata[r.key]);
+  
+  console.log('Active resources:', activeResources);
+  
+  if (activeResources.length > 0) {
+    const titleBlock = document.querySelector('.quarto-title-block');
+    
+    if (titleBlock) {
+      const resourceSection = document.createElement('div');
+      resourceSection.className = 'resource-section';
+      
+      const heading = document.createElement('h3');
+      heading.className = 'resource-heading';
+      heading.textContent = 'Resources';
+      resourceSection.appendChild(heading);
+      
+      const buttonContainer = document.createElement('div');
+      buttonContainer.className = 'resource-buttons';
+      
+      activeResources.forEach(resource => {
+        const link = document.createElement('a');
+        link.href = metadata[resource.key];
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.className = `resource-btn ${resource.class}`;
+        link.innerHTML = `${resource.icon} ${resource.text}`;
+        buttonContainer.appendChild(link);
+      });
+      
+      resourceSection.appendChild(buttonContainer);
+      titleBlock.appendChild(resourceSection);
+      
+      console.log('Resources section added');
+    } else {
+      console.error('Title block not found');
+    }
+  } else {
+    console.log('No resources found');
+  }
+  
+  // Style abstract
+  const abstractHeading = Array.from(document.querySelectorAll('h2')).find(
+    h2 => h2.textContent.trim() === 'Abstract'
+  );
+  
+  if (abstractHeading) {
+    const abstractContent = [];
+    let nextElement = abstractHeading.nextElementSibling;
+    
+    while (nextElement && nextElement.tagName !== 'H2') {
+      abstractContent.push(nextElement);
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    if (abstractContent.length > 0) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'abstract-box';
+      abstractHeading.parentNode.insertBefore(wrapper, abstractContent[0]);
+      abstractContent.forEach(el => wrapper.appendChild(el));
+    }
+  }
+});
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -271,8 +385,10 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="publications.css">
 <meta property="og:title" content="Publications">
+<meta property="og:image" content="../publications/books/dfem.png">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -303,12 +419,12 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../supervision/index.html"> 
+<span class="menu-text">Research Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../supervision/index.html"> 
-<span class="menu-text">Supervision</span></a>
+    <a class="nav-link" href="../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../talks/index.html"> 
@@ -322,12 +438,16 @@ window.Quarto = {
     <a class="nav-link" href="../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -342,11 +462,11 @@ window.Quarto = {
    
   <ul>
   <li><a href="#books" id="toc-books" class="nav-link active" data-scroll-target="#books">Books</a></li>
+  <li><a href="#working-papers-under-review" id="toc-working-papers-under-review" class="nav-link" data-scroll-target="#working-papers-under-review">Working Papers (Under Review)</a></li>
   <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link" data-scroll-target="#journal-articles">Journal Articles</a></li>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working Papers</a></li>
   <li><a href="#book-chapters" id="toc-book-chapters" class="nav-link" data-scroll-target="#book-chapters">Book Chapters</a></li>
   <li><a href="#conference-proceedings" id="toc-conference-proceedings" class="nav-link" data-scroll-target="#conference-proceedings">Conference Proceedings</a></li>
-  <li><a href="#reports" id="toc-reports" class="nav-link" data-scroll-target="#reports">Reports</a></li>
+  <li><a href="#phd-thesis" id="toc-phd-thesis" class="nav-link" data-scroll-target="#phd-thesis">PhD Thesis</a></li>
   </ul>
 </nav>
     </div>
@@ -381,11 +501,8 @@ window.Quarto = {
     <select id="listing-books-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-books'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Year - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Year - Newest
+      <option value="listing-year" data-direction="asc">
+        Year
       </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
@@ -402,7 +519,7 @@ window.Quarto = {
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
 </th>
 
 <th>
@@ -413,20 +530,27 @@ window.Quarto = {
 Authors
 </th>
 
+<th>
+ 
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1766523239344" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Forecasting: Principles and Practice" data-listing-filename-sort="forecasting-principles-practice.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-listing-file-modified-sort="1766704699412" data-listing-reading-time-sort="1" data-listing-word-count-sort="138" data-listing-title-sort="Demand forecasting for executives and professionals" data-listing-filename-sort="dfem.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Jan 1, 2021</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/books/forecasting-principles-practice.html" class="title listing-title">Forecasting: Principles and Practice</a>
+<a href="../publications/books/dfem.html" class="title listing-title">Demand forecasting for executives and professionals</a>
 </td>
 <td>
-<span class="listing-author">Rob J Hyndman, George Athanasopoulos</span>
+<span class="listing-author">Stephan Kolassa, Bahman Rostami-Tabar, and Enno Siemsen</span>
+</td>
+<td>
+<span class="listing-image"><img loading="lazy" src="../publications/books/dfem.png" style="height: 40px;"></span>
 </td>
 
 </tr>
@@ -436,20 +560,17 @@ Authors
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="journal-articles" class="level2">
-<h2 class="anchored" data-anchor-id="journal-articles">Journal Articles</h2>
-<div id="listing-journal-articles" class="quarto-listing quarto-listing-container-table">
+<section id="working-papers-under-review" class="level2">
+<h2 class="anchored" data-anchor-id="working-papers-under-review">Working Papers (Under Review)</h2>
+<div id="listing-working-papers" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-journal-articles-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-journal-articles'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-working-papers-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-working-papers'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Year - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Year - Newest
+      <option value="listing-year" data-direction="asc">
+        Year
       </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
@@ -466,7 +587,7 @@ Authors
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
 </th>
 
 <th>
@@ -485,818 +606,733 @@ Journal
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="A hybrid neural network and traditional approach for forecasting lumpy demand" data-listing-filename-sort="list(list(2008))-a-hybrid-neural-network-and-traditional-approach-f-4.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-listing-file-modified-sort="1766705196047" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="The value of forecast accuracy for emergency department staffing decisions" data-listing-filename-sort="2026-forecast-accuracy-ed-staffing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2026</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2008))-a-hybrid-neural-network-and-traditional-approach-f-4.html" class="title listing-title">A hybrid neural network and traditional approach for forecasting lumpy demand</a>
+<a href="../publications/working-papers/2026-forecast-accuracy-ed-staffing.html" class="title listing-title">The value of forecast accuracy for emergency department staffing decisions</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Mingzhe Shi, Bahman Rostami-Tabar, and Daniel Gartner</span>
 </td>
 <td>
-<span class="listing-description"><em>Proceedings of the World Academy of Science, Engineering and Technology</em>, Volume 2</span>
+<span class="listing-description">IEEE Transactions on Engineering Management</span>
 </td>
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10" data-listing-title-sort="Demand forecasting by temporal aggregation" data-listing-filename-sort="list(list(2013))-demand-forecasting-by-temporal-aggregation-3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-listing-file-modified-sort="1766705193870" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Emergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution" data-listing-filename-sort="2026-ed-staffing-probabilistic-newsvendor.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2026</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2013))-demand-forecasting-by-temporal-aggregation-3.html" class="title listing-title">Demand forecasting by temporal aggregation</a>
+<a href="../publications/working-papers/2026-ed-staffing-probabilistic-newsvendor.html" class="title listing-title">Emergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Shixuan Wang, and Stephen Disney</span>
 </td>
 <td>
-<span class="listing-description"><em>Naval Research Logistics (NRL)</em>, Volume 60, Issue 6, Pages 479-498</span>
+<span class="listing-description">Computers in Industry</span>
 </td>
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="Forecasting aggregate ARMA (1, 1) demands: Theoretical analysis of top-down versus bottom-up" data-listing-filename-sort="list(list(2013))-forecasting-aggregate-arma-1-1-demands-theoretical-6.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-listing-file-modified-sort="1766705199779" data-listing-reading-time-sort="1" data-listing-word-count-sort="61" data-listing-title-sort="Towards socially responsible forecasting: Identifying and typifying forecasting harms" data-listing-filename-sort="2026-socially-responsible-forecasting-harms.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2026</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2013))-forecasting-aggregate-arma-1-1-demands-theoretical-6.html" class="title listing-title">Forecasting aggregate ARMA (1, 1) demands: Theoretical analysis of top-down versus bottom-up</a>
+<a href="../publications/working-papers/2026-socially-responsible-forecasting-harms.html" class="title listing-title">Towards socially responsible forecasting: Identifying and typifying forecasting harms</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Travis Greene, Galit Shmueli, and Rob Hyndman</span>
 </td>
 <td>
-<span class="listing-description"><em>Proceedings of 2013 international conference on industrial engineering and systems management (IESM)</em>, Pages 1-8</span>
+<span class="listing-description">International Journal of Forecasting</span>
 </td>
 
 </tr>
 
-<tr data-index="3" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914882" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="The impact of temporal aggregation on supply chains with ARMA (1, 1) demand processes" data-listing-filename-sort="list(list(2019))-the-impact-of-temporal-aggregation-on-supply-chain-14.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-listing-file-modified-sort="1766705191378" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Examining digital twins applications, challenges and benefits in healthcare: A systematic literature review" data-listing-filename-sort="2026-digital-twins-healthcare-review.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2026</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2019))-the-impact-of-temporal-aggregation-on-supply-chain-14.html" class="title listing-title">The impact of temporal aggregation on supply chains with ARMA (1, 1) demand processes</a>
+<a href="../publications/working-papers/2026-digital-twins-healthcare-review.html" class="title listing-title">Examining digital twins applications, challenges and benefits in healthcare: A systematic literature review</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Fatemeh Monshizadeh, Maneesh Kumar, and Bahman Rostami-Tabar</span>
 </td>
 <td>
-<span class="listing-description"><em>European Journal of Operational Research</em>, Volume 273, Issue 3, Pages 920-932</span>
+<span class="listing-description">IEEE Transactions on Engineering Management</span>
 </td>
 
 </tr>
 
-<tr data-index="4" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Towards socially responsible forecasting: Identifying and typifying forecasting harms" data-listing-filename-sort="list(list(2025))-towards-socially-responsible-forecasting-identifyi-48.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="4" data-listing-file-modified-sort="1766705190353" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="A novel hybrid approach to contraceptive demand forecasting: integrating point predictions with probabilistic distributions" data-listing-filename-sort="2026-contraceptive-demand-forecasting-pom.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2026</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-towards-socially-responsible-forecasting-identifyi-48.html" class="title listing-title">Towards socially responsible forecasting: Identifying and typifying forecasting harms</a>
+<a href="../publications/working-papers/2026-contraceptive-demand-forecasting-pom.html" class="title listing-title">A novel hybrid approach to contraceptive demand forecasting: integrating point predictions with probabilistic distributions</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Harsha Chamara Hewage, Bahman Rostami-Tabar, Aris Syntetos, Federico Liberatore, and Glenn R. Milano</span>
 </td>
 <td>
-<span class="listing-description"><em>Under review in International Journal of Forecasting</em></span>
+<span class="listing-description">Production and Operations Management</span>
 </td>
 
 </tr>
 
-<tr data-index="5" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914876" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="A note on the forecast performance of temporal aggregation" data-listing-filename-sort="list(list(2014))-a-note-on-the-forecast-performance-of-temporal-agg-8.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="journal-articles" class="level2">
+<h2 class="anchored" data-anchor-id="journal-articles">Journal Articles</h2>
+<div id="listing-journal-articles" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-journal-articles-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-journal-articles'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-year" data-direction="asc">
+        Year
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+<th>
+Authors
+</th>
+
+<th>
+Journal
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1766705176690" data-listing-reading-time-sort="2" data-listing-word-count-sort="349" data-listing-title-sort="A systematic literature review of trauma systems: An operations management perspective" data-listing-filename-sort="2025-systematic-review-trauma-systems-operations.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2014))-a-note-on-the-forecast-performance-of-temporal-agg-8.html" class="title listing-title">A note on the forecast performance of temporal aggregation</a>
+<a href="../publications/journal-articles/2025-systematic-review-trauma-systems-operations.html" class="title listing-title">A systematic literature review of trauma systems: An operations management perspective</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Zihao Wang, Bahman Rostami-Tabar, Jane Haider, Mohamed Naim, and Javvad Haider</span>
 </td>
 <td>
-<span class="listing-description"><em>Naval Research Logistics (NRL)</em></span>
+<span class="listing-description">Journal: Advances in Rehabilitation Science and Practice</span>
 </td>
 
 </tr>
 
-<tr data-index="6" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Forecasting interrupted time series" data-listing-filename-sort="list(list(2025))-forecasting-interrupted-time-series-35.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-listing-file-modified-sort="1766704370486" data-listing-reading-time-sort="2" data-listing-word-count-sort="225" data-listing-title-sort="Looking for the crystal ball in unscheduled care: a systematic literature review of the forecasting process" data-listing-filename-sort="2025-forecasting-unscheduled-care-review.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-forecasting-interrupted-time-series-35.html" class="title listing-title">Forecasting interrupted time series</a>
+<a href="../publications/journal-articles/2025-forecasting-unscheduled-care-review.html" class="title listing-title">Looking for the crystal ball in unscheduled care: a systematic literature review of the forecasting process</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Mingzhe Shi, Bahman Rostami-Tabar, and Daniel Gartner</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of the Operational Research Society</em>, Volume 76, Issue 4, Pages 790-803</span>
+<span class="listing-description">Health Care Management Science</span>
 </td>
 
 </tr>
 
-<tr data-index="7" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions" data-listing-filename-sort="list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-49.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-listing-file-modified-sort="1766705229369" data-listing-reading-time-sort="1" data-listing-word-count-sort="199" data-listing-title-sort="The missing puzzle piece: contextual insights for enhanced pharmaceutical supply chain forecasting" data-listing-filename-sort="2025-contextual-insights-pharmaceutical-forecasting.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-49.html" class="title listing-title">A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions</a>
+<a href="../publications/journal-articles/2025-contextual-insights-pharmaceutical-forecasting.html" class="title listing-title">The missing puzzle piece: contextual insights for enhanced pharmaceutical supply chain forecasting</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Arebu Issa Bilal, Bahman Rostami-Tabar, Harsha Halgamuwe Hewage, Umit Sezer Bititci, and Teferi Gedif Fenta</span>
 </td>
 <td>
-<span class="listing-description"><em>Under review in Production and Operations Management</em></span>
+<span class="listing-description">International Journal of Production Research</span>
 </td>
 
 </tr>
 
-<tr data-index="8" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="Demand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?" data-listing-filename-sort="list(list(2017))-demand-forecasting-by-temporal-aggregation-using-o-12.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-listing-file-modified-sort="1766704384969" data-listing-reading-time-sort="1" data-listing-word-count-sort="136" data-listing-title-sort="Forecasting interrupted time series" data-listing-filename-sort="2025-forecasting-interrupted-time-series.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2017))-demand-forecasting-by-temporal-aggregation-using-o-12.html" class="title listing-title">Demand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?</a>
+<a href="../publications/journal-articles/2025-forecasting-interrupted-time-series.html" class="title listing-title">Forecasting interrupted time series</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Rob J. Hyndman and Bahman Rostami-Tabar</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of Business Research</em>, Volume 78, Pages 1-9</span>
+<span class="listing-description">Journal of the Operational Research Society</span>
 </td>
 
 </tr>
 
-<tr data-index="9" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Demand forecasting in supply chains: A review of aggregation and hierarchical approaches" data-listing-filename-sort="list(list(2021))-demand-forecasting-in-supply-chains-a-review-of-ag-23.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="4" data-listing-file-modified-sort="1766703767385" data-listing-reading-time-sort="2" data-listing-word-count-sort="211" data-listing-title-sort="A novel hybrid approach to contraceptive demand forecasting: integrating point predictions with probabilistic distributions" data-listing-filename-sort="2025-hybrid-contraceptive-demand-forecasting.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2021))-demand-forecasting-in-supply-chains-a-review-of-ag-23.html" class="title listing-title">Demand forecasting in supply chains: A review of aggregation and hierarchical approaches</a>
+<a href="../publications/journal-articles/2025-hybrid-contraceptive-demand-forecasting.html" class="title listing-title">A novel hybrid approach to contraceptive demand forecasting: integrating point predictions with probabilistic distributions</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Harsha Chamara Hewage, Bahman Rostami-Tabar, Aris Syntetos, Federico Liberatore, and Glenn R. Milano</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Research</em>, Pages 1-25</span>
+<span class="listing-description">International Journal of Production Research</span>
 </td>
 
 </tr>
 
-<tr data-index="10" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="Alliance or apathy? Forecasting’s role in achieving the UN sustainable development goals" data-listing-filename-sort="list(list(2024))-alliance-or-apathy-forecastings-role-in-achieving--40.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="5" data-listing-file-modified-sort="1766703744722" data-listing-reading-time-sort="1" data-listing-word-count-sort="200" data-listing-title-sort="A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning" data-listing-filename-sort="2025-hybrid-predictive-prescriptive-mental-healthcare.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2024))-alliance-or-apathy-forecastings-role-in-achieving--40.html" class="title listing-title">Alliance or apathy? Forecasting’s role in achieving the UN sustainable development goals</a>
+<a href="../publications/journal-articles/2025-hybrid-predictive-prescriptive-mental-healthcare.html" class="title listing-title">A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Harsha Halgamuwe Hewage and Bahman Rostami-Tabar</span>
 </td>
 <td>
-<span class="listing-description"><em>Foresight: The International Journal of Applied Forecasting</em>, Issue 74</span>
+<span class="listing-description">Journal of the Operational Research Society</span>
 </td>
 
 </tr>
 
-<tr data-index="11" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="Hierarchical time series forecasting in emergency medical services" data-listing-filename-sort="list(list(2024))-hierarchical-time-series-forecasting-in-emergency--29.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="6" data-listing-file-modified-sort="1766703715202" data-listing-reading-time-sort="2" data-listing-word-count-sort="209" data-listing-title-sort="Patient length of stay in trauma networks: Insights from advanced modelling" data-listing-filename-sort="2025-patient-length-of-stay-trauma-networks.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2024))-hierarchical-time-series-forecasting-in-emergency--29.html" class="title listing-title">Hierarchical time series forecasting in emergency medical services</a>
+<a href="../publications/journal-articles/2025-patient-length-of-stay-trauma-networks.html" class="title listing-title">Patient length of stay in trauma networks: Insights from advanced modelling</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Zihao Wang, Bahman Rostami-Tabar, Jane Haider, Javvad Haider, and Mohamed Naim</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of Service Research</em>, Pages 10946705241232169</span>
+<span class="listing-description">Expert Systems with Applications</span>
 </td>
 
 </tr>
 
-<tr data-index="12" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914901" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="A hybrid LSTM method for forecasting demands of medical items in humanitarian operations" data-listing-filename-sort="list(list(2024))-a-hybrid-lstm-method-for-forecasting-demands-of-me-34.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="7" data-listing-file-modified-sort="1766703696937" data-listing-reading-time-sort="2" data-listing-word-count-sort="272" data-listing-title-sort="The role of technology in developing resilient supply chains: a systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions" data-listing-filename-sort="2025-role-of-technology.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2025</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2024))-a-hybrid-lstm-method-for-forecasting-demands-of-me-34.html" class="title listing-title">A hybrid LSTM method for forecasting demands of medical items in humanitarian operations</a>
+<a href="../publications/journal-articles/2025-role-of-technology.html" class="title listing-title">The role of technology in developing resilient supply chains: a systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Birhanu Shanko Dura, Simon Peter Nadeem, Jose Arturo Garza-Reyes, Abebe Ejigu Alemu, Bahman Rostami-Tabar, Daniel Henao Zapata, and Andre Kreie</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Research</em>, Pages 1-18</span>
+<span class="listing-description">Journal of Humanitarian Logistics and Supply Chain Management</span>
 </td>
 
 </tr>
 
-<tr data-index="13" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914883" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Anticipating special events in emergency department forecasting" data-listing-filename-sort="list(list(2020))-anticipating-special-events-in-emergency-departmen-15.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="8" data-listing-file-modified-sort="1766705229516" data-listing-reading-time-sort="2" data-listing-word-count-sort="207" data-listing-title-sort="Probabilistic forecasting of daily COVID-19 admissions using machine learning" data-listing-filename-sort="2024-probabilistic-forecasting-covid19-admissions.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2024</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2020))-anticipating-special-events-in-emergency-departmen-15.html" class="title listing-title">Anticipating special events in emergency department forecasting</a>
+<a href="../publications/journal-articles/2024-probabilistic-forecasting-covid19-admissions.html" class="title listing-title">Probabilistic forecasting of daily COVID-19 admissions using machine learning</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Siddharth Arora, Juan F. Rendon-Sanchez, and Thanos E. Goltsos</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Forecasting</em></span>
+<span class="listing-description">IMA Journal of Management Mathematics</span>
 </td>
 
 </tr>
 
-<tr data-index="14" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Forecasting for lead-time period by temporal aggregation: Whether to combine and how" data-listing-filename-sort="list(list(2023))-forecasting-for-leadtime-period-by-temporal-aggreg-33.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="9" data-listing-file-modified-sort="1766705229701" data-listing-reading-time-sort="2" data-listing-word-count-sort="211" data-listing-title-sort="A hybrid LSTM method for forecasting demands of medical items in humanitarian operations" data-listing-filename-sort="2024-hybrid-lstm-medical-humanitarian-demand.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2024</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2023))-forecasting-for-leadtime-period-by-temporal-aggreg-33.html" class="title listing-title">Forecasting for lead-time period by temporal aggregation: Whether to combine and how</a>
+<a href="../publications/journal-articles/2024-hybrid-lstm-medical-humanitarian-demand.html" class="title listing-title">A hybrid LSTM method for forecasting demands of medical items in humanitarian operations</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Marwa Hasni, Mohamed Zied Babai, and Bahman Rostami-Tabar</span>
 </td>
 <td>
-<span class="listing-description"><em>Computers in Industry</em>, Volume 145, Pages 103803</span>
+<span class="listing-description">International Journal of Production Research</span>
 </td>
 
 </tr>
 
-<tr data-index="15" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="On the order-up-to policy with intermittent integer demand and logically consistent forecasts" data-listing-filename-sort="list(list(2023))-on-the-orderupto-policy-with-intermittent-integer--25.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="10" data-listing-file-modified-sort="1766705229901" data-listing-reading-time-sort="1" data-listing-word-count-sort="47" data-listing-title-sort="Alliance or apathy? Forecasting’s role in achieving the UN sustainable development goals" data-listing-filename-sort="2024-forecasting-role-sustainable-development-goals.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2024</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2023))-on-the-orderupto-policy-with-intermittent-integer--25.html" class="title listing-title">On the order-up-to policy with intermittent integer demand and logically consistent forecasts</a>
+<a href="../publications/journal-articles/2024-forecasting-role-sustainable-development-goals.html" class="title listing-title">Alliance or apathy? Forecasting’s role in achieving the UN sustainable development goals</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar and Mike Gilliland</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Economics</em>, Volume 257, Pages 108763</span>
+<span class="listing-description">Foresight: The International Journal of Applied Forecasting</span>
 </td>
 
 </tr>
 
-<tr data-index="16" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Forecasting: Theory and practice" data-listing-filename-sort="list(list(2022))-forecasting-theory-and-practice-18.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="11" data-listing-file-modified-sort="1766705229419" data-listing-reading-time-sort="1" data-listing-word-count-sort="160" data-listing-title-sort="Using simulation for long-term bed modelling in critical care" data-listing-filename-sort="2024-simulation-long-term-bed-modelling-critical-care.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2024</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2022))-forecasting-theory-and-practice-18.html" class="title listing-title">Forecasting: Theory and practice</a>
+<a href="../publications/journal-articles/2024-simulation-long-term-bed-modelling-critical-care.html" class="title listing-title">Using simulation for long-term bed modelling in critical care</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Debbie Lentle, Victoria Sachser, Eduard Incze, Antuela Tako, Bahman Rostami-Tabar, Craig Spencer, and Jennifer Morgan</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Forecasting</em></span>
+<span class="listing-description">Journal of Simulation</span>
 </td>
 
 </tr>
 
-<tr data-index="17" data-listing-date-sort="1717196400000" data-listing-file-modified-sort="1766523780941" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Forecasting Interrupted Time Series" data-listing-filename-sort="forecasting-interrupted.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="12" data-listing-file-modified-sort="1766705229609" data-listing-reading-time-sort="2" data-listing-word-count-sort="398" data-listing-title-sort="Investigating length of stay patterns and its predictors in the South Wales Trauma Network" data-listing-filename-sort="2024-length-of-stay-south-wales-trauma.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Jun 1, 2024</span>
+<span class="listing-year">2024</span>
 </td>
 <td>
-<a href="../publications/journal-articles/forecasting-interrupted.html" class="title listing-title">Forecasting Interrupted Time Series</a>
+<a href="../publications/journal-articles/2024-length-of-stay-south-wales-trauma.html" class="title listing-title">Investigating length of stay patterns and its predictors in the South Wales Trauma Network</a>
 </td>
 <td>
-<span class="listing-author">Bahman Rostami-Tabar, Rob J Hyndman</span>
+<span class="listing-author">Zihao Wang, Bahman Rostami-Tabar, Jane Haider, Mohamed Naim, and Javvad Haider</span>
 </td>
 <td>
-<span class="listing-description"></span>
+<span class="listing-description">Advances in Rehabilitation Science and Practice</span>
 </td>
 
 </tr>
 
-<tr data-index="18" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914907" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="Looking for the crystal ball in unscheduled care: A systematic literature review of the forecasting process" data-listing-filename-sort="list(list(2025))-looking-for-the-crystal-ball-in-unscheduled-care-a-41.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="13" data-listing-file-modified-sort="1766705229810" data-listing-reading-time-sort="1" data-listing-word-count-sort="189" data-listing-title-sort="Hierarchical time series forecasting in emergency medical services" data-listing-filename-sort="2024-hierarchical-time-series-emergency-services.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2024</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-looking-for-the-crystal-ball-in-unscheduled-care-a-41.html" class="title listing-title">Looking for the crystal ball in unscheduled care: A systematic literature review of the forecasting process</a>
+<a href="../publications/journal-articles/2024-hierarchical-time-series-emergency-services.html" class="title listing-title">Hierarchical time series forecasting in emergency medical services</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar and Rob J. Hyndman</span>
 </td>
 <td>
-<span class="listing-description"><em>Health Care Management Science</em>, Pages 1-17</span>
+<span class="listing-description">Journal of Service Research</span>
 </td>
 
 </tr>
 
-<tr data-index="19" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="The role of technology in developing resilient supply chains: A systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions" data-listing-filename-sort="list(list(2025))-the-role-of-technology-in-developing-resilient-sup-38.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="14" data-listing-file-modified-sort="1766705230278" data-listing-reading-time-sort="1" data-listing-word-count-sort="161" data-listing-title-sort="Probabilistic forecasting of hourly emergency department arrivals" data-listing-filename-sort="2023-probabilistic-forecasting-hourly-ed-arrivals.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-the-role-of-technology-in-developing-resilient-sup-38.html" class="title listing-title">The role of technology in developing resilient supply chains: A systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions</a>
+<a href="../publications/journal-articles/2023-probabilistic-forecasting-hourly-ed-arrivals.html" class="title listing-title">Probabilistic forecasting of hourly emergency department arrivals</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Jethro Browell, and Ivan Svetunkov</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of Humanitarian Logistics and Supply Chain Management</em></span>
+<span class="listing-description">Health Systems</span>
 </td>
 
 </tr>
 
-<tr data-index="20" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10" data-listing-title-sort="Neural network approach to lumpy demand forecasting for spare parts in process industries" data-listing-filename-sort="list(list(2008))-neural-network-approach-to-lumpy-demand-forecastin-1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="15" data-listing-file-modified-sort="1766705230372" data-listing-reading-time-sort="2" data-listing-word-count-sort="240" data-listing-title-sort="On the order-up-to policy with intermittent integer demand and logically consistent forecasts" data-listing-filename-sort="2023-order-up-to-intermittent-integer-demand.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2008))-neural-network-approach-to-lumpy-demand-forecastin-1.html" class="title listing-title">Neural network approach to lumpy demand forecasting for spare parts in process industries</a>
+<a href="../publications/journal-articles/2023-order-up-to-intermittent-integer-demand.html" class="title listing-title">On the order-up-to policy with intermittent integer demand and logically consistent forecasts</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar and Stephen M. Disney</span>
 </td>
 <td>
-<span class="listing-description"><em>2008 international conference on computer and communication engineering</em>, Pages 1378-1382</span>
+<span class="listing-description">International Journal of Production Economics</span>
 </td>
 
 </tr>
 
-<tr data-index="21" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3" data-listing-title-sort="Exploring the association between time series features and forecasting by temporal aggregation using machine learning" data-listing-filename-sort="list(list(2023))-exploring-the-association-between-time-series-feat-28.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="16" data-listing-file-modified-sort="1766705230553" data-listing-reading-time-sort="2" data-listing-word-count-sort="276" data-listing-title-sort="Forecasting for lead-time period by temporal aggregation: Whether to combine and how" data-listing-filename-sort="2023-forecasting-lead-time-temporal-aggregation.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2023))-exploring-the-association-between-time-series-feat-28.html" class="title listing-title">Exploring the association between time series features and forecasting by temporal aggregation using machine learning</a>
+<a href="../publications/journal-articles/2023-forecasting-lead-time-temporal-aggregation.html" class="title listing-title">Forecasting for lead-time period by temporal aggregation: Whether to combine and how</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Thanos E. Goltsos, and Shixuan Wang</span>
 </td>
 <td>
-<span class="listing-description"><em>Neurocomputing</em>, Pages 126376</span>
+<span class="listing-description">Computers in Industry</span>
 </td>
 
 </tr>
 
-<tr data-index="22" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="Probabilistic forecasting of daily COVID-19 admissions using machine learning" data-listing-filename-sort="list(list(2024))-probabilistic-forecasting-of-daily-covid19-admissi-26.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="17" data-listing-file-modified-sort="1766705229993" data-listing-reading-time-sort="2" data-listing-word-count-sort="211" data-listing-title-sort="The value of point of sales information in upstream supply chain forecasting: an empirical investigation" data-listing-filename-sort="2023-value-point-of-sales-information.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2024))-probabilistic-forecasting-of-daily-covid19-admissi-26.html" class="title listing-title">Probabilistic forecasting of daily COVID-19 admissions using machine learning</a>
+<a href="../publications/journal-articles/2023-value-point-of-sales-information.html" class="title listing-title">The value of point of sales information in upstream supply chain forecasting: an empirical investigation</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Mahdi Abolghasemi, Bahman Rostami-Tabar, and Aris Syntetos</span>
 </td>
 <td>
-<span class="listing-description"><em>IMA Journal of Management Mathematics</em>, Volume 35, Issue 1, Pages 21-43</span>
+<span class="listing-description">International Journal of Production Research</span>
 </td>
 
 </tr>
 
-<tr data-index="23" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning" data-listing-filename-sort="list(list(2025))-a-hybrid-predictive-and-prescriptive-modelling-fra-42.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="18" data-listing-file-modified-sort="1766705230461" data-listing-reading-time-sort="2" data-listing-word-count-sort="211" data-listing-title-sort="Integrated demand forecasting and planning model for repairable spare part: an empirical investigation" data-listing-filename-sort="2023-integrated-demand-forecasting-repairable-spare-parts.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-a-hybrid-predictive-and-prescriptive-modelling-fra-42.html" class="title listing-title">A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning</a>
+<a href="../publications/journal-articles/2023-integrated-demand-forecasting-repairable-spare-parts.html" class="title listing-title">Integrated demand forecasting and planning model for repairable spare part: an empirical investigation</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Vahid Babaveisi, Ebrahim Teimoury, Mohammad Reza Gholamian, and Bahman Rostami-Tabar</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of the Operational Research Society</em>, Pages 1-25</span>
+<span class="listing-description">International Journal of Production Research</span>
 </td>
 
 </tr>
 
-<tr data-index="24" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="Emergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution" data-listing-filename-sort="list(list(2025))-emergency-department-staffing-policy-an-integrated-46.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="19" data-listing-file-modified-sort="1766705230680" data-listing-reading-time-sort="2" data-listing-word-count-sort="226" data-listing-title-sort="To aggregate or not to aggregate: Forecasting of finite autocorrelated demand" data-listing-filename-sort="2023-aggregate-or-not-autocorrelated-demand.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-emergency-department-staffing-policy-an-integrated-46.html" class="title listing-title">Emergency department staffing policy: An integrated probabilistic forecasting and newsvendor solution</a>
+<a href="../publications/journal-articles/2023-aggregate-or-not-autocorrelated-demand.html" class="title listing-title">To aggregate or not to aggregate: Forecasting of finite autocorrelated demand</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Mohamed Zied Babai, and Aris Syntetos</span>
 </td>
 <td>
-<span class="listing-description"><em>Under review in Computer in Industry</em></span>
+<span class="listing-description">Journal of the Operational Research Society</span>
 </td>
 
 </tr>
 
-<tr data-index="25" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="The impact of advance demand information on the performance of production/inventory systems" data-listing-filename-sort="list(list(2015))-the-impact-of-advance-demand-information-on-the-pe-13.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="20" data-listing-file-modified-sort="1766705230184" data-listing-reading-time-sort="1" data-listing-word-count-sort="149" data-listing-title-sort="Challenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes" data-listing-filename-sort="2023-scheduling-reusable-single-use-bronchoscopes.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2015))-the-impact-of-advance-demand-information-on-the-pe-13.html" class="title listing-title">The impact of advance demand information on the performance of production/inventory systems</a>
+<a href="../publications/journal-articles/2023-scheduling-reusable-single-use-bronchoscopes.html" class="title listing-title">Challenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Daniel Gartner, Joe Viana, Bahman Rostami-Tabar, Dominik Pförringer, and Günther Edenharter</span>
 </td>
 <td>
-<span class="listing-description"><em>IFAC-PapersOnLine</em>, Volume 48, Pages 1744-1749</span>
+<span class="listing-description">Journal of the Operational Research Society</span>
 </td>
 
 </tr>
 
-<tr data-index="26" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Forecasting for social good" data-listing-filename-sort="list(list(2021))-forecasting-for-social-good-16.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="21" data-listing-file-modified-sort="1766705230088" data-listing-reading-time-sort="2" data-listing-word-count-sort="376" data-listing-title-sort="Exploring the association between time series features and forecasting by temporal aggregation using machine learning" data-listing-filename-sort="2023-time-series-features-temporal-aggregation.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2023</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2021))-forecasting-for-social-good-16.html" class="title listing-title">Forecasting for social good</a>
+<a href="../publications/journal-articles/2023-time-series-features-temporal-aggregation.html" class="title listing-title">Exploring the association between time series features and forecasting by temporal aggregation using machine learning</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar and Dejan Mircetic</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Forecasting</em></span>
+<span class="listing-description">Neurocomputing</span>
 </td>
 
 </tr>
 
-<tr data-index="27" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="Integrated demand forecasting and planning model for repairable spare part: An empirical investigation" data-listing-filename-sort="list(list(2023))-integrated-demand-forecasting-and-planning-model-f-30.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="22" data-listing-file-modified-sort="1766705231122" data-listing-reading-time-sort="2" data-listing-word-count-sort="211" data-listing-title-sort="Forecasting: theory and practice" data-listing-filename-sort="2022-forecasting-theory-and-practice.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2022</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2023))-integrated-demand-forecasting-and-planning-model-f-30.html" class="title listing-title">Integrated demand forecasting and planning model for repairable spare part: An empirical investigation</a>
+<a href="../publications/journal-articles/2022-forecasting-theory-and-practice.html" class="title listing-title">Forecasting: theory and practice</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Fotios Petropoulos, Daniele Apiletti, Vassilios Assimakopoulos, Mohamed Zied Babai, Devon K. Barrow, Souhaib Ben Taieb, Christoph Bergmeir, Ricardo J. Bessa, Jakub Bijak, John E. Boylan, et al.</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Research</em>, Volume 61, Issue 20, Pages 6791-6807</span>
+<span class="listing-description">International Journal of Forecasting</span>
 </td>
 
 </tr>
 
-<tr data-index="28" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="The missing puzzle piece: Contextual insights for enhanced pharmaceutical supply chain forecasting" data-listing-filename-sort="list(list(2025))-the-missing-puzzle-piece-contextual-insights-for-e-45.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="23" data-listing-file-modified-sort="1766705231307" data-listing-reading-time-sort="2" data-listing-word-count-sort="237" data-listing-title-sort="Forecasting for social good" data-listing-filename-sort="2021-forecasting-for-social-good.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2021</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-the-missing-puzzle-piece-contextual-insights-for-e-45.html" class="title listing-title">The missing puzzle piece: Contextual insights for enhanced pharmaceutical supply chain forecasting</a>
+<a href="../publications/journal-articles/2021-forecasting-for-social-good.html" class="title listing-title">Forecasting for social good</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Mohammad M. Ali, Tao Hong, Rob J. Hyndman, Michael D. Porter, and Aris Syntetos</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Research</em>, Pages 1-19</span>
+<span class="listing-description">International Journal of Forecasting</span>
 </td>
 
 </tr>
 
-<tr data-index="29" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Challenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes" data-listing-filename-sort="list(list(2023))-challenging-the-throwaway-culture-in-hospitals-sch-31.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="24" data-listing-file-modified-sort="1766705231218" data-listing-reading-time-sort="2" data-listing-word-count-sort="207" data-listing-title-sort="Forecasting hierarchical time series in supply chains: an empirical investigation" data-listing-filename-sort="2021-hierarchical-time-series-supply-chains.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2021</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2023))-challenging-the-throwaway-culture-in-hospitals-sch-31.html" class="title listing-title">Challenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes</a>
+<a href="../publications/journal-articles/2021-hierarchical-time-series-supply-chains.html" class="title listing-title">Forecasting hierarchical time series in supply chains: an empirical investigation</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Dejan Mircetic, Bahman Rostami-Tabar, Svetlana Nikolicic, and Marinko Maslaric</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of the Operational Research Society</em>, Volume 74, Issue 10, Pages 2215-2226</span>
+<span class="listing-description">International Journal of Production Research</span>
 </td>
 
 </tr>
 
-<tr data-index="30" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="To aggregate or not to aggregate: Forecasting of finite autocorrelated demand" data-listing-filename-sort="list(list(2023))-to-aggregate-or-not-to-aggregate-forecasting-of-fi-32.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="25" data-listing-file-modified-sort="1766705231404" data-listing-reading-time-sort="2" data-listing-word-count-sort="258" data-listing-title-sort="Forecasting COVID-19 daily cases using phone call data" data-listing-filename-sort="2021-forecasting-covid19-phone-call-data.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2021</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2023))-to-aggregate-or-not-to-aggregate-forecasting-of-fi-32.html" class="title listing-title">To aggregate or not to aggregate: Forecasting of finite autocorrelated demand</a>
+<a href="../publications/journal-articles/2021-forecasting-covid19-phone-call-data.html" class="title listing-title">Forecasting COVID-19 daily cases using phone call data</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar and Juan F. Rendon-Sanchez</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of the Operational Research Society</em>, Volume 74, Issue 8, Pages 1840-1859</span>
+<span class="listing-description">Applied Soft Computing</span>
 </td>
 
 </tr>
 
-<tr data-index="31" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="Using simulation for long-term bed modelling in critical care" data-listing-filename-sort="list(list(2024))-using-simulation-for-longterm-bed-modelling-in-cri-36.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="26" data-listing-file-modified-sort="1766705231534" data-listing-reading-time-sort="2" data-listing-word-count-sort="212" data-listing-title-sort="Demand forecasting in supply chains: a review of aggregation and hierarchical approaches" data-listing-filename-sort="2021-demand-forecasting-aggregation-hierarchical-review.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2021</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2024))-using-simulation-for-longterm-bed-modelling-in-cri-36.html" class="title listing-title">Using simulation for long-term bed modelling in critical care</a>
+<a href="../publications/journal-articles/2021-demand-forecasting-aggregation-hierarchical-review.html" class="title listing-title">Demand forecasting in supply chains: a review of aggregation and hierarchical approaches</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Mohamed Zied Babai, John E. Boylan, and Bahman Rostami-Tabar</span>
 </td>
 <td>
-<span class="listing-description"><em>Journal of Simulation</em>, Pages 1-17</span>
+<span class="listing-description">International Journal of Production Research</span>
 </td>
 
 </tr>
 
-<tr data-index="32" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="FORECASTING AUTOREGRESSIVE DEMANDS WITH TEMPORAL AGGREGATION" data-listing-filename-sort="list(list(2012))-forecasting-autoregressive-demands-with-temporal-a-2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="27" data-listing-file-modified-sort="1766705231685" data-listing-reading-time-sort="2" data-listing-word-count-sort="210" data-listing-title-sort="Anticipating special events in emergency department forecasting" data-listing-filename-sort="2020-anticipating-special-events-emergency-department.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2020</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2012))-forecasting-autoregressive-demands-with-temporal-a-2.html" class="title listing-title">FORECASTING AUTOREGRESSIVE DEMANDS WITH TEMPORAL AGGREGATION</a>
+<a href="../publications/journal-articles/2020-anticipating-special-events-emergency-department.html" class="title listing-title">Anticipating special events in emergency department forecasting</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar and Florian Ziel</span>
 </td>
 <td>
-<span class="listing-description"><em>9th international conference on modeling, optimization &amp; SIMulation</em></span>
+<span class="listing-description">International Journal of Forecasting</span>
 </td>
 
 </tr>
 
-<tr data-index="33" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Forecasting COVID-19 daily cases using phone call data" data-listing-filename-sort="list(list(2021))-forecasting-covid19-daily-cases-using-phone-call-d-17.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="28" data-listing-file-modified-sort="1766705210139" data-listing-reading-time-sort="2" data-listing-word-count-sort="236" data-listing-title-sort="The impact of temporal aggregation on supply chains with ARMA (1,1) demand processes" data-listing-filename-sort="2019-impact-temporal-aggregation-supply-chain.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2019</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2021))-forecasting-covid19-daily-cases-using-phone-call-d-17.html" class="title listing-title">Forecasting COVID-19 daily cases using phone call data</a>
+<a href="../publications/journal-articles/2019-impact-temporal-aggregation-supply-chain.html" class="title listing-title">The impact of temporal aggregation on supply chains with ARMA (1,1) demand processes</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Mohamed Zied Babai, Mohammad Ali, and John E. Boylan</span>
 </td>
 <td>
-<span class="listing-description"><em>Applied soft computing</em>, Volume 100, Pages 106932</span>
+<span class="listing-description">European Journal of Operational Research</span>
 </td>
 
 </tr>
 
-<tr data-index="34" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="The impact of temporal aggregation on demand forecasting of ARMA(1, 1) process: Theoretical analysis" data-listing-filename-sort="list(list(2013))-the-impact-of-temporal-aggregation-on-demand-forec-5.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="29" data-listing-file-modified-sort="1766705208876" data-listing-reading-time-sort="1" data-listing-word-count-sort="162" data-listing-title-sort="Demand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?" data-listing-filename-sort="2017-demand-forecasting-temporal-aggregation-levels.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2017</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2013))-the-impact-of-temporal-aggregation-on-demand-forec-5.html" class="title listing-title">The impact of temporal aggregation on demand forecasting of ARMA(1, 1) process: Theoretical analysis</a>
+<a href="../publications/journal-articles/2017-demand-forecasting-temporal-aggregation-levels.html" class="title listing-title">Demand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Nikolaos Kourentzes, Bahman Rostami-Tabar, and Devon K. Barrow</span>
 </td>
 <td>
-<span class="listing-description"><em>Manufacturing modelling, management, and control</em>, Pages 1696-1701</span>
+<span class="listing-description">Journal of Business Research</span>
 </td>
 
 </tr>
 
-<tr data-index="35" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="Non-stationary demand forecasting by cross-sectional aggregation" data-listing-filename-sort="list(list(2015))-nonstationary-demand-forecasting-by-crosssectional-9.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="30" data-listing-file-modified-sort="1766705207540" data-listing-reading-time-sort="1" data-listing-word-count-sort="147" data-listing-title-sort="A novel ranking procedure for forecasting approaches using Data Envelopment Analysis" data-listing-filename-sort="2016-ranking-forecasting-approaches-dea.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2016</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2015))-nonstationary-demand-forecasting-by-crosssectional-9.html" class="title listing-title">Non-stationary demand forecasting by cross-sectional aggregation</a>
+<a href="../publications/journal-articles/2016-ranking-forecasting-approaches-dea.html" class="title listing-title">A novel ranking procedure for forecasting approaches using Data Envelopment Analysis</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Ali Emrouznejad, Bahman Rostami-Tabar, and Konstantinos Petridis</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Economics</em>, Volume 170, Pages 297-309</span>
+<span class="listing-description">Technological Forecasting and Social Change</span>
 </td>
 
 </tr>
 
-<tr data-index="36" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914874" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="ARIMA demand forecasting by aggregation" data-listing-filename-sort="list(list(2014))-arima-demand-forecasting-by-aggregation-7.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="31" data-listing-file-modified-sort="1766705206216" data-listing-reading-time-sort="1" data-listing-word-count-sort="186" data-listing-title-sort="Non-stationary demand forecasting by cross-sectional aggregation" data-listing-filename-sort="2015-nonstationary-demand-cross-sectional-aggregation.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2015</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2014))-arima-demand-forecasting-by-aggregation-7.html" class="title listing-title">ARIMA demand forecasting by aggregation</a>
+<a href="../publications/journal-articles/2015-nonstationary-demand-cross-sectional-aggregation.html" class="title listing-title">Non-stationary demand forecasting by cross-sectional aggregation</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Mohamed Zied Babai, Yves Ducq, and Aris Syntetos</span>
 </td>
 <td>
-<span class="listing-description"></span>
+<span class="listing-description">International Journal of Production Economics</span>
 </td>
 
 </tr>
 
-<tr data-index="37" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Forecasting hierarchical time series in supply chains: An empirical investigation" data-listing-filename-sort="list(list(2021))-forecasting-hierarchical-time-series-in-supply-cha-19.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="32" data-listing-file-modified-sort="1766705204786" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="A note on the forecast performance of temporal aggregation" data-listing-filename-sort="2014-note-forecast-performance-temporal-aggregation.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2014</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2021))-forecasting-hierarchical-time-series-in-supply-cha-19.html" class="title listing-title">Forecasting hierarchical time series in supply chains: An empirical investigation</a>
+<a href="../publications/journal-articles/2014-note-forecast-performance-temporal-aggregation.html" class="title listing-title">A note on the forecast performance of temporal aggregation</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Mohamed Zied Babai, Aris Syntetos, and Yves Ducq</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Research</em>, Pages 1-20</span>
+<span class="listing-description">Naval Research Logistics</span>
 </td>
 
 </tr>
 
-<tr data-index="38" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914910" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions" data-listing-filename-sort="list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-44.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="33" data-listing-file-modified-sort="1766704578908" data-listing-reading-time-sort="2" data-listing-word-count-sort="209" data-listing-title-sort="Demand forecasting by temporal aggregation" data-listing-filename-sort="2013-demand-forecasting-temporal-aggregation.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2013</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2025))-a-novel-hybrid-approach-to-contraceptive-demand-fo-44.html" class="title listing-title">A novel hybrid approach to contraceptive demand forecasting: Integrating point predictions with probabilistic distributions</a>
+<a href="../publications/journal-articles/2013-demand-forecasting-temporal-aggregation.html" class="title listing-title">Demand forecasting by temporal aggregation</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Bahman Rostami-Tabar, Mohamed Zied Babai, Aris Syntetos, and Yves Ducq</span>
 </td>
 <td>
-<span class="listing-description"><em>International Journal of Production Research</em>, Pages 1-35</span>
+<span class="listing-description">Naval Research Logistics</span>
 </td>
 
 </tr>
 
-<tr data-index="39" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="On the performance of temporal demand aggregation when optimal forecasting is used" data-listing-filename-sort="list(list(2016))-on-the-performance-of-temporal-demand-aggregation--10.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="34" data-listing-file-modified-sort="1766705201505" data-listing-reading-time-sort="1" data-listing-word-count-sort="128" data-listing-title-sort="Neural network approach to lumpy demand forecasting for spare parts in process industries" data-listing-filename-sort="2008-neural-network-lumpy-demand.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Invalid Date</span>
+<span class="listing-year">2008</span>
 </td>
 <td>
-<a href="../publications/journal-articles/list(list(2016))-on-the-performance-of-temporal-demand-aggregation--10.html" class="title listing-title">On the performance of temporal demand aggregation when optimal forecasting is used</a>
+<a href="../publications/journal-articles/2008-neural-network-lumpy-demand.html" class="title listing-title">Neural network approach to lumpy demand forecasting for spare parts in process industries</a>
 </td>
 <td>
-<span class="listing-author">character(0) </span>
+<span class="listing-author">Mohammad Reza Amin-Naseri and B. Rostami Tabar</span>
 </td>
 <td>
-<span class="listing-description"><em>International conference on information systems, logistics and supply chain</em></span>
-</td>
-
-</tr>
-
-<tr data-index="40" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914910" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="Patient length of stay in trauma networks: Insights from advanced modelling" data-listing-filename-sort="list(list(2025))-patient-length-of-stay-in-trauma-networks-insights-43.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2025))-patient-length-of-stay-in-trauma-networks-insights-43.html" class="title listing-title">Patient length of stay in trauma networks: Insights from advanced modelling</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>Expert Systems with Applications</em>, Pages 127801</span>
-</td>
-
-</tr>
-
-<tr data-index="41" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="The value of forecast accuracy foir emergency department staffing decisions" data-listing-filename-sort="list(list(2025))-the-value-of-forecast-accuracy-foir-emergency-depa-50.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2025))-the-value-of-forecast-accuracy-foir-emergency-depa-50.html" class="title listing-title">The value of forecast accuracy foir emergency department staffing decisions</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>Under review in IEEE Transactions on Engineering Management</em></span>
-</td>
-
-</tr>
-
-<tr data-index="42" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="The value of point of sales information in upstream supply chain forecasting: An empirical investigation" data-listing-filename-sort="list(list(2023))-the-value-of-point-of-sales-information-in-upstrea-24.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2023))-the-value-of-point-of-sales-information-in-upstrea-24.html" class="title listing-title">The value of point of sales information in upstream supply chain forecasting: An empirical investigation</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>International Journal of Production Research</em>, Volume 61, Issue 7, Pages 2162-2177</span>
-</td>
-
-</tr>
-
-<tr data-index="43" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10" data-listing-title-sort="Investigating length of stay patterns and its predictors in the south wales trauma network" data-listing-filename-sort="list(list(2024))-investigating-length-of-stay-patterns-and-its-pred-37.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2024))-investigating-length-of-stay-patterns-and-its-pred-37.html" class="title listing-title">Investigating length of stay patterns and its predictors in the south wales trauma network</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>Advances in rehabilitation science and practice</em>, Volume 13, Pages 27536351241237866</span>
-</td>
-
-</tr>
-
-<tr data-index="44" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="Examining digital twins applications, challenges and benefits in healthcare: A systematic literature review" data-listing-filename-sort="list(list(2025))-examining-digital-twins-applications-challenges-an-47.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2025))-examining-digital-twins-applications-challenges-an-47.html" class="title listing-title">Examining digital twins applications, challenges and benefits in healthcare: A systematic literature review</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>Under review in IEEE Transactions on Engineering Management</em></span>
-</td>
-
-</tr>
-
-<tr data-index="45" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="A novel ranking procedure for forecasting approaches using data envelopment analysis" data-listing-filename-sort="list(list(2016))-a-novel-ranking-procedure-for-forecasting-approach-11.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2016))-a-novel-ranking-procedure-for-forecasting-approach-11.html" class="title listing-title">A novel ranking procedure for forecasting approaches using data envelopment analysis</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>Technological Forecasting and Social Change</em>, Volume 111, Pages 235-243</span>
-</td>
-
-</tr>
-
-<tr data-index="46" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10" data-listing-title-sort="A systematic literature review of trauma systems: An operations management perspective" data-listing-filename-sort="list(list(2025))-a-systematic-literature-review-of-trauma-systems-a-39.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2025))-a-systematic-literature-review-of-trauma-systems-a-39.html" class="title listing-title">A systematic literature review of trauma systems: An operations management perspective</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>Advances in Rehabilitation Science and Practice</em>, Volume 14, Pages 27536351241310645</span>
-</td>
-
-</tr>
-
-<tr data-index="47" data-listing-date-sort="NaN" data-listing-file-modified-sort="1766524914895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Probabilistic forecasting of hourly emergency department arrivals" data-listing-filename-sort="list(list(2023))-probabilistic-forecasting-of-hourly-emergency-depa-27.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Invalid Date</span>
-</td>
-<td>
-<a href="../publications/journal-articles/list(list(2023))-probabilistic-forecasting-of-hourly-emergency-depa-27.html" class="title listing-title">Probabilistic forecasting of hourly emergency department arrivals</a>
-</td>
-<td>
-<span class="listing-author">character(0) </span>
-</td>
-<td>
-<span class="listing-description"><em>Health Systems</em>, Pages 1-17</span>
+<span class="listing-description">2008 International Conference on Computer and Communication Engineering</span>
 </td>
 
 </tr>
@@ -1309,70 +1345,6 @@ Journal
 </nav>
 </div>
 </section>
-<section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">Working Papers</h2>
-<div id="listing-working-papers" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-working-papers-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-working-papers'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Year - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Year - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table table-hover">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-Authors
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1738368000000" data-listing-file-modified-sort="1766523467324" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Hierarchical Forecasting Models for Emergency Medical Services" data-listing-filename-sort="hierarchical-ems-working-paper.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-date">Feb 1, 2025</span>
-</td>
-<td>
-<a href="../publications/working-papers/hierarchical-ems-working-paper.html" class="title listing-title">Hierarchical Forecasting Models for Emergency Medical Services</a>
-</td>
-<td>
-<span class="listing-author">Bahman Rostami-Tabar, Rob J Hyndman</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
 <section id="book-chapters" class="level2">
 <h2 class="anchored" data-anchor-id="book-chapters">Book Chapters</h2>
 <div id="listing-book-chapters" class="quarto-listing quarto-listing-container-table">
@@ -1382,11 +1354,8 @@ Authors
     <select id="listing-book-chapters-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-book-chapters'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Year - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Year - Newest
+      <option value="listing-year" data-direction="asc">
+        Year
       </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
@@ -1403,7 +1372,7 @@ Authors
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
 </th>
 
 <th>
@@ -1422,19 +1391,44 @@ Book
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1766523350446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Hierarchical Time Series Forecasting" data-listing-filename-sort="hierarchical-forecasting.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1766705182401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Forecasting and its beneficiaries" data-listing-filename-sort="2022-forecasting-and-its-beneficiaries.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Jan 1, 2023</span>
+<span class="listing-year">2022</span>
 </td>
 <td>
-<a href="../publications/book-chapters/hierarchical-forecasting.html" class="title listing-title">Hierarchical Time Series Forecasting</a>
+<a href="../publications/book-chapters/2022-forecasting-and-its-beneficiaries.html" class="title listing-title">Forecasting and its beneficiaries</a>
 </td>
 <td>
-<span class="listing-author">Bahman Rostami-Tabar, Rob J Hyndman</span>
+<span class="listing-author">Bahman Rostami-Tabar, and John E. Boylan</span>
 </td>
 <td>
-<span class="listing-description"></span>
+<span class="listing-description">
+
+
+
+</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1766705179609" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Business forecasting in developing countries" data-listing-filename-sort="2021-business-forecasting-developing-countries.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<a href="../publications/book-chapters/2021-business-forecasting-developing-countries.html" class="title listing-title">Business forecasting in developing countries</a>
+</td>
+<td>
+<span class="listing-author">Bahman Rostami-Tabar</span>
+</td>
+<td>
+<span class="listing-description">
+
+
+
+</span>
 </td>
 
 </tr>
@@ -1453,12 +1447,6 @@ Book
     <select id="listing-conference-proceedings-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-conference-proceedings'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Year - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Year - Newest
-      </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
@@ -1474,7 +1462,7 @@ Book
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+Year
 </th>
 
 <th>
@@ -1489,16 +1477,72 @@ Authors
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1719788400000" data-listing-file-modified-sort="1766523401239" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Cross-Temporal Forecast Reconciliation" data-listing-filename-sort="reconciliation-proceedings.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-listing-file-modified-sort="1766705115819" data-listing-reading-time-sort="2" data-listing-word-count-sort="216" data-listing-title-sort="The impact of advance demand information on the performance of production/inventory systems" data-listing-filename-sort="2015-impact-advance-demand-information.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Jul 1, 2024</span>
+<span class="listing-year">2015</span>
 </td>
 <td>
-<a href="../publications/conference-proceedings/reconciliation-proceedings.html" class="title listing-title">Cross-Temporal Forecast Reconciliation</a>
+<a href="../publications/conference-proceedings/2015-impact-advance-demand-information.html" class="title listing-title">The impact of advance demand information on the performance of production/inventory systems</a>
 </td>
 <td>
-<span class="listing-author">Daniele Girolimetto, George Athanasopoulos, Rob J Hyndman</span>
+<span class="listing-author">Bahman Rostami-Tabar and Evren Sahin</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1766705119092" data-listing-reading-time-sort="1" data-listing-word-count-sort="146" data-listing-title-sort="Forecasting aggregate ARMA (1,1) demands: Theoretical analysis of top-down versus bottom-up" data-listing-filename-sort="2013-forecasting-aggregate-arma-topdown-bottomup.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-year">2013</span>
+</td>
+<td>
+<a href="../publications/conference-proceedings/2013-forecasting-aggregate-arma-topdown-bottomup.html" class="title listing-title">Forecasting aggregate ARMA (1,1) demands: Theoretical analysis of top-down versus bottom-up</a>
+</td>
+<td>
+<span class="listing-author">Bahman Rostami-Tabar, Mohamed Zied Babai, Aris A. Syntetos, and Yves Ducq</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-file-modified-sort="1766705084423" data-listing-reading-time-sort="1" data-listing-word-count-sort="175" data-listing-title-sort="The impact of temporal aggregation on demand forecasting of ARMA(1,1) process: Theoretical analysis" data-listing-filename-sort="2013-impact-temporal-aggregation-arma.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-year">2013</span>
+</td>
+<td>
+<a href="../publications/conference-proceedings/2013-impact-temporal-aggregation-arma.html" class="title listing-title">The impact of temporal aggregation on demand forecasting of ARMA(1,1) process: Theoretical analysis</a>
+</td>
+<td>
+<span class="listing-author">Bahman Rostami Tabar, Mohamed Zied Babai, Aris Syntetos, and Yves Ducq</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-file-modified-sort="1766705168043" data-listing-reading-time-sort="1" data-listing-word-count-sort="117" data-listing-title-sort="Forecasting autoregressive demands with temporal aggregation" data-listing-filename-sort="2012-forecasting-autoregressive.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-year">2012</span>
+</td>
+<td>
+<a href="../publications/conference-proceedings/2012-forecasting-autoregressive.html" class="title listing-title">Forecasting autoregressive demands with temporal aggregation</a>
+</td>
+<td>
+<span class="listing-author">Bahman Rostami Tabar, Yves Ducq, Mohamed Zied Babai, and Aris Syntetos</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-file-modified-sort="1766705171200" data-listing-reading-time-sort="2" data-listing-word-count-sort="231" data-listing-title-sort="A hybrid neural network and traditional approach for forecasting lumpy demand" data-listing-filename-sort="2008-hybrid-neural-lumpy-demand.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-year">2008</span>
+</td>
+<td>
+<a href="../publications/conference-proceedings/2008-hybrid-neural-lumpy-demand.html" class="title listing-title">A hybrid neural network and traditional approach for forecasting lumpy demand</a>
+</td>
+<td>
+<span class="listing-author">Ali Nasiri Pour, Bahman Rostami-Tabar, and Ayoub Rahimzadeh</span>
 </td>
 
 </tr>
@@ -1508,20 +1552,17 @@ Authors
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="reports" class="level2">
-<h2 class="anchored" data-anchor-id="reports">Reports</h2>
-<div id="listing-reports" class="quarto-listing quarto-listing-container-table">
+<section id="phd-thesis" class="level2">
+<h2 class="anchored" data-anchor-id="phd-thesis">PhD Thesis</h2>
+<div id="listing-phdthesis" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-reports-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-reports'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-phdthesis-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-phdthesis'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Year - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Year - Newest
+      <option value="listing-year" data-direction="asc">
+        Year
       </option>
       <option value="listing-title-sort" data-direction="asc">
         Title
@@ -1538,7 +1579,7 @@ Authors
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
 </th>
 
 <th>
@@ -1553,16 +1594,16 @@ Authors
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1646092800000" data-listing-file-modified-sort="1766523429861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Demand Forecasting for Emergency Medical Services" data-listing-filename-sort="demand-forecasting-report.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-listing-file-modified-sort="1766705183721" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="ARIMA demand forecasting by aggregation" data-listing-filename-sort="my-phd.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<span class="listing-date">Mar 1, 2022</span>
+<span class="listing-year">2014</span>
 </td>
 <td>
-<a href="../publications/reports/demand-forecasting-report.html" class="title listing-title">Demand Forecasting for Emergency Medical Services</a>
+<a href="../publications/phdthesis/my-phd.html" class="title listing-title">ARIMA demand forecasting by aggregation</a>
 </td>
 <td>
-<span class="listing-author">Bahman Rostami-Tabar, NHS Analytics Unit</span>
+<span class="listing-author">Bahman Rostami-Tabar</span>
 </td>
 
 </tr>

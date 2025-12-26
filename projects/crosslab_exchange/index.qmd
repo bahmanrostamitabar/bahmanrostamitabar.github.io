@@ -1,11 +1,16 @@
 ---
-title: "Sustainability"
-description: "My sustainability projects."
+title: "Research Group Exchange Series"
+description: "An interdisciplinary initiative to build collaborative research culture across Cardiff University and partner institutions."
+author: 
+  - name: "Bahman Rostami-Tabar"
+    affiliation: "Cardiff University"
+    url: "https://bahmanrostamitabar.github.io/"
 image: "cover.jpg"
+date: 2024-06-01
 categories:
-  - LCA
-  - Green Tech
-  - Recycle
+  - Interdisciplinarity
+  - Research Culture
+  - Collaboration
 listing:
   contents: /
   type: default # Explore more listing types; default, grid or table

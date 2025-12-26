@@ -1,0 +1,20 @@
+---
+title: "Forecasting hierarchical time series in supply chains: an empirical investigation"
+author: "Dejan Mircetic, Bahman Rostami-Tabar, Svetlana Nikolicic, and Marinko Maslaric"
+description: "International Journal of Production Research"
+year: 2021
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/00207543.2021.1896817
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Demand forecasting is a fundamental component of efficient supply chain management. An accurate demand forecast is required at several different levels of a supply chain network to support the planning and decision-making process in various departments. In this paper, we investigate the performance of bottom-up, top-down and optimal combination forecasting approaches in a supply chain. We first evaluate their forecast performance by means of a simulation study and an empirical investigation in a multi-echelon distribution network from a major European brewery company. For the latter, the grouped time series forecasting structure is designed to support managers’ decisions in manufacturing, marketing, finance and logistics. Then, we examine the forecast accuracy of combining forecasts of these approaches. Results reveal that forecast combinations produce forecasts that are more accurate and less biased than individual approaches. Moreover, we develop a model to analyse the association between time series characteristics and the effectiveness of each approach. Results provide insights into the interaction among time series characteristics and the performance of these approaches at the bottom level of the hierarchy. Valuable insights are offered to practitioners and the paper closes with final remarks and agenda for further research in this area.

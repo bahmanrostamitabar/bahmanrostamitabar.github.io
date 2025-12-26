@@ -1,0 +1,20 @@
+---
+title: "Exploring the association between time series features and forecasting by temporal aggregation using machine learning"
+author: "Bahman Rostami-Tabar and Dejan Mircetic"
+description: "Neurocomputing"
+year: 2023
+links:
+  - text: DOI
+    href: https://doi.org/10.1016/j.neucom.2023.126376
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+When a forecast of the total value over several time periods ahead is required, forecasters are presented with two temporal aggregation (TA) approaches to produce required forecasts: i) aggregated forecast (AF) or ii) aggregate data using non-overlapping temporal aggregation (AD). Often, the recommendation is to aggregate data to a frequency relevant to the decision the eventual forecast will support and then produce the forecast. However, this might not be always the best choice and we argue that both AF and AD approaches may outperform each other in different situations. Moreover, there is a lack of evidence on what indicators may determine the superiority of each approach. We design and execute an empirical experiment framework to first explore the performance of these approaches using monthly time series of M4 competition dataset. We further turn the problem into a classification supervised learning by constructing a database consisting of features of each time series as predictor and model class labelled as AF/AD as response/outcome. We then build machine learning algorithms to investigate the association between time series features and the performance of AF and AD. Our findings suggest that both AF and AD approaches may not consistently generate accurate results for every individual series. AF is shown to be significantly better than AD for the monthly M4 time series, especially for longer horizons. We build several machine learning approaches using a set of extracted time series features as input to predict accurately whether AD or AF should be used. We find out that Random Forest (RF) is the most accurate approach in correctly classifying the outcome assessed both by statistical measures such as misclassification error, F-statistics, area under the curve, and a utility measure. The RF approach reveals that curvature, nonlinearity, seas_pacf, unitroot_pp, mean, ARCHM.LM, Coefficient of Variation, stability, linearity, and max_level_shif are among the most important features in driving the predictions of the model. Our findings indicate that the strength of trend, ARCH.LM, hurst, autocorrelation lag 1, unitroot_pp, and seas_pacf may favour AF approach, while lumpiness, entropy, nonlinearity, curvature, and strength of seasonality may increase the chance of AD performing better. We conclude the study by summarising the findings and present an agenda for further research.

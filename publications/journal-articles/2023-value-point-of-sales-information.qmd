@@ -1,0 +1,20 @@
+---
+title: "The value of point of sales information in upstream supply chain forecasting: an empirical investigation"
+author: "Mahdi Abolghasemi, Bahman Rostami-Tabar, and Aris Syntetos"
+description: "International Journal of Production Research"
+year: 2023
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/00207543.2022.2063086
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Traditionally, manufacturers use past orders (received from some downstream supply chain level) to forecast future ones, before turning such forecasts into appropriate inventory and production optimisation decisions. With recent advances in information sharing technologies, upstream supply chain (SC) companies may have access to downstream point of sales (POS) data. Such data can be used as an alternative source of information for forecasting. There are a few studies that investigate the benefits of using orders versus POS data in upstream SC forecasting; the results are mixed and empirical evidence is lacking, particularly in the context of multi-echelon SCs and in the presence of promotions. We investigate an actual three-echelon SC with 684 series where the manufacturer aims to forecast orders received from distribution centres (DCs) using either aggregated POS data at DCs level or historical orders received from the DCs. Our results show that the order-based methods outperform the POS-based ones by 6–15%. We find that low values of mean, variance, non-linearity and entropy of POS data, and promotion presence negatively impact the performance of the POS-based forecasts. Such findings are useful for determining the appropriate source of data and the impact of series characteristics for order forecasting in SCs.

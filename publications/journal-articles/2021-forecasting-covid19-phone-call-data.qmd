@@ -1,0 +1,20 @@
+---
+title: "Forecasting COVID-19 daily cases using phone call data"
+author: "Bahman Rostami-Tabar and Juan F. Rendon-Sanchez"
+description: "Applied Soft Computing"
+year: 2021
+links:
+  - text: DOI
+    href: https://doi.org/10.1016/j.asoc.2020.106932
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+The need to forecast COVID-19 related variables continues to be pressing as the epidemic unfolds. Different efforts have been made, with compartmental models in epidemiology and statistical models such as AutoRegressive Integrated Moving Average (ARIMA), Exponential Smoothing (ETS) or computing intelligence models. These efforts have proved useful in some instances by allowing decision makers to distinguish different scenarios during the emergency, but their accuracy has been disappointing, forecasts ignore uncertainties and less attention is given to local areas. In this study, we propose a simple Multiple Linear Regression model, optimised to use phone call data to forecast the number of daily confirmed cases. Moreover, we produce a probabilistic forecast that allows decision makers to better deal with risk. Our proposed approach outperforms ARIMA, ETS, Seasonal Naive, Prophet and a regression model without call data, evaluated by three point forecast error metrics, one prediction interval and two probabilistic forecast accuracy measures. The simplicity, interpretability and reliability of the model, obtained in a careful forecasting exercise, is a meaningful contribution to decision makers at local level who acutely need to organise resources in already strained health services. We hope that this model would serve as a building block of other forecasting efforts that on the one hand would help front-line personal and decision makers at local level, and on the other would facilitate the communication with other modelling efforts being made at the national level to improve the way we tackle this pandemic and other similar future challenges.

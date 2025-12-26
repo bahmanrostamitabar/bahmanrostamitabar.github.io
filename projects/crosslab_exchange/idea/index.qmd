@@ -1,0 +1,40 @@
+---
+title: "Data Lab for Social Good Research Group Exchange Series"
+subtitle: "Building Interdisciplinary Collaboration Across Cardiff University and Beyond"
+author: "Bahman Rostami-Tabar"
+date: "01/05/2026"
+image: "cover.jpg"
+categories:
+  - Interdisciplinarity
+  - Research Culture
+  - Collaboration
+---
+
+
+## Project Overview
+
+The **Data Lab for Social Good Research Group Exchange Series** is an interdisciplinary initiative designed to strengthen research culture through sustained collaboration across schools at Cardiff University and with an external partner, to be confirmed (either University College London (UCL) or University of Oxford). The project responds directly to the need to break down disciplinary silos and create practical, time-efficient opportunities for researchers to connect, exchange ideas, and co-develop impactful research.
+
+The series brings together researchers from data science & machine learning, math and computer science, healthcare sciences, social sciences, policy, and engineering to explore shared challenges and develop joint research directions grounded in real-world societal needs.
+
+## Structure of the Exchange Series
+
+The project consists of a sequence of **four half-day interdisciplinary workshops**, hosted in collaboration with four Cardiff University schools: Human and Social Sciences, Healthcare Sciences, Computational and Mathematical Sciences, and Engineering. These workshops will take place across the academic year, with the Data Lab for Social Good Research Group visiting each host school to foster local engagement and reciprocal exchange.
+
+In addition, the series includes a **one-day joint event in with external partner**, extending collaboration beyond Cardiff and strengthening inter-institutional research links.
+
+## Format and Approach
+
+Each session is designed to be highly interactive and inclusive. Short elevator pitches from PhD students, postdoctoral researchers, and academic staff introduce ideas, methods, and challenges, followed by facilitated group brainstorming. Mixed, cross-disciplinary teams work together to identify shared interests and co-develop one or two concrete project ideas per group.
+
+This structure prioritises meaningful engagement while respecting participants’ time, modelling a collaborative format that can be replicated across the University.
+
+## Aims and Expected Outcomes
+
+The primary aim of the Exchange Series is to embed collaboration as a routine research practice. Expected outcomes include the formation of new interdisciplinary research networks, the development of multiple joint project concepts suitable for external funding, and stronger institutional connections within Cardiff University and with external partner
+
+By foregrounding early-career researchers and creating equitable spaces for idea exchange, the project contributes to a more open, inclusive, and connected research culture centred on data-driven approaches for social good.
+
+## Leadership and Delivery
+
+The initiative is created and led by **Professor Bahman Rostami-Tabar** and the Data Lab for Social Good Research Group, drawing on extensive experience in organising interdisciplinary and international research events. The team combines expertise in analytics, operational research, health systems, and public policy, with a strong track record of facilitating inclusive, impact-oriented collaboration.

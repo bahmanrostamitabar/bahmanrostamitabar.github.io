@@ -1,0 +1,17 @@
+---
+title: "A novel hybrid approach to contraceptive demand forecasting: integrating point predictions with probabilistic distributions"
+author: "Harsha Chamara Hewage, Bahman Rostami-Tabar, Aris Syntetos, Federico Liberatore, and Glenn R. Milano"
+description: "International Journal of Production Research"
+year: 2025
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Accurate demand forecasting is vital for ensuring reliable access to contraceptive products, supporting key processes like procurement, inventory, and distribution. However, forecasting contraceptive demand in developing countries presents challenges, including incomplete data, poor data quality, and the need to account for multiple geographical and product factors. Current methods often rely on simple forecasting techniques, which fail to capture demand uncertainties arising from these factors, warranting expert involvement. Our study aims to improve contraceptive demand forecasting by combining probabilistic forecasting methods with expert knowledge. We developed a hybrid model that combines point forecasts from domain-specific model with probabilistic distributions from statistical and machine learning approaches, enabling human input to fine-tune and enhance the system-generated forecasts. This approach helps address the uncertainties in demand and is particularly useful in resource-limited settings. We evaluate different forecasting methods, including time series, Bayesian, machine learning, and foundational time series methods alongside our new hybrid approach. By comparing these methods, we provide insights into their strengths, weaknesses, and computational requirements. Our research fills a gap in forecasting contraceptive demand and offers a practical framework that combines algorithmic and human expertise. Our proposed model can also be generalised to other humanitarian contexts with similar data patterns.

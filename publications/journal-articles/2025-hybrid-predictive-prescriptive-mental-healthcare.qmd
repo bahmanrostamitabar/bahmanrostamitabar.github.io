@@ -1,0 +1,18 @@
+---
+title: "A hybrid predictive and prescriptive modelling framework for long-term mental healthcare workforce planning"
+author: "Harsha Halgamuwe Hewage and Bahman Rostami-Tabar"
+description: "Journal of the Operational Research Society"
+year: 2025
+---
+
+
+<meta name="doi" content="https://doi.org/10.1080/01605682.2025.2573825">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Over the past decade, severe staffing shortages in mental healthcare have worsened due to rising demand, further exacerbated by COVID-19. This demand is expected to grow over the next decade, necessitating proactive workforce planning to ensure sustainable service delivery. Despite its critical importance, the literature lacks a comprehensive model to address long-term workforce needs in mental healthcare. Additionally, our discussions with UK NHS mental health practitioners highlight the practical need for such a model. To bridge this gap, we propose a hybrid predictive-prescriptive modelling framework that integrates long-term probabilistic forecasting with an analytical stock-flow model for mental health workforce planning. Given the pivotal role of nurses, who comprise one-third of the mental health workforce, we focus on forecasting nursing headcount while ensuring the model’s adaptability to broader healthcare workforce planning. Using statistical and machine learning methods with real-world NHS data, we first identify key factors influencing workforce variations, develop a long-term forecasting model, and integrate it into an analytical stock-flow framework for policy analysis. Our findings reveal the unsustainable trajectory of current staffing plans and highlight the ineffectiveness of blanket policies, emphasising the need for region-specific workforce strategies.

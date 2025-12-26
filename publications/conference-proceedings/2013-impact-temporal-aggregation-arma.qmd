@@ -1,0 +1,20 @@
+---
+title: "The impact of temporal aggregation on demand forecasting of ARMA(1,1) process: Theoretical analysis"
+author: "Bahman Rostami Tabar, Mohamed Zied Babai, Aris Syntetos, and Yves Ducq"
+description: "Manufacturing Modelling, Management, and Control"
+year: 2013
+links:
+  - text: DOI
+    href: https://doi.org/10.3182/20130619-3-RU-3018.00487
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Demand forecasting performance will be challenged by demand dispersion underlying the time series related to the Stock Keeping Units (SKUs). Among the strategies that may be used to reduce the demand dispersion, an intuitively appealing approach is to aggregate demand in lower-frequency 'time buckets'. This paper focuses on the impact of non-overlapping temporal aggregation on the performance of demand forecasting by investigating the mean square error (MSE) before and after aggregation. We assume that the non-aggregated demand follows a first-order autoregressive moving average process [ARMA(1,1)] and a Single Exponential Smoothing (SES) procedure is used to estimate the level of demand. The theoretical analysis shows that the temporal aggregation approach has a great potential to improve the forecasting accuracy. The improvement is a function of process parameters, the aggregation level, and the smoothing constant values. We present some insights into the impact of different control parameters on the performance of each approach. The paper concludes with an agenda for further research in this area.

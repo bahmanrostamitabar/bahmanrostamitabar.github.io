@@ -9,10 +9,14 @@ listing:
     - "f4sg/*.qmd"
     - "crosslab_exchange/*.qmd"
   type: grid
-  sort: "date"
+  sort: "date desc"
   sort-ui: true
-  fields: [image, title, description]
+  fields: [image, title, description, author, date, categories]
+  image-height: "150px"
   filter-ui: true
-  max-items: 12
+page-layout: full
+format: 
+  html:
+    css: projects.css
 ---
 

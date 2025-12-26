@@ -1,0 +1,20 @@
+---
+title: "Demand forecasting by temporal aggregation: Using optimal or multiple aggregation levels?"
+author: "Nikolaos Kourentzes, Bahman Rostami-Tabar, and Devon K. Barrow"
+description: "Journal of Business Research"
+year: 2017
+links:
+  - text: DOI
+    href: https://doi.org/10.1016/j.jbusres.2017.04.016
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Recent advances have demonstrated the benefits of temporal aggregation for demand forecasting, including increased accuracy, improved stock control and reduced modelling uncertainty. With temporal aggregation a series is transformed, strengthening or attenuating different elements and thereby enabling better identification of the time series structure. Two different schools of thought have emerged. The first focuses on identifying a single optimal temporal aggregation level at which a forecasting model maximises its accuracy. In contrast, the second approach fits multiple models at multiple levels, each capable of capturing different features of the data. Both approaches have their merits, but so far they have been investigated in isolation. We compare and contrast them from a theoretical and an empirical perspective, discussing the merits of each, comparing the realised accuracy gains under different experimental setups, as well as the implications for business practice. We provide suggestions when to use each for maximising demand forecasting gains.

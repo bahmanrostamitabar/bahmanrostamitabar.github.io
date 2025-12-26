@@ -1,0 +1,114 @@
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  // Try to get metadata from Quarto's page metadata
+  const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+  let metadata = {};
+  
+  // Try to extract from JSON-LD if available
+  scripts.forEach(script => {
+    try {
+      const data = JSON.parse(script.textContent);
+      if (data.doi) metadata.doi = data.doi;
+      if (data.url) metadata.url = data.url;
+    } catch(e) {}
+  });
+  
+  // Manual extraction from meta tags (we'll add these)
+  const getMeta = (name) => {
+    const el = document.querySelector(`meta[name="${name}"], meta[property="${name}"]`);
+    return el ? el.getAttribute('content') : null;
+  };
+  
+  metadata.doi = getMeta('citation_doi') || getMeta('doi');
+  metadata.pdf = getMeta('citation_pdf_url') || getMeta('pdf');
+  metadata.github = getMeta('github');
+  metadata.code = getMeta('code');
+  metadata.arxiv = getMeta('arxiv');
+  metadata.preprint = getMeta('preprint');
+  metadata.publisher = getMeta('citation_journal_title') || getMeta('publisher');
+  metadata.data = getMeta('data');
+  metadata.slides = getMeta('slides');
+  metadata.video = getMeta('video');
+  metadata.demo = getMeta('demo');
+  metadata.bibtex = getMeta('bibtex');
+  
+  console.log('Extracted metadata:', metadata);
+  
+  const resources = [
+    { key: 'doi', text: 'DOI', icon: '📄', class: 'doi-btn' },
+    { key: 'pdf', text: 'PDF', icon: '📑', class: 'pdf-btn' },
+    { key: 'publisher', text: 'Publisher', icon: '🔗', class: 'publisher-btn' },
+    { key: 'github', text: 'GitHub', icon: '💻', class: 'github-btn' },
+    { key: 'code', text: 'Code', icon: '⚙️', class: 'code-btn' },
+    { key: 'arxiv', text: 'arXiv', icon: '📰', class: 'arxiv-btn' },
+    { key: 'preprint', text: 'Preprint', icon: '📝', class: 'preprint-btn' },
+    { key: 'data', text: 'Data', icon: '📊', class: 'data-btn' },
+    { key: 'slides', text: 'Slides', icon: '🎯', class: 'slides-btn' },
+    { key: 'video', text: 'Video', icon: '🎥', class: 'video-btn' },
+    { key: 'demo', text: 'Demo', icon: '🚀', class: 'demo-btn' },
+    { key: 'bibtex', text: 'BibTeX', icon: '📋', class: 'bibtex-btn' }
+  ];
+  
+  const activeResources = resources.filter(r => metadata[r.key]);
+  
+  console.log('Active resources:', activeResources);
+  
+  if (activeResources.length > 0) {
+    const titleBlock = document.querySelector('.quarto-title-block');
+    
+    if (titleBlock) {
+      const resourceSection = document.createElement('div');
+      resourceSection.className = 'resource-section';
+      
+      const heading = document.createElement('h3');
+      heading.className = 'resource-heading';
+      heading.textContent = 'Resources';
+      resourceSection.appendChild(heading);
+      
+      const buttonContainer = document.createElement('div');
+      buttonContainer.className = 'resource-buttons';
+      
+      activeResources.forEach(resource => {
+        const link = document.createElement('a');
+        link.href = metadata[resource.key];
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.className = `resource-btn ${resource.class}`;
+        link.innerHTML = `${resource.icon} ${resource.text}`;
+        buttonContainer.appendChild(link);
+      });
+      
+      resourceSection.appendChild(buttonContainer);
+      titleBlock.appendChild(resourceSection);
+      
+      console.log('Resources section added');
+    } else {
+      console.error('Title block not found');
+    }
+  } else {
+    console.log('No resources found');
+  }
+  
+  // Style abstract
+  const abstractHeading = Array.from(document.querySelectorAll('h2')).find(
+    h2 => h2.textContent.trim() === 'Abstract'
+  );
+  
+  if (abstractHeading) {
+    const abstractContent = [];
+    let nextElement = abstractHeading.nextElementSibling;
+    
+    while (nextElement && nextElement.tagName !== 'H2') {
+      abstractContent.push(nextElement);
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    if (abstractContent.length > 0) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'abstract-box';
+      abstractHeading.parentNode.insertBefore(wrapper, abstractContent[0]);
+      abstractContent.forEach(el => wrapper.appendChild(el));
+    }
+  }
+});
+</script>

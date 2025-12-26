@@ -1,0 +1,25 @@
+---
+title: "A systematic literature review of trauma systems: An operations management perspective"
+author: "Zihao Wang, Bahman Rostami-Tabar, Jane Haider, Mohamed Naim, and Javvad Haider"
+description: "Journal: Advances in Rehabilitation Science and Practice"
+year: 2025
+---
+
+<meta name="doi" content="https://doi.org/10.1177/27536351241310645">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+
+## Abstract
+
+**Background**: Trauma systems provide comprehensive care across various settings, from prehospital services to rehabilitation, integrating clinical and social care aspects. Established in the 1970s, these systems are pivotal yet under-researched in their operational management. This study aims to fill this gap by focussing on the integration of operations management (OM) techniques to enhance the efficiency and effectiveness of trauma systems. By leveraging proven OM strategies from other healthcare sectors, we seek to improve patient outcomes and optimise system performance, addressing a crucial need for innovation in trauma care operations.
+
+**Methodology**: A systematic literature review was conducted using the PICOTS framework to explore operational aspects of trauma systems across varied settings, from emergency departments to specialised centres. Searches were performed in 5 databases, focussing on articles published from 2006 to 2024. Keywords related to operational research and management targeted both trauma systems and emergency management services. Our method involved identifying, synthesising, and summarising studies to evaluate operational performance, with a specific emphasis on articles that applied operational research/management techniques in trauma care. All eligible articles were critically appraised using 2 quality assessment tools.
+
+**Results**: Employing Donabedian's framework to analyse the quality of trauma systems through structure, process, and outcome dimensions, our systematic review included 160 studies. Of these, 5 studies discussed the application of the Donabedian evaluation framework to trauma systems, and 14 studies examined structural elements, focussing on the location of healthcare facilities, trauma resource management, and EMS logistics. The 63 studies on process indicators primarily assessed triage procedures, with some exploring the timeliness of trauma care. Meanwhile, the 78 outcome-oriented studies predominantly evaluated mortality rates, alongside a smaller number assessing functional outcomes.
+
+**Conclusion**: Existing evaluation metrics primarily focussed on triage accuracy and mortality are inadequate. We propose expanding these metrics to include patient length of stay (LOS) and rehabilitation trajectory analyses. There is a critical gap in understanding patient flow management and long-term outcomes, necessitating focussed research on LOS modelling and improved rehabilitation data collection. Addressing these areas is essential for optimising trauma care and improving patient recovery outcomes.
+

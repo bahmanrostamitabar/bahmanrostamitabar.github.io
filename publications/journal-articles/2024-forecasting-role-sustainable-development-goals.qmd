@@ -1,0 +1,20 @@
+---
+title: "Alliance or apathy? Forecasting’s role in achieving the UN sustainable development goals"
+author: "Bahman Rostami-Tabar and Mike Gilliland"
+description: "Foresight: The International Journal of Applied Forecasting"
+year: 2024
+links:
+  - text: Link
+    href: https://ideas.repec.org/a/for/ijafaa/y2024i74p5-6.html
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Rostami-Tabar and Gilliland's preview to a special feature that will appear in Foresight in 2025 that looks at how forecasting will support the goals the United Nations outlined in its 2030 Agenda for Sustainable Development.

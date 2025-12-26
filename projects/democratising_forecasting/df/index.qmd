@@ -1,0 +1,74 @@
+---
+title: "Democratising Forecasting Project"
+description: "What it is, who created it, and why it matters"
+author: "Bahman Rostami-Tabar"
+date: "01/05/2018"
+image: "malawi.jpg"
+toc: true
+categories:
+  - Dorecasting
+  - R
+  - LMICs
+  - Impact
+  - Knowledge Sharing
+---
+
+## What “democratizing forecasting” means
+
+Forecasting is the practice of forming expectations about the future using data, domain knowledge, and explicit methods for handling uncertainty. For a long time, good forecasting was concentrated in a small number of organizations and expert groups because it depended on specialized training, proprietary software, and access to data. “Democratizing forecasting” is the idea that these barriers can and should be lowered so that many more people—especially those outside well-resourced settings—can learn forecasting skills, use modern tools, and apply forecasts to real decisions.
+
+## Who created the Democratizing Forecasting initiative
+
+The specific initiative called **Democratizing Forecasting** was created by **Bahman Rostami-Tabar**. It is presented as an organized effort to expand access to forecasting education and practice, particularly for communities and institutions with limited resources. A series of **in-person** workshops in developing economies to promote the importance of forecasting and ‘train the trainers’ in the form of university students, academics and professionals on the principles of forecasting using R software to support decision making. The workshops are designed for 3 days and are free of charge.
+
+## What it is about in practice
+
+At its core, the initiative is about building practical forecasting capability. The emphasis tends to be hands-on: defining forecasting questions that matter, working with accessible datasets, producing forecasts with open tools (often using open-source software), and evaluating forecast performance. A key principle is that learning is most effective when participants can connect forecasting methods to local problems—such as health services planning, supply availability, education capacity, energy demand, agriculture, or humanitarian logistics—where uncertainty is unavoidable and better anticipation can improve outcomes.
+
+
+## Why it matters
+
+Democratizing forecasting matters because the costs of uncertainty are not evenly distributed. Organizations with limited analytic capacity often face the same volatility—shocks to demand, funding, staffing, infrastructure, climate, or supply chains—but have fewer tools to anticipate and adapt. When forecasting knowledge and tools become more broadly available, planning can become more transparent, decisions can be better justified, and scarce resources can be allocated with clearer awareness of risk.
+
+This does not mean forecasting becomes “easy” or that expertise is irrelevant. Instead, democratization aims to spread a baseline level of forecasting literacy and provide pathways for deeper skill development, so that forecasting becomes a normal part of decision-making rather than a rare specialist function.
+
+
+##  In-person delivery in low/lower/middle income countries
+
+### Benefits to the participants and forecasting community
+
+The main objectives of the workshop are to:
+
+- Transfer of knowledge and skills on “forecasting” which can be served to make better decisions that may have positive direct impact on their society;
+
+- Provide an up-to-date training in data analysis and forecasting using R;
+
+- Create a research network among target countries with a focus on analytics for social good;
+
+### What participants learn in the workshop?
+
+Assuming basic knowledge of statistics and through a step-by-step approach from theory to practice, participants will learn:
+
+- The importance of forecasting and its relation to decision making in public organizations, private sector, governments, NGOs, Humanitarian Organizations, etc;
+
+- How to prepare, manipulate and visualize data using R;
+
+- The theory behind forecasting models;
+
+- How to produce forecasts and evaluate their accuracy across a range of statistical forecasting models using real-world data;
+
+- How to use R functions and their packages related to forecasting models;
+
+- How to visualize, export and report results for interpretation and insights using Quarto
+
+### This workshop is for you if you are:
+
+- An academic, student and want to expand your knowledge on forecasting using R software;
+
+- practitioner and want to learn how to analyse, manipulate, visualize data and produce forecasts to inform decisions in your organization: public organizations, private sector, governments, NGOs, humanitarian , etc;
+
+### Prerequisites
+
+- Basic knowledge in statistics;
+- No knowledge of forecasting is assumed.
+- No prior knowledge of R is assumed.

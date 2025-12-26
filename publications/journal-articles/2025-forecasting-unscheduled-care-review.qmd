@@ -1,0 +1,20 @@
+---
+title: "Looking for the crystal ball in unscheduled care: a systematic literature review of the forecasting process"
+author: "Mingzhe Shi, Bahman Rostami-Tabar, and Daniel Gartner"
+description: "Health Care Management Science"
+year: 2025
+links:
+  - text: DOI
+    href: https://doi.org/10.1007/s10729-025-09711-z
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+The ability to accurately forecast unscheduled care needs is of paramount importance for decision making in healthcare operations, ensuring a continuous and high-quality level of care. In this work, we provide a literature review of 156 research articles of forecasting applications with special focus on care services that are not scheduled in advance such as emergency departments. Our paper presents two key contributions. Firstly, we propose a novel framework designed to characterize the application of forecasting process across various unplanned healthcare services. Our taxonomy facilitates the detection, decomposition, and categorization of forecasting processes, enhancing the understanding of their deployment in different unscheduled care settings. Secondly, we conduct a comprehensive literature review based on a systematic search, critically analyzing the state of forecasting research in unscheduled care services and identifying key research gaps. We explore forecasting problems in depth, examining their purpose, the various methodologies used, the rigor used in generating and evaluating forecasts, and the reproducibility of results, all within the context of the proposed framework. By consolidating the current state of the art, this paper provides valuable insights to both healthcare professionals and academics regarding the effective application of forecasting in unscheduled care services. Finally, it serves as a roadmap for identifying major research gaps and outlines an agenda for future investigations.

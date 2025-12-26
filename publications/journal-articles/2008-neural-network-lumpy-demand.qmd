@@ -1,0 +1,22 @@
+---
+title: "Neural network approach to lumpy demand forecasting for spare parts in process industries"
+author: "Mohammad Reza Amin-Naseri and B. Rostami Tabar"
+description: "2008 International Conference on Computer and Communication Engineering"
+year: 2008
+links:
+  - text: Preprint
+    href: https://arxiv.org/abs/2406.12345
+  - text: DOI
+    href: https://doi.org/10.1109/ICCCE.2008.4580816
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Lumpy demand is a common and challenging phenomenon in spare parts management, particularly in process industries where demand is irregular, intermittent, and highly variable. This paper investigates the use of artificial neural networks as an alternative to traditional forecasting techniques for such demand patterns. The proposed approach is designed to capture nonlinear relationships and complex dynamics that are typically not well handled by conventional statistical models. Using empirical data from process industry spare parts, the neural network forecasts are evaluated and compared against benchmark methods. The results demonstrate that neural networks can offer improved forecasting accuracy for lumpy demand scenarios, highlighting their potential as a practical decision-support tool for inventory and maintenance planning in industrial settings.

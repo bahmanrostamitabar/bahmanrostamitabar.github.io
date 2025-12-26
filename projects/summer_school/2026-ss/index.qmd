@@ -1,0 +1,66 @@
+---
+title: "Announcing the First Edition of The Art and Science of Uncertainty & the Future"
+description: "An Interdisciplinary Summer School at Cardiff University"
+author: "Bahman Rostami-Tabar"
+date: "12/05/2025"
+image: "ss1.png"
+categories:
+  - Uncertainty
+  - Futures
+  - Decision-Making
+  - Interdisciplinary
+  - Summer School
+  - Announcement
+---
+
+## Flyer
+
+<iframe src="summer-school.pdf" height="600" style="display:block; margin: 0 auto; width:50%;"></iframe>
+
+
+<br>
+
+I am delighted to announce the first edition **The Art and Science of Uncertainty & the Future: an interdisciplinary summer school** hosted by the **Data Lab for Social Good Research Group**.
+
+## First Edition: July 2026
+
+The inaugural edition will be held **6–11 July 2026**. Over the course of one intensive week, participants will engage with four keynote lectures by leading thinkers, a series of research talks, five hands-on workshops, two panel discussions, and a site visit. The programme is designed to foster dialogue across disciplines and to explore how uncertainty is understood, communicated, and acted upon in shaping future outcomes.
+
+The summer school is aimed at **PhD students, postdoctoral researchers, early-career researchers, and practitioners** who wish to engage deeply with the challenges and opportunities posed by uncertain futures.
+
+## Applications and Updates
+
+The official website is now live and **applications are open**:  
+👉 [https://dl4sg-summer-school.github.io/](https://dl4sg-summer-school.github.io/)
+
+We have also launched a LinkedIn page, where we will share programme updates, speaker announcements, workshop details, and other developments:  
+👉 [https://www.linkedin.com/showcase/dl4sg-summer-school/](https://www.linkedin.com/showcase/dl4sg-summer-school/)
+
+## Leadership and Organisation
+
+The summer school is led and organised by the following team:
+
+**Leadership**
+- Prof. Bahman Rostami-Tabar — Director & Academic Lead
+
+**Organising Committee**
+- Mr. Harsha Halgamuwe Hewage — Programme Manager (PhD student, Cardiff Business School)  
+- Prof. Peter Madden — Programme Support (School of Geography & Planning, Cardiff University)  
+- Mrs. Beverly Francis — Logistics Coordinator (Cardiff Business School)  
+- Dr. Thanos Goltsos — Site Visit Coordinator (Cardiff Business School)
+
+## Advisory Board
+
+We are honoured to be supported by a distinguished advisory board of leading scholars and practitioners:
+
+- Prof. Caucher Birkar — Tsinghua University & University of Cambridge (Fields Medal, 2018)  
+- Prof. Laura Albert — Former President of INFORMS, University of Wisconsin–Madison  
+- Prof. Pierre Pinson — Imperial College London  
+- Prof. Katherine Griffiths — Dean for Research and Innovation, College of Arts, Humanities and Social Sciences, Cardiff University  
+- Prof. Caroline Lear — Dean of Research and Innovation, College of Physical Sciences and Engineering, Cardiff University  
+- Prof. Patrick Caron — Senior Researcher, CIRAD  
+- Prof. Mohammed Amin Mohammed — The Strategy Unit  
+- Prof. Peter Madden — School of Geography & Planning, Cardiff University  
+- Prof. Bahman Rostami-Tabar — Cardiff Business School, Cardiff University
+
+

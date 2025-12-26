@@ -1,0 +1,21 @@
+---
+title: "To aggregate or not to aggregate: Forecasting of finite autocorrelated demand"
+author: "Bahman Rostami-Tabar, Mohamed Zied Babai, and Aris Syntetos"
+description: "Journal of the Operational Research Society"
+year: 2023
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/01605682.2022.2118631
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+
+## Abstract
+
+Temporal aggregation is an intuitively appealing approach to deal with demand uncertainty. There are two types of temporal aggregation: non-overlapping and overlapping. Most of the supply chain forecasting literature has focused so far on the former and there is no research that analyses the latter for auto-correlated demands. In addition, most of the analytical research to-date assumes infinite demand series’ lengths whereas, in practice, forecasting is based on finite demand histories. The length of the demand history is an important determinant of the comparative performance of the two approaches but has not been given sufficient attention in the literature. In this article, we examine the effectiveness of temporal aggregation for forecasting finite auto-correlated demand. We do so by means of an analytical study of the forecast accuracy of aggregation and non-aggregation approaches based on mean-squared error. We complement this with a numerical analysis to explore the impact of demand parameters and the length of the series on (comparative) performance. We also conduct an empirical evaluation to validate the analytical results using monthly time series of the M4-competition dataset. We find the degree of auto-correlation, the forecast horizon and the length of the series to be important determinants of forecast accuracy. We discuss the merits of each approach and highlight their implications for real-world practices.

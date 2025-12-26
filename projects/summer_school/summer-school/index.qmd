@@ -1,0 +1,20 @@
+---
+title: "Why This Summer School Exists: Uncertainty, Futures, and the Need to Think Together"
+description: "Born from years of work on uncertainty and a formative research stay that revealed how fragmented our approaches to future decision-making still are, this summer school creates a shared space for disciplines to think together about uncertainty and the futures we shape."
+author: "Bahman Rostami-Tabar"
+date: "12/01/2025"
+image: "school.svg"
+categories:
+  - Uncertainty
+  - Futures
+  - Decision-Making
+  - Interdisciplinary
+---
+
+The idea for this summer school did not arrive all at once. It grew slowly, out of years of working at the intersection of uncertainty, decision-making, and the future, and from a recurring sense that these conversations were happening in parallel rather than together. I kept encountering powerful but fragmented perspectives: rigorous mathematical treatments of uncertainty on one side, rich philosophical and artistic interpretations on another, and forward-looking practices in futures studies that often spoke a different language altogether. What seemed to be missing was a shared space where these ways of thinking could meet, not to be unified, but to productively challenge one another.
+
+One particular moment helped crystallize this feeling. I was awarded a [fellowship](https://makit.edu.umontpellier.fr/en/fellows-cohort/bahman-rostami-tabar/) that allowed me to spend six months in Montpellier. Being immersed in a vibrant, international research environment made the gap especially visible. Across disciplines, people were grappling with uncertainty and the future, yet there was surprisingly little dialogue about how to work with uncertainty in an integrated way when making decisions about the future. The tools, assumptions, and even vocabularies differed so much that meaningful exchange was often difficult, despite a shared concern with the same underlying questions.
+
+Over time, this became a persistent question rather than a passing thought: what would happen if we created an environment intentionally designed for such encounters? A place where uncertainty was not treated as a problem to be eliminated, but as a condition to be understood, communicated, and even explored creatively—and where the future was not a distant abstraction, but something actively shaped by how we reason and act today. Conversations with colleagues, students, and practitioners gradually sharpened this vision, revealing a strong appetite for deeper, slower, and more interdisciplinary engagement.
+
+[The Art and Science of Uncertainty & the Future summer school](https://dl4sg-summer-school.github.io/) is the result of that process. It is an attempt to make room for careful thinking, hands-on exploration, and genuine dialogue across disciplines, all within a shared week of learning and experimentation. 

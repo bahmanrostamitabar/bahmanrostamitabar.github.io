@@ -1,0 +1,17 @@
+---
+title: "An article on Democratising Forecasting in ORMS today - INFORMS"
+description: "Democratising Forecasting"
+author: "Bahman Rostami-Tabar"
+date: "05/24/2024"
+image: "orms.png"
+categories:
+  - Dorecasting
+  - R
+  - LMICs
+  - Impact
+  - Knowledge Sharing
+---
+
+In June 2024, an article titled "Democratising Forecasting" was published in tORMS Today by INFORMS. The article highlights the significance of making forecasting tools and knowledge accessible to a broader audience, particularly in low- and middle-income countries (LMICs).
+
+Read the full article [here](https://pubsonline.informs.org/do/10.1287/orms.2024.02.01/full/)

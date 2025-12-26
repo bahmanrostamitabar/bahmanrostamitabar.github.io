@@ -1,0 +1,26 @@
+---
+title: "Investigating length of stay patterns and its predictors in the South Wales Trauma Network"
+author: "Zihao Wang, Bahman Rostami-Tabar, Jane Haider, Mohamed Naim, and Javvad Haider"
+description: "Advances in Rehabilitation Science and Practice"
+year: 2024
+links:
+  - text: DOI
+    href: https://doi.org/10.1177/27536351241237866
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+**Background**: Length of stay (LOS) is frequently employed as a performance metric for trauma care. Following the establishment of the trauma network worldwide, the assessment and prediction of LOS in different levels of trauma centres have been extensively studied. However, assessing the total patient length of stay from a whole trauma network perspective is unclear. The objective of this study was to systematically analyse the overall Length of Stay (LOS) pattern within the SWTN before its establishment and in the immediate time after its foundation and, secondly, to assess the association between relevant impact factors and LOS.
+
+**Methodology**: A retrospective secondary analysis based on the trauma admission dataset from Trauma Audit and Research Network(TARN) dataset was conducted. The studied sample covered around 18000 patients admitted to trauma centres from South Wales Major trauma network between January 2012 and October 2021. The primary outcome is the total length of stay in the trauma network. Statistical tests were applied to examine the difference between normal and outlier LOS. Data visualisation was utilised to demonstrate the LOS patterns and potential association between LOS and relevant demographic and clinical predictors.
+
+**Results**: The distribution of length of stay in SWTN follows a right-skewed distribution with a median of 10 (IQR, 5-18) and a mean of 15.92 days. There were 1520 patients with outliers for LOS. A significant difference (p¡ 0.05) was found between the normal and outlier groups of LOS based on demographic (age, gender and residential information) and clinical characteristics(ward type, maximum of anatomically-based injury severity score(AIS) and probability of survival). Age group, maximum AIS score on specific injured region, ward type and its interaction effect with the number of admissions may associated with the LOS. Specifically, patients admitted to the geriatric ward exhibited notably prolonged LOS, and individuals with more than 2 admissions to long-term care and recovery-related wards such as neurosurgical rehabilitation, spinal injuries and burns wards also displayed elevated LOS.
+
+**Conclusion**: Our finding supports prior evidence indicating elderly people are vulnerable to longer stays. Moreover, concerning the types of admission wards, patients admitted to rehabilitation wards who underwent more than 2 hospitalisations also faced an increased risk of prolonged stay. Based on these results, policymakers and healthcare providers should contemplate expanding the allocation of medical resources to this demographic to mitigate the length of stay and optimise associated healthcare costs.

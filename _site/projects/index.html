@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-author','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -131,6 +131,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="projects.css">
 <meta property="og:title" content="Projects">
 <meta property="og:description" content="Overview of projects I lead and colead.">
 <meta property="og:image" content="../projects/africast/cover.jpg">
@@ -164,12 +165,12 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../supervision/index.html"> 
+<span class="menu-text">Research Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../supervision/index.html"> 
-<span class="menu-text">Supervision</span></a>
+    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../talks/index.html"> 
@@ -183,12 +184,16 @@ window.Quarto = {
     <a class="nav-link" href="../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -239,6 +244,15 @@ window.Quarto = {
       <option value="listing-title" data-direction="asc">
         Title
       </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
     </select>
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -247,7 +261,42 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UiUyQ1B5dGhvbiUyQ1F1YXJ0byUyQ1Bvc3Ryb24lMkNNYWNoaW5lJTIwTGVhcm5pbmc=" data-listing-file-modified-sort="1761658092272" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="0" data-categories="VW5jZXJ0YWludHklMkNGdXR1cmVzJTJDU3VtbWVyJTIwU2Nob29sJTJDSW50ZXJkaXNjaXBsaW5hcnk=" data-listing-date-sort="1764028800000" data-listing-file-modified-sort="1766713416549" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/summer_school/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/summer_school/ss.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+The Art and Science of Uncertainty: an interdisciplinary Summer School
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VW5jZXJ0YWludHk='); return false;">Uncertainty</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RnV0dXJlcw=='); return false;">Futures</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VtbWVyJTIwU2Nob29s'); return false;">Summer School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJkaXNjaXBsaW5hcnk='); return false;">Interdisciplinary</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>This summer school provides a unique opportunity to develop skills, strengthen networks, and advance creative and interdisciplinary research on uncertainty and the future.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
+</div>
+<div class="listing-date">
+Nov 25, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UiUyQ0ZvcmVjYXN0aW5nJTJDUiUyQ0xNSUNzJTJDQUZSSUNBU1Q=" data-listing-date-sort="1717196400000" data-listing-file-modified-sort="1766709938098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../projects/africast/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -255,63 +304,36 @@ window.Quarto = {
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Data Science
+AFRICAST
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9yZWNhc3Rpbmc='); return false;">Forecasting</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TE1JQ3M='); return false;">LMICs</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QUZSSUNBU1Q='); return false;">AFRICAST</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>My data sceince projects.</p>
+<p>An online forecasting training programme for learners across Africa.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
+</div>
+<div class="listing-date">
+Jun 1, 2024
+</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UiUyQ1B5dGhvbiUyQ1F1YXJ0byUyQ1Bvc3Ryb24lMkNNYWNoaW5lJTIwTGVhcm5pbmc=" data-listing-file-modified-sort="1761658092287" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../projects/democratising_forecasting/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/democratising_forecasting/cover.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Time Series Forecasting
-</h5>
-<div class="card-text listing-description delink">
-<p>My forecasting projects.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1766537316659" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../projects/summer_school/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/summer_school/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Summer School
-</h5>
-<div class="card-text listing-description delink">
-<p>My sustainability projects.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1761660039510" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../projects/f4sg/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/f4sg/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Sustainability
-</h5>
-<div class="card-text listing-description delink">
-<p>My sustainability projects.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="TENBJTJDR3JlZW4lMjBUZWNoJTJDUmVjeWNsZQ==" data-listing-file-modified-sort="1766536760897" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="2" data-categories="SW50ZXJkaXNjaXBsaW5hcml0eSUyQ1Jlc2VhcmNoJTIwQ3VsdHVyZSUyQ0NvbGxhYm9yYXRpb24=" data-listing-date-sort="1717196400000" data-listing-file-modified-sort="1766712458645" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../projects/crosslab_exchange/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -319,10 +341,64 @@ Sustainability
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Sustainability
+Research Group Exchange Series
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJkaXNjaXBsaW5hcml0eQ=='); return false;">Interdisciplinarity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBDdWx0dXJl'); return false;">Research Culture</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29sbGFib3JhdGlvbg=='); return false;">Collaboration</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>My sustainability projects.</p>
+<p>An interdisciplinary initiative to build collaborative research culture across Cardiff University and partner institutions.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
+</div>
+<div class="listing-date">
+Jun 1, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Rm9yZWNhc3RpbmclMkNSJTJDTE1JQ3MlMkNJbXBhY3QlMkNLbm93bGVkZ2UlMjBTaGFyaW5n" data-listing-date-sort="1515110400000" data-listing-file-modified-sort="1766709800215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/democratising_forecasting/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/democratising_forecasting/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Democratising Forecasting
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9yZWNhc3Rpbmc='); return false;">Forecasting</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TE1JQ3M='); return false;">LMICs</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW1wYWN0'); return false;">Impact</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('S25vd2xlZGdlJTIwU2hhcmluZw=='); return false;">Knowledge Sharing</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Train the trainers workshops in low/lower/middle income countries to promote the importance of forecasting and ‘train the trainers’ in the principles of forecasting using R…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
+</div>
+<div class="listing-date">
+Jan 5, 2018
+</div>
 </div>
 </div>
 </div></a>

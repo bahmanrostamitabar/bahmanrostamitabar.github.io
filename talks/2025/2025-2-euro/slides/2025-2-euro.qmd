@@ -1,0 +1,164 @@
+---
+title: "Impact of length of data on forecst accuracy"
+subtitle: "International Symposium on Forecasting, June 28 – July 1, 2026, Montreal, Canada"
+author:
+  - Amir hossein Ghadiri, PhD Student
+  - Bahman Rostami-Tabar, Lead supervisor
+  - Thomas Wooly, Co-supervisor
+  - William Bennett, Co-supervisor
+institute: 
+  - Data Lab for Social Good, Cardiff Business School, Cardiff University
+  - Data Lab for Social Good, Cardiff Business School, Cardiff University
+  - School of Mathematics, Cardiff University
+  - School of Engineering, University of Swansea
+venue: "EURO Conference"
+location: "Istanbul, Turkey"
+date: 2025-07-01
+execute: 
+  cache: true
+  warning: false
+  message: false
+  echo: false
+format: 
+  revealjs:
+    multiplex: false
+    footer: "{{< fa brands github >}} [bahmanrostamitabar](https://github.com/bahmanrostamitabar) {{< fa brands linkedin >}} [bahman-rostami-tabar](https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/) 🌐 [bahmanrostamitabar.github.io](https://bahmanrostamitabar.github.io/)"
+    theme: ["default", "pp.scss"]
+    slide-number: c/t
+    incremental: false
+    menu: false
+    html-math-method: mathjax
+    chalkboard:
+      theme: chalkboard   # or "whiteboard"
+      toggleNotesButton: true
+title-slide-attributes:
+  data-background-image: "logo/dl4sg.svg, img/carbs_logo.png, img/carbs_logo.png"
+  data-background-size: "130px, 200px, 200px"
+  data-background-position: "right 220px bottom 24px, right bottom 24px, left 24px bottom 24px"
+  data-background-repeat: "no-repeat, no-repeat, no-repeat"
+---
+
+
+# Create sldies
+
+## Create slides using `##`
+
+create a slide using `##` for slide title
+
+# Section or special slide
+
+# {.big}
+
+::: r-fit-text
+[Live Demo]{.flow}
+:::
+
+# Data visualisation best practices {.big}
+
+## Data visualisation best practices {.big}
+
+## {.big .middle .center}
+
+:::: .{columns}
+::: {.column width="45%"}
+### Detailed, accurate, numbers?
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+### Or the big, picture message?
+:::
+::::
+
+# Craete lists
+
+## create bulleted list
+create a  list using `- `, `+`, or `*`
+
+- first bullet
+- second bullet
+- third bullet
+
+## create ordered ist
+
+1. first
+2. second
+3. third
+
+# Multile columns
+
+## Using multile columns 
+
+sometimes you want to create multile columns in a slide:
+
+- use when you want to have a left and right column
+- Use whn you wnat to have an image in one side and text in the other side
+- when you want to have a formula on one side and explanation on the other side
+- when you want to have code on one side and output on the other side
+- when you want to have a plot on one side and explanation on the other side
+- when you want to have any content on one side and any content on the other side
+- when you want to have multiple images each in one column
+- you can also create multope columns with more than two columns using the same syntax
+
+## Craete multile columns 
+
+- use `:::: {.columns}` to start the columns
+- use `::: {.column width="30%"}` to start the left column, and specify the width
+- use `::: {.column width="70%"}` to start the right column, and specify the width
+- use `:::` to end each column
+- use `::::` to end the columns
+
+# Delay showing content
+
+## Slide with a pause using `...`
+
+content before the pause
+
+. . .
+
+content after the pause
+
+## Using Incremental with lists
+
+::: {.incremental}
+-   Understanding UI components of Positron
+-   Create projects in Positron
+-   Describe three main tasks
+-   Describe three things to know about R/Python
+-   Install and load packages
+:::
+
+## Using Fragment with anything
+
+You can use fragment to delay anything showing, including images, text, formulas, code, plots, etc.
+
+::: {.fragment}
+![](backgrounds/hierarchy-left.jpeg){width=30% fig-align="center"}
+:::
+
+# Add footnotes and asides
+
+## Footnote
+
+-   Understanding UI components of Positron [^1]
+-   Create projects in Positron
+-   Describe three main tasks
+-   Describe three things to know about R/Python
+-   Install and load packages
+
+[^1]: this is important check [here]()
+
+## Aside
+
+-   Understanding UI components of Positron
+-   Create projects in Positron
+-   Describe three main tasks
+-   Describe three things to know about R/Python
+-   Install and load packages
+
+::: aside
+Asides contain content of more peripheral interest, and are displayed in a smaller, lighter font at the bottom of the slide. 
+:::
+

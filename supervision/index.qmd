@@ -1,170 +1,215 @@
 ---
-title: "PhD and MSc Supervision"
 format: html
-css: supervision.css
-execute:
-  echo: false
+page-layout: full
+css: participants-cards.css
+toc: true
 ---
 
-```{r}
-#| label: setup
-#| echo: false
-#| message: false
-#| warning: false
-
-install.packages(
-  c("readr", "dplyr", "reactable"),
-  repos = "https://cloud.r-project.org"
-)
-
-library(readr)
-library(dplyr)
-library(reactable)
-
-
-phd <- read_csv("phd.csv")
-msc <- read_csv("msc.csv")
-```
-
-```{r}
-#| echo: false
-num_phd <- nrow(phd)
-num_msc <- nrow(msc)
-num_phd_grad <- sum(phd$status == "Graduated", na.rm = TRUE)
-num_msc_grad <- sum(msc$status == "Graduated", na.rm = TRUE)
-```
-
-::: {.callout-note}
-## Supervision Overview
-
-I have supervised **`r nrow(phd)`** PhD students (**`r num_phd_grad`** graduated) and  **`r nrow(msc)`** MSc theses (**`r num_msc_grad`** graduated).  
-
-Graduates are currently working in academia, industry, and the public sector.
-:::
-
-
-
-## PhD Supervision
-
-```{r}
-
-reactable(
-phd |>
-arrange(desc(graduation_year)) |>
-select(
-name,
-thesis_title,
-graduation_year,
-current_position,
-link
-),
-searchable = TRUE,
-compact = TRUE,
-striped = TRUE,
-highlight = TRUE,
-bordered = FALSE,
-defaultSorted = "graduation_year",
-defaultSortOrder = "desc",
-rowStyle = function(index) {
-if (is.na(phd$graduation_year[index])) {
-list(fontStyle = "italic", background = "#fafafa")
-}
-},
-columns = list(
-name = colDef(
-name = "Name",
-style = list(fontWeight = 500)
-),
-thesis_title = colDef(
-name = "PhD Title",
-minWidth = 360,
-style = list(color = "#444", verticalAlign = "top")
-),
-graduation_year = colDef(
-name = "Year",
-align = "center",
-width = 70,
-style = list(color = "#777")
-),
-current_position = colDef(
-name = "Current Position",
-minWidth = 280,
-style = list(verticalAlign = "top")
-),
-link = colDef(
-name = "Link",
-align = "center",
-width = 50,
-cell = function(value) {
-if (is.na(value) || value == "") "" else {
-htmltools::a("↗", href = value, target = "_blank")
-}
-}
-)
-)
-)
-
-
+```{=html}
+<div style="display:flex; justify-content:center; margin:2.5rem 0;">
+  <figure style="text-align:center;">
+    <img src="img/team.jpg"
+         alt="Research team photo"
+         style="
+           width:50%;
+           border-radius:14px;
+           box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+         ">
+    <figcaption style="
+        margin-top:0.6rem;
+        font-style:italic;
+        color:#555;
+        font-size:0.95rem;
+      ">
+      Data Lab for Social Good Research Group (Photo taken in 2024)
+    </figcaption>
+  </figure>
+</div>
 ```
 
 
-## MSc Supervision
+## Current Ph.D. student
 
-```{r}
-reactable(
-  msc |>
-    arrange(desc(graduation_year)) |>
-    select(
-      name,
-      thesis_title,
-      graduation_year,
-      current_position,
-      link
-    ),
-  searchable = TRUE,
-  compact = TRUE,
-  striped = TRUE,
-  highlight = TRUE,
-  bordered = FALSE,
-  defaultSorted = "graduation_year",
-  defaultSortOrder = "desc",
-  rowStyle = function(index) {
-    if (is.na(msc$graduation_year[index])) {
-      list(fontStyle = "italic", background = "#fafafa")
-    }
-  },
-  columns = list(
-    name = colDef(
-      name = "Name",
-      style = list(fontWeight = 500)
-    ),
-    thesis_title = colDef(
-      name = "MSc Title",
-      minWidth = 320,
-      style = list(color = "#444", verticalAlign = "top")
-    ),
-    graduation_year = colDef(
-      name = "Year",
-      align = "center",
-      width = 70,
-      style = list(color = "#777")
-    ),
-    current_position = colDef(
-      name = "Current Position",
-      minWidth = 260,
-      style = list(verticalAlign = "top")
-    ),
-    link = colDef(
-      name = "Link",
-      align = "center",
-      width = 50,
-      cell = function(value) {
-        if (is.na(value) || value == "") "" else {
-          htmltools::a("↗", href = value, target = "_blank")
-        }
-      }
-    )
-  )
-)
+```{=html}
+<div class="page-container">
+    <!-- Participants Section -->
+    <div class="content-card">
+        <div class="participants-grid">
+            
+            <!-- Participant 1 -->
+            <div class="participant-card">
+                <img src="https://avatars.githubusercontent.com/u/50043266?v=4" alt="Full Name" class="participant-avatar">
+                <div class="participant-name">Harsha Halgamuwe Hewage</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://chamara7h.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://github.com/chamara7h" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/harshachamara/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
 
+            <!-- Participant 2 -->
+            <div class="participant-card">
+                <img src="img/ming.jpeg" alt="Minzhe Shi" class="participant-avatar">
+                <div class="participant-name">Minzhe Shi</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://profiles.cardiff.ac.uk/research-staff/shim9" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://github.com/Shimingzhe123" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mingzhe-shi-0a22451b9/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 3 -->
+            <div class="participant-card">
+                <img src="img/udeshi.jpg" alt="Udeshi Salgado" class="participant-avatar">
+                <div class="participant-name">Udeshi Salgado</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://udeshisalgado.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://github.com/udeshisalgado" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/udeshi-salgado/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 4 -->
+            <div class="participant-card">
+                <img src="img/fatemeh.jpeg" alt="Fatemeh Monshizadeh" class="participant-avatar">
+                <div class="participant-name">Fatemeh Monshizadeh</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://profiles.cardiff.ac.uk/staff/monshizadehf" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=tRs6Kvn7GacC&hl=en" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/fatemeh-monshizadeh/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 5 -->
+            <div class="participant-card">
+                <img src="https://avatars.githubusercontent.com/u/105726029?v=4" alt="Mustafa Aslan" class="participant-avatar">
+                <div class="participant-name">Mustafa Aslan</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://mustafaslancoto.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://github.com/mustafaslanCoto" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/aslanmu/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 6 -->
+            <div class="participant-card">
+                <img src="img/seyvan.avif" alt="Amir Salimi Babmiri" class="participant-avatar">
+                <div class="participant-name">Amir Salimi Babmiri</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://profiles.cardiff.ac.uk/staff/salimibabamiria" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=LDZrogIAAAAJ&hl=en&oi=sra" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/amir-salimi-babamiri/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 7 -->
+            <div class="participant-card">
+                <img src="img/rui.avif" alt="Rui Xu" class="participant-avatar">
+                <div class="participant-name">Rui Xu</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://rui-2024.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://github.com/Rui-2024" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rui-xu-1bb216275/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 8 -->
+            <div class="participant-card">
+                <img src="https://avatars.githubusercontent.com/u/68536575?v=4" alt="Amirhossein Ghadiri" class="participant-avatar">
+                <div class="participant-name">Amirhossein Ghadiri</div>
+                <div class="participant-affiliation">Cardiff University</div>
+                <ul class="participant-links">
+                    <li><a href="https://amirhosseinghdv.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://github.com/amirhosseinghdv" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/amirhossein-ghadiri-8296781a6/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 9 -->
+            <div class="participant-card">
+                <img src="img/alfred.avif" alt="Alfred Sallwa" class="participant-avatar">
+                <div class="participant-name">Alfred Sallwa</div>
+                <div class="participant-affiliation">Mzumbe University</div>
+                <ul class="participant-links">
+                    <li><a href="https://alfred-ain.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://github.com/alfred-ain" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/alfred-sallwa-b391b3302/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 10 -->
+            <div class="participant-card">
+                <img src="img/birhanu.jpeg" alt="Birhanu Shanko" class="participant-avatar">
+                <div class="participant-name">Birhanu Shanko</div>
+                <div class="participant-affiliation">Addis Ababa University</div>
+                <ul class="participant-links">
+                    <li><a href="https://orcid.org/0000-0003-4587-1742" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/birhanu-s-a45b2571/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Participant 11 -->
+            <div class="participant-card">
+                <img src="img/yemsrach.avif" alt="Yemsrach Demissie" class="participant-avatar">
+                <div class="participant-name">Yemsrach Demissie</div>
+                <div class="participant-affiliation">Addis Ababa University</div>
+                <ul class="participant-links">
+                    <li><a href="https://orcid.org/0009-0005-4324-4843" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/yemsrach-hailu-demissie/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
 ```
+
+
+## Graduated Ph.D.
+
+```{=html}
+<div class="page-container">
+    <!-- Participants Section -->
+    <div class="content-card">
+        <div class="participants-grid">
+            
+            <!-- Participant 1 -->
+            <div class="participant-card">
+                <img src="img/zihao.jpg" alt="Zihao Wang" class="participant-avatar">
+                <div class="participant-name">Zihao Wang</div>
+                <div class="participant-affiliation">Swansea University</div>
+                <ul class="participant-links">
+                    <li><a href="https://hdrwales.org.uk/portfolio/dr-zihao-wang/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/zihao-wang-040b63244/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+            
+            
+                        <!-- Participant 2 -->
+            <div class="participant-card">
+                <img src="img/diego.png" alt="Diego Bermudez" class="participant-avatar">
+                <div class="participant-name">Diego Bermudez</div>
+                <div class="participant-affiliation">University of Exeter</div>
+                <ul class="participant-links">
+                    <li><a href="https://experts.exeter.ac.uk/45619-diego-bermudez/about" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/diegobermudezb/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+```
+
+
+
+## Graduated MS.c.
+
+** To be Completed **

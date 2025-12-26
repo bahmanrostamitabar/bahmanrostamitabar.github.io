@@ -1,0 +1,20 @@
+---
+title: "Forecasting autoregressive demands with temporal aggregation"
+author: "Bahman Rostami Tabar, Yves Ducq, Mohamed Zied Babai, and Aris Syntetos"
+description: "9th International Conference on Modeling, Optimization & Simulation"
+year: 2012
+links:
+  - text: Preprint
+    href: https://hal.science/hal-00728574/document
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+This paper examines the role of temporal aggregation in forecasting autoregressive demand processes. Motivated by the widespread presence of autocorrelation in demand data and the common use of aggregation in practice, the study analyzes how different aggregation levels affect forecast accuracy. The authors focus on autoregressive demand structures and investigate both theoretical properties and empirical performance. The results show that temporal aggregation can substantially improve forecasting accuracy under certain conditions, but that the benefits depend on the interaction between aggregation level, demand dynamics, and forecasting method. These findings provide guidance for practitioners on when and how temporal aggregation should be applied in operational forecasting contexts.

@@ -1,0 +1,44 @@
+---
+title: "The role of technology in developing resilient supply chains: a systematic literature review during the COVID-19 pandemic and the disruptions of economic sanctions"
+author: "Birhanu Shanko Dura, Simon Peter Nadeem, Jose Arturo Garza-Reyes, Abebe Ejigu Alemu, Bahman Rostami-Tabar, Daniel Henao Zapata, and Andre Kreie"
+description: "Journal of Humanitarian Logistics and Supply Chain Management"
+year: 2025
+---
+
+
+<meta name="doi" content="https://doi.org/10.1108/JHLSCM-03-2024-0036">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+### Purpose
+
+This study aims to investigate the role of technology in enhancing the resilience of humanitarian and commercial supply chains during disruptions such as the COVID-19 pandemic and economic sanctions.
+
+### Design/methodology/approach
+
+A five-step review process for conducting a systematic literature review was adopted to frame future technological interests that depict the role of technology.
+
+### Findings
+
+This study identified key technological inventions, such as Industry 4.0 technologies, that help supply chains recover and adapt to crises. The study findings show that while technology offers significant benefits in mitigating disruptions, a gap remains between technological advancements and practical performance, particularly in humanitarian contexts. Humanitarian supply chains require technology that provides quality information sharing and collaborative decision-making capabilities for reactive approaches. Most literature prioritises large and complex data processing and transactions, cybersecurity, hybridised systems, visibility, transparency, interconnection, responsiveness and collaborative technological features that lead to a resilient supply chain and the ability to respond to future crises.
+
+### Research limitations/implications
+
+This study explores the role of technology in building resilient supply chain systems during disruptions, using a time-bound approach for efficient research and comprehensive literature analysis.
+
+### Practical implications
+
+Understanding the role of technologies in logistics and supply chain activities helps evaluate and select various technologies and technological features to overcome the impact of disruptive events or shocks on supply chains.
+
+### Social implications
+
+Shaping, expanding and forecasting the technological requirements for supply chain systems provides the conceptual foundation for developing resilient supply chains.
+
+### Originality/value
+
+The new insights from this study demonstrate how the technology was used across industry sectors to overcome the pandemic’s and Russian economic sanctions’ impact on supply chains.

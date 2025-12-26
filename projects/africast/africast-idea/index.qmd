@@ -1,0 +1,30 @@
+---
+title: "AFRiCAST"
+description: "An online forecasting training programme for learners across Africa."
+author: "Bahman Rostami-Tabar"
+date: "10/10/2023"
+image: "cover.jpg"
+categories:
+  - Forecasting
+  - Africa
+  - Data Science
+  - R
+  - AFRICAST
+  - LMICs
+---
+
+In January 2023, I delivered an in-person workshop in Nairobi as part of the Democratising Forecasting initiative. During that visit, I had the pleasure of meeting Henry from Jomo Kenyatta University of Agriculture and Technology. Our conversations sparked the idea of creating an online training programme inspired by the workshop delivered in Nairobi—an idea that eventually became AFRiCAST.
+
+AFRiCAST was designed to provide accessible, high-quality forecasting training to learners across Africa. 
+
+𝐊𝐄𝐘 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒: 
+
+1. Live sessions: 10 sessions, each lasting 1.5 hours via Zoom, in the morning.
+2. Live coding: Live coding demonstration in each session.
+3. Dedicated mentorship: experienced mentors from previous cohorts provide guidance in small groups in the afternoon
+4. Lab exercises: the programme includes two types of exercises: i) *Learning*: participants gain hands-on experience by working with diverse datasets; ii) *Apply*: these exercises involve applying the forecasting workflow to a single dataset from Africa, ending in the creation of a final report.
+5. Free access to materials: All presentation slides, code, exercises, and workshop recordings are accessible to the public online. Materials are accessible online: [https://workshop.f4sg.org/africast/](https://workshop.f4sg.org/africast/)
+
+
+In the afternoons, participants work in small groups with dedicated mentors—experienced contributors from previous cohorts—who provide focused guidance and support. 
+.

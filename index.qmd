@@ -19,21 +19,28 @@ about:
     - icon: github
       text: Github
       href: https://github.com/bahmanrostamitabar
+      target: _blank
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/
+      target: _blank
     - icon: bookmark-star-fill
       text: Google Scholar
       href: https://scholar.google.com/citations?hl=en&user=PeVrdqUAAAAJ
+      target: _blank
     - icon: orcid
       text: ORCID
       href: https://orcid.org/0000-0002-3730-0045
+      target: _blank
     - icon: mortarboard-fill
       text: University profile
       href: https://profiles.cardiff.ac.uk/staff/rostami-tabarb
+      target: _blank
 ---
 
-  I am a Professor of Analytics & Decision Sciences at Cardiff Business School, Cardiff University, UK. I am interested in transforming data into insights for making better decisions. I am the founder and director of [Data Lab for Social Good](https://www.cardiff.ac.uk/research/explore/research-units/data-lab-for-social-good) at Cardiff Business School and the founder of [Forecasting for Social Good (F4SG)](https://forecasters.org/programs/communities/forecasting-for-social-good-f4sg/) i nitiativessponsored by the International Institute of Forecasters. He is also leading the [Uncertainty & the Future](https://www.cardiff.ac.uk/digital-transformation-innovation-institute/work-with-us/uncertainty-and-the-future) theme at the Digital Transformation Innovation Institute.
+I am a Professor of Analytics and Decision Sciences at Cardiff Business School, Cardiff University. I founded and direct the [Data Lab for Social Good](https://www.cardiff.ac.uk/research/explore/research-units/data-lab-for-social-good), and I lead the [Uncertainty & the Future](https://www.cardiff.ac.uk/digital-transformation-innovation-institute/work-with-us/uncertainty-and-the-future) theme at [DTII](https://www.cardiff.ac.uk/digital-transformation-innovation-institute), where I work closely with academic, public, and industry partners on questions that matter for society.
 
-Bahman is passionate about uncertainty and the future. He specialises in the development and application of probabilistic modelling, forecasting, and operational research tools and techniques, providing informed insights for policy & decision-making processes in facing uncertain futures, and his research has contributed to sectors contributing to social good, including healthcare operations, global health and humanitarian supply chains, agriculture and food, social sustainability, and governmental policy. 
-.
+My work sits at the intersection of data, uncertainty, and decision-making, with a focus on how advanced analytical methods can support better choices in complex and uncertain futures. Drawing on Data Science, AI, and Operations Research (OR), I develop and apply approaches that are both methodologically rigorous and demonstrably relevant to real-world decision contexts.
+
+So far, my contributions to the field have been recognised with two medals from the [OR Society](https://www.theorsociety.com/): the [Goodeve Medal](https://www.theorsociety.com/ORS/ORS/Membership/Awards/Medals/Goodeve-Medal.aspx) in 2024, awarded for outstanding contributions to the philosophy, theory, and practice of OR, and the [Lyn Thomas Impact Medal](https://www.theorsociety.com/ORS/ORS/Membership/Awards/Medals/Lyn-Thomas-Impact-Medal.aspx) in 2025, recognising OR academic research that combines methodological innovation with clear, evidenced real-world impact.
+

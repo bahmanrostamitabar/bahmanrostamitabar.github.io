@@ -1,0 +1,20 @@
+---
+title: "Demand forecasting in supply chains: a review of aggregation and hierarchical approaches"
+author: "Mohamed Zied Babai, John E. Boylan, and Bahman Rostami-Tabar"
+description: "International Journal of Production Research"
+year: 2021
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/00207543.2021.2005268
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Demand forecasts are the basis of most decisions in supply chain management. The granularity of these decisions lead to different forecast requirements. For example, inventory replenishment decisions require forecasts at the individual SKU level over lead time, whereas forecasts at higher levels, over longer horizons, are required for supply chain strategic decisions. The most accurate forecasts are not always obtained from data at the 'natural' level of aggregation. In some cases, forecast accuracy may be improved by aggregating data or forecasts at lower levels, or disaggregating data or forecasts at higher levels, or by combining forecasts at multiple levels of aggregation. Temporal and cross-sectional aggregation approaches are well established in the literature. More recently, it has been argued that these two approaches do not make the fullest use of data available at the different hierarchical levels of the supply chain. Therefore, consideration of forecasting hierarchies (over time and other dimensions), and combinations of forecasts across hierarchical levels, have been recommended. This paper provides a comprehensive review of research dealing with aggregation and hierarchical forecasting in supply chains, based on a systematic search. The review enables the identification of major research gaps and the presentation of an agenda for further research.

@@ -1,0 +1,21 @@
+---
+title: "Forecasting aggregate ARMA (1,1) demands: Theoretical analysis of top-down versus bottom-up"
+author: "Bahman Rostami-Tabar, Mohamed Zied Babai, Aris A. Syntetos, and Yves Ducq"
+description: "2013 International Conference on Industrial Engineering and Systems Management"
+year: 2013
+links:
+  - text: Preprint
+    href: https://ieeexplore.ieee.org/document/6761423
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+
+## Abstract
+
+In this paper the relative effectiveness of top-down (TD) versus bottom-up (BU) strategies is compared for forecasting the aggregate demand. We assume that the subaggregate demand follows an Autoregressive Moving Average process of order one and a Single Exponential Smoothing (SES) procedure is used to forecast demand. This demand process is often encountered in practice and SES is one of the standard estimators used in industry. Theoretical Mean Squared Error expressions are derived for the BU and TD strategies in order to contrast the relevant forecasting performances. The results indicate that there is no difference in the relative performance of TD and BU forecasting strategies when the process parameters are identical for all items and smoothing constant is equal for both strategies. The paper closes with an agenda for further research in this area.

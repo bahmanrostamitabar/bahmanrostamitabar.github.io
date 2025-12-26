@@ -1,0 +1,22 @@
+---
+title: "Demand forecasting by temporal aggregation"
+author: "Bahman Rostami-Tabar, Mohamed Zied Babai, Aris Syntetos, and Yves Ducq"
+description: "Naval Research Logistics"
+year: 2013
+links:
+  - text: Preprint
+    href: https://orca.cardiff.ac.uk/id/eprint/50457/1/NRL%20manuscript%20%28Rostami%20Tabar%20et%20al%29.pdf
+  - text: DOI
+    href: https://doi.org/10.1002/nav.21546
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Demand forecasting performance is subject to the uncertainty underlying the time series an organization is dealing with. There are many approaches that may be used to reduce uncertainty and thus to improve forecasting performance. One intuitively appealing such approach is to aggregate demand in lower-frequency “time buckets.” The approach under concern is termed to as temporal aggregation, and in this article, we investigate its impact on forecasting performance. We assume that the nonaggregated demand follows either a moving average process of order one or a first-order autoregressive process and a single exponential smoothing (SES) procedure is used to forecast demand. These demand processes are often encountered in practice and SES is one of the standard estimators used in industry. Theoretical mean-squared error expressions are derived for the aggregated and nonaggregated demand to contrast the relevant forecasting performances. The theoretical analysis is supported by an extensive numerical investigation and experimentation with an empirical dataset. The results indicate that performance improvements achieved through the aggregation approach are a function of the aggregation level, the smoothing constant, and the process parameters. Valuable insights are offered to practitioners and the article closes with an agenda for further research in this area.

@@ -1,13 +1,18 @@
 ---
-title: "Time Series Forecasting"
-description: "My forecasting projects."
-image: "cover.png"
+title: "Democratising Forecasting"
+description: "Train the trainers workshops in low/lower/middle income countries to promote the importance of forecasting and ‘train the trainers’ in the principles of forecasting using R software to support decision making."
+author: 
+  - name: "Bahman Rostami-Tabar"
+    affiliation: "Cardiff University"
+    url: "https://bahmanrostamitabar.github.io/"
+image: "cover.jpg"
+date: 2018-01-05
 categories:
+  - Forecasting
   - R
-  - Python
-  - Quarto
-  - Postron
-  - Machine Learning
+  - LMICs
+  - Impact
+  - Knowledge Sharing
 listing:
   contents: /
   type: default # Explore more listing types; default, grid or table

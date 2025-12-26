@@ -1,0 +1,20 @@
+---
+title: "Challenging the throwaway culture in hospitals: Scheduling the mix of reusable and single-use bronchoscopes"
+author: "Daniel Gartner, Joe Viana, Bahman Rostami-Tabar, Dominik Pförringer, and Günther Edenharter"
+description: "Journal of the Operational Research Society"
+year: 2023
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/01605682.2022.2129490
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Optimal material resource planning is crucial to run safe and cost-efficient hospital services. In this article, we investigate a real problem in hospitals, motivated by an environmental and economically inefficient use of disposable, single-use, endoscopes. We develop a mathematical model and create a decision support tool to determine when reusable, multi-use, bronchoscopes should be sent for inspection including information to what extent single-use bronchoscopes can cover the remaining demand. The results show that the proposed approach can contain operational costs which consist of costs for buying single-use devices, inspection costs and reprocessing costs, i.e., sterilization of reusable devices. Our tool can assist hospitals to predict when reusable bronchoscopes should undergo inspection and whether the current inventory of reusable devices is sufficient to cover the demand. Finally, we evaluate the impact of variation in demand on total costs.

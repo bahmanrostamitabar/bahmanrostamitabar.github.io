@@ -14,23 +14,29 @@ website:
     right:
       - text: About
         href: about/index.qmd
+      - text: Research Team
+        href: supervision/index.qmd
       - text: Projects
         href: projects/index.qmd
-      - text: Supervision
-        href: supervision/index.qmd
       - text: Talks
         href: talks/index.qmd
       - text: Publications
         href: publications/index.qmd
       - text: Blog
         href: blog/index.qmd
+      - text: "CV"
+        href: pdf/bahmanrostamitabarCV.pdf
+        target: _blank
     tools:
       - icon: github
         href: https://github.com/
+        target: _blank
       - icon: linkedin
         href: https://www.linkedin.com/
+        target: _blank
       - icon: mortarboard-fill
         href: https://profiles.cardiff.ac.uk/staff/rostami-tabarb
+        target: _blank
 format:
   html:
     backgroundcolor: "#FFFFFF" # https://www.figma.com/colors/

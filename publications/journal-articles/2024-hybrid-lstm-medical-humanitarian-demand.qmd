@@ -1,0 +1,20 @@
+---
+title: "A hybrid LSTM method for forecasting demands of medical items in humanitarian operations"
+author: "Marwa Hasni, Mohamed Zied Babai, and Bahman Rostami-Tabar"
+description: "International Journal of Production Research"
+year: 2024
+links:
+  - text: DOI
+    href: https://doi.org/10.1080/00207543.2024.2306904
+---
+
+<meta name="doi" content="https://doi.org/10.1080/00207543.2025.2526169">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+The inventory management of medical items in humanitarian operations is a challenging task due to the intermittent nature of their demand and long replenishment lead-times. An effective response to humanitarian emergencies is often associated with excess inventories, which leads to high costs. Henceforth, using accurate demand forecasts to control the inventories of these medical items is shown to be a significant lever to reduce inventory costs while keeping high service levels. This paper investigates the effectiveness of parametric and non-parametric demand forecasting methods that are commonly considered to deal with items characterised with intermittent demand patterns. Moreover, we propose a new hybrid deep learning method that combines the long short-term memory neural network and the support vector regression. Such combination enables to deal with complex and non-linear data. We conduct an empirical investigation by means of data related to 523 medical items managed in two warehouses of a major humanitarian organisation. The forecast accuracy and the inventory efficiency of the methods are analysed. The empirical results show the high performance of the deep learning methods. These insights are valuable not only in the context of medical items in humanitarian operations, but also for any items with intermittent demand patterns.

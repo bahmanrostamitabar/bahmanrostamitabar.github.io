@@ -1,0 +1,17 @@
+---
+title: "Patient length of stay in trauma networks: Insights from advanced modelling"
+author: "Zihao Wang, Bahman Rostami-Tabar, Jane Haider, Javvad Haider, and Mohamed Naim"
+description: "Expert Systems with Applications"
+year: 2025
+---
+
+<meta name="doi" content="https://doi.org/10.1016/j.eswa.2025.127801">
+<meta name="github" content="https://github.com/username/repo">
+<meta name="code" content="https://gitlab.com/username/repo">
+<meta name="arxiv" content="https://arxiv.org/abs/2301.12345">
+<meta name="preprint" content="https://osf.io/preprints/socarxiv/abc123">
+<meta name="data" content="https://zenodo.org/record/1234567">
+
+## Abstract
+
+Length of Stay (LOS) serves as a critical metric for assessing the quality of care within trauma systems, reflecting a healthcare system’s efficacy in managing patient flow and resource allocation. However, evaluating the total patient LOS from a comprehensive trauma network perspective remains challenging. This study aims to identify key driving factors influencing LOS in the trauma network, using a dataset containing 26,238 admissions to various institutions within the South Wales Major Trauma Network from January 2012 to August 2021. Given that LOS distributions are typically right-skewed, this paper develops three models to understand their variation, including LASSO Regression, Random Forest, and Generalised Additive Model. Each model incorporates preprocessing strategies to address the right-skewed nature of LOS. Our analysis shows that the LASSO Regression model demonstrates superior performance compared to benchmarks. Significant predictors of LOS are identified, which include the frequency of surgeries (five and six times), patient age (over 75), specific ward types (Burns, Spinal injury unit, Gietaritic, neurosurgical rehabilitation, etc.) and their interactions with ward transfer times and transfer status. These insights are important for clinical stakeholders who manage the trauma systems and make various decisions, including bed allocation, staffing decisions, and discharge rehabilitation planning.
