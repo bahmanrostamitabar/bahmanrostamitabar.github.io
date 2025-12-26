@@ -388,7 +388,9 @@ window.Quarto = {
 <link rel="stylesheet" href="../stylespublication.css">
 <link rel="stylesheet" href="publications.css">
 <meta property="og:title" content="Publications">
-<meta property="og:image" content="../publications/books/dfem.png">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/publications/books/dfem.png">
+<meta property="og:image:height" content="9219">
+<meta property="og:image:width" content="6153">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -1691,7 +1693,7 @@ Authors
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bahmanrostamitabar\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

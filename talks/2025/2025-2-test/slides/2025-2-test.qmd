@@ -59,7 +59,7 @@ data_types <- tribble(
 
 data_types |> 
   kbl() |> 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+  kable_material(c("striped", "hover"))
 ```
 
 ## Table's output from code {.scrollable}
@@ -68,7 +68,7 @@ data_types |>
 #| tbl-cap: "Motor Trend Car Road Tests"
 mtcars |> 
   kable() |> 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+  kable_material(c("striped", "hover"))
 ```
 
 ## Model output tables
@@ -82,7 +82,7 @@ tidy_model <- tidy(model)
 
 tidy_model |> 
   kable() |> 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+  kable_material(c("striped", "hover"))
 
 ```
 
@@ -92,7 +92,7 @@ tidy_model |>
 #| tbl-cap: "Gapminder Data Sample"
 gapminder_data <- read_csv("data/gapminder.csv")
 gapminder_data |> 
-  kable() |> 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F)
+  kbl() |> 
+  kable_material(c("striped", "hover"))
 ```
 

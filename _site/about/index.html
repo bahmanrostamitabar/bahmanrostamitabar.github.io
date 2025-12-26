@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="About Me">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/bayangan.jpg">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/about/img/bayangan.jpg">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -358,7 +358,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bahmanrostamitabar\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -75,7 +75,9 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="An article on Democratising Forecasting in ORMS today - INFORMS">
 <meta property="og:description" content="Democratising Forecasting">
-<meta property="og:image" content="orms.png">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/projects/democratising_forecasting/orms-article/orms.png">
+<meta property="og:image:height" content="106">
+<meta property="og:image:width" content="500">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -269,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bahmanrostamitabar\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

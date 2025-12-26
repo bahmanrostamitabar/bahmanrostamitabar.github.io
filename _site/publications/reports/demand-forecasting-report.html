@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-4d256d6fcfa5c36343b264362462b80c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2446905701fbf71fc498c770a811c78f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,8 +71,123 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  // Try to get metadata from Quarto's page metadata
+  const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+  let metadata = {};
+  
+  // Try to extract from JSON-LD if available
+  scripts.forEach(script => {
+    try {
+      const data = JSON.parse(script.textContent);
+      if (data.doi) metadata.doi = data.doi;
+      if (data.url) metadata.url = data.url;
+    } catch(e) {}
+  });
+  
+  // Manual extraction from meta tags (we'll add these)
+  const getMeta = (name) => {
+    const el = document.querySelector(`meta[name="${name}"], meta[property="${name}"]`);
+    return el ? el.getAttribute('content') : null;
+  };
+  
+  metadata.doi = getMeta('citation_doi') || getMeta('doi');
+  metadata.pdf = getMeta('citation_pdf_url') || getMeta('pdf');
+  metadata.github = getMeta('github');
+  metadata.code = getMeta('code');
+  metadata.arxiv = getMeta('arxiv');
+  metadata.preprint = getMeta('preprint');
+  metadata.publisher = getMeta('citation_journal_title') || getMeta('publisher');
+  metadata.data = getMeta('data');
+  metadata.slides = getMeta('slides');
+  metadata.video = getMeta('video');
+  metadata.demo = getMeta('demo');
+  metadata.bibtex = getMeta('bibtex');
+  
+  console.log('Extracted metadata:', metadata);
+  
+  const resources = [
+    { key: 'doi', text: 'DOI', icon: '📄', class: 'doi-btn' },
+    { key: 'pdf', text: 'PDF', icon: '📑', class: 'pdf-btn' },
+    { key: 'publisher', text: 'Publisher', icon: '🔗', class: 'publisher-btn' },
+    { key: 'github', text: 'GitHub', icon: '💻', class: 'github-btn' },
+    { key: 'code', text: 'Code', icon: '⚙️', class: 'code-btn' },
+    { key: 'arxiv', text: 'arXiv', icon: '📰', class: 'arxiv-btn' },
+    { key: 'preprint', text: 'Preprint', icon: '📝', class: 'preprint-btn' },
+    { key: 'data', text: 'Data', icon: '📊', class: 'data-btn' },
+    { key: 'slides', text: 'Slides', icon: '🎯', class: 'slides-btn' },
+    { key: 'video', text: 'Video', icon: '🎥', class: 'video-btn' },
+    { key: 'demo', text: 'Demo', icon: '🚀', class: 'demo-btn' },
+    { key: 'bibtex', text: 'BibTeX', icon: '📋', class: 'bibtex-btn' }
+  ];
+  
+  const activeResources = resources.filter(r => metadata[r.key]);
+  
+  console.log('Active resources:', activeResources);
+  
+  if (activeResources.length > 0) {
+    const titleBlock = document.querySelector('.quarto-title-block');
+    
+    if (titleBlock) {
+      const resourceSection = document.createElement('div');
+      resourceSection.className = 'resource-section';
+      
+      const heading = document.createElement('h3');
+      heading.className = 'resource-heading';
+      heading.textContent = 'Resources';
+      resourceSection.appendChild(heading);
+      
+      const buttonContainer = document.createElement('div');
+      buttonContainer.className = 'resource-buttons';
+      
+      activeResources.forEach(resource => {
+        const link = document.createElement('a');
+        link.href = metadata[resource.key];
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.className = `resource-btn ${resource.class}`;
+        link.innerHTML = `${resource.icon} ${resource.text}`;
+        buttonContainer.appendChild(link);
+      });
+      
+      resourceSection.appendChild(buttonContainer);
+      titleBlock.appendChild(resourceSection);
+      
+      console.log('Resources section added');
+    } else {
+      console.error('Title block not found');
+    }
+  } else {
+    console.log('No resources found');
+  }
+  
+  // Style abstract
+  const abstractHeading = Array.from(document.querySelectorAll('h2')).find(
+    h2 => h2.textContent.trim() === 'Abstract'
+  );
+  
+  if (abstractHeading) {
+    const abstractContent = [];
+    let nextElement = abstractHeading.nextElementSibling;
+    
+    while (nextElement && nextElement.tagName !== 'H2') {
+      abstractContent.push(nextElement);
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    if (abstractContent.length > 0) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'abstract-box';
+      abstractHeading.parentNode.insertBefore(wrapper, abstractContent[0]);
+      abstractContent.forEach(el => wrapper.appendChild(el));
+    }
+  }
+});
+</script>
 
 
+<link rel="stylesheet" href="../../stylespublication.css">
 <meta property="og:title" content="Demand Forecasting for Emergency Medical Services">
 </head>
 
@@ -104,12 +219,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/index.html"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../../supervision/index.html"> 
+<span class="menu-text">Research Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../supervision/index.html"> 
-<span class="menu-text">Supervision</span></a>
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../talks/index.html"> 
@@ -123,12 +238,16 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-bookmark-star-fill"></i></a>
+    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -137,7 +256,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
@@ -250,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bahmanrostamitabar\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

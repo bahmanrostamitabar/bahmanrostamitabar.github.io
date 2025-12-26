@@ -75,7 +75,9 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Announcing the First Edition of The Art and Science of Uncertainty &amp; the Future">
 <meta property="og:description" content="An Interdisciplinary Summer School at Cardiff University">
-<meta property="og:image" content="ss1.png">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/projects/summer_school/2026-ss/ss1.png">
+<meta property="og:image:height" content="760">
+<meta property="og:image:width" content="1976">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -319,7 +321,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/bahmanrostamitabar\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

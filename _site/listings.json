@@ -1,35 +1,9 @@
 [
   {
-    "listing": "/projects/index.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/projects/summer_school/index.html",
-      "/projects/africast/index.html",
-      "/projects/crosslab_exchange/index.html",
-      "/projects/democratising_forecasting/index.html"
-    ]
-  },
-  {
-    "listing": "/publictions/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/data_science/index.html",
-    "items": [
-      "/projects/data_science/first-post/index.html",
-      "/projects/data_science/scond-post/index.html",
-      "/projects/data_science/third-post/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/sustainability/index.html",
-    "items": [
-      "/projects/sustainability/first-post/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/forecasting/index.html",
-    "items": [
-      "/projects/forecasting/first-post/index.html"
+      "/blog/2025-10-28-informs/index.html",
+      "/blog/first-post/index.html"
     ]
   },
   {
@@ -40,57 +14,39 @@
     ]
   },
   {
-    "listing": "/publictions/journal_articles/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publictions/working_papers/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publictions/book_chapters/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publictions/technical_reports/index.html",
-    "items": []
-  },
-  {
-    "listing": "/blog/index.html",
+    "listing": "/projects/crosslab_exchange/index.html",
     "items": [
-      "/blog/2025-10-28-informs/index.html",
-      "/blog/first-post/index.html"
+      "/projects/crosslab_exchange/idea/index.html"
     ]
   },
   {
-    "listing": "/publications/journal_articles/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publications/working_papers/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publications/book_chapters/index.html",
-    "items": []
-  },
-  {
-    "listing": "/publications/technical_reports/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/who-evm/index.html",
+    "listing": "/projects/africast/index.html",
     "items": [
-      "/projects/who-evm/first-post/index.html"
+      "/projects/africast/africast-idea/index.html"
     ]
   },
   {
-    "listing": "/supervision/index1.html",
-    "items": []
+    "listing": "/projects/summer_school/index.html",
+    "items": [
+      "/projects/summer_school/2026-ss/index.html",
+      "/projects/summer_school/summer-school/index.html"
+    ]
   },
   {
-    "listing": "/publications/journal_articles/index1.html",
-    "items": []
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/summer_school/index.html",
+      "/projects/africast/index.html",
+      "/projects/crosslab_exchange/index.html",
+      "/projects/democratising_forecasting/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/democratising_forecasting/index.html",
+    "items": [
+      "/projects/democratising_forecasting/orms-article/index.html",
+      "/projects/democratising_forecasting/df/index.html"
+    ]
   },
   {
     "listing": "/publications/index.html",
@@ -144,38 +100,6 @@
       "/publications/conference-proceedings/2012-forecasting-autoregressive.html",
       "/publications/conference-proceedings/2008-hybrid-neural-lumpy-demand.html",
       "/publications/phdthesis/my-phd.html"
-    ]
-  },
-  {
-    "listing": "/projects/democratising_forecasting/index.html",
-    "items": [
-      "/projects/democratising_forecasting/orms-article/index.html",
-      "/projects/democratising_forecasting/df/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/summer_school/index.html",
-    "items": [
-      "/projects/summer_school/2026-ss/index.html",
-      "/projects/summer_school/summer-school/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/f4sg/index.html",
-    "items": [
-      "/projects/f4sg/first-post/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/africast/index.html",
-    "items": [
-      "/projects/africast/africast-idea/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/crosslab_exchange/index.html",
-    "items": [
-      "/projects/crosslab_exchange/idea/index.html"
     ]
   }
 ]
