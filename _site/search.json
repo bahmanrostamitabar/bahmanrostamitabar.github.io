@@ -1117,7 +1117,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nWValue of forecasting\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks/first-post/index.html",
@@ -3432,9 +3432,9 @@
   {
     "objectID": "talks/2025/2025-1-refrence/index.html",
     "href": "talks/2025/2025-1-refrence/index.html",
-    "title": "WValue of forecasting",
+    "title": "Making slides with Quarto",
     "section": "",
-    "text": "Presentation Materials\n\n{{&lt; fa display &gt;}} View Slides\n{{&lt; fa file-pdf &gt;}} Download Summary\n\nBrief abstract of the talk goes here…"
+    "text": "These slides cover the essential elements needed to create clear, effective, and visually appealing presentations using Quarto. They bring together the core components required for high-quality slide design, including structure, styling, layout control, and practical Reveal.js features."
   },
   {
     "objectID": "talks/2025/2025-2-euro/index.html",
@@ -6214,5 +6214,19 @@
     "title": "Data Lab for Social Good Research Group Exchange Series",
     "section": "Leadership and Delivery",
     "text": "Leadership and Delivery\nThe initiative is created and led by Professor Bahman Rostami-Tabar and the Data Lab for Social Good Research Group, drawing on extensive experience in organising interdisciplinary and international research events. The team combines expertise in analytics, operational research, health systems, and public policy, with a strong track record of facilitating inclusive, impact-oriented collaboration."
+  },
+  {
+    "objectID": "talks/2025/2025-1-refrence/index.html#what-these-slides-cover",
+    "href": "talks/2025/2025-1-refrence/index.html#what-these-slides-cover",
+    "title": "Making slides with Quarto",
+    "section": "",
+    "text": "These slides cover the essential elements needed to create clear, effective, and visually appealing presentations using Quarto. They bring together the core components required for high-quality slide design, including structure, styling, layout control, and practical Reveal.js features."
+  },
+  {
+    "objectID": "talks/2025/2025-1-refrence/index.html#further-resources",
+    "href": "talks/2025/2025-1-refrence/index.html#further-resources",
+    "title": "Making slides with Quarto",
+    "section": "Further resources",
+    "text": "Further resources\nYou can find more details and examples here:\n\nQuarto authoring: Markdown basics\nQuarto presentations\nAwesome Quarto (curated examples & tools)"
   }
 ]

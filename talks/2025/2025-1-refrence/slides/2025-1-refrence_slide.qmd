@@ -1,18 +1,11 @@
 ---
-title: "Impact of length of data on forecst accuracy"
-subtitle: "International Symposium on Forecasting, June 28 – July 1, 2026, Montreal, Canada"
-author:
-  - Amir hossein Ghadiri, PhD Student
-  - Bahman Rostami-Tabar, Lead supervisor
-  - Thomas Wooly, Co-supervisor
-  - William Bennett, Co-supervisor
-institute: 
-  - Data Lab for Social Good, Cardiff Business School, Cardiff University
-  - Data Lab for Social Good, Cardiff Business School, Cardiff University
-  - School of Mathematics, Cardiff University
-  - School of Engineering, University of Swansea
-venue: "EURO Conference"
-location: "Istanbul, Turkey"
+title: "Making Slides with Quarto"
+subtitle: "Data Lab"
+author: Bahman Rostami-Tabar, Lead supervisor
+institute: Data Lab for Social Good, Cardiff Business School, Cardiff University
+
+venue: "Data Lab Seminars"
+location: "Cardiff, UK"
 execute: 
   cache: true
   warning: false
