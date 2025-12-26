@@ -679,7 +679,7 @@ ggplot(penguins, aes(x = flipper_length_mm,
 
 ## Highlight specific consecutive line code 
 
-```{python}
+```{.python}
 #| eval: false
 #| echo: true
 #| code-line-numbers: "4-6"
@@ -698,7 +698,7 @@ plt.show()
 
 ## Highlgiht seperate lines
 
-```{python}
+```{.python}
 #| eval: false
 #| echo: true
 #| code-line-numbers: "2,6,9"
@@ -717,7 +717,7 @@ plt.show()
 
 ## Highlgiht several lines progressively
 
-```{python}
+```{.python}
 #| eval: false
 #| echo: true
 #| code-line-numbers: "|2|6|9"
