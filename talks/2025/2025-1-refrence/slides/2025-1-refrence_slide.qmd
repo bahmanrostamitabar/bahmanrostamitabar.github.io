@@ -35,11 +35,10 @@ title-slide-attributes:
 #| label: setup
 #| include: false
 
-install.packages(c("tidyverse","palmerpenguins","kableExtra","broom","DiagrammeR","ggdag","ggraph","tidygraph","ggthemes", "reticulate", "countdown"))
+install.packages(c("tidyverse","palmerpenguins","broom","DiagrammeR","ggdag","ggraph","tidygraph","ggthemes", "reticulate", "countdown"))
 
 library(tidyverse)
 library(palmerpenguins)
-library(kableExtra)# for elegamt tables
 library(broom)# use to fit regression
 library(DiagrammeR)
 library(ggdag)
@@ -790,16 +789,14 @@ data_types <- tribble(
   "Gentoo", 124, 46.0
 )
 
-data_types |> kbl() |> 
-    kable_styling(bootstrap_options = "striped", full_width = F)
+data_types
 ```
 
 ## Table's output from code {.scrollable}
 
 ```{r}
 #| tbl-cap: "Motor Trend Car Road Tests"
-mtcars |> kbl() |> 
-    kable_classic("hover", full_width = F, html_font = "Cambria")
+mtcars
 ```
 
 ## Model output tables
@@ -811,8 +808,7 @@ model <- lm(price ~ carat + cut + clarity, data = diamonds)
 
 tidy_model <- tidy(model)
 
-tidy_model |> kbl() |> 
-  kable_classic("hover", full_width = F, html_font = "Cambria")
+tidy_model
 
 ```
 
@@ -821,8 +817,7 @@ tidy_model |> kbl() |>
 ```{r}
 #| tbl-cap: "Gapminder Data Sample"
 gapminder_data <- read_csv("data/gapminder.csv")
-gapminder_data |> kbl() |> 
-  kable_classic(full_width = F, html_font = "Cambria")
+gapminder_data 
 ```
 
 
