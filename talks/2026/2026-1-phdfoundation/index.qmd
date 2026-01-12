@@ -1,0 +1,35 @@
+---
+title: "Making slides & delivery tips for scientific presentations"
+author: "Bahman Rostami-Tabar"
+date: "2026-01-12"
+image: "cover.jpg"
+venue: "Phd Foundations 2026"
+location: "Cardiff, UK"
+# Add these custom fields:
+slides-html: "[View](2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html){target=\"_blank\"}"
+slides-pdf: "[PDF](2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.pdf){target=\"_blank\"}"
+
+categories:
+  - PhD Foundations
+link-external-newwindow: true
+---
+
+
+
+## What these talk covers
+
+This talk covers practical principles for designing clear academic slides and delivering confident, professional presentations.
+
+## Further resources
+
+You can find more details here:
+
+Books:
+- [slide:ology](https://a.co/d/arZXMHE)
+- [Presentation Zen](https://amzn.eu/d/cuR345A)
+- [The Craft of Scientific Presentations](https://amzn.eu/d/gM7o49Y)
+
+Free photos:
+- [unsplash.com](https://unsplash.com/)
+- [pexels.com](https://www.pexels.com/)
+
