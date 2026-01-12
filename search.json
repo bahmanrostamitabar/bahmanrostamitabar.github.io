@@ -42,11 +42,158 @@
     "text": "I am a Professor of Analytics and Decision Sciences at Cardiff Business School, Cardiff University. I founded and direct the Data Lab for Social Good, and I lead the Uncertainty & the Future theme at DTII, where I work closely with academic, public, and industry partners on questions that matter for society.\nMy work sits at the intersection of data, uncertainty, and decision-making, with a focus on how advanced analytical methods can support better choices in complex and uncertain futures. Drawing on Data Science, AI, and Operations Research (OR), I develop and apply approaches that are both methodologically rigorous and demonstrably relevant to real-world decision contexts.\nSo far, my contributions to the field have been recognised with two medals from the OR Society: the Goodeve Medal in 2024, awarded for outstanding contributions to the philosophy, theory, and practice of OR, and the Lyn Thomas Impact Medal in 2025, recognising OR academic research that combines methodological innovation with clear, evidenced real-world impact."
   },
   {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "",
+    "text": "Agenda\n\nDesign philosophy for scientific slides\nVisual and typographic principles\nTechnical and practical safeguards\nDelivery skills\n\n\n\n bahmanrostamitabar  bahman-rostami-tabar 🌐 bahmanrostamitabar.github.io"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-design-philosophy",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-design-philosophy",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Design Philosophy",
+    "text": "The Design Philosophy\n\nSignal-to-Noise Ratio: Maximize insight, minimize clutter, get rid of what’s not essential.\nCognitive Load: The brain handles about six visual elements at once.\n\nAim for 3–6 visual elements per slide.\n\nThe Rule of Three: Organize your talk into three or four distinct “messages.” The audience will not remember more than this\nOne Idea Per Slide: Each slide must have a single, central objective."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#know-your-audience",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#know-your-audience",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Know Your Audience",
+    "text": "Know Your Audience\n\n\n\nThe Omniscience Trap: Do not assume the audience knows what you know. You have spent years on a specialty; they have not.\nTailor content to audience expertise and interests. You may need to make assumptions!"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visuals-over-text",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visuals-over-text",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Visuals Over Text",
+    "text": "Visuals Over Text\n\n\n\nHierarchy of Understanding: Figures are easier to understand than words; words are easier to understand than equations.\nGraphics: Never have a slide that is only text. Build slides around visualizations.\nShow, Don’t Just Tell: Use visuals and examples to illustrate points rather than just describing them"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#use-bullet-points-and-short-text",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#use-bullet-points-and-short-text",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Use bullet points and short text",
+    "text": "Use bullet points and short text\n\nBullet Points Only: Avoid full sentences and paragraphs\nSentence Headlines: Titles should state findings/message/conclusions.\nRedundancy is Good: Short text can reinforce spoken words.\nCitations: Place citations directly on relevant slides 1.\n\nFor more info: https://subjectguides.york.ac.uk/presentations/design"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#backgrounds-and-layout",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#backgrounds-and-layout",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Backgrounds and Layout",
+    "text": "Backgrounds and Layout\n\nGo Blank: Avoid templates and themes.\nBackground Color Choice: Prefer solid white, white-gray\nImage Backgrounds: Desaturate or darken/lighten to avoid distraction."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#typography-rules",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#typography-rules",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Typography Rules",
+    "text": "Typography Rules\n\nFont Family: Use sans-serif fonts (Arial, Helvetica, etc).\nFont Size: Default sizes are usually too small.\n\nTitles: 44 pt\n\nSubtitles: 36 pt\nBody Text: 32 pt\n\nCaptions/footnote: 18–24 pt\n\nEmphasis: Use bold, not italics, underlining, or ALL CAPS.\n\nYou can use color for emphasis, but limited numebrs.\n\nConsistency: Keep font roles and collors consistent across slides."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#font-color",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#font-color",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Font Color",
+    "text": "Font Color\n\nUse BlaCK or Dark Gray for text on light backgrounds.\nUse White or Light Gray for text on dark backgrounds.\nLimit Palette: Use 2–4 main colors.\nAccessibility: Use color-blind friendly palettes."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visualiziations",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visualiziations",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Visualiziations",
+    "text": "Visualiziations\n\n\n\nHigh Quality: Use sharp, high-resolution graphics.\nReadability: Ensure text in figures is legible, if you say sorry for it, it’s too small, then question why you included it."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#equations",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#equations",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Equations",
+    "text": "Equations\nSimplify Equations: Treat equations as visuals; define all symbols.\n\n\n\\[\n\\begin{aligned}\n\\min_{x \\in \\mathbb{R}^n}\\quad & f(x) = c^\\top x \\\\\n\\text{s.t.}\\quad & Ax \\le b \\\\\n& x \\ge 0\n\\end{aligned}\n\\]\n\n\n\\(x \\in \\mathbb{R}^n\\) is the decision vector, \\(n\\) is the number of variables.\n\\(f(x)\\) is the objective function value.\n\\(c \\in \\mathbb{R}^n\\) is the cost (or weight) vector.\n\\(c^\\top x\\) is the dot product.\n\\(A \\in \\mathbb{R}^{m\\times n}\\) is the constraint matrix, \\(m\\) is the number of constraints.\n\\(b \\in \\mathbb{R}^m\\) is the right-hand-side vector of constraint limits.\n\\(Ax \\le b\\) represents \\(m\\) linear inequalities.\n\\(x \\ge 0\\) is the nonnegativity constraint."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#motion-and-transitions",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#motion-and-transitions",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Motion and Transitions",
+    "text": "Motion and Transitions\n\nNo Animations: Avoid flying text and fancy transitions.\nBuild Method: Use multiple slides for progressive diagrams and to explain complex ideas."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#navigation-and-accessibility",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#navigation-and-accessibility",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Navigation and Accessibility",
+    "text": "Navigation and Accessibility\n\nSlide Numbers: Always include them.\nTable of Contents: Repeat with current section highlighted.\nExtra slides at the end for FAQs or detailed info."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#technical-formatting-safety",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#technical-formatting-safety",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Technical Formatting & Safety",
+    "text": "Technical Formatting & Safety\n\nPDF is King: Export final slides as PDF.\nBackup: Always have a backup on a USB drive.\nwebsite: if you use revealjs or similar, host a copy online as backup."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-vocal-verbal",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-vocal-verbal",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Vocal & Verbal",
+    "text": "The Vocal & Verbal\n\nDon’t Memorize Text. Memorize your outline as a tree of ideas and speak extemporaneously.\nEmbrace Silence. Avoid filler words such as um and er. A pause is better; it gives you time to think and the audience time to process.\nVolume and Tone. Speak loudly and firmly. Vary your rate and volume based on the complexity of the information.\nExplicit Language. Avoid vague pronouns like this or that. Say that figure or that equation to be precise."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#body-language",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#body-language",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Body Language",
+    "text": "Body Language\n\nFace the Audience. Do not turn your back to read the screen.\nEye Contact. Engage the audience by looking at different parts of the room.\nPointers. Prefer a solid stick. Laser pointers move too fast, and mouse pointers are hard to follow and can cause motion sickness.\nNerves. Stage fright is normal. It shows you care. Channel that energy into your voice and gestures."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-qa-and-mishaps",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-qa-and-mishaps",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Q&A and Mishaps",
+    "text": "The Q&A and Mishaps\n\nHonesty is Key. If you do not know the answer, say so. If you simplified something, admit it.\nNo Apologies. Do not apologize for your English, your nerves, or technical issues. never start with an apology.\nHandling Interruptions. If a question requires a long detour, suggest postponing it until the end."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-golden-rules",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-golden-rules",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Golden Rules",
+    "text": "The Golden Rules\n\nNever Go Over Time. If time runs out, stop and summarize immediately.\nPractice. Practice reveals missing vocabulary and smooths transitions. Minimum 10 timed rehearsals.\nIterate. Rehearse with peers to discover unclear points and weak parts of the story."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#you-made-it",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#you-made-it",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "You made it! 🎉",
+    "text": "You made it! 🎉"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#references",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#references",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "References",
+    "text": "References\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#details",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#details",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Details",
+    "text": "Details\n\nSome content adapted from:\n\n“The Craft of Scientific Presentations” by Michael Alley\n\n“Presentation Zen” by Garr Reynolds\n\n“Slide:ology” by Nancy Duarte\n\n“Resonate” by Nancy Duarte"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#acknowledgments",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#acknowledgments",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\n\nThanks to colleagues and mentors who provided feedback on presentation skills and design principles over the years.\nImage credits to respective photographers and sources for visual materials used in this presentation."
+  },
+  {
     "objectID": "talks/index.html",
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nTest\n\n\nOct 16, 2025\n\n\nOR 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nMaking slides & delivery tips for scientific presentations\n\n\nJan 12, 2026\n\n\nPhd Foundations 2026\n\n\nCardiff, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nTest\n\n\nOct 16, 2025\n\n\nOR 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks/2025/2025-1-refrence/index.html",
@@ -1216,6 +1363,27 @@
     "title": "Making Slides with Quarto",
     "section": "Details",
     "text": "Details"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/index.html",
+    "href": "talks/2026/2026-1-phdfoundation/index.html",
+    "title": "Making slides & delivery tips for scientific presentations",
+    "section": "",
+    "text": "This talk covers practical principles for designing clear academic slides and delivering confident, professional presentations."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/index.html#what-these-talk-covers",
+    "href": "talks/2026/2026-1-phdfoundation/index.html#what-these-talk-covers",
+    "title": "Making slides & delivery tips for scientific presentations",
+    "section": "",
+    "text": "This talk covers practical principles for designing clear academic slides and delivering confident, professional presentations."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/index.html#further-resources",
+    "href": "talks/2026/2026-1-phdfoundation/index.html#further-resources",
+    "title": "Making slides & delivery tips for scientific presentations",
+    "section": "Further resources",
+    "text": "Further resources\nYou can find more details here:\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
   },
   {
     "objectID": "about/index.html",
