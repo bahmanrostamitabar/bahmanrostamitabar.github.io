@@ -42,11 +42,158 @@
     "text": "I am a Professor of Analytics and Decision Sciences at Cardiff Business School, Cardiff University. I founded and direct the Data Lab for Social Good, and I lead the Uncertainty & the Future theme at DTII, where I work closely with academic, public, and industry partners on questions that matter for society.\nMy work sits at the intersection of data, uncertainty, and decision-making, with a focus on how advanced analytical methods can support better choices in complex and uncertain futures. Drawing on Data Science, AI, and Operations Research (OR), I develop and apply approaches that are both methodologically rigorous and demonstrably relevant to real-world decision contexts.\nSo far, my contributions to the field have been recognised with two medals from the OR Society: the Goodeve Medal in 2024, awarded for outstanding contributions to the philosophy, theory, and practice of OR, and the Lyn Thomas Impact Medal in 2025, recognising OR academic research that combines methodological innovation with clear, evidenced real-world impact."
   },
   {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "",
+    "text": "Agenda\n\nDesign philosophy for scientific slides\nVisual and typographic principles\nTechnical and practical safeguards\nDelivery skills\n\n\n\n bahmanrostamitabar  bahman-rostami-tabar 🌐 bahmanrostamitabar.github.io"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-design-philosophy",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-design-philosophy",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Design Philosophy",
+    "text": "The Design Philosophy\n\nSignal-to-Noise Ratio: Maximize insight, minimize clutter, get rid of what’s not essential.\nCognitive Load: The brain handles about six visual elements at once.\n\nAim for 3–6 visual elements per slide.\n\nThe Rule of Three: Organize your talk into three or four distinct “messages.” The audience will not remember more than this\nOne Idea Per Slide: Each slide must have a single, central objective."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#know-your-audience",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#know-your-audience",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Know Your Audience",
+    "text": "Know Your Audience\n\n\n\nThe Omniscience Trap: Do not assume the audience knows what you know. You have spent years on a specialty; they have not.\nTailor content to audience expertise and interests. You may need to make assumptions!"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visuals-over-text",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visuals-over-text",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Visuals Over Text",
+    "text": "Visuals Over Text\n\n\n\nHierarchy of Understanding: Figures are easier to understand than words; words are easier to understand than equations.\nGraphics: Never have a slide that is only text. Build slides around visualizations.\nShow, Don’t Just Tell: Use visuals and examples to illustrate points rather than just describing them"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#use-bullet-points-and-short-text",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#use-bullet-points-and-short-text",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Use bullet points and short text",
+    "text": "Use bullet points and short text\n\nBullet Points Only: Avoid full sentences and paragraphs\nSentence Headlines: Titles should state findings/message/conclusions.\nRedundancy is Good: Short text can reinforce spoken words.\nCitations: Place citations directly on relevant slides 1.\n\nFor more info: https://subjectguides.york.ac.uk/presentations/design"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#backgrounds-and-layout",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#backgrounds-and-layout",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Backgrounds and Layout",
+    "text": "Backgrounds and Layout\n\nGo Blank: Avoid templates and themes.\nBackground Color Choice: Prefer solid white, white-gray\nImage Backgrounds: Desaturate or darken/lighten to avoid distraction."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#typography-rules",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#typography-rules",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Typography Rules",
+    "text": "Typography Rules\n\nFont Family: Use sans-serif fonts (Arial, Helvetica, etc).\nFont Size: Default sizes are usually too small.\n\nTitles: 44 pt\n\nSubtitles: 36 pt\nBody Text: 32 pt\n\nCaptions/footnote: 18–24 pt\n\nEmphasis: Use bold, not italics, underlining, or ALL CAPS.\n\nYou can use color for emphasis, but limited numebrs.\n\nConsistency: Keep font roles and collors consistent across slides."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#font-color",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#font-color",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Font Color",
+    "text": "Font Color\n\nUse BlaCK or Dark Gray for text on light backgrounds.\nUse White or Light Gray for text on dark backgrounds.\nLimit Palette: Use 2–4 main colors.\nAccessibility: Use color-blind friendly palettes."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visualiziations",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visualiziations",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Visualiziations",
+    "text": "Visualiziations\n\n\n\nHigh Quality: Use sharp, high-resolution graphics.\nReadability: Ensure text in figures is legible, if you say sorry for it, it’s too small, then question why you included it."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#equations",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#equations",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Equations",
+    "text": "Equations\nSimplify Equations: Treat equations as visuals; define all symbols.\n\n\n\\[\n\\begin{aligned}\n\\min_{x \\in \\mathbb{R}^n}\\quad & f(x) = c^\\top x \\\\\n\\text{s.t.}\\quad & Ax \\le b \\\\\n& x \\ge 0\n\\end{aligned}\n\\]\n\n\n\\(x \\in \\mathbb{R}^n\\) is the decision vector, \\(n\\) is the number of variables.\n\\(f(x)\\) is the objective function value.\n\\(c \\in \\mathbb{R}^n\\) is the cost (or weight) vector.\n\\(c^\\top x\\) is the dot product.\n\\(A \\in \\mathbb{R}^{m\\times n}\\) is the constraint matrix, \\(m\\) is the number of constraints.\n\\(b \\in \\mathbb{R}^m\\) is the right-hand-side vector of constraint limits.\n\\(Ax \\le b\\) represents \\(m\\) linear inequalities.\n\\(x \\ge 0\\) is the nonnegativity constraint."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#motion-and-transitions",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#motion-and-transitions",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Motion and Transitions",
+    "text": "Motion and Transitions\n\nNo Animations: Avoid flying text and fancy transitions.\nBuild Method: Use multiple slides for progressive diagrams and to explain complex ideas."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#navigation-and-accessibility",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#navigation-and-accessibility",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Navigation and Accessibility",
+    "text": "Navigation and Accessibility\n\nSlide Numbers: Always include them.\nTable of Contents: Repeat with current section highlighted.\nExtra slides at the end for FAQs or detailed info."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#technical-formatting-safety",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#technical-formatting-safety",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Technical Formatting & Safety",
+    "text": "Technical Formatting & Safety\n\nPDF is King: Export final slides as PDF.\nBackup: Always have a backup on a USB drive.\nwebsite: if you use revealjs or similar, host a copy online as backup."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-vocal-verbal",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-vocal-verbal",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Vocal & Verbal",
+    "text": "The Vocal & Verbal\n\nDon’t Memorize Text. Memorize your outline as a tree of ideas and speak extemporaneously.\nEmbrace Silence. Avoid filler words such as um and er. A pause is better; it gives you time to think and the audience time to process.\nVolume and Tone. Speak loudly and firmly. Vary your rate and volume based on the complexity of the information.\nExplicit Language. Avoid vague pronouns like this or that. Say that figure or that equation to be precise."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#body-language",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#body-language",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Body Language",
+    "text": "Body Language\n\nFace the Audience. Do not turn your back to read the screen.\nEye Contact. Engage the audience by looking at different parts of the room.\nPointers. Prefer a solid stick. Laser pointers move too fast, and mouse pointers are hard to follow and can cause motion sickness.\nNerves. Stage fright is normal. It shows you care. Channel that energy into your voice and gestures."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-qa-and-mishaps",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-qa-and-mishaps",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Q&A and Mishaps",
+    "text": "The Q&A and Mishaps\n\nHonesty is Key. If you do not know the answer, say so. If you simplified something, admit it.\nNo Apologies. Do not apologize for your English, your nerves, or technical issues. never start with an apology.\nHandling Interruptions. If a question requires a long detour, suggest postponing it until the end."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-golden-rules",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-golden-rules",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Golden Rules",
+    "text": "The Golden Rules\n\nNever Go Over Time. If time runs out, stop and summarize immediately.\nPractice. Practice reveals missing vocabulary and smooths transitions. Minimum 10 timed rehearsals.\nIterate. Rehearse with peers to discover unclear points and weak parts of the story."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#you-made-it",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#you-made-it",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "You made it! 🎉",
+    "text": "You made it! 🎉"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#references",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#references",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "References",
+    "text": "References\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#details",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#details",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Details",
+    "text": "Details\n\nSome content adapted from:\n\n“The Craft of Scientific Presentations” by Michael Alley\n\n“Presentation Zen” by Garr Reynolds\n\n“Slide:ology” by Nancy Duarte\n\n“Resonate” by Nancy Duarte"
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#acknowledgments",
+    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#acknowledgments",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\n\nThanks to colleagues and mentors who provided feedback on presentation skills and design principles over the years.\nImage credits to respective photographers and sources for visual materials used in this presentation."
+  },
+  {
     "objectID": "talks/index.html",
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nTest\n\n\nOct 16, 2025\n\n\nOR 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nMaking slides & delivery tips for scientific presentations\n\n\nJan 12, 2026\n\n\nPhd Foundations 2026\n\n\nCardiff, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nTest\n\n\nOct 16, 2025\n\n\nOR 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks/2025/2025-1-refrence/index.html",
@@ -1218,6 +1365,27 @@
     "text": "Details"
   },
   {
+    "objectID": "talks/2026/2026-1-phdfoundation/index.html",
+    "href": "talks/2026/2026-1-phdfoundation/index.html",
+    "title": "Making slides & delivery tips for scientific presentations",
+    "section": "",
+    "text": "This talk covers practical principles for designing clear academic slides and delivering confident, professional presentations."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/index.html#what-these-talk-covers",
+    "href": "talks/2026/2026-1-phdfoundation/index.html#what-these-talk-covers",
+    "title": "Making slides & delivery tips for scientific presentations",
+    "section": "",
+    "text": "This talk covers practical principles for designing clear academic slides and delivering confident, professional presentations."
+  },
+  {
+    "objectID": "talks/2026/2026-1-phdfoundation/index.html#further-resources",
+    "href": "talks/2026/2026-1-phdfoundation/index.html#further-resources",
+    "title": "Making slides & delivery tips for scientific presentations",
+    "section": "Further resources",
+    "text": "Further resources\nYou can find more details here:\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
+  },
+  {
     "objectID": "about/index.html",
     "href": "about/index.html",
     "title": "About Me",
@@ -1309,150 +1477,283 @@
     "text": "Last week I attended the 42nd International Symposium of Forecasting at the University of Oxford. This was my first in-person conference since the beginning of the Covid-19 pandemic. I met many colleagues and friends and listened to many inspiring talks.\nI presented two papers myself and co-authored four others presented by my colleagues and Ph.D. students.\nBelow you can access these presentations:\nProbabilistic Forecasting of hourly Emergency Departement arrivals, in collaboration with Jethro Browell & Ivan Svetunkov\nHierarchical forecasting of vaccine supply chain, in collaboration with John Snow, Inc\nForecasting for unplanned care: a literature review, in collaboration with Mingzhe Shi and Daniel Gartner\nRevisiting forecasting for Emergency Department staffing, in collaboration with Shixuan Wang and Stephen Disney\nForecasting length of stay in trauma network, in collaboration with Zihao Wang, Jane Haider and Mohamed Naim\nForecasting for lead-time period by temporal aggregation: Whether to combine and how, in collaboration with Thanos Goltsos and Shixuan Wang"
   },
   {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
-    "title": " Making slides & delivery tips for scientific presentations",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "",
-    "text": "Agenda\n\nDesign philosophy for scientific slides\nVisual and typographic principles\nTechnical and practical safeguards\nDelivery skills\n\n\n\n bahmanrostamitabar  bahman-rostami-tabar 🌐 bahmanrostamitabar.github.io"
+    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM\n\n\n\n bahmanrostamitabar  bahman-rostami-tabar 🌐 bahmanrostamitabar.github.io"
   },
   {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-design-philosophy",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-design-philosophy",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Design Philosophy",
-    "text": "The Design Philosophy\n\nSignal-to-Noise Ratio: Maximize insight, minimize clutter, get rid of what’s not essential.\nCognitive Load: The brain handles about six visual elements at once.\n\nAim for 3–6 visual elements per slide.\n\nThe Rule of Three: Organize your talk into three or four distinct “messages.” The audience will not remember more than this\nOne Idea Per Slide: Each slide must have a single, central objective."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#know-your-audience",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#know-your-audience",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Know Your Audience",
-    "text": "Know Your Audience\n\n\n\nThe Omniscience Trap: Do not assume the audience knows what you know. You have spent years on a specialty; they have not.\nTailor content to audience expertise and interests. You may need to make assumptions!"
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visuals-over-text",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visuals-over-text",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Visuals Over Text",
-    "text": "Visuals Over Text\n\n\n\nHierarchy of Understanding: Figures are easier to understand than words; words are easier to understand than equations.\nGraphics: Never have a slide that is only text. Build slides around visualizations.\nShow, Don’t Just Tell: Use visuals and examples to illustrate points rather than just describing them"
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#use-bullet-points-and-short-text",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#use-bullet-points-and-short-text",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Use bullet points and short text",
-    "text": "Use bullet points and short text\n\nBullet Points Only: Avoid full sentences and paragraphs\nSentence Headlines: Titles should state findings/message/conclusions.\nRedundancy is Good: Short text can reinforce spoken words.\nCitations: Place citations directly on relevant slides 1.\n\nFor more info: https://subjectguides.york.ac.uk/presentations/design"
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#backgrounds-and-layout",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#backgrounds-and-layout",
-    "title": " Making slides & delivery tips for scientific presentations",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#backgrounds-and-layout",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#backgrounds-and-layout",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "Backgrounds and Layout",
-    "text": "Backgrounds and Layout\n\nGo Blank: Avoid templates and themes.\nBackground Color Choice: Prefer solid white, white-gray\nImage Backgrounds: Desaturate or darken/lighten to avoid distraction."
+    "text": "Backgrounds and Layout\nVaccines save millions of lives each year by protecting children against serious and preventable disease."
   },
   {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#typography-rules",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#typography-rules",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Typography Rules",
-    "text": "Typography Rules\n\nFont Family: Use sans-serif fonts (Arial, Helvetica, etc).\nFont Size: Default sizes are usually too small.\n\nTitles: 44 pt\n\nSubtitles: 36 pt\nBody Text: 32 pt\n\nCaptions/footnote: 18–24 pt\n\nEmphasis: Use bold, not italics, underlining, or ALL CAPS.\n\nYou can use color for emphasis, but limited numebrs.\n\nConsistency: Keep font roles and collors consistent across slides."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#font-color",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#font-color",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Font Color",
-    "text": "Font Color\n\nUse BlaCK or Dark Gray for text on light backgrounds.\nUse White or Light Gray for text on dark backgrounds.\nLimit Palette: Use 2–4 main colors.\nAccessibility: Use color-blind friendly palettes."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visualiziations",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#visualiziations",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Visualiziations",
-    "text": "Visualiziations\n\n\n\nHigh Quality: Use sharp, high-resolution graphics.\nReadability: Ensure text in figures is legible, if you say sorry for it, it’s too small, then question why you included it."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#equations",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#equations",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Equations",
-    "text": "Equations\nSimplify Equations: Treat equations as visuals; define all symbols.\n\n\n\\[\n\\begin{aligned}\n\\min_{x \\in \\mathbb{R}^n}\\quad & f(x) = c^\\top x \\\\\n\\text{s.t.}\\quad & Ax \\le b \\\\\n& x \\ge 0\n\\end{aligned}\n\\]\n\n\n\\(x \\in \\mathbb{R}^n\\) is the decision vector, \\(n\\) is the number of variables.\n\\(f(x)\\) is the objective function value.\n\\(c \\in \\mathbb{R}^n\\) is the cost (or weight) vector.\n\\(c^\\top x\\) is the dot product.\n\\(A \\in \\mathbb{R}^{m\\times n}\\) is the constraint matrix, \\(m\\) is the number of constraints.\n\\(b \\in \\mathbb{R}^m\\) is the right-hand-side vector of constraint limits.\n\\(Ax \\le b\\) represents \\(m\\) linear inequalities.\n\\(x \\ge 0\\) is the nonnegativity constraint."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#motion-and-transitions",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#motion-and-transitions",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Motion and Transitions",
-    "text": "Motion and Transitions\n\nNo Animations: Avoid flying text and fancy transitions.\nBuild Method: Use multiple slides for progressive diagrams and to explain complex ideas."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#navigation-and-accessibility",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#navigation-and-accessibility",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Navigation and Accessibility",
-    "text": "Navigation and Accessibility\n\nSlide Numbers: Always include them.\nTable of Contents: Repeat with current section highlighted.\nExtra slides at the end for FAQs or detailed info."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#technical-formatting-safety",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#technical-formatting-safety",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Technical Formatting & Safety",
-    "text": "Technical Formatting & Safety\n\nPDF is King: Export final slides as PDF.\nBackup: Always have a backup on a USB drive.\nwebsite: if you use revealjs or similar, host a copy online as backup."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-vocal-verbal",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-vocal-verbal",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Vocal & Verbal",
-    "text": "The Vocal & Verbal\n\nDon’t Memorize Text. Memorize your outline as a tree of ideas and speak extemporaneously.\nEmbrace Silence. Avoid filler words such as um and er. A pause is better; it gives you time to think and the audience time to process.\nVolume and Tone. Speak loudly and firmly. Vary your rate and volume based on the complexity of the information.\nExplicit Language. Avoid vague pronouns like this or that. Say that figure or that equation to be precise."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#body-language",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#body-language",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Body Language",
-    "text": "Body Language\n\nFace the Audience. Do not turn your back to read the screen.\nEye Contact. Engage the audience by looking at different parts of the room.\nPointers. Prefer a solid stick. Laser pointers move too fast, and mouse pointers are hard to follow and can cause motion sickness.\nNerves. Stage fright is normal. It shows you care. Channel that energy into your voice and gestures."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-qa-and-mishaps",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-qa-and-mishaps",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Q&A and Mishaps",
-    "text": "The Q&A and Mishaps\n\nHonesty is Key. If you do not know the answer, say so. If you simplified something, admit it.\nNo Apologies. Do not apologize for your English, your nerves, or technical issues. never start with an apology.\nHandling Interruptions. If a question requires a long detour, suggest postponing it until the end."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-golden-rules",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#the-golden-rules",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Golden Rules",
-    "text": "The Golden Rules\n\nNever Go Over Time. If time runs out, stop and summarize immediately.\nPractice. Practice reveals missing vocabulary and smooths transitions. Minimum 10 timed rehearsals.\nIterate. Rehearse with peers to discover unclear points and weak parts of the story."
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#you-made-it",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#you-made-it",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "You made it! 🎉",
-    "text": "You made it! 🎉"
-  },
-  {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#references",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#references",
-    "title": " Making slides & delivery tips for scientific presentations",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "References",
-    "text": "References\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
+    "text": "References\n\nEffective Vaccine Management (EVM) Initiative\nUNICEF Immunization Data\n\n\n\n\n\nImage credit: Unsplash"
   },
   {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#details",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#details",
-    "title": " Making slides & delivery tips for scientific presentations",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#details",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#details",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "Details",
     "text": "Details\n\nSome content adapted from:\n\n“The Craft of Scientific Presentations” by Michael Alley\n\n“Presentation Zen” by Garr Reynolds\n\n“Slide:ology” by Nancy Duarte\n\n“Resonate” by Nancy Duarte"
   },
   {
-    "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#acknowledgments",
-    "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#acknowledgments",
-    "title": " Making slides & delivery tips for scientific presentations",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#acknowledgments",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#acknowledgments",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "Acknowledgments",
     "text": "Acknowledgments\n\nThanks to colleagues and mentors who provided feedback on presentation skills and design principles over the years.\nImage credits to respective photographers and sources for visual materials used in this presentation."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-1",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-1",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Vaccines save millions of lives each year by protecting children against serious and preventable disease."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#immunization-coverage",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#immunization-coverage",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Immunization coverage",
+    "text": "Immunization coverage\n\nGlobally in 2024, there were 14.3 million children missing out on any vaccination.\nAn additional 5.6 million are partially vaccinated"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#global-support-for-increasing-immunization",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#global-support-for-increasing-immunization",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Global support for increasing immunization",
+    "text": "Global support for increasing immunization\n\n\n14 of the 17 United Nations\nSustainable Development Goals\ndemonstrate the social and\neconomic value of increasing\nimmunization coverage."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Under-5 deaths worldwide\n\n\n12.8 million in 1990\n\n\n\n4.6 million in 2024"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-importance-of-the-supply-chain",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-importance-of-the-supply-chain",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "The importance of the supply chain",
+    "text": "The importance of the supply chain\nEach successful vaccination depends on a complex immunization supply chain (iSC) to ensure that the correct vaccine is administered at the right cost, time and place."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Global support for increasing immunization\n14 of the 17 United Nations Sustainable Development Goals demonstrate the social and economic value of increasing immunization coverage."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-4",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-4",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-enables-countries-to-strengthen-the-isc",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-enables-countries-to-strengthen-the-isc",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "EVM enables countries to strengthen the iSC",
+    "text": "EVM enables countries to strengthen the iSC\nWhen all links in the supply chain are effectively monitored, assessed and continually improved, the health and wellbeing of people improves."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-5",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-5",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "The Gavi Alliance iSC Strategy\nThe performance of the immunization supply chain is defined by:\n\nthe availability of vaccines\nthe quality of those vaccines\nthe efficiency of the system\n\n\n\n\n\n\n\n\n\n\nSource of image: WHO EVM Document"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#immunization-coverage---key-challenges",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#immunization-coverage---key-challenges",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Immunization coverage - Key challenges",
+    "text": "Immunization coverage - Key challenges\n\nGlobally in 2024, there were 14.3 million children missing out on any vaccination.\nAn additional 5.6 million are partially vaccinated."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-6",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-6",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#in-2024-14.3-million-children-missing-out-on-any-vaccination",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#in-2024-14.3-million-children-missing-out-on-any-vaccination",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "In 2024, 14.3 million children missing out on any vaccination",
+    "text": "In 2024, 14.3 million children missing out on any vaccination\nAn additional 5.6 million are partially vaccinated"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#million-children-missed-vaccines",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#million-children-missed-vaccines",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "19.9 Million Children Missed Vaccines",
+    "text": "19.9 Million Children Missed Vaccines\n4.6 million children died before their 5th birthday"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#million-children-missed-vaccines-1",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#million-children-missed-vaccines-1",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "19.9 Million Children Missed Vaccines",
+    "text": "19.9 Million Children Missed Vaccines"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Coverage disparities exist within and between regions",
+    "text": "Coverage disparities exist within and between regions"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-7",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-7",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "A global initiative to improve immunization supply chain.\nA national planning process endorsed and supported by WHO and UNICEF\nEVM provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-8",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-8",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "EVM enables countries to strengthen the iSC\nWhen all links in the supply chain are effectively monitored, assessed and continually improved, the health and wellbeing of people improves."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "EVM Dataset Overview\n\nAssessments from 82 countries between 2019 and 2024.\n\n4287 health facilities (rows).\n1108 variables (columns).\n\n1286 potential questions.\n\n871 requirements, 19 criteria and 8 categories.\nScores range from 0 to 5.\n\n\n\n\nExamples\nR0001: The facility has a functional landline telephone.\nE2: Temperature management\nM1: Annual needs forecasting\nST: Strategic planning\nC1: Infrastructure\nC3: Information technology"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-10",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-10",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#project-objectives",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#project-objectives",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Project objectives",
+    "text": "Project objectives\n\nExploratory analysis to diagnose system fragility and performance drivers.\nExplain performance and coverage using causal machine learning.\nDevelop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders.\n\n\nExpected Impact\nThe output of this project will support policymakers in allocating resources more effectively, selecting high-impact interventions, and improving the efficiency, resilience, and equity of vaccine delivery systems."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#project-objectives-1",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#project-objectives-1",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Project objectives",
+    "text": "Project objectives\n\nExploratory analysis to diagnose system fragility and performance drivers.\nExplain performance and coverage using causal machine learning.\nDevelop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#dimension-reduction",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#dimension-reduction",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Dimension Reduction",
+    "text": "Dimension Reduction"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#empirical-cumulative-distribution-function-ecdf",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#empirical-cumulative-distribution-function-ecdf",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Empirical Cumulative Distribution Function (ECDF)",
+    "text": "Empirical Cumulative Distribution Function (ECDF)"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-12",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-12",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Agenda\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM\nOngoing and Future Work"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-framework",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-framework",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "The Framework",
+    "text": "The Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nQuestions: are asked to assess whether a requirement has been met.\n\n\n\nScoring in EVM is determined by this assessment framework."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#data",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#data",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Data",
+    "text": "Data\n\n\n\nAssessments from 82 countries between 2019 and 2024.\n\n4287 health facilities (rows).\n1108 variables (columns).\n\n1286 potential questions.\n\n871 requirements, 19 criteria and 8 categories.\nScores range from 0 to 5.\n\n\n\n\nExamples\nR0001: The facility has a functional landline telephone.\nE2: Temperature management\nM1: Annual needs forecasting\nST: Strategic planning\nC1: Infrastructure\nC3: Information technology"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-13",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-13",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "",
+    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM\nOngoing and Future Work"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#for-this-talk",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#for-this-talk",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "For this talk",
+    "text": "For this talk\n\nExploratory analysis to diagnose system fragility and performance drivers.\nExplain performance and coverage using causal machine learning.\nDevelop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#service-points-showing-lowest-performance",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#service-points-showing-lowest-performance",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Service Points Showing Lowest Performance",
+    "text": "Service Points Showing Lowest Performance"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#service-points-showing-lowest-availability",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#service-points-showing-lowest-availability",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Service Points Showing Lowest Availability",
+    "text": "Service Points Showing Lowest Availability"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#last-mile-fragility-in-isc",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#last-mile-fragility-in-isc",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Last-Mile Fragility in iSC",
+    "text": "Last-Mile Fragility in iSC\n\n\nPersistent Underperformance and High Variability at Service Points"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Any questions or comments? 💬",
+    "text": "Any questions or comments? 💬"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-guide",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-guide",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "EVM Guide",
+    "text": "EVM Guide\nEVM Framework Guide"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-guide-1",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-guide-1",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "EVM Guide",
+    "text": "EVM Guide\npreview"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#data---scores",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#data---scores",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "Data - Scores",
+    "text": "Data - Scores"
   }
 ]

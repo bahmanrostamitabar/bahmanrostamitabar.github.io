@@ -127,7 +127,7 @@ $backgroundColor: #fcfbf9;
 
 // Primary/body text
 $mainFont: 'Jost', sans-serif;
-$mainFontSize: 30px;
+$mainFontSize: 28px;
 $mainColor: #333;
 
 // Vertical spacing between blocks of text
@@ -144,7 +144,7 @@ $headingTextShadow: none;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 2.6em;
+$heading1Size: 2.4em;
 $heading2Size: 2.11em;
 $heading3Size: 1.55em;
 $heading4Size: 1.00em;
@@ -187,7 +187,7 @@ $selectionColor: #fff;
 
 #title-slide .quarto-title-affiliation,
 #title-slide .institute {
-  font-size: 0.65em !important;
+  font-size: .85em !important;
   opacity: 0.85;  // optional, visually de-emphasizes it
 }
 
@@ -270,7 +270,7 @@ $selectionColor: #fff;
 .yellow { color: #E69F00; }
 .brown {color: #a84d18; }
 .gray {color: #525252; }
-
+.white {color: #ffffff}
 
 /* Font colors */
 
@@ -2932,6 +2932,12 @@ $presentation-author-block-padding-right: if(
 
 .reveal .bigger {
   font-size: 5em;      /* makes it 3× the base size */
+  font-weight: 200;   /* optional: make it stand out */
+  line-height: .9;    /* adjust spacing */
+}
+
+.reveal .small {
+  font-size: 2em;      /* makes it 3× the base size */
   font-weight: 200;   /* optional: make it stand out */
   line-height: .9;    /* adjust spacing */
 }
