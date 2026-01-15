@@ -211,33 +211,36 @@ chains and help countries improve their supply chain performance.
 :::
 ::::
 
-##
-
-:::: {.columns}
-::: {.column width="50%"}
-### EVM enables countries to strengthen the iSC
-
-When all links in the supply chain are effectively monitored, assessed and continually
-improved, the health and wellbeing of people improves.
-:::
-
-::: {.column width="50%"}
-![](img_who/isc.jpg){width="100%" fig-align="center"}
-:::
-::::
-
-## The Framework
+## EVM Framework 
 
 The EVM assessment framework defines the way in which vaccine supply chain systems are assessed. 
 
 It is organised by:
 
 ::: incremental
-- **Criteria:** the operational or management functions that health facilities must perform.
-- **Categories:** the necessary inputs, outputs and performance of health facilities.
-- **Requirements:** the attributes that a well-functioning immunisation supply chain must have.
-- **Questions:** are asked to assess whether a requirement has been met.
+- **Criteria:** the operational or management functions that health facilities must perform; define what area of the supply chain is being assessed: Vaccine arrivals (E1), temperature management (E2), and waste management (E9).
+
+- **Categories:** determine the necessary inputs, outputs, and performance required to execute the functions defined by the Criteria.
+  -  **Inputs (C1–C6):** What is required to perform the function, such as Infrastructure (C1), Equipment (C2), and Financial Resources (C6).
+  - **Outputs (O):** The deliverables produced by staff, such as records, charts, or reports.
+  - **Performance (P):** The outcomes of proper implementation, such as vaccine availability and the absence of heat-damaged vaccines.
+
 :::
+
+
+## EVM Framework
+
+The EVM assessment framework defines the way in which vaccine supply chain systems are assessed. 
+
+It is organised by:
+
+- [**Criteria:** Define what area of the supply chain is being assessed]{.graylight}
+- [**Categories:** determine the necessary inputs, outputs, and performance required to execute the functions defined by the Criteria.]{.graylight}
+  
+- **Requirements:** specific minimum standards, or attributes that a well-functioning immunisation supply chain must have; Human Resources (R0136): "iSC [immunization Supply Chain] staff have work mobile phones"
+
+- **Questions:** Provide the data to score Requirements: Interviewing, Verifying, Observing, Calculating.
+
 
 :::aside
 Scoring in EVM is determined by this assessment framework.
@@ -261,7 +264,7 @@ Scoring in EVM is determined by this assessment framework.
 ::: {.column width="40%"}
 ::: fragment
 
-### Examples
+### [EVM Framework Guide](https://storage.googleapis.com/technet-media/media/com_khub/uploaded/1936%2FEVMAssessorGuidev1.01EN.pdf?g=1706741641240538&alt=media){preview-link="true"}
 
 **R0001:** The facility has a functional landline telephone.
 
@@ -280,9 +283,6 @@ Scoring in EVM is determined by this assessment framework.
 
 ::::
 
-## EVM Guide
-
-[EVM Framework Guide](https://storage.googleapis.com/technet-media/media/com_khub/uploaded/1936%2FEVMAssessorGuidev1.01EN.pdf?g=1706741641240538&alt=media){preview-link="true"}
 
 ## Data - Scores {.scrollable}
 
@@ -333,13 +333,13 @@ DT::datatable(
 
 - Exploratory analysis to diagnose system fragility and performance drivers.
 
-- Explain performance and coverage using causal machine learning.
+- Explain performance and coverage using causal machine learning models.
 
 - Develop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders.
 
 ::: fragment
 ### Expected Impact
-The output of this project will support policymakers in allocating resources more effectively, selecting high-impact interventions, and improving the efficiency, resilience, and equity of vaccine delivery systems.
+The output of this project will support policymakers in [allocating resources more effectively]{.remember}, and [selecting high-impact interventions]{.remember}.
 :::
 
 ## For this talk {.center}
