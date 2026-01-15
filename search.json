@@ -119,22 +119,15 @@
     "text": "A global initiative to improve immunization supply chain.\nA national planning process endorsed and supported by WHO and UNICEF\nEVM provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance."
   },
   {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
+    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
+    "section": "EVM Framework",
+    "text": "EVM Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nQuestions: are asked to assess whether a requirement has been met.\n\n\n\nScoring in EVM is determined by this assessment framework."
+  },
+  {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-8",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-8",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "EVM enables countries to strengthen the iSC\nWhen all links in the supply chain are effectively monitored, assessed and continually improved, the health and wellbeing of people improves."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-framework",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-framework",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "The Framework",
-    "text": "The Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nQuestions: are asked to assess whether a requirement has been met.\n\n\n\nScoring in EVM is determined by this assessment framework."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
     "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "",
     "text": "EVM Dataset Overview\n\nAssessments from 82 countries between 2019 and 2024.\n\n4287 health facilities (rows).\n1108 variables (columns).\n\n1286 potential questions.\n\n871 requirements, 19 criteria and 8 categories.\nScores range from 0 to 5.\n\n\n\n\nExamples\nR0001: The facility has a functional landline telephone.\nE2: Temperature management\nM1: Annual needs forecasting\nST: Strategic planning\nC1: Infrastructure\nC3: Information technology"
@@ -154,8 +147,8 @@
     "text": "Data - Scores"
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-10",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-10",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
     "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "",
     "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM"
@@ -165,7 +158,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#project-objectives",
     "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
     "section": "Project objectives",
-    "text": "Project objectives\n\nExploratory analysis to diagnose system fragility and performance drivers.\nExplain performance and coverage using causal machine learning.\nDevelop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders.\n\n\nExpected Impact\nThe output of this project will support policymakers in allocating resources more effectively, selecting high-impact interventions, and improving the efficiency, resilience, and equity of vaccine delivery systems."
+    "text": "Project objectives\n\nExploratory analysis to diagnose system fragility and performance drivers.\nExplain performance and coverage using causal machine learning models.\nDevelop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders.\n\n\nExpected Impact\nThe output of this project will support policymakers in allocating resources more effectively, selecting high-impact interventions, and improving the efficiency, resilience, and equity of vaccine delivery systems."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#for-this-talk",
