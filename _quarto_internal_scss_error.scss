@@ -127,7 +127,7 @@ $backgroundColor: #fcfbf9;
 
 // Primary/body text
 $mainFont: 'Jost', sans-serif;
-$mainFontSize: 28px;
+$mainFontSize: 32px;
 $mainColor: #333;
 
 // Vertical spacing between blocks of text
@@ -144,7 +144,7 @@ $headingTextShadow: none;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 2.4em;
+$heading1Size: 2.6em;
 $heading2Size: 2.11em;
 $heading3Size: 1.55em;
 $heading4Size: 1.00em;
@@ -2932,12 +2932,6 @@ $presentation-author-block-padding-right: if(
 
 .reveal .bigger {
   font-size: 5em;      /* makes it 3× the base size */
-  font-weight: 200;   /* optional: make it stand out */
-  line-height: .9;    /* adjust spacing */
-}
-
-.reveal .small {
-  font-size: 2em;      /* makes it 3× the base size */
   font-weight: 200;   /* optional: make it stand out */
   line-height: .9;    /* adjust spacing */
 }

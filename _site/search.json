@@ -42,174 +42,6 @@
     "text": "I am a Professor of Analytics and Decision Sciences at Cardiff Business School, Cardiff University. I founded and direct the Data Lab for Social Good, and I lead the Uncertainty & the Future theme at DTII, where I work closely with academic, public, and industry partners on questions that matter for society.\nMy work sits at the intersection of data, uncertainty, and decision-making, with a focus on how advanced analytical methods can support better choices in complex and uncertain futures. Drawing on Data Science, AI, and Operations Research (OR), I develop and apply approaches that are both methodologically rigorous and demonstrably relevant to real-world decision contexts.\nSo far, my contributions to the field have been recognised with two medals from the OR Society: the Goodeve Medal in 2024, awarded for outstanding contributions to the philosophy, theory, and practice of OR, and the Lyn Thomas Impact Medal in 2025, recognising OR academic research that combines methodological innovation with clear, evidenced real-world impact."
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM\n\n\n\n bahmanrostamitabar  bahman-rostami-tabar 🌐 bahmanrostamitabar.github.io"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-1",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-1",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "Vaccines save millions of lives each year by protecting children against serious and preventable disease."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "Under-5 deaths worldwide\n\n\n12.8 million in 1990\n\n\n\n4.6 million in 2024"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#million-children-missed-vaccines",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#million-children-missed-vaccines",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "19.9 Million Children Missed Vaccines",
-    "text": "19.9 Million Children Missed Vaccines\n4.6 million children died before their 5th birthday"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Coverage disparities exist within and between regions",
-    "text": "Coverage disparities exist within and between regions"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "Global support for increasing immunization\n14 of the 17 United Nations Sustainable Development Goals demonstrate the social and economic value of increasing immunization coverage."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-4",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-4",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-importance-of-the-supply-chain",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-importance-of-the-supply-chain",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "The importance of the supply chain",
-    "text": "The importance of the supply chain\nEach successful vaccination depends on a complex immunization supply chain (iSC) to ensure that the correct vaccine is administered at the right cost, time and place."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-5",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-5",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "The Gavi Alliance iSC Strategy\nThe performance of the immunization supply chain is defined by:\n\nthe availability of vaccines\nthe quality of those vaccines\nthe efficiency of the system\n\n\n\n\n\n\n\n\n\n\nSource of image: WHO EVM Document"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-6",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-6",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-7",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-7",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "A global initiative to improve immunization supply chain.\nA national planning process endorsed and supported by WHO and UNICEF\nEVM provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "EVM Framework",
-    "text": "EVM Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: the operational or management functions that health facilities must perform; define what area of the supply chain is being assessed: Vaccine arrivals (E1), temperature management (E2), and waste management (E9).\nCategories: determine the necessary inputs, outputs, and performance required to execute the functions defined by the Criteria.\n\nInputs (C1–C6): What is required to perform the function, such as Infrastructure (C1), Equipment (C2), and Financial Resources (C6).\nOutputs (O): The deliverables produced by staff, such as records, charts, or reports.\nPerformance (P): The outcomes of proper implementation, such as vaccine availability and the absence of heat-damaged vaccines."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework-1",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework-1",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "EVM Framework",
-    "text": "EVM Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: Define what area of the supply chain is being assessed\nCategories: determine the necessary inputs, outputs, and performance required to execute the functions defined by the Criteria.\nRequirements: specific minimum standards, or attributes that a well-functioning immunisation supply chain must have; Human Resources (R0136): “iSC [immunization Supply Chain] staff have work mobile phones”\nQuestions: Provide the data to score Requirements: Interviewing, Verifying, Observing, Calculating.\n\n\n\nScoring in EVM is determined by this assessment framework."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-8",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-8",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "EVM Dataset Overview\n\nAssessments from 82 countries between 2019 and 2024.\n\n4287 health facilities (rows).\n1108 variables (columns).\n\n1286 potential questions.\n\n871 requirements, 19 criteria and 8 categories.\nScores range from 0 to 5.\n\n\n\n\nEVM Framework Guide\nR0001: The facility has a functional landline telephone.\nE2: Temperature management\nM1: Annual needs forecasting\nST: Strategic planning\nC1: Infrastructure\nC3: Information technology"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#data---scores",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#data---scores",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Data - Scores",
-    "text": "Data - Scores"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-9",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "Outline\n\nImmunisations coverage and disparities\nImmunisation Supply Chain (iSC) importance and performance\nEffective Vaccine Management (EVM) initiative\nAnalytics for Improving iSC with EVM"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#project-objectives",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#project-objectives",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Project objectives",
-    "text": "Project objectives\n\nExploratory analysis to diagnose system fragility and performance drivers.\nExplain performance and coverage using causal machine learning models.\nDevelop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders.\n\n\nExpected Impact\nThe output of this project will support policymakers in allocating resources more effectively, and selecting high-impact interventions."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#for-this-talk",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#for-this-talk",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "For this talk",
-    "text": "For this talk\n\nExploratory analysis to diagnose system fragility and performance drivers.\nExplain performance and coverage using causal machine learning.\nDevelop a prescriptive optimisation framework that converts analytical findings into actionable guidance for policymakers and stakeholders."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#dimension-reduction",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#dimension-reduction",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Dimension Reduction",
-    "text": "Dimension Reduction"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#empirical-cumulative-distribution-function-ecdf",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#empirical-cumulative-distribution-function-ecdf",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Empirical Cumulative Distribution Function (ECDF)",
-    "text": "Empirical Cumulative Distribution Function (ECDF)"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#service-points-showing-lowest-availability",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#service-points-showing-lowest-availability",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Service Points Showing Lowest Availability",
-    "text": "Service Points Showing Lowest Availability"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#last-mile-fragility-in-isc",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#last-mile-fragility-in-isc",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Last-Mile Fragility in iSC",
-    "text": "Last-Mile Fragility in iSC\n\n\nPersistent Underperformance and High Variability at Service Points"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "Any questions or comments? 💬",
-    "text": "Any questions or comments? 💬"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "References",
-    "text": "References\n\nEffective Vaccine Management (EVM) Initiative\nUNICEF Immunization Data\n\n\n\n\n\nImage credit: Unsplash"
-  },
-  {
     "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
     "href": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
     "title": " Making slides & delivery tips for scientific presentations",
@@ -361,7 +193,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nEnhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics\n\n\nJan 15, 2026\n\n\nPTC 0.04, Cardiff University\n\n\nCardiff, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides & delivery tips for scientific presentations\n\n\nJan 12, 2026\n\n\nPhd Foundations 2026\n\n\nCardiff, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nTest\n\n\nOct 16, 2025\n\n\nOR 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nMaking slides & delivery tips for scientific presentations\n\n\nJan 12, 2026\n\n\nPhd Foundations 2026\n\n\nCardiff, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nTest\n\n\nOct 16, 2025\n\n\nOR 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\nEURO 2025\n\n\nBerlin, Germany\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks/2025/2025-1-refrence/index.html",
@@ -1552,20 +1384,6 @@
     "title": "Making slides & delivery tips for scientific presentations",
     "section": "Further resources",
     "text": "Further resources\nYou can find more details here:\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/index.html",
-    "href": "talks/2026/2026-2-who/index.html",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "A brief talk about the work we have been doing at WHO to enhance the immunisation supply chain through effective vaccine management analytics."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/index.html#what-these-talk-covers",
-    "href": "talks/2026/2026-2-who/index.html#what-these-talk-covers",
-    "title": "Enhancing the Immunisation Supply Chain with Effective Vaccine Management Analytics",
-    "section": "",
-    "text": "A brief talk about the work we have been doing at WHO to enhance the immunisation supply chain through effective vaccine management analytics."
   },
   {
     "objectID": "about/index.html",
