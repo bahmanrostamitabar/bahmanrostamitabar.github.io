@@ -1,16 +1,16 @@
 [
   {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/2025-10-28-informs/index.html",
-      "/blog/first-post/index.html"
-    ]
-  },
-  {
     "listing": "/talks/index.html",
     "items": [
       "/talks/2026/2026-1-phdfoundation/index.html",
       "/talks/2025/2025-1-refrence/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/first-post/index.html",
+      "/blog/2025-10-28-informs/index.html"
     ]
   },
   {
@@ -23,6 +23,12 @@
     "listing": "/projects/africast/index.html",
     "items": [
       "/projects/africast/africast-idea/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/cdm/index.html",
+    "items": [
+      "/projects/cdm/2026-rwanda/index.html"
     ]
   },
   {
@@ -49,46 +55,40 @@
     ]
   },
   {
-    "listing": "/projects/cdm/index.html",
-    "items": [
-      "/projects/cdm/2026-rwanda/index.html"
-    ]
-  },
-  {
     "listing": "/publications/index.html",
     "items": [
       "/publications/books/dfem.html",
-      "/publications/working-papers/2026-forecast-accuracy-ed-staffing.html",
-      "/publications/working-papers/2026-ed-staffing-probabilistic-newsvendor.html",
       "/publications/working-papers/2026-socially-responsible-forecasting-harms.html",
       "/publications/working-papers/2026-digital-twins-healthcare-review.html",
+      "/publications/working-papers/2026-ed-staffing-probabilistic-newsvendor.html",
+      "/publications/working-papers/2026-forecast-accuracy-ed-staffing.html",
       "/publications/working-papers/2026-contraceptive-demand-forecasting-pom.html",
-      "/publications/journal-articles/2025-systematic-review-trauma-systems-operations.html",
+      "/publications/journal-articles/2025-role-of-technology.html",
       "/publications/journal-articles/2025-forecasting-unscheduled-care-review.html",
       "/publications/journal-articles/2025-contextual-insights-pharmaceutical-forecasting.html",
-      "/publications/journal-articles/2025-forecasting-interrupted-time-series.html",
-      "/publications/journal-articles/2025-hybrid-contraceptive-demand-forecasting.html",
+      "/publications/journal-articles/2025-systematic-review-trauma-systems-operations.html",
       "/publications/journal-articles/2025-hybrid-predictive-prescriptive-mental-healthcare.html",
       "/publications/journal-articles/2025-patient-length-of-stay-trauma-networks.html",
-      "/publications/journal-articles/2025-role-of-technology.html",
-      "/publications/journal-articles/2024-probabilistic-forecasting-covid19-admissions.html",
+      "/publications/journal-articles/2025-hybrid-contraceptive-demand-forecasting.html",
+      "/publications/journal-articles/2025-forecasting-interrupted-time-series.html",
       "/publications/journal-articles/2024-hybrid-lstm-medical-humanitarian-demand.html",
       "/publications/journal-articles/2024-forecasting-role-sustainable-development-goals.html",
       "/publications/journal-articles/2024-simulation-long-term-bed-modelling-critical-care.html",
-      "/publications/journal-articles/2024-length-of-stay-south-wales-trauma.html",
       "/publications/journal-articles/2024-hierarchical-time-series-emergency-services.html",
-      "/publications/journal-articles/2023-probabilistic-forecasting-hourly-ed-arrivals.html",
+      "/publications/journal-articles/2024-probabilistic-forecasting-covid19-admissions.html",
+      "/publications/journal-articles/2024-length-of-stay-south-wales-trauma.html",
       "/publications/journal-articles/2023-order-up-to-intermittent-integer-demand.html",
-      "/publications/journal-articles/2023-forecasting-lead-time-temporal-aggregation.html",
-      "/publications/journal-articles/2023-value-point-of-sales-information.html",
-      "/publications/journal-articles/2023-integrated-demand-forecasting-repairable-spare-parts.html",
       "/publications/journal-articles/2023-aggregate-or-not-autocorrelated-demand.html",
-      "/publications/journal-articles/2023-scheduling-reusable-single-use-bronchoscopes.html",
       "/publications/journal-articles/2023-time-series-features-temporal-aggregation.html",
+      "/publications/journal-articles/2023-forecasting-lead-time-temporal-aggregation.html",
+      "/publications/journal-articles/2023-integrated-demand-forecasting-repairable-spare-parts.html",
+      "/publications/journal-articles/2023-scheduling-reusable-single-use-bronchoscopes.html",
+      "/publications/journal-articles/2023-value-point-of-sales-information.html",
+      "/publications/journal-articles/2023-probabilistic-forecasting-hourly-ed-arrivals.html",
       "/publications/journal-articles/2022-forecasting-theory-and-practice.html",
-      "/publications/journal-articles/2021-forecasting-for-social-good.html",
-      "/publications/journal-articles/2021-hierarchical-time-series-supply-chains.html",
       "/publications/journal-articles/2021-forecasting-covid19-phone-call-data.html",
+      "/publications/journal-articles/2021-hierarchical-time-series-supply-chains.html",
+      "/publications/journal-articles/2021-forecasting-for-social-good.html",
       "/publications/journal-articles/2021-demand-forecasting-aggregation-hierarchical-review.html",
       "/publications/journal-articles/2020-anticipating-special-events-emergency-department.html",
       "/publications/journal-articles/2019-impact-temporal-aggregation-supply-chain.html",
