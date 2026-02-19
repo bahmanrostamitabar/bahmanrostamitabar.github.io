@@ -8,6 +8,7 @@ listing:
     - "summer_school/*.qmd"
     - "f4sg/*.qmd"
     - "crosslab_exchange/*.qmd"
+    - "cdm/*.qmd"
   type: grid
   sort: "date desc"
   sort-ui: true
