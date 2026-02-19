@@ -35,11 +35,13 @@
   {
     "listing": "/projects/index.html",
     "items": [
-      "/projects/cdm/index.html",
-      "/projects/summer_school/index.html",
-      "/projects/africast/index.html",
-      "/projects/crosslab_exchange/index.html",
-      "/projects/democratising_forecasting/index.html"
+      "/projects/cdm/2026-rwanda/index.html",
+      "/projects/crosslab_exchange/idea/index.html",
+      "/projects/summer_school/2026-ss/index.html",
+      "/projects/summer_school/summer-school/index.html",
+      "/projects/democratising_forecasting/orms-article/index.html",
+      "/projects/africast/africast-idea/index.html",
+      "/projects/democratising_forecasting/df/index.html"
     ]
   },
   {
