@@ -280,151 +280,53 @@
     "text": "Making slides & delivery tips for scientific presentations\n\n\nPhD foundation, January 13, 2026, Cardiff\n\n\n\n\n\n\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop 2026- Rwanda\n\n\n\n\n\n\n\n\n\n\n\nJun 2, 2027\n\n\nBahman Rostami-Tabar\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#section",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#section",
-    "title": " Making slides & delivery tips for scientific presentations",
+    "objectID": "projects/cdm/2026-rwanda/index.html",
+    "href": "projects/cdm/2026-rwanda/index.html",
+    "title": "Workshop 2026- Rwanda",
     "section": "",
-    "text": "Agenda\n\nDesign philosophy for scientific slides\nVisual and typographic principles\nTechnical and practical safeguards\nDelivery skills\n\n\n\n bahmanrostamitabar  bahman-rostami-tabar 🌐 bahmanrostamitabar.github.io"
+    "text": "HISP Centre at University of Oslo (HISP UiO)\nMinistry of Health, Rwanda\nHISP Rwanda\nCSID Network\nData Lab for Social Good Research Group, Cardiff University, UK.\nTRUST - The Norwegian Centre for Trustworthy AI"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-design-philosophy",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-design-philosophy",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Design Philosophy",
-    "text": "The Design Philosophy\n\nSignal-to-Noise Ratio: Maximize insight, minimize clutter, get rid of what’s not essential.\nCognitive Load: The brain handles about six visual elements at once.\n\nAim for 3–6 visual elements per slide.\n\nThe Rule of Three: Organize your talk into three or four distinct “messages.” The audience will not remember more than this\nOne Idea Per Slide: Each slide must have a single, central objective."
+    "objectID": "projects/cdm/2026-rwanda/index.html#organisers",
+    "href": "projects/cdm/2026-rwanda/index.html#organisers",
+    "title": "Workshop 2026- Rwanda",
+    "section": "",
+    "text": "HISP Centre at University of Oslo (HISP UiO)\nMinistry of Health, Rwanda\nHISP Rwanda\nCSID Network\nData Lab for Social Good Research Group, Cardiff University, UK.\nTRUST - The Norwegian Centre for Trustworthy AI"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#know-your-audience",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#know-your-audience",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Know Your Audience",
-    "text": "Know Your Audience\n\n\n\nThe Omniscience Trap: Do not assume the audience knows what you know. You have spent years on a specialty; they have not.\nTailor content to audience expertise and interests. You may need to make assumptions!"
+    "objectID": "projects/cdm/2026-rwanda/index.html#organising-committee",
+    "href": "projects/cdm/2026-rwanda/index.html#organising-committee",
+    "title": "Workshop 2026- Rwanda",
+    "section": "Organising committee",
+    "text": "Organising committee\n\nKristin Braa (HISP UiO)\nMuhammed Semakula (MoH Rwanda)\nJean Paul Hategekimana (HISP Rwanda)\nBahman Rostami-Tabar (Cardiff University)\nAngela Okune (CSIDnet)\nGeir Kjetil Sandve (TRUST AI Centre)"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#visuals-over-text",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#visuals-over-text",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Visuals Over Text",
-    "text": "Visuals Over Text\n\n\n\nHierarchy of Understanding: Figures are easier to understand than words; words are easier to understand than equations.\nGraphics: Never have a slide that is only text. Build slides around visualizations.\nShow, Don’t Just Tell: Use visuals and examples to illustrate points rather than just describing them"
+    "objectID": "projects/cdm/2026-rwanda/index.html#instructors-and-mentors",
+    "href": "projects/cdm/2026-rwanda/index.html#instructors-and-mentors",
+    "title": "Workshop 2026- Rwanda",
+    "section": "Instructors and mentors",
+    "text": "Instructors and mentors\n\nMuhammed Semakula (MoH Rwanda)\nGeorges Bucyibaruta (UGHE)\nGeir Kjetil Sandve (TRUST AI Centre)\nBahman Rostami-Tabar (Cardiff University)\nHarsha Halgamuwe Hewage (Cardiff University)\nKnut Rand (TRUST AI Centre)\nHalvard Emil Sand-Larsen (TRUST AI Centre)\nHerman Tretteteig (HISP UiO)"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#use-bullet-points-and-short-text",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#use-bullet-points-and-short-text",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Use bullet points and short text",
-    "text": "Use bullet points and short text\n\nBullet Points Only: Avoid full sentences and paragraphs\nSentence Headlines: Titles should state findings/message/conclusions.\nRedundancy is Good: Short text can reinforce spoken words.\nCitations: Place citations directly on relevant slides 1.\n\nFor more info: https://subjectguides.york.ac.uk/presentations/design"
+    "objectID": "projects/cdm/2026-rwanda/index.html#learning-aims",
+    "href": "projects/cdm/2026-rwanda/index.html#learning-aims",
+    "title": "Workshop 2026- Rwanda",
+    "section": "Learning aims",
+    "text": "Learning aims\n\nUnderstand the full picture of spatiotemporal modelling for an operational context - the role of data, models and evaluation for an early warning system.\nUnderstand how climate-sensitive disease forecasting can be approached through modelling.\nDevelop an understanding of the statistical underpinnings of various modelling approaches, as well as what different evaluation metrics and visualisations capture mathematically.\nEstablish an effective software setup for the development and use of spatiotemporal models using the open-source Chap modeling platform and DHIS2 modeling app - a setup including version control and sharing of developed code, streamlined installation of libraries, streamlined running of developed code, and good organisation of code and data.\nMake progress on a concrete case brought to the workshop, including development or application of suited models and rigorous evaluation of how this initial model performs."
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#backgrounds-and-layout",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#backgrounds-and-layout",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Backgrounds and Layout",
-    "text": "Backgrounds and Layout\n\nGo Blank: Avoid templates and themes.\nBackground Color Choice: Prefer solid white, white-gray\nImage Backgrounds: Desaturate or darken/lighten to avoid distraction."
+    "objectID": "projects/cdm/2026-rwanda/index.html#materials",
+    "href": "projects/cdm/2026-rwanda/index.html#materials",
+    "title": "Workshop 2026- Rwanda",
+    "section": "Materials",
+    "text": "Materials\nExcercise and data materials for the workshop are available here."
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#typography-rules",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#typography-rules",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Typography Rules",
-    "text": "Typography Rules\n\nFont Family: Use sans-serif fonts (Arial, Helvetica, etc).\nFont Size: Default sizes are usually too small.\n\nTitles: 44 pt\n\nSubtitles: 36 pt\nBody Text: 32 pt\n\nCaptions/footnote: 18–24 pt\n\nEmphasis: Use bold, not italics, underlining, or ALL CAPS.\n\nYou can use color for emphasis, but limited numebrs.\n\nConsistency: Keep font roles and collors consistent across slides."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#font-color",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#font-color",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Font Color",
-    "text": "Font Color\n\nUse BlaCK or Dark Gray for text on light backgrounds.\nUse White or Light Gray for text on dark backgrounds.\nLimit Palette: Use 2–4 main colors.\nAccessibility: Use color-blind friendly palettes."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#visualiziations",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#visualiziations",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Visualiziations",
-    "text": "Visualiziations\n\n\n\nHigh Quality: Use sharp, high-resolution graphics.\nReadability: Ensure text in figures is legible, if you say sorry for it, it’s too small, then question why you included it."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#equations",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#equations",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Equations",
-    "text": "Equations\nSimplify Equations: Treat equations as visuals; define all symbols.\n\n\n\\[\n\\begin{aligned}\n\\min_{x \\in \\mathbb{R}^n}\\quad & f(x) = c^\\top x \\\\\n\\text{s.t.}\\quad & Ax \\le b \\\\\n& x \\ge 0\n\\end{aligned}\n\\]\n\n\n\\(x \\in \\mathbb{R}^n\\) is the decision vector, \\(n\\) is the number of variables.\n\\(f(x)\\) is the objective function value.\n\\(c \\in \\mathbb{R}^n\\) is the cost (or weight) vector.\n\\(c^\\top x\\) is the dot product.\n\\(A \\in \\mathbb{R}^{m\\times n}\\) is the constraint matrix, \\(m\\) is the number of constraints.\n\\(b \\in \\mathbb{R}^m\\) is the right-hand-side vector of constraint limits.\n\\(Ax \\le b\\) represents \\(m\\) linear inequalities.\n\\(x \\ge 0\\) is the nonnegativity constraint."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#motion-and-transitions",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#motion-and-transitions",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Motion and Transitions",
-    "text": "Motion and Transitions\n\nNo Animations: Avoid flying text and fancy transitions.\nBuild Method: Use multiple slides for progressive diagrams and to explain complex ideas."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#navigation-and-accessibility",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#navigation-and-accessibility",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Navigation and Accessibility",
-    "text": "Navigation and Accessibility\n\nSlide Numbers: Always include them.\nTable of Contents: Repeat with current section highlighted.\nExtra slides at the end for FAQs or detailed info."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#technical-formatting-safety",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#technical-formatting-safety",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Technical Formatting & Safety",
-    "text": "Technical Formatting & Safety\n\nPDF is King: Export final slides as PDF.\nBackup: Always have a backup on a USB drive.\nwebsite: if you use revealjs or similar, host a copy online as backup."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-vocal-verbal",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-vocal-verbal",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Vocal & Verbal",
-    "text": "The Vocal & Verbal\n\nDon’t Memorize Text. Memorize your outline as a tree of ideas and speak extemporaneously.\nEmbrace Silence. Avoid filler words such as um and er. A pause is better; it gives you time to think and the audience time to process.\nVolume and Tone. Speak loudly and firmly. Vary your rate and volume based on the complexity of the information.\nExplicit Language. Avoid vague pronouns like this or that. Say that figure or that equation to be precise."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#body-language",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#body-language",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Body Language",
-    "text": "Body Language\n\nFace the Audience. Do not turn your back to read the screen.\nEye Contact. Engage the audience by looking at different parts of the room.\nPointers. Prefer a solid stick. Laser pointers move too fast, and mouse pointers are hard to follow and can cause motion sickness.\nNerves. Stage fright is normal. It shows you care. Channel that energy into your voice and gestures."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-qa-and-mishaps",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-qa-and-mishaps",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Q&A and Mishaps",
-    "text": "The Q&A and Mishaps\n\nHonesty is Key. If you do not know the answer, say so. If you simplified something, admit it.\nNo Apologies. Do not apologize for your English, your nerves, or technical issues. never start with an apology.\nHandling Interruptions. If a question requires a long detour, suggest postponing it until the end."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-golden-rules",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#the-golden-rules",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "The Golden Rules",
-    "text": "The Golden Rules\n\nNever Go Over Time. If time runs out, stop and summarize immediately.\nPractice. Practice reveals missing vocabulary and smooths transitions. Minimum 10 timed rehearsals.\nIterate. Rehearse with peers to discover unclear points and weak parts of the story."
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#you-made-it",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#you-made-it",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "You made it! 🎉",
-    "text": "You made it! 🎉"
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#references",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#references",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "References",
-    "text": "References\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#details",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#details",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Details",
-    "text": "Details\n\nSome content adapted from:\n\n“The Craft of Scientific Presentations” by Michael Alley\n\n“Presentation Zen” by Garr Reynolds\n\n“Slide:ology” by Nancy Duarte\n\n“Resonate” by Nancy Duarte"
-  },
-  {
-    "objectID": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#acknowledgments",
-    "href": "projects/cdm/2026-rwanda/slides-2026-1-phdfoundation.html#acknowledgments",
-    "title": " Making slides & delivery tips for scientific presentations",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\n\nThanks to colleagues and mentors who provided feedback on presentation skills and design principles over the years.\nImage credits to respective photographers and sources for visual materials used in this presentation."
+    "objectID": "projects/cdm/2026-rwanda/index.html#slides",
+    "href": "projects/cdm/2026-rwanda/index.html#slides",
+    "title": "Workshop 2026- Rwanda",
+    "section": "Slides",
+    "text": "Slides\n\n  Download PDF    Open Slides"
   },
   {
     "objectID": "publications/book-chapters/2021-business-forecasting-developing-countries.html#abstract",
@@ -812,53 +714,151 @@
     "text": "Abstract"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/index.html",
-    "href": "projects/cdm/2026-rwanda/index.html",
-    "title": "Workshop 2026- Rwanda",
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#section",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#section",
+    "title": " Making slides & delivery tips for scientific presentations",
     "section": "",
-    "text": "HISP Centre at University of Oslo (HISP UiO)\nMinistry of Health, Rwanda\nHISP Rwanda\nCSID Network\nData Lab for Social Good Research Group, Cardiff University, UK.\nTRUST - The Norwegian Centre for Trustworthy AI"
+    "text": "Agenda\n\nDesign philosophy for scientific slides\nVisual and typographic principles\nTechnical and practical safeguards\nDelivery skills\n\n\n\n bahmanrostamitabar  bahman-rostami-tabar 🌐 bahmanrostamitabar.github.io"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/index.html#organisers",
-    "href": "projects/cdm/2026-rwanda/index.html#organisers",
-    "title": "Workshop 2026- Rwanda",
-    "section": "",
-    "text": "HISP Centre at University of Oslo (HISP UiO)\nMinistry of Health, Rwanda\nHISP Rwanda\nCSID Network\nData Lab for Social Good Research Group, Cardiff University, UK.\nTRUST - The Norwegian Centre for Trustworthy AI"
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-design-philosophy",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-design-philosophy",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Design Philosophy",
+    "text": "The Design Philosophy\n\nSignal-to-Noise Ratio: Maximize insight, minimize clutter, get rid of what’s not essential.\nCognitive Load: The brain handles about six visual elements at once.\n\nAim for 3–6 visual elements per slide.\n\nThe Rule of Three: Organize your talk into three or four distinct “messages.” The audience will not remember more than this\nOne Idea Per Slide: Each slide must have a single, central objective."
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/index.html#organising-committee",
-    "href": "projects/cdm/2026-rwanda/index.html#organising-committee",
-    "title": "Workshop 2026- Rwanda",
-    "section": "Organising committee",
-    "text": "Organising committee\n\nKristin Braa (HISP UiO)\nMuhammed Semakula (MoH Rwanda)\nJean Paul Hategekimana (HISP Rwanda)\nBahman Rostami-Tabar (Cardiff University)\nAngela Okune (CSIDnet)\nGeir Kjetil Sandve (TRUST AI Centre)"
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#know-your-audience",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#know-your-audience",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Know Your Audience",
+    "text": "Know Your Audience\n\n\n\nThe Omniscience Trap: Do not assume the audience knows what you know. You have spent years on a specialty; they have not.\nTailor content to audience expertise and interests. You may need to make assumptions!"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/index.html#instructors-and-mentors",
-    "href": "projects/cdm/2026-rwanda/index.html#instructors-and-mentors",
-    "title": "Workshop 2026- Rwanda",
-    "section": "Instructors and mentors",
-    "text": "Instructors and mentors\n\nMuhammed Semakula (MoH Rwanda)\nGeorges Bucyibaruta (UGHE)\nGeir Kjetil Sandve (TRUST AI Centre)\nBahman Rostami-Tabar (Cardiff University)\nHarsha Halgamuwe Hewage (Cardiff University)\nKnut Rand (TRUST AI Centre)\nHalvard Emil Sand-Larsen (TRUST AI Centre)\nHerman Tretteteig (HISP UiO)"
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#visuals-over-text",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#visuals-over-text",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Visuals Over Text",
+    "text": "Visuals Over Text\n\n\n\nHierarchy of Understanding: Figures are easier to understand than words; words are easier to understand than equations.\nGraphics: Never have a slide that is only text. Build slides around visualizations.\nShow, Don’t Just Tell: Use visuals and examples to illustrate points rather than just describing them"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/index.html#learning-aims",
-    "href": "projects/cdm/2026-rwanda/index.html#learning-aims",
-    "title": "Workshop 2026- Rwanda",
-    "section": "Learning aims",
-    "text": "Learning aims\n\nUnderstand the full picture of spatiotemporal modelling for an operational context - the role of data, models and evaluation for an early warning system.\nUnderstand how climate-sensitive disease forecasting can be approached through modelling.\nDevelop an understanding of the statistical underpinnings of various modelling approaches, as well as what different evaluation metrics and visualisations capture mathematically.\nEstablish an effective software setup for the development and use of spatiotemporal models using the open-source Chap modeling platform and DHIS2 modeling app - a setup including version control and sharing of developed code, streamlined installation of libraries, streamlined running of developed code, and good organisation of code and data.\nMake progress on a concrete case brought to the workshop, including development or application of suited models and rigorous evaluation of how this initial model performs."
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#use-bullet-points-and-short-text",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#use-bullet-points-and-short-text",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Use bullet points and short text",
+    "text": "Use bullet points and short text\n\nBullet Points Only: Avoid full sentences and paragraphs\nSentence Headlines: Titles should state findings/message/conclusions.\nRedundancy is Good: Short text can reinforce spoken words.\nCitations: Place citations directly on relevant slides 1.\n\nFor more info: https://subjectguides.york.ac.uk/presentations/design"
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/index.html#materials",
-    "href": "projects/cdm/2026-rwanda/index.html#materials",
-    "title": "Workshop 2026- Rwanda",
-    "section": "Materials",
-    "text": "Materials\nExcercise and data materials for the workshop are available here."
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#backgrounds-and-layout",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#backgrounds-and-layout",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Backgrounds and Layout",
+    "text": "Backgrounds and Layout\n\nGo Blank: Avoid templates and themes.\nBackground Color Choice: Prefer solid white, white-gray\nImage Backgrounds: Desaturate or darken/lighten to avoid distraction."
   },
   {
-    "objectID": "projects/cdm/2026-rwanda/index.html#slides",
-    "href": "projects/cdm/2026-rwanda/index.html#slides",
-    "title": "Workshop 2026- Rwanda",
-    "section": "Slides",
-    "text": "Slides\n\n  Download PDF    Open Slides"
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#typography-rules",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#typography-rules",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Typography Rules",
+    "text": "Typography Rules\n\nFont Family: Use sans-serif fonts (Arial, Helvetica, etc).\nFont Size: Default sizes are usually too small.\n\nTitles: 44 pt\n\nSubtitles: 36 pt\nBody Text: 32 pt\n\nCaptions/footnote: 18–24 pt\n\nEmphasis: Use bold, not italics, underlining, or ALL CAPS.\n\nYou can use color for emphasis, but limited numebrs.\n\nConsistency: Keep font roles and collors consistent across slides."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#font-color",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#font-color",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Font Color",
+    "text": "Font Color\n\nUse BlaCK or Dark Gray for text on light backgrounds.\nUse White or Light Gray for text on dark backgrounds.\nLimit Palette: Use 2–4 main colors.\nAccessibility: Use color-blind friendly palettes."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#visualiziations",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#visualiziations",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Visualiziations",
+    "text": "Visualiziations\n\n\n\nHigh Quality: Use sharp, high-resolution graphics.\nReadability: Ensure text in figures is legible, if you say sorry for it, it’s too small, then question why you included it."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#equations",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#equations",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Equations",
+    "text": "Equations\nSimplify Equations: Treat equations as visuals; define all symbols.\n\n\n\\[\n\\begin{aligned}\n\\min_{x \\in \\mathbb{R}^n}\\quad & f(x) = c^\\top x \\\\\n\\text{s.t.}\\quad & Ax \\le b \\\\\n& x \\ge 0\n\\end{aligned}\n\\]\n\n\n\\(x \\in \\mathbb{R}^n\\) is the decision vector, \\(n\\) is the number of variables.\n\\(f(x)\\) is the objective function value.\n\\(c \\in \\mathbb{R}^n\\) is the cost (or weight) vector.\n\\(c^\\top x\\) is the dot product.\n\\(A \\in \\mathbb{R}^{m\\times n}\\) is the constraint matrix, \\(m\\) is the number of constraints.\n\\(b \\in \\mathbb{R}^m\\) is the right-hand-side vector of constraint limits.\n\\(Ax \\le b\\) represents \\(m\\) linear inequalities.\n\\(x \\ge 0\\) is the nonnegativity constraint."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#motion-and-transitions",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#motion-and-transitions",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Motion and Transitions",
+    "text": "Motion and Transitions\n\nNo Animations: Avoid flying text and fancy transitions.\nBuild Method: Use multiple slides for progressive diagrams and to explain complex ideas."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#navigation-and-accessibility",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#navigation-and-accessibility",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Navigation and Accessibility",
+    "text": "Navigation and Accessibility\n\nSlide Numbers: Always include them.\nTable of Contents: Repeat with current section highlighted.\nExtra slides at the end for FAQs or detailed info."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#technical-formatting-safety",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#technical-formatting-safety",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Technical Formatting & Safety",
+    "text": "Technical Formatting & Safety\n\nPDF is King: Export final slides as PDF.\nBackup: Always have a backup on a USB drive.\nwebsite: if you use revealjs or similar, host a copy online as backup."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-vocal-verbal",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-vocal-verbal",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Vocal & Verbal",
+    "text": "The Vocal & Verbal\n\nDon’t Memorize Text. Memorize your outline as a tree of ideas and speak extemporaneously.\nEmbrace Silence. Avoid filler words such as um and er. A pause is better; it gives you time to think and the audience time to process.\nVolume and Tone. Speak loudly and firmly. Vary your rate and volume based on the complexity of the information.\nExplicit Language. Avoid vague pronouns like this or that. Say that figure or that equation to be precise."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#body-language",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#body-language",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Body Language",
+    "text": "Body Language\n\nFace the Audience. Do not turn your back to read the screen.\nEye Contact. Engage the audience by looking at different parts of the room.\nPointers. Prefer a solid stick. Laser pointers move too fast, and mouse pointers are hard to follow and can cause motion sickness.\nNerves. Stage fright is normal. It shows you care. Channel that energy into your voice and gestures."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-qa-and-mishaps",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-qa-and-mishaps",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Q&A and Mishaps",
+    "text": "The Q&A and Mishaps\n\nHonesty is Key. If you do not know the answer, say so. If you simplified something, admit it.\nNo Apologies. Do not apologize for your English, your nerves, or technical issues. never start with an apology.\nHandling Interruptions. If a question requires a long detour, suggest postponing it until the end."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-golden-rules",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#the-golden-rules",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "The Golden Rules",
+    "text": "The Golden Rules\n\nNever Go Over Time. If time runs out, stop and summarize immediately.\nPractice. Practice reveals missing vocabulary and smooths transitions. Minimum 10 timed rehearsals.\nIterate. Rehearse with peers to discover unclear points and weak parts of the story."
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#you-made-it",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#you-made-it",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "You made it! 🎉",
+    "text": "You made it! 🎉"
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#references",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#references",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "References",
+    "text": "References\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#details",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#details",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Details",
+    "text": "Details\n\nSome content adapted from:\n\n“The Craft of Scientific Presentations” by Michael Alley\n\n“Presentation Zen” by Garr Reynolds\n\n“Slide:ology” by Nancy Duarte\n\n“Resonate” by Nancy Duarte"
+  },
+  {
+    "objectID": "projects/cdm/2026-rwanda/slides/phdfoundation.html#acknowledgments",
+    "href": "projects/cdm/2026-rwanda/slides/phdfoundation.html#acknowledgments",
+    "title": " Making slides & delivery tips for scientific presentations",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\n\nThanks to colleagues and mentors who provided feedback on presentation skills and design principles over the years.\nImage credits to respective photographers and sources for visual materials used in this presentation."
   },
   {
     "objectID": "projects/democratising_forecasting/df/index.html",
