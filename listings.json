@@ -10,7 +10,6 @@
     "listing": "/talks/index.html",
     "items": [
       "/talks/2026/2026-1-phdfoundation/index.html",
-      "/talks/2025/2025-2-test/index.html",
       "/talks/2025/2025-1-refrence/index.html"
     ]
   },
@@ -47,6 +46,12 @@
     "items": [
       "/projects/democratising_forecasting/orms-article/index.html",
       "/projects/democratising_forecasting/df/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/cdm/index.html",
+    "items": [
+      "/projects/cdm/2026-rwanda/index.html"
     ]
   },
   {
