@@ -1,0 +1,57 @@
+---
+title: "Workshop-2026-Rwanda"
+author: "Bahman Rostami-Tabar"
+date: "23/02/2026"
+image: "rwanda_modelling.png"
+categories:
+  - Uncertainty
+  - Climate diseases
+  - Forecasting
+  - Spatiotemporal modelling
+  - Workshop
+  - Africa
+---
+
+## Organisers
+
+- HISP Centre at University of Oslo (HISP UiO)
+- Ministry of Health, Rwanda
+- HISP Rwanda
+- CSID Network
+- Data Lab for Social Good Research Group, Cardiff University, UK.
+- TRUST - The Norwegian Centre for Trustworthy AI
+
+
+## Organising committee
+
+- Kristin Braa (HISP UiO)
+- Muhammed Semakula (MoH Rwanda)
+- Jean Paul Hategekimana (HISP Rwanda)
+- Bahman Rostami-Tabar (Cardiff University)
+- Angela Okune (CSIDnet)
+- Geir Kjetil Sandve (TRUST AI Centre)
+
+
+## Instructors and mentors
+
+- Muhammed Semakula (MoH Rwanda)
+- Georges Bucyibaruta (UGHE)
+- Geir Kjetil Sandve (TRUST AI Centre)
+- Bahman Rostami-Tabar (Cardiff University)
+- Harsha Halgamuwe Hewage (Cardiff University)
+- Knut Rand (TRUST AI Centre)
+- Halvard Emil Sand-Larsen (TRUST AI Centre)
+- Herman Tretteteig (HISP UiO)
+
+
+## Learning aims
+
+- Understand the full picture of spatiotemporal modelling for an operational context - the role of data, models and evaluation for an early warning system.
+
+- Understand how climate-sensitive disease forecasting can be approached through modelling.
+
+- Develop an understanding of the statistical underpinnings of various modelling approaches, as well as what different evaluation metrics and visualisations capture mathematically. 
+
+- Establish an effective software setup for the development and use of spatiotemporal models using the open-source Chap modeling platform and DHIS2 modeling app  - a setup including version control and sharing of developed code, streamlined installation of libraries, streamlined running of developed code, and good organisation of code and data. 
+
+- Make progress on a concrete case brought to the workshop, including development or application of suited models and rigorous evaluation of how this initial model performs.

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Overview of projects I lead and colead.">
 
-<title>index</title>
+<title>Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -68,9 +71,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="participants-cards.css">
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description','listing-author','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="projects.css">
+<meta property="og:title" content="Projects">
+<meta property="og:description" content="Overview of projects I lead and colead.">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/projects/africast/cover.jpg">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -101,11 +165,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../supervision/index.html" aria-current="page"> 
+    <a class="nav-link" href="../supervision/index.html"> 
 <span class="menu-text">Research Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
+    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -138,347 +202,210 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#founder-director" id="toc-founder-director" class="nav-link active" data-scroll-target="#founder-director">Founder &amp; Director</a></li>
-  <li><a href="#academic-staff" id="toc-academic-staff" class="nav-link" data-scroll-target="#academic-staff">Academic Staff</a></li>
-  <li><a href="#honarary-research-fellows-visiting-professors" id="toc-honarary-research-fellows-visiting-professors" class="nav-link" data-scroll-target="#honarary-research-fellows-visiting-professors">Honarary Research Fellows &amp; Visiting Professors</a></li>
-  <li><a href="#current-ph.d.-student" id="toc-current-ph.d.-student" class="nav-link" data-scroll-target="#current-ph.d.-student">Current Ph.D.&nbsp;student</a></li>
-  <li><a href="#graduated-ph.d." id="toc-graduated-ph.d." class="nav-link" data-scroll-target="#graduated-ph.d.">Graduated Ph.D.</a></li>
-  <li><a href="#graduated-ms.c." id="toc-graduated-ms.c." class="nav-link" data-scroll-target="#graduated-ms.c.">Graduated MS.c.</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content">
 
-
-
-
-<div style="display:flex; justify-content:center; margin:2.5rem 0;">
-  <figure style="text-align:center;" class="figure">
-    <img src="img/team.jpg" alt="Research team photo" style="
-           width:50%;
-           border-radius:14px;
-           box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-         " class="figure-img">
-    <figcaption style="
-        margin-top:0.6rem;
-        font-style:italic;
-        color:#555;
-        font-size:0.95rem;
-      ">
-      Data Lab for Social Good Research Group (Photo taken in 2024)
-    </figcaption>
-  </figure>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Projects</h1>
 </div>
-<section id="founder-director" class="level2">
-<h2 class="anchored" data-anchor-id="founder-director">Founder &amp; Director</h2>
-<div class="page-container">
-    <!-- Participants Section -->
-    <div class="content-card">
-        <div class="participants-grid">
-            
-            <!-- Participant 1 -->
-            <div class="participant-card">
-                <img src="img/bahman.jpg" alt="Bahman Rostami-Tabar" class="participant-avatar">
-                <div class="participant-name">Prof. Bahman Rostami-Tabar</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/bahmanrostamitabar" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-            
-        </div>
+
+<div>
+  <div class="description">
+    Overview of projects I lead and colead.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-</section>
-<section id="academic-staff" class="level2">
-<h2 class="anchored" data-anchor-id="academic-staff">Academic Staff</h2>
-<div class="page-container">
-    <!-- Participants Section -->
-    <div class="content-card">
-        <div class="participants-grid">
-            
-            <!-- Participant 1 -->
-            <div class="participant-card">
-                <img src="img/thanos.avif" alt="Dr. Thanos Goltsos" class="participant-avatar">
-                <div class="participant-name">Dr. Thanos Goltsos</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://profiles.cardiff.ac.uk/staff/goltsosa" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/thanos-goltsos-a6878b92/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-            
-            
-                        <!-- Participant 2 -->
-            <div class="participant-card">
-                <img src="img/xun.avif" alt="Paul Wang" class="participant-avatar">
-                <div class="participant-name">Dr. Xun (Paul) Wang</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://profiles.cardiff.ac.uk/staff/wangx46" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/xun-wang-cardiff/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="VW5jZXJ0YWludHklMkNGdXR1cmVzJTJDU3VtbWVyJTIwU2Nob29sJTJDSW50ZXJkaXNjaXBsaW5hcnk=" data-listing-date-sort="1764028800000" data-listing-file-modified-sort="1766713416549" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/summer_school/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/summer_school/ss.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+The Art and Science of Uncertainty: an interdisciplinary Summer School
+</h5>
+<div class="listing-categories">
 
-                        <!-- Participant 3 -->
-            <div class="participant-card">
-                <img src="img/danni.jpeg" alt="Danni Zhang" class="participant-avatar">
-                <div class="participant-name">Dr. Danni Zhang</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://profiles.cardiff.ac.uk/staff/zhangd38" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/danni-zhang-8505041ba/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
+<div class="listing-category" onclick="window.quartoListingCategory('VW5jZXJ0YWludHk='); return false;">Uncertainty</div>
 
-            
-        </div>
-    </div>
+<div class="listing-category" onclick="window.quartoListingCategory('RnV0dXJlcw=='); return false;">Futures</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VtbWVyJTIwU2Nob29s'); return false;">Summer School</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJkaXNjaXBsaW5hcnk='); return false;">Interdisciplinary</div>
+
 </div>
-</section>
-<section id="honarary-research-fellows-visiting-professors" class="level2">
-<h2 class="anchored" data-anchor-id="honarary-research-fellows-visiting-professors">Honarary Research Fellows &amp; Visiting Professors</h2>
-<div class="page-container">
-    <!-- Participants Section -->
-    <div class="content-card">
-        <div class="participants-grid">
-            
-            <!-- Participant 1 -->
-            <div class="participant-card">
-                <img src="#" alt="Mohammed Mohammed" class="participant-avatar">
-                <div class="participant-name">Prof. Mohammed Mohammed</div>
-                <div class="participant-affiliation">The Startegy Uni-NHS</div>
-                <ul class="participant-links">
-                    <li><a href="https://www.strategyunitwm.nhs.uk/author/mohammed-amin-mohammed" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://www.bradford.ac.uk/staff/mamohammed5/" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="#" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-            
-            
-                        <!-- Participant 2 -->
-            <div class="participant-card">
-                <img src="img/laila.jpeg" alt="Laila" class="participant-avatar">
-                <div class="participant-name">Dr. Laila Akhlaghi</div>
-                <div class="participant-affiliation">JSI</div>
-                <ul class="participant-links">
-                    <li><a href="https://experts.exeter.ac.uk/45619-diego-bermudez/about" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/lailaakhlaghi/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-                        <!-- Participant 3 -->
-            <div class="participant-card">
-                <img src="img/johann.jpeg" alt="Johann Robette" class="participant-avatar">
-                <div class="participant-name">Mr. Johann Robette</div>
-                <div class="participant-affiliation">Vekia</div>
-                <ul class="participant-links">
-                    <li><a href="#" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/johann-robette/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            
-        </div>
-    </div>
+<div class="card-text listing-description delink">
+<p>This summer school provides a unique opportunity to develop skills, strengthen networks, and advance creative and interdisciplinary research on uncertainty and the future.</p>
 </div>
-</section>
-<section id="current-ph.d.-student" class="level2">
-<h2 class="anchored" data-anchor-id="current-ph.d.-student">Current Ph.D.&nbsp;student</h2>
-<div class="page-container">
-    <!-- Participants Section -->
-    <div class="content-card">
-        <div class="participants-grid">
-            
-            <!-- Participant 1 -->
-            <div class="participant-card">
-                <img src="https://avatars.githubusercontent.com/u/50043266?v=4" alt="Full Name" class="participant-avatar">
-                <div class="participant-name">Harsha Halgamuwe Hewage</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://chamara7h.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/chamara7h" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/harshachamara/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 2 -->
-            <div class="participant-card">
-                <img src="img/ming.jpeg" alt="Minzhe Shi" class="participant-avatar">
-                <div class="participant-name">Minzhe Shi</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://profiles.cardiff.ac.uk/research-staff/shim9" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/Shimingzhe123" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/mingzhe-shi-0a22451b9/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 3 -->
-            <div class="participant-card">
-                <img src="img/udeshi.jpg" alt="Udeshi Salgado" class="participant-avatar">
-                <div class="participant-name">Udeshi Salgado</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://udeshisalgado.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/udeshisalgado" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/udeshi-salgado/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 4 -->
-            <div class="participant-card">
-                <img src="img/fatemeh.jpeg" alt="Fatemeh Monshizadeh" class="participant-avatar">
-                <div class="participant-name">Fatemeh Monshizadeh</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://profiles.cardiff.ac.uk/staff/monshizadehf" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://scholar.google.com/citations?user=tRs6Kvn7GacC&amp;hl=en" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/fatemeh-monshizadeh/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 5 -->
-            <div class="participant-card">
-                <img src="https://avatars.githubusercontent.com/u/105726029?v=4" alt="Mustafa Aslan" class="participant-avatar">
-                <div class="participant-name">Mustafa Aslan</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://mustafaslancoto.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/mustafaslanCoto" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/aslanmu/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 6 -->
-            <div class="participant-card">
-                <img src="img/seyvan.avif" alt="Amir Salimi Babmiri" class="participant-avatar">
-                <div class="participant-name">Amir Salimi Babmiri</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://profiles.cardiff.ac.uk/staff/salimibabamiria" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://scholar.google.com/citations?user=LDZrogIAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/amir-salimi-babamiri/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 7 -->
-            <div class="participant-card">
-                <img src="img/rui.avif" alt="Rui Xu" class="participant-avatar">
-                <div class="participant-name">Rui Xu</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://rui-2024.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/Rui-2024" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/rui-xu-1bb216275/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 8 -->
-            <div class="participant-card">
-                <img src="https://avatars.githubusercontent.com/u/68536575?v=4" alt="Amirhossein Ghadiri" class="participant-avatar">
-                <div class="participant-name">Amirhossein Ghadiri</div>
-                <div class="participant-affiliation">Cardiff University</div>
-                <ul class="participant-links">
-                    <li><a href="https://amirhosseinghdv.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/amirhosseinghdv" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/amirhossein-ghadiri-8296781a6/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 9 -->
-            <div class="participant-card">
-                <img src="img/alfred.avif" alt="Alfred Sallwa" class="participant-avatar">
-                <div class="participant-name">Alfred Sallwa</div>
-                <div class="participant-affiliation">Mzumbe University</div>
-                <ul class="participant-links">
-                    <li><a href="https://alfred-ain.github.io/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="https://github.com/alfred-ain" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/alfred-sallwa-b391b3302/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 10 -->
-            <div class="participant-card">
-                <img src="img/birhanu.jpeg" alt="Birhanu Shanko" class="participant-avatar">
-                <div class="participant-name">Birhanu Shanko</div>
-                <div class="participant-affiliation">Addis Ababa University</div>
-                <ul class="participant-links">
-                    <li><a href="https://orcid.org/0000-0003-4587-1742" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/birhanu-s-a45b2571/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- Participant 11 -->
-            <div class="participant-card">
-                <img src="img/yemsrach.avif" alt="Yemsrach Demissie" class="participant-avatar">
-                <div class="participant-name">Yemsrach Demissie</div>
-                <div class="participant-affiliation">Addis Ababa University</div>
-                <ul class="participant-links">
-                    <li><a href="https://orcid.org/0009-0005-4324-4843" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/yemsrach-hailu-demissie/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-</div></div></div></section>
-<section id="graduated-ph.d." class="level2">
-<h2 class="anchored" data-anchor-id="graduated-ph.d.">Graduated Ph.D.</h2>
-<div class="page-container">
-    <!-- Participants Section -->
-    <div class="content-card">
-        <div class="participants-grid">
-            
-            <!-- Participant 1 -->
-            <div class="participant-card">
-                <img src="img/zihao.jpg" alt="Zihao Wang" class="participant-avatar">
-                <div class="participant-name">Zihao Wang</div>
-                <div class="participant-affiliation">Swansea University</div>
-                <ul class="participant-links">
-                    <li><a href="https://hdrwales.org.uk/portfolio/dr-zihao-wang/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/zihao-wang-040b63244/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-            
-            
-                        <!-- Participant 2 -->
-            <div class="participant-card">
-                <img src="img/diego.png" alt="Diego Bermudez" class="participant-avatar">
-                <div class="participant-name">Diego Bermudez</div>
-                <div class="participant-affiliation">University of Exeter</div>
-                <ul class="participant-links">
-                    <li><a href="https://experts.exeter.ac.uk/45619-diego-bermudez/about" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/diegobermudezb/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
-            </div>
-            
-        </div>
-    </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
 </div>
-</section>
-<section id="graduated-ms.c." class="level2">
-<h2 class="anchored" data-anchor-id="graduated-ms.c.">Graduated MS.c.</h2>
-<p>** To be Completed **</p>
+<div class="listing-date">
+Nov 25, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UiUyQ0ZvcmVjYXN0aW5nJTJDUiUyQ0xNSUNzJTJDQUZSSUNBU1Q=" data-listing-date-sort="1717196400000" data-listing-file-modified-sort="1766709938098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/africast/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/africast/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+AFRICAST
+</h5>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
 
-</section>
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9yZWNhc3Rpbmc='); return false;">Forecasting</div>
 
-</main> <!-- /main -->
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TE1JQ3M='); return false;">LMICs</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QUZSSUNBU1Q='); return false;">AFRICAST</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>An online forecasting training programme for learners across Africa.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
+</div>
+<div class="listing-date">
+Jun 1, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW50ZXJkaXNjaXBsaW5hcml0eSUyQ1Jlc2VhcmNoJTIwQ3VsdHVyZSUyQ0NvbGxhYm9yYXRpb24=" data-listing-date-sort="1717196400000" data-listing-file-modified-sort="1766712458645" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/crosslab_exchange/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/crosslab_exchange/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Research Group Exchange Series
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJkaXNjaXBsaW5hcml0eQ=='); return false;">Interdisciplinarity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBDdWx0dXJl'); return false;">Research Culture</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29sbGFib3JhdGlvbg=='); return false;">Collaboration</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>An interdisciplinary initiative to build collaborative research culture across Cardiff University and partner institutions.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
+</div>
+<div class="listing-date">
+Jun 1, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Rm9yZWNhc3RpbmclMkNSJTJDTE1JQ3MlMkNJbXBhY3QlMkNLbm93bGVkZ2UlMjBTaGFyaW5n" data-listing-date-sort="1515110400000" data-listing-file-modified-sort="1766709800215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../projects/democratising_forecasting/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/democratising_forecasting/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Democratising Forecasting
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9yZWNhc3Rpbmc='); return false;">Forecasting</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TE1JQ3M='); return false;">LMICs</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW1wYWN0'); return false;">Impact</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('S25vd2xlZGdlJTIwU2hhcmluZw=='); return false;">Knowledge Sharing</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Train the trainers workshops in low/lower/middle income countries to promote the importance of forecasting and ‘train the trainers’ in the principles of forecasting using R…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bahman Rostami-Tabar
+</div>
+<div class="listing-date">
+Jan 5, 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

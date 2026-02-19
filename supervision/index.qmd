@@ -29,7 +29,7 @@ toc: true
 
 
 
-## Founding Director
+## Founder & Director
 
 ```{=html}
 <div class="page-container">
@@ -69,9 +69,9 @@ toc: true
                 <div class="participant-name">Dr. Thanos Goltsos</div>
                 <div class="participant-affiliation">Cardiff University</div>
                 <ul class="participant-links">
-                    <li><a href="https://hdrwales.org.uk/portfolio/dr-zihao-wang/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://profiles.cardiff.ac.uk/staff/goltsosa" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
                     <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/zihao-wang-040b63244/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/thanos-goltsos-a6878b92/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
             
@@ -82,9 +82,9 @@ toc: true
                 <div class="participant-name">Dr. Xun (Paul) Wang</div>
                 <div class="participant-affiliation">Cardiff University</div>
                 <ul class="participant-links">
-                    <li><a href="https://experts.exeter.ac.uk/45619-diego-bermudez/about" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://profiles.cardiff.ac.uk/staff/wangx46" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
                     <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/diegobermudezb/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/xun-wang-cardiff/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
 
@@ -94,9 +94,9 @@ toc: true
                 <div class="participant-name">Dr. Danni Zhang</div>
                 <div class="participant-affiliation">Cardiff University</div>
                 <ul class="participant-links">
-                    <li><a href="https://experts.exeter.ac.uk/45619-diego-bermudez/about" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://profiles.cardiff.ac.uk/staff/zhangd38" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
                     <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/diegobermudezb/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/danni-zhang-8505041ba/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
 
@@ -119,13 +119,13 @@ toc: true
             
             <!-- Participant 1 -->
             <div class="participant-card">
-                <img src="img/thanos.avif" alt="Dr. Thanos Goltsos" class="participant-avatar">
+                <img src="#" alt="Mohammed Mohammed" class="participant-avatar">
                 <div class="participant-name">Prof. Mohammed Mohammed</div>
                 <div class="participant-affiliation">The Startegy Uni-NHS</div>
                 <ul class="participant-links">
-                    <li><a href="https://hdrwales.org.uk/portfolio/dr-zihao-wang/" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
-                    <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/zihao-wang-040b63244/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.strategyunitwm.nhs.uk/author/mohammed-amin-mohammed" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="https://www.bradford.ac.uk/staff/mamohammed5/" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
+                    <li><a href="#" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
             
@@ -138,19 +138,19 @@ toc: true
                 <ul class="participant-links">
                     <li><a href="https://experts.exeter.ac.uk/45619-diego-bermudez/about" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
                     <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/diegobermudezb/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/lailaakhlaghi/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
 
                         <!-- Participant 3 -->
             <div class="participant-card">
-                <img src="img/johann.jpeg" alt="Danni Zhang" class="participant-avatar">
+                <img src="img/johann.jpeg" alt="Johann Robette" class="participant-avatar">
                 <div class="participant-name">Mr. Johann Robette</div>
                 <div class="participant-affiliation">Vekia</div>
                 <ul class="participant-links">
-                    <li><a href="https://experts.exeter.ac.uk/45619-diego-bermudez/about" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
+                    <li><a href="#" target="_blank" class="website" title="Website"><i class="bi bi-globe"></i></a></li>
                     <li><a href="#" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/diegobermudezb/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/johann-robette/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
 

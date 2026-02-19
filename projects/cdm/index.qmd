@@ -1,0 +1,21 @@
+---
+title: "Workshop-Spatiotemporal-Modelling-of-Climate-Sensitive-Diseases"
+description: "Theoretical and practical Introduction to spatiotemporal modelling for climate-sensitive disease"
+author: "Bahman Rostami-Tabar"
+date: "2026-02-23"
+image: "rwanda_modelling.png"
+categories:
+  - Uncertainty
+  - Climate diseases
+  - Forecasting
+  - Spatiotemporal modelling
+  - Workshop
+  - Africa
+
+listing:
+  contents: /
+  type: default # Explore more listing types; default, grid or table
+  filter-ui: true
+link-external-newwindow: true
+---
+
