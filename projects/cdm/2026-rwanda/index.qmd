@@ -1,7 +1,7 @@
 ---
 title: "Workshop-2026-Rwanda"
 author: "Bahman Rostami-Tabar"
-date: "23/02/2026"
+date: "18/02/2026"
 image: "rwanda_modelling.png"
 categories:
   - Uncertainty
