@@ -1,12 +1,5 @@
 [
   {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/first-post/index.html",
-      "/blog/2025-10-28-informs/index.html"
-    ]
-  },
-  {
     "listing": "/talks/index.html",
     "items": [
       "/talks/2026/2026-1-phdfoundation/index.html",
@@ -107,6 +100,13 @@
       "/publications/conference-proceedings/2012-forecasting-autoregressive.html",
       "/publications/conference-proceedings/2008-hybrid-neural-lumpy-demand.html",
       "/publications/phdthesis/my-phd.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/first-post/index.html",
+      "/blog/2025-decision/index.html"
     ]
   }
 ]

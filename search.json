@@ -49,11 +49,11 @@
     "text": "Graduated MS.c.\n** To be Completed **"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "",
+    "objectID": "blog/2025-decision/index.html",
+    "href": "blog/2025-decision/index.html",
+    "title": "International Symposium of Forecasting, University of Oxford",
     "section": "",
-    "text": "The Best Point Forecast: A Story About Asking the Right Question\n\n\nChoosing the right point forecast is not about finding the most accurate model — it is about knowing what error you are trying to minimize. Using a log-normal time series where the true distribution is known, this post shows how MSE, MAE, and MAPE each lead to a mathematically different optimal forecast, and why aligning your training loss with your evaluation metric — and both with your business decision — is the step most forecasters skip.\n\n\n\n\n\nFeb 24, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nInternational Symposium of Forecasting, University of Oxford\n\n\nAttending ISF in oxford\n\n\n\n\n\nMay 22, 2024\n\n\nHarsha\n\n\n\n\n\nNo matching items"
+    "text": "Last week I attended the 42nd International Symposium of Forecasting at the University of Oxford. This was my first in-person conference since the beginning of the Covid-19 pandemic. I met many colleagues and friends and listened to many inspiring talks.\nI presented two papers myself and co-authored four others presented by my colleagues and Ph.D. students.\nBelow you can access these presentations:\nProbabilistic Forecasting of hourly Emergency Departement arrivals, in collaboration with Jethro Browell & Ivan Svetunkov\nHierarchical forecasting of vaccine supply chain, in collaboration with John Snow, Inc\nForecasting for unplanned care: a literature review, in collaboration with Mingzhe Shi and Daniel Gartner\nRevisiting forecasting for Emergency Department staffing, in collaboration with Shixuan Wang and Stephen Disney\nForecasting length of stay in trauma network, in collaboration with Zihao Wang, Jane Haider and Mohamed Naim\nForecasting for lead-time period by temporal aggregation: Whether to combine and how, in collaboration with Thanos Goltsos and Shixuan Wang"
   },
   {
     "objectID": "index.html",
@@ -1491,11 +1491,11 @@
     "text": "Address\nMail: Cardiff Business School, Cardiff University.\nOffice: Office C08, Aberconway Building, 3 Colum Drive, CF10 3EU, Cardiff, Wales, United Kingdom"
   },
   {
-    "objectID": "blog/2025-10-28-informs/index.html",
-    "href": "blog/2025-10-28-informs/index.html",
-    "title": "International Symposium of Forecasting, University of Oxford",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "",
     "section": "",
-    "text": "Last week I attended the 42nd International Symposium of Forecasting at the University of Oxford. This was my first in-person conference since the beginning of the Covid-19 pandemic. I met many colleagues and friends and listened to many inspiring talks.\nI presented two papers myself and co-authored four others presented by my colleagues and Ph.D. students.\nBelow you can access these presentations:\nProbabilistic Forecasting of hourly Emergency Departement arrivals, in collaboration with Jethro Browell & Ivan Svetunkov\nHierarchical forecasting of vaccine supply chain, in collaboration with John Snow, Inc\nForecasting for unplanned care: a literature review, in collaboration with Mingzhe Shi and Daniel Gartner\nRevisiting forecasting for Emergency Department staffing, in collaboration with Shixuan Wang and Stephen Disney\nForecasting length of stay in trauma network, in collaboration with Zihao Wang, Jane Haider and Mohamed Naim\nForecasting for lead-time period by temporal aggregation: Whether to combine and how, in collaboration with Thanos Goltsos and Shixuan Wang"
+    "text": "The Best Point Forecast: A Story About Asking the Right Question\n\n\nChoosing the right point forecast is not about finding the most accurate model — it is about knowing what error you are trying to minimize. Using a log-normal time series where the true distribution is known, this post shows how MSE, MAE, and MAPE each lead to a mathematically different optimal forecast, and why aligning your training loss with your evaluation metric — and both with your business decision — is the step most forecasters skip.\n\n\n\n\n\nFeb 24, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nInternational Symposium of Forecasting, University of Oxford\n\n\nAttending ISF in oxford\n\n\n\n\n\nMay 22, 2024\n\n\nHarsha\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/first-post/index.html",
