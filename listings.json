@@ -1,51 +1,10 @@
 [
   {
-    "listing": "/talks/index.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/talks/2026/2026-1-phdfoundation/index.html",
-      "/talks/2025/2025-1-refrence/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/crosslab_exchange/index.html",
-    "items": [
-      "/projects/crosslab_exchange/idea/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/africast/index.html",
-    "items": [
-      "/projects/africast/africast-idea/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/summer_school/index.html",
-    "items": [
-      "/projects/summer_school/2026-ss/index.html",
-      "/projects/summer_school/summer-school/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/cdm/index.html",
-      "/projects/summer_school/index.html",
-      "/projects/africast/index.html",
-      "/projects/crosslab_exchange/index.html",
-      "/projects/democratising_forecasting/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/democratising_forecasting/index.html",
-    "items": [
-      "/projects/democratising_forecasting/orms-article/index.html",
-      "/projects/democratising_forecasting/df/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/cdm/index.html",
-    "items": [
-      "/projects/cdm/2026-rwanda/index.html"
+      "/blog/2025-decision/index.html",
+      "/blog/2025-forecasting_problem/index.html",
+      "/blog/first-post/index.html"
     ]
   },
   {
@@ -103,10 +62,52 @@
     ]
   },
   {
-    "listing": "/blog/index.html",
+    "listing": "/projects/cdm/index.html",
     "items": [
-      "/blog/2025-decision/index.html",
-      "/blog/first-post/index.html"
+      "/projects/cdm/2026-rwanda/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/democratising_forecasting/index.html",
+    "items": [
+      "/projects/democratising_forecasting/orms-article/index.html",
+      "/projects/democratising_forecasting/df/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/cdm/index.html",
+      "/projects/summer_school/index.html",
+      "/projects/africast/index.html",
+      "/projects/crosslab_exchange/index.html",
+      "/projects/democratising_forecasting/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/summer_school/index.html",
+    "items": [
+      "/projects/summer_school/2026-ss/index.html",
+      "/projects/summer_school/summer-school/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/africast/index.html",
+    "items": [
+      "/projects/africast/africast-idea/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/crosslab_exchange/index.html",
+    "items": [
+      "/projects/crosslab_exchange/idea/index.html"
+    ]
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/2026/2026-1-phdfoundation/index.html",
+      "/talks/2025/2025-1-refrence/index.html"
     ]
   }
 ]
