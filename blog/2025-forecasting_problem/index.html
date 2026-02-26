@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Bahman Rostami-Tabar">
-<meta name="dcterms.date" content="2026-02-26">
+<meta name="dcterms.date" content="2026-02-27">
 <meta name="description" content="Decisions are something we control — a choice from a known set of options, as opposed to things we merely observe or things that happen to us. This post uses public health and supply chain to illustrate how recognizing decisions — especially the ones made on autopilot — is the first step to making them better.">
 
 <title>Do You Actually Have a Forecasting Problem?</title>
@@ -148,7 +148,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#do-i-have-a-forecasting-problem" id="toc-do-i-have-a-forecasting-problem" class="nav-link active" data-scroll-target="#do-i-have-a-forecasting-problem">Do I Have a Forecasting Problem?</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#do-i-have-a-forecasting-problem" id="toc-do-i-have-a-forecasting-problem" class="nav-link" data-scroll-target="#do-i-have-a-forecasting-problem">Do I Have a Forecasting Problem?</a></li>
   <li><a href="#alternative-techniques-worth-considering-first" id="toc-alternative-techniques-worth-considering-first" class="nav-link" data-scroll-target="#alternative-techniques-worth-considering-first">Alternative Techniques Worth Considering First</a></li>
   <li><a href="#these-techniques-often-work-together" id="toc-these-techniques-often-work-together" class="nav-link" data-scroll-target="#these-techniques-often-work-together">These Techniques Often Work Together</a></li>
   <li><a href="#two-real-world-examples" id="toc-two-real-world-examples" class="nav-link" data-scroll-target="#two-real-world-examples">Two Real-World Examples</a></li>
@@ -166,6 +167,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-categories">
     <div class="quarto-category">forecasting</div>
     <div class="quarto-category">public health</div>
+    <div class="quarto-category">problem-framing</div>
+    <div class="quarto-category">analytical-pitfalls</div>
   </div>
   </div>
 
@@ -188,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 26, 2026</p>
+      <p class="date">February 27, 2026</p>
     </div>
   </div>
   
@@ -200,7 +203,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Your country just reported an unusual spike in malaria cases. Your inventory management team is under pressure to avoid another stockout of contraceptives. Your ministry wants a five-year projection of vaccine demand to present to donors. In each of these situations, someone will inevitably say: <em>“we need a forecasting model.”</em></p>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p>In each of the following hypothetical situations, someone will inevitably say: “let’s build a forecasting model.” But is that actually the right tool for the job?</p>
+<div class="grid">
+<div class="g-col-4">
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>🦟 <strong>Malaria surveillance</strong></p>
+<p>Your country just reported a spike in cases. Someone says: <em>“we need a forecasting model.”</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-4">
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>💊 <strong>Contraceptive supply</strong></p>
+<p>Your inventory team is under pressure to avoid another stockout. Someone says: <em>“we need a forecasting model.”</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-4">
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>💉 <strong>Vaccine demand</strong></p>
+<p>Your ministry needs a five-year projection for donors. Someone says: <em>“we need a forecasting model.”</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -215,6 +261,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Forecasting is almost always a means to an end, not the goal itself. If you mistake a <strong>recommendation</strong> problem, <strong>anomaly detection</strong>, or <strong>a simple decision</strong> problem for a forecasting one, you might end up with a high-accuracy model that solves entirely the wrong problem. For example, in global health, where data capacity is often limited and decisions are genuinely life-or-death, that mistake is costly — not just in wasted resources, but in the opportunity cost of not building something simpler that would have worked better.</p>
 </div>
 </div>
+</section>
 <section id="do-i-have-a-forecasting-problem" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="do-i-have-a-forecasting-problem">Do I Have a Forecasting Problem?</h2>
 <p>Before writing a single line of code, work through the four diagnostic questions below. They are designed to help you move from a vague analytical ask to a clearly framed problem — and to catch the most common traps along the way.</p>
