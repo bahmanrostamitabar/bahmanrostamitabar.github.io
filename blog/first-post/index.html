@@ -8,7 +8,7 @@
 
 <meta name="author" content="Bahman Rostami-Tabar">
 <meta name="dcterms.date" content="2026-02-24">
-<meta name="description" content="Attending ISF in oxford">
+<meta name="description" content="Choosing the right point forecast is not about finding the most accurate model — it is about knowing what error you are trying to minimize. Using a log-normal time series where the true distribution is known, this post shows how MSE, MAE, and MAPE each lead to a mathematically different optimal forecast, and why aligning your training loss with your evaluation metric — and both with your business decision — is the step most forecasters skip.">
 
 <title>The Best Point Forecast: A Story About Asking the Right Question</title>
 <style>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="The Best Point Forecast: A Story About Asking the Right Question">
-<meta property="og:description" content="Attending ISF in oxford">
+<meta property="og:description" content="Choosing the right point forecast is not about finding the most accurate model — it is about knowing what error you are trying to minimize. Using a log-normal time series where the true distribution is known, this post shows how MSE, MAE, and MAPE each lead to a mathematically different optimal forecast, and why aligning your training loss with your evaluation metric — and both with your business decision — is the step most forecasters skip.">
 <meta property="og:image" content="https://bahmanrostamitabar.github.io/blog/first-post/cover.jpg">
 </head>
 
@@ -159,6 +159,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#a-framework-start-at-the-end" id="toc-a-framework-start-at-the-end" class="nav-link" data-scroll-target="#a-framework-start-at-the-end">A Framework: Start at the End</a></li>
   <li><a href="#the-punchline" id="toc-the-punchline" class="nav-link" data-scroll-target="#the-punchline">The Punchline</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
   </ul>
 </nav>
     </div>
@@ -171,13 +172,13 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-categories">
     <div class="quarto-category">forecasting</div>
     <div class="quarto-category">loss functions</div>
-    <div class="quarto-category">decision theory</div>
+    <div class="quarto-category">error measures</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Attending ISF in oxford
+    Choosing the right point forecast is not about finding the most accurate model — it is about knowing what error you are trying to minimize. Using a log-normal time series where the true distribution is known, this post shows how MSE, MAE, and MAPE each lead to a mathematically different optimal forecast, and why aligning your training loss with your evaluation metric — and both with your business decision — is the step most forecasters skip.
   </div>
 </div>
 
@@ -218,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-figure-that-started-the-conversation" class="level2">
 <h2 class="anchored" data-anchor-id="the-figure-that-started-the-conversation">The Figure That Started the Conversation</h2>
 <p>The plot below shows a time series generated from a log-normal distribution. The historical observations are on the left — volatile, spiky, with a few dramatic peaks pulled upward by the distribution’s heavy right tail. On the right, the grey shaded region shows the future prediction interval, derived analytically from the known distribution.</p>
-<p><img src="img_point/different_measure.png" class="img-fluid" alt="Time series from a log-normal distribution with three horizontal forecast lines corresponding to minimum MSE (mean), MAE (median), and MAPE (mode)."></p>
+<p><img src="img_point/different_measure.png" class="img-fluid" style="width:70.0%" alt="Time series from a log-normal distribution with three horizontal forecast lines corresponding to minimum MSE (mean), MAE (median), and MAPE (mode). "></p>
 <p>Then there are three horizontal lines. Three different answers to the question <em>“what is the best point forecast?”</em> — all of them correct, in their own way:</p>
 <ul>
 <li>The <strong>blue line (~4.5)</strong> is the mean. It sits noticeably high, dragged upward by the tail.</li>
@@ -283,9 +284,8 @@ Note
 <p>This is where the two worlds connect, through the concept of <strong>consistent loss functions</strong>.</p>
 <p>The <strong>out-of-sample metric</strong> tells you <em>what</em> you want to produce: it identifies the target functional of the predictive distribution. The <strong>training loss</strong> is the mechanism by which your model <em>learns</em> to produce that functional from data. For this to work, the two must be aligned:</p>
 <ul>
-<li>Train with <strong>MSE</strong> → model learns the conditional <strong>mean</strong> → evaluate out-of-sample with MSE. ✅</li>
-<li>Train with <strong>MAE</strong> → model learns the conditional <strong>median</strong> → evaluate with MAE. ✅</li>
-<li>Train with <strong>MAPE-consistent loss</strong> → model targets the <strong>−1 median</strong> → evaluate with MAPE. ✅</li>
+<li>Train with <strong>MSE</strong> → model learns the conditional <strong>mean</strong> → evaluate out-of-sample with MSE or relatee measures like RMSE, RMSSE. ✅</li>
+<li>Train with <strong>MAE</strong> → model learns the conditional <strong>median</strong> → evaluate with MAE, or MASE. ✅</li>
 </ul>
 <p>The failure mode — surprisingly common — is when the training loss and the evaluation metric are <strong>inconsistent</strong>. The model is trained to produce one thing, and then judged on another. It is a bit like training an athlete to run sprints and then entering them in a marathon, and wondering why the results are disappointing.</p>
 </section>
@@ -298,7 +298,7 @@ Note
 </section>
 <section id="the-mape-trap" class="level3">
 <h3 class="anchored" data-anchor-id="the-mape-trap">The MAPE Trap</h3>
-<p>Optimising for MAPE might deliver a lower error score — and perhaps a better performance bonus. But because MAPE systematically pushes forecasts downward, it often produces forecasts that are too conservative for real business decisions. Good for the scorecard, bad for the outcome.</p>
+<p>Optimising for MAPE might deliver a lower error score — and perhaps a better performance bonus. But because MAPE systematically pushes forecasts downward, it often produces forecasts that are too conservative for real business decisions. Good for the scorecard, bad for the outcome.It also does not work well when the data has zeros or near-zeros, which is common in many real-world forecasting problems.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -322,7 +322,8 @@ Warning
 <p><strong>2. Deduce what functional of the predictive distribution you need.</strong></p>
 <p>Do you need the mean? The median? A specific quantile to hit a desired service level? This follows directly from step one.</p>
 <p><strong>3. Pick an error measure — a PFEM — that is consistent with that functional.</strong></p>
-<p>MSE for the mean, MAE for the median, pinball loss for a quantile. This measure should govern <strong>both</strong> how you train your model <em>and</em> how you evaluate it out-of-sample.</p>
+<p>MSE for the mean, MAE for the median, quantile (pinball) loss for a quantile. This measure should govern <strong>both</strong> how you train your model <em>and</em> how you evaluate it out-of-sample.</p>
+<p>For example, a quantile forecast evaluated with pinball loss for inventory replenishment, or MSE if the expectation is what drives the downstream decision.</p>
 <p><strong>4. Only then start modelling, fitting, and forecasting.</strong></p>
 <p>With the objective clearly defined and consistently applied, your model will be trained to produce exactly what the decision requires, and evaluated fairly against that same standard.</p>
 </section>
@@ -334,6 +335,13 @@ Warning
 </blockquote>
 <p>No amount of modelling sophistication, no clever architecture or careful hyperparameter tuning, can compensate for optimising the wrong objective from the start. The best forecasters are not just good at fitting models — they are disciplined about asking, before anything else, <em>what does “best” actually mean here?</em></p>
 <p>Get that question right, align your training loss and your evaluation metric accordingly, and the math will take care of the rest.</p>
+</section>
+<section id="learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="learn-more">Learn more</h2>
+<ul>
+<li><p><a href="https://dfep.netlify.app/sec-quality">Forecast quality</a>-Kolassa, Stephan, Bahman Rostami-Tabar, and Enno Siemsen. Demand forecasting for executives and professionals. Chapman and Hall/CRC, 2023.</p></li>
+<li><p><a href="https://youtu.be/i4E0p7-cx1Q?si=_m6U-FXgzWb5gqA0">Stephan Kolassa, ISF 2024 Practitioner Speaker</a></p></li>
+</ul>
 
 
 </section>
