@@ -149,6 +149,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul class="collapse">
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#we-need-a-forecasting-model" id="toc-we-need-a-forecasting-model" class="nav-link" data-scroll-target="#we-need-a-forecasting-model">We need a forecasting model??</a></li>
   <li><a href="#do-i-have-a-forecasting-problem" id="toc-do-i-have-a-forecasting-problem" class="nav-link" data-scroll-target="#do-i-have-a-forecasting-problem">Do I Have a Forecasting Problem?</a></li>
   <li><a href="#alternative-techniques-worth-considering-first" id="toc-alternative-techniques-worth-considering-first" class="nav-link" data-scroll-target="#alternative-techniques-worth-considering-first">Alternative Techniques Worth Considering First</a></li>
   <li><a href="#these-techniques-often-work-together" id="toc-these-techniques-often-work-together" class="nav-link" data-scroll-target="#these-techniques-often-work-together">These Techniques Often Work Together</a></li>
@@ -205,6 +206,17 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
+<p>Before we dig into the diagnostic, it helps to be precise about what we actually mean by forecasting — because the term gets used loosely, often interchangeably with “predictive analytics” or “predictive AI.” For the purposes of this guide, we define forecasting by three criteria:</p>
+<ul>
+<li><p><strong>It is forward-looking</strong>. A forecast produces estimates of a variable of interest at one or very often more future points in time.</p></li>
+<li><p><strong>It is grounded in history</strong>. A forecast is built on historical observations of the variable you are trying to predict — a time series. Without that sequential historical record, you do not have the raw material for forecasting.</p></li>
+<li><p><strong>It can incorporate external information</strong>. A forecast can — and usually should — include other variables beyond the target itself. Past and future values of exogenous factors like vaccination coverage, weather, rainfall, population mobility, or price changes can all be built into the model.</p></li>
+</ul>
+<p>This is what separates forecasting from a one-off prediction, a risk score, recommendation, anomaly detection, or a classification model.</p>
+<p>All three criteria need to hold. If your problem does not satisfy all of them, you may still have a valuable analytical problem — but it is probably not a forecasting problem.</p>
+</section>
+<section id="we-need-a-forecasting-model" class="level2">
+<h2 class="anchored" data-anchor-id="we-need-a-forecasting-model">We need a forecasting model??</h2>
 <p>In each of the following hypothetical situations, someone will inevitably say: “let’s build a forecasting model.” But is that actually the right tool for the job?</p>
 <div class="grid">
 <div class="g-col-4">
@@ -258,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Do you actually have a forecasting problem?</strong></p>
-<p>Forecasting is almost always a means to an end, not the goal itself. If you mistake a <strong>recommendation</strong> problem, <strong>anomaly detection</strong>, or <strong>a simple decision</strong> problem for a forecasting one, you might end up with a high-accuracy model that solves entirely the wrong problem. For example, in global health, where data capacity is often limited and decisions are genuinely life-or-death, that mistake is costly — not just in wasted resources, but in the opportunity cost of not building something simpler that would have worked better.</p>
+<p>Forecasting is almost always a means to an end, not the goal itself. If you mistake a <strong>recommendation</strong> problem, <strong>anomaly detection</strong>, or <strong>a simple decision</strong> problem for a <strong>forecasting one</strong>, you might end up with a model that solves entirely the wrong problem. For example, in global health, where data capacity is often limited and decisions are genuinely life-or-death, that mistake is costly — not just in wasted resources, but in the opportunity cost of not building something simpler that would have worked better.</p>
 </div>
 </div>
 </section>
