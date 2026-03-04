@@ -8,6 +8,19 @@
     ]
   },
   {
+    "listing": "/projects/democratising_forecasting/index.html",
+    "items": [
+      "/projects/democratising_forecasting/orms-article/index.html",
+      "/projects/democratising_forecasting/df/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/cdm/index.html",
+    "items": [
+      "/projects/cdm/2026-rwanda/index.html"
+    ]
+  },
+  {
     "listing": "/publications/index.html",
     "items": [
       "/publications/books/dfem.html",
@@ -62,16 +75,10 @@
     ]
   },
   {
-    "listing": "/projects/cdm/index.html",
+    "listing": "/projects/reproducibility/index.html",
     "items": [
-      "/projects/cdm/2026-rwanda/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/democratising_forecasting/index.html",
-    "items": [
-      "/projects/democratising_forecasting/orms-article/index.html",
-      "/projects/democratising_forecasting/df/index.html"
+      "/projects/reproducibility/ijf_editor/index.html",
+      "/projects/reproducibility/ijf_readme/index.html"
     ]
   },
   {

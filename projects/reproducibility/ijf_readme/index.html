@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Bahman Rostami-Tabar">
+<meta name="dcterms.date" content="2026-04-03">
+<meta name="description" content="Suggestions to consider when preparing your reprodicubulity package and Readme file">
 
-<title>Talks</title>
+<title>Reproducibility in IJF</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2446905701fbf71fc498c770a811c78f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-2446905701fbf71fc498c770a811c78f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +71,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-venue','listing-location','listing-slides-html','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Talks">
+<meta property="og:title" content="Reproducibility in IJF">
+<meta property="og:description" content="Suggestions to consider when preparing your reprodicubulity package and Readme file">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/projects/reproducibility/ijf_readme/school.svg">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -140,7 +85,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -150,38 +95,38 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> <i class="bi bi-house-door-fill" role="img">
+    <a class="nav-link" href="../../../index.html"> <i class="bi bi-house-door-fill" role="img">
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about/index.html"> 
+    <a class="nav-link" href="../../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../supervision/index.html"> 
+    <a class="nav-link" href="../../../supervision/index.html"> 
 <span class="menu-text">Research Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
+    <a class="nav-link" href="../../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../talks/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications/index.html"> 
+    <a class="nav-link" href="../../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
+    <a class="nav-link" href="../../../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -198,22 +143,43 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UGhEJTIwRm91bmRhdGlvbnM=">PhD Foundations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhcnRv">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2xpZGVz">Slides <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Talks</h1>
+<h1 class="title">Reproducibility in IJF</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">reproducibility</div>
+    <div class="quarto-category">open-science</div>
+    <div class="quarto-category">forecasting</div>
+    <div class="quarto-category">research</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Suggestions to consider when preparing your reprodicubulity package and Readme file
+  </div>
 </div>
 
 
+<div class="quarto-title-meta column-page">
 
-<div class="quarto-title-meta column-page-left">
-
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Bahman Rostami-Tabar </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 3, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -223,141 +189,282 @@ window.Quarto = {
 </header>
 
 
-<style>
-.listing-table td.listing-slides-html a {
-  display: inline-block;
-  padding: 4px 10px;
-  background-color: #007bff;
-  color: white !important;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.listing-table td.listing-slides-pdf a {
-  display: inline-block;
-  padding: 4px 10px;
-  background-color: #6c757d;
-  color: white !important;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.listing-table td.listing-slides-html a:hover,
-.listing-table td.listing-slides-pdf a:hover {
-  opacity: 0.85;
-}
-</style>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<p>Reproducibility is not a bureaucratic checkbox. It is the mechanism by which science earns trust. When another researcher — or a journal reviewer, or a policy-maker relying on your findings — can take your data and code and arrive at exactly the same results you published, your work becomes part of the scientific record in a way that a PDF alone never can.</p>
+<p>This guide walks you through what a reproducibility package needs to contain, how to structure it, and how to document it so that someone who has never seen your project can run it from scratch.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<table class="quarto-listing-table table">
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Examples to learn from
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before you start, it is worth looking at two well-structured reproducibility packages in the wild:</p>
+<ul>
+<li><a href="https://github.com/TimoDimi/replication_triptych">replication_triptych</a> — a clean example of a well-organised replication kit</li>
+<li><a href="https://git.persee.mines-paristech.fr/dennis.van_der_meer/online-probabilistic-forecast-combination">online-probabilistic-forecast-combination</a> — another strong example with clear structure</li>
+</ul>
+<p>Additional guidance is available at the <a href="https://www.cascad.tech/to-do-list-for-a-certification/">CASCAD certification checklist</a>.</p>
+</div>
+</div>
+<hr>
+<section id="what-a-reproducibility-package-must-include" class="level2">
+<h2 class="anchored" data-anchor-id="what-a-reproducibility-package-must-include">What a Reproducibility Package Must Include</h2>
+<p>At its core, a reproducibility package has two non-negotiable components:</p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>📁 All data and code
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Everything necessary to run the reproducibility check must be included — or clearly documented as to where it can be obtained. If a reviewer cannot get the inputs, they cannot verify the outputs.</p>
+</div>
+</div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>📄 A readme file
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A readme file that gives all relevant information needed to actually run the reproducibility check. This is the map to your package — without it, even a perfectly organised repository is hard to navigate.</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="the-readme-file-what-to-cover" class="level2">
+<h2 class="anchored" data-anchor-id="the-readme-file-what-to-cover">The Readme File — What to Cover</h2>
+<p>The readme is the most important document in your package. A reviewer should be able to pick it up, read it top to bottom, and know exactly what to do. Below is everything it needs to address.</p>
+<section id="assembly-date-and-authorship" class="level3">
+<h3 class="anchored" data-anchor-id="assembly-date-and-authorship">📅 Assembly date and authorship</h3>
+<p>State clearly:</p>
+<ul>
+<li>The <strong>date</strong> at which the reproducibility package was assembled</li>
+<li>The <strong>author(s)</strong> of the package and their <strong>contact information</strong> — not just the paper authors, but specifically who to contact if something does not run</li>
+</ul>
+</section>
+<section id="repository-structure" class="level3">
+<h3 class="anchored" data-anchor-id="repository-structure">🗂️ Repository structure</h3>
+<p>Describe the structure of the repository you are providing. For example, if you are separating code, input data, and output data into different folders, say so explicitly and explain what lives where.</p>
+<p>A simple example structure might look like:</p>
+<pre><code>project/
+├── README.md
+├── data/
+│   ├── raw/
+│   └── processed/
+├── code/
+│   ├── 01_clean_data.R
+│   ├── 02_run_model.R
+│   └── 03_produce_figures.R
+└── output/
+    ├── figures/
+    └── tables/</code></pre>
+</section>
+<section id="computing-environment" class="level3">
+<h3 class="anchored" data-anchor-id="computing-environment">💻 Computing environment</h3>
+<p>This is one of the most commonly overlooked sections — and one of the most important. Document:</p>
+<ul>
+<li>The <strong>operating system</strong> and hardware used (see also the section on runtime below)</li>
+<li>The <strong>programming language(s)</strong> and their versions</li>
+<li>All <strong>packages and libraries</strong> required, with their exact versions</li>
+<li>The <strong>licence(s)</strong> applicable to your code</li>
+<li>If you used an environment manager like <code>conda</code> or <code>renv</code>, provide the configuration file (e.g., <code>environment.yml</code>, <code>renv.lock</code>) and instructions for recreating the environment</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Version numbers matter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A package that worked in Python 3.9 may behave differently in Python 3.12. Always pin your versions. If you are not using an environment manager, a simple <code>requirements.txt</code> or <code>sessionInfo()</code> output goes a long way.</p>
+</div>
+</div>
+</section>
+<section id="data-what-it-is-and-how-to-get-it" class="level3">
+<h3 class="anchored" data-anchor-id="data-what-it-is-and-how-to-get-it">🗃️ Data — what it is and how to get it</h3>
+<p>Describe every dataset used in the project. For each one, address:</p>
+<ul>
+<li>What the data is and what format it is in</li>
+<li>Where it comes from and any relevant pre-processing steps applied</li>
+<li>Any usage restrictions or licences that apply</li>
+</ul>
+<p>Then distinguish between two types of datasets:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Sharable data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Non-sharable data</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>For datasets you can share openly, state clearly whether the data is:</p>
+<ul>
+<li><strong>Directly included</strong> in the replication kit (preferred), or</li>
+<li><strong>Available elsewhere</strong> — provide the repository, website, DOI, or access instructions</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>For datasets that cannot be shared due to copyright, NDAs, or restricted access, provide enough information for a third party to obtain it themselves:</p>
+<ul>
+<li><strong>Data provider</strong> name and contact</li>
+<li><strong>Database identifier</strong> — name, DOI, vintage</li>
+<li><strong>Application and registration procedures</strong> required to access it</li>
+<li><strong>Monetary costs</strong> and <strong>time requirements</strong> to obtain access</li>
+<li><strong>Instructions</strong> on which variables and date ranges to request</li>
+<li>Whether a <strong>third party can temporarily access the data</strong> for reproduction purposes (this is sometimes possible under data use agreements)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="which-code-produces-which-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="which-code-produces-which-outputs">📊 Which code produces which outputs</h3>
+<p>This is the section a reviewer will use most. Map every table and figure in your paper to the script that produces it. Be explicit:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 35%">
+<col style="width: 40%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
-<th>
-venue
-</th>
-
-<th>
-location
-</th>
-
-<th>
-slides-html
-</th>
-
-<th>
-slides-pdf
-</th>
-
+<tr class="header">
+<th>Output</th>
+<th>Script</th>
+<th>Notes</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="UGhEJTIwRm91bmRhdGlvbnM=" data-listing-date-sort="1768165200000" data-listing-file-modified-sort="1768254468877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33" data-listing-title-sort="Making slides &amp; delivery tips for scientific presentations" data-listing-filename-sort="index.qmd">
-<td>
-<a href="../talks/2026/2026-1-phdfoundation/index.html" class="title listing-title">Making slides &amp; delivery tips for scientific presentations</a>
-</td>
-<td>
-<span class="listing-date">Jan 12, 2026</span>
-</td>
-<td>
-<span class="listing-venue">Phd Foundations 2026</span>
-</td>
-<td>
-<span class="listing-location">Cardiff, UK</span>
-</td>
-<td>
-<span class="listing-slides-html"><a href="2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" target="_blank">View</a></span>
-</td>
-<td>
-<span class="listing-slides-pdf"><a href="2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.pdf" target="_blank">PDF</a></span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>Table 1</td>
+<td><code>code/02_run_model.R</code></td>
+<td>Runs in approx. 5 minutes</td>
 </tr>
-
-<tr data-index="1" data-categories="UXVhcnRvJTJDU2xpZGVz" data-listing-date-sort="1757970000000" data-listing-file-modified-sort="1766720982480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="58" data-listing-title-sort="Making slides with Quarto" data-listing-filename-sort="index.qmd">
-<td>
-<a href="../talks/2025/2025-1-refrence/index.html" class="title listing-title">Making slides with Quarto</a>
-</td>
-<td>
-<span class="listing-date">Sep 16, 2025</span>
-</td>
-<td>
-<span class="listing-venue">EURO 2025</span>
-</td>
-<td>
-<span class="listing-location">Berlin, Germany</span>
-</td>
-<td>
-<span class="listing-slides-html"><a href="2025/2025-1-refrence/slides/2025-1-refrence_slide.html" target="_blank">View</a></span>
-</td>
-<td>
-<span class="listing-slides-pdf"><a href="2025/2025-1-refrence/slides/2025-1-refrence_slide.pdf" target="_blank">PDF</a></span>
-</td>
-
+<tr class="even">
+<td>Figure 2</td>
+<td><code>code/03_produce_figures.R</code></td>
+<td>Requires processed data from step 1</td>
 </tr>
-
+<tr class="odd">
+<td>Figure 3</td>
+<td><code>code/03_produce_figures.R</code></td>
+<td>—</td>
+</tr>
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+<section id="hardware-and-expected-runtime" class="level3">
+<h3 class="anchored" data-anchor-id="hardware-and-expected-runtime">⏱️ Hardware and expected runtime</h3>
+<p>State:</p>
+<ul>
+<li>The <strong>type of computer</strong> used (processor, RAM, GPU if relevant)</li>
+<li>The <strong>expected runtime</strong> for each major step, or for the full pipeline end-to-end</li>
+</ul>
+<p>This helps a reviewer plan their time and flag immediately if something is taking far longer than expected — which often indicates a setup problem rather than a performance issue.</p>
+</section>
+<section id="special-setup-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="special-setup-requirements">⚙️ Special setup requirements</h3>
+<p>If your code requires anything beyond a standard computing environment, document it explicitly:</p>
+<ul>
+<li>GPU requirements</li>
+<li>Parallel computing setup</li>
+<li>Specific memory requirements</li>
+<li>Access to a cluster or HPC environment</li>
+<li>Any manual steps that cannot be automated</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>If it requires special infrastructure, say so upfront
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not bury GPU or cluster requirements at the end. Put them near the top of the readme so a reviewer knows immediately whether they can run the check on their own machine.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="intermediary-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="intermediary-datasets">Intermediary Datasets</h2>
+<p>Some scripts do not produce final outputs — they transform raw data into processed datasets that other scripts then use. These are <strong>intermediary datasets</strong>, and they deserve special attention.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>As a default, include intermediary datasets in the replication kit.</strong> This allows a reviewer to skip computationally expensive or time-consuming preprocessing steps and still verify the core analytical results.</p>
+<p>For each intermediary dataset, document:</p>
+<ul>
+<li>Which file it is</li>
+<li>Which script generates it</li>
+<li>Where it sits in the pipeline relative to other files</li>
+</ul>
+<p>If intermediary data cannot be reproduced from raw data — due to bugs, time constraints, or insufficient compute — the rest of the verification can still be carried out using the pre-generated intermediary files. Make this explicit in your readme so reviewers know they are not expected to regenerate everything from scratch.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="a-reproducibility-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="a-reproducibility-checklist">A Reproducibility Checklist</h2>
+<p>Use this before submitting your package.</p>
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Data and code</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">All data necessary to run the check is included or access instructions are provided</label></li>
+<li><label><input type="checkbox">All code necessary to run the check is included</label></li>
+<li><label><input type="checkbox">Sharable datasets are either included or linked with a stable URL or DOI</label></li>
+<li><label><input type="checkbox">Non-sharable datasets are documented with full access instructions</label></li>
+</ul>
+<p><strong>Readme</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Assembly date is stated</label></li>
+<li><label><input type="checkbox">Author(s) and contact information are provided</label></li>
+<li><label><input type="checkbox">Repository structure is described</label></li>
+<li><label><input type="checkbox">Computing environment, languages, packages, and versions are documented</label></li>
+<li><label><input type="checkbox">Environment recreation instructions are provided (e.g., <code>conda</code>, <code>renv</code>)</label></li>
+<li><label><input type="checkbox">Each table and figure is mapped to the script that produces it</label></li>
+<li><label><input type="checkbox">Hardware used and expected runtimes are stated</label></li>
+<li><label><input type="checkbox">Any special setup requirements are flagged clearly</label></li>
+<li><label><input type="checkbox">Intermediary datasets are identified and their generating scripts are named</label></li>
+<li><label><input type="checkbox">Licences for code and data are stated</label></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>Reproducibility is not something you retrofit at the end of a project. The easiest way to build a clean package is to maintain it as you go — organising your repository, documenting your environment, and keeping a running log of which script produces what. By the time you submit, most of the work will already be done.</p>
+<p>A package that someone else can actually run is one of the most generous things a researcher can offer to their field.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
