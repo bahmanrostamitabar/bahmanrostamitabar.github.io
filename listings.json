@@ -84,6 +84,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/reproducibility/index.html",
       "/projects/cdm/index.html",
       "/projects/summer_school/index.html",
       "/projects/africast/index.html",
