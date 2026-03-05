@@ -336,6 +336,27 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="intermediary-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="intermediary-datasets">Intermediary Datasets</h3>
+<p>Some scripts do not produce final outputs — they transform raw data into processed datasets that other scripts then use. These are <strong>intermediary datasets</strong>, and they deserve special attention.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>As a default, include intermediary datasets in the replication kit.</strong> This allows a reviewer to skip computationally expensive or time-consuming preprocessing steps and still verify the core analytical results.</p>
+<p>For each intermediary dataset, document:</p>
+<ul>
+<li>Which file it is</li>
+<li>Which script generates it</li>
+<li>Where it sits in the pipeline relative to other files</li>
+</ul>
+<p>If intermediary data cannot be reproduced from raw data — due to bugs, time constraints, or insufficient compute — the rest of the verification can still be carried out using the pre-generated intermediary files. Make this explicit in your readme so reviewers know they are not expected to regenerate everything from scratch.</p>
+</div>
+</div>
+</div>
+</section>
 <section id="which-code-produces-which-outputs" class="level3">
 <h3 class="anchored" data-anchor-id="which-code-produces-which-outputs">📊 Which code produces which outputs</h3>
 <p>This is the section a reviewer will use most. Map every table and figure in your paper to the script that produces it. Be explicit:</p>
@@ -405,27 +426,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
-<section id="intermediary-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="intermediary-datasets">Intermediary Datasets</h2>
-<p>Some scripts do not produce final outputs — they transform raw data into processed datasets that other scripts then use. These are <strong>intermediary datasets</strong>, and they deserve special attention.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>As a default, include intermediary datasets in the replication kit.</strong> This allows a reviewer to skip computationally expensive or time-consuming preprocessing steps and still verify the core analytical results.</p>
-<p>For each intermediary dataset, document:</p>
-<ul>
-<li>Which file it is</li>
-<li>Which script generates it</li>
-<li>Where it sits in the pipeline relative to other files</li>
-</ul>
-<p>If intermediary data cannot be reproduced from raw data — due to bugs, time constraints, or insufficient compute — the rest of the verification can still be carried out using the pre-generated intermediary files. Make this explicit in your readme so reviewers know they are not expected to regenerate everything from scratch.</p>
-</div>
-</div>
-</div>
-</section>
 <section id="a-reproducibility-checklist" class="level2">
 <h2 class="anchored" data-anchor-id="a-reproducibility-checklist">A Reproducibility Checklist</h2>
 <p>Use this before submitting your package.</p>
@@ -441,6 +441,7 @@ ul.task-list li input[type="checkbox"] {
 <li><label><input type="checkbox">All code necessary to run the check is included</label></li>
 <li><label><input type="checkbox">Sharable datasets are either included or linked with a stable URL or DOI</label></li>
 <li><label><input type="checkbox">Non-sharable datasets are documented with full access instructions</label></li>
+<li><label><input type="checkbox">Intermediary datasets are identified and their generating scripts are named</label></li>
 </ul>
 <p><strong>Readme</strong></p>
 <ul class="task-list">
@@ -452,7 +453,6 @@ ul.task-list li input[type="checkbox"] {
 <li><label><input type="checkbox">Each table and figure is mapped to the script that produces it</label></li>
 <li><label><input type="checkbox">Hardware used and expected runtimes are stated</label></li>
 <li><label><input type="checkbox">Any special setup requirements are flagged clearly</label></li>
-<li><label><input type="checkbox">Intermediary datasets are identified and their generating scripts are named</label></li>
 <li><label><input type="checkbox">Licences for code and data are stated</label></li>
 </ul>
 </div>
