@@ -116,7 +116,7 @@
     "href": "blog/index.html",
     "title": "",
     "section": "",
-    "text": "The Kurdish People\n\n\nHistory, Identity, and the Struggle for Recognition\n\n\n\n\n\n\n\n\nMar 6, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nDo You Actually Have a Forecasting Problem?\n\n\n\n\n\nForecasting is one of the most overused tools in data science. Before you build a model, this guide walks you through a simple diagnostic to help you figure out whether forecasting is actually what your problem needs — or whether something else would work better.\n\n\n\n\n\nFeb 27, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Is a Decision?\n\n\n\n\n\nDecisions are something we control — a choice from a known set of options, as opposed to things we merely observe or things that happen to us. This post uses public health and supply chain to illustrate how recognizing decisions — especially the ones made on autopilot — is the first step to making them better.\n\n\n\n\n\nFeb 26, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Is the Best Point Forecast?\n\n\n\n\n\nChoosing the right point forecast is not about finding the most accurate model — it is about knowing what error you are trying to minimize. Using a log-normal time series where the true distribution is known, this post shows how MSE, MAE, and MAPE each lead to a mathematically different optimal forecast, and why aligning your training loss with your evaluation metric — and both with your business decision — is the step most forecasters skip.\n\n\n\n\n\nFeb 24, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\nNo matching items"
+    "text": "Understanding the Kurds: A Starting Point\n\n\nFor those just starting to learn about the Kurdish people-History, Identity, and the Struggle for Recognition\n\n\n\n\n\n\n\n\nMar 6, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nDo You Actually Have a Forecasting Problem?\n\n\n\n\n\nForecasting is one of the most overused tools in data science. Before you build a model, this guide walks you through a simple diagnostic to help you figure out whether forecasting is actually what your problem needs — or whether something else would work better.\n\n\n\n\n\nFeb 27, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Is a Decision?\n\n\n\n\n\nDecisions are something we control — a choice from a known set of options, as opposed to things we merely observe or things that happen to us. This post uses public health and supply chain to illustrate how recognizing decisions — especially the ones made on autopilot — is the first step to making them better.\n\n\n\n\n\nFeb 26, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Is the Best Point Forecast?\n\n\n\n\n\nChoosing the right point forecast is not about finding the most accurate model — it is about knowing what error you are trying to minimize. Using a log-normal time series where the true distribution is known, this post shows how MSE, MAE, and MAPE each lead to a mathematically different optimal forecast, and why aligning your training loss with your evaluation metric — and both with your business decision — is the step most forecasters skip.\n\n\n\n\n\nFeb 24, 2026\n\n\nBahman Rostami-Tabar\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -1640,49 +1640,49 @@
   {
     "objectID": "blog/kurds/index.html",
     "href": "blog/kurds/index.html",
-    "title": "The Kurdish People",
+    "title": "Understanding the Kurds: A Starting Point",
     "section": "",
     "text": "“Kurdish people in Iran seek freedom, dignity, and the right to shape their own future. This struggle is shared — calling it ‘separatism’ does not change the truth.”"
   },
   {
     "objectID": "blog/kurds/index.html#origins-and-culture",
     "href": "blog/kurds/index.html#origins-and-culture",
-    "title": "The Kurdish People",
+    "title": "Understanding the Kurds: A Starting Point",
     "section": "Origins and Culture",
     "text": "Origins and Culture\nHistorians generally trace Kurdish origins to the Iranian branch of the Indo-European family, and the Kurds link their heritage to the Medes, an ancient Middle Eastern people. They possess a unique cultural identity, complete with traditional dress, music, cuisine, and a language that features multiple dialects including Sorani, Kurmanji, Zazaki and Gorani.\n\n\n\n\n\n\nTip🎶 A Living Culture\n\n\n\nWhile the majority of Kurds are Sunni Muslim, their population also includes significant religious minorities such as Yazidis Yarsanism/Kaka’i, Alevis, Christians, Jews, and Zoroastrians. Kurdish identity is inseparable from its music, poetry, oral tradition, and deep connection to the land."
   },
   {
     "objectID": "blog/kurds/index.html#history-and-the-division-of-kurdistan",
     "href": "blog/kurds/index.html#history-and-the-division-of-kurdistan",
-    "title": "The Kurdish People",
+    "title": "Understanding the Kurds: A Starting Point",
     "section": "History and the Division of Kurdistan",
     "text": "History and the Division of Kurdistan\nThe term “Kurdistan” was first established in the 12th century by a Turkish Seljuk sultan in recognition of the region’s distinct personality. For several centuries, Kurdish principalities enjoyed a golden age of significant autonomy and cultural flourishing while living under the broader umbrellas of the Ottoman and Persian empires.\n\nThe Broken Promise\nThe fate of the Kurds changed drastically after the fall of the Ottoman Empire following World War I:\n\n\n\n\n\n\n\n\nTreaty\nYear\nOutcome for Kurds\n\n\n\n\nTreaty of Sèvres\n1920\nRecommended an independent Kurdish state\n\n\nTreaty of Lausanne\n1923\nDivided Kurdish territory among Turkey, Iran, Iraq, and Syria\n\n\n\nThe 1923 Treaty of Lausanne divided the Kurdish territory among the newly formed borders of Turkey, Iran, and Iraq, while France annexed the Kurdish provinces of Jazira and Kurd-Dagh into its mandate in Syria. Deprived of their autonomy, the Kurds faced forced assimilation by these new nation-states."
   },
   {
     "objectID": "blog/kurds/index.html#modern-struggles-and-repression",
     "href": "blog/kurds/index.html#modern-struggles-and-repression",
-    "title": "The Kurdish People",
+    "title": "Understanding the Kurds: A Starting Point",
     "section": "Modern Struggles and Repression",
     "text": "Modern Struggles and Repression\nSince their division, Kurdish communities have faced severe repression, displacement, and violence from authoritarian regimes.\n\n🇸🇾 Syria🇮🇶 Iraq🇹🇷 Turkey🇮🇷 Iran\n\n\nBefore the civil war, Syrian Kurds faced systemic discrimination through the 1962 census that stripped hundreds of thousands of their citizenship, leaving them stateless “foreigners” in their own land. Under the Ba’athist “Arab Belt” policy, the government suppressed Kurdish language and culture while seizing ancestral lands to settle Arab populations in an attempt to forcibly Arabize the region. During the recent civil war, Kurds attempted to build their own enclave. They served as vital ground fighters in the campaign to defeat the Islamic State, but their dreams of autonomy were sidelined by a US decision to prioritise relations with Turkey over Kurdish aspirations.\n\n\nKurds in Iraq faced severe repression under Saddam Hussein’s regime, most notably during the Anfal campaign, when Iraqi forces destroyed thousands of villages, carried out mass arrests and executions, and used chemical weapons against civilians in an effort to suppress Kurdish resistance and control the region., though the Kurds were eventually able to establish a semi-autonomous governing zone after the 1991 Gulf War.\n\n\nA long and bloody conflict between the government and the PKK — a leftist Kurdish group initially seeking an independent state and later autonomy — has resulted in over 40,000 deaths and massive displacement in the country’s south-east.\n\n\nKurdish regions have a long record of resisting central authority dating back to 1920th, serving as a major flashpoint during the 1979 revolution and, more recently, during nationwide anti-government protests in 2022 and late 2025 into early 2026."
   },
   {
     "objectID": "blog/kurds/index.html#the-peshmerga",
     "href": "blog/kurds/index.html#the-peshmerga",
-    "title": "The Kurdish People",
+    "title": "Understanding the Kurds: A Starting Point",
     "section": "The Peshmerga",
     "text": "The Peshmerga\nCaught in the volatile politics of the Middle East, the Kurds have heavily relied on their homegrown militia, known as the peshmerga. These fighters are renowned for their effectiveness, mobility, and deep knowledge of the mountainous terrain.\n\n\n\n\n\n\nImportant🏔️ No Friends but the Mountains\n\n\n\nDue to a long history of being exploited by outside powers and having promises of a homeland repeatedly dashed, the Kurds have adopted a famous and somber motto:\n“The Kurds have no friends but the mountains.”"
   },
   {
     "objectID": "blog/kurds/index.html#a-federal-vision",
     "href": "blog/kurds/index.html#a-federal-vision",
-    "title": "The Kurdish People",
+    "title": "Understanding the Kurds: A Starting Point",
     "section": "A Federal Vision",
     "text": "A Federal Vision\nMany Iranian Kurdish political movements have argued for a federal or confederal system, where Kurdish regions manage their own affairs while remaining part of the Iranian state:\n\nKurdish provinces would govern their own cultural, educational, and regional affairs\nNational matters — foreign policy, defence — would remain with the central government\nAll citizens would benefit from free political parties, civil rights, and fair elections"
   },
   {
     "objectID": "blog/kurds/index.html#democracy-for-all",
     "href": "blog/kurds/index.html#democracy-for-all",
-    "title": "The Kurdish People",
+    "title": "Understanding the Kurds: A Starting Point",
     "section": "Democracy for All",
     "text": "Democracy for All\nAnother key point that often comes before a federal vision is democracy in all of Iran. From this view, the Kurdish issue cannot be solved in isolation — it is connected to broader political freedoms for everyone in the country.\nKurdish political movements have organised structured parties, associations, and social organisations that represent Kurdish society, with military structures described primarily as forces intended to protect the population, rather than to pursue broader military ambitions. They have been doing this for over 70 years\n\n\n\n\n\n\nCaution🕊️ The Ultimate Vision\n\n\n\n\n“A free Kurdistan within a democratic, federal/confederal Iran — where Kurdish people can govern their local affairs, preserve their language and culture, and participate equally in the political life of the country.”"
   },
