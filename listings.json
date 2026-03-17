@@ -1,15 +1,58 @@
 [
   {
-    "listing": "/projects/democratising_forecasting/index.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/projects/democratising_forecasting/orms-article/index.html",
-      "/projects/democratising_forecasting/df/index.html"
+      "/blog/kurds/index.html",
+      "/blog/2026_research_leader/index.html",
+      "/blog/2026-write-intro/index.html",
+      "/blog/2025-forecasting_problem/index.html",
+      "/blog/2025-decision/index.html",
+      "/blog/first-post/index.html"
     ]
   },
   {
-    "listing": "/projects/cdm/index.html",
+    "listing": "/talks/index.html",
     "items": [
-      "/projects/cdm/2026-rwanda/index.html"
+      "/talks/2026/2026-2-gw4/index.html",
+      "/talks/2026/2026-1-phdfoundation/index.html",
+      "/talks/2025/2025-1-refrence/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/crosslab_exchange/index.html",
+    "items": [
+      "/projects/crosslab_exchange/idea/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/africast/index.html",
+    "items": [
+      "/projects/africast/africast-idea/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/summer_school/index.html",
+    "items": [
+      "/projects/summer_school/2026-ss/index.html",
+      "/projects/summer_school/summer-school/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/reproducibility/index.html",
+      "/projects/cdm/index.html",
+      "/projects/summer_school/index.html",
+      "/projects/africast/index.html",
+      "/projects/crosslab_exchange/index.html",
+      "/projects/democratising_forecasting/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/reproducibility/index.html",
+    "items": [
+      "/projects/reproducibility/ijf_editor/index.html",
+      "/projects/reproducibility/ijf_readme/index.html"
     ]
   },
   {
@@ -67,58 +110,16 @@
     ]
   },
   {
-    "listing": "/projects/reproducibility/index.html",
+    "listing": "/projects/cdm/index.html",
     "items": [
-      "/projects/reproducibility/ijf_editor/index.html",
-      "/projects/reproducibility/ijf_readme/index.html"
+      "/projects/cdm/2026-rwanda/index.html"
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/projects/democratising_forecasting/index.html",
     "items": [
-      "/projects/reproducibility/index.html",
-      "/projects/cdm/index.html",
-      "/projects/summer_school/index.html",
-      "/projects/africast/index.html",
-      "/projects/crosslab_exchange/index.html",
-      "/projects/democratising_forecasting/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/summer_school/index.html",
-    "items": [
-      "/projects/summer_school/2026-ss/index.html",
-      "/projects/summer_school/summer-school/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/africast/index.html",
-    "items": [
-      "/projects/africast/africast-idea/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/crosslab_exchange/index.html",
-    "items": [
-      "/projects/crosslab_exchange/idea/index.html"
-    ]
-  },
-  {
-    "listing": "/talks/index.html",
-    "items": [
-      "/talks/2026/2026-2-gw4/index.html",
-      "/talks/2026/2026-1-phdfoundation/index.html",
-      "/talks/2025/2025-1-refrence/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/kurds/index.html",
-      "/blog/2026_research_leader/index.html",
-      "/blog/2025-forecasting_problem/index.html",
-      "/blog/2025-decision/index.html",
-      "/blog/first-post/index.html"
+      "/projects/democratising_forecasting/orms-article/index.html",
+      "/projects/democratising_forecasting/df/index.html"
     ]
   }
 ]
