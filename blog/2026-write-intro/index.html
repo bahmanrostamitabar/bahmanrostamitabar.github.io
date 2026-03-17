@@ -274,26 +274,32 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js">flowchart LR
     subgraph M["🟣 Zone 1 — Motivation"]
-        S1["① Context &amp; importance\nEstablish domain relevance with quantified stakes"]
-        S2["② Problem or tension\nIntroduce the friction, cost, or inefficiency"]
-        S3["③ Non-triviality / paradox\nShow why the obvious solution does not work"]
+        direction TB
+        S1["① Context &amp; importance\nEstablish domain relevance\nwith quantified stakes"]
+        S2["② Problem or tension\nIntroduce the friction,\ncost, or inefficiency"]
+        S3["③ Non-triviality / paradox\nShow why the obvious\nsolution does not work"]
+        S1 --&gt; S2 --&gt; S3
     end
 
     subgraph P["🟢 Zone 2 — Positioning"]
-        S4["④ Literature positioning &amp; gap\nWhat is known — and what is missing"]
-        S5["⑤ Research question / objective\nState clearly what this paper does"]
+        direction TB
+        S4["④ Literature positioning &amp; gap\nWhat is known —\nand what is missing"]
+        S5["⑤ Research question / objective\nState clearly what\nthis paper does"]
+        S4 --&gt; S5
     end
 
     subgraph C["🟡 Zone 3 — Contribution"]
-        S6["⑥ Conceptual framing\nName and justify the theoretical lens"]
-        S7["⑦ Method overview\nSignal empirical credibility"]
-        S8["⑧ Key findings\nPreview results at direction + mechanism level"]
-        S9["⑨ Contributions &amp; implications\nPosition value for theory and practice"]
+        direction TB
+        S6["⑥ Conceptual framing\nName and justify\nthe theoretical lens"]
+        S7["⑦ Method overview\nSignal empirical\ncredibility"]
+        S8["⑧ Key findings\nPreview results at direction\n+ mechanism level"]
+        S9["⑨ Contributions &amp; implications\nPosition value for\ntheory and practice"]
+        S6 --&gt; S7 --&gt; S8 --&gt; S9
     end
 
-    S1 --&gt; S2 --&gt; S3 --&gt; S4 --&gt; S5 --&gt; S6 --&gt; S7 --&gt; S8 --&gt; S9
+    M --&gt; P --&gt; C
 
     style M fill:#EEEDFE,stroke:#7F77DD,color:#3C3489
     style P fill:#E1F5EE,stroke:#1D9E75,color:#0F6E56
