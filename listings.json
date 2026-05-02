@@ -114,7 +114,6 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/kurds/index.html",
       "/blog/2026-phd-progress-meeting/index.html",
       "/blog/2026-phd-by-publication/index.html",
       "/blog/2026-phd-not-taught/index.html",
@@ -126,7 +125,8 @@
       "/blog/2025-forecasting_problem/index.html",
       "/blog/2025-decision/index.html",
       "/blog/first-post/index.html",
-      "/blog/2026_research_leader/index.html"
+      "/blog/2026_research_leader/index.html",
+      "/blog/kurds/index.html"
     ]
   }
 ]
