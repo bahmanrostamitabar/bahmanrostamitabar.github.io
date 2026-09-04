@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Bahman Rostami-Tabar">
-<meta name="dcterms.date" content="2026-03-03">
-<meta name="description" content="This project focuses on methodologies and best practices of ensuring reproducibility in scientific research, particularly in the context of forecasting and computational science. It explores best practices, tools, and case studies to enhance the reliability and transparency of research findings.">
+<meta name="dcterms.date" content="2026-09-10">
 
-<title>Reproducibility</title>
+<title>What Drives Vaccine Availability at Health Facilities?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2446905701fbf71fc498c770a811c78f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-2446905701fbf71fc498c770a811c78f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,71 +70,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Reproducibility">
-<meta property="og:description" content="This project focuses on methodologies and best practices of ensuring reproducibility in scientific research, particularly in the context of forecasting and computational science. It explores best practices, tools, and case studies to enhance the reliability and transparency of research findings.">
-<meta property="og:image" content="https://bahmanrostamitabar.github.io/projects/reproducibility/cover.png">
-<meta property="og:image:height" content="2262">
-<meta property="og:image:width" content="1856">
+<meta property="og:title" content="What Drives Vaccine Availability at Health Facilities?">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/talks/2026/2026-2-who/cover.jpg">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -147,7 +84,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -157,38 +94,38 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door-fill" role="img">
+    <a class="nav-link" href="../../../index.html"> <i class="bi bi-house-door-fill" role="img">
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about/index.html"> 
+    <a class="nav-link" href="../../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../supervision/index.html"> 
+    <a class="nav-link" href="../../../supervision/index.html"> 
 <span class="menu-text">Research Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/index.html"> 
+    <a class="nav-link" href="../../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks/index.html"> 
+    <a class="nav-link" href="../../../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
+    <a class="nav-link" href="../../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
+    <a class="nav-link" href="../../../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -211,20 +148,13 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproducibility</h1>
+<h1 class="title">What Drives Vaccine Availability at Health Facilities?</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">reproducibility</div>
-    <div class="quarto-category">forecasting</div>
-    <div class="quarto-category">transparency</div>
-    <div class="quarto-category">replicability</div>
+    <div class="quarto-category">Conferences</div>
+    <div class="quarto-category">Immunisation Supply Chain</div>
   </div>
   </div>
 
-<div>
-  <div class="description">
-    This project focuses on methodologies and best practices of ensuring reproducibility in scientific research, particularly in the context of forecasting and computational science. It explores best practices, tools, and case studies to enhance the reliability and transparency of research findings.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta column-page">
@@ -239,7 +169,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 3, 2026</p>
+      <p class="date">September 10, 2026</p>
     </div>
   </div>
   
@@ -251,71 +181,14 @@ window.Quarto = {
 </header>
 
 
+<section id="what-these-talk-covers" class="level2">
+<h2 class="anchored" data-anchor-id="what-these-talk-covers">What these talk covers</h2>
+<p>A brief talk about the work we have been doing at WHO to enhance the immunisation supply chain through effective vaccine management analytics.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cmVwcm9kdWNpYmlsaXR5JTJDb3Blbi1zY2llbmNlJTJDZm9yZWNhc3RpbmclMkNyZXNlYXJjaCUyQ2VkaXRvcmlhbA==" data-listing-date-sort="1772488800000" data-listing-file-modified-sort="1772652632868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="379">
-<div class="thumbnail"><a href="../../projects/reproducibility/ijf_editor/index.html" class="no-external">
-
-<img loading="lazy" src="../../projects/reproducibility/ijf_editor/ijf.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../projects/reproducibility/ijf_editor/index.html" class="no-external">Appointed Reproducibility Editor for the International Journal of Forecasting</a>
-</h3>
-<div class="delink listing-description"><a href="../../projects/reproducibility/ijf_editor/index.html" class="no-external">
-<p>I have been appointed as Reproducibility Editor at the International Journal of Forecasting, reflecting a major step forward in promoting transparency and scientific integrity in forecasting research.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../projects/reproducibility/ijf_editor/index.html" class="no-external">
-<div class="listing-date">
-Mar 3, 2026
-</div>
-<div class="listing-author">
-Bahman Rostami-Tabar
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="cmVwcm9kdWNpYmlsaXR5JTJDb3Blbi1zY2llbmNlJTJDZm9yZWNhc3RpbmclMkNyZXNlYXJjaA==" data-listing-date-sort="1775167200000" data-listing-file-modified-sort="1772707104499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1180">
-<div class="thumbnail"><a href="../../projects/reproducibility/ijf_readme/index.html" class="no-external">
-
-<img loading="lazy" src="../../projects/reproducibility/ijf_readme/cover.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../projects/reproducibility/ijf_readme/index.html" class="no-external">Reproducibility in the International Journal of Forecasting</a>
-</h3>
-<div class="delink listing-description"><a href="../../projects/reproducibility/ijf_readme/index.html" class="no-external">
-<p>Suggestions to consider when preparing your reprodicubulity package and Readme file</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../projects/reproducibility/ijf_readme/index.html" class="no-external">
-<div class="listing-date">
-Apr 3, 2026
-</div>
-<div class="listing-author">
-Bahman Rostami-Tabar
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
