@@ -1,30 +1,8 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/projects/cdm/index.html",
     "items": [
-      "/blog/2026-phd-progress-meeting/index.html",
-      "/blog/2026-phd-by-publication/index.html",
-      "/blog/2026-phd-not-taught/index.html",
-      "/blog/2026-phd-supervision/index.html",
-      "/blog/2026-imagination/index.html",
-      "/blog/2026-phd-small-habits/index.html",
-      "/blog/2026-write-abstract/index.html",
-      "/blog/2026-write-intro/CopyOfindex.html",
-      "/blog/2026-write-intro/index.html",
-      "/blog/2025-forecasting_problem/index.html",
-      "/blog/2025-decision/index.html",
-      "/blog/first-post/index.html",
-      "/blog/kurds/index.html",
-      "/blog/2026_research_leader/index.html"
-    ]
-  },
-  {
-    "listing": "/talks/index.html",
-    "items": [
-      "/talks/2026/2026-2-who/index.html",
-      "/talks/2026/2026-2-gw4/index.html",
-      "/talks/2026/2026-1-phdfoundation/index.html",
-      "/talks/2025/2025-1-refrence/index.html"
+      "/projects/cdm/2026-rwanda/index.html"
     ]
   },
   {
@@ -40,10 +18,17 @@
     ]
   },
   {
-    "listing": "/projects/summer_school/index.html",
+    "listing": "/projects/democratising_forecasting/index.html",
     "items": [
-      "/projects/summer_school/2026-ss/index.html",
-      "/projects/summer_school/summer-school/index.html"
+      "/projects/democratising_forecasting/orms-article/index.html",
+      "/projects/democratising_forecasting/df/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/reproducibility/index.html",
+    "items": [
+      "/projects/reproducibility/ijf_editor/index.html",
+      "/projects/reproducibility/ijf_readme/index.html"
     ]
   },
   {
@@ -58,48 +43,48 @@
     ]
   },
   {
-    "listing": "/projects/reproducibility/index.html",
+    "listing": "/projects/summer_school/index.html",
     "items": [
-      "/projects/reproducibility/ijf_editor/index.html",
-      "/projects/reproducibility/ijf_readme/index.html"
+      "/projects/summer_school/2026-ss/index.html",
+      "/projects/summer_school/summer-school/index.html"
     ]
   },
   {
     "listing": "/publications/index.html",
     "items": [
       "/publications/books/dfem.html",
-      "/publications/working-papers/2026-forecast-accuracy-ed-staffing.html",
       "/publications/working-papers/2026-ed-staffing-probabilistic-newsvendor.html",
-      "/publications/working-papers/2026-socially-responsible-forecasting-harms.html",
-      "/publications/working-papers/2026-digital-twins-healthcare-review.html",
       "/publications/working-papers/2026-contraceptive-demand-forecasting-pom.html",
-      "/publications/journal-articles/2025-systematic-review-trauma-systems-operations.html",
-      "/publications/journal-articles/2025-forecasting-unscheduled-care-review.html",
-      "/publications/journal-articles/2025-contextual-insights-pharmaceutical-forecasting.html",
-      "/publications/journal-articles/2025-forecasting-interrupted-time-series.html",
+      "/publications/working-papers/2026-forecast-accuracy-ed-staffing.html",
+      "/publications/working-papers/2026-digital-twins-healthcare-review.html",
+      "/publications/working-papers/2026-socially-responsible-forecasting-harms.html",
       "/publications/journal-articles/2025-hybrid-contraceptive-demand-forecasting.html",
+      "/publications/journal-articles/2025-forecasting-interrupted-time-series.html",
       "/publications/journal-articles/2025-hybrid-predictive-prescriptive-mental-healthcare.html",
-      "/publications/journal-articles/2025-patient-length-of-stay-trauma-networks.html",
+      "/publications/journal-articles/2025-contextual-insights-pharmaceutical-forecasting.html",
+      "/publications/journal-articles/2025-systematic-review-trauma-systems-operations.html",
       "/publications/journal-articles/2025-role-of-technology.html",
-      "/publications/journal-articles/2024-probabilistic-forecasting-covid19-admissions.html",
+      "/publications/journal-articles/2025-patient-length-of-stay-trauma-networks.html",
+      "/publications/journal-articles/2025-forecasting-unscheduled-care-review.html",
       "/publications/journal-articles/2024-hybrid-lstm-medical-humanitarian-demand.html",
-      "/publications/journal-articles/2024-forecasting-role-sustainable-development-goals.html",
-      "/publications/journal-articles/2024-simulation-long-term-bed-modelling-critical-care.html",
       "/publications/journal-articles/2024-length-of-stay-south-wales-trauma.html",
+      "/publications/journal-articles/2024-forecasting-role-sustainable-development-goals.html",
+      "/publications/journal-articles/2024-probabilistic-forecasting-covid19-admissions.html",
       "/publications/journal-articles/2024-hierarchical-time-series-emergency-services.html",
+      "/publications/journal-articles/2024-simulation-long-term-bed-modelling-critical-care.html",
+      "/publications/journal-articles/2023-scheduling-reusable-single-use-bronchoscopes.html",
+      "/publications/journal-articles/2023-aggregate-or-not-autocorrelated-demand.html",
+      "/publications/journal-articles/2023-time-series-features-temporal-aggregation.html",
       "/publications/journal-articles/2023-probabilistic-forecasting-hourly-ed-arrivals.html",
       "/publications/journal-articles/2023-order-up-to-intermittent-integer-demand.html",
       "/publications/journal-articles/2023-forecasting-lead-time-temporal-aggregation.html",
-      "/publications/journal-articles/2023-value-point-of-sales-information.html",
       "/publications/journal-articles/2023-integrated-demand-forecasting-repairable-spare-parts.html",
-      "/publications/journal-articles/2023-aggregate-or-not-autocorrelated-demand.html",
-      "/publications/journal-articles/2023-scheduling-reusable-single-use-bronchoscopes.html",
-      "/publications/journal-articles/2023-time-series-features-temporal-aggregation.html",
+      "/publications/journal-articles/2023-value-point-of-sales-information.html",
       "/publications/journal-articles/2022-forecasting-theory-and-practice.html",
       "/publications/journal-articles/2021-forecasting-for-social-good.html",
-      "/publications/journal-articles/2021-hierarchical-time-series-supply-chains.html",
       "/publications/journal-articles/2021-forecasting-covid19-phone-call-data.html",
       "/publications/journal-articles/2021-demand-forecasting-aggregation-hierarchical-review.html",
+      "/publications/journal-articles/2021-hierarchical-time-series-supply-chains.html",
       "/publications/journal-articles/2020-anticipating-special-events-emergency-department.html",
       "/publications/journal-articles/2019-impact-temporal-aggregation-supply-chain.html",
       "/publications/journal-articles/2017-demand-forecasting-temporal-aggregation-levels.html",
@@ -111,24 +96,39 @@
       "/publications/book-chapters/2022-forecasting-and-its-beneficiaries.html",
       "/publications/book-chapters/2021-business-forecasting-developing-countries.html",
       "/publications/conference-proceedings/2015-impact-advance-demand-information.html",
-      "/publications/conference-proceedings/2013-forecasting-aggregate-arma-topdown-bottomup.html",
       "/publications/conference-proceedings/2013-impact-temporal-aggregation-arma.html",
+      "/publications/conference-proceedings/2013-forecasting-aggregate-arma-topdown-bottomup.html",
       "/publications/conference-proceedings/2012-forecasting-autoregressive.html",
       "/publications/conference-proceedings/2008-hybrid-neural-lumpy-demand.html",
       "/publications/phdthesis/my-phd.html"
     ]
   },
   {
-    "listing": "/projects/cdm/index.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/projects/cdm/2026-rwanda/index.html"
+      "/blog/2026-phd-progress-meeting/index.html",
+      "/blog/2026-phd-by-publication/index.html",
+      "/blog/2026-phd-supervision/index.html",
+      "/blog/2026-phd-not-taught/index.html",
+      "/blog/2026-imagination/index.html",
+      "/blog/2026-phd-small-habits/index.html",
+      "/blog/2026-write-abstract/index.html",
+      "/blog/2026-write-intro/index.html",
+      "/blog/2026-write-intro/CopyOfindex.html",
+      "/blog/2025-forecasting_problem/index.html",
+      "/blog/2025-decision/index.html",
+      "/blog/first-post/index.html",
+      "/blog/kurds/index.html",
+      "/blog/2026_research_leader/index.html"
     ]
   },
   {
-    "listing": "/projects/democratising_forecasting/index.html",
+    "listing": "/talks/index.html",
     "items": [
-      "/projects/democratising_forecasting/orms-article/index.html",
-      "/projects/democratising_forecasting/df/index.html"
+      "/talks/2026/2026-2-who/index.html",
+      "/talks/2026/2026-2-gw4/index.html",
+      "/talks/2026/2026-1-phdfoundation/index.html",
+      "/talks/2025/2025-1-refrence/index.html"
     ]
   }
 ]

@@ -6,10 +6,10 @@
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../../../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Bahman Rostami-Tabar, Lead supervisor">
   <title>Making Slides with Quarto</title>
@@ -19,10 +19,16 @@
   <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -97,7 +103,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/theme/quarto-cd294339cd14786f24fece22c6069db4.css">
+  <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/theme/quarto-58b26942ce33d1612363e2c63f695fdd.css">
   <link href="../../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -215,7 +221,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Bahman Rostami-Tabar, Lead supervisor 
+Bahman Rostami-Tabar, Lead supervisor
 </div>
         <p class="quarto-title-affiliation">
             Data Lab for Social Good, Cardiff Business School, Cardiff University
@@ -677,33 +683,33 @@ Bahman Rostami-Tabar, Lead supervisor
 <h2>Live demo</h2>
 <p>Where do cats go?</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">plot</span>(</span>
-<span id="cb1-2"><a></a>  <span class="at">x =</span> cats<span class="sc">$</span>location_long,</span>
-<span id="cb1-3"><a></a>  <span class="at">y =</span> cats<span class="sc">$</span>location_lat,</span>
-<span id="cb1-4"><a></a>  <span class="at">xlab =</span> <span class="st">"Longitude"</span>,</span>
-<span id="cb1-5"><a></a>  <span class="at">ylab =</span> <span class="st">"Latitude"</span></span>
-<span id="cb1-6"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="fu">plot</span>(</span>
+<span id="cb1-2"><a aria-label="2"></a>  <span class="at">x =</span> cats<span class="sc">$</span>location_long,</span>
+<span id="cb1-3"><a aria-label="3"></a>  <span class="at">y =</span> cats<span class="sc">$</span>location_lat,</span>
+<span id="cb1-4"><a aria-label="4"></a>  <span class="at">xlab =</span> <span class="st">"Longitude"</span>,</span>
+<span id="cb1-5"><a aria-label="5"></a>  <span class="at">ylab =</span> <span class="st">"Latitude"</span></span>
+<span id="cb1-6"><a aria-label="6"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>How fast do cats run?</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">hist</span>(</span>
-<span id="cb2-2"><a></a>  <span class="at">x =</span> cats<span class="sc">$</span>ground_speed,</span>
-<span id="cb2-3"><a></a>  <span class="at">xlab =</span> <span class="st">"Ground speed (m/s)"</span>,</span>
-<span id="cb2-4"><a></a>  <span class="at">main =</span> <span class="st">"Histogram of ground speed"</span></span>
-<span id="cb2-5"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a><span class="fu">hist</span>(</span>
+<span id="cb2-2"><a aria-label="2"></a>  <span class="at">x =</span> cats<span class="sc">$</span>ground_speed,</span>
+<span id="cb2-3"><a aria-label="3"></a>  <span class="at">xlab =</span> <span class="st">"Ground speed (m/s)"</span>,</span>
+<span id="cb2-4"><a aria-label="4"></a>  <span class="at">main =</span> <span class="st">"Histogram of ground speed"</span></span>
+<span id="cb2-5"><a aria-label="5"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>How long do they spend indoors?</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">barplot</span>(<span class="fu">table</span>(cats_reference<span class="sc">$</span>hrs_indoors))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="fu">barplot</span>(<span class="fu">table</span>(cats_reference<span class="sc">$</span>hrs_indoors))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Does that change as they get older?</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">plot</span>(</span>
-<span id="cb4-2"><a></a>  <span class="at">x =</span> cats_reference<span class="sc">$</span>age_years,</span>
-<span id="cb4-3"><a></a>  <span class="at">y =</span> cats_reference<span class="sc">$</span>hrs_indoors,</span>
-<span id="cb4-4"><a></a>  <span class="at">xlab =</span> <span class="st">"Age"</span>,</span>
-<span id="cb4-5"><a></a>  <span class="at">ylab =</span> <span class="st">"Hours indoors"</span></span>
-<span id="cb4-6"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="fu">plot</span>(</span>
+<span id="cb4-2"><a aria-label="2"></a>  <span class="at">x =</span> cats_reference<span class="sc">$</span>age_years,</span>
+<span id="cb4-3"><a aria-label="3"></a>  <span class="at">y =</span> cats_reference<span class="sc">$</span>hrs_indoors,</span>
+<span id="cb4-4"><a aria-label="4"></a>  <span class="at">xlab =</span> <span class="st">"Age"</span>,</span>
+<span id="cb4-5"><a aria-label="5"></a>  <span class="at">ylab =</span> <span class="st">"Hours indoors"</span></span>
+<span id="cb4-6"><a aria-label="6"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section></section>
 <section>
@@ -750,17 +756,17 @@ Bahman Rostami-Tabar, Lead supervisor
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
-<span id="cb5-2"><a></a>                     <span class="at">y =</span> body_mass_g,</span>
-<span id="cb5-3"><a></a>                     <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb5-4"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb5-5"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb5-6"><a></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
-<span id="cb5-7"><a></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
-<span id="cb5-8"><a></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
-<span id="cb5-9"><a></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
-<span id="cb5-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb5-11"><a></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
+<span id="cb5-2"><a aria-label="2"></a>                     <span class="at">y =</span> body_mass_g,</span>
+<span id="cb5-3"><a aria-label="3"></a>                     <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb5-4"><a aria-label="4"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb5-5"><a aria-label="5"></a>  <span class="fu">labs</span>(</span>
+<span id="cb5-6"><a aria-label="6"></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
+<span id="cb5-7"><a aria-label="7"></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span id="cb5-8"><a aria-label="8"></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
+<span id="cb5-9"><a aria-label="9"></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
+<span id="cb5-10"><a aria-label="10"></a>  ) <span class="sc">+</span></span>
+<span id="cb5-11"><a aria-label="11"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 
 </div>
@@ -771,19 +777,19 @@ Figure&nbsp;1
 <h2>column</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb6-2"><a></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
-<span id="cb6-3"><a></a>            <span class="at">y =</span> body_mass_g,</span>
-<span id="cb6-4"><a></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb6-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
-<span id="cb6-6"><a></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb6-7"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb6-8"><a></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
-<span id="cb6-9"><a></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
-<span id="cb6-10"><a></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
-<span id="cb6-11"><a></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
-<span id="cb6-12"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb6-13"><a></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb6-2"><a aria-label="2"></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
+<span id="cb6-3"><a aria-label="3"></a>            <span class="at">y =</span> body_mass_g,</span>
+<span id="cb6-4"><a aria-label="4"></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb6-5"><a aria-label="5"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb6-6"><a aria-label="6"></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb6-7"><a aria-label="7"></a>  <span class="fu">labs</span>(</span>
+<span id="cb6-8"><a aria-label="8"></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
+<span id="cb6-9"><a aria-label="9"></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span id="cb6-10"><a aria-label="10"></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
+<span id="cb6-11"><a aria-label="11"></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
+<span id="cb6-12"><a aria-label="12"></a>  ) <span class="sc">+</span></span>
+<span id="cb6-13"><a aria-label="13"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
@@ -798,19 +804,19 @@ Figure&nbsp;1
 <h2>column-fragment</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb7-2"><a></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
-<span id="cb7-3"><a></a>            <span class="at">y =</span> body_mass_g,</span>
-<span id="cb7-4"><a></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb7-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
-<span id="cb7-6"><a></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb7-7"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb7-8"><a></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
-<span id="cb7-9"><a></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
-<span id="cb7-10"><a></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
-<span id="cb7-11"><a></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
-<span id="cb7-12"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb7-13"><a></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb7-2"><a aria-label="2"></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
+<span id="cb7-3"><a aria-label="3"></a>            <span class="at">y =</span> body_mass_g,</span>
+<span id="cb7-4"><a aria-label="4"></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb7-5"><a aria-label="5"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb7-6"><a aria-label="6"></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb7-7"><a aria-label="7"></a>  <span class="fu">labs</span>(</span>
+<span id="cb7-8"><a aria-label="8"></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
+<span id="cb7-9"><a aria-label="9"></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span id="cb7-10"><a aria-label="10"></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
+<span id="cb7-11"><a aria-label="11"></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
+<span id="cb7-12"><a aria-label="12"></a>  ) <span class="sc">+</span></span>
+<span id="cb7-13"><a aria-label="13"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <div>
@@ -824,19 +830,19 @@ Figure&nbsp;1
 <section id="slide" class="slide level2">
 <h2>slide</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb8-2"><a></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
-<span id="cb8-3"><a></a>            <span class="at">y =</span> body_mass_g,</span>
-<span id="cb8-4"><a></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb8-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
-<span id="cb8-6"><a></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb8-7"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb8-8"><a></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
-<span id="cb8-9"><a></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
-<span id="cb8-10"><a></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
-<span id="cb8-11"><a></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
-<span id="cb8-12"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb8-13"><a></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb8-2"><a aria-label="2"></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
+<span id="cb8-3"><a aria-label="3"></a>            <span class="at">y =</span> body_mass_g,</span>
+<span id="cb8-4"><a aria-label="4"></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb8-5"><a aria-label="5"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb8-6"><a aria-label="6"></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb8-7"><a aria-label="7"></a>  <span class="fu">labs</span>(</span>
+<span id="cb8-8"><a aria-label="8"></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
+<span id="cb8-9"><a aria-label="9"></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span id="cb8-10"><a aria-label="10"></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
+<span id="cb8-11"><a aria-label="11"></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
+<span id="cb8-12"><a aria-label="12"></a>  ) <span class="sc">+</span></span>
+<span id="cb8-13"><a aria-label="13"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 </section>
@@ -851,19 +857,19 @@ Figure&nbsp;1
 </div></section><section id="fragment" class="slide level2">
 <h2>fragment</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb9-2"><a></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
-<span id="cb9-3"><a></a>            <span class="at">y =</span> body_mass_g,</span>
-<span id="cb9-4"><a></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb9-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
-<span id="cb9-6"><a></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb9-7"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb9-8"><a></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
-<span id="cb9-9"><a></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
-<span id="cb9-10"><a></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
-<span id="cb9-11"><a></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
-<span id="cb9-12"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb9-13"><a></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-label="1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb9-2"><a aria-label="2"></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
+<span id="cb9-3"><a aria-label="3"></a>            <span class="at">y =</span> body_mass_g,</span>
+<span id="cb9-4"><a aria-label="4"></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb9-5"><a aria-label="5"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb9-6"><a aria-label="6"></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb9-7"><a aria-label="7"></a>  <span class="fu">labs</span>(</span>
+<span id="cb9-8"><a aria-label="8"></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
+<span id="cb9-9"><a aria-label="9"></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span id="cb9-10"><a aria-label="10"></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
+<span id="cb9-11"><a aria-label="11"></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
+<span id="cb9-12"><a aria-label="12"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-13"><a aria-label="13"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell fragment">
 <div class="cell-output-display">
@@ -878,19 +884,19 @@ Figure&nbsp;1
 <section id="default" class="slide level2">
 <h2>default</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb10-2"><a></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
-<span id="cb10-3"><a></a>            <span class="at">y =</span> body_mass_g,</span>
-<span id="cb10-4"><a></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb10-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
-<span id="cb10-6"><a></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb10-7"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb10-8"><a></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
-<span id="cb10-9"><a></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
-<span id="cb10-10"><a></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
-<span id="cb10-11"><a></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
-<span id="cb10-12"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb10-13"><a></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb10-2"><a aria-label="2"></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
+<span id="cb10-3"><a aria-label="3"></a>            <span class="at">y =</span> body_mass_g,</span>
+<span id="cb10-4"><a aria-label="4"></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb10-5"><a aria-label="5"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb10-6"><a aria-label="6"></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb10-7"><a aria-label="7"></a>  <span class="fu">labs</span>(</span>
+<span id="cb10-8"><a aria-label="8"></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
+<span id="cb10-9"><a aria-label="9"></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span id="cb10-10"><a aria-label="10"></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
+<span id="cb10-11"><a aria-label="11"></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
+<span id="cb10-12"><a aria-label="12"></a>  ) <span class="sc">+</span></span>
+<span id="cb10-13"><a aria-label="13"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
 <img data-src="2025-1-refrence_slide_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
@@ -918,54 +924,54 @@ Figure&nbsp;1
 </section>
 <section id="highlight-specific-consecutive-line-code" class="slide level2">
 <h2>Highlight specific consecutive line code</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="co">#| eval: false</span></span>
-<span id="cb11-2"><a></a><span class="co">#| echo: true</span></span>
-<span id="cb11-3"><a></a><span class="co">#| code-line-numbers: "4-6"</span></span>
-<span id="cb11-4"><a></a></span>
-<span id="cb11-5"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb11-6"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb11-7"><a></a></span>
-<span id="cb11-8"><a></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb11-9"><a></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb11-10"><a></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
-<span id="cb11-11"><a></a>ax.plot(theta, r)</span>
-<span id="cb11-12"><a></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb11-13"><a></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb11-14"><a></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a aria-label="1"></a><span class="co">#| eval: false</span></span>
+<span id="cb11-2"><a aria-label="2"></a><span class="co">#| echo: true</span></span>
+<span id="cb11-3"><a aria-label="3"></a><span class="co">#| code-line-numbers: "4-6"</span></span>
+<span id="cb11-4"><a aria-label="4"></a></span>
+<span id="cb11-5"><a aria-label="5"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb11-6"><a aria-label="6"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-7"><a aria-label="7"></a></span>
+<span id="cb11-8"><a aria-label="8"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb11-9"><a aria-label="9"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb11-10"><a aria-label="10"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
+<span id="cb11-11"><a aria-label="11"></a>ax.plot(theta, r)</span>
+<span id="cb11-12"><a aria-label="12"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb11-13"><a aria-label="13"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb11-14"><a aria-label="14"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="highlgiht-seperate-lines" class="slide level2">
 <h2>Highlgiht seperate lines</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="co">#| eval: false</span></span>
-<span id="cb12-2"><a></a><span class="co">#| echo: true</span></span>
-<span id="cb12-3"><a></a><span class="co">#| code-line-numbers: "2,6,9"</span></span>
-<span id="cb12-4"><a></a></span>
-<span id="cb12-5"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb12-6"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb12-7"><a></a></span>
-<span id="cb12-8"><a></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb12-9"><a></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb12-10"><a></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
-<span id="cb12-11"><a></a>ax.plot(theta, r)</span>
-<span id="cb12-12"><a></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb12-13"><a></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb12-14"><a></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a aria-label="1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-2"><a aria-label="2"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-3"><a aria-label="3"></a><span class="co">#| code-line-numbers: "2,6,9"</span></span>
+<span id="cb12-4"><a aria-label="4"></a></span>
+<span id="cb12-5"><a aria-label="5"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb12-6"><a aria-label="6"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb12-7"><a aria-label="7"></a></span>
+<span id="cb12-8"><a aria-label="8"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb12-9"><a aria-label="9"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb12-10"><a aria-label="10"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
+<span id="cb12-11"><a aria-label="11"></a>ax.plot(theta, r)</span>
+<span id="cb12-12"><a aria-label="12"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb12-13"><a aria-label="13"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb12-14"><a aria-label="14"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="highlgiht-several-lines-progressively" class="slide level2">
 <h2>Highlgiht several lines progressively</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a><span class="co">#| eval: false</span></span>
-<span id="cb13-2"><a></a><span class="co">#| echo: true</span></span>
-<span id="cb13-3"><a></a><span class="co">#| code-line-numbers: "|2|6|9"</span></span>
-<span id="cb13-4"><a></a></span>
-<span id="cb13-5"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb13-6"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb13-7"><a></a></span>
-<span id="cb13-8"><a></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb13-9"><a></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb13-10"><a></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
-<span id="cb13-11"><a></a>ax.plot(theta, r)</span>
-<span id="cb13-12"><a></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb13-13"><a></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb13-14"><a></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a aria-label="1"></a><span class="co">#| eval: false</span></span>
+<span id="cb13-2"><a aria-label="2"></a><span class="co">#| echo: true</span></span>
+<span id="cb13-3"><a aria-label="3"></a><span class="co">#| code-line-numbers: "|2|6|9"</span></span>
+<span id="cb13-4"><a aria-label="4"></a></span>
+<span id="cb13-5"><a aria-label="5"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb13-6"><a aria-label="6"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb13-7"><a aria-label="7"></a></span>
+<span id="cb13-8"><a aria-label="8"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb13-9"><a aria-label="9"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb13-10"><a aria-label="10"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
+<span id="cb13-11"><a aria-label="11"></a>ax.plot(theta, r)</span>
+<span id="cb13-12"><a aria-label="12"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb13-13"><a aria-label="13"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb13-14"><a aria-label="14"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="panels-and-tabsets" class="title-slide slide level1 center">
@@ -979,19 +985,19 @@ Figure&nbsp;1
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb14-2"><a></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
-<span id="cb14-3"><a></a>            <span class="at">y =</span> body_mass_g,</span>
-<span id="cb14-4"><a></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb14-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
-<span id="cb14-6"><a></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb14-7"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb14-8"><a></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
-<span id="cb14-9"><a></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
-<span id="cb14-10"><a></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
-<span id="cb14-11"><a></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
-<span id="cb14-12"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb14-13"><a></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a><span class="fu">ggplot</span>(penguins, </span>
+<span id="cb14-2"><a aria-label="2"></a>        <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm,</span>
+<span id="cb14-3"><a aria-label="3"></a>            <span class="at">y =</span> body_mass_g,</span>
+<span id="cb14-4"><a aria-label="4"></a>            <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb14-5"><a aria-label="5"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb14-6"><a aria-label="6"></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb14-7"><a aria-label="7"></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-8"><a aria-label="8"></a>    <span class="at">title =</span> <span class="st">"Flipper Length vs Body Mass in Palmer Penguins"</span>,</span>
+<span id="cb14-9"><a aria-label="9"></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span id="cb14-10"><a aria-label="10"></a>    <span class="at">y =</span> <span class="st">"Body mass (g)"</span>,</span>
+<span id="cb14-11"><a aria-label="11"></a>    <span class="at">color =</span> <span class="st">"Species"</span></span>
+<span id="cb14-12"><a aria-label="12"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-13"><a aria-label="13"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div id="tabset-1-2">
@@ -1889,7 +1895,7 @@ What is bad about it?</p>
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
