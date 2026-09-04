@@ -1,0 +1,228 @@
+---
+title: "Small Habits"
+subtitle: "The little things that can help you do better"
+author: "Bahman Rostami-Tabar"
+description: |
+  A practical guide for PhD students on the small professional habits that build lasting reputations.
+date: "03/31/2026"
+image: "cover.jpg"
+categories:
+  - PhD advice
+  - academic life
+  - professional habits
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    highlight-style: github
+---
+
+#
+
+> *A PhD is not just about the quality of your research, which is often the most importan part. It is about how you show up — in emails, in meetings, in hallways, in seminars. Your reputation is built every day, in the smallest moments. Here is a collection of habits that seem minor but, together, define whether you are known as someone serious, reliable, and worth investing in.*
+
+---
+
+## Communication
+
+*How you write and respond says as much as what you say.*
+
+### Reply to all — when it matters
+
+When an email is sent to a group and your reply is relevant to everyone on the thread, use **Reply All**. Keeping people informed shows you understand the collaborative nature of academic work. Silence, or replying only to the sender, can leave others in the dark unnecessarily.
+
+### Respond promptly — even briefly
+
+You don't need a perfect answer right away. A short *"got it, I'll look into this and come back to you by Thursday"* is far better than silence. People remember who is responsive and who disappears. Silence is often read as disinterest or disorganisation.
+
+### Write clear subject lines
+
+Your email subject line is the first thing people see. *"Quick question"* tells nobody anything. *"Feedback needed on Section 3 — deadline Friday"* is actionable and respectful of people's time. One good habit here signals broader organisational clarity.
+
+### Check email intentionally — not constantly
+
+You do not need to check email every hour. In fact, doing so fragments your attention and erodes your ability to do deep work. A good default is to check email once or twice a day at set times, maybe around 11:30 and 15:30. What matters is not how often you check, but how reliably you respond.
+
+### Respond within 24 hours
+
+For PhD-related communication, aim to reply within 24 hours on working days — even if only to acknowledge. A short response like “Thanks, I’ll review this and get back to you tomorrow” is enough to keep things moving.
+
+---
+
+## Time & Meetings
+
+*Being on time is a form of respect. Arrive early to show it.*
+
+### Arrive 10 minutes early — always
+
+Being early is not just punctual, it is a statement. It gives you time to settle, review your notes, and be mentally present when the meeting starts. Walking in after others have already begun — even by two minutes — signals that your time matters more than theirs.
+
+### Send the calendar invite immediately
+
+The moment a meeting is agreed — in person, over email, on Slack — **send the calendar invite**. Do not wait until later. Memories are short, schedules fill up, and the person who sends the invite controls the agenda. Get in the habit of doing it in under a minute.
+
+### Come to every meeting with something written
+
+A short list of points, questions, or updates on a notepad or screen signals preparation. You don't need a polished presentation — just evidence that you thought about this before walking in. Supervisors and collaborators notice the difference immediately.
+
+---
+
+## Commitments & Follow-Through
+
+*Your word is a professional currency. Spend it carefully.*
+
+### If you sign up, show up — prepared
+
+Whether it is a seminar, a reading group, a workshop, or a volunteer role — if you committed to it, treat it as an obligation. Showing up half-prepared is nearly as bad as not showing up. People who are reliably present and engaged get invited back, recommended, and trusted.
+
+### Under-promise, over-deliver
+
+When asked for a draft, a timeline, or an answer, resist the temptation to say what the other person wants to hear. Give a realistic commitment, then beat it. A track record of delivering on time — or early — is one of the most powerful reputational assets in academia.
+
+### Close the loop
+
+If someone helped you, introduced you, or gave you advice — follow up. Tell them what happened. *"I followed your suggestion and it worked,"* or *"the connection you made led to a paper submission."* These moments are small but they compound over years into a network of people who genuinely root for you.
+
+---
+
+## Presence & Visibility
+
+*Being known for your work starts with being seen doing it.*
+
+### Ask one good question per seminar
+
+You don't need to be the loudest voice in the room. But one thoughtful, well-timed question at a seminar or lab meeting tells everyone — including senior faculty — that you were paying attention and thinking. Do this consistently and your name becomes associated with intellectual engagement.
+
+### Keep a running log of what you have done
+
+Every week, write two or three sentences about what you worked on, what you learned, and what is next. Over months, this becomes invaluable — for annual reviews, for thesis introductions, for job applications, and for the days when you feel like you have made no progress. You have. It is written down.
+
+### Say "I don't know, but I'll find out"
+
+The habit of admitting the boundaries of your knowledge — and immediately committing to address them — is rare and deeply respected. It is far better than bluffing. It models intellectual honesty and signals that you take accuracy seriously. **Follow up when you say you will.**
+
+---
+
+## Discipline & Wellbeing
+
+*Sustainable commitment is more impressive than short-lived intensity.*
+
+### Protect your deep work hours
+
+Identify the hours when you think best and guard them fiercely. Do not schedule meetings during your peak hours if you can avoid it. The ability to produce focused, original work consistently is your primary asset — everything else supports it.
+
+### Rest without guilt
+
+Rest is not the opposite of productivity — it is part of it. The PhD is a marathon, not a sprint. Colleagues who burn bright and collapse are remembered differently from those who show up steadily, year after year. Build recovery into your rhythm as deliberately as you build work.
+
+### Be generous with acknowledgement
+
+Credit others openly. Thank a colleague who shared a paper, acknowledge a suggestion that improved your work, mention a collaborator in a presentation. Generosity with credit costs you nothing and builds goodwill that returns to you in unexpected ways throughout your career.
+
+---
+
+## Working with Supervisors
+
+*Your supervisor is not just an evaluator — they are a scarce resource.*
+
+### Make it easy for people to help you
+
+When you ask for feedback, be specific. *"Does Section 2 clearly motivate the model?"* is far more effective than *"Any thoughts?"* The more targeted your question, the better the feedback — and the more likely people are to engage.
+
+### Manage upward, respectfully
+
+Do not assume your supervisor is tracking every detail of your progress. They are busy, often overloaded. Part of your role is to structure interactions: send concise updates, propose agendas, suggest next steps. This is not overstepping — it is professionalism.
+
+### Disagree thoughtfully, not silently
+
+If you think something is not working, say so — but with reasoning. *"I'm concerned this direction may not scale because…"* is very different from passive compliance. Good supervisors respect intellectual independence when it is expressed constructively.
+
+---
+
+## Writing & Thinking
+
+*Writing is not how you communicate thinking — it is how thinking happens.*
+
+### Write before you are ready
+
+Waiting until ideas are fully formed is one of the most common traps. Draft early, even if it feels rough. You will discover gaps, assumptions, and structure through the act of writing itself. The page is where clarity is made, not where it is recorded.
+
+### Redefine what "a good week" looks like
+
+A good week is not always a breakthrough. Sometimes it is understanding why something failed, clarifying a definition, or ruling out an approach. If you only count visible wins, you will underestimate your own progress and lose momentum.
+
+### Learn to recognise when you are stuck — and change something
+
+Being stuck for a few hours is normal; being stuck for weeks often means the approach needs to change. Talk to someone, revisit assumptions, simplify the problem. Persistence matters, but so does adaptability.
+
+### Your thesis is not your life's work
+
+Many students implicitly treat their PhD as their defining contribution. It is not — it is training. The goal is not perfection; it is to learn how to produce knowledge. This perspective reduces paralysis and improves decision-making.
+
+---
+
+## Relationships & Community
+
+*The relationships you build horizontally are often as important as those you build vertically.*
+
+### Invest in peers, not just senior people
+
+Your cohort will become your future collaborators, reviewers, and colleagues. Help each other now — it compounds later. The people who were generous with their time and knowledge early are remembered long after the details of any paper have faded.
+
+### Be someone others can rely on
+
+Reputation among peers travels faster than formal recognition. If you are known as someone who contributes, follows through, and engages seriously, opportunities tend to find you — without you having to chase them.
+
+---
+
+## Priorities & Judgement
+
+*Not all problems are equally valuable. Neither is all time.*
+
+### Learn what deserves your time — and what doesn’t
+
+Not everything that feels urgent is important. During a PhD, your time is constantly pulled in different directions: coursework, side projects, part-time job, collaborations, seminars, admin, polishing details, etc
+
+Learn to distinguish between: what is **essential** (core research progress), what is **valuable but secondary** (networking, optional collaborations, extra polish), and what is **unnecessary or premature** (over-perfecting, low-impact tasks, distractions).
+
+The discipline to say “this is not the best use of my time right now” is as important as the ability to work hard. Over a few years, small misallocations compound into major differences in outcomes.
+
+### Not all problems are worth solving equally
+
+Learn to distinguish between problems that are interesting, tractable, and genuinely worth your time. The ability to identify the right question — not just answer the assigned one — is one of the most underrated skills in research.
+
+### Visibility matters — but substance matters more
+
+Presenting, networking, and being visible are useful, but they cannot compensate for weak work. Prioritise substance first, then make it visible. The reverse order is fragile.
+
+### Learn what "good" looks like in your field
+
+Read strong papers carefully — not just for content, but for structure, positioning, and clarity. Internalising standards, often implicitly, is one of the fastest ways to improve your own work.
+
+---
+
+## Mindset & Resilience
+
+*Progress in research is tightly coupled with error. The faster you expose mistakes, the faster you improve.*
+
+### Detach your self-worth from your results
+
+Papers get rejected. Ideas fail. Experiments break. If every outcome feels personal, the process becomes exhausting. Treat results as feedback on the work, not on you.
+
+### Get comfortable being wrong — publicly and often
+
+The faster you can expose mistakes — your own and others' — the faster you improve. This requires a certain emotional discipline that is worth cultivating early, before the stakes grow higher.
+
+### Consistency beats intensity
+
+Short bursts of extreme productivity are less valuable than steady, reliable output. The people who progress farthest are rarely the most intense — they are the most consistent over time.
+
+---
+
+::: {.callout-note appearance="minimal"}
+None of these habits require exceptional talent. They require only consistency — and the understanding that, in a long academic/industry career, how you show up is as visible as what you publish.
+
+The PhD is a beginning. Build the version of yourself you want to be known as, from the very first week.
+:::

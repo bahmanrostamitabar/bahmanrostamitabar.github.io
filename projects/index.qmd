@@ -9,6 +9,7 @@ listing:
     - "f4sg/*.qmd"
     - "crosslab_exchange/*.qmd"
     - "cdm/*.qmd"
+    - "reproducibility/*.qmd"
   type: grid
   sort: "date desc"
   sort-ui: true

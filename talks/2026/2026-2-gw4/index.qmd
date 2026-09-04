@@ -1,0 +1,24 @@
+---
+title: "From Researcher to Research Leader"
+author: "Bahman Rostami-Tabar"
+date: "2026-03-13"
+image: "cover.png"
+venue: "Online"
+location: ""
+# Add these custom fields:
+slides-html: "[View](2026/2026-1-phdfoundation/slides/gw4.html){target=\"_blank\"}"
+slides-pdf: "[PDF](2026/2026-1-phdfoundation/slides/gw4.pdf){target=\"_blank\"}"
+
+categories:
+  - Research Leadership
+  - Researcher Development
+link-external-newwindow: true
+---
+
+
+
+## What these talk covers
+
+This provocation reflects on my journey from starting as a lecturer uncertain about my research direction to leading a growing research group and international collaborations focused on forecasting for societal impact. Drawing on experiences working with organisations such as the NHS, WHO, governments, and ministries of health in Africa, I share candid insights into how curiosity, values, and real-world problems shaped my path more than strategic planning or academic trends. The talk highlights lessons learned along the way—the good, the bad, and the uncomfortable realities of research leadership—including shifting from producing research individually to building collaborations, capacity, and systems where research can genuinely inform decision-making. It concludes with a reflection on what it means to lead research that prioritises societal impact while navigating the incentives and structures of academia.
+
+

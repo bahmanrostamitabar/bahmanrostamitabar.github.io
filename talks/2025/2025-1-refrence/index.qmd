@@ -3,8 +3,7 @@ title: "Making slides with Quarto"
 author: "Bahman Rostami-Tabar"
 date: "2025-09-16"
 image: "cover.jpg"
-venue: "EURO 2025"
-location: "Berlin, Germany"
+
 # Add these custom fields:
 slides-html: "[View](2025/2025-1-refrence/slides/2025-1-refrence_slide.html){target=\"_blank\"}"
 slides-pdf: "[PDF](2025/2025-1-refrence/slides/2025-1-refrence_slide.pdf){target=\"_blank\"}"

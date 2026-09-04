@@ -1,0 +1,23 @@
+---
+title: "What Drives Vaccine Availability at Health Facilities?"
+author: "Bahman Rostami-Tabar"
+date: "2026-09-10"
+image: "cover.jpg"
+venue: "University of Nottingham"
+location: "Nottingham, UK"
+# Add these custom fields:
+slides-html: "[View](2026/2026-2-who/slides/2026-2-who.html){target=\"_blank\"}"
+slides-pdf: "[PDF](2026/2026-2-who/slides/2026-2-who.pdf){target=\"_blank\"}"
+
+categories:
+  - Conferences
+  - Immunisation Supply Chain
+link-external-newwindow: true
+---
+
+
+
+## What these talk covers
+
+A brief talk about the work we have been doing at WHO to enhance the immunisation supply chain through effective vaccine management analytics. 
+

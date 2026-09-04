@@ -1,8 +1,11 @@
 ---
-title: "Workshop 2026 Rwanda"
+title: "Workshop 2026- Rwanda"
 author: "Bahman Rostami-Tabar"
 date: "18/02/2026"
 image: "rwanda_modelling.png"
+format:
+  html:
+    css: disease-modelling.css
 categories:
   - Uncertainty
   - Climate diseases
@@ -10,15 +13,11 @@ categories:
   - Spatiotemporal modelling
   - Workshop
   - Africa
+toc: true
+toc-depth: 2
 ---
 
-```{=html}
-<a href="2026-1-phdfoundation.pdf" download class="btn btn-primary btn-sm">
-  <i class="bi bi-file-earmark-pdf"></i> Download PDF
-</a>
 
-<iframe src="2026-1-phdfoundation.html" width="100%" height="550px" style="border:none; margin-top: 10px;"></iframe>
-```
 
 ## Organisers
 
@@ -63,3 +62,28 @@ categories:
 - Establish an effective software setup for the development and use of spatiotemporal models using the open-source Chap modeling platform and DHIS2 modeling app  - a setup including version control and sharing of developed code, streamlined installation of libraries, streamlined running of developed code, and good organisation of code and data. 
 
 - Make progress on a concrete case brought to the workshop, including development or application of suited models and rigorous evaluation of how this initial model performs.
+
+## Materials
+
+Excercise and data materials for the workshop are available [here](https://github.com/bahmanrostamitabar/Workshop-Spatiotemporal-Modelling-of-Climate-Sensitive-Disease-).
+
+## Slides
+
+<div class="slide-buttons">
+  <a href="slides/supply_chain.pdf" download class="btn-pdf">
+    <i class="bi bi-file-earmark-pdf-fill"></i> Download PDF
+  </a>
+    <a href="slides/ets_rwanda.pdf" download class="btn-pdf">
+    <i class="bi bi-file-earmark-pdf-fill"></i> Download PDF
+  </a>
+    <a href="slides/accuracy_rwanda.pdf" download class="btn-pdf">
+    <i class="bi bi-file-earmark-pdf-fill"></i> Download PDF
+  </a>
+  <!-- <a href="slides/phdfoundation.html" target="_blank" class="btn-slides"> -->
+  <!--   <i class="bi bi-play-circle-fill"></i> Open Slides -->
+  <!-- </a> -->
+</div>
+
+<!-- <div class="slide-frame"> -->
+<!--   <iframe src="slides/phdfoundation.html"></iframe> -->
+<!-- </div> -->

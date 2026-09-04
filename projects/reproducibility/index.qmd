@@ -1,0 +1,19 @@
+---
+title: "Reproducibility"
+description: "This project focuses on methodologies and best practices of ensuring reproducibility in scientific research, particularly in the context of forecasting and computational science. It explores best practices, tools, and case studies to enhance the reliability and transparency of research findings."
+author: "Bahman Rostami-Tabar"
+date: "2026-03-03"
+image: "cover.png"
+categories:
+  - reproducibility
+  - forecasting
+  - transparency
+  - replicability
+
+listing:
+  contents: /
+  type: default # Explore more listing types; default, grid or table
+  filter-ui: true
+link-external-newwindow: true
+---
+

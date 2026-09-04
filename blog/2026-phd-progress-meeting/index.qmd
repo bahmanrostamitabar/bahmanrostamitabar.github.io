@@ -1,0 +1,325 @@
+---
+title: "How to Walk Into Your PhD Meeting"
+author: "Bahman Rostami-Tabar"
+description: |
+  A structured approach to bi-weekly PhD supervisor meetings that turns a stressful check-in into a productive thinking session.
+date: "05/02/2026"
+image: "cover.jpg"
+categories:
+  - PhD advice
+  - supervision
+  - productivity
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    highlight-style: github
+---
+
+
+##
+
+The PhD progress meeting (i.e.g, weekly, bi-weekly, or monthly depending on the stage and student) is not a performance review. It's a thinking tool --- one of the sharpest ones you have. But only if you use it well. That means what you do **before**, **during**, and **after** the meeting all matter.
+
+---
+
+## Before the Meeting {#sec-before}
+
+### Send a written summary the day before {#sec-pre-summary}
+
+This single habit will do more for your supervisor relationship than almost anything else.
+
+The day before the meeting, send a short written note --- five to ten bullet points --- covering what you've done, what you found, and what you want to discuss in the meeting. Keep it brief. The goal is not a report; it's a primer.
+
+::: {.callout-tip title="Why this works"}
+When your supervisor reads it ahead of time, they arrive having already thought about your problems. The meeting starts at the point where the real thinking happens, not at the point where they're still trying to understand what you've been doing for since last meeting.
+:::
+
+It also forces you to reflect before you're in the room. Students who write the pre-meeting note almost always arrive with a clearer head.
+
+### Keep a running research log {#sec-log}
+
+Between meetings, keep a simple running document --- a dated log of what you did each day, even briefly (this will take 5 minutes). When it comes time to write the pre-meeting summary, you are not reconstructing the everything from memory. You are editing a record that already exists.
+
+::: {.callout-note title="Format doesn't matter"}
+A plain text file, a Quarto document, a notebook, a Notion or Obsidian page --- whatever you will actually use. The point is the habit, not the tool.
+:::
+
+---
+
+## During the Meeting {#sec-during}
+
+The meeting itself has a natural flow. Think of it not as a checklist to get through, but as a shape: you move from facts, to findings, to obstacles, to the hardest question, and then to decisions and actions.
+
+### Since Last Meeting --- What did you actually do? {#sec-since}
+
+Start with the facts. Not how you *felt*. Not what you *intended* to do. What **happened**?
+
+Wrote code? Say so. Read papers? Name them. Had a call with partners? Say what came out of it. Presneted in a seminar? Say what you got out of it.
+
+This grounds the conversation before interpretation begins. Your supervisor cannot help you navigate if they do not know where you have been.
+
+**Reporting literature usefully**
+
+Reading is a major part of PhD work, but *"I read five papers"* is almost useless as a progress statement. What changed in your thinking?
+
+::: {.columns}
+
+::: {.column width="47%"}
+**❌ Not useful**
+
+> "I read some papers on vaccine demand forecasting."
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="47%"}
+**✅ Useful**
+
+> "I read three papers on vaccine demand forecasting in LMICs. The Harsha et al. piece changed how I'm thinking about the role of stockout history as a predictor --- I think we may need to model supply reliability and demand jointly rather than separately."
+:::
+
+:::
+
+The second version moves the conversation forward. The first closes it.
+
+**Typical examples of good progress statements:**
+
+- Built a cleaned dataset pipeline for the survey data from Nigeria and Ethiopia
+- Read three papers on vaccine demand forecasting in low-income settings; the Arkedis et al. review shifted my view on how administrative data should be treated
+- Revised the literature review section on immunisation supply chain to bold the gap around wastage data
+- Ran preliminary forecasting models on historical immunisation coverage data from Kenya
+- Had a call with the in-country partner team to clarify how stockout events are recorded at district level
+
+---
+
+### Results and Findings --- What did you learn? {#sec-results}
+
+This is where the science lives. Be honest about **both** directions.
+
+::: {.panel-tabset}
+
+### ✅ What Worked
+
+Even partial successes matter. A forecast that performs well on one country's data is a real result --- claim it. Example:
+
+- The wastage adjustment improved forecast accuracy by 12% on held-out data from Senegal
+
+### ❌ What Failed
+
+This is equally important. A failed experiment is not wasted time; it's **evidence**. Treat it like one.
+
+- The district-level population estimates from the partner were inconsistent with UN projections, making dose targets unreliable
+
+### 🔍 Findings
+
+Observations that emerged from the work, whether success or failure:
+
+- Vaccine need forecasts are highly sensitive to assumed wastage rates, which vary widely and are rarely reported consistently
+- Countries with more frequent stockouts show systematically lower reported coverage --- the data reflects the supply failure, not just demand
+
+:::
+
+::: {.callout-warning title="The most common mistake"}
+Students filter out failures before the meeting. Don't. Your supervisor is most useful when they see the full picture --- including the things that did not work.
+:::
+
+---
+
+### Blockers — What is preventing you from making progress on your work? {#sec-blockers}
+
+Be explicit. If you are stuck, say *why* you are stuck.
+
+::: {.columns}
+
+::: {.column width="47%"}
+**❌ Vague (not helpful)**
+
+> "The data situation is complicated."
+
+This is a feeling, not a problem statement. It gives your supervisor nothing to work with.
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="47%"}
+**✅ Concrete (actionable)**
+
+> "The in-country partner has shared dose delivery records, but they are aggregated at regional level. I need district-level data to match the catchment areas in my model, and I am not sure whether to ask them directly or try to disaggregate using population weights."
+
+This can be resolved in ten minutes with the right conversation.
+:::
+
+:::
+
+Your supervisor has seen more dead ends than you have. Give them a concrete problem and they can often unblock you immediately. Keep it vague, and you will leave the meeting with more vague advice.
+
+---
+
+### The Real Intellectual Problem — What is the question that keeps you up at night? {#sec-intellectual}
+
+Every good meeting has **one** central thing to think about together. Not five. One.
+
+What is the hardest conceptual decision in front of you right now? A modelling choice? A theoretical gap? A methodological fork in the road?
+
+Frame it clearly. Write it down as a question **before** you go in.
+
+::: {.callout-note title="Example of a well-framed intellectual question"}
+*Should the forecasting model treat wastage as a fixed rate or as a decision variable that depends on supply reliability?*
+
+This question has **stakes** (it changes what the model is actually optimising for), **trade-offs** (complexity vs. tractability, and data availability varies hugely across LMICs), and **no obvious answer** --- exactly what a supervisor is there for.
+:::
+
+A vague topic is not a question. *"I've been thinking about how to handle wastage"* opens a conversation; it does not direct one. Arrive with a decision that needs to be made.
+
+---
+
+### Decisions Made --- Don't leave without this {#sec-decisions}
+
+At the end of the meeting, before anyone closes their laptop, **name the decisions out loud**.
+
+> *"So we're treating wastage as a fixed input for now, scoping the model to three countries initially, and flagging the district-level data gap to the partner before we go any further --- is that right?"*
+
+::: {.callout-important title="Why this matters"}
+Supervisors and students routinely leave the **same meeting** with different understandings of what was agreed. Saying it aloud --- and writing it down --- closes that gap entirely.
+:::
+
+**What decisions look like in practice:**
+
+- Model wastage as a fixed, country-specific rate sourced from WHO estimates for now; revisit once partner data is cleaner
+- Scope the first paper to three countries (Nigeria, Ethiopia, Senegal) rather than attempting a global analysis
+- Request district-level disaggregation from the partner before proceeding with subnational modelling
+
+---
+
+### Next Actions --- Who does what, by when? {#sec-actions}
+
+A meeting without action items is a conversation, not a meeting.
+
+Before you leave, agree on specific tasks with **owners** and **deadlines**. Not *"I'll look into that"* --- but:
+
+| Task | Responsible | Deadline |
+|------|-------|----------|
+| Rerun forecasting model using WHO wastage rate estimates | Student | 10 May |
+| Draft data request email to partner for district-level records | Student | 11 May |
+| Review and give feedback on methods section draft | Bahman | 13 May |
+
+: Agreed actions from the meeting {.striped .hover}
+
+Note the last row. Accountability works **both ways**. If your supervisor agreed to do something, write it down too.
+
+---
+
+## How to Be in the Meeting {#sec-howto}
+
+The structure above tells you what to bring. This section is about how to show up.
+
+### Think out loud --- don't perform {#sec-perform}
+
+The most common mistake PhD students make in meetings is treating them like a mini-viva. They present polished answers and hide uncertainty. They wait until they are confident before raising a problem.
+
+This is exactly backwards. The meeting is most valuable when you bring **unresolved thinking** --- the question you cannot quite formulate, the result that does not make sense, the two approaches you cannot choose between.
+
+::: {.callout-tip title="A useful reframe"}
+Your supervisor is not evaluating you. They are thinking *with* you. The more honest and unfinished your questions, the more useful the conversation will be.
+:::
+
+Saying *"I'm not sure this is right, but here's what I'm thinking..."* is not weakness. It is how good research conversations start.
+
+### When you haven't made much progress {#sec-slow}
+
+It happens. Two weeks pass, things get stuck, life intervenes, and you arrive having done less than you hoped. The temptation is to pad, reframe, or quietly avoid the topic.
+
+Don't.
+
+::: {.columns}
+
+::: {.column width="47%"}
+**❌ Padding (unhelpful)**
+
+> "I've been doing a lot of background reading and thinking through the conceptual framing of the problem."
+
+This obscures rather than communicates.
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="47%"}
+**✅ Honest (productive)**
+
+> "I didn't make as much progress as I expected. I got stuck on the wastage estimation and spent most of the week going in circles. I think the blocker is X --- can we talk through it?"
+
+This opens the door to real help.
+:::
+
+:::
+
+A slow fortnight is not a crisis. It is, however, worth understanding. Often the real reason for slow progress surfaces in the honest conversation --- and that is the most useful thing the meeting can do.
+
+### The big picture check-in {#sec-bigpicture}
+
+Every few meetings, step back from the immediate work and ask a larger question: **does what I am doing still make sense in the context of the PhD thesis?**
+
+It is easy to spend weeks optimising a model or cleaning a dataset and lose sight of why it matters. The bi-weekly rhythm can reinforce this if every meeting stays narrowly focused on the last fortnight.
+
+Periodically bring one of these questions to the agenda:
+
+- Does this paper or chapter still fit where I thought it did in the overall thesis argument?
+- Am I still solving the right problem, or has the research evolved past my original framing?
+- Are there gaps opening up between what I have done and what the thesis needs?
+- How is the timeline looking against the bigger milestones?
+
+::: {.callout-note title="This is not just for early-stage students"}
+The big picture check-in is easy to skip when you feel buried in work. That is exactly when it is most needed. A thesis can drift quietly off course for months before anyone notices --- regular zooming out prevents that.
+:::
+
+---
+
+## After the Meeting {#sec-after}
+
+### Send a follow-up summary {#sec-followup}
+
+Within 24 hours of the meeting, send a short written note to your supervisor with:
+
+- The decisions made
+- The agreed actions, with responsible and deadlines
+- Any open questions that need resolving before the next meeting
+
+This is different from the pre-meeting note. The pre-meeting note **prepares** the conversation. The post-meeting note **closes** it. Together, they create a running record across the PhD --- an audit trail of decisions, pivots, and progress that becomes invaluable when you are writing up or preparing for your viva.
+
+::: {.callout-tip title="Practical tip"}
+Keep all pre- and post-meeting notes in one document or folder, dated and searchable. You will reference them more than you expect, especially when you need to reconstruct why a decision was made six months ago.
+:::
+
+---
+
+## Quick Reference {#sec-summary .unnumbered}
+
+### The meeting structure {.unnumbered}
+
+| Section | Purpose | Key question |
+|---|---|---|
+| Since Last Meeting | Progress log | What did you do? |
+| Results / Findings | Evidence | What did you learn? |
+| Blockers | Obstacles | What's in the way? |
+| Main Intellectual Issue | Central challenge | What's the hardest question? |
+| Decisions Made | Outcomes | What did we agree? |
+| Next Actions | Accountability | Who does what, by when? |
+
+: The meeting structure {.striped .hover}
+
+### The meeting cycle {.unnumbered}
+
+| When | What | Why |
+|---|---|---|
+| Between meetings | Maintain a research log | So the pre-note writes itself |
+| In the meeting | Follow the six-part structure | Keeps the conversation productive and complete |
+| Periodically in the meeting | Big picture check-in | Keeps the thesis on track |
+| Within 24 hours after | Send decisions and actions summary | Closes the loop; builds the audit trail |
+
+: The meeting cycle {.striped .hover}

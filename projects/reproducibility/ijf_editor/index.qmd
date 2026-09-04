@@ -1,0 +1,47 @@
+---
+title: "Appointed Reproducibility Editor for the International Journal of Forecasting"
+description: "I have been appointed as Reproducibility Editor at the International Journal of Forecasting, reflecting a major step forward in promoting transparency and scientific integrity in forecasting research."
+author: "Bahman Rostami-Tabar"
+date: "03/03/2026"
+image: "ijf.png"
+categories:
+  - reproducibility
+  - open-science
+  - forecasting
+  - research
+  - editorial
+---
+
+##
+
+I am delighted to share that I have been appointed as **Reproducibility Editor** for the [*International Journal of Forecasting*](https://www.sciencedirect.com/journal/international-journal-of-forecasting), the leading international journal in the field. This is a newly created editorial role, and one I am genuinely proud to take on.
+
+
+## What the Role Involves
+
+The *International Journal of Forecasting* recently introduced a pioneering reproducibility policy requiring every accepted paper to undergo a detailed reproducibility assessment before publication. This process runs in collaboration with [**CASCaD**](https://www.cascad.tech/), the first certification agency for scientific code and data, and ensures that the results reported in each study can be independently verified using the same data and methods. Each year, the journal team reproduces over **100 research papers** to confirm the robustness and credibility of their findings.
+
+In this role, I will work closely with the Editor-in-Chief and three Associate Editors to oversee this process — helping to ensure that published studies meet the highest standards of computational transparency and scientific rigour.
+
+
+## Why This Matters to Me
+
+::: {.callout-note appearance="simple"}
+*"Reproducibility means that research results can be reproduced using the same data, code, and methods. It's a cornerstone of credible science, yet many studies in computational fields have struggled to meet this standard. I'm delighted to take on this new role, which supports openness, quality, and trust in research."*
+:::
+
+This is not just a professional commitment for me — it reflects something I genuinely believe in. Reproducibility is how science earns trust, and it is one of the areas where our field has the most room to grow.
+
+
+## About the Journal
+
+The *International Journal of Forecasting* is the official publication of the [International Institute of Forecasters (IIF)](https://forecasters.org/) and is widely regarded as the flagship journal in the discipline. Being part of its editorial team is both a privilege and a responsibility I take seriously.
+
+
+## A New Course on Reproducibility
+
+::: {.callout-tip appearance="simple"}
+Alongside this appointment, I have recently designed a new course on **reproducibility in computational research**, which I will be offering from **Spring 2026** as part of the Doctoral Academy programme. The course is aimed at PhD students and is designed to give them the practical skills and mindset needed to produce transparent, verifiable, and trustworthy research — from day one of their projects.
+:::
+
+If you have any questions about the course or the reproducibility process at the journal, feel free to get in touch.

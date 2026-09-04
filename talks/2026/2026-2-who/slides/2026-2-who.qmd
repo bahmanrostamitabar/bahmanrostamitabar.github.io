@@ -1,0 +1,497 @@
+---
+title: "What Drives Vaccine Availability at Health Facilities?"
+subtitle: "OR 68, 8-10 September, Nottingham"
+author:
+  - Bahman Rostami-Tabar
+  - Daniel Brigden
+institute: 
+  - Data Lab for Social Good, Cardiff Business School, Cardiff University, UK
+  - World Health Organization (WHO), Geneva, Switzerland
+
+execute: 
+  cache: false
+  warning: false
+  message: false
+  echo: false
+format: 
+  revealjs:
+    multiplex: false
+    theme: ["default", "pp.scss"]
+    slide-number: c/t
+    incremental: false
+    menu: false
+    html-math-method: mathjax
+    chalkboard:
+      theme: chalkboard   # or "whiteboard"
+      toggleNotesButton: true
+title-slide-attributes:
+  data-background-image: "logo/dl4sg.svg, logo/carbs_logo.png, logo/who.png"
+  data-background-size: "150px, 220px, 120px"
+  data-background-position: "right 220px bottom 24px, right bottom 24px, left 24px bottom 24px"
+  data-background-repeat: "no-repeat, no-repeat, no-repeat"
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| include: false
+
+#install.packages("readr","DT","here")
+
+```
+
+## A vaccine can save a life — but only if it reaches the child
+
+Imagine a child arriving at a health facility for routine immunisation.
+
+The vaccine exists. It may have been purchased, shipped to the country, and distributed through the national system.
+
+But when the child arrives:
+
+> ## **The vaccine is not there.**
+
+Perhaps the facility has run out of stock. Perhaps delivery was delayed. Perhaps the refrigerator failed. Perhaps poor records meant nobody realised supplies were running low.
+
+**For the child, the reason makes little difference.**
+
+::: {.notes}
+Open with the child, not the analytical method. The purpose of the supply chain is to make vaccination possible at the point at which a child needs it.
+:::
+
+
+## Immunisation is also a supply-chain challenge
+
+A vaccine can protect a child only if it is:
+
+::: {.columns}
+::: {.column width="50%"}
+### Available
+At the **right place**, at the **right time**, in the **right quantity**.
+
+### Potent and safe
+Stored and transported under appropriate conditions.
+:::
+
+::: {.column width="50%"}
+### Reliably delivered
+Supported by functioning people, equipment, information and transport.
+
+### Efficiently managed
+Using limited resources effectively and sustainably.
+:::
+:::
+
+> **A vaccine that does not reach the child cannot protect the child.**
+
+## The pathway from the supply chain to saved lives
+
+::: {.r-stack}
+::: {.fragment}
+### Supply-chain fundamentals
+System design · Leadership · Data for management · Cold-chain equipment · Continuous improvement
+:::
+
+::: {.fragment}
+# ↓
+### Availability · Potency/Quality · Efficiency
+:::
+
+::: {.fragment}
+# ↓
+### Coverage · Equity
+:::
+
+::: {.fragment}
+# ↓
+## **Better health outcomes**
+:::
+:::
+
+::: {.notes}
+This is the Immunization Supply Chain Theory of Change framing. Insert the original Gavi/WHO–UNICEF figure on this slide if preferred.
+:::
+
+
+## [FIGURE] Immunization Supply Chain Theory of Change
+
+::: {.callout-note}
+### Figure placeholder
+
+**Insert the original iSC Theory of Change figure here**
+
+Suggested caption:
+
+*Strong supply-chain fundamentals support vaccine availability and potency and a more efficient supply chain, contributing to improved coverage and equity and, ultimately, better health outcomes.*
+
+**Source:** Gavi Immunization Supply Chain Theory of Change, as reproduced in the WHO–UNICEF technical review of public-health supply-chain assessment tools.
+:::
+
+
+## But what makes vaccines available?
+
+There is no single action called **“make vaccines available.”**
+
+Availability emerges from a system in which many things have to work together:
+
+**Forecasting & ordering** → **storage & cold chain** → **stock management** → **distribution** → **information** → **staff & supervision** → **continuous improvement**
+
+A weakness anywhere in this chain can eventually appear at the service point as the same outcome:
+
+> ## **The vaccine the child needs is unavailable.**
+
+
+## The decision problem
+
+When vaccine availability is poor, **where should a programme intervene?**
+
+Should it invest in cold-chain equipment? Improve stock management? Strengthen distribution? Train staff? Improve information systems? Change forecasting practices? Strengthen supervision?
+
+Resources are limited.
+
+> **Saying that “everything matters” is not enough.**
+
+We need evidence that helps identify **where improvement efforts should be focused first**.
+
+
+## EVM turns supply-chain performance into measurable evidence
+
+**Effective Vaccine Management (EVM)** provides a systematic assessment of how well the immunisation supply chain is functioning.
+
+Rather than asking only whether vaccines are available today, EVM examines the **capabilities, processes and practices that should make reliable availability possible**.
+
+It covers areas such as:
+
+**Infrastructure and cold chain · Temperature management · Stock management · Distribution · Information · Maintenance · Management practices**
+
+::: {.notes}
+Keep this high level for practitioners. The report contains the more detailed EVM hierarchy if needed.
+:::
+
+## [FIGURE] From EVM assessment to improvement
+
+::: {.callout-note}
+### Figure placeholder
+
+Insert a simple EVM diagram or screenshot showing:
+
+**EVM assessment** → **requirements and scores** → **identify weaknesses** → **Continuous Improvement Plan (cIP)** → **targeted action**
+
+Optional visual: use an EVM dashboard/screenshot or a simplified hierarchy of questions → requirements → criteria/categories.
+:::
+
+
+## EVM creates an analytical opportunity
+
+EVM tells us where requirements are being met — and where weaknesses exist.
+
+But a further question matters for decision-makers:
+
+> # **Which EVM requirements are associated with better vaccine availability?**
+
+This moves us from **assessment** toward **evidence for prioritisation**.
+
+$$
+\boxed{\text{EVM requirements} \longrightarrow \textbf{Vaccine availability}}
+$$
+
+
+## Our focus: Service Points
+
+The analysis focuses on **Service Point (SP) facilities** — the places closest to where vaccines are ultimately delivered to people.
+
+### Outcome
+
+**Vaccine availability (AV):** the proportion of assessed vaccines physically present at the facility.
+
+### Predictors of interest
+
+The facility's **EVM requirements**.
+
+### Context
+
+**Country** and **target population** are used as adjustments rather than treated as the requirements of interest.
+
+
+## Availability is ordered, not simply “good” or “bad”
+
+Availability is represented using **six ordered bands**:
+
+| Band | Availability |
+|---|---|
+| **1 — None** | AV = 0 |
+| **2 — Critical** | 0 < AV ≤ 0.25 |
+| **3 — Low** | 0.25 < AV ≤ 0.50 |
+| **4 — Moderate** | 0.50 < AV ≤ 0.75 |
+| **5 — Good** | 0.75 < AV < 1 |
+| **6 — Full** | AV = 1 |
+
+::: {.notes}
+The distribution clusters at values such as 0, .25, .50, .75 and 1. The ordered representation respects ranking without assuming equal numeric distances are meaningful.
+:::
+
+
+
+## [FIGURE] What does vaccine availability look like?
+
+::: {.callout-note}
+### Figure placeholder
+
+**Insert histogram/distribution of AV across Service Point facilities**
+
+Show the strong clustering around **0, 0.25, 0.50, 0.75 and 1** and mark the six availability bands.
+
+Suggested message beneath the figure:
+
+**The outcome has a natural ordering, motivating an ordinal modelling approach.**
+:::
+
+## Preparing EVM requirements for analysis
+
+A raw EVM value can contain **two different messages**:
+
+::: {.columns}
+::: {.column width="48%"}
+### How well is the requirement met?
+A **score** represents the level of performance/compliance.
+:::
+
+::: {.column width="48%"}
+### Does the requirement apply?
+A **not-applicable indicator** captures a different structural situation.
+:::
+:::
+
+These should not be confused.
+
+> A facility where a requirement **does not apply** is not necessarily equivalent to a facility that **performs badly** on that requirement.
+
+The analysis therefore keeps **score** and **applicability** separate.
+
+
+## Why a simple comparison can mislead
+
+Suppose facilities with stronger EVM scores also have better vaccine availability.
+
+Is that because of the requirement itself?
+
+Or because those facilities happen to be in countries with stronger health systems, infrastructure and funding?
+
+Or because larger facilities are differently resourced?
+
+> **We need to separate the requirement signal from country context and facility size.**
+
+
+## We ask the question three ways
+
+::: {.columns}
+::: {.column width="32%"}
+### Model B — Main
+**Across all facilities**, which requirements are linked to availability?
+
+Adjusts for **country context** and **target population**.
+:::
+
+::: {.column width="32%"}
+### Model A — Country check
+When facilities are compared **within their own country**, which requirements still matter?
+
+Removes the possibility that a requirement looks important simply because of its country.
+:::
+
+::: {.column width="32%"}
+### Model C — Size check
+What happens when **facility size is not used**?
+
+Checks whether findings are driven by target population.
+:::
+:::
+
+### The strongest findings are those that survive all three views.
+
+
+## Finding signal among many requirements
+
+There are too many correlated candidate requirements to fit safely in one ordinary model.
+
+The analysis therefore uses **two stages**:
+
+### 1. Find requirements that repeatedly matter
+A **penalised ordinal model (lasso)** is repeatedly fitted to resampled data.
+
+**500 bootstrap repetitions** → record how often each requirement survives → retain requirements selected in **≥ 60%** of runs.
+
+### 2. Estimate their association
+The retained requirements are refitted using an **unpenalised ordinal model** to estimate interpretable **odds ratios and 95% confidence intervals**.
+
+> **Selection finds the stable signal; estimation tells us its direction and strength.**
+
+
+## [FIGURE] The analytical workflow
+
+::: {.callout-note}
+### Figure placeholder
+
+Create/insert a simple horizontal workflow:
+
+**EVM Service Point data**
+
+→ **Prepare scores + applicability**
+
+→ **Ordinal lasso**
+
+→ **500 bootstrap samples**
+
+→ **Stable requirements (≥60%)**
+
+→ **Ordinal regression**
+
+→ **Odds ratios**
+
+→ **Compare Models A, B and C**
+
+→ **Robust requirements associated with availability**
+:::
+
+
+## How to read the results
+
+An **odds ratio (OR)** describes how a requirement is associated with being in a **higher availability band**.
+
+::: {.columns}
+::: {.column width="33%"}
+### OR = 1
+No association
+:::
+
+::: {.column width="33%"}
+### OR > 1
+Associated with **higher availability**
+:::
+
+::: {.column width="33%"}
+### OR < 1
+Associated with **lower availability**
+:::
+:::
+
+The **further from 1**, the stronger the association. Confidence intervals show the uncertainty.
+
+### But interpretation depends on the type
+
+A **score** result is about *doing a requirement better*.
+
+An **applicability** result describes whether the requirement applies and may indicate a **structural difference or gap**, rather than an action a facility should take.
+
+
+## [FIGURE] Main results — Model B
+
+::: {.callout-note}
+### Figure placeholder
+
+**Insert the Model B odds-ratio forest plot**
+
+Recommended annotations:
+
+- Dashed vertical line at **OR = 1**
+- Right side: **higher availability**
+- Left side: **lower availability**
+- Distinguish **Score** from **Applicability**
+- Show 95% confidence intervals
+
+**Take-home message:** focus on requirements that are both **stably selected** and have an association clearly away from 1.
+:::
+
+
+## Robustness matters more than one model
+
+A requirement is particularly compelling when:
+
+**Model B** identifies it in the overall programme,
+
+**Model A** shows that the association remains when facilities are compared within countries,
+
+and **Model C** shows that it does not disappear when target population is removed.
+
+> ## **Agreement across models is the robust core.**
+
+A requirement that changes direction or disappears across specifications should be treated more cautiously.
+
+
+
+## [FIGURE] Which findings survive the stress tests?
+
+::: {.callout-note}
+### Figure placeholder
+
+Insert either:
+
+**Option A:** a three-way overlap/Venn-style figure for Models A, B and C; or
+
+**Option B:** a compact comparison plot showing odds ratios for the same requirements under all three models.
+
+Highlight requirements retained by **3/3 models in the same direction** as the **robust core**.
+:::
+
+
+## What the analysis can — and cannot — tell us
+
+The analysis can identify requirements that **consistently go together with higher or lower vaccine availability**, after accounting for important contextual differences.
+
+It can help programmes identify **where to investigate, prioritise and improve**.
+
+But the data are cross-sectional:
+
+> **Association is not proof of causation.**
+
+A requirement associated with higher availability is not automatically a guaranteed lever that will *cause* availability to increase if changed.
+
+The results are best viewed as a **robust evidence-based ranking of where to look first**.
+
+
+## Closing the loop: from measurement to action
+
+::: {.r-stack}
+::: {.fragment}
+### Identify supply-chain weaknesses
+:::
+::: {.fragment}
+# ↓
+### Prioritise requirements associated with availability
+:::
+::: {.fragment}
+# ↓
+### Target improvement through cIPs and investment
+:::
+::: {.fragment}
+# ↓
+### Improve reliable vaccine availability
+:::
+::: {.fragment}
+# ↓
+### More opportunities to vaccinate children
+:::
+::: {.fragment}
+# ↓
+## **Better coverage, greater equity, lives protected**
+:::
+:::
+
+
+# When a child arrives for vaccination,  
+# the right vaccine should be there —  
+# **safe and ready to use.**
+
+### EVM analytics can help us understand where to focus to make that more likely.
+
+## [Any questions or comments?]{.remember} 💬 {background-video="https://www.pexels.com/download/video/12165750/" background-video-loop="true" background-video-muted="true"}
+
+![](/img//follow_us.png){fig-align="center"}
+
+## References {background-image="https://images.unsplash.com/photo-1550399105-05c4a7641b02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" background-size="contain" background-position="right"}
+
+- [Effective Vaccine Management (EVM) Initiative](https://evm2.who.int/Public/)
+- [UNICEF Immunization Data](https://data.unicef.org/resources/dataset/immunization/)
+
+:::aside
+Image credit: [Unsplash](https://unsplash.com)
+:::

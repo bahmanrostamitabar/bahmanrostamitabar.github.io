@@ -1,0 +1,262 @@
+---
+title: "From Researcher to Research Leader"
+subtitle: "Reflections from Forecasting for Social Good"
+author:
+  - Bahman Rostami-Tabar
+institute: 
+  - Data Lab for Social Good, Cardiff Business School, Cardiff University
+
+execute: 
+  cache: true
+  warning: false
+  message: false
+  echo: false
+format: 
+  revealjs:
+    multiplex: false
+    footer: "{{< fa brands github >}} [bahmanrostamitabar](https://github.com/bahmanrostamitabar) {{< fa brands linkedin >}} [bahman-rostami-tabar](https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/) 🌐 [bahmanrostamitabar.github.io](https://bahmanrostamitabar.github.io/)"
+    theme: ["default", "pp.scss"]
+    slide-number: c/t
+    incremental: false
+    menu: false
+    html-math-method: mathjax
+    chalkboard:
+      theme: chalkboard   # or "whiteboard"
+      toggleNotesButton: true
+title-slide-attributes:
+  data-background-image: "logo/dl4sg.svg, img/carbs_logo.png"
+  data-background-size: "130px, 200px"
+  data-background-position: "right bottom 24px, left 24px bottom 24px"
+  data-background-repeat: "no-repeat, no-repeat"
+---
+
+
+## An Unexpected Journey
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+I lead an active research group with around **12 PhD students**, collaborating with:
+
+- Government partners & WHO
+- NHS Trusts
+- Ministries of health across several African countries
+
+Looking back, the journey from uncertain lecturer to research leader did not happen through a grand strategy.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80)
+:::
+
+::::
+
+## A Moment That Changed My Perspective
+
+:::: {.columns}
+
+::: {.column width="55%"}
+A few years ago, I visited a health centre in West Africa.
+
+- The shelves were empty
+- No contraceptives
+- No essential medicines
+
+At first glance, it looked like a logistics problem. But the real issue wasn't manufacturing or transportation — it was **forecasting**.
+
+Planners simply didn't have reliable tools to anticipate demand.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80)
+:::
+
+::::
+
+## A Realisation
+
+:::: {.columns}
+
+::: {.column width="55%"}
+Standing there changed how I thought about research. Until then, I had been doing what many of us do:
+
+- Publishing papers
+- Improving forecasting models
+- Developing new methods
+
+But the real problem was **not a lack of models**.
+
+The real problem was a **lack of translation between research and decision-making**.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=800&q=80)
+:::
+
+::::
+
+## A Question That Stayed With Me
+
+> How can forecasting research actually help people make better decisions under uncertainty?
+
+That question eventually led to **Forecasting for Social Good**.
+
+## The Shift
+
+:::: {.columns}
+
+::: {.column width="55%"}
+Solving these problems wasn't going to happen through one paper, one model, or one project.
+
+It required partnerships with:
+
+- Ministries & NGOs
+- Health systems
+- Researchers across different countries
+
+And that meant **my role had to change**.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80)
+:::
+
+::::
+
+## Becoming Something Else
+
+:::: {.columns}
+
+::: {.column width="55%"}
+I realised I was no longer just a researcher. I had to become something else:
+
+- A research organiser
+- A collaborator and bridge-builder
+- Sometimes a trainer
+- Sometimes a fundraiser
+
+What started as a research idea became a programme combining research, collaboration, and training across multiple countries.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80)
+:::
+
+::::
+
+## Following Curiosity and Values
+
+:::: {.columns}
+
+::: {.column width="55%"}
+Looking back, I wasn't following research trends. Instead, I was following:
+
+- Curiosity
+- Values
+- Problems that genuinely interested me
+
+The gap between forecasting research and real decisions fascinated me. The idea that research could **empower people** to make better decisions excited me.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=800&q=80)
+:::
+
+::::
+
+## Lesson 1: The Model Is Not the Centre of the Story
+
+:::: {.columns}
+
+::: {.column width="55%"}
+As researchers we are trained to optimise models. But in real systems:
+
+- Organisations care about **usability**
+- Practitioners care about **trust**
+- Decision-makers care about **practicality**
+
+> A slightly simpler model that people actually use can be far more valuable than the perfect model that sits in a paper.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80)
+:::
+
+::::
+
+## Lesson 2: Impact Moves at a Different Speed
+
+:::: {.columns}
+
+::: {.column width="55%"}
+Academic success often moves fast: papers, citations, outputs.
+
+Real-world impact moves differently. It requires:
+
+- Trust
+- Relationships
+- Patience
+
+Some of the most impactful work I've done took **years before producing a paper** — and sometimes it produced no paper at all, but it **changed practice**.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80)
+:::
+
+::::
+
+## Lesson 3: People Are the Most Scalable Impact
+
+:::: {.columns}
+
+::: {.column width="55%"}
+At first I thought impact would come from better models. But over time I realised:
+
+> The most scalable form of impact is **people**.
+
+If you train analysts and practitioners, they will continue applying those skills long after a project ends.
+
+Sometimes the most powerful thing a researcher can do is **build capability**.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80)
+:::
+
+::::
+
+## The Uncomfortable Reality
+
+:::: {.columns}
+
+::: {.column width="55%"}
+There is also a less visible side to research leadership. The more successful a programme becomes:
+
+- The less time you spend coding
+- The more time you spend coordinating
+- The more time you spend writing grants
+
+At first this felt like moving away from research. But leadership means **enabling knowledge**, not just producing it.
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80)
+:::
+
+::::
+
+## A Provocation
+
+Many societal challenges require **collaborative research ecosystems**.
+
+But academic systems still reward mostly **individual outputs**.
+
+> How do we build academic careers that reward building ecosystems and capacity, not just producing papers?
+
+## Final Reflection
+
+Moving from researcher to research leader is not about becoming more important.
+
+It's about making your research **less about you — and more about the problem you're trying to solve**.

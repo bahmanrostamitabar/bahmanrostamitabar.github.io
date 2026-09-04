@@ -1,0 +1,218 @@
+---
+title: "Reproducibility in the International Journal of Forecasting"
+description: "Suggestions to consider when preparing your reprodicubulity package and Readme file"
+author: "Bahman Rostami-Tabar"
+date: "04/03/2026"
+image: "cover.png"
+categories:
+  - reproducibility
+  - open-science
+  - forecasting
+  - research
+---
+
+## 
+
+Reproducibility is not a bureaucratic checkbox. It is the mechanism by which science earns trust. When another researcher — or a journal reviewer, or a policy-maker relying on your findings — can take your data and code and arrive at exactly the same results you published, your work becomes part of the scientific record in a way that a PDF alone never can.
+
+This guide walks you through what a reproducibility package needs to contain, how to structure it, and how to document it so that someone who has never seen your project can run it from scratch.
+
+::: {.callout-tip}
+## Examples to learn from
+Before you start, it is worth looking at two well-structured reproducibility packages in the wild:
+
+- [Causal Discovery in Multivariate Time Series through Mutual Information Featurization](https://github.com/gmpal/TD2C-PP)
+- [replication_triptych](https://github.com/TimoDimi/replication_triptych) — a clean example of a well-organised replication kit
+- [online-probabilistic-forecast-combination](https://git.persee.mines-paristech.fr/dennis.van_der_meer/online-probabilistic-forecast-combination) — another strong example with clear structure
+
+Additional guidance is available at the [CASCAD certification checklist](https://www.cascad.tech/to-do-list-for-a-certification/).
+:::
+
+
+## What a Reproducibility Package Must Include
+
+At its core, a reproducibility package has two non-negotiable components:
+
+::: {.columns}
+
+::: {.column width="48%"}
+::: {.callout-note appearance="minimal"}
+### 📁 All data and code
+
+Everything necessary to run the reproducibility check must be included — or clearly documented as to where it can be obtained. If a reviewer cannot get the inputs, they cannot verify the outputs.
+:::
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+::: {.callout-note appearance="minimal"}
+### 📄 A readme file
+
+A readme file that gives all relevant information needed to actually run the reproducibility check. This is the map to your package — without it, even a perfectly organised repository is hard to navigate.
+:::
+:::
+
+:::
+
+
+## The Readme File — What to Cover
+
+The readme is the most important document in your package. A reviewer should be able to pick it up, read it top to bottom, and know exactly what to do. Below is everything it needs to address.
+
+### 📅 Assembly date and authorship
+
+State clearly:
+
+- The **date** at which the reproducibility package was assembled
+- The **author(s)** of the package and their **contact information** — not just the paper authors, but specifically who to contact if something does not run
+
+### 🗂️ Repository structure
+
+Describe the structure of the repository you are providing. For example, if you are separating code, input data, and output data into different folders, say so explicitly and explain what lives where.
+
+A simple example structure might look like:
+
+```
+project/
+├── README.md
+├── data/
+│   ├── raw/
+│   └── processed/
+├── code/
+│   ├── 01_clean_data.R
+│   ├── 02_run_model.R
+│   └── 03_produce_figures.R
+└── output/
+    ├── figures/
+    └── tables/
+```
+
+### 💻 Computing environment
+
+This is one of the most commonly overlooked sections — and one of the most important. Document:
+
+- The **operating system** and hardware used (see also the section on runtime below)
+- The **programming language(s)** and their versions
+- All **packages and libraries** required, with their exact versions
+- The **licence(s)** applicable to your code
+- If you used an environment manager like `conda` or `renv`, provide the configuration file (e.g., `environment.yml`, `renv.lock`) and instructions for recreating the environment
+
+::: {.callout-warning}
+## Version numbers matter
+A package that worked in Python 3.9 may behave differently in Python 3.12. Always pin your versions. If you are not using an environment manager, a simple `requirements.txt` or `sessionInfo()` output goes a long way.
+:::
+
+### 🗃️ Data — what it is and how to get it
+
+Describe every dataset used in the project. For each one, address:
+
+- What the data is and what format it is in
+- Where it comes from and any relevant pre-processing steps applied
+- Any usage restrictions or licences that apply
+
+Then distinguish between two types of datasets:
+
+::: {.panel-tabset}
+
+#### Sharable data
+For datasets you can share openly, state clearly whether the data is:
+
+- **Directly included** in the replication kit (preferred), or
+- **Available elsewhere** — provide the repository, website, DOI, or access instructions
+
+#### Non-sharable data
+For datasets that cannot be shared due to copyright, NDAs, or restricted access, provide enough information for a third party to obtain it themselves:
+
+- **Data provider** name and contact
+- **Database identifier** — name, DOI, vintage
+- **Application and registration procedures** required to access it
+- **Monetary costs** and **time requirements** to obtain access
+- **Instructions** on which variables and date ranges to request
+- Whether a **third party can temporarily access the data** for reproduction purposes (this is sometimes possible under data use agreements)
+
+:::
+
+### Intermediary Datasets
+
+Some scripts do not produce final outputs — they transform raw data into processed datasets that other scripts then use. These are **intermediary datasets**, and they deserve special attention.
+
+::: {.callout-note appearance="simple"}
+**As a default, include intermediary datasets in the replication kit.** This allows a reviewer to skip computationally expensive or time-consuming preprocessing steps and still verify the core analytical results.
+
+For each intermediary dataset, document:
+
+- Which file it is
+- Which script generates it
+- Where it sits in the pipeline relative to other files
+
+If intermediary data cannot be reproduced from raw data — due to bugs, time constraints, or insufficient compute — the rest of the verification can still be carried out using the pre-generated intermediary files. Make this explicit in your readme so reviewers know they are not expected to regenerate everything from scratch.
+:::
+
+
+### 📊 Which code produces which outputs
+
+This is the section a reviewer will use most. Map every table and figure in your paper to the script that produces it. Be explicit:
+
+| Output | Script | Notes |
+|---|---|---|
+| Table 1 | `code/02_run_model.R` | Runs in approx. 5 minutes |
+| Figure 2 | `code/03_produce_figures.R` | Requires processed data from step 1 |
+| Figure 3 | `code/03_produce_figures.R` | — |
+
+: {tbl-colwidths="[25,35,40]"}
+
+### ⏱️ Hardware and expected runtime
+
+State:
+
+- The **type of computer** used (processor, RAM, GPU if relevant)
+- The **expected runtime** for each major step, or for the full pipeline end-to-end
+
+This helps a reviewer plan their time and flag immediately if something is taking far longer than expected — which often indicates a setup problem rather than a performance issue.
+
+### ⚙️ Special setup requirements
+
+If your code requires anything beyond a standard computing environment, document it explicitly:
+
+- GPU requirements
+- Parallel computing setup
+- Specific memory requirements
+- Access to a cluster or HPC environment
+- Any manual steps that cannot be automated
+
+::: {.callout-important}
+## If it requires special infrastructure, say so upfront
+Do not bury GPU or cluster requirements at the end. Put them near the top of the readme so a reviewer knows immediately whether they can run the check on their own machine.
+:::
+
+
+## A Reproducibility Checklist
+
+Use this before submitting your package.
+
+::: {.callout-caution appearance="minimal"}
+
+**Data and code**
+
+- [ ] All data necessary to run the check is included or access instructions are provided
+- [ ] All code necessary to run the check is included
+- [ ] Sharable datasets are either included or linked with a stable URL or DOI
+- [ ] Non-sharable datasets are documented with full access instructions
+- [ ] Intermediary datasets are identified and their generating scripts are named
+
+**Readme**
+
+- [ ] Assembly date is stated
+- [ ] Author(s) and contact information are provided
+- [ ] Repository structure is described
+- [ ] Computing environment, languages, packages, and versions are documented
+- [ ] Environment recreation instructions are provided (e.g., `conda`, `renv`)
+- [ ] Each table and figure is mapped to the script that produces it
+- [ ] Hardware used and expected runtimes are stated
+- [ ] Any special setup requirements are flagged clearly
+- [ ] Licences for code and data are stated
+
+:::
+

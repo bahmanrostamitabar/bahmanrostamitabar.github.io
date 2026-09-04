@@ -1,0 +1,134 @@
+/* ── General typography ── */
+body {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #2c2c2c;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+h2 {
+  border-bottom: 3px solid #e63946;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  color: #457b9d;
+  margin-top: 2rem;
+}
+
+h4 {
+  color: #1d3557;
+}
+
+/* ── Blockquote ── */
+blockquote {
+  border-left: 5px solid #e63946;
+  background-color: #fff0f0;
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #333;
+}
+
+/* ── Tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+thead {
+  background-color: #1d3557;
+  color: white;
+}
+
+thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f4f8;
+}
+
+tbody tr:hover {
+  background-color: #dce8f5;
+  transition: background-color 0.2s ease;
+}
+
+tbody td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+/* ── Four areas grid ── */
+.four-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.area-card {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.area-card h4 {
+  color: #a8dadc;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.area-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ── Callout tweaks ── */
+.callout {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.callout-tip {
+  border-left-color: #2a9d8f;
+}
+
+.callout-warning {
+  border-left-color: #e9c46a;
+}
+
+.callout-important {
+  border-left-color: #e63946;
+  background-color: #fff5f5;
+}
+
+/* ── Horizontal rule ── */
+hr {
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin: 2.5rem 0;
+}
+
+/* ── Responsive: stack grid on small screens ── */
+@media (max-width: 600px) {
+  .four-areas-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,134 @@
+---
+title: "Understanding the Kurds: A Starting Point"
+subtitle: "For those just starting to learn about the Kurdish people-History, Identity, and the Struggle for Recognition"
+author: "Bahman Rostami-Tabar"
+date: "02/22/2026"
+image: "cover.jpg"
+categories:
+  - kurds
+  - politics
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+#
+
+After the recent war, friends started asking me what Kurds want. This is my answer — written from my own understanding as a Kurd, to give you a place to start. I hope it opens a door, not closes one.
+
+::: {.callout-note appearance="minimal"}
+> *"Kurdish people seek freedom, dignity, and the right to shape their own future. This struggle is shared."*
+:::
+
+
+# Who the Kurds Are
+
+The Kurds are a distinct ethnic group numbering between **30 and 40 million people**, making them one of the largest ethnic groups in the world without their own independent nation. Their traditional homeland is situated in a mountainous region that straddles the modern borders of **Armenia, Iraq, Iran, Syria, and Turkey**.
+
+
+## Origins and Culture
+
+Historians generally trace Kurdish origins to the **Iranian branch of the Indo-European family**, and the Kurds link their heritage to the **Medes**, an ancient Middle Eastern people. They possess a unique cultural identity, complete with traditional dress, music, cuisine, and a language that features multiple dialects including Sorani, Kurmanji, Zazaki and Gorani.
+
+::: {.callout-tip appearance="simple" icon=false}
+### 🎶 A Living Culture
+While the majority of Kurds are Sunni Muslim, their population also includes significant religious minorities such as Yazidis Yarsanism/Kaka'i, Alevis, Christians, Jews, and Zoroastrians. Kurdish identity is inseparable from its music, poetry, oral tradition, and deep connection to the land.
+:::
+
+
+## History and the Division of *Kurdistan*
+
+The term **"Kurdistan"** was first established in the **12th century** by a Turkish Seljuk sultan in recognition of the region's distinct personality. 
+
+The fate of the Kurds changed drastically after the **fall of the Ottoman Empire** following World War I:
+
+| Treaty | Year | Outcome for Kurds |
+|---|---|---|
+| **Treaty of Sèvres** | 1920 | Recommended an independent Kurdish state |
+| **Treaty of Lausanne** | 1923 | Divided Kurdish territory among Turkey, Iran, Iraq, and Syria |
+
+The 1923 Treaty of Lausanne divided the Kurdish territory among the newly formed borders of Turkey, Iran, and Iraq, while France annexed the Kurdish provinces of Jazira and Kurd-Dagh into its mandate in Syria. **Deprived of their autonomy, the Kurds faced forced assimilation by these new nation-states.**
+
+## Modern Struggles and Repression
+
+Since their division, Kurdish communities have faced severe repression, displacement, and violence from authoritarian regimes.
+
+::: {.panel-tabset}
+
+### Syria
+
+Before the civil war, Syrian Kurds faced systemic discrimination through the 1962 census that stripped hundreds of thousands of their citizenship, leaving them stateless "foreigners" in their own land. Under the Ba'athist "Arab Belt" policy, the government suppressed Kurdish language and culture while seizing ancestral lands to settle Arab populations in an attempt to forcibly Arabize the region. During the recent civil war, Kurds attempted to build their own enclave. They served as **vital ground fighters** in the campaign to defeat the Islamic State, but their dreams of autonomy were sidelined by a US decision to prioritise relations with Turkey over Kurdish aspirations.
+
+### Iraq
+
+Kurds in Iraq faced severe repression under Saddam Hussein’s regime, most notably during the Anfal campaign, when Iraqi forces destroyed thousands of villages, carried out mass arrests and executions, and used chemical weapons against civilians in an effort to suppress Kurdish resistance and control the region., though the Kurds were eventually able to establish a **semi-autonomous governing zone** after the 1991 Gulf War.
+
+### Turkey
+
+A long and bloody conflict between the government and the **PKK** — a leftist Kurdish group initially seeking an independent state and later autonomy — has resulted in over **40,000 deaths** and massive displacement in the country's south-east.
+
+### Iran
+
+Kurdish regions have a long record of **resisting central authority**, evend back to 1920^th, serving as a major flashpoint during the 1979 revolution and, more recently, during nationwide anti-government protests in **2022 and late 2025 into early 2026**.
+
+:::
+
+
+## The Peshmerga
+
+Caught in the volatile politics of the Middle East, the Kurds have heavily relied on their homegrown militia, known as the **peshmerga**. These fighters are renowned for their effectiveness, mobility, and deep knowledge of the mountainous terrain.
+
+::: {.callout-important appearance="simple" icon=false}
+### 🏔️ No Friends but the Mountains
+Due to a long history of being exploited by outside powers and having promises of a homeland repeatedly dashed, the Kurds have adopted a famous and somber motto:
+
+**"The Kurds have no friends but the mountains."**
+:::
+
+# What Kurds Generally Want
+
+Most Kurds want some combination of the following:
+
+- Recognition of Kurdish identity, language, and culture
+
+- Political rights and fair representation
+
+- Local self-government or autonomy in Kurdish regions
+
+- Security and economic development for their communities
+
+In some places, especially historically, some Kurdish groups have also supported the idea of an independent Kurdish state, but this is not the main demand everywhere.
+
+# What Kurds Want in Iran
+
+Not surprising, The Kurdish question in Iran is mainly about **democracy, rights, and fair political structure** within Iran.
+
+## A Federal Vision
+
+Many Iranian Kurdish political movements have argued for a **federal or confederal system**, where Kurdish regions manage their own affairs while remaining part of the Iranian state:
+
+- Kurdish provinces would govern their own **cultural, educational, and regional** affairs
+- National matters — foreign policy, defence — would remain with the **central government**
+- All citizens would benefit from **free political parties, civil rights, and fair elections**
+
+## Democracy for All
+
+Another key point that often comes before a federal vision is **democracy in all of Iran**. From this view, the Kurdish issue cannot be solved in isolation — it is connected to broader political freedoms for everyone in the country.
+
+Kurdish political movements have organised structured **parties, associations, and social organisations** that represent Kurdish society, with military structures described primarily as forces intended to **protect the population**, rather than to pursue broader military ambitions. They have been doing this for over 70 years
+
+
+::: {.callout-caution appearance="simple" icon=false}
+### 🕊️ The Ultimate Vision
+
+> *"A free Kurdistan within a democratic, federal/confederal Iran — where Kurdish people can govern their own affairs, preserve their language and culture, and participate equally in the political life of the country."*
+
+:::
+
+# References
+
+- Kendal NEZAN, President of the Kurdish Institute of Paris, [A brief survey of The History of the Kurds](https://www.institutkurde.org/en/institute/who_are_the_kurds.php), acceed on 2026-02-29.
+- [The Kurdish GenocideAchieving Justice through EU Recognition](https://www.europarl.europa.eu/meetdocs/2009_2014/documents/d-iq/dv/03_kurdishgenocidesofanfalandhalabja_/03_kurdishgenocidesofanfalandhalabja_en.pdf)
+- Kamran Matin, [Democratising Iran Requires Decentralisation](https://theamargi.com/posts/democratising-iran-requires-decentralisation), accessed on 2026-02-29
+

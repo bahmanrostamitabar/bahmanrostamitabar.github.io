@@ -1,0 +1,463 @@
+---
+title: "Reseracher, Reserach Leader, Both?"
+subtitle: "Is Your Next Promotion a Career Move or an Identity Crisis?"
+author: "Bahman Rostami-Tabar"
+description: |
+  This is not an argument against research leadership. It is an argument for
+  **radical honesty** about what leadership actually costs — and what
+  it genuinely offers in return.
+date: "02/16/2026"
+image: "cover.png"
+categories:
+  - career
+  - identity
+  - leadership
+  - academia
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-title: "In this essay"
+    toc-location: left
+    title-block-banner: "#1a1310"
+    title-block-banner-color: "#f0e8df"
+    theme: [cosmo, custom.scss]
+    smooth-scroll: true
+    code-tools: false
+    fig-align: center
+    cap-location: bottom
+execute:
+  echo: false
+  warning: false
+---
+
+#
+
+
+::: {.callout-note appearance="simple"}
+**This Blog** — This is not an argument against leadership. It is an
+argument for **radical honesty** about what leadership actually costs —
+and what it genuinely offers in return.
+:::
+
+::: {.intro-para}
+There is a specific, quiet moment in a research career when the scenery
+shifts and the air in the room feels different. It usually happens when
+you realise your morning wasn't spent at the terminal debugging a
+complex script or hunched over the microscope, but navigating the
+labyrinth of budget reconciliations, HR hurdles, and committee agendas.
+This is the inflection point where the **Craftsman** — the researcher
+whose identity is forged in the technical intimacy of discovery — is
+asked to become the **Architect**.
+:::
+
+This transition is often framed as a natural progression, yet it
+represents a fundamental mutation in how one contributes to science.
+While the Craftsman finds a meditative joy in the outliers of a raw
+data file, the Architect must find meaning in the scaffolding that
+makes such data possible. This new role offers **Agenda Power** — the
+visionary control to define "the next big thing" — but it comes at a
+cost. Before you step onto that next rung, you must ask if you are
+prepared for a life where your primary tools are no longer instruments,
+methods and software, but recruitment, diplomatic influence, and the
+heavy mantle of institutional strategy.
+
+---
+
+## The Craftsman–Architect Framework
+
+```{mermaid}
+%%| label: fig-framework
+%%| fig-cap: "Figure 1 · The Craftsman–Architect Transition Framework"
+%%| fig-width: 6
+flowchart LR
+    C("<b>The Craftsman</b><br/><i>Researcher</i><br/>────────────────<br/>→ Deep Work<br/>→ Technical Mastery<br/>→ First-Author Output<br/>→ Experimental Ownership")
+    A("<b>The Architect</b><br/><i>Research Leader</i><br/>────────────────<br/>→ Agenda Power<br/>→ Multiplier Effect<br/>→ Pipeline Ownership<br/>→ Institutional Influence")
+    C -->|"transition · irreversible"| A
+
+    style C fill:#f4f9f6,stroke:#2a5c45,stroke-width:2px
+    style A fill:#fdf3f0,stroke:#b5451b,stroke-width:2px
+```
+
+---
+
+## Your Legacy Isn't the Paper, It's the People
+
+In the Architect's world, intellectual impact is measured at scale. You
+move from the tactile satisfaction of solving a singular, thorny
+problem to overseeing a vast portfolio of solutions. Your influence is
+no longer limited by the hours you can spend at the bench; it
+multiplies through the collective hands of your team.
+
+This shift requires a radical redefinition of *output*. While the
+Craftsman obsessively polishes the next publication, the Architect
+focuses on the professional ecosystem that allows those publications to
+bloom.
+
+::: {.pull-quote}
+> The professional growth of your PhDs and Postdocs becomes your most
+> lasting output — often outsurviving the data itself.
+:::
+
+---
+
+## The Bench Gap and the Grief of Lost Discovery
+
+Despite the allure of strategic visibility and the ability to shape
+priorities, the move upward involves a **grieving process** that many
+senior academics feel but few openly admit. This is the *Bench Gap* —
+the visceral sense of loss that comes when hands-on research time
+shrinks to zero.
+
+For the true Craftsman, the work is intrinsically rewarding. There is
+a specific dopamine hit found in the deep work of coding or the
+physical engagement of the lab that cannot be replicated by signing off
+on a grant report. When this technical intimacy is severed, it leaves a
+void.
+
+:::: {.columns}
+::: {.column width="48%"}
+**What You Lose**
+
+| | |
+|:--|:--|
+| 🔴 | The meditative state of being genuinely absorbed in a technical puzzle for hours without interruption. |
+| 🔴 | The intimate knowledge of every outlier and anomaly in your own raw data files. |
+| 🔴 | The singular pride of being the first author — the engine — behind a manuscript. |
+
+:::
+::: {.column width="4%"}
+:::
+::: {.column width="48%"}
+**What You Gain**
+
+| | |
+|:--|:--|
+| 🟢 | The power to define what the lab pursues next at a strategic level. |
+| 🟢 | The capacity to multiply your intellectual legacy through a dozen careers, not just one CV. |
+| 🟢 | Institutional influence and the ability to shape your field's direction. |
+
+:::
+::::
+
+---
+
+## The Identity Crisis: Am I Still a Scientist?
+
+This leads to the most uncomfortable question in academic leadership:
+*"Am I still a scientist if I don't do science?"* Many research leaders
+find themselves becoming **managers of research** rather than
+practitioners of it.
+
+This evolution creates a state of extreme fragmentation. Instead of the
+deep focus required to solve a puzzle, the leader's day is defined by
+high-frequency context-switching between ten distinct projects, each
+requiring a different mental register.
+
+::: {.callout-important}
+## The Prestige Trap
+In the halls of the university, we are taught to conflate prestige with
+meaning. Leadership roles offer more visibility and larger titles — but
+if your genuine satisfaction comes from solving hard problems with your
+own hands, **no amount of institutional prestige will compensate for
+the loss of that craft**.
+:::
+
+---
+
+## The Hidden Moral Weight
+
+Leadership introduces a level of emotional labor and accountability
+that a solo researcher rarely faces. When a grant is rejected, it isn't
+just your reputation on the line — it is the livelihoods of everyone in
+your group. You carry the moral weight of their career success, their
+visas, and their families' stability.
+
+::: {.callout-tip}
+## The Tall Poppy Risk
+Success in leadership can trigger unexpected territorial friction. In
+the competitive garden of academia, there is a recurring tendency to
+cut down the tall poppy. Navigating these shifting power dynamics
+requires a **political acumen** that many researchers find deeply
+exhausting.
+:::
+
+---
+
+## The Full Comparison {#sec-comparison}
+
+To understand the depth of this shift, consider how every fundamental
+dimension of your working life changes at once.
+
+| Dimension | 🌿 The Researcher (Craftsman) | 🏛 The Research Leader (Architect) |
+|:--|:--|:--|
+| **Ownership** | *End-to-End:* You own the idea, the data, the analysis, and the draft. | *Pipeline:* You own the funding, the ethics, the talent, and the impact. |
+| **Daily Rhythm** | *Deep Work:* Immersed in one or two technical problems for hours. | *High-Frequency Switching:* Managing 5–10 distinct project "pulses" daily. |
+| **Primary Tool** | Instruments, software, and specialised methodologies. | Budgets, recruitment, and interpersonal influence. |
+| **Problem Solving** | *Technical:* "Why is this code crashing?" or "Why did the assay fail?" | *Structural:* "Why is this collaboration stalling?" or "How do we pivot after a rejection?" |
+| **Control Level** | *Direct:* If you want it done right, you do it yourself. | *Indirect:* You achieve results through the hands of others — Delegation. |
+| **View of Data** | *Intimate:* You know every outlier and nuance in the raw files. | *Synthesised:* You look for trends, big-picture validity, and narrative fit. |
+| **Role in Output** | *First Author:* The primary engine behind the manuscript. | *Senior / Last Author:* The guarantor of the work's integrity and funding. |
+| **Risk Focus** | *Experimental Failure:* The hypothesis might be wrong. | *Sustainability Risk:* The lab might run out of money or talent. |
+| **Communication** | *Specialist to Specialist:* Precise, technical, and narrow. | *Diplomat / Advocate:* Translating "Science" into "Value" for funders and university. |
+| **Mental Load** | *Cognitive Depth:* Solving a puzzle. | *Emotional Labour:* Managing personalities, egos, and career anxieties. |
+
+: Table 1 · The Craftsman vs. The Architect — Ten Dimensions {.striped .hover tbl-colwidths="[15,42,43]"}
+
+---
+
+## The Multiplier Effect as a Social Necessity
+
+While the transition is difficult, the value of the research leader to
+society remains woefully underappreciated. A single brilliant
+researcher may change a field with one insight, but a brilliant research
+leader can produce **ten such researchers** — creating the conditions
+for an entire movement in science.
+
+This research infrastructure is the bridge between a singular spark of
+genius and sustained, systemic progress. Both roles are essential, but
+they are different leverage points in the scientific ecosystem. The
+question is not which is superior, but which is *you*.
+
+---
+
+::: {.conclusion-dark}
+## The Honest Path Forward
+
+The health of our scientific community depends on radical honesty about
+these roles. The most corrosive element in academia today is what might
+be called the **Legitimacy Problem** — leaders who maintain the
+appearance of being active researchers long after the substance has
+gone. When those with no hands-on practice continue to dress up
+administration as research, they make poor decisions and demoralise
+those still doing the hard, uncertain, slow work of discovery.
+
+::: {.pull-quote-dark}
+> The senior academic who admits, "I don't do bench research anymore —
+> I fund it, shape it, and develop the people who do" preserves the
+> integrity of the entire profession.
+:::
+
+As you look at the promotion on the horizon, you must decide which life
+you want to live. Do you want to stay genuinely hands-on — and are you
+in an environment that actually values that? Or are you ready to become
+the Architect, and to find deep meaning in the scaffolding rather than
+the discovery?
+
+Both paths are honourable. Only one is right for you.
+:::
+
+---
+
+Before you make any career move, it is worth sitting with two separate
+questions. The first is forward-looking: *do I actually want to lead?*
+The second is uncomfortable and present-tense: *am I still genuinely a
+researcher, or have I already drifted?*
+
+These checklists won't make the decision for you. But they will force a
+level of honesty that most career conversations quietly avoid.
+
+---
+
+## The Checklists {.tabset}
+
+::: {.panel-tabset}
+
+### Should I Become a Research Leader?
+
+Check every statement that **genuinely** resonates — not what you think
+you should feel.
+
+```{ojs}
+//| echo: false
+//| panel: input
+
+import { Inputs } from "@observablehq/inputs"
+
+viewof motivation_checks = Inputs.checkbox(
+  [
+    "I want to develop other researchers — not just manage them.",
+    "I'd find it fulfilling even if I never published another paper myself.",
+    "I'm drawn to leadership, not escaping something in my current role."
+  ],
+  { label: "Motivation" }
+)
+```
+
+```{ojs}
+//| echo: false
+
+viewof identity_checks = Inputs.checkbox(
+  [
+    "Being 'the scientist' isn't the core of my identity — it's one version of me.",
+    "I genuinely celebrate others' discoveries more than my own.",
+    "I get energy from developing people — it doesn't feel like a distraction."
+  ],
+  { label: "Identity" }
+)
+```
+
+```{ojs}
+//| echo: false
+
+viewof appetite_checks = Inputs.checkbox(
+  [
+    "I'm willing to spend 60%+ of my time on non-science work: admin, hiring, institutional politics.",
+    "I can handle difficult people conversations — underperformance, conflict, letting someone go.",
+    "I can make decisions with incomplete information and own the consequences.",
+    "I'm comfortable absorbing stress and uncertainty so my team stays focused."
+  ],
+  { label: "Appetite for the role" }
+)
+```
+
+```{ojs}
+//| echo: false
+
+leader_score = motivation_checks.length + identity_checks.length + appetite_checks.length
+
+leader_result = {
+  if (leader_score === 0) return { verdict: "", detail: "" }
+  if (leader_score <= 3) return {
+    verdict: "Not the right moment — or the right reason.",
+    detail: "The motivation or appetite isn't fully there yet. That's not a failure — it means you're being honest. Stay curious about what's actually drawing you toward leadership and revisit when the pull is clearer.",
+    colour: "#f3f4f6", border: "#9ca3af"
+  }
+  if (leader_score <= 6) return {
+    verdict: "You're on the edge — worth exploring carefully.",
+    detail: "Some genuine readiness is there, but gaps remain. Identify which boxes you didn't check — they're your blind spots. Consider taking on a small leadership responsibility before committing fully.",
+    colour: "#fef3c7", border: "#d97706"
+  }
+  if (leader_score <= 9) return {
+    verdict: "Strong readiness. The conditions look right.",
+    detail: "You have the motivation, identity flexibility, and appetite. The main risk is underestimating the transition cost — plan for the identity adjustment, not just the job description.",
+    colour: "#d1fae5", border: "#0F6E56"
+  }
+  return {
+    verdict: "You're ready — and probably already leading in practice.",
+    detail: "All signals point toward genuine readiness. The question now isn't whether, but when and where. Make sure the environment you're stepping into is worthy of the commitment you'll give it.",
+    colour: "#d1fae5", border: "#065f46"
+  }
+}
+
+htl.html`
+<div style="margin-top:1rem;">
+  <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;">
+    <span style="font-size:2rem; font-weight:700; color:#1f2937;">${leader_score}</span>
+    <span style="color:#6b7280; font-size:0.9rem;">/ 10</span>
+  </div>
+  <div style="height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; margin-bottom:1rem;">
+    <div style="height:100%; width:${leader_score/10*100}%; background:${leader_score < 4 ? '#9ca3af' : leader_score < 7 ? '#d97706' : '#0F6E56'}; border-radius:99px; transition:width 0.3s;"></div>
+  </div>
+  ${leader_score > 0 ? htl.html`<div style="padding:1rem 1.2rem; background:${leader_result.colour}; border-left:4px solid ${leader_result.border}; border-radius:4px;">
+    <strong>${leader_result.verdict}</strong>
+    <p style="margin:0.4rem 0 0; font-size:0.9rem; color:#374151;">${leader_result.detail}</p>
+  </div>` : ""}
+`
+```
+
+### Am I Still a Researcher?
+
+Check only what is *actually true* of your working week — not what was
+true two years ago.
+
+```{ojs}
+//| echo: false
+
+viewof practice_checks = Inputs.checkbox(
+  [
+    "I spend real, protected time on hands-on research — not just reviewing others' work.",
+    "I have a substantive research question I'm actively working to answer right now.",
+    "I stay current with primary literature — not just abstracts and headlines."
+  ],
+  { label: "Practice" }
+)
+```
+
+```{ojs}
+//| echo: false
+
+viewof output_checks = Inputs.checkbox(
+  [
+    "My recent publications reflect my own intellectual contribution, not just my name on others' work.",
+    "I could explain the methodology of my current work in detail to a technical peer.",
+    "I generate the research ideas in my lab — not just green-light what others propose."
+  ],
+  { label: "Output & contribution" }
+)
+```
+
+```{ojs}
+//| echo: false
+
+viewof selfcheck_checks = Inputs.checkbox(
+  [
+    "I could step in and do the work myself if a team member were suddenly unavailable.",
+    "My calendar has deep-focus research blocks — and I actively protect them.",
+    "My primary identity is as a scientist — not an administrator or strategist.",
+    "A junior colleague who shadowed me for a week would witness active, hands-on research."
+  ],
+  { label: "Honest self-check" }
+)
+```
+
+```{ojs}
+//| echo: false
+
+researcher_score = practice_checks.length + output_checks.length + selfcheck_checks.length
+
+researcher_result = {
+  if (researcher_score === 0) return { verdict: "", detail: "" }
+  if (researcher_score <= 3) return {
+    verdict: "You've drifted — and probably know it.",
+    detail: "The gap between your title and your daily reality is significant. That's not shameful — many people drift here gradually. The question is whether you want to close the gap, or honestly redefine your role.",
+    colour: "#fef2f2", border: "#ef4444"
+  }
+  if (researcher_score <= 6) return {
+    verdict: "Partial researcher — hybrid mode.",
+    detail: "You're maintaining some research practice but it's under pressure. This is sustainable short-term, but tends to erode further without deliberate protection. What would it take to defend your research time?",
+    colour: "#fef3c7", border: "#d97706"
+  }
+  if (researcher_score <= 9) return {
+    verdict: "Genuinely active, with some strain.",
+    detail: "You're doing real research. A few areas of drift are creeping in — likely time and depth. Worth naming them explicitly so they don't quietly expand.",
+    colour: "#eff6ff", border: "#185FA5"
+  }
+  return {
+    verdict: "Fully active researcher.",
+    detail: "Your practice matches your identity. The risk at this level is resisting leadership entirely when a hybrid role might actually amplify your impact.",
+    colour: "#eff6ff", border: "#1d4ed8"
+  }
+}
+
+htl.html`
+<div style="margin-top:1rem;">
+  <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;">
+    <span style="font-size:2rem; font-weight:700; color:#1f2937;">${researcher_score}</span>
+    <span style="color:#6b7280; font-size:0.9rem;">/ 10</span>
+  </div>
+  <div style="height:8px; background:#e5e7eb; border-radius:99px; overflow:hidden; margin-bottom:1rem;">
+    <div style="height:100%; width:${researcher_score/10*100}%; background:${researcher_score < 4 ? '#9ca3af' : researcher_score < 7 ? '#d97706' : '#185FA5'}; border-radius:99px; transition:width 0.3s;"></div>
+  </div>
+  ${researcher_score > 0 ? htl.html`<div style="padding:1rem 1.2rem; background:${researcher_result.colour}; border-left:4px solid ${researcher_result.border}; border-radius:4px;">
+    <strong>${researcher_result.verdict}</strong>
+    <p style="margin:0.4rem 0 0; font-size:0.9rem; color:#374151;">${researcher_result.detail}</p>
+  </div>` : ""}
+`
+```
+
+:::
+
+---
+
+## The Harder Question Underneath Both
+
+Many people in academic departments carry the label of researcher while
+spending the majority of their time on funding, administration, journal
+work, and strategy. That's not inherently wrong — those functions
+matter. But the gap between identity and practice tends to create a
+quiet dissonance that affects decision-making, self-perception, and how
+others experience your leadership.
+
+The goal of these checklists isn't to judge. It's to help you make a
+clear-eyed choice — and then commit to it honestly.

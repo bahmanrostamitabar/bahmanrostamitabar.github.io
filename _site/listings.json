@@ -2,13 +2,27 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/2025-10-28-informs/index.html",
-      "/blog/first-post/index.html"
+      "/blog/2026-phd-progress-meeting/index.html",
+      "/blog/2026-phd-by-publication/index.html",
+      "/blog/2026-phd-not-taught/index.html",
+      "/blog/2026-phd-supervision/index.html",
+      "/blog/2026-imagination/index.html",
+      "/blog/2026-phd-small-habits/index.html",
+      "/blog/2026-write-abstract/index.html",
+      "/blog/2026-write-intro/CopyOfindex.html",
+      "/blog/2026-write-intro/index.html",
+      "/blog/2025-forecasting_problem/index.html",
+      "/blog/2025-decision/index.html",
+      "/blog/first-post/index.html",
+      "/blog/kurds/index.html",
+      "/blog/2026_research_leader/index.html"
     ]
   },
   {
     "listing": "/talks/index.html",
     "items": [
+      "/talks/2026/2026-2-who/index.html",
+      "/talks/2026/2026-2-gw4/index.html",
       "/talks/2026/2026-1-phdfoundation/index.html",
       "/talks/2025/2025-1-refrence/index.html"
     ]
@@ -35,6 +49,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/reproducibility/index.html",
       "/projects/cdm/index.html",
       "/projects/summer_school/index.html",
       "/projects/africast/index.html",
@@ -43,16 +58,10 @@
     ]
   },
   {
-    "listing": "/projects/democratising_forecasting/index.html",
+    "listing": "/projects/reproducibility/index.html",
     "items": [
-      "/projects/democratising_forecasting/orms-article/index.html",
-      "/projects/democratising_forecasting/df/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/cdm/index.html",
-    "items": [
-      "/projects/cdm/2026-rwanda/index.html"
+      "/projects/reproducibility/ijf_editor/index.html",
+      "/projects/reproducibility/ijf_readme/index.html"
     ]
   },
   {
@@ -107,6 +116,19 @@
       "/publications/conference-proceedings/2012-forecasting-autoregressive.html",
       "/publications/conference-proceedings/2008-hybrid-neural-lumpy-demand.html",
       "/publications/phdthesis/my-phd.html"
+    ]
+  },
+  {
+    "listing": "/projects/cdm/index.html",
+    "items": [
+      "/projects/cdm/2026-rwanda/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/democratising_forecasting/index.html",
+    "items": [
+      "/projects/democratising_forecasting/orms-article/index.html",
+      "/projects/democratising_forecasting/df/index.html"
     ]
   }
 ]

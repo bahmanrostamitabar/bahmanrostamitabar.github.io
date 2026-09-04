@@ -1,0 +1,383 @@
+---
+title: "How to Write a Strong Abstract"
+subtitle: "A practical framework"
+author: "Bahman Rostami-Tabar"
+description: |
+  A practical, plain-language guide to writing research abstracts, with real examples from three leading operations management journals.
+date: "03/16/2026"
+image: "cover.png"
+categories:
+  - academic writing
+  - PhD advice
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    highlight-style: github
+---
+
+#
+
+
+# Why Most Abstracts Are Hard to Read
+
+Some research abstracts assume the reader already knows why the topic matters, why the study was needed, and what prior work got wrong. The result is a paragraph that feels impenetrable to anyone outside the narrow subfield — and sometimes even to people inside it.
+
+The good news is that every strong abstract follows the same underlying logic. Once you see that logic clearly, writing one becomes a matter of answering seven questions in order. This post walks through each step, then shows how three published papers in operations management actually do it — one step at a time.
+
+The two papers used as examples throughout are:
+
+- **MSOM** — a field experiment on improving the quality of in-kind donations to charities using behavioural interventions (*Manufacturing & Service Operations Management*)
+- **POM** — an empirical study of the factors driving medicine stock-outs in public health supply chains in developing countries (*Production and Operations Management*)
+
+---
+
+# Before You Start: Check Whether Your Journal Has a Required Format {#sec-journal-formats}
+
+The seven steps described in this post reflect the underlying logic that every strong abstract follows — regardless of how it looks on the page. But before you write a single word, you need to check one thing: **does your target journal require a structured abstract format?**
+
+Many journals, particularly in operations management, medicine, and applied social science, do not leave the structure of the abstract up to the author. They prescribe a fixed set of labelled sections and require you to write under each heading explicitly. The seven-step logic still applies inside each section — but the sections themselves are given to you.
+
+## What a structured abstract looks like
+
+A structured abstract replaces the single flowing paragraph with labelled subsections. Common label sets include:
+
+| Journal type | Typical required labels |
+|---|---|
+| Operations & management (e.g. MSOM) | Problem definition · Methodology/results · Managerial implications |
+| Medical / clinical | Background · Objective · Methods · Results · Conclusions |
+| Social science (some journals) | Purpose · Design/methodology · Findings · Practical implications · Originality |
+| Engineering & systems | Motivation · Problem statement · Approach · Results · Conclusions |
+
+The labels vary, but the underlying questions they ask — why does this matter, what did you do, what did you find, so what — map directly onto the seven steps.
+
+
+---
+
+
+::: {.callout-important}
+## The practical rule
+
+Always look up the author guidelines for your target journal before writing your abstract. If a structured format is required, use the journal's labels as your section headings and write the seven steps inside them. If no format is prescribed, write a single paragraph that follows the seven-step sequence. Either way, the underlying logic is the same.
+:::
+
+---
+
+# The Seven Steps {#sec-steps}
+
+Think of an abstract as a short journey. Your job is to take the reader from *not caring* to *wanting to read more* in about 200-400 words. Each step moves the reader one stage further along that journey.
+
+```{mermaid}
+flowchart TD
+    A["Step 1\nSet the scene"] --> B["Step 2\nName the pain"]
+    B --> C["Step 3\nShow the gap"]
+    C --> D["Step 4\nState your question"]
+    D --> E["Step 5\nShow your evidence"]
+    E --> F["Step 6\nGive the answer"]
+    F --> G["Step 7\nSay why it matters"]
+
+    style A fill:#EEEDFE,stroke:#534AB7,color:#3C3489
+    style B fill:#FAECE7,stroke:#993C1D,color:#712B13
+    style C fill:#FAECE7,stroke:#993C1D,color:#712B13
+    style D fill:#E6F1FB,stroke:#185FA5,color:#0C447C
+    style E fill:#E1F5EE,stroke:#0F6E56,color:#085041
+    style F fill:#EAF3DE,stroke:#3B6D11,color:#27500A
+    style G fill:#FAEEDA,stroke:#854F0B,color:#633806
+```
+
+The steps divide naturally into five questions that mirror the standard structure of any research paper:
+
+| Steps | The question being answered |
+|---|---|
+| 1 → 3 | What do we know, and what's still broken? |
+| 4 | What are you trying to find out? |
+| 5 | How did you look? |
+| 6 | What did you find? |
+| 7 | Why does it matter? |
+
+Each step is described in full below, followed by a section showing how all three papers execute that step in practice.
+
+---
+
+## Step 1 — Set the scene
+
+**What you are doing:** Telling the reader what world they have just entered. One or two sentences that name the domain, explain what it does, and signal why it matters. No jargon, no citations, no argument yet — just orientation.
+
+**The test:** Could a smart colleague from a different field read this sentence and immediately understand the setting? If not, simplify it.
+
+**Common mistake:** Starting with "This paper examines…" before the reader knows why they should care. Save that sentence for Step 4.
+
+---
+
+## Step 2 — Name the pain
+
+**What you are doing:** Identifying the specific thing that goes wrong in this domain — not a vague "lack of understanding" but a concrete failure mode, inefficiency, or harmful outcome. You are also naming the reason it is hard to fix.
+
+**The test:** Can you complete this sentence? *"The problem is specifically that [X] happens, which causes [Y], and it is hard to fix because [Z]."* If you cannot fill in all three parts, your problem is still too vague.
+
+**Common mistake:** Describing the problem at such a high level that it could apply to any paper in the field. The pain should be specific enough that only a handful of studies could possibly address it.
+
+---
+
+## Step 3 — Show the gap
+
+**What you are doing:** Pointing to the empty space in existing knowledge. This is not the same as saying "nobody has studied this topic." The gap is more precise: it names what kind of evidence or solution is missing, and why that absence matters right now.
+
+**The test:** After reading your gap statement, a reviewer should be able to write your research question themselves. If they cannot, the gap is still too broad.
+
+**Common mistake:** Writing "this topic is understudied" as if that alone justifies a study. A gap is compelling when it names a real-world consequence of the missing knowledge — something still going wrong because the answer does not yet exist.
+
+---
+
+## Step 4 — State your question
+
+**What you are doing:** Writing one clear sentence that names what your study set out to find out. This sentence should feel like the natural, inevitable next step after Steps 2 and 3. If it does not, go back and rewrite Step 3 until the question follows logically.
+
+**The test:** Read Steps 3 and 4 back to back. Does the question solve the gap? If the gap says "we do not know what drives stock-outs" and the question says "we examine intervention effectiveness," something is misaligned.
+
+**Common mistake:** Stating the question before the gap, or embedding the question inside the methods description. The question earns its place only after the reader understands why it needs answering.
+
+::: {.callout-tip}
+## Theoretical anchor
+
+If your study uses a named framework or theory, introduce it here alongside the question. Naming the framework signals to specialists that you are operating within a recognised tradition. It belongs in Step 4, not buried in the methods.
+:::
+
+---
+
+## Step 5 — Show your evidence
+
+**What you are doing:** Naming your research design and providing at least one specific number — sample size, number of sites, time period, or geographic scope. These details signal that the study is real, large enough to matter, and replicable.
+
+**The test:** Does this sentence contain at least one hard number? If every quantity is described vaguely ("a large dataset," "several countries"), the reader has no anchor for judging the study's credibility.
+
+**Common mistake:** Describing the method in terms of what it *is* (e.g., "a regression model") rather than what it *does* (e.g., "we estimate the effect of X on Y using panel data from…"). The reader cares about what you studied, not the name of your estimator.
+
+---
+
+## Step 6 — Give the answer
+
+**What you are doing:** Reporting what you found, starting with the main result and then adding any moderating conditions, boundary cases, or unexpected findings. The unexpected findings — especially null results — are often the most memorable and most cited part of any abstract.
+
+**The test:** Is the main result in the first sentence of this step, not the last? Many writers bury the headline. Lead with it.
+
+**Common mistake:** Reporting findings in the order you ran the analyses rather than in the order of importance. The main effect comes first, moderators come second, robustness checks come last.
+
+::: {.callout-note}
+## The "but only when" structure
+
+The most informative finding statements follow this pattern: *"[Main effect]. However, this effect is [stronger/weaker/absent] when [condition]."* This structure efficiently conveys both the result and the boundary of its applicability — which is what practitioners and future researchers most need to know.
+:::
+
+---
+
+## Step 7 — Say why it matters
+
+**What you are doing:** Answering the "so what?" question at two levels. First, a practical payoff — ideally with a number attached — that tells a manager or policymaker what to do differently. Second, a challenge to something people currently believe or practise, which gives the paper its scholarly contribution.
+
+**The test:** After reading this step, could a manager answer the question: *"What should I do differently on Monday morning because of this paper?"* If not, the implication is still too vague.
+
+**Common mistake:** Stopping after the practical implication without naming what prior belief the results call into question. A good abstract does not just add to knowledge — it corrects something. That correction is what makes the paper memorable.
+
+::: {.callout-important}
+## The two-part close
+
+Strong abstracts end with two distinct moves, not one:
+
+1. **The payoff** — a concrete, quantified outcome for practitioners
+2. **The challenge** — an explicit statement of what the results prove wrong about current practice or prior assumptions
+
+Most published abstracts include the payoff. Fewer include the challenge. Including both is what separates a good abstract from a great one.
+:::
+
+---
+
+# Step-by-Step: Two Papers Side by Side {#sec-examples}
+
+The following sections take each of the seven steps and show exactly how MSOM, POM, and JOM execute it — with the relevant text quoted and annotated.
+
+---
+
+## Step 1 — Set the scene
+
+Each paper opens by naming the domain in plain terms and establishing why it matters, before any problem or argument is introduced.
+
+::: {.panel-tabset}
+
+### MSOM
+> *"Although in-kind donations contribute to charity's triple bottom line (i.e., generating additional revenue for the charity, contributing to social welfare, and reducing environmental waste through rechanneling used items)…"*
+
+**What it does well:** Grounds the reader in a familiar, concrete activity (donating goods to charity) and immediately frames it as valuable — three types of value, no less. The reader is oriented before any tension is introduced.
+
+**Notice:** The abstract opens with "Although," which is doing double duty — it sets the scene *and* begins signalling that a tension is coming. This is an efficient way to transition straight into Step 2.
+
+### POM
+> *"Public health supply chains are channels through which health commodities are distributed among end clients."*
+
+**What it does well:** One sentence. No hedging, no subordinate clauses. The reader knows instantly what system is being studied and what it does.
+
+**Notice:** POM's opening is the most economical of the three — it uses a definition as its scene-setter. This works when the domain is less familiar to a general reader (supply chains for medicines in low-income countries) because it makes no assumptions about prior knowledge.
+
+:::
+
+---
+
+## Step 2 — Name the pain
+
+Each paper names a specific, concrete failure — not a general "challenge" but a named thing that goes wrong and costs someone something.
+
+::: {.panel-tabset}
+
+### MSOM
+> *"…inappropriate material donations impose additional costs to sort, process, or discard them. Minimizing the amount of undesired in-kind donations, however, is a challenge given charities' sensitive relationship with their donors."*
+
+**What it does well:** The pain has two layers — the direct cost (sorting and discarding junk donations) and the structural reason it is hard to fix (you cannot tell donors their gift is rubbish without losing them). Both layers are present in two sentences.
+
+**Notice:** The word "however" is doing a lot of work here. It signals that the obvious solution (just tell donors to stop) is blocked. This is what makes the problem feel genuinely difficult rather than merely inconvenient.
+
+### POM
+> *"In developing countries, significant resource constraints hamper the effective and efficient delivery of health commodities, leading to supply chain failures such as 'stock-outs.'"*
+
+**What it does well:** Names the failure mode with a technical term ("stock-outs") but immediately makes it accessible by contextualising it as a supply chain failure in a resource-constrained setting. The phrase "significant resource constraints" names the reason the pain is hard to fix.
+
+**Notice:** The use of quotation marks around "stock-outs" suggests the term may be unfamiliar to some readers — a thoughtful choice for a paper that spans health policy and operations management audiences.
+
+:::
+
+---
+
+## Step 3 — Show the gap
+
+The gap statement explains not just that something is unknown, but why the absence of that knowledge has real consequences.
+
+::: {.panel-tabset}
+
+### MSOM
+> *"Minimizing the amount of undesired in-kind donations, however, is a challenge given charities' sensitive relationship with their donors."*
+
+**What it does well:** The gap here is implied rather than stated explicitly — there is no sentence saying "no prior research has examined this." Instead, the gap is built into the problem description: because of the donor relationship constraint, no clean solution exists yet. The reader infers the gap from the tension.
+
+**Notice:** This is the most rhetorically sophisticated gap statement of the three. It avoids overclaiming ("nobody has studied this") while still making clear that the problem is unsolved. It works because the constraint it names (donor sensitivity) is genuinely unique to this context.
+
+### POM
+> *"While the prevalence of commodity stock-outs is well-acknowledged, there is little by way of systematic and rigorous empirical research that sheds light on the factors that drive such stock-outs in developing countries."*
+
+**What it does well:** Explicitly acknowledges that the problem is known before pointing to the gap — a useful rhetorical structure because it anticipates the reader's objection ("surely this has been studied?"). The phrase "systematic and rigorous empirical research" signals not just a gap in topics, but a gap in the *quality* of existing evidence.
+
+**Notice:** POM's gap is the most explicit of the three. The words "well-acknowledged" and "little by way of systematic" do precise work — they concede the problem's prominence while attacking the depth of the evidence base. This is a defensible, carefully worded gap claim.
+
+:::
+
+---
+
+## Step 4 — State your question
+
+A strong research question arrives as the natural consequence of Steps 2 and 3. It names exactly what the study investigates, sometimes alongside the theoretical framework used to investigate it.
+
+::: {.panel-tabset}
+
+### MSOM
+> *"This paper examines the effectiveness of behavioral interventions on improving the quality of in-kind donations gifted by individuals."*
+
+**What it does well:** Clean and direct. The sentence names the object of study (behavioral interventions), the outcome of interest (quality of in-kind donations), and the population (individuals). Nothing is assumed.
+
+**Notice:** MSOM's theoretical anchor — that the interventions are "motivated by two well-established behavioral mechanisms: information disclosure and social norm" — is introduced one step later in the methods section rather than here. This means the question is accessible to a non-specialist reader, at the cost of slightly delaying the theoretical framing.
+
+### POM
+> *"Using this framework, we empirically investigate how commodity range and a health facility's logistics management information system (LMIS) practices impact the likelihood of stock-outs."*
+
+**What it does well:** Integrates the theoretical anchor ("the logistics cycle framework") directly into the research question sentence. By the time the reader reaches the question, they already know the lens through which it will be answered. This is the most complete version of Step 4 across the three papers.
+
+**Notice:** The phrase "using this framework" requires the reader to remember the framework mentioned two sentences earlier — a minor demand, but worth noting. Keeping the framework name in the same sentence as the question ("anchored in X, we investigate Y") is cleaner.
+
+:::
+
+---
+
+## Step 5 — Show your evidence
+
+Data and design details establish that the study is real, large enough to be credible, and specific enough to be replicated.
+
+::: {.panel-tabset}
+
+### MSOM
+> *"We conducted a field experiment to implement interventions motivated by two well-established behavioral mechanisms: information disclosure and social norm. We studied the reaction of 763 donors who were scheduled to make an in-kind donation at a local charity between October 31 and November 11, 2020."*
+
+**What it does well:** Names the design (field experiment), the two intervention types, the sample size (763 donors), the setting (a local charity), and the exact time window. Every credibility anchor is present. The reader has everything they need to judge the scope and rigour of the study.
+
+**Notice:** The date range (October 31 to November 11) is unusually precise for an abstract. It works here because it signals that this is observational data tied to a real calendar — not a convenience sample or a lab study — and implicitly flags that the study will need to check for seasonal effects.
+
+### POM
+> *"We estimate our models using a novel field dataset spanning 4,000 health facilities across five developing countries."*
+
+**What it does well:** Achieves maximum information density in one sentence — design type (model estimation), dataset novelty ("novel field dataset"), scale (4,000 facilities), and breadth (five countries). The word "novel" is doing important work: it pre-empts the reviewer question "why not use existing data?"
+
+**Notice:** POM is the most concise at this step. The trade-off is that the time period of data collection is not mentioned. For a study making causal claims, this would be a concern; for a study of structural determinants of stock-outs, the omission is defensible.
+
+:::
+
+---
+
+## Step 6 — Give the answer
+
+The main result leads. Moderating conditions and robustness checks follow. Surprising or null results belong here too — they are often the most-cited findings.
+
+::: {.panel-tabset}
+
+### MSOM
+> *"Our results show that using the social norm intervention effectively improved the quality of in-kind donations, whereas information disclosure, which is commonly used in practice as the industry standard intervention, was ineffective. We also conducted two postexperiment analyses. First, we collected additional data on 1,301 in-kind donations… Results show that the impact of the social norm intervention is stable over different time periods. Second, we studied the spillover effect of these interventions for a period of 12 months and did not find a negative long-term impact."*
+
+**What it does well:** Leads with the main result, immediately followed by the counter-intuitive null finding (the industry-standard approach does not work). Two robustness checks — temporal stability and spillover — follow in sequence. Each check addresses a different potential objection.
+
+**Notice:** The null result about information disclosure is given equal billing with the positive result about social norms. This is the right choice — the null is arguably more important, because it challenges existing practice. Many authors would have buried it.
+
+### POM
+> *"Our results indicate that the likelihood of stock-outs increases with an expansion in the range of health commodities. However, the detrimental impact of offering a wider range is more severe in resource-constrained rural facilities relative to their urban counterparts. Further, we find that urban facilities can significantly reduce stock-outs by updating their LMIS records on a daily basis. However, in rural facilities, daily LMIS updating is beneficial only when used in conjunction with an electronic LMIS."*
+
+**What it does well:** Uses the "but only when" structure four times in succession, building a progressively more nuanced picture of the findings. Each "however" adds a boundary condition. By the end the reader understands not just what works, but *for whom* and *under what conditions*.
+
+**Notice:** The layering of conditions is POM's most distinctive structural move. It is also the most demanding for the reader. Notice how the word "However" does the structural work of each transition — a simple, repeatable signal that a moderating condition is coming.
+
+:::
+
+---
+
+## Step 7 — Say why it matters
+
+The closing step delivers a practical payoff for decision-makers and a scholarly contribution that names what prior belief the results correct.
+
+::: {.panel-tabset}
+
+### MSOM
+> *"A conservative estimation shows that implementing the social norm intervention reduced the junk donations received by 50% without having a negative spillover effect on donors' in-kind donations or imposing any direct operating cost. Consequently, this field evidence provides an effective, cost-efficient, and scalable solution for charities to address the quality problem of in-kind donations. In addition, our results challenge the industry conventional practice of incorporating information disclosure in their communications with donors."*
+
+**What it does well:** Delivers both parts of the strong close — a quantified practical payoff (50% reduction, no additional cost) and an explicit challenge to current practice (stop using information disclosure). The three-part descriptor "effective, cost-efficient, and scalable" directly echoes the triple-bottom-line framing from Step 1, giving the abstract a satisfying circular structure.
+
+**Notice:** This is the strongest Step 7 of the three papers. "50%" is a concrete, memorable number. "Challenge the industry conventional practice" is an unusually direct claim for an academic abstract — and all the more effective for it.
+
+### POM
+> *"Our findings have implications for resource allocation to reduce the risk of health commodity stock-outs in developing countries."*
+
+**What it does well:** Connects the findings back to the policy domain (resource allocation) and the population (developing countries), keeping the implication grounded in the setting established in Step 1.
+
+**What it could do better:** This is the weakest closing sentence of the three papers. It tells the reader *that* the findings have implications without telling them *what* those implications are. There is no number, no specific actor being told what to do, and no prior belief being challenged. A stronger version might read: *"Health ministries should prioritise electronic LMIS adoption in rural facilities before mandating daily data entry — our findings show that manual daily updates alone do not reduce stock-outs and may misallocate scarce resources."*
+
+:::
+
+---
+
+# A Quick-Reference Summary {#sec-summary}
+
+The table below consolidates all seven steps into a single planning tool. Use it before you write — fill in the right-hand column for your own paper, then expand each row into full sentences.
+
+| Step | Plain-language name | The question you are answering | What strong looks like |
+|---|---|---|---|
+| 1 | Set the scene | What world are we in? | One sentence; accessible to a non-specialist |
+| 2 | Name the pain | What breaks, and why is it hard to fix? | Names both the failure *and* the constraint |
+| 3 | Show the gap | What is still unknown or unsolved? | Names the *consequence* of the missing knowledge |
+| 4 | State your question/aim | What did you set out to find out? | One sentence; follows logically from Step 3 |
+| 5 | Show your evidence | How did you look, and how much did you see? | Design + at least one hard number |
+| 6 | Give the answer | What did you find? | Main result first; surprising/null results included |
+| 7 | Say why it matters | What should change because of this? | A number + a named belief that is now wrong |

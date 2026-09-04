@@ -1,0 +1,281 @@
+---
+title: "So You're Joining the Lab — A Guide to Doing Your PhD With Me"
+author: "Bahman Rostami-Tabar"
+description: |
+  A guide for PhD students working with me.
+date: "04/22/2026"
+image: "cover.jpg"
+categories:
+  - PhD advice
+  - supervision
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    theme: cosmo
+    highlight-style: github
+---
+
+#
+
+
+::: {.callout-note}
+This post is written for incoming and current PhD students in the Data Lab for Social Good Research Group. It's a living document — think of it as a conversation starter, not a rulebook.
+:::
+
+---
+
+## Welcome
+
+First of all — congratulations, and welcome. Starting a PhD is one of the most exciting decisions you'll ever make. Whether you're fresh out of a master's programme or returning after industry experience, you're about to embark on a journey that will fundamentally change how you think about the world.
+
+I wrote this guide because I wish someone had handed me something like it when I started my own PhD. It's not a policy document. It's meant to give you a clear picture of how I work, what I expect, what you can expect from me, and how we can make the next few years genuinely productive — and genuinely enjoyable.
+
+
+::: {.callout-note}
+## Expectations
+
+I don’t want to impose rigid policies. I provide a reasonable baseline, with room for discussion and adjustment. PhD work is flexible as long as we are making meaningful progress. What matters most is whether our goals align and whether we share clear expectations about commitment. I value honesty, trust, and open communication, and I hope to build a strong, lasting professional relationship as colleagues.
+:::
+
+Let's start at the beginning.
+
+---
+
+## Why Any of This Matters: The Point of a PhD
+
+Before we get into the practicalities, it's worth stepping back and asking: *why do we do research at all?*
+
+We live in a world where uncertainty is everywhere — and if anything, the decisions ahead of us are only going to get harder. Governments, businesses, and communities face consequential choices every day, often with incomplete information, competing priorities, and high stakes. That gap — between the complexity of the real world and the quality of the decisions made within it — is exactly where our research lives.
+
+What we do, at its core, is develop and apply models and analytical approaches that help people make better decisions under uncertainty, today and in the future. This might be forecasting demand for vaccines and family planning supplies, optimising hospital discharge planning, or designing health systems resilient enough to withstand the pressures of climate change. Different problems, different contexts — but the same underlying commitment: turning data and rigorous modelling & analysis into insights and decisions that actually could make a difference.
+
+The challenges we work on are not abstract; they are the defining problems of the coming decades, and the insights we generate today will shape how the world responds to them tomorrow.
+
+The only way to push this field forward is through science, and the best way to do science is through people like you — graduate students who will carry this work into the future. 
+
+::: {.callout-tip title="The Goal of a PhD"}
+In my view, the goal of a PhD is to become an independent researcher: not just someone who can apply an existing methodology, but someone who can identify what questions are worth asking in the first place, and has the tools to go after them. By the time you defend, you will be the world's leading expert on your specific corner of this field — and you will be equipped to shape it for years to come.
+:::
+
+## Choosing Your Research Questions
+
+Your research question is arguably the most consequential decision of your PhD. It shapes everything — your daily motivation, your publication trajectory, your professional identity, and your career options. Don't rush it.
+
+I encourage you to spend **four to six months** exploring before committing. When evaluating potential topics, I find it useful to ask these questions:
+
+- **Fundamental significance** — Is this a genuinely important question (that might persist over time), or a marginal variation on existing work?
+- **Societal relevance** — Does it sit within real, grand challenges that the world is actually grappling with?
+- **Novelty** — Does it change the conversation, or merely contribute to an existing one?
+- **Curiosity** — Does it catch and hold attention? Would the answer genuinely surprise you?
+- **Scope** — Is it scalable? What are the implications for practice?
+- **Feasibility** — Can it be done within the time and resources of a PhD?
+
+A great research topic should make you a little nervous — in a good way. It should feel like you're reaching for something that hasn't quite been done before.
+
+For your first project, I'm happy to suggest a well-defined problem with a clear path to publication. That's not a compromise — it's a practical way to get your footing, build confidence, and learn how research actually works. As you develop technical depth and hands-on experience, you'll naturally begin forming your own questions. By the **start of your third year**, I'd expect you to be driving your own research agenda. We'll get there together.
+
+
+## What a PhD Actually Looks Like
+
+Your thesis will typically consist of **two to five research projects** (usually three) that collectively address a larger research question. Each chapter/paper may correspond to a publication. Together, they should demonstrate not just that you can conduct research, but that you can see a field whole — its gaps, its opportunities, and where it needs to go next.
+
+Along the way, you'll be developing skills that go well beyond technical expertise:
+
+- **Deep learning** in your subject area
+- **Critical thinking** — asking the right questions and challenging assumptions
+- **Scientific integrity** — practising research with rigour and honesty, reproducibility, transparency
+- **Networking** — building relationships that will sustain your career
+- **Resilience and adaptability** — because research rarely goes to plan
+- **Your own brand** — a coherent set of standards and principles that define you as a scholar
+
+And, of course, more tangible outputs: publishing papers, presenting at conferences, applying for awards, and training others. I also want you to have fun. That's not optional.
+
+
+## How We'll Work Together
+
+### Meetings
+
+We'll meet **one-on-one every two weeks**. These meetings are for research updates, career discussions (collaborations, fellowships, internships, training,), and anything else on your mind. Between meetings, you can reach me on Slack or by email for quick questions or organise a meeting— I'm generally accessible.
+
+**Before each meeting**, please:
+
+- Confirm whether it's in-person, online, or hybrid
+- Review previous feedback and your action items
+- Prepare a progress update using slides (and code, a short report — whatever fits)
+- Make the **first slide a status table** with columns: *Action | Responsible | Status | Deadline*
+- Make the **last slide your plan** for the next two weeks
+- Have a clear list of specific questions or blockers you need input on
+
+**During the meeting**: Arrive ten minutes early, get set up, and have your materials ready to share, and then present progress clearly, take notes (or record it), and confirm next steps before you leave.
+
+**After the meeting**: don't let actions pile up. If something takes two minutes, do it now (like sending the calendar invite). Update your meeting log, reflect on the feedback, and follow up by email if anything is still unclear, send an email summarising the key points and next steps, especually if soneome missed the meeeting.
+
+### Working Hours and Location
+
+My baseline expectation is roughly eight focused hours per day — including around four hours of genuinely distraction-free, deep work (no phone, no social media, no email). When and where you work those hours is largely up to you.
+
+That said, I'd strongly encourage you to be in the PhD office at least three days a week — and here's why. It builds the kind of easy, ongoing relationships with peers that make the PhD less isolating and more generative. It keeps you connected to the rhythm of the group. And frankly, having a dedicated place to work — surrounded by people doing the same thing — makes it easier to stay focused and motivated on the days when momentum is hard to find. Also, some of the best research conversations happen not in scheduled meetings but over lunch, a coffee break, or an unplanned conversation with a colleague or peer. Being present means you're part of those moments. Ultimately the choice is yours, but in my experience, the students who show up consistently tend to thrive. If your circumstances make this genuinely difficult, come and talk to me — we can find something that works for both of us.
+
+### Email and Communication
+
+A few simple habits will save you a lot of cognitive overhead:
+
+- Check email at **set times (maybe 11:30 nd 16:00)** rather than constantly — don't start your day with your inbox
+- Keep messages **brief and to the point**
+- Respond in a **timely manner**, but never respond to difficult emails immediately — wait until you're calm and clear-headed
+- Organise your inbox with folders and flags; work towards inbox zero
+- Don't install your work email on your phone
+- Reply to emails that require a response, even if it's just to say "Thanks, I'll get back to you on this by [date]."
+
+### Feedback
+
+I aim to return feedback within seven days of receiving your work. To get the most out of this, I'd encourage you to be specific about what you're asking me to look at — a vague "let me know what you think" is harder to act on than "I'm unsure whether the framing of the contribution is strong enough" or "can you check the logic of Section 3?" It also helps to let me know when you'd ideally like feedback by, so I can prioritise accordingly. The more intentional you are about asking, the more useful my response will be.
+
+### Presentations
+
+Before you present at any conference, seminar, or talk — whether at Cardiff or elsewhere — you must present to me at least two weeks before the event. This isn't a formality; it's an opportunity to sharpen your message, stress-test your arguments, and make sure you're representing your work — and the group — at your best. You should also plan to present to the wider group ahead of any external talk; coordinate with the research seminar lead to find a suitable slot. Presenting is a skill that improves with practice and feedback, and every talk is a chance to get better at it.
+
+### Our relationship
+
+Here's how to think about the relationship: I'm your mentor, your friend, your colleague, your number one supporter. But in the specific context of being a funded PhD, you can think of me as your boss — a genuinely supportive one, but a boss nonetheless. That means delivering on the outcomes the project requires.
+
+### Keeping Me in the Loop
+
+I want to stay aware of what you're doing beyond your day-to-day research — not to micromanage, but because I'm invested in your development and can often help. If you're planning to attend a workshop, present outside the group, join a site visit, or take on any part-time work, please keep me informed. Think of it less as asking for permission and more as keeping a colleague in the loop who genuinely wants to support you. A quick heads-up means I can offer advice, flag potential clashes with research commitments, or sometimes open doors you didn't know were there.
+
+## Journal Publications and Where We Aim
+
+I value **high-quality research over volume**. A smaller number of well-placed, rigorous papers is worth more — to you, to the field, and to your career — than a long list of marginal contributions.
+
+For writing, I prefer **Quarto** or **Overleaf**. We have lab templates for both a paper-by-publication thesis and a traditional thesis format.
+
+We agree on target journals as a supervisory team. Here's how we think about venues:
+
+::: {.panel-tabset}
+
+## 🥇 First option
+
+*FT50 and top-tier venues — where we aim first.*
+
+| Journal |
+|---------|
+| Journal of Operations Management |
+| Management Science |
+| Manufacturing and Service Operations Management (MSOM) |
+| MIS Quarterly |
+| Operations Research |
+| Production and Operations Management (POM) |
+| Academy of Management Journal (AMJ) |
+| Information Systems Research (ISR) |
+| Journal of Business Ethics |
+| Journal of Consumer Research |
+| Journal of Management Information Systems (JMIS) |
+| Research Policy |
+| Sloan Management Review |
+| Harvard Business Review |
+
+## 🥈 Second option
+
+*Strong, well-regarded venues in our field.*
+
+| Journal |
+|---------|
+| Journal of Service Research |
+| European Journal of Operational Research (EJOR) |
+| Naval Research Logistics |
+| Decision Sciences |
+| Journal of the Operational Research Society (JORS) |
+| Omega |
+| Computers & Operations Research |
+| Decision Support Systems |
+| Transportation Science |
+| International Journal of Operations & Production Management (IJOPM) |
+| Journal of Supply Chain Management |
+| INFORMS Journals |
+
+## 🥉 Third option
+
+*Solid specialist venues — particularly for applied and health-focused work.*
+
+| Journal |
+|---------|
+| International Journal of Production Research (IJPR) |
+| Journal of Business Logistics |
+| International Journal of Production Economics (IJPE) |
+| Health Care Management Science |
+| Journal of Health Service Research (JHSR) |
+| Annals of Operations Research |
+| Health Systems |
+| Production Planning & Control (PPC) |
+| IMA Management Mathematics |
+| Health Policy |
+| Health Care Management Review |
+
+:::
+
+## Conferences & seminars
+
+Getting out of the lab and into the broader research community is part of the job. We aim to participate in conferences such as:
+
+- **INFORMS Annual Meeting**
+- **POMS Annual Conference**
+- **International Symposium on Forecasting**
+- **IFORS** (International Federation of Operational Research Societies)
+- **AEROS** (Association of European Operational Research Societies)
+- **EURO/MA** (EurOMA)
+- **OR Society Conference**
+- Targeted workshops and specialist events — we identify these together as a team
+
+
+## Time Off
+
+**Take your holidays.** I encourage every student to take at least **four to five weeks per year** completely away from research and email. Not checking in. Not "just a quick look." Fully off.
+
+The only ask is that we discuss and agree on timing in advance.
+
+## Building Your Academic Identity
+
+Your reputation as a researcher doesn't only live in your papers — it lives in how you show up in the broader community. From early in your PhD, I'd encourage you to maintain and keep current:
+
+- **Your Cardiff University profile**
+- **A personal website** (Quarto makes this straightforward)
+- **Your LinkedIn page**
+- **Your GitHub page**
+
+These aren't vanity projects. They're how collaborators find you, how hiring committees read you, and how you build the long-term professional presence that will carry you well beyond your PhD.
+
+
+## What I'm Looking For — and What You Can Expect From Me
+
+My ideal student loves to learn — not because they have to, but because they genuinely cannot help it. 
+
+My ideal student is **self-motivated, curious, and takes ownership** of their work. I don't want to micromanage you — that wouldn't serve either of us. The sooner you're driving your own research agenda, the better your PhD will be.
+
+They show up consciously and intentionally, enthusiastic about science and the process of asking hard questions. They care about others — their colleagues, their community, and the people their research ultimately serves. They set the bar high, because they believe that good enough rarely is. And they are driven by something bigger than their own career: a real desire to make a difference through rigorous, high-quality research.
+
+At the same time, I genuinely believe that everyone deserves to enjoy their life. Research is important — it is not everything. We all need to find our own comfortable rhythm, and I'll support you in finding yours.
+
+From me, you can expect:
+
+- **Honesty and transparency** in relationship, committement, feedback
+- **Long-term investment** in your success — I want to build a lifelong collegial relationship
+- **Flexibility** in how you work, as long as we're making progress
+- **Advocacy** — for your funding, your visibility, your career
+
+
+## Leading activities
+
+One thing that sets our group apart is that every student takes the lead on at least one activity within the lab. This might be organising a reading group, running a workshop, coordinating a seminar series, mentoring a newer student, or managing a collaborative project. The specific activity will depend on your interests and where the group needs you — but the expectation applies to everyone.
+The reasons are straightforward. Research groups thrive when everyone contributes to their collective life, not just their own work. Leading an activity builds skills that papers alone cannot: organising people, communicating ideas to different audiences, and taking responsibility for something beyond your own desk. It also gives you genuine opportunities to support your colleagues, strengthen relationships across the group, and grow your network in ways that will matter long after you graduate. Think of it less as an obligation and more as an early rehearsal for the leadership roles that are an inevitable part of an academic or research career.
+
+## A Final Note
+
+The PhD is 3-4 years There will be periods of real excitement and periods of possibly struggle — often within the same week. What makes the difference, in my experience, is not raw talent or even the quality of the initial idea. It's the combination of intellectual honesty, persistence, and the willingness to keep asking better questions.
+
+You chose this path because you have something to contribute. I'm here to help you figure out exactly what that is — and to support you in delivering it.
+
+Let's get to work.
+

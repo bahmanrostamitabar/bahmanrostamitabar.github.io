@@ -1,0 +1,293 @@
+---
+title: "Do You Actually Have a Forecasting Problem?"
+description: "Forecasting is one of the most overused tools in data science. Before you build a model, this guide walks you through a simple diagnostic to help you figure out whether forecasting is actually what your problem needs — or whether something else would work better."
+author: "Bahman Rostami-Tabar"
+date: "02/27/2026"
+image: "cover.jpg"
+categories:
+  - forecasting
+  - public health
+  - problem-framing
+  - analytical-pitfalls
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    highlight-style: github
+---
+
+##
+
+Before we dig into the diagnostic, it helps to be precise about what we actually mean by forecasting — because the term gets used loosely, often interchangeably with "predictive analytics" or "predictive AI." For the purposes of this guide, we define forecasting by three criteria:
+
+- **It is forward-looking**. A forecast produces estimates of a variable of interest at one or very often more future points in time. 
+
+- **It is grounded in history**. A forecast is built on historical observations of the variable you are trying to predict — a time series. Without that sequential historical record, you do not have the raw material for forecasting.
+
+- **It may incorporate external information**. A forecast can — and usually should — include other variables beyond the target itself. Past and future values of exogenous factors like vaccination coverage, weather, rainfall, population mobility, or price changes can all be built into the model.
+
+This is what separates forecasting from a one-off prediction, a risk score, recommendation, anomaly detection, or a classification model. 
+
+All three criteria need to hold. If your problem does not satisfy all of them, you may still have a valuable analytical problem — but it is probably not a forecasting problem.
+
+## **Do you actually have a forecasting problem?**
+
+In each of the following hypothetical situations, someone will inevitably say: "let's build a forecasting model." But is that actually the right tool for the job?
+
+::: {.grid}
+
+::: {.g-col-4}
+::: {.callout-caution appearance="minimal"}
+🦟 **Malaria surveillance**
+
+Your country just reported a spike in cases. Someone says: *"we need a forecasting model."*
+:::
+:::
+
+::: {.g-col-4}
+::: {.callout-caution appearance="minimal"}
+💊 **Contraceptive supply**
+
+Your inventory team is under pressure to avoid another stockout. Someone says: *"we need a forecasting model."*
+:::
+:::
+
+::: {.g-col-4}
+::: {.callout-caution appearance="minimal"}
+💉 **Vaccine demand**
+
+Your ministry needs a five-year projection for donors. Someone says: *"we need a forecasting model."*
+:::
+:::
+
+:::
+
+
+::: {.callout-important}
+## Stop before you build anything
+
+Forecasting is almost always a means to an end, not the goal itself. If you mistake a **recommendation** problem, **anomaly detection**, or **a simple decision** problem for a **forecasting one**, you might end up with a model that solves entirely the wrong problem. 
+
+In areas like global health, where data capacity is often limited and decisions are genuinely life-or-death, that mistake is costly — not just in wasted resources, but in the opportunity cost of not building something simpler that would have worked better.
+:::
+
+## Do I Have a Forecasting Problem?
+
+Before writing a single line of code, work through the four diagnostic questions below. They are designed to help you move from a vague analytical ask to a clearly framed problem — and to catch the most common traps along the way.
+
+### 1. What problem are you actually trying to solve?
+
+Start by asking what decision or action your forecast is meant to support. If you cannot answer that clearly, you are not ready to build a model yet — go back and talk to the people who will use the output.
+
+::: {.callout-tip}
+## Talk to domain experts first
+A supply chain manager, an epidemiologist, or a district health officer will tell you things about the data and the decision-making process that no amount of exploratory analysis will reveal. Always start there.
+:::
+
+Forecasting gets proposed as a solution far too often, sometimes before the problem has even been properly defined. Beware when a specific technique is suggested right from the start. The question is never *"how do we build a forecast?"* — it is *"what are we trying to accomplish, and is forecasting the right tool to get us there?"*
+
+### 2. Is time genuinely central to your problem?
+
+Ask yourself: would knowing how something has evolved over the past weeks, months, or years make your forecast meaningfully better?
+
+- **Yes** → strong signal that you have a forecasting problem. Keep going.
+- **No** → time may just be a label on your data. You probably have a **regression** or **classification** problem or somethign else instead.
+
+::: {.column-margin}
+**Quick example**
+
+Forecasting how many vaccines a facility will consume *next month* based on its consumption history → **forecasting**.
+
+Forecasting whether a child is at risk of stunting based on age, weight, and household data measured at different dates → **regression**. The timestamps are incidental.
+:::
+
+A useful follow-up: *does knowing the history of a specific item help you forecast its future?* If demand last month tells you something meaningful about demand this month — yes. If each observation is essentially independent of the ones before it — probably not.
+
+
+### 3. Are you trying to make a forecast or take a decision?
+
+This distinction matters more than it might seem.
+
+> **Forecast** → you want to know what will happen. Continue probing — you may have a forecasting problem.
+
+> **Decision** → you want to know what to *do*. Forecasting may be a sub-problem /input, but it is not the full problem. A forecast tells you the possible future outcomes and their chances of them happening; it has no notion of what is "best." Finding the best course of action requires optimisation, not just forecast
+
+For example: forecasting how many patients will arrive at a clinic next week is a forecasting problem. Deciding how many nurses to roster based on that forecast is a decision problem. Both matter, but they need to be designed separately.
+
+::: {.callout-warning}
+## A common trap: confusing forecasting with causal inference
+If your question is *"what will happen **if** we do X?"* — what is the impact of adding a community health worker, or of switching from monthly to quarterly resupply — that is a **causal inference** question, not a forecasting one. Forecasting tells you what will happen if things continue as they are. It cannot tell you what will happen if you intervene. These require fundamentally different methods.
+:::
+
+### 4. Does the future resemble the past?
+
+Forecasting relies on the assumption that historical patterns — seasonal peaks, steady trends, recurring cycles, impact of covarriates, lag, etc — will continue in a meaningful way. 
+
+::: {.callout-important}
+## Ask yourself?
+
+**Do I have information that teels mefuture would be completely different from the past?**
+
+Try to understnd what makes it different and if you can include those infrpmation in the odelling, if not then you probably do not have a forecasting problem, and you need to do somehting different!
+:::
+
+
+#### Do I have reason to believe the future will look fundamentally different from the past?
+
+If yes, do not dismiss forecasting immediately — ask first whether you can explain why it will be different and whether you can capture that difference in your model. A new vaccination campaign, a change in reporting policy, a shift in population distribution — these are all factors that break historical patterns, but if you can quantify them and include them as covariates, your forecast can still be valid.
+
+If you cannot explain or model what is driving the change, then your historical data is no longer a reliable guide to the future — and forecasting will give you false confidence rather than useful predictions. In that case you likely need a different approach: scenario planning, expert elicitation, or causal modelling that explicitly represents the structural change you are expecting.
+
+
+::: {.callout-note}
+## The bottom line
+If you have worked through these questions and time still feels central, patterns exist in your historical data, and your goal is genuinely a forecasting rather than a decision — you likely have a forecasting problem.
+
+If not, the section below on **alternative techniques** will help you identify what kind of problem you do have.
+:::
+
+
+## Alternative Techniques Worth Considering First
+
+Not every analytical problem that involves time is a forecasting problem. Before committing to a forecasting workflow, consider whether one of these alternatives might be simpler and more fit for purpose.
+
+| Technique | Ask yourself | Global health example |
+|---|---|---|
+| **Recommendation** | Do I need to suggest the right action for a specific case? | Which follow-up intervention to offer a family planning client who has missed an appointment |
+| **Anomaly detection** | Do I need to spot something unusual? | A sudden surge in acute malnutrition admissions, or a cold chain temperature excursion |
+| **Classification** | Do I need a category, not a number? | Is this district at high risk of a measles outbreak? Will this facility stockout in 30 days? |
+| **Causal inference** | Do I need to know the effect of an intervention? | What is the impact of adding a community health worker on antenatal care attendance? |
+| **Optimisation** | Do I need to make the best decision given constraints? | How to allocate a limited vaccine supply across regions with different risk profiles |
+
+: {tbl-colwidths="[20,35,45]"}
+
+## These Techniques Often Work Together
+
+Real-world problems rarely fit neatly into a single category. A single situation often requires multiple techniques working in sequence — and understanding how they connect is just as important as knowing the difference between them.
+
+The most vivid example is **disease surveillance**.
+
+::: {.panel-tabset}
+
+### Detect
+**Is something unusual happening?** → *Anomaly detection*
+
+Surveillance systems monitor reported case counts and raise an alert when something deviates significantly from the expected baseline for that disease, district, and time of year. You are not predicting the future — you are flagging that the present looks wrong. This is what integrated disease surveillance systems are designed to do.
+
+### Forecast
+**What happens next, and how do we prepare?** → *Forecasting*
+
+Once an alert has been raised and an outbreak confirmed, the question shifts: how will case counts grow, peak, and subside — and what does that mean for health system capacity? This is where time-series forecasting or compartmental epidemic models like SEIR come in. The past trajectory of the outbreak, together with covariates like vaccination coverage, population mobility, and healthcare access, feeds into projections that help authorities plan surge capacity, pre-position supplies, and time interventions.
+
+### Decide
+**What do we do, and where?** → *Optimisation / decision support*
+
+The forecast alone does not tell you where to send the response teams, how to allocate the available doses, or which districts to prioritise. That requires a decision layer on top of the forecast — one that takes the predictions as input and optimises an action given real-world constraints.
+
+:::
+
+::: {.callout-tip}
+## The key insight
+Anomaly detection triggers the alarm. Forecasting answers *"what happens next?"* Optimisation answers *"what do we do about it?"* Being precise about which question you are asking at each step is what keeps the work grounded and actionable.
+:::
+
+## Two Real-World Examples
+
+### ❌ Not A Forecast — Family Planning Outreach
+
+::: {.callout-note appearance="simple"}
+A national family planning programme has rich longitudinal data on client behaviour — clinic visits, method uptake, continuation and dropout rates, and community health worker contacts. A data team proposes to *"forecast"* which intervention each client is most likely to respond to next, in order to personalise follow-up outreach and improve continuation rates.
+
+It sounds like forecasting: there is time-series data and you are predicting a future event. But look more carefully. The **"when" is secondary to the "what."** What matters is which message or intervention to direct at which client — not the precise date they might respond. Seasonal patterns, like higher uptake during post-partum visits or around community health days, can be captured with simple triggers.
+
+**This is a recommendation problem.** Treating it as a forecasting problem adds a layer of complexity — and a requirement for longitudinal modelling infrastructure — that is not warranted by the underlying question.
+:::
+
+### ✅ The Genuine Forecast — Vaccine and Essential Medicines Demand
+
+::: {.callout-tip appearance="simple"}
+A central medical store needs to plan procurement and distribution of vaccines, contraceptives, and essential medicines across a national supply chain. They have historical consumption data by product and by facility going back several years. The question is: what will demand look like over the coming months, so that we can order the right quantities, avoid stockouts, and minimise wastage of short-shelf-life products?
+
+Here, **the time-series nature is essential.** Knowing how consumption has trended, how it spikes around immunisation campaigns or seasonal disease peaks, and how patterns differ between urban and remote facilities directly determines how much to order and when.
+
+**This is a clean forecasting problem** — many time series (one per product per facility), a rolling prediction horizon of weeks to months, and a high degree of automation required to be operationally useful at scale. Forecasting is not just a useful tool here; it is the right one.
+:::
+
+
+## What Kind of Forecasting Problem Do I Have?
+
+Once you have confirmed you have a forecasting problem, the next step is to understand its *flavour*. Not all forecasting problems are built alike — and misclassifying yours leads to the wrong modelling choices, the wrong infrastructure, and the wrong expectations from stakeholders.
+
+::: {.columns}
+
+::: {.column width="48%"}
+### 🔄 Operational Forecasting
+
+Operational forecasts are generated **frequently** — hourly, daily, weekly, or monthly — because the decisions they inform happen on a rolling, continuous basis.
+
+**Characteristics:**
+
+- Many, often irregular time series
+- Short prediction horizons
+- High degree of automation
+- Decisions happen fast and at scale
+
+**Global health examples:**
+
+- Weekly disease incidence projections by district to guide surveillance response
+- Monthly facility-level consumption forecasts to trigger resupply orders
+- Daily bed occupancy projections during an outbreak
+
+*Speed, scalability, and integration into existing workflows matter most.*
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+### 🧭 Strategic Forecasting
+
+Strategic forecasts are produced **less frequently** — quarterly, annually, or on an ad hoc basis tied to planning cycles — and are used to inform high-level resource allocation and investment decisions.
+
+**Characteristics:**
+
+- Fewer, more regular time series
+- Long prediction horizons
+- High degree of human interpretation
+- Decisions are infrequent and high-stakes
+
+**Global health examples:**
+
+- Multi-year vaccine demand projections for Gavi co-financing negotiations
+- Long-range estimates of family planning commodity needs for USAID procurement planning
+- Decade-long disease burden projections to guide health system investment
+
+*Accuracy, transparency, and explainability matter most.*
+:::
+
+:::
+
+::: {.callout-note}
+## Which flavour do you have?
+Knowing this shapes everything: the choice of model, the frequency of retraining, the infrastructure required, and how results are packaged and communicated to the people who will act on them.
+:::
+
+## The Diagnostic in 5 steps
+
+::: {.callout-caution appearance="minimal"}
+
+**Step 1** — What problem are you solving, and who will use the output?
+
+**Step 2** — Are you predicting what will happen, or deciding what to do?
+
+**Step 3** — Is time genuinely central? Does the history of this item help forecast its future?
+
+**Step 4** — Do historical patterns exist that are likely to be observed in the future?
+
+**Step 5** — If yes to 3 and 4: you have a forecasting problem. Is it operational or strategic?
+
+:::
+
+Getting this diagnosis right at the start saves enormous amounts of wasted effort. Talk to your epidemiologists, your supply chain managers, your programme officers. Look hard at your data. And resist the pull of complexity until you are sure you are solving the right problem — because in global health, the right problem is never hard to find, and solving the wrong one is a luxury no one can afford.

@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Bahman Rostami-Tabar">
+<meta name="dcterms.date" content="2026-02-27">
+<meta name="description" content="Forecasting is one of the most overused tools in data science. Before you build a model, this guide walks you through a simple diagnostic to help you figure out whether forecasting is actually what your problem needs — or whether something else would work better.">
+
+<title>Do You Actually Have a Forecasting Problem?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a6e161b2431e1f94a14e0f5d32135a3c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d818f227fe34968165877ae1620667fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="Do You Actually Have a Forecasting Problem?">
+<meta property="og:description" content="Forecasting is one of the most overused tools in data science. Before you build a model, this guide walks you through a simple diagnostic to help you figure out whether forecasting is actually what your problem needs — or whether something else would work better.">
+<meta property="og:image" content="https://bahmanrostamitabar.github.io/blog/2025-forecasting_problem/cover.jpg">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door-fill" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../supervision/index.html"> 
+<span class="menu-text">Research Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks/index.html"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pdf/bahmanrostamitabarCV.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" title="" class="quarto-navigation-tool px-1" aria-label="" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#do-you-actually-have-a-forecasting-problem" id="toc-do-you-actually-have-a-forecasting-problem" class="nav-link" data-scroll-target="#do-you-actually-have-a-forecasting-problem"><strong>Do you actually have a forecasting problem?</strong></a></li>
+  <li><a href="#do-i-have-a-forecasting-problem" id="toc-do-i-have-a-forecasting-problem" class="nav-link" data-scroll-target="#do-i-have-a-forecasting-problem">Do I Have a Forecasting Problem?</a></li>
+  <li><a href="#alternative-techniques-worth-considering-first" id="toc-alternative-techniques-worth-considering-first" class="nav-link" data-scroll-target="#alternative-techniques-worth-considering-first">Alternative Techniques Worth Considering First</a></li>
+  <li><a href="#these-techniques-often-work-together" id="toc-these-techniques-often-work-together" class="nav-link" data-scroll-target="#these-techniques-often-work-together">These Techniques Often Work Together</a></li>
+  <li><a href="#two-real-world-examples" id="toc-two-real-world-examples" class="nav-link" data-scroll-target="#two-real-world-examples">Two Real-World Examples</a></li>
+  <li><a href="#what-kind-of-forecasting-problem-do-i-have" id="toc-what-kind-of-forecasting-problem-do-i-have" class="nav-link" data-scroll-target="#what-kind-of-forecasting-problem-do-i-have">What Kind of Forecasting Problem Do I Have?</a></li>
+  <li><a href="#the-diagnostic-in-5-steps" id="toc-the-diagnostic-in-5-steps" class="nav-link" data-scroll-target="#the-diagnostic-in-5-steps">The Diagnostic in 5 steps</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Do You Actually Have a Forecasting Problem?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">forecasting</div>
+    <div class="quarto-category">public health</div>
+    <div class="quarto-category">problem-framing</div>
+    <div class="quarto-category">analytical-pitfalls</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Forecasting is one of the most overused tools in data science. Before you build a model, this guide walks you through a simple diagnostic to help you figure out whether forecasting is actually what your problem needs — or whether something else would work better.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-page-left">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Bahman Rostami-Tabar </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 27, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p>Before we dig into the diagnostic, it helps to be precise about what we actually mean by forecasting — because the term gets used loosely, often interchangeably with “predictive analytics” or “predictive AI.” For the purposes of this guide, we define forecasting by three criteria:</p>
+<ul>
+<li><p><strong>It is forward-looking</strong>. A forecast produces estimates of a variable of interest at one or very often more future points in time.</p></li>
+<li><p><strong>It is grounded in history</strong>. A forecast is built on historical observations of the variable you are trying to predict — a time series. Without that sequential historical record, you do not have the raw material for forecasting.</p></li>
+<li><p><strong>It may incorporate external information</strong>. A forecast can — and usually should — include other variables beyond the target itself. Past and future values of exogenous factors like vaccination coverage, weather, rainfall, population mobility, or price changes can all be built into the model.</p></li>
+</ul>
+<p>This is what separates forecasting from a one-off prediction, a risk score, recommendation, anomaly detection, or a classification model.</p>
+<p>All three criteria need to hold. If your problem does not satisfy all of them, you may still have a valuable analytical problem — but it is probably not a forecasting problem.</p>
+</section>
+<section id="do-you-actually-have-a-forecasting-problem" class="level2">
+<h2 class="anchored" data-anchor-id="do-you-actually-have-a-forecasting-problem"><strong>Do you actually have a forecasting problem?</strong></h2>
+<p>In each of the following hypothetical situations, someone will inevitably say: “let’s build a forecasting model.” But is that actually the right tool for the job?</p>
+<div class="grid">
+<div class="g-col-4">
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>🦟 <strong>Malaria surveillance</strong></p>
+<p>Your country just reported a spike in cases. Someone says: <em>“we need a forecasting model.”</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-4">
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>💊 <strong>Contraceptive supply</strong></p>
+<p>Your inventory team is under pressure to avoid another stockout. Someone says: <em>“we need a forecasting model.”</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-4">
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>💉 <strong>Vaccine demand</strong></p>
+<p>Your ministry needs a five-year projection for donors. Someone says: <em>“we need a forecasting model.”</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Stop before you build anything
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Forecasting is almost always a means to an end, not the goal itself. If you mistake a <strong>recommendation</strong> problem, <strong>anomaly detection</strong>, or <strong>a simple decision</strong> problem for a <strong>forecasting one</strong>, you might end up with a model that solves entirely the wrong problem.</p>
+<p>In areas like global health, where data capacity is often limited and decisions are genuinely life-or-death, that mistake is costly — not just in wasted resources, but in the opportunity cost of not building something simpler that would have worked better.</p>
+</div>
+</div>
+</section>
+<section id="do-i-have-a-forecasting-problem" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="do-i-have-a-forecasting-problem">Do I Have a Forecasting Problem?</h2>
+<p>Before writing a single line of code, work through the four diagnostic questions below. They are designed to help you move from a vague analytical ask to a clearly framed problem — and to catch the most common traps along the way.</p>
+<section id="what-problem-are-you-actually-trying-to-solve" class="level3">
+<h3 class="anchored" data-anchor-id="what-problem-are-you-actually-trying-to-solve">1. What problem are you actually trying to solve?</h3>
+<p>Start by asking what decision or action your forecast is meant to support. If you cannot answer that clearly, you are not ready to build a model yet — go back and talk to the people who will use the output.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Talk to domain experts first
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A supply chain manager, an epidemiologist, or a district health officer will tell you things about the data and the decision-making process that no amount of exploratory analysis will reveal. Always start there.</p>
+</div>
+</div>
+<p>Forecasting gets proposed as a solution far too often, sometimes before the problem has even been properly defined. Beware when a specific technique is suggested right from the start. The question is never <em>“how do we build a forecast?”</em> — it is <em>“what are we trying to accomplish, and is forecasting the right tool to get us there?”</em></p>
+</section>
+<section id="is-time-genuinely-central-to-your-problem" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="is-time-genuinely-central-to-your-problem">2. Is time genuinely central to your problem?</h3>
+<p>Ask yourself: would knowing how something has evolved over the past weeks, months, or years make your forecast meaningfully better?</p>
+<ul>
+<li><strong>Yes</strong> → strong signal that you have a forecasting problem. Keep going.</li>
+<li><strong>No</strong> → time may just be a label on your data. You probably have a <strong>regression</strong> or <strong>classification</strong> problem or somethign else instead.</li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Quick example</strong></p>
+<p>Forecasting how many vaccines a facility will consume <em>next month</em> based on its consumption history → <strong>forecasting</strong>.</p>
+<p>Forecasting whether a child is at risk of stunting based on age, weight, and household data measured at different dates → <strong>regression</strong>. The timestamps are incidental.</p>
+</div></div><p>A useful follow-up: <em>does knowing the history of a specific item help you forecast its future?</em> If demand last month tells you something meaningful about demand this month — yes. If each observation is essentially independent of the ones before it — probably not.</p>
+</section>
+<section id="are-you-trying-to-make-a-forecast-or-take-a-decision" class="level3">
+<h3 class="anchored" data-anchor-id="are-you-trying-to-make-a-forecast-or-take-a-decision">3. Are you trying to make a forecast or take a decision?</h3>
+<p>This distinction matters more than it might seem.</p>
+<blockquote class="blockquote">
+<p><strong>Forecast</strong> → you want to know what will happen. Continue probing — you may have a forecasting problem.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>Decision</strong> → you want to know what to <em>do</em>. Forecasting may be a sub-problem /input, but it is not the full problem. A forecast tells you the possible future outcomes and their chances of them happening; it has no notion of what is “best.” Finding the best course of action requires optimisation, not just forecast</p>
+</blockquote>
+<p>For example: forecasting how many patients will arrive at a clinic next week is a forecasting problem. Deciding how many nurses to roster based on that forecast is a decision problem. Both matter, but they need to be designed separately.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>A common trap: confusing forecasting with causal inference
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If your question is <em>“what will happen <strong>if</strong> we do X?”</em> — what is the impact of adding a community health worker, or of switching from monthly to quarterly resupply — that is a <strong>causal inference</strong> question, not a forecasting one. Forecasting tells you what will happen if things continue as they are. It cannot tell you what will happen if you intervene. These require fundamentally different methods.</p>
+</div>
+</div>
+</section>
+<section id="does-the-future-resemble-the-past" class="level3">
+<h3 class="anchored" data-anchor-id="does-the-future-resemble-the-past">4. Does the future resemble the past?</h3>
+<p>Forecasting relies on the assumption that historical patterns — seasonal peaks, steady trends, recurring cycles, impact of covarriates, lag, etc — will continue in a meaningful way.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Ask yourself?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Do I have information that teels mefuture would be completely different from the past?</strong></p>
+<p>Try to understnd what makes it different and if you can include those infrpmation in the odelling, if not then you probably do not have a forecasting problem, and you need to do somehting different!</p>
+</div>
+</div>
+<section id="do-i-have-reason-to-believe-the-future-will-look-fundamentally-different-from-the-past" class="level4">
+<h4 class="anchored" data-anchor-id="do-i-have-reason-to-believe-the-future-will-look-fundamentally-different-from-the-past">Do I have reason to believe the future will look fundamentally different from the past?</h4>
+<p>If yes, do not dismiss forecasting immediately — ask first whether you can explain why it will be different and whether you can capture that difference in your model. A new vaccination campaign, a change in reporting policy, a shift in population distribution — these are all factors that break historical patterns, but if you can quantify them and include them as covariates, your forecast can still be valid.</p>
+<p>If you cannot explain or model what is driving the change, then your historical data is no longer a reliable guide to the future — and forecasting will give you false confidence rather than useful predictions. In that case you likely need a different approach: scenario planning, expert elicitation, or causal modelling that explicitly represents the structural change you are expecting.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The bottom line
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you have worked through these questions and time still feels central, patterns exist in your historical data, and your goal is genuinely a forecasting rather than a decision — you likely have a forecasting problem.</p>
+<p>If not, the section below on <strong>alternative techniques</strong> will help you identify what kind of problem you do have.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="alternative-techniques-worth-considering-first" class="level2">
+<h2 class="anchored" data-anchor-id="alternative-techniques-worth-considering-first">Alternative Techniques Worth Considering First</h2>
+<p>Not every analytical problem that involves time is a forecasting problem. Before committing to a forecasting workflow, consider whether one of these alternatives might be simpler and more fit for purpose.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 35%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technique</th>
+<th>Ask yourself</th>
+<th>Global health example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Recommendation</strong></td>
+<td>Do I need to suggest the right action for a specific case?</td>
+<td>Which follow-up intervention to offer a family planning client who has missed an appointment</td>
+</tr>
+<tr class="even">
+<td><strong>Anomaly detection</strong></td>
+<td>Do I need to spot something unusual?</td>
+<td>A sudden surge in acute malnutrition admissions, or a cold chain temperature excursion</td>
+</tr>
+<tr class="odd">
+<td><strong>Classification</strong></td>
+<td>Do I need a category, not a number?</td>
+<td>Is this district at high risk of a measles outbreak? Will this facility stockout in 30 days?</td>
+</tr>
+<tr class="even">
+<td><strong>Causal inference</strong></td>
+<td>Do I need to know the effect of an intervention?</td>
+<td>What is the impact of adding a community health worker on antenatal care attendance?</td>
+</tr>
+<tr class="odd">
+<td><strong>Optimisation</strong></td>
+<td>Do I need to make the best decision given constraints?</td>
+<td>How to allocate a limited vaccine supply across regions with different risk profiles</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="these-techniques-often-work-together" class="level2">
+<h2 class="anchored" data-anchor-id="these-techniques-often-work-together">These Techniques Often Work Together</h2>
+<p>Real-world problems rarely fit neatly into a single category. A single situation often requires multiple techniques working in sequence — and understanding how they connect is just as important as knowing the difference between them.</p>
+<p>The most vivid example is <strong>disease surveillance</strong>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Detect</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Forecast</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Decide</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><strong>Is something unusual happening?</strong> → <em>Anomaly detection</em></p>
+<p>Surveillance systems monitor reported case counts and raise an alert when something deviates significantly from the expected baseline for that disease, district, and time of year. You are not predicting the future — you are flagging that the present looks wrong. This is what integrated disease surveillance systems are designed to do.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>What happens next, and how do we prepare?</strong> → <em>Forecasting</em></p>
+<p>Once an alert has been raised and an outbreak confirmed, the question shifts: how will case counts grow, peak, and subside — and what does that mean for health system capacity? This is where time-series forecasting or compartmental epidemic models like SEIR come in. The past trajectory of the outbreak, together with covariates like vaccination coverage, population mobility, and healthcare access, feeds into projections that help authorities plan surge capacity, pre-position supplies, and time interventions.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><strong>What do we do, and where?</strong> → <em>Optimisation / decision support</em></p>
+<p>The forecast alone does not tell you where to send the response teams, how to allocate the available doses, or which districts to prioritise. That requires a decision layer on top of the forecast — one that takes the predictions as input and optimises an action given real-world constraints.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The key insight
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Anomaly detection triggers the alarm. Forecasting answers <em>“what happens next?”</em> Optimisation answers <em>“what do we do about it?”</em> Being precise about which question you are asking at each step is what keeps the work grounded and actionable.</p>
+</div>
+</div>
+</section>
+<section id="two-real-world-examples" class="level2">
+<h2 class="anchored" data-anchor-id="two-real-world-examples">Two Real-World Examples</h2>
+<section id="not-a-forecast-family-planning-outreach" class="level3">
+<h3 class="anchored" data-anchor-id="not-a-forecast-family-planning-outreach">❌ Not A Forecast — Family Planning Outreach</h3>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>A national family planning programme has rich longitudinal data on client behaviour — clinic visits, method uptake, continuation and dropout rates, and community health worker contacts. A data team proposes to <em>“forecast”</em> which intervention each client is most likely to respond to next, in order to personalise follow-up outreach and improve continuation rates.</p>
+<p>It sounds like forecasting: there is time-series data and you are predicting a future event. But look more carefully. The <strong>“when” is secondary to the “what.”</strong> What matters is which message or intervention to direct at which client — not the precise date they might respond. Seasonal patterns, like higher uptake during post-partum visits or around community health days, can be captured with simple triggers.</p>
+<p><strong>This is a recommendation problem.</strong> Treating it as a forecasting problem adds a layer of complexity — and a requirement for longitudinal modelling infrastructure — that is not warranted by the underlying question.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-genuine-forecast-vaccine-and-essential-medicines-demand" class="level3">
+<h3 class="anchored" data-anchor-id="the-genuine-forecast-vaccine-and-essential-medicines-demand">✅ The Genuine Forecast — Vaccine and Essential Medicines Demand</h3>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>A central medical store needs to plan procurement and distribution of vaccines, contraceptives, and essential medicines across a national supply chain. They have historical consumption data by product and by facility going back several years. The question is: what will demand look like over the coming months, so that we can order the right quantities, avoid stockouts, and minimise wastage of short-shelf-life products?</p>
+<p>Here, <strong>the time-series nature is essential.</strong> Knowing how consumption has trended, how it spikes around immunisation campaigns or seasonal disease peaks, and how patterns differ between urban and remote facilities directly determines how much to order and when.</p>
+<p><strong>This is a clean forecasting problem</strong> — many time series (one per product per facility), a rolling prediction horizon of weeks to months, and a high degree of automation required to be operationally useful at scale. Forecasting is not just a useful tool here; it is the right one.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="what-kind-of-forecasting-problem-do-i-have" class="level2">
+<h2 class="anchored" data-anchor-id="what-kind-of-forecasting-problem-do-i-have">What Kind of Forecasting Problem Do I Have?</h2>
+<p>Once you have confirmed you have a forecasting problem, the next step is to understand its <em>flavour</em>. Not all forecasting problems are built alike — and misclassifying yours leads to the wrong modelling choices, the wrong infrastructure, and the wrong expectations from stakeholders.</p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="operational-forecasting" class="level3">
+<h3 class="anchored" data-anchor-id="operational-forecasting">🔄 Operational Forecasting</h3>
+<p>Operational forecasts are generated <strong>frequently</strong> — hourly, daily, weekly, or monthly — because the decisions they inform happen on a rolling, continuous basis.</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li>Many, often irregular time series</li>
+<li>Short prediction horizons</li>
+<li>High degree of automation</li>
+<li>Decisions happen fast and at scale</li>
+</ul>
+<p><strong>Global health examples:</strong></p>
+<ul>
+<li>Weekly disease incidence projections by district to guide surveillance response</li>
+<li>Monthly facility-level consumption forecasts to trigger resupply orders</li>
+<li>Daily bed occupancy projections during an outbreak</li>
+</ul>
+<p><em>Speed, scalability, and integration into existing workflows matter most.</em></p>
+</section>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<section id="strategic-forecasting" class="level3">
+<h3 class="anchored" data-anchor-id="strategic-forecasting">🧭 Strategic Forecasting</h3>
+<p>Strategic forecasts are produced <strong>less frequently</strong> — quarterly, annually, or on an ad hoc basis tied to planning cycles — and are used to inform high-level resource allocation and investment decisions.</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li>Fewer, more regular time series</li>
+<li>Long prediction horizons</li>
+<li>High degree of human interpretation</li>
+<li>Decisions are infrequent and high-stakes</li>
+</ul>
+<p><strong>Global health examples:</strong></p>
+<ul>
+<li>Multi-year vaccine demand projections for Gavi co-financing negotiations</li>
+<li>Long-range estimates of family planning commodity needs for USAID procurement planning</li>
+<li>Decade-long disease burden projections to guide health system investment</li>
+</ul>
+<p><em>Accuracy, transparency, and explainability matter most.</em></p>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Which flavour do you have?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Knowing this shapes everything: the choice of model, the frequency of retraining, the infrastructure required, and how results are packaged and communicated to the people who will act on them.</p>
+</div>
+</div>
+</section>
+<section id="the-diagnostic-in-5-steps" class="level2">
+<h2 class="anchored" data-anchor-id="the-diagnostic-in-5-steps">The Diagnostic in 5 steps</h2>
+<div class="callout callout-style-simple callout-caution no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Step 1</strong> — What problem are you solving, and who will use the output?</p>
+<p><strong>Step 2</strong> — Are you predicting what will happen, or deciding what to do?</p>
+<p><strong>Step 3</strong> — Is time genuinely central? Does the history of this item help forecast its future?</p>
+<p><strong>Step 4</strong> — Do historical patterns exist that are likely to be observed in the future?</p>
+<p><strong>Step 5</strong> — If yes to 3 and 4: you have a forecasting problem. Is it operational or strategic?</p>
+</div>
+</div>
+</div>
+<p>Getting this diagnosis right at the start saves enormous amounts of wasted effort. Talk to your epidemiologists, your supply chain managers, your programme officers. Look hard at your data. And resist the pull of complexity until you are sure you are solving the right problem — because in global health, the right problem is never hard to find, and solving the wrong one is a luxury no one can afford.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/bahmanrostamitabar\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Made with ❤️ and Quarto</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

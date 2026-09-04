@@ -1,0 +1,207 @@
+---
+title: "The Things Nobody Teaches You in a PhD (But Everyone Expects You to Know)"
+author: "Bahman Rostami-Tabar"
+description: |
+  A guide for PhD students working with me.
+date: "04/22/2026"
+image: "cover.jpg"
+categories:
+  - PhD advice
+  - supervision
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    highlight-style: github
+---
+
+
+##
+
+Nobody warns you about the email.
+
+It arrives on a Tuesday afternoon, probably when you're already tired. It's from a journal reviewer. It's not kind. Your paper — the one you spent four months on, the one you genuinely believed in — has been rejected. Pulled apart.
+
+Somewhere between the second and third read, a quiet voice starts up: maybe I'm not actually good enough to do this.
+
+Your PhD programme taught you research methods, academic writing, how to run an analysis. What it didn't teach you is what to do in that moment. How to separate the critique of your work from your sense of your own worth. How to take what's useful and keep going.
+
+You figure it out. Eventually. But the route there is rarely clean.
+This is the invisible curriculum — the skills nobody teaches you, but everyone expects you to have. You will learn all of them during your PhD. The question is whether you learn them by design, or by surviving them.
+
+
+## Emotional intelligence & Resilience
+
+Let's start here, because this is the one that can end everything else.
+
+A Nature survey found that over a third of PhD students experience anxiety or depression significant enough to seek help. Read that again. Not a minority. Not an unlucky few. Over a third. And that's just the ones who sought help.
+
+The PhD experience is uniquely designed to be psychologically destabilising. You're working on something that's never been done before, which means you spend years being uncertain whether you're doing it right. You're judged constantly — by supervisors, reviewers, examiners, conference audiences. You're often isolated, underpaid, and living in a city you didn't grow up in. And somewhere underneath all of this is the persistent, nagging suspicion that everyone else is coping better than you.
+
+They're not, by the way. But nobody says that out loud.
+
+Resilience is not a personality trait you either have or don't. It's a set of skills — recognising when you're struggling, reaching out before you're in crisis, building routines that protect your mental health when everything else feels chaotic. These can be taught. They should be taught. Instead, most students learn them through a breakdown they didn't see coming.
+
+
+## Communication & Relationship with Your Supervisor
+
+Your supervisor relationship is probably the single biggest variable in whether your PhD goes well. More than your research topic. More than your institution. More than your own ability.
+
+A good supervisor relationship doesn't just happen. It gets built, maintained, and occasionally repaired. And almost nobody teaches you how to do that.
+
+Most students avoid difficult conversations with their supervisors until the situation is already bad. You've been getting feedback that confuses you for three months, but you don't want to seem like you don't understand. You feel unsupported, but you don't want to seem needy. You think the project has gone off track, but who are you to challenge them?
+
+So you say nothing. And the situation quietly gets worse.
+
+The skills here are learnable: how to raise problems early rather than waiting until you're in crisis. How to say "I need more from you" without sounding accusatory. How to follow up a difficult conversation with a short email that confirms what was agreed, which sounds bureaucratic until the day it protects you from a misunderstanding.
+
+These are not complicated skills. They're just never taught. So students learn them the hard way — usually around month eighteen, after something has already gone wrong.
+
+
+## Negotiation Skills
+
+Your PhD is not fixed. It will change. Your timeline will shift. Your research questions will evolve. Your circumstances — financial, personal, logistical — will not stay the same for four years.
+
+You will need to negotiate. For extensions. For resources. For clarity on what's actually expected of you. For authorship on a paper you contributed to. For the scope of a chapter that has quietly ballooned into three.
+
+Most PhD students think of negotiation as something confrontational — something that damages relationships. So they don't do it. They absorb whatever situation they're in, adapt, overwork, and eventually either finish damaged or don't finish at all.
+
+Good negotiation is the opposite of confrontational. It's practical. It's about raising things early when you still have options, being specific about what you need and why, and acknowledging that your supervisor has constraints too. The best negotiators don't demand — they propose. "Here's the problem, here's what I need, here's what I'm offering in return. Does that work?"
+
+This is a skill you'll use for the rest of your career. The PhD is an unusually good place to learn it — if someone would just tell you that's what you're doing.
+
+
+## Presentation Skills
+
+At some point in your PhD you will give a presentation that does not go well.
+
+Maybe the slides are too dense. Maybe you run over time. Maybe someone asks a question you can't answer and you freeze. Maybe you can see the audience losing interest and you can't do anything about it. Maybe all of the above.
+
+This is normal. But it's also preventable, because presenting is a skill, not a talent. The researchers who seem effortlessly confident at conferences were not born that way. They practiced. They got feedback. They learned how to structure a talk so the audience stays with them, how to handle hostile questions without getting defensive, how to manage nerves so they can still think clearly.
+
+Instead, most PhD students are handed a conference slot and pointed at a room. They prepare their slides (usually too many), present (usually too fast), and learn by surviving the experience. The feedback, if it comes at all, comes afterwards. Which is a bit late.
+
+
+## Giving & Receiving Critique
+
+This one deserves more attention than it gets, because it sits underneath almost everything else.
+
+Receiving feedback well is not the same as handling conflict. It's a daily, constant part of research life — from supervisors, reviewers, examiners, peers, conference audiences. The skill is being able to sit with criticism, separate what's legitimate from what isn't, take what's useful, and not collapse or get defensive in the process. That's hard. And it's harder still in written form, when there's no tone or context, and you read the email alone at the worst possible moment.
+
+Giving feedback is equally neglected. As a PhD student you'll be asked to review peers' work, give feedback to undergrads, eventually supervise others. Most people either go too soft — vague reassurances that help nobody — or too blunt, delivering honesty without care. The skill is being specific, actionable, and kind simultaneously, without hedging so much the message disappears.
+
+Neither of these are natural. Both can be taught. Almost nobody teaches them.
+
+
+## Building & Maintaining Professional Networks
+
+You go to a conference. You meet someone interesting. You exchange contact details. You mean to follow up. You don't.
+
+Then in year four you graduate and realise you have almost no professional network. Because you were heads-down in your research, which felt like the right thing to do. It was also, professionally, quite costly.
+
+The opportunities are there. Research groups, seminar series, student networks — most universities including Cardiff have them, and they're genuinely underused. Attending regularly and contributing to discussions is networking, even if it doesn't feel like it. 
+
+Student placements, lab visits to other groups, and short research stays at other universities — including international ones — are among the highest-return activities a PhD student can do. You make connections that last, and you return with a different perspective on your own work. These visits are often fundable. Most students don't pursue them because nobody frames them as a priority.
+
+The principle is simple: start early, add value before you ask for anything, and stay in touch. Your network is the people who know your work and think of you when something relevant comes up. That takes time to build. Year one is the right time to start, not year four.
+
+## Choosing Good Research Questions
+
+This might be the most intellectually important skill on this list, and it's almost entirely absent from PhD training.
+
+Most students begin with a question their supervisor suggests, or a question inherited from a previous project. Which is fine to start — but it means they never develop the muscle for evaluating whether a question is actually worth asking. Is it tractable? Is it significant? Has it already been answered? Is it the right size for a PhD?
+
+Choosing a good research question involves understanding the literature deeply enough to see the genuine gaps, being honest about what's feasible in the time and with the resources you have, and having the intellectual confidence to push back if a question you've been given isn't quite right.
+
+These are learnable skills. But because the question is often handed down rather than developed, students never practice them — until they're expected to do it independently as a postdoc or lecturer, and discover they don't know how.
+
+
+## Navigating Admin
+
+This one feels mundane. It absolutely isn't.
+
+University administration is a maze. Ethics approvals, data management plans, expense claims, equipment orders, room bookings, the right signature from the right person in the right office. None of it is intellectually difficult. All of it can stall your research for weeks if you don't know the system, and the system is never explained to you.
+
+Beyond the university there's more: travel visas for fieldwork, ethical clearance in other countries, contracts for public engagement work, applying for external funding. Students encounter these and navigate them alone, by trial and error, sometimes getting it badly wrong.
+
+And then there's funding. Travel grants, conference bursaries, small research grants — these exist, in real numbers, and are genuinely accessible to PhD students. Most students don't apply because they don't know they exist, or find the process opaque, or assume they won't be competitive. Writing a compelling short funding application is a transferable skill that feeds directly into grant writing later in a career. The connection is never made explicit.
+
+A lot of admin competence is really relationship competence — knowing which administrator actually knows what, who holds institutional memory, when to work through a system formally and when to just email someone directly. This is learned entirely by accident, or not at all.
+
+## Career Navigation
+
+Most PhD supervisors are academics. Which means, consciously or not, they tend to guide students toward academic careers.
+
+This is a problem, because the realistic picture of the academic job market is not something most students are given honestly. The number of PhDs produced each year vastly outstrips the number of permanent academic positions. The timeline from PhD to stable academic employment, if it happens at all, typically involves years of postdoc positions, often in different cities or countries, with considerable uncertainty at every stage.
+
+None of this means an academic career is wrong. But it means students should make that choice with full information, not by default.
+
+And on the other side: research skills transfer remarkably well outside academia. The ability to design a study, analyse complex information, write clearly, manage a long-term project, present to non-experts — these are genuinely valuable in policy, industry, consulting, the third sector. Most students don't see this clearly because nobody maps it for them.
+
+Career navigation — understanding your options honestly, knowing how to position yourself for different paths, making an active choice rather than drifting — should start in year one. Not be discovered in a panic in year four.
+
+
+## Financial Literacy 
+
+Nobody runs out of money on purpose. But a remarkable number of PhD students do.
+
+Usually it's not dramatic. It's more like a slow drift — the stipend that covers rent and food but not much else, the conference you need to attend but can't afford, the end of year three arriving and the funding ending and the thesis not quite being done, and suddenly you're in a situation you didn't see coming because nobody made you map it out.
+
+Financial literacy in a PhD context isn't about investment portfolios. It's about knowing exactly where your money comes from and when it arrives, understanding what your funding actually covers, knowing how and when you'll get paid for teaching, and — crucially — knowing what happens when the funding ends. Most students don't plan for this. They discover it six months before it happens.
+
+It's also about knowing what exists. Most universities have hardship funds, emergency support, travel bursaries, small research grants. Most students have no idea. Not because they didn't look — because nobody told them to look.
+
+
+## Productivity
+
+The PhD is a marathon, not a sprint. You cannot sustain panic-driven productivity for four years. You shouldn't try.
+
+But you also can't drift. The open-ended nature of research — no lectures to attend, no deadlines except the ones you set, no one checking whether you worked today — is either liberating or terrifying, depending on your disposition. For most students, it's both at different times.
+
+The students who finish in good shape are almost never the ones who worked the longest hours. They're the ones who figured out a system — some way of planning what matters this week, tracking progress honestly, building in recovery time, and not mistaking busyness for productivity.
+
+Nobody teaches this. You're expected to manage a four-year independent research project with no project management training whatsoever. Most students spend year one figuring out the hard way that they need a system, year two trying different systems, and year three finally settling into something that works. Which means two years of unnecessary friction.
+
+
+## Designing Workshops & Delivering Effectively 
+
+At some point in your PhD you will be asked to teach something. Demonstrate a technique. Run a workshop. Induct new students into a method or a piece of software. Lead a seminar.
+And you will assume that because you know the thing, you can teach the thing.
+
+You can't. Not automatically. Knowing something and being able to transfer that knowledge to someone who doesn't have it yet are completely different skills. The gap between them is pedagogy — and almost no PhD programme acknowledges that this is something students need to learn.
+The problems show up immediately. You pitch it too high because you've forgotten what it felt like not to know it. You cover too much because it all feels essential. You mistake silence for understanding. You get to the end and realise nobody actually followed you.
+
+This matters beyond the immediate awkwardness. Teaching, training, and knowledge transfer are things you will do throughout a research career — with students, with collaborators, with non-specialist audiences, with policymakers. The earlier you develop a basic framework for how people actually learn, how to structure a session, how to check understanding and adjust in real time, the better every one of those interactions becomes.
+It can be taught. It just isn't.
+
+
+## Leadership roles
+
+Every PhD student ends up running something. A journal club. A seminar series. Induction for new students. A lab social. A training session for undergrads. It happens organically, usually because a supervisor gestures vaguely in your direction, or because nobody else volunteers.
+
+And then you just... do it. With no preparation, no framework, no feedback.
+
+This is not leadership in the abstract corporate sense. It's a very practical cluster of skills: how to organise something so it actually happens, how to facilitate a discussion that doesn't die or get monopolised, how to design a training session for people who don't yet know what they don't know, how to represent a group of people in a room where decisions are being made.
+
+These activities are valuable. They develop real competencies. But because there's no structure around them, students do them, move on, and can't articulate what they learned. Building a reflective layer — recognising these as professional development, being able to name what you did and what you got from it — would be genuinely useful and is almost completely absent.
+
+
+## The Pattern Underneath All of This
+
+Look at this list and a pattern emerges.
+
+None of these are about being smarter. None of them are about working harder. They're about being prepared for the actual experience of doing a PhD — the emotional, relational, practical, institutional experience — not just the intellectual one.
+
+The assumption built into most PhD programmes is that if you're intelligent enough to get in, you'll figure the rest out. And you will. But the way most students figure it out is through failure, exhaustion, crisis, and things going badly wrong before they go right.
+
+That's a cruel and unnecessary way to learn. Because these skills can be taught. They just aren't.
+
+If you're in a PhD programme right now, you don't have to wait for your institution to change. Identify which of these you're weakest on. Find the resource, the course, the mentor, the peer group that can help. Build your own invisible curriculum.
+
+You accepted that the research would be hard. It doesn't also have to be hard because nobody told you any of this.
+
+---
+
+*What would you add to this list? I'd genuinely like to know — reply and tell me.*

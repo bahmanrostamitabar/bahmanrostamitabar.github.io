@@ -1,0 +1,280 @@
+---
+title: "PhD Thesis by Publication"
+author: "Bahman Rostami-Tabar"
+description: |
+  A guide on how to write thesis by publication, focusing on crafting effective introductions and conclusions that tie together the published works into a cohesive narrative.
+date: "04/23/2026"
+image: "cover.jpg"
+categories:
+  - PhD advice
+  - Thesis writing
+  - Academic writing
+  - Research Supervision
+  
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    theme: cosmo
+    highlight-style: github
+---
+
+
+## Why the Spine Chapters Matter So Much
+
+A thesis by publication is built around a deceptively simple premise: take your published (or publishable) papers and bind them together into a single scholarly contribution. In practice, this is harder than it sounds. Three papers do not automatically become a thesis. What transforms them is the work you do in the chapters that frame them — the **introduction** and the **conclusion**.
+
+These chapters are sometimes called the *spine* of the thesis, and the metaphor is apt. Without a spine, the body has no structure. The papers may be excellent individually, but without the introduction and conclusion working in concert, the thesis lacks the coherence that examiners and readers require.
+
+::: {.callout-important}
+## The core test
+At the end of reading your thesis, an examiner should be able to answer one question clearly: *what does this body of work, taken as a whole, contribute that no single paper could?* Your spine chapters must make that answer unmistakable.
+:::
+
+This post sets out what a top-quality introduction and conclusion should look like, what each section should do, and the structural traps to avoid.
+
+---
+
+## The Introduction Chapter
+
+The introduction has one overarching job: to establish that your three papers together constitute a **coherent, original research contribution**. It should build an argument — not just provide context — that makes your research questions feel inevitable by the time the reader reaches them.
+
+### Recommended Structure
+
+#### 1. Background and Motivation
+
+Open with the problem. What is the real-world or theoretical challenge your thesis addresses? Why does it matter? This section should be written as a *focused argument*, not a broad literature survey. You are not trying to cover the field — you are trying to convince the reader that something important is broken, missing, or insufficiently understood.
+
+By the end of this section, the reader should be leaning forward, ready to hear what you did about it.
+
+#### 2. What Has Been Tried — and Why It Falls Short
+
+This is the section that many thesis by publication introductions are missing, and it is the most important one after the motivation. You need a **critical review of existing approaches** organised around the specific failure modes your thesis addresses.
+
+::: {.callout-tip}
+## How to structure this section
+Rather than reviewing the literature chronologically or by method, organise it around the gaps your thesis fills. For each gap, ask:
+
+- What approaches exist?
+- What do they achieve?
+- Where do they break down?
+
+End with a synthesising paragraph that draws all the threads together. This is the paragraph that *earns* your research questions.
+:::
+
+Without this section, your research questions will feel declared rather than argued. The reader has no way of knowing why existing work is insufficient. This is the difference between a thesis that asserts its contribution and one that *demonstrates* it.
+
+#### 3. Research Questions and Study Design
+
+Now, and only now, state your research questions. Because the literature review has already shown why they are open, they should land with force.
+
+Present each question, then immediately follow it with a short paragraph explaining:
+
+- The data and approach used to address it
+- How it connects logically to the other papers
+
+Close this section by making the **narrative arc** across your papers explicit. In a three-paper thesis, this arc is often the most intellectually persuasive thing in the whole chapter. A good arc might look like this:
+
+> *Paper 1 develops the method under ideal conditions. Paper 2 relaxes a key assumption that Paper 1 required. Paper 3 asks whether the solution from Papers 1 and 2 can work at scale.*
+
+That is a three-act structure. State it plainly — readers and examiners will follow it easily.
+
+#### 4. Scope and Positioning
+
+A short but important section that answers three questions your examiner will have:
+
+| Question | What to address |
+|---|---|
+| Scope | Why these settings, datasets, or cases? |
+| Methodological positioning | Why this research design and not another? |
+| Boundaries | What does this thesis explicitly *not* claim to solve? |
+
+This section protects you in the viva. It shows intellectual maturity and prevents examiners from asking "but why didn't you also address X?" when X was never in scope.
+
+#### 5. Contributions *(prospective)*
+
+A brief, forward-looking statement of what the thesis will contribute — methodologically, empirically, and practically. One paragraph per paper is sufficient.
+
+::: {.callout-note}
+## Introduction vs Conclusion: the key difference
+In the introduction, contributions are a **promise**: *"this thesis will show..."*
+
+In the conclusion, they are a **verdict**: *"this thesis has demonstrated..."*
+
+You need both. They are not the same thing, even if the words look similar.
+:::
+
+#### 6. Structure of the Thesis
+
+A clear map of what follows. For a thesis by publication, include a brief note on the commentary chapters and how they function.
+
+---
+
+### What to Avoid
+
+::: {.callout-warning}
+## Common structural mistakes in the introduction
+
+**Jumping from motivation to research questions**
+Without a critical literature review, the RQs feel asserted rather than argued. Always earn your questions.
+
+**Separate "research questions" and "work packages" sections**
+If each WP maps 1:1 to an RQ — which it usually does — this creates redundancy. Merge them. A conceptual diagram can carry the structural information without needing to repeat it in prose.
+
+**Previewing your results**
+The introduction should explain *why* the papers follow logically, not *what they found*. Presenting results here dilutes the impact of the papers when they appear and creates confusion about what belongs where.
+
+**Retrospective contributions**
+The introduction should look *forward*. Save the retrospective "this thesis has contributed..." language for the conclusion, where the evidence now supports it.
+:::
+
+---
+
+## The Conclusion Chapter
+
+The conclusion is the hardest chapter to write — and the most important for your examination. It is where you must do something that no individual paper can do: **synthesise across all three studies** and show what the body of work, taken as a whole, has established.
+
+Many thesis by publication conclusions read like strong journal article discussions. They are not the same thing. A paper discussion accounts for one study. A thesis conclusion accounts for a research programme.
+
+### Recommended Structure
+
+#### Introduction to the Chapter
+
+A short orienting paragraph reminding the reader what the thesis set out to do and signposting the structure of the chapter. Keep it to half a page. Do not summarise findings here — that comes later.
+
+#### Answers to the Research Questions
+
+Return to each RQ from the introduction and answer it — directly, explicitly, and in order.
+
+Use a consistent structure for each answer:
+
+> *RQ[n] asked [restate the question]. The findings show that [direct answer]. This means that [implication].*
+
+::: {.callout-important}
+## Why this section is non-negotiable
+The introduction made a promise. The conclusion must honour it. Examiners routinely go to this section first. If your RQs are not answered clearly and explicitly, the thesis has a structural flaw regardless of the quality of the papers.
+:::
+
+#### Synthesis Across the Three Papers
+
+This is the intellectual heart of the conclusion, and the section that most distinguishes a thesis from a collection of papers. **Do not summarise each paper in sequence.** Instead, ask: *what does the body of work tell us that no single paper could?*
+
+In a three-paper thesis, this synthesis is often most powerful when it identifies a **cross-cutting argument** — a claim that runs through all three studies and is only visible when they are read together. Look for:
+
+- A pattern that repeats or deepens across the papers
+- A tension between findings that generates a new insight
+- A cumulative argument that Paper 3 could not make without Papers 1 and 2
+
+This section is where your thesis earns its status as an original contribution.
+
+#### Original Contributions to Knowledge
+
+State your contributions explicitly, clearly, and confidently. Never leave this to be inferred.
+
+Organise under three headings:
+
+**Methodological contributions**
+What new methods, frameworks, or approaches did the thesis develop or extend?
+
+**Empirical contributions**
+What did the real-world evidence show that existing literature had not demonstrated?
+
+**Practical contributions**
+What guidance, tools, or capacity-building outputs does the thesis provide for practitioners?
+
+Each contribution should be stated in one or two sentences. Write them in the past tense and without hedging. This is the statement you will defend in your viva.
+
+#### Managerial and Policy Implications
+
+Organise explicitly by audience. For each audience, answer: *what should they do differently as a result of this thesis?* Common audiences include:
+
+- Frontline practitioners or decision-makers
+- Policy-makers or national planning bodies  
+- Funders, donors, or implementing partners
+- System designers or platform developers
+
+Strong implications sections make the reader feel that the research has real stakes. Do not just describe what the findings *suggest* — say what should actually change.
+
+#### Limitations and Future Research *(merged)*
+
+Present limitations and future directions together, not in separate sections. Each limitation should immediately generate the research direction it motivates.
+
+Use this structure for each entry:
+
+> *Limitation → why it exists → what would be needed to address it → what that future work would contribute*
+
+This turns your limitations from a list of weaknesses into a **research agenda**. It is also evidence of scholarly self-awareness, which examiners regard highly.
+
+#### Final Remarks
+
+The last section of your thesis. It should not restate your findings — the reader has just read them. It should do three things:
+
+1. Step back and say what this work means for the **field**, not just for this thesis
+2. Offer a brief reflection on what the research journey revealed that was not anticipated at the outset
+3. Close with a forward-looking statement about where the research domain needs to go next — one that extends beyond your own future research agenda
+
+This is your last word. Write it as an arrival, not a repetition.
+
+---
+
+### What to Avoid
+
+::: {.callout-warning}
+## Common structural mistakes in the conclusion
+
+**No explicit answers to the RQs**
+If the reader has to infer your answers from the findings section, you have a structural problem. Answer each RQ directly.
+
+**Findings and contributions conflated**
+Findings answer *what did the research show?* Contributions answer *what does the field now know that it didn't before?* These are different questions. Treat them separately.
+
+**Contributions only in the introduction**
+In the introduction, contributions are prospective — a promise. In the conclusion, they are retrospective — a verdict. Both are necessary. An examiner who finishes your thesis and has to turn back to the introduction to find your contribution claims is reading promises, not evidence.
+
+**Limitations and future research as separate sections**
+When separated, limitations read as a list of weaknesses and future directions read as a wish list. Merged, they become a coherent research agenda.
+
+**Final remarks that restate the findings**
+Your final section should elevate, not repeat. Save the restatement for 6.2 and 6.3. End with something that makes the reader feel the significance of the work.
+:::
+
+---
+
+## The Introduction and Conclusion as a Pair
+
+The most important thing to understand about spine chapters is that they must work together. Read against each other, they should form a closed argument:
+
+```
+Introduction                          Conclusion
+────────────────────────────────────────────────────────────
+Here is the problem          →   Here is what we learned
+Here is what has been tried  →   Here is what the field 
+  and why it falls short           has now gained
+Here is what I set out to do →   Here is what I did
+Here is what I will show     →   Here is what I have shown
+```
+
+The introduction opens a set of questions. The conclusion closes them — not by simply answering them, but by showing what answering them has revealed.
+
+If your examiner reads your introduction and your conclusion back-to-back and they feel like they belong to the same thesis, you have done this well. If they feel like two independently written pieces that happen to share a topic, you have more work to do.
+
+---
+
+## A Final Note on the Commentaries
+
+Since each paper in a thesis by publication is typically accompanied by a short commentary, it is worth noting how these relate to the spine chapters.
+
+The commentaries carry the **local** connective tissue — they position each paper within the thesis narrative, explain its relationship to the papers before and after it, and flag any differences between the published and thesis versions.
+
+The introduction and conclusion carry the **global** argument — the overarching claim that the whole body of work makes together.
+
+::: {.callout-tip}
+## Practical advice
+Write your commentaries *after* your introduction and conclusion are drafted. That way, the local positioning in each commentary will be consistent with the global argument in your spine chapters — rather than the other way round, which is how most students do it and why the chapters often feel misaligned.
+:::
+
+---
+
+*This post draws on supervision experience with thesis by publication candidates in management science, operations management, operations research. The structural principles described here are broadly applicable, though specific institutional requirements vary — always check your university's regulations and discuss with your supervisor.*

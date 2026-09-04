@@ -1,0 +1,281 @@
+---
+title: "What is Blocking Imagination? Reflections from a Masterclass"
+subtitle: "Thinking about Cardiff Business School and the Data Lab for Social Good"
+author: "Bahman Rostami-Tabar"
+description: |
+  A personal reflection on the Infrastructure of Imagination masterclass — and what it means for Cardiff Business School and the Data Lab for Social Good.
+date: "03/31/2026"
+image: "cover.jpg"
+categories:
+  - imagination
+  - culture
+  - innovation
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    css: custom.css
+    highlight-style: github
+---
+
+#
+
+
+::: {.callout-note appearance="simple"}
+This post is based on a structured reflection exercise exploring what blocks imagination in organisations — applied to Cardiff University on my own imagination
+:::
+
+## Why Are We Asking This?
+
+Every university says it values new ideas. But saying something and doing something are very different.
+
+At Cardiff University, we asked a simple but honest question:
+
+> **What is currently blocking our imagination?**
+
+This blog post shares what we found — and what we think we can do about it.
+
+---
+
+## 1. What Everyone Knows But Nobody Says
+
+The first thing we did was look for the **invisible truth** — the thing everyone knows but no one says out loud.
+
+At Cardiff, that truth is:
+
+::: {.callout-warning appearance="minimal"}
+**Your value as an academic is measured by how much you publish, where you publish, and how much funding you bring in.**
+:::
+
+This is called *"publish or perish."* It is not written in any policy. Nobody officially decided it. But everyone feels it.
+
+And because it is invisible, it is very hard to challenge.
+
+### What This Pressure Quietly Stops
+
+| Behaviour | What Happens Instead |
+|---|---|
+| Taking risks with new ideas | People play it safe and stick to known areas |
+| Working across departments | People stay in their discipline to stay productive |
+| Slow, uncertain thinking | Only fast, publishable work gets attention |
+| Admitting something is not working | Problems are hidden to protect reputation |
+
+---
+
+## 2. When Do Ideas Live — And When Do They Die?
+
+We looked at what conditions help ideas grow, and what conditions kill them.
+
+| What Helps Imagination | What Kills Imagination |
+|---|---|
+| Feeling safe to share strange or half-formed ideas | Metric pressure — always counting publications and grants |
+| Time and space to think without pressure | Hierarchy — ideas get filtered before reaching decision-makers |
+| People from different backgrounds mixing together | Blame culture — people hide problems instead of sharing them |
+| It is okay to fail and learn from it | Overloaded people — no mental space left for curiosity |
+| Working on things you genuinely care about | "We've tried this before" — past failure used to stop future trying |
+| Long time horizons for projects | Short funding cycles — no room for slow, uncertain work |
+| A colleague who says "tell me more" | Conformity pressure — fitting into established fields to be taken seriously |
+
+---
+
+## 3. Four Areas Where We Can Make Change
+
+We organised our thinking into four areas. Each one is a place where we can intervene.
+
+```{=html}
+<div class="four-areas-grid">
+  <div class="area-card">
+    <h4>1. Context &amp; Space</h4>
+    <p>The environment and structure imagination has to live inside</p>
+  </div>
+  <div class="area-card">
+    <h4>2. Channel &amp; Language</h4>
+    <p>The words and stories that shape what feels possible</p>
+  </div>
+  <div class="area-card">
+    <h4>3. Experience &amp; Moments</h4>
+    <p>The actual encounters where imagination lives or dies</p>
+  </div>
+  <div class="area-card">
+    <h4>4. Objects &amp; Subjects</h4>
+    <p>The tools and people involved in creating imagination</p>
+  </div>
+</div>
+```
+
+---
+
+### 3.1 Context and Space
+
+This is about the **environment and structure** that imagination has to live inside.
+
+#### What We See at Cardiff Now
+
+| Blocker | Effect on Imagination |
+|---|---|
+| Hierarchy and deference to seniority | Good ideas get filtered before they reach anyone who can act |
+| Very low risk appetite | People self-censor before they even speak |
+| Overloaded staff | No mental bandwidth left for curiosity |
+| Procurement and accountability processes | Too slow for ideas to stay alive |
+| Blame culture | Problems are hidden, not learned from |
+
+#### What Could Change
+
+| Intervention | Why It Helps |
+|---|---|
+| Protected unaccountable time | Gives people space to think with no deliverable |
+| Cross-disciplinary informal spaces | Allows ideas to emerge from unexpected collisions |
+| Using the Future Generation Act as legitimacy | Frames imagination as a long-term obligation, not a luxury |
+| Reducing meeting load | Frees mental bandwidth for curiosity |
+
+---
+
+### 3.2 Channel and Language
+
+This is about the **words and stories** we use — because language shapes what feels possible.
+
+#### Language That Closes Down Thinking
+
+| Current Phrase | What It Signals |
+|---|---|
+| "Don't reinvent the wheel" | Stay with what exists |
+| "If it's not broken, don't fix it" | Change is a risk, not an opportunity |
+| "We've tried this before" | Past failure means future failure |
+| "What is your impact?" | Only measurable outputs matter |
+| "Is there evidence for this?" | Uncertainty is not welcome |
+
+#### Language That Opens Up Thinking
+
+| New Phrase | What It Signals |
+|---|---|
+| "What are you curious about?" | Curiosity is valued, not just productivity |
+| "What if we tried...?" | Speculation is welcome |
+| "What is different now?" | Past failure does not define future possibility |
+| "What did we learn?" | Failure is information, not shame |
+| "Tell me more" | Half-formed ideas deserve space |
+
+---
+
+### 3.3 Experience and Moments
+
+This is about the **actual encounters** where imagination can happen — or die.
+
+| Moment | Current Experience | Reimagined Experience |
+|---|---|---|
+| Team meetings | Problem-solving mode, focus on delivery | Include a "what if" question every meeting |
+| Performance reviews | Focus on outputs, publications, grants | Include "what are you curious about?" |
+| Project failures | Hidden or minimised | Shared in "failing forwards" sessions |
+| Student interactions | Consultation and feedback | Listening circles — genuine co-creation |
+| Cross-department contact | Rare, usually formal | Regular informal collision spaces |
+
+---
+
+### 3.4 Objects and Subjects
+
+This is about the **tools and people** involved in creating imagination.
+
+| Tool / Approach | How It Enables Imagination |
+|---|---|
+| User-centred design methods | Brings real human needs into research and teaching |
+| Imagination grants | Fast, small funding with no bureaucracy |
+| Diverse and multicultural teams | Varied perspectives produce unexpected connections |
+| "Imagination roles" | People whose job protects space for others to think |
+| Blue sky thinking sessions | Structured permission to explore without constraint |
+
+---
+
+## 4. What Are Imagination Grants?
+
+One of the most practical ideas we discussed was **imagination grants** — a completely different model from normal research funding.
+
+### Normal Grants vs Imagination Grants
+
+| | Normal Research Grants | Imagination Grants |
+|---|---|---|
+| **Amount** | Tens of thousands to millions | £500 – £5,000 |
+| **Application** | Long, detailed, months of work | One paragraph |
+| **Decision time** | Months | Days |
+| **Proof required** | Must prove impact upfront | No proof required |
+| **Failure** | A serious problem | Expected and acceptable |
+| **Who decides** | Senior academics and committees | Mixed panel including students and external people |
+| **Reporting** | Detailed outputs and metrics | "What did you learn?" |
+
+### Types of Imagination Grants
+
+| Grant Type | What It Funds | Why It Matters |
+|---|---|---|
+| **Collision grants** | Two people from different disciplines spending time together | Ideas emerge from unexpected combinations |
+| **Prototype grants** | Building a rough version of an idea | Turns abstract thinking into something real |
+| **Listening grants** | Time spent with a community or patient group — just to listen | Grounds ideas in real human experience |
+| **Strange question grants** | Exploring a question that fits no existing category | Opens space for genuinely new thinking |
+| **Rest and think grants** | Protected time with no teaching or admin | Mental space is a prerequisite for imagination |
+| **Cross-sector swap grants** | Time embedded in NHS, a startup, or an arts organisation | New environments break habitual thinking |
+
+---
+
+## 5. What Can Start Tomorrow — And What Needs Permission?
+
+Not everything requires waiting for the institution to change.
+
+| Action | Start Tomorrow? | Needs Permission? |
+|---|---|---|
+| Using "what if" in meetings | ✅ Yes | ❌ No |
+| Asking "what are you curious about?" | ✅ Yes | ❌ No |
+| Calling setbacks "early learning" | ✅ Yes | ❌ No |
+| Informal cross-department coffee meetings | ✅ Yes | ❌ No |
+| Sharing a strange idea in a team session | ✅ Yes | ❌ No |
+| Imagination grants | ❌ Not yet | ✅ Needs budget and backing |
+| Protected thinking time | ❌ Not yet | ✅ Needs leadership support |
+| Changing performance conversations | ❌ Not yet | ✅ Needs HR and leadership |
+| Reducing metric pressure | ❌ Not yet | ✅ Needs sector-wide shift |
+
+::: {.callout-tip appearance="simple"}
+**The key insight:** The things you can start tomorrow are about **behaviour and relationships**. The things needing permission are about **structures and resources**. You do not have to wait for the institution to change to start changing the culture.
+:::
+
+---
+
+## 6. What Would Become Possible?
+
+If this imagination infrastructure existed at Cardiff University, things would look different at every level.
+
+### For Individual Academics
+
+| Today | With Imagination Infrastructure |
+|---|---|
+| Risky questions damage careers | Researchers can follow strange questions without career risk |
+| Ideas need senior sponsorship | Early career academics can propose ideas directly |
+| Failure is hidden | Admitting something is not working is safe and normal |
+| Cross-disciplinary work seen as losing focus | Working across disciplines is encouraged and rewarded |
+
+### For Teams and Departments
+
+| Today | With Imagination Infrastructure |
+|---|---|
+| Departments compete for metrics | Departments collaborate on shared problems |
+| Ideas get filtered upward through hierarchy | Ideas travel freely and reach people who can act |
+| Failure is hidden | Failure is shared openly and learned from |
+| Teams form around funding calls | Teams form around questions |
+
+### For Cardiff as an Institution
+
+| Today | With Imagination Infrastructure |
+|---|---|
+| Known for volume of output | Known for the quality and boldness of thinking |
+| Future Generation Act as compliance | Future Generation Act as a lived commitment |
+| Attracts productive academics | Attracts curious and bold thinkers |
+| Students experience output-focused culture | Students graduate knowing what imaginative institutions feel like |
+
+---
+
+## The Biggest Shift
+
+::: {.callout-important appearance="minimal"}
+Right now, imagination at Cardiff has to happen **despite** the institution.
+
+If this infrastructure existed, imagination could happen **because** of it.
+
+That is the difference worth working towards.
+:::
