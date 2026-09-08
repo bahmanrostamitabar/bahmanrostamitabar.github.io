@@ -532,11 +532,11 @@
     "text": "Our focus: Service Points\nThe analysis focuses on Service Point (SP) facilities — the places closest to where vaccines are ultimately delivered to people.\nOutcome: Vaccine availability (AV)\nIndependent variables of interest: The facility’s EVM requirements.\nContext: Country and target population are used as adjustments rather than treated as the requirements of interest."
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-ordered-not-simply-good-or-bad",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-ordered-not-simply-good-or-bad",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-categorized-and-ordered",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-categorized-and-ordered",
     "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Availability is ordered, not simply “good” or “bad”",
-    "text": "Availability is ordered, not simply “good” or “bad”\n\n\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1"
+    "section": "Availability is categorized and ordered",
+    "text": "Availability is categorized and ordered\n\n\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-analytical-workflow",
@@ -557,7 +557,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "We ask the question three ways",
-    "text": "We ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population.\n\nThe strongest findings are those that survive all three views."
+    "text": "We ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b",
@@ -592,14 +592,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#closing-the-loop-from-measurement-to-action",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "Closing the loop: from measurement to action",
-    "text": "Closing the loop: from measurement to action\n\n\nIdentify supply-chain weaknesses\n\n\n\n↓\n\n\nPrioritise requirements associated with availability\n\n\n\n\n↓\n\n\nTarget improvement through cIPs and investment\n\n\n\n\n↓\n\n\nImprove reliable vaccine availability\n\n\n\n\n↓\n\n\nMore opportunities to vaccinate children\n\n\n\n\n↓\n\n\n\nBetter coverage, greater equity, lives protected"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#better-coverage-greater-equity-lives-protected",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#better-coverage-greater-equity-lives-protected",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Better coverage, greater equity, lives protected",
-    "text": "Better coverage, greater equity, lives protected"
+    "text": "Closing the loop: from measurement to action\n\nIdentify supply-chain weaknesses\nPrioritise requirements associated with availability\nTarget improvement through cIPs and investment\nImprove reliable vaccine availability\nMore opportunities to vaccinate children\nBetter coverage, greater equity, lives protected"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
