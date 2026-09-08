@@ -6,8 +6,8 @@
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
   <meta name="author" content="Bahman Rostami-Tabar">
   <meta name="author" content="Daniel Brigden">
@@ -18,16 +18,10 @@
   <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/reveal.css">
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -36,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/theme/quarto-063e3c794c848d24a1f882bf3a3eb7b4.css">
+  <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/theme/quarto-45c98b1931380de48df6d6053ff30132.css">
   <link href="../../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -130,6 +124,16 @@
       margin-right: 0; 
     }
   </style>
+  <link href="../../../../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+  <script src="../../../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <link href="../../../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+  <script src="../../../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+  <script src="../../../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="../../../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../../../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+  <script src="../../../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+  <link href="../../../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+  <script src="../../../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 <meta property="og:title" content="What Drives Vaccine Availability at Health Facilities?">
 <meta property="og:description" content="OR 68, 8-10 September, Nottingham">
 </head>
@@ -144,7 +148,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Bahman Rostami-Tabar
+Bahman Rostami-Tabar 
 </div>
         <p class="quarto-title-affiliation">
             Data Lab for Social Good, Cardiff Business School, Cardiff University, UK
@@ -152,7 +156,7 @@ Bahman Rostami-Tabar
     </div>
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Daniel Brigden
+Daniel Brigden 
 </div>
         <p class="quarto-title-affiliation">
             World Health Organization (WHO), Geneva, Switzerland
@@ -161,199 +165,139 @@ Daniel Brigden
 </div>
 
 </section>
-<section id="a-vaccine-can-save-a-life-but-only-if-it-reaches-the-child" class="slide level2">
-<h2>A vaccine can save a life — but only if it reaches the child</h2>
-<p>Imagine a child arriving at a health facility for routine immunisation.</p>
-<p>The vaccine exists. It may have been purchased, shipped to the country, and distributed through the national system.</p>
-<p>But when the child arrives:</p>
-<blockquote>
-<h2 id="the-vaccine-is-not-there."><strong>The vaccine is not there.</strong></h2>
-</blockquote>
-<p>Perhaps the facility has run out of stock. Perhaps delivery was delayed. Perhaps the refrigerator failed. Perhaps poor records meant nobody realised supplies were running low.</p>
-<p><strong>For the child, the reason makes little difference.</strong></p>
-<aside class="notes">
-<p>Open with the child, not the analytical method. The purpose of the supply chain is to make vaccination possible at the point at which a child needs it.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="immunisation-is-also-a-supply-chain-challenge" class="slide level2">
-<h2>Immunisation is also a supply-chain challenge</h2>
-<p>A vaccine can protect a child only if it is:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="available">Available</h3>
-<p>At the <strong>right place</strong>, at the <strong>right time</strong>, in the <strong>right quantity</strong>.</p>
-<h3 id="potent-and-safe">Potent and safe</h3>
-<p>Stored and transported under appropriate conditions.</p>
-</div><div class="column" style="width:50%;">
-<h3 id="reliably-delivered">Reliably delivered</h3>
-<p>Supported by functioning people, equipment, information and transport.</p>
-<h3 id="efficiently-managed">Efficiently managed</h3>
-<p>Using limited resources effectively and sustainably.</p>
+<section id="vaccine-saves-lives" class="slide level2">
+<h2>Vaccine saves lives</h2>
+<h3 id="vaccines-are-one-of-the-most-effective-public-health-interventions-we-have">Vaccines are one of the most effective public-health interventions we have</h3>
+
+<img data-src="img_who/heatmap_vaccine.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vaccine-coverage-has-improved-over-time" class="slide level2">
+<h2>Vaccine coverage has improved over time</h2>
+
+<img data-src="img_who/p_cov_year.png" style="width:100.0%" class="r-stretch"></section>
+<section id="coverage-disparities-exist-within-and-between-regions" class="slide level2">
+<h2>Coverage disparities exist within and between regions</h2>
+
+<img data-src="img_who/global_coverage.png" style="width:100.0%" class="r-stretch"></section>
+<section id="section" class="slide level2 big middle center">
+<h2></h2>
+<p>But millions of children are still left behind</p>
+<div class=".{columns}">
+<div class="column" style="width:45%;">
+<h3 id="million-children-missed-vaccines">19.9 Million Children Missed Vaccines</h3>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<h3 id="million-died-before-their-5th-birthday">4.6 million died before their 5th birthday</h3>
 </div></div>
-<blockquote>
-<p><strong>A vaccine that does not reach the child cannot protect the child.</strong></p>
-</blockquote>
 </section>
-<section id="the-pathway-from-the-supply-chain-to-saved-lives" class="slide level2">
-<h2>The pathway from the supply chain to saved lives</h2>
-<div class="r-stack">
-<div class="fragment">
-<h3 id="supply-chain-fundamentals">Supply-chain fundamentals</h3>
-<p>System design · Leadership · Data for management · Cold-chain equipment · Continuous improvement</p>
-</div>
-<div class="fragment">
-<section id="section" class="title-slide slide level1 center">
-<h1>↓</h1>
+<section id="having-the-vaccine-is-not-enough" class="slide level2">
+<h2>Having the vaccine is not enough</h2>
+<h3 id="a-vaccine-only-saves-a-life-if-it-reaches-the-child.">A vaccine only saves a life if it reaches the child.</h3>
+<p><img data-src="img_who/maputo4.jpeg" style="width:70.0%"></p>
+<p><img data-src="img_who/vaccine_sc.png" style="width:70.0%"></p>
+</section>
+<section id="a-child-arrives-for-vaccination" class="slide level2">
+<h2>A child arrives for vaccination</h2>
+<p>The child arrives. But the vaccine is not available. Why?</p>
 
+<img data-src="img_who/child_arrival.png" style="width:70.0%" class="r-stretch"></section>
+<section id="what-could-have-gone-wrong" class="slide level2">
+<h2>What could have gone wrong?</h2>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<p><img data-src="img_who/maputo1.jpeg" class="grid-img"> <img data-src="img_who/maputo2.jpeg" class="grid-img"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<p><img data-src="img_who/maputo3.jpeg" class="grid-img"> <img data-src="img_who/maputo5.jpeg" class="grid-img"></p>
+</div>
+</div>
+</div>
 </section>
-<h3 id="availability-potencyquality-efficiency">Availability · Potency/Quality · Efficiency</h3>
+<section id="the-supply-chain-connects-vaccines-to-health-outcomes" class="slide level2">
+<h2>The supply chain connects vaccines to health outcomes</h2>
 
-</div>
-<div class="fragment">
-<section id="section-1" class="title-slide slide level1 center">
-<h1>↓</h1>
+<img data-src="img_who/isc_gavi.png" style="width:100.0%" class="r-stretch"></section>
+<section id="but-what-are-the-supply-chain-fundamentals" class="slide level2">
+<h2>But what are the <strong>supply-chain fundamentals</strong>?</h2>
+<h3 id="how-can-they-be-assessed">How can they be assessed?</h3>
+<p>This is where Effective Vaccine Management (EVM) comes in.</p>
+<p>It provides a systematic assessment of how well the immunisation supply chain is functioning.</p>
+</section>
+<section id="section-1" class="slide level2" data-background-image="img_who/evmtool1.png" data-background-size="contain" data-background-position="right" data-footer="false">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<h3 id="a-global-initiative-to-improve-immunisation-supply-chain.">A global initiative to improve immunisation supply chain.</h3>
+<p>A national planning process endorsed and supported by WHO and UNICEF</p>
+<p>EVM provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance.</p>
+</div><div class="column" style="width:45%;">
 
+</div></div>
 </section>
-<h3 id="coverage-equity">Coverage · Equity</h3>
+<section id="the-framework" class="slide level2">
+<h2>The Framework</h2>
+<p>The EVM assessment framework defines the way in which vaccine supply chain systems are assessed.</p>
+<p>It is organised by:</p>
+<ul>
+<li class="fragment"><strong>Criteria:</strong> the operational or management functions that health facilities must perform.</li>
+<li class="fragment"><strong>Categories:</strong> the necessary inputs, outputs and performance of health facilities.</li>
+<li class="fragment"><strong>Requirements:</strong> the attributes that a well-functioning immunisation supply chain must have.</li>
+<li class="fragment"><strong>Questions:</strong> are asked to assess whether a requirement has been met.</li>
+</ul>
 
-</div>
-<div class="fragment">
-<section id="section-2" class="title-slide slide level1 center">
-<h1>↓</h1>
-
-</section>
-<section id="better-health-outcomes" class="slide level2">
-<h2><strong>Better health outcomes</strong></h2>
-</section>
-
-</div>
-</div>
-<aside class="notes">
-<p>This is the Immunization Supply Chain Theory of Change framing. Insert the original Gavi/WHO–UNICEF figure on this slide if preferred.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="figure-immunization-supply-chain-theory-of-change" class="slide level2">
-<h2>[FIGURE] Immunization Supply Chain Theory of Change</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Figure placeholder</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Insert the original iSC Theory of Change figure here</strong></p>
-<p>Suggested caption:</p>
-<p><em>Strong supply-chain fundamentals support vaccine availability and potency and a more efficient supply chain, contributing to improved coverage and equity and, ultimately, better health outcomes.</em></p>
-<p><strong>Source:</strong> Gavi Immunization Supply Chain Theory of Change, as reproduced in the WHO–UNICEF technical review of public-health supply-chain assessment tools.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="but-what-makes-vaccines-available" class="slide level2">
-<h2>But what makes vaccines available?</h2>
-<p>There is no single action called <strong>“make vaccines available.”</strong></p>
-<p>Availability emerges from a system in which many things have to work together:</p>
-<p><strong>Forecasting &amp; ordering</strong> → <strong>storage &amp; cold chain</strong> → <strong>stock management</strong> → <strong>distribution</strong> → <strong>information</strong> → <strong>staff &amp; supervision</strong> → <strong>continuous improvement</strong></p>
-<p>A weakness anywhere in this chain can eventually appear at the service point as the same outcome:</p>
-<blockquote>
-<h2 id="the-vaccine-the-child-needs-is-unavailable."><strong>The vaccine the child needs is unavailable.</strong></h2>
-</blockquote>
-</section>
-<section id="the-decision-problem" class="slide level2">
-<h2>The decision problem</h2>
-<p>When vaccine availability is poor, <strong>where should a programme intervene?</strong></p>
-<p>Should it invest in cold-chain equipment? Improve stock management? Strengthen distribution? Train staff? Improve information systems? Change forecasting practices? Strengthen supervision?</p>
-<p>Resources are limited.</p>
-<blockquote>
-<p><strong>Saying that “everything matters” is not enough.</strong></p>
-</blockquote>
-<p>We need evidence that helps identify <strong>where improvement efforts should be focused first</strong>.</p>
-</section>
-<section id="evm-turns-supply-chain-performance-into-measurable-evidence" class="slide level2">
+<aside><div>
+<p>Scoring in EVM is determined by this assessment framework.</p>
+</div></aside></section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<h3 id="evm-dataset-overview">EVM Dataset Overview</h3>
+<ul>
+<li>Assessments from 82 countries between 2019 and 2026.
+<ul>
+<li>4287 health facilities (rows).</li>
+<li>1108 variables (columns).</li>
+</ul></li>
+<li>1286 potential questions.
+<ul>
+<li>871 requirements, 19 criteria and 8 categories.</li>
+<li>Scores range from 0 to 5.</li>
+</ul></li>
+</ul>
+</div><section id="evm-turns-supply-chain-performance-into-measurable-evidence" class="slide level2">
 <h2>EVM turns supply-chain performance into measurable evidence</h2>
-<p><strong>Effective Vaccine Management (EVM)</strong> provides a systematic assessment of how well the immunisation supply chain is functioning.</p>
-<p>Rather than asking only whether vaccines are available today, EVM examines the <strong>capabilities, processes and practices that should make reliable availability possible</strong>.</p>
+<p><strong>Effective Vaccine Management <a href="https://evm2.who.int/Public/Requirements" data-preview-link="true">EVM</a></strong> provides a systematic assessment of how well the immunisation supply chain is functioning.</p>
+<p>EVM examines the <strong>capabilities, processes and practices that should make reliable availability possible</strong>.</p>
 <p>It covers areas such as:</p>
-<p><strong>Infrastructure and cold chain · Temperature management · Stock management · Distribution · Information · Maintenance · Management practices</strong></p>
-<aside class="notes">
-<p>Keep this high level for practitioners. The report contains the more detailed EVM hierarchy if needed.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="figure-from-evm-assessment-to-improvement" class="slide level2">
-<h2>[FIGURE] From EVM assessment to improvement</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Figure placeholder</strong></p>
-</div>
-<div class="callout-content">
-<p>Insert a simple EVM diagram or screenshot showing:</p>
-<p><strong>EVM assessment</strong> → <strong>requirements and scores</strong> → <strong>identify weaknesses</strong> → <strong>Continuous Improvement Plan (cIP)</strong> → <strong>targeted action</strong></p>
-<p>Optional visual: use an EVM dashboard/screenshot or a simplified hierarchy of questions → requirements → criteria/categories.</p>
+<p><strong>Infrastructure and cold chain · Temperature management · Stock management · Forecasting, Distribution · Information systems· Maintenance · Management practices, and more</strong></p>
+</section><section id="data---scores" class="slide level2 scrollable">
+<h2>Data - Scores</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-dd7030a5176f7d7b0f1b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-dd7030a5176f7d7b0f1b">{"x":{"filter":"none","vertical":false,"data":[["EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO","EMRO"],["C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017","C017"],[1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15,1.15],[2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025,2025],[0,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7,1,8,8,8,9,9,9,10],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],["PG","SP","SP","SP","SP","LD","SP","SP","LD","SP","SP","SN","SP","SP","LD","SP","SP","LD","SP","SP","LD","LD","SP","SP","LD","SP","SP","LD","SP"],[null,7200,17400,14240,16886,1482543,15124,14198,1398726,5307,50416,6902800,9866,9711,400572,6600,11000,761161,11037,4087,422593,459000,13500,9900,1626197,7333,17400,1712100,23400],[null,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[null,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[null,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[-1,0,0,3.57,4.29,4.29,4.29,4.29,4.29,3.57,3.57,4.29,3.57,3.57,4.29,0,3.57,3.57,3.57,0,4.29,4.29,4.29,0,4.29,3.57,3.57,4.29,3.57],[-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[-1,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,5,5,5,0,5,5,5,0,5,5,5,5,5],[-1,0,0,0,1,1,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,1,1,0,1,0,0,1,0],[-1,-1,-1,-1,-1,5,-1,-1,5,-1,5,5,-1,-1,-1,-1,-1,5,-1,-1,5,5,-1,-1,5,-1,-1,-1,-1],[-1,-1,-1,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,5,-1,-1,5,-1,-1,5,-1],[-1,3.33,5,5,5,3.33,5,5,5,0,5,5,3.33,5,4.17,0,1.67,2.5,5,5,3.33,3.33,2.5,0,3.33,5,5,3.33,5],[-1,5,5,5,5,0,5,5,5,0,5,5,0,5,5,0,0,0,5,5,0,5,0,0,0,5,5,0,5],[-1,0,5,5,5,5,5,5,5,0,5,5,5,5,2.5,0,0,2.5,5,5,5,5,2.5,0,5,5,5,5,5],[-1,5,5,5,5,5,5,5,5,0,5,5,5,5,5,0,5,5,5,5,5,0,5,0,5,5,5,5,5],[-1,-1,-1,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,2.5,-1,-1,5,-1,-1,5,-1],[-1,-1,-1,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,0,-1,-1,5,-1,-1,5,-1],[-1,-1,-1,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,5,-1,-1,5,-1,-1,5,-1],[-1,1,0.17,0.17,1,0.17,1,1,1,0,1,1,1,1,0.83,0.17,1,1,1,0,1,1,1,1,1,1,0.17,1,1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,5,0,0,5,0,5,5,5,0,5,5,5,5,5,0,5,5,5,0,5,5,5,5,5,5,0,5,5],[-1,1,1,1,1,1,1,1,1,0,1,5,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1],[-1,-1,-1,-1,-1,2.5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,5,-1,-1,5,-1,-1,5,-1],[-1,-1,-1,-1,-1,0,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,5,-1,-1,5,-1,-1,5,-1],[-1,-1,-1,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1],[-1,-1,-1,-1,-1,0,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,2.94,-1,-1,1.67,2.94,-1,-1,4.41,-1,-1,1.67,-1],[-1,-1,-1,-1,-1,0,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,0,5,-1,-1,5,-1,-1,0,-1],[-1,-1,-1,-1,-1,-1,-1,-1,1,-1,-1,1,-1,-1,-1,-1,-1,0,-1,-1,-1,0,-1,-1,0,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,1,-1,-1,1,-1,-1,-1,-1,-1,0,-1,-1,-1,0,-1,-1,0,-1,-1,-1,-1],[-1,-1,-1,-1,-1,0,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,0,-1,-1,5,0,-1,-1,5,-1,-1,5,-1],[-1,-1,-1,-1,-1,0,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,0,5,-1,-1,5,-1,-1,0,-1],[-1,-1,-1,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,-1,-1,5,5,-1,-1,5,-1,-1,0,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,4.69,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,0,2.5,0,2.5,2.5,2.5,5,2.5,0,5,5,2.5,5,2.5,3.75,2.5,2.5,5,5,5,0,2.5,0,2.5,2.5,2.5,2.5,5],[-1,-1,-1,-1,-1,1,-1,-1,1,-1,-1,1,-1,-1,1,-1,-1,1,-1,-1,1,1,-1,-1,1,-1,-1,1,-1],[-1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[-1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]],"container":"<table class=\"stripe hover\">\n  <thead>\n    <tr>\n      <th>Region<\/th>\n      <th>Country<\/th>\n      <th>QuestionnaireVersion<\/th>\n      <th>AssessmentYear<\/th>\n      <th>AdministrativeUnitCode<\/th>\n      <th>FacilityCode<\/th>\n      <th>SupplyChainLevelCode<\/th>\n      <th>TargetPopulation<\/th>\n      <th>Active<\/th>\n      <th>Sector<\/th>\n      <th>VaccineStorage<\/th>\n      <th>R0001<\/th>\n      <th>R0002<\/th>\n      <th>R0003<\/th>\n      <th>R0004<\/th>\n      <th>R0005<\/th>\n      <th>R0006<\/th>\n      <th>R0007<\/th>\n      <th>R0008<\/th>\n      <th>R0009<\/th>\n      <th>R0010<\/th>\n      <th>R0011<\/th>\n      <th>R0012<\/th>\n      <th>R0013<\/th>\n      <th>R0014<\/th>\n      <th>R0015<\/th>\n      <th>R0016<\/th>\n      <th>R0017<\/th>\n      <th>R0018<\/th>\n      <th>R0019<\/th>\n      <th>R0020<\/th>\n      <th>R0021<\/th>\n      <th>R0022<\/th>\n      <th>R0023<\/th>\n      <th>R0024<\/th>\n      <th>R0025<\/th>\n      <th>R0026<\/th>\n      <th>R0027<\/th>\n      <th>R0028<\/th>\n      <th>R0029<\/th>\n      <th>R0030<\/th>\n      <th>R0031<\/th>\n      <th>R0032<\/th>\n      <th>R0033<\/th>\n      <th>R0034<\/th>\n      <th>R0035<\/th>\n      <th>R0036<\/th>\n      <th>R0037<\/th>\n      <th>R0038<\/th>\n      <th>R0039<\/th>\n      <th>R0040<\/th>\n      <th>R0041<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51]},{"name":"Region","targets":0},{"name":"Country","targets":1},{"name":"QuestionnaireVersion","targets":2},{"name":"AssessmentYear","targets":3},{"name":"AdministrativeUnitCode","targets":4},{"name":"FacilityCode","targets":5},{"name":"SupplyChainLevelCode","targets":6},{"name":"TargetPopulation","targets":7},{"name":"Active","targets":8},{"name":"Sector","targets":9},{"name":"VaccineStorage","targets":10},{"name":"R0001","targets":11},{"name":"R0002","targets":12},{"name":"R0003","targets":13},{"name":"R0004","targets":14},{"name":"R0005","targets":15},{"name":"R0006","targets":16},{"name":"R0007","targets":17},{"name":"R0008","targets":18},{"name":"R0009","targets":19},{"name":"R0010","targets":20},{"name":"R0011","targets":21},{"name":"R0012","targets":22},{"name":"R0013","targets":23},{"name":"R0014","targets":24},{"name":"R0015","targets":25},{"name":"R0016","targets":26},{"name":"R0017","targets":27},{"name":"R0018","targets":28},{"name":"R0019","targets":29},{"name":"R0020","targets":30},{"name":"R0021","targets":31},{"name":"R0022","targets":32},{"name":"R0023","targets":33},{"name":"R0024","targets":34},{"name":"R0025","targets":35},{"name":"R0026","targets":36},{"name":"R0027","targets":37},{"name":"R0028","targets":38},{"name":"R0029","targets":39},{"name":"R0030","targets":40},{"name":"R0031","targets":41},{"name":"R0032","targets":42},{"name":"R0033","targets":43},{"name":"R0034","targets":44},{"name":"R0035","targets":45},{"name":"R0036","targets":46},{"name":"R0037","targets":47},{"name":"R0038","targets":48},{"name":"R0039","targets":49},{"name":"R0040","targets":50},{"name":"R0041","targets":51}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-</div>
-</section>
-<section id="evm-creates-an-analytical-opportunity" class="slide level2">
+</section><section id="evm-creates-an-analytical-opportunity" class="slide level2">
 <h2>EVM creates an analytical opportunity</h2>
 <p>EVM tells us where requirements are being met — and where weaknesses exist.</p>
 <p>But a further question matters for decision-makers:</p>
 <blockquote>
-<h1 id="which-evm-requirements-are-associated-with-better-vaccine-availability"><strong>Which EVM requirements are associated with better vaccine availability?</strong></h1>
+<h1 id="which-supply-chain-requirements-are-associated-with-better-vaccine-availability"><strong>Which supply chain requirements are associated with better vaccine availability?</strong></h1>
 </blockquote>
-<p>This moves us from <strong>assessment</strong> toward <strong>evidence for prioritisation</strong>.</p>
-<p><span class="math display">\[
-\boxed{\text{EVM requirements} \longrightarrow \textbf{Vaccine availability}}
-\]</span></p>
-</section>
-<section id="our-focus-service-points" class="slide level2">
+</section><section id="our-focus-service-points" class="slide level2">
 <h2>Our focus: Service Points</h2>
 <p>The analysis focuses on <strong>Service Point (SP) facilities</strong> — the places closest to where vaccines are ultimately delivered to people.</p>
 <h3 id="outcome">Outcome</h3>
-<p><strong>Vaccine availability (AV):</strong> the proportion of assessed vaccines physically present at the facility.</p>
-<h3 id="predictors-of-interest">Predictors of interest</h3>
+<p><strong>Vaccine availability (AV)</strong></p>
+<h3 id="independet-variables-of-interest">Independet variables of interest</h3>
 <p>The facility’s <strong>EVM requirements</strong>.</p>
 <h3 id="context">Context</h3>
 <p><strong>Country</strong> and <strong>target population</strong> are used as adjustments rather than treated as the requirements of interest.</p>
-</section>
-<section id="availability-is-ordered-not-simply-good-or-bad" class="slide level2">
+</section><section id="availability-is-ordered-not-simply-good-or-bad" class="slide level2">
 <h2>Availability is ordered, not simply “good” or “bad”</h2>
-<p>Availability is represented using <strong>six ordered bands</strong>:</p>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -388,42 +332,10 @@ Daniel Brigden
 </tr>
 </tbody>
 </table>
-<aside class="notes">
-<p>The distribution clusters at values such as 0, .25, .50, .75 and 1. The ordered representation respects ranking without assuming equal numeric distances are meaningful.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="figure-what-does-vaccine-availability-look-like" class="slide level2">
-<h2>[FIGURE] What does vaccine availability look like?</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Figure placeholder</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Insert histogram/distribution of AV across Service Point facilities</strong></p>
-<p>Show the strong clustering around <strong>0, 0.25, 0.50, 0.75 and 1</strong> and mark the six availability bands.</p>
-<p>Suggested message beneath the figure:</p>
-<p><strong>The outcome has a natural ordering, motivating an ordinal modelling approach.</strong></p>
-</div>
-</div>
-</div>
-</section>
-<section id="preparing-evm-requirements-for-analysis" class="slide level2">
+
+<img data-src="img_who/hist_av.png" style="width:100.0%" class="r-stretch"></section><section id="preparing-evm-requirements-for-analysis" class="slide level2">
 <h2>Preparing EVM requirements for analysis</h2>
-<p>A raw EVM value can contain <strong>two different messages</strong>:</p>
+<p>An EVM value can contain <strong>two different messages</strong>:</p>
 <div class="columns">
 <div class="column" style="width:48%;">
 <h3 id="how-well-is-the-requirement-met">How well is the requirement met?</h3>
@@ -437,18 +349,15 @@ Daniel Brigden
 <p>A facility where a requirement <strong>does not apply</strong> is not necessarily equivalent to a facility that <strong>performs badly</strong> on that requirement.</p>
 </blockquote>
 <p>The analysis therefore keeps <strong>score</strong> and <strong>applicability</strong> separate.</p>
-</section>
-<section id="why-a-simple-comparison-can-mislead" class="slide level2">
-<h2>Why a simple comparison can mislead</h2>
-<p>Suppose facilities with stronger EVM scores also have better vaccine availability.</p>
-<p>Is that because of the requirement itself?</p>
-<p>Or because those facilities happen to be in countries with stronger health systems, infrastructure and funding?</p>
-<p>Or because larger facilities are differently resourced?</p>
-<blockquote>
-<p><strong>We need to separate the requirement signal from country context and facility size.</strong></p>
-</blockquote>
-</section>
-<section id="we-ask-the-question-three-ways" class="slide level2">
+</section><section id="challenges-in-the-analysis" class="slide level2">
+<h2>Challenges in the analysis</h2>
+<ul>
+<li>Over 400 requirements to select from.</li>
+<li>Need to separate the requirement signal from the country context and population size the serve</li>
+<li>Handling applicability requirement</li>
+<li>No interest in the predicting availability of a specific facility, but rather in <strong>which requirements are most strongly associated with availability</strong> across all facilities.</li>
+</ul>
+</section><section id="we-ask-the-question-three-ways" class="slide level2">
 <h2>We ask the question three ways</h2>
 <div class="columns">
 <div class="column" style="width:32%;">
@@ -465,117 +374,26 @@ Daniel Brigden
 <p>Checks whether findings are driven by target population.</p>
 </div></div>
 <h3 id="the-strongest-findings-are-those-that-survive-all-three-views.">The strongest findings are those that survive all three views.</h3>
-</section>
-<section id="finding-signal-among-many-requirements" class="slide level2">
+</section><section id="finding-signal-among-many-requirements" class="slide level2">
 <h2>Finding signal among many requirements</h2>
 <p>There are too many correlated candidate requirements to fit safely in one ordinary model.</p>
 <p>The analysis therefore uses <strong>two stages</strong>:</p>
-<h3 id="find-requirements-that-repeatedly-matter">1. Find requirements that repeatedly matter</h3>
-<p>A <strong>penalised ordinal model (lasso)</strong> is repeatedly fitted to resampled data.</p>
-<p><strong>500 bootstrap repetitions</strong> → record how often each requirement survives → retain requirements selected in <strong>≥ 60%</strong> of runs.</p>
-<h3 id="estimate-their-association">2. Estimate their association</h3>
-<p>The retained requirements are refitted using an <strong>unpenalised ordinal model</strong> to estimate interpretable <strong>odds ratios and 95% confidence intervals</strong>.</p>
-<blockquote>
-<p><strong>Selection finds the stable signal; estimation tells us its direction and strength.</strong></p>
-</blockquote>
-</section>
-<section id="figure-the-analytical-workflow" class="slide level2">
+
+<img data-src="img_who/two_stage_modles.png" style="width:100.0%" class="r-stretch"></section><section id="figure-the-analytical-workflow" class="slide level2">
 <h2>[FIGURE] The analytical workflow</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Figure placeholder</strong></p>
-</div>
-<div class="callout-content">
-<p>Create/insert a simple horizontal workflow:</p>
-<p><strong>EVM Service Point data</strong></p>
-<p>→ <strong>Prepare scores + applicability</strong></p>
-<p>→ <strong>Ordinal lasso</strong></p>
-<p>→ <strong>500 bootstrap samples</strong></p>
-<p>→ <strong>Stable requirements (≥60%)</strong></p>
-<p>→ <strong>Ordinal regression</strong></p>
-<p>→ <strong>Odds ratios</strong></p>
-<p>→ <strong>Compare Models A, B and C</strong></p>
-<p>→ <strong>Robust requirements associated with availability</strong></p>
-</div>
-</div>
-</div>
-</section>
-<section id="how-to-read-the-results" class="slide level2">
-<h2>How to read the results</h2>
-<p>An <strong>odds ratio (OR)</strong> describes how a requirement is associated with being in a <strong>higher availability band</strong>.</p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<h3 id="or-1">OR = 1</h3>
-<p>No association</p>
-</div><div class="column" style="width:33%;">
-<h3 id="or-1-1">OR &gt; 1</h3>
-<p>Associated with <strong>higher availability</strong></p>
-</div><div class="column" style="width:33%;">
-<h3 id="or-1-2">OR &lt; 1</h3>
-<p>Associated with <strong>lower availability</strong></p>
-</div></div>
-<p>The <strong>further from 1</strong>, the stronger the association. Confidence intervals show the uncertainty.</p>
-<h3 id="but-interpretation-depends-on-the-type">But interpretation depends on the type</h3>
-<p>A <strong>score</strong> result is about <em>doing a requirement better</em>.</p>
-<p>An <strong>applicability</strong> result describes whether the requirement applies and may indicate a <strong>structural difference or gap</strong>, rather than an action a facility should take.</p>
-</section>
-<section id="figure-main-results-model-b" class="slide level2">
-<h2>[FIGURE] Main results — Model B</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Figure placeholder</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Insert the Model B odds-ratio forest plot</strong></p>
-<p>Recommended annotations:</p>
-<ul>
-<li>Dashed vertical line at <strong>OR = 1</strong></li>
-<li>Right side: <strong>higher availability</strong></li>
-<li>Left side: <strong>lower availability</strong></li>
-<li>Distinguish <strong>Score</strong> from <strong>Applicability</strong></li>
-<li>Show 95% confidence intervals</li>
-</ul>
-<p><strong>Take-home message:</strong> focus on requirements that are both <strong>stably selected</strong> and have an association clearly away from 1.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="robustness-matters-more-than-one-model" class="slide level2">
-<h2>Robustness matters more than one model</h2>
-<p>A requirement is particularly compelling when:</p>
-<p><strong>Model B</strong> identifies it in the overall programme,</p>
-<p><strong>Model A</strong> shows that the association remains when facilities are compared within countries,</p>
-<p>and <strong>Model C</strong> shows that it does not disappear when target population is removed.</p>
+
+<img data-src="img_who/flowchart.png" style="width:50.0%" class="r-stretch"></section><section id="main-results-model-b" class="slide level2">
+<h2>Main results — Model B</h2>
+
+<img data-src="img_who/OR_plot.png" style="width:50.0%" class="r-stretch"></section><section id="main-results-model-b-1" class="slide level2">
+<h2>Main results — Model B</h2>
+<p><img data-src="img_who/results_B.png" style="width:50.0%"></p>
 <blockquote>
 <h2 id="agreement-across-models-is-the-robust-core."><strong>Agreement across models is the robust core.</strong></h2>
 </blockquote>
 <p>A requirement that changes direction or disappears across specifications should be treated more cautiously.</p>
+<p><img data-src="img_who/results_ABC.png" style="width:50.0%"></p>
 </section>
-<section id="figure-which-findings-survive-the-stress-tests" class="slide level2">
-<h2>[FIGURE] Which findings survive the stress tests?</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Figure placeholder</strong></p>
-</div>
-<div class="callout-content">
-<p>Insert either:</p>
-<p><strong>Option A:</strong> a three-way overlap/Venn-style figure for Models A, B and C; or</p>
-<p><strong>Option B:</strong> a compact comparison plot showing odds ratios for the same requirements under all three models.</p>
-<p>Highlight requirements retained by <strong>3/3 models in the same direction</strong> as the <strong>robust core</strong>.</p>
-</div>
-</div>
 </div>
 </section>
 <section id="what-the-analysis-can-and-cannot-tell-us" class="slide level2">
@@ -639,22 +457,6 @@ Daniel Brigden
 </div>
 </div>
 </section>
-<section id="when-a-child-arrives-for-vaccination" class="title-slide slide level1 center">
-<h1>When a child arrives for vaccination,</h1>
-
-</section>
-
-<section id="the-right-vaccine-should-be-there" class="title-slide slide level1 center">
-<h1>the right vaccine should be there —</h1>
-
-</section>
-
-<section>
-<section id="safe-and-ready-to-use." class="title-slide slide level1 center">
-<h1><strong>safe and ready to use.</strong></h1>
-
-</section>
-<h3 id="evm-analytics-can-help-us-understand-where-to-focus-to-make-that-more-likely.">EVM analytics can help us understand where to focus to make that more likely.</h3>
 <section id="any-questions-or-comments" class="slide level2" data-background-video="https://www.pexels.com/download/video/12165750/" data-background-video-loop="true" data-background-video-muted="true">
 <h2><span class="remember">Any questions or comments?</span> 💬</h2>
 
@@ -670,7 +472,7 @@ Daniel Brigden
 
 <aside><div>
 <p>Image credit: <a href="https://unsplash.com">Unsplash</a></p>
-</div></aside></section></section>
+</div></aside></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -862,7 +664,7 @@ Daniel Brigden
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
