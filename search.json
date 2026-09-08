@@ -529,14 +529,14 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#our-focus-service-points",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "Our focus: Service Points",
-    "text": "Our focus: Service Points\nThe analysis focuses on Service Point (SP) facilities — the places closest to where vaccines are ultimately delivered to people.\nOutcome\nVaccine availability (AV)\nIndependet variables of interest\nThe facility’s EVM requirements.\nContext\nCountry and target population are used as adjustments rather than treated as the requirements of interest."
+    "text": "Our focus: Service Points\nThe analysis focuses on Service Point (SP) facilities — the places closest to where vaccines are ultimately delivered to people.\nOutcome: Vaccine availability (AV)\nIndependent variables of interest: The facility’s EVM requirements.\nContext: Country and target population are used as adjustments rather than treated as the requirements of interest."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-ordered-not-simply-good-or-bad",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-ordered-not-simply-good-or-bad",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "Availability is ordered, not simply “good” or “bad”",
-    "text": "Availability is ordered, not simply “good” or “bad”\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1"
+    "text": "Availability is ordered, not simply “good” or “bad”\n\n\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-analytical-workflow",
@@ -571,7 +571,14 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b-1",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "Main results — Model B",
-    "text": "Main results — Model B\n\n\nAgreement across models is the robust core.\n\nA requirement that changes direction or disappears across specifications should be treated more cautiously.\n\n:::"
+    "text": "Main results — Model B"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#agreement-across-models-is-the-robust-core",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#agreement-across-models-is-the-robust-core",
+    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "section": "Agreement across models is the robust core",
+    "text": "Agreement across models is the robust core\nA requirement that changes direction or disappears across specifications should be treated more cautiously."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#what-the-analysis-can-and-cannot-tell-us",
