@@ -445,7 +445,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "",
-    "text": "But millions of children are still left behind\n\n\n19.9 Million Children Missed Vaccines\n\n\n\n4.6 million died before their 5th birthday"
+    "text": "In 2025{.bigger}\n\n\n19.9 Million\nChildren Missed Vaccines\n\n\n\n4.6 million\nChildren died"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#having-the-vaccine-is-not-enough",
@@ -457,6 +457,13 @@
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination",
+    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "section": "A child arrives for vaccination",
+    "text": "A child arrives for vaccination\nThe child arrives. But the vaccine is not available. Why?"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination-1",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination-1",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "A child arrives for vaccination",
     "text": "A child arrives for vaccination\nThe child arrives. But the vaccine is not available. Why?"
@@ -551,6 +558,20 @@
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "Finding signal among many requirements",
     "text": "Finding signal among many requirements\nThere are too many correlated candidate requirements to fit safely in one ordinary model.\nThe analysis therefore uses two stages:"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-1-selecting-the-requirements",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-1-selecting-the-requirements",
+    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "section": "Model B — Stage 1: Selecting the requirements",
+    "text": "Model B — Stage 1: Selecting the requirements\nThe outcome \\(\\text{AV}_i\\) is one of six ordered bands. A penalised cumulative-logit (ordinal) model links the requirements to availability:\n\\[\n\\text{logit}\\big(P(\\text{AV}_i \\le k)\\big) \\;=\\; \\theta_k \\;-\\; \\sum_{j=1}^{p}\\Big( \\beta_j\\, R^{\\text{s}}_{ij} \\;+\\; \\gamma_j\\, R^{\\text{I}}_{ij} \\Big) \\;-\\; \\delta\\, \\text{Pop}_i\n\\]\nfor bands \\(k = 1,\\dots,5\\), where each requirement enters twice:\n\n\\(R^{\\text{s}}_{ij}\\) — score of requirement \\(j\\) (0–5) at facility \\(i\\)\n\\(R^{\\text{I}}_{ij}\\) — applicability flag (1 if requirement \\(j\\) is not applicable)\n\\(\\text{Pop}_i\\) — \\(\\log_{10}\\) target population\n\nThe coefficients are estimated under an \\(\\ell_1\\) (lasso) penalty:\n\\[\n\\hat{\\boldsymbol{\\beta}},\\hat{\\boldsymbol{\\gamma}} \\;=\\; \\arg\\min \\; \\Big\\{ -\\ell(\\boldsymbol{\\beta},\\boldsymbol{\\gamma},\\delta) \\;+\\; \\lambda \\sum_{j=1}^{p} \\big( |\\beta_j| + |\\gamma_j| \\big) \\Big\\}\n\\]\nThe penalty \\(\\lambda\\) forces most coefficients to exactly zero; the non-zero ones — stable across bootstrap resamples — form the shortlist carried to Stage 2."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-2-estimating-the-odds-ratios",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-2-estimating-the-odds-ratios",
+    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "section": "Model B — Stage 2: Estimating the odds ratios",
+    "text": "Model B — Stage 2: Estimating the odds ratios\nThe selected requirements are re-fitted with an unpenalised mixed cumulative-logit model, adding a country random intercept \\(u_{c[i]}\\):\n\\[\n\\text{logit}\\big(P(\\text{AV}_i \\le k)\\big) \\;=\\; \\theta_k \\;-\\; \\sum_{j \\in \\mathcal{S}} \\Big( \\beta_j\\, R^{\\text{s}}_{ij} + \\gamma_j\\, R^{\\text{I}}_{ij} \\Big) \\;-\\; \\delta\\,\\text{Pop}_i \\;-\\; u_{c[i]}\n\\]\n\\[\nu_{c} \\;\\sim\\; \\mathcal{N}\\!\\left(0,\\; \\sigma^2_{\\text{country}}\\right)\n\\]\nwhere \\(\\mathcal{S}\\) is the shortlist from Stage 1 and \\(c[i]\\) is the country of facility \\(i\\).\nThe reportable effect size for each requirement is the odds ratio:\n\\[\n\\text{OR}_j \\;=\\; e^{\\beta_j}, \\qquad \\text{95\\% CI} \\;=\\; e^{\\,\\beta_j \\,\\pm\\, 1.96\\,\\text{SE}(\\beta_j)}\n\\]\n\n\\(\\text{OR}_j &gt; 1\\) → requirement \\(j\\) associated with higher availability\n\\(\\text{OR}_j &lt; 1\\) → associated with lower availability"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
