@@ -494,14 +494,14 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-framework",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "The Framework",
-    "text": "The Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nQuestions: are asked to assess whether a requirement has been met.\n\n\n\nScoring in EVM is determined by this assessment framework."
+    "text": "The Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nQuestions: are asked to assess whether a requirement has been met."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "",
-    "text": "EVM Dataset Overview\n\nAssessments from 82 countries between 2019 and 2026.\n\n4287 health facilities (rows).\n1108 variables (columns).\n\n1286 potential questions.\n\n871 requirements, 19 criteria and 8 categories.\nScores range from 0 to 5.\n\n\n\nEVM turns supply-chain performance into measurable evidence\nEffective Vaccine Management EVM provides a systematic assessment of how well the immunisation supply chain is functioning.\nEVM examines the capabilities, processes and practices that should make reliable availability possible.\nIt covers areas such as:\nInfrastructure and cold chain · Temperature management · Stock management · Forecasting, Distribution · Information systems· Maintenance · Management practices, and more\n\nData - Scores\n\n\n\n\n\n\n\nEVM creates an analytical opportunity\nEVM tells us where requirements are being met — and where weaknesses exist.\nBut a further question matters for decision-makers:\n\nWhich supply chain requirements are associated with better vaccine availability?\n\n\nOur focus: Service Points\nThe analysis focuses on Service Point (SP) facilities — the places closest to where vaccines are ultimately delivered to people.\nOutcome\nVaccine availability (AV)\nIndependet variables of interest\nThe facility’s EVM requirements.\nContext\nCountry and target population are used as adjustments rather than treated as the requirements of interest.\n\nAvailability is ordered, not simply “good” or “bad”\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1\n\n\n\n\n\nPreparing EVM requirements for analysis\nAn EVM value can contain two different messages:\n\n\nHow well is the requirement met?\nA score represents the level of performance/compliance.\n\nDoes the requirement apply?\nA not-applicable indicator captures a different structural situation.\n\nThese should not be confused.\n\nA facility where a requirement does not apply is not necessarily equivalent to a facility that performs badly on that requirement.\n\nThe analysis therefore keeps score and applicability separate.\n\nChallenges in the analysis\n\nOver 400 requirements to select from.\nNeed to separate the requirement signal from the country context and population size the serve\nHandling applicability requirement\nNo interest in the predicting availability of a specific facility, but rather in which requirements are most strongly associated with availability across all facilities.\n\n\nWe ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population.\n\nThe strongest findings are those that survive all three views.\n\nFinding signal among many requirements\nThere are too many correlated candidate requirements to fit safely in one ordinary model.\nThe analysis therefore uses two stages:\n\n\n[FIGURE] The analytical workflow\n\n\nMain results — Model B\n\n\nMain results — Model B\n\n\nAgreement across models is the robust core.\n\nA requirement that changes direction or disappears across specifications should be treated more cautiously."
+    "text": "EVM Dataset Overview\n\nAssessments from 82 countries between 2019 and 2026.\n\n4287 health facilities (rows).\n1108 variables (columns).\n\n1286 potential questions.\n\n871 requirements, 19 criteria and 8 categories.\nScores range from 0 to 5."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-turns-supply-chain-performance-into-measurable-evidence",
@@ -539,25 +539,11 @@
     "text": "Availability is ordered, not simply “good” or “bad”\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1"
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#preparing-evm-requirements-for-analysis",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#preparing-evm-requirements-for-analysis",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-analytical-workflow",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-analytical-workflow",
     "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Preparing EVM requirements for analysis",
-    "text": "Preparing EVM requirements for analysis\nAn EVM value can contain two different messages:\n\n\nHow well is the requirement met?\nA score represents the level of performance/compliance.\n\nDoes the requirement apply?\nA not-applicable indicator captures a different structural situation.\n\nThese should not be confused.\n\nA facility where a requirement does not apply is not necessarily equivalent to a facility that performs badly on that requirement.\n\nThe analysis therefore keeps score and applicability separate."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#challenges-in-the-analysis",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#challenges-in-the-analysis",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Challenges in the analysis",
-    "text": "Challenges in the analysis\n\nOver 400 requirements to select from.\nNeed to separate the requirement signal from the country context and population size the serve\nHandling applicability requirement\nNo interest in the predicting availability of a specific facility, but rather in which requirements are most strongly associated with availability across all facilities."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "We ask the question three ways",
-    "text": "We ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population.\n\nThe strongest findings are those that survive all three views."
+    "section": "The analytical workflow",
+    "text": "The analytical workflow"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#finding-signal-among-many-requirements",
@@ -567,11 +553,11 @@
     "text": "Finding signal among many requirements\nThere are too many correlated candidate requirements to fit safely in one ordinary model.\nThe analysis therefore uses two stages:"
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#figure-the-analytical-workflow",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#figure-the-analytical-workflow",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
     "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "[FIGURE] The analytical workflow",
-    "text": "[FIGURE] The analytical workflow"
+    "section": "We ask the question three ways",
+    "text": "We ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population.\n\nThe strongest findings are those that survive all three views."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b",
@@ -585,7 +571,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b-1",
     "title": "What Drives Vaccine Availability at Health Facilities?",
     "section": "Main results — Model B",
-    "text": "Main results — Model B\n\n\nAgreement across models is the robust core.\n\nA requirement that changes direction or disappears across specifications should be treated more cautiously."
+    "text": "Main results — Model B\n\n\nAgreement across models is the robust core.\n\nA requirement that changes direction or disappears across specifications should be treated more cautiously.\n\n:::"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#what-the-analysis-can-and-cannot-tell-us",
