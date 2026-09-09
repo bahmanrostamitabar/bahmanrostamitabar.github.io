@@ -466,7 +466,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-supply-chain-connects-vaccines-to-health-outcomes",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "The supply chain connects vaccines to health outcomes",
-    "text": "The supply chain connects vaccines to health outcomes\n ::: aside Gavi, the Vaccine Alliance- Immunization Supply Chain Strategy and Theory of Change :::"
+    "text": "The supply chain connects vaccines to health outcomes\n :::aside Gavi, the Vaccine Alliance- Immunization Supply Chain Strategy and Theory of Change :::"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
@@ -579,97 +579,6 @@
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "We ask the question three ways",
     "text": "We ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#an-unexpected-journey",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#an-unexpected-journey",
-    "title": "From Researcher to Research Leader",
-    "section": "An Unexpected Journey",
-    "text": "An Unexpected Journey\n\n\nI lead an active research group with around 12 PhD students, collaborating with:\n\nGovernment partners & WHO\nNHS Trusts\nMinistries of health across several African countries\n\nLooking back, the journey from uncertain lecturer to research leader did not happen through a grand strategy."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#a-moment-that-changed-my-perspective",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#a-moment-that-changed-my-perspective",
-    "title": "From Researcher to Research Leader",
-    "section": "A Moment That Changed My Perspective",
-    "text": "A Moment That Changed My Perspective\n\n\nA few years ago, I visited a health centre in West Africa.\n\nThe shelves were empty\nNo contraceptives\nNo essential medicines\n\nAt first glance, it looked like a logistics problem. But the real issue wasn’t manufacturing or transportation — it was forecasting.\nPlanners simply didn’t have reliable tools to anticipate demand."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#a-realisation",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#a-realisation",
-    "title": "From Researcher to Research Leader",
-    "section": "A Realisation",
-    "text": "A Realisation\n\n\nStanding there changed how I thought about research. Until then, I had been doing what many of us do:\n\nPublishing papers\nImproving forecasting models\nDeveloping new methods\n\nBut the real problem was not a lack of models.\nThe real problem was a lack of translation between research and decision-making."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#a-question-that-stayed-with-me",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#a-question-that-stayed-with-me",
-    "title": "From Researcher to Research Leader",
-    "section": "A Question That Stayed With Me",
-    "text": "A Question That Stayed With Me\n\nHow can forecasting research actually help people make better decisions under uncertainty?\n\nThat question eventually led to Forecasting for Social Good."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#the-shift",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#the-shift",
-    "title": "From Researcher to Research Leader",
-    "section": "The Shift",
-    "text": "The Shift\n\n\nSolving these problems wasn’t going to happen through one paper, one model, or one project.\nIt required partnerships with:\n\nMinistries & NGOs\nHealth systems\nResearchers across different countries\n\nAnd that meant my role had to change."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#becoming-something-else",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#becoming-something-else",
-    "title": "From Researcher to Research Leader",
-    "section": "Becoming Something Else",
-    "text": "Becoming Something Else\n\n\nI realised I was no longer just a researcher. I had to become something else:\n\nA research organiser\nA collaborator and bridge-builder\nSometimes a trainer\nSometimes a fundraiser\n\nWhat started as a research idea became a programme combining research, collaboration, and training across multiple countries."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#following-curiosity-and-values",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#following-curiosity-and-values",
-    "title": "From Researcher to Research Leader",
-    "section": "Following Curiosity and Values",
-    "text": "Following Curiosity and Values\n\n\nLooking back, I wasn’t following research trends. Instead, I was following:\n\nCuriosity\nValues\nProblems that genuinely interested me\n\nThe gap between forecasting research and real decisions fascinated me. The idea that research could empower people to make better decisions excited me."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#lesson-1-the-model-is-not-the-centre-of-the-story",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#lesson-1-the-model-is-not-the-centre-of-the-story",
-    "title": "From Researcher to Research Leader",
-    "section": "Lesson 1: The Model Is Not the Centre of the Story",
-    "text": "Lesson 1: The Model Is Not the Centre of the Story\n\n\nAs researchers we are trained to optimise models. But in real systems:\n\nOrganisations care about usability\nPractitioners care about trust\nDecision-makers care about practicality\n\n\nA slightly simpler model that people actually use can be far more valuable than the perfect model that sits in a paper."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#lesson-2-impact-moves-at-a-different-speed",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#lesson-2-impact-moves-at-a-different-speed",
-    "title": "From Researcher to Research Leader",
-    "section": "Lesson 2: Impact Moves at a Different Speed",
-    "text": "Lesson 2: Impact Moves at a Different Speed\n\n\nAcademic success often moves fast: papers, citations, outputs.\nReal-world impact moves differently. It requires:\n\nTrust\nRelationships\nPatience\n\nSome of the most impactful work I’ve done took years before producing a paper — and sometimes it produced no paper at all, but it changed practice."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#lesson-3-people-are-the-most-scalable-impact",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#lesson-3-people-are-the-most-scalable-impact",
-    "title": "From Researcher to Research Leader",
-    "section": "Lesson 3: People Are the Most Scalable Impact",
-    "text": "Lesson 3: People Are the Most Scalable Impact\n\n\nAt first I thought impact would come from better models. But over time I realised:\n\nThe most scalable form of impact is people.\n\nIf you train analysts and practitioners, they will continue applying those skills long after a project ends.\nSometimes the most powerful thing a researcher can do is build capability."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#the-uncomfortable-reality",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#the-uncomfortable-reality",
-    "title": "From Researcher to Research Leader",
-    "section": "The Uncomfortable Reality",
-    "text": "The Uncomfortable Reality\n\n\nThere is also a less visible side to research leadership. The more successful a programme becomes:\n\nThe less time you spend coding\nThe more time you spend coordinating\nThe more time you spend writing grants\n\nAt first this felt like moving away from research. But leadership means enabling knowledge, not just producing it."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#a-provocation",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#a-provocation",
-    "title": "From Researcher to Research Leader",
-    "section": "A Provocation",
-    "text": "A Provocation\nMany societal challenges require collaborative research ecosystems.\nBut academic systems still reward mostly individual outputs.\n\nHow do we build academic careers that reward building ecosystems and capacity, not just producing papers?"
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#final-reflection",
-    "href": "talks/2026/2026-2-gw4/slides/gw4.html#final-reflection",
-    "title": "From Researcher to Research Leader",
-    "section": "Final Reflection",
-    "text": "Final Reflection\nMoving from researcher to research leader is not about becoming more important.\nIt’s about making your research less about you — and more about the problem you’re trying to solve."
   },
   {
     "objectID": "talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html#section",
@@ -823,7 +732,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nWhat Drives Vaccine Availability at Health Facilities?\n\n\nSep 10, 2026\n\n\nUniversity of Nottingham\n\n\nNottingham, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nFrom Researcher to Research Leader\n\n\nMar 13, 2026\n\n\nOnline\n\n\n \n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides & delivery tips for scientific presentations\n\n\nJan 12, 2026\n\n\nPhd Foundations 2026\n\n\nCardiff, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\n \n\n\n \n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nvenue\n\n\n\nlocation\n\n\n\nslides-html\n\n\n\nslides-pdf\n\n\n\n\n\n\n\n\nWhat Drives Vaccine Availability at Health Facilities?\n\n\nSep 10, 2026\n\n\nUniversity of Nottingham\n\n\nNottingham, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides & delivery tips for scientific presentations\n\n\nJan 12, 2026\n\n\nPhd Foundations 2026\n\n\nCardiff, UK\n\n\nView\n\n\nPDF\n\n\n\n\n\n\nMaking slides with Quarto\n\n\nSep 16, 2025\n\n\n \n\n\n \n\n\nView\n\n\nPDF\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks/2025/2025-1-refrence/index.html",
@@ -2105,20 +2014,6 @@
     "title": "Making slides & delivery tips for scientific presentations",
     "section": "Further resources",
     "text": "Further resources\nYou can find more details here:\nBooks: - slide:ology - Presentation Zen - The Craft of Scientific Presentations\nFree photos: - unsplash.com - pexels.com"
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/index.html",
-    "href": "talks/2026/2026-2-gw4/index.html",
-    "title": "From Researcher to Research Leader",
-    "section": "",
-    "text": "This provocation reflects on my journey from starting as a lecturer uncertain about my research direction to leading a growing research group and international collaborations focused on forecasting for societal impact. Drawing on experiences working with organisations such as the NHS, WHO, governments, and ministries of health in Africa, I share candid insights into how curiosity, values, and real-world problems shaped my path more than strategic planning or academic trends. The talk highlights lessons learned along the way—the good, the bad, and the uncomfortable realities of research leadership—including shifting from producing research individually to building collaborations, capacity, and systems where research can genuinely inform decision-making. It concludes with a reflection on what it means to lead research that prioritises societal impact while navigating the incentives and structures of academia."
-  },
-  {
-    "objectID": "talks/2026/2026-2-gw4/index.html#what-these-talk-covers",
-    "href": "talks/2026/2026-2-gw4/index.html#what-these-talk-covers",
-    "title": "From Researcher to Research Leader",
-    "section": "",
-    "text": "This provocation reflects on my journey from starting as a lecturer uncertain about my research direction to leading a growing research group and international collaborations focused on forecasting for societal impact. Drawing on experiences working with organisations such as the NHS, WHO, governments, and ministries of health in Africa, I share candid insights into how curiosity, values, and real-world problems shaped my path more than strategic planning or academic trends. The talk highlights lessons learned along the way—the good, the bad, and the uncomfortable realities of research leadership—including shifting from producing research individually to building collaborations, capacity, and systems where research can genuinely inform decision-making. It concludes with a reflection on what it means to lead research that prioritises societal impact while navigating the incentives and structures of academia."
   },
   {
     "objectID": "talks/2026/2026-2-who/index.html",
