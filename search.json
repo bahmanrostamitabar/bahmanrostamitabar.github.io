@@ -543,7 +543,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#next-steps",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "Next steps",
-    "text": "Next steps\n\nModel at the category level: Aggregate requirements into EVM function-category scores (cold storage, records, SOPs, staffing, funding…).\n\n2. Test for bottlenecks: Use a decision tree to check if availability needs a critical few requirements together, not each alone.\n3. Connect EVM to wider outcomes: Link EVM with country, UNICEF coverage and other external data to examine how supply-chain performance translates into vaccination outcomes.\n4. Toward causal evidence: Repeated assessments over time , test whether improving a requirement raises availability."
+    "text": "Next steps\n\nModel at the category level: Aggregate requirements into EVM function-category scores (cold storage, records, SOPs, staffing, funding…).\nTest for bottlenecks: Use a decision tree to check if availability needs a critical few requirements together, not each alone.\nConnect EVM to wider outcomes: Link EVM with country, UNICEF coverage and other external data to examine how supply-chain performance translates into vaccination outcomes.\nCausal evidence: Repeated assessments over time , test whether improving a requirement raises availability."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
