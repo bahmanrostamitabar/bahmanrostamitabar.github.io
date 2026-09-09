@@ -494,7 +494,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-creates-an-analytical-opportunity",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "EVM creates an analytical opportunity",
-    "text": "EVM creates an analytical opportunity\n\n\n\n\n\n\nEVM already tells us where requirements are being met.\nBut we want to go one step further:\nWhich requirements are associated with higher/lower vaccine availability?\n\n\n\nWe focus on Service Point (SP) facilities\n\nOutcome: Vaccine availability (AV)\nIndependent variables of interest: The facility’s EVM requirements.\nContext: Country and target population are used as adjustments rather than treated as the requirements of interest."
+    "text": "EVM creates an analytical opportunity\n\n\n\n\n\n\nEVM already tells us where requirements are being met.\nBut we want to go one step further:\nWhich facility requirements are associated with vaccine availability, in which direction, and how strongly?\n\n\n\nWe focus on Service Point (SP) facilities\n\nOutcome: Vaccine availability (AV)\nIndependent variables of interest: The facility’s EVM requirements.\nContext: Country and target population are used as adjustments rather than treated as the requirements of interest."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-categorized-and-ordered",
