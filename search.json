@@ -466,7 +466,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-supply-chain-connects-vaccines-to-health-outcomes",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "The supply chain connects vaccines to health outcomes",
-    "text": "The supply chain connects vaccines to health outcomes"
+    "text": "The supply chain connects vaccines to health outcomes\n ::: aside Gavi, the Vaccine Alliance- Immunization Supply Chain Strategy and Theory of Change :::"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
@@ -480,7 +480,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "EVM Framework",
-    "text": "EVM Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\n\n\nIt is organised by:\n\nQuestions: are asked to assess whether a requirement has been met.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nRequirements could be inputs, outputs or performance measures.\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\n\n\n\n\nAssessments from 82 countries between 2019 and 2026.\n1286 potential questions\nover 4000 health facilities\n900 requirements, 19 criteria and 8 categories\nScores range from 0 to 5."
+    "text": "EVM Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\n\n\nIt is organised by:\n\nQuestions: are asked to assess whether a requirement has been met.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nRequirements could be inputs, outputs or performance measures.\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\n\n\n\n\nAssessments from 82 countries between 2019 and 2026\n1286 potential questions\nOver 4000 health facilities\n900 requirements, 19 criteria and 8 categories\nScores range from 0 to 5"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#data---scores",
@@ -532,18 +532,18 @@
     "text": "Agreement across models is the robust core\nA requirement that changes direction or disappears across specifications should be treated more cautiously."
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#what-this-tells-who",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#what-this-tells-who",
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#supporting-gavi-immunisation-supply-chain-strategy-20262030",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#supporting-gavi-immunisation-supply-chain-strategy-20262030",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
-    "section": "What this tells WHO",
-    "text": "What this tells WHO\nTwenty-six requirements are associated with availability consistently across all three models (within-country, global, and without population).\nThe clearest, strongest signal — a red flag\n\nCold storage capacity (R0040). Facilities where this is not applicable — i.e. that have no adequate cold storage — have dramatically lower availability.\n\nRequirements that go with higher availability\n\nSOPs and temperature monitoring — SOPs for temperature monitoring (R0306) and for packing insulated containers (R0316).\nRecord quality — VVM-status field on the receipt form (R0211); staff can correctly read a 30DTR (R0269).\nWaste handling — colour-coded waste bins (R0130)."
+    "section": "Supporting Gavi immunisation Supply Chain strategy 2026–2030",
+    "text": "Supporting Gavi immunisation Supply Chain strategy 2026–2030"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#next-steps",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#next-steps",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "Next steps",
-    "text": "Next steps\n\nModel at the category level: Aggregate requirements into EVM function-category scores (cold storage, records, SOPs, staffing, funding…).\n\n2. Test for bottlenecks: Use a decision tree to check if availability needs a critical few requirements together, not each alone.\n3. Review odd signals: Investigate requirements pointing the unexpected way — likely proxies, not real effects.\n4. Toward causal evidence: Repeated assessments over time , test whether improving a requirement raises availability."
+    "text": "Next steps\n\nModel at the category level: Aggregate requirements into EVM function-category scores (cold storage, records, SOPs, staffing, funding…).\n\n2. Test for bottlenecks: Use a decision tree to check if availability needs a critical few requirements together, not each alone.\n3. Connect EVM to wider outcomes: Link EVM with country, UNICEF coverage and other external data to examine how supply-chain performance translates into vaccination outcomes.\n4. Toward causal evidence: Repeated assessments over time , test whether improving a requirement raises availability."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
