@@ -420,214 +420,165 @@
     "text": "I am a Professor of Analytics and Decision Sciences at Cardiff Business School, Cardiff University. I founded and direct the Data Lab for Social Good, and I lead the Uncertainty & the Future theme at DTII, where I work closely with academic, public, and industry partners on questions that matter for society.\nMy work sits at the intersection of data, uncertainty, and decision-making, with a focus on how advanced analytical methods can support better choices in complex and uncertain futures. Drawing on Data Science, AI, and Operations Research (OR), I develop and apply approaches that are both methodologically rigorous and demonstrably relevant to real-world decision contexts.\nSo far, my contributions to the field have been recognised with two medals from the OR Society: the Goodeve Medal in 2024, awarded for outstanding contributions to the philosophy, theory, and practice of OR, and the Lyn Thomas Impact Medal in 2025, recognising OR academic research that combines methodological innovation with clear, evidenced real-world impact."
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#vaccine-saves-lives",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#vaccine-saves-lives",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Vaccine saves lives",
-    "text": "Vaccine saves lives\nVaccines are one of the most effective public-health interventions we have"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#vaccine-coverage-has-improved-over-time",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#vaccine-coverage-has-improved-over-time",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Vaccine coverage has improved over time",
-    "text": "Vaccine coverage has improved over time"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Coverage disparities exist within and between regions",
-    "text": "Coverage disparities exist within and between regions"
-  },
-  {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "",
-    "text": "In 2025\n\n\n19.9 Million\nChildren Missed Vaccines\n\n\n\n4.6 million\nChildren died"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#having-the-vaccine-is-not-enough",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#having-the-vaccine-is-not-enough",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Having the vaccine is not enough",
-    "text": "Having the vaccine is not enough\nA vaccine only saves a life if it reaches the child."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "A child arrives for vaccination",
-    "text": "A child arrives for vaccination\nThe child arrives. But the vaccine is not available. Why?"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination-1",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#a-child-arrives-for-vaccination-1",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "A child arrives for vaccination",
-    "text": "A child arrives for vaccination\nThe child arrives. But the vaccine is not available. Why?"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#what-could-have-gone-wrong",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#what-could-have-gone-wrong",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "What could have gone wrong?",
-    "text": "What could have gone wrong?"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-supply-chain-connects-vaccines-to-health-outcomes",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-supply-chain-connects-vaccines-to-health-outcomes",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "The supply chain connects vaccines to health outcomes",
-    "text": "The supply chain connects vaccines to health outcomes"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#but-what-are-the-supply-chain-fundamentals",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#but-what-are-the-supply-chain-fundamentals",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "But what are the supply-chain fundamentals?",
-    "text": "But what are the supply-chain fundamentals?\nHow can they be assessed?\nThis is where Effective Vaccine Management (EVM) comes in.\nIt provides a systematic assessment of how well the immunisation supply chain is functioning."
+    "text": "Vaccines are among the most effective public-health interventions"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-1",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-1",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "",
-    "text": "A global initiative to improve immunisation supply chain.\nA national planning process endorsed and supported by WHO and UNICEF\nEVM provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance."
+    "text": "Vaccines are among the most effective public-health interventions"
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-framework",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-framework",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "The Framework",
-    "text": "The Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\nIt is organised by:\n\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nQuestions: are asked to assess whether a requirement has been met."
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#coverage-disparities-exist-within-and-between-regions",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Coverage disparities exist within and between regions",
+    "text": "Coverage disparities exist within and between regions"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-2",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "",
-    "text": "EVM Dataset Overview\n\nAssessments from 82 countries between 2019 and 2026.\n\n4287 health facilities (rows).\n1108 variables (columns).\n\n1286 potential questions.\n\n871 requirements, 19 criteria and 8 categories.\nScores range from 0 to 5."
+    "text": "19.9 Million\nMissed vaccines\n\n13.5 Million\nZero-dose\n\n4.9 Million\nUnder-five mortality"
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-turns-supply-chain-performance-into-measurable-evidence",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-turns-supply-chain-performance-into-measurable-evidence",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "EVM turns supply-chain performance into measurable evidence",
-    "text": "EVM turns supply-chain performance into measurable evidence\nEffective Vaccine Management EVM provides a systematic assessment of how well the immunisation supply chain is functioning.\nEVM examines the capabilities, processes and practices that should make reliable availability possible.\nIt covers areas such as:\nInfrastructure and cold chain · Temperature management · Stock management · Forecasting, Distribution · Information systems· Maintenance · Management practices, and more"
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#having-the-vaccine-is-not-enough",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#having-the-vaccine-is-not-enough",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Having the vaccine is not enough",
+    "text": "Having the vaccine is not enough\nA vaccine only saves a life if it reaches the child."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#what-could-have-gone-wrong",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#what-could-have-gone-wrong",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "What could have gone wrong?",
+    "text": "What could have gone wrong?\nThe child arrives. But the vaccine is not available. Why?"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-supply-chain-connects-vaccines-to-health-outcomes",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-supply-chain-connects-vaccines-to-health-outcomes",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "The supply chain connects vaccines to health outcomes",
+    "text": "The supply chain connects vaccines to health outcomes"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "",
+    "text": "A global initiative to improve immunisation supply chain\nA national planning process endorsed and supported by WHO and UNICEF\nEffective Vaccine Management (EVM) provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "EVM Framework",
+    "text": "EVM Framework\nThe EVM assessment framework defines the way in which vaccine supply chain systems are assessed.\n\n\nIt is organised by:\n\nQuestions: are asked to assess whether a requirement has been met.\nRequirements: the attributes that a well-functioning immunisation supply chain must have.\nRequirements could be inputs, outputs or performance measures.\nCriteria: the operational or management functions that health facilities must perform.\nCategories: the necessary inputs, outputs and performance of health facilities.\n\n\n\n\nAssessments from 82 countries between 2019 and 2026.\n1286 potential questions\nover 4000 health facilities\n900 requirements, 19 criteria and 8 categories\nScores range from 0 to 5."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#data---scores",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#data---scores",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "Data - Scores",
     "text": "Data - Scores"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-creates-an-analytical-opportunity",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-creates-an-analytical-opportunity",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "EVM creates an analytical opportunity",
-    "text": "EVM creates an analytical opportunity\nEVM tells us where requirements are being met — and where weaknesses exist.\nBut a further question matters for decision-makers:\n\nWhich supply chain requirements are associated with better vaccine availability?"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#our-focus-service-points",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#our-focus-service-points",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Our focus: Service Points",
-    "text": "Our focus: Service Points\nThe analysis focuses on Service Point (SP) facilities — the places closest to where vaccines are ultimately delivered to people.\nOutcome: Vaccine availability (AV)\nIndependent variables of interest: The facility’s EVM requirements.\nContext: Country and target population are used as adjustments rather than treated as the requirements of interest."
+    "text": "EVM creates an analytical opportunity\n\n\n\n\n\n\nEVM already tells us where requirements are being met.\nBut we want to go one step further:\nWhich requirements are associated with higher/lower vaccine availability?\n\n\n\nWe focus on Service Point (SP) facilities\n\nOutcome: Vaccine availability (AV)\nIndependent variables of interest: The facility’s EVM requirements.\nContext: Country and target population are used as adjustments rather than treated as the requirements of interest."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-categorized-and-ordered",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#availability-is-categorized-and-ordered",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "Availability is categorized and ordered",
-    "text": "Availability is categorized and ordered\n\n\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1"
+    "text": "Availability is categorized and ordered\n\n\n\nBand\nAvailability\n\n\n\n\n1 — None\nAV = 0\n\n\n2 — Critical\n0 &lt; AV ≤ 0.25\n\n\n3 — Low\n0.25 &lt; AV ≤ 0.50\n\n\n4 — Moderate\n0.50 &lt; AV ≤ 0.75\n\n\n5 — Good\n0.75 &lt; AV &lt; 1\n\n\n6 — Full\nAV = 1"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#the-analytical-workflow",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#the-analytical-workflow",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "The analytical workflow",
     "text": "The analytical workflow"
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#finding-signal-among-many-requirements",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#finding-signal-among-many-requirements",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Finding signal among many requirements",
-    "text": "Finding signal among many requirements\nThere are too many correlated candidate requirements to fit safely in one ordinary model.\nThe analysis therefore uses two stages:"
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#results",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#results",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Results",
+    "text": "Results"
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-1-selecting-the-requirements",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-1-selecting-the-requirements",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Model B — Stage 1: Selecting the requirements",
-    "text": "Model B — Stage 1: Selecting the requirements\nThe outcome \\(\\text{AV}_i\\) is one of six ordered bands. A penalised cumulative-logit (ordinal) model links the requirements to availability:\n\\[\n\\text{logit}\\big(P(\\text{AV}_i \\le k)\\big) \\;=\\; \\theta_k \\;-\\; \\sum_{j=1}^{p}\\Big( \\beta_j\\, R^{\\text{s}}_{ij} \\;+\\; \\gamma_j\\, R^{\\text{I}}_{ij} \\Big) \\;-\\; \\delta\\, \\text{Pop}_i\n\\]\nfor bands \\(k = 1,\\dots,5\\), where each requirement enters twice:\n\n\\(R^{\\text{s}}_{ij}\\) — score of requirement \\(j\\) (0–5) at facility \\(i\\)\n\\(R^{\\text{I}}_{ij}\\) — applicability flag (1 if requirement \\(j\\) is not applicable)\n\\(\\text{Pop}_i\\) — \\(\\log_{10}\\) target population\n\nThe coefficients are estimated under an \\(\\ell_1\\) (lasso) penalty:\n\\[\n\\hat{\\boldsymbol{\\beta}},\\hat{\\boldsymbol{\\gamma}} \\;=\\; \\arg\\min \\; \\Big\\{ -\\ell(\\boldsymbol{\\beta},\\boldsymbol{\\gamma},\\delta) \\;+\\; \\lambda \\sum_{j=1}^{p} \\big( |\\beta_j| + |\\gamma_j| \\big) \\Big\\}\n\\]\nThe penalty \\(\\lambda\\) forces most coefficients to exactly zero; the non-zero ones — stable across bootstrap resamples — form the shortlist carried to Stage 2."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-2-estimating-the-odds-ratios",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#model-b-stage-2-estimating-the-odds-ratios",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Model B — Stage 2: Estimating the odds ratios",
-    "text": "Model B — Stage 2: Estimating the odds ratios\nThe selected requirements are re-fitted with an unpenalised mixed cumulative-logit model, adding a country random intercept \\(u_{c[i]}\\):\n\\[\n\\text{logit}\\big(P(\\text{AV}_i \\le k)\\big) \\;=\\; \\theta_k \\;-\\; \\sum_{j \\in \\mathcal{S}} \\Big( \\beta_j\\, R^{\\text{s}}_{ij} + \\gamma_j\\, R^{\\text{I}}_{ij} \\Big) \\;-\\; \\delta\\,\\text{Pop}_i \\;-\\; u_{c[i]}\n\\]\n\\[\nu_{c} \\;\\sim\\; \\mathcal{N}\\!\\left(0,\\; \\sigma^2_{\\text{country}}\\right)\n\\]\nwhere \\(\\mathcal{S}\\) is the shortlist from Stage 1 and \\(c[i]\\) is the country of facility \\(i\\).\nThe reportable effect size for each requirement is the odds ratio:\n\\[\n\\text{OR}_j \\;=\\; e^{\\beta_j}, \\qquad \\text{95\\% CI} \\;=\\; e^{\\,\\beta_j \\,\\pm\\, 1.96\\,\\text{SE}(\\beta_j)}\n\\]\n\n\\(\\text{OR}_j &gt; 1\\) → requirement \\(j\\) associated with higher availability\n\\(\\text{OR}_j &lt; 1\\) → associated with lower availability"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "We ask the question three ways",
-    "text": "We ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population."
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Main results — Model B",
-    "text": "Main results — Model B"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b-1",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#main-results-model-b-1",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Main results — Model B",
-    "text": "Main results — Model B"
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#results-1",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#results-1",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Results",
+    "text": "Results"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#agreement-across-models-is-the-robust-core",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#agreement-across-models-is-the-robust-core",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "Agreement across models is the robust core",
     "text": "Agreement across models is the robust core\nA requirement that changes direction or disappears across specifications should be treated more cautiously."
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#what-the-analysis-can-and-cannot-tell-us",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#what-the-analysis-can-and-cannot-tell-us",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "What the analysis can — and cannot — tell us",
-    "text": "What the analysis can — and cannot — tell us\nThe analysis can identify requirements that consistently go together with higher or lower vaccine availability, after accounting for important contextual differences.\nIt can help programmes identify where to investigate, prioritise and improve.\nBut the data are cross-sectional:\n\nAssociation is not proof of causation.\n\nA requirement associated with higher availability is not automatically a guaranteed lever that will cause availability to increase if changed.\nThe results are best viewed as a robust evidence-based ranking of where to look first."
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#what-this-tells-who",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#what-this-tells-who",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "What this tells WHO",
+    "text": "What this tells WHO\nTwenty-six requirements are associated with availability consistently across all three models (within-country, global, and without population).\nThe clearest, strongest signal — a red flag\n\nCold storage capacity (R0040). Facilities where this is not applicable — i.e. that have no adequate cold storage — have dramatically lower availability.\n\nRequirements that go with higher availability\n\nSOPs and temperature monitoring — SOPs for temperature monitoring (R0306) and for packing insulated containers (R0316).\nRecord quality — VVM-status field on the receipt form (R0211); staff can correctly read a 30DTR (R0269).\nWaste handling — colour-coded waste bins (R0130)."
   },
   {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#closing-the-loop-from-measurement-to-action",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#closing-the-loop-from-measurement-to-action",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Closing the loop: from measurement to action",
-    "text": "Closing the loop: from measurement to action\n\nIdentify supply-chain weaknesses\nPrioritise requirements associated with availability\nTarget improvement through cIPs and investment\nImprove reliable vaccine availability\nMore opportunities to vaccinate children\nBetter coverage, greater equity, lives protected"
-  },
-  {
-    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
-    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
-    "section": "Any questions or comments? 💬",
-    "text": "Any questions or comments? 💬"
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#next-steps",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#next-steps",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Next steps",
+    "text": "Next steps\n\nModel at the category level: Aggregate requirements into EVM function-category scores (cold storage, records, SOPs, staffing, funding…).\n\n2. Test for bottlenecks: Use a decision tree to check if availability needs a critical few requirements together, not each alone.\n3. Review odd signals: Investigate requirements pointing the unexpected way — likely proxies, not real effects.\n4. Toward causal evidence: Repeated assessments over time , test whether improving a requirement raises availability."
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
-    "title": "What Drives Vaccine Availability at Health Facilities?",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "References",
-    "text": "References\n\nEffective Vaccine Management (EVM) Initiative\nUNICEF Immunization Data\n\n\n\n\n\nImage credit: Unsplash"
+    "text": "References\n\nEffective Vaccine Management (EVM) Initiative\nUNICEF Immunization Data\n\n\n\nImage credit: Unsplash, ChatGPt"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Any questions or comments? 💬",
+    "text": "Any questions or comments? 💬"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#stage-1-selecting-the-requirements",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#stage-1-selecting-the-requirements",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Stage 1: Selecting the requirements",
+    "text": "Stage 1: Selecting the requirements\n\n\nA penalised ordinal (cumulative-logit) lasso on all candidate requirements + population. Availability \\(\\text{AV}_i\\) is one of six ordered bands.\n\\[\n\\text{logit}\\big(P(\\text{AV}_i \\ge k)\\big) = \\beta_{0k} + \\sum_{j=1}^{p}\\Big( \\beta_j R^{\\text{s}}_{ij} + \\gamma_j R^{\\text{I}}_{ij} \\Big) + \\delta\\,\\text{Pop}_i\n\\]\nCoefficients minimise the penalised likelihood:\n\\[\n\\min \\; \\Big\\{ -\\ell(\\boldsymbol\\beta,\\boldsymbol\\gamma,\\delta) + \\lambda \\sum_{j=1}^{p}\\big(|\\beta_j| + |\\gamma_j|\\big) \\Big\\}\n\\]\n\n\n\\(R^{\\text{s}}_{ij}\\) — score of requirement \\(j\\) (0–5)\n\\(R^{\\text{I}}_{ij}\\) — applicability flag (1 = not applicable)\n\\(\\text{Pop}_i\\) — \\(\\log_{10}\\) target population\n\\(\\lambda\\) — penalty strength (tuned by cross-validation)\n\nWhat it does\n\nThe penalty forces most coefficients to exactly zero.\nRepeated on 1000 bootstrap resamples → each requirement’s selection frequency.\nKeep those selected in ≥ 60% → shortlist \\(\\mathcal{S}\\).\nCountry is not in Stage 1 (enters only in Stage 2)."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#stage-2-estimating-the-odds-ratios",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#stage-2-estimating-the-odds-ratios",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "Stage 2: Estimating the odds ratios",
+    "text": "Stage 2: Estimating the odds ratios\n\n\nThe shortlist \\(\\mathcal{S}\\) is re-fitted with an unpenalised mixed ordinal model, adding a country random intercept \\(u_{c[i]}\\):\n\\[\n\\text{logit}\\big(P(\\text{AV}_i \\le k)\\big) = \\theta_k - \\sum_{j \\in \\mathcal{S}}\\Big( \\beta_j R^{\\text{s}}_{ij} + \\gamma_j R^{\\text{I}}_{ij} \\Big) - \\delta\\,\\text{Pop}_i - u_{c[i]}\n\\]\n\\[\nu_c \\sim \\mathcal{N}\\!\\big(0,\\ \\sigma^2_{\\text{country}}\\big)\n\\]\nReportable effect size — the odds ratio:\n\\[\n\\text{OR}_j = e^{\\beta_j}, \\qquad \\text{95\\% CI} = e^{\\,\\beta_j \\pm 1.96\\,\\text{SE}(\\beta_j)}\n\\]\n\n\n\\(\\mathcal{S}\\) — requirements kept from Stage 1\n\\(u_{c[i]}\\) — country random intercept: each country its own baseline availability, drawn from a shared distribution\n\\(\\sigma^2_{\\text{country}}\\) — between-country variance\n\\(\\theta_k\\) — the five band thresholds\n\nReading the OR\n\n\\(\\text{OR}_j &gt; 1\\) → higher availability\n\\(\\text{OR}_j &lt; 1\\) → lower availability\nFar from 1 = strong; interval excluding 1 = statistically clear"
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#we-ask-the-question-three-ways",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "We ask the question three ways",
+    "text": "We ask the question three ways\n\n\nModel B — Main\nAcross all facilities, which requirements are linked to availability?\nAdjusts for country context and target population.\n\nModel A — Country check\nWhen facilities are compared within their own country, which requirements still matter?\nRemoves the possibility that a requirement looks important simply because of its country.\n\nModel C — Size check\nWhat happens when facility size is not used?\nChecks whether findings are driven by target population."
   },
   {
     "objectID": "talks/2026/2026-2-gw4/slides/gw4.html#an-unexpected-journey",
