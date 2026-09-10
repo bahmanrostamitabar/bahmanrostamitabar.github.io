@@ -473,7 +473,14 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-3",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "",
-    "text": "A global initiative to improve immunisation supply chain\nA national planning process endorsed and supported by WHO and UNICEF\nEffective Vaccine Management (EVM) provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance.\n\n\n\n\n\n\n\nOutline\n\nEVM framework and data\nFrom EVM assessment to analytics\nWhat drives vaccine availability?\nImplications for immunisation supply chains\nFuture work"
+    "text": "A global initiative to improve immunisation supply chain\nA national planning process endorsed and supported by WHO and UNICEF\nEffective Vaccine Management (EVM) provides materials and tools needed to monitor and assess vaccine supply chains and help countries improve their supply chain performance."
+  },
+  {
+    "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#section-4",
+    "href": "talks/2026/2026-2-who/slides/2026-2-who.html#section-4",
+    "title": "What Drives Routine Vaccine Availability at Health Facilities?",
+    "section": "",
+    "text": "Outline\n\nEVM framework and data\nFrom EVM assessment to analytics\nWhat drives vaccine availability?\nImplications for immunisation supply chains\nFuture work"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#evm-framework",
@@ -550,7 +557,7 @@
     "href": "talks/2026/2026-2-who/slides/2026-2-who.html#references",
     "title": "What Drives Routine Vaccine Availability at Health Facilities?",
     "section": "References",
-    "text": "References\n\nEffective Vaccine Management (EVM) Initiative\nUNICEF Immunization Data\nGavi immunisation Supply Chain strategy (iSC) 2026–2030\nPenalized Ordinal Regression\nordinal: Regression Models for Ordinal Data :::aside Image credit: Unsplash, ChatGPT :::"
+    "text": "References\n\nEffective Vaccine Management (EVM) Initiative\nUNICEF Immunization Data\nGavi immunisation Supply Chain strategy (iSC) 2026–2030\nPenalized Ordinal Regression\nordinal: Regression Models for Ordinal Data\n\n\n\nImage credit: Unsplash, ChatGPT"
   },
   {
     "objectID": "talks/2026/2026-2-who/slides/2026-2-who.html#any-questions-or-comments",
