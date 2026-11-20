@@ -225,13 +225,30 @@ window.Quarto = {
 
 
 <style>
-main table td:nth-child(1)   { white-space: nowrap; opacity: .7; }
-main table td:nth-child(2) a { font-weight: 600; text-decoration: none; }
-main table td:nth-child(5) a {
-  display: inline-block; padding: 2px 10px; border: 1px solid #CA225E; border-radius: 10px;
-  color: #CA225E !important; font-size: .8rem; font-weight: 600; text-decoration: none;
-}
+main table thead               { display: none; }
+main table, main table tbody   { display: block; width: 100%; }
+main table tr                  { display: grid; grid-template-columns: 7rem auto auto 1fr;
+                                 column-gap: .8rem; row-gap: .2rem; padding: 1rem 0;
+                                 border-bottom: 1px solid rgba(128,128,128,.2); }
+main table td                  { display: block; padding: 0 !important; border: 0 !important;
+                                 background: none !important; box-shadow: none !important; text-align: left; }
+main table td:nth-child(1)     { grid-column: 1; grid-row: 1 / span 3; font-weight: 600; opacity: .6; }
+main table td:nth-child(2)     { grid-column: 2 / -1; grid-row: 1; }
+main table td:nth-child(2) a   { font-size: 1.08rem; font-weight: 600; line-height: 1.4; text-decoration: none; }
+main table td:nth-child(3)     { grid-column: 2; grid-row: 2; font-size: .93rem; }
+main table td:nth-child(4)     { grid-column: 3; grid-row: 2; font-size: .93rem; opacity: .65; }
+main table td:nth-child(5)     { grid-column: 2 / -1; grid-row: 3; margin-top: .25rem; }
+main table td:nth-child(5) a   { display: inline-block; padding: 1px 10px; border: 1px solid #CA225E; border-radius: 10px;
+                                 color: #CA225E !important; font-size: .78rem; font-weight: 600; text-decoration: none; }
 main table td:nth-child(5) a:hover { background: #CA225E; color: #fff !important; }
+@media (max-width: 600px) {
+  main table tr                { grid-template-columns: auto 1fr; }
+  main table td:nth-child(1)   { grid-column: 1 / -1; grid-row: 1; }
+  main table td:nth-child(2)   { grid-column: 1 / -1; grid-row: 2; }
+  main table td:nth-child(3)   { grid-column: 1; grid-row: 3; }
+  main table td:nth-child(4)   { grid-column: 2; grid-row: 3; }
+  main table td:nth-child(5)   { grid-column: 1 / -1; grid-row: 4; }
+}
 </style>
 
 
@@ -253,19 +270,19 @@ Date
 </th>
 
 <th>
-Talk
+Title
 </th>
 
 <th>
-Event
+venue
 </th>
 
 <th>
-Location
+location
 </th>
 
 <th>
-PDF
+slides-pdf
 </th>
 
 </tr>
