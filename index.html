@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Professor of Analytics and Decision Sciences at Cardiff University. Uncertainty, analytics, and decision quality.">
+<meta name="description" content="Professor of Analytics and Decision Sciences at Cardiff University. Uncertainty &amp; Futures, analytics, and decision quality.">
 
 <title>Bahman Rostami-Tabar</title>
 <style>
@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Bahman Rostami-Tabar">
-<meta property="og:description" content="Professor of Analytics and Decision Sciences at Cardiff University. Uncertainty, analytics, and decision quality.">
+<meta property="og:description" content="Professor of Analytics and Decision Sciences at Cardiff University. Uncertainty &amp; Futures, analytics, and decision quality.">
 <meta property="og:image" content="https://bahmanrostamitabar.github.io/images/bahman.jpg">
 </head>
 
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 
   /* ---------- moving forecast chart ---------- */
   .fan-wrap        { margin: .5rem 0 0; }
-  .fan             { display: block; width: 100%; height: 230px; }
+  .fan             { display: block; width: 100%; height: 300px; }
   .fan-caption     { font-size: .82rem; opacity: .65; margin-top: .4rem; }
 
   /* ---------- sections and cards ---------- */
@@ -211,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
     .hero img      { width: 160px; height: 160px; order: -1; }
     .hero h1       { font-size: 2.1rem; }
     .hero .role    { min-height: 3.2em; }
-    .fan           { height: 170px; }
+    .fan           { height: 210px; }
   }
 </style>
 
@@ -219,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
   <div>
     
     <div class="theme">
-      <span>Uncertainty</span><span class="sep">→</span><span>Analytics</span><span class="sep">→</span><span>Decision quality</span>
+      <span>Uncertainty &amp; Futures</span><span class="sep">→</span><span>Analytics</span><span class="sep">→</span><span>Decision quality</span>
     </div>
     <div class="role">
       <span class="typed" data-roles="Professor of Analytics and Decision Sciences, Cardiff University|Founder and Director, Data Lab for Social Good|Theme Lead, Uncertainty &amp; the Future, DTII">Professor of Analytics and Decision Sciences, Cardiff University</span><span class="caret" aria-hidden="true"></span>
@@ -229,12 +229,8 @@ ul.task-list li input[type="checkbox"] {
       Drawing on Data Science, AI, and Operations Research, I develop and apply
       methods that support better choices in complex and uncertain futures.
     </p>
-    <div class="cta">
-      <a class="btn btn-primary" href="publications.html">Publications</a>
-      <a class="btn btn-outline-primary" href="projects.html">Projects</a>
-    </div>
+
     <div class="links">
-      <a href="mailto:rostami-tabarb@cardiff.ac.uk"><i class="bi bi-envelope-at-fill"></i> E-mail</a>
       <a href="https://github.com/bahmanrostamitabar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
       <a href="https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
       <a href="https://scholar.google.com/citations?hl=en&amp;user=PeVrdqUAAAAJ" target="_blank" rel="noopener"><i class="bi bi-bookmark-star-fill"></i> Google Scholar</a>
@@ -246,10 +242,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 <div class="fan-wrap">
-  <canvas class="fan" role="img" aria-label="Animated illustration of a rolling-origin probabilistic forecast: past observations, prediction intervals, and new observations arriving."></canvas>
+  <canvas class="fan" role="img" aria-label="Animated illustration of rolling-origin forecasting: past observations and fitted values, then a forecast distribution for each future period, with new observations arriving."></canvas>
   <p class="fan-caption">
-    Illustrative simulation, not real data. Line: past observations. Shaded bands: 50%, 80% and 95% prediction intervals
-    from the forecast origin (dashed). Dots: observations as they arrive, before the forecast is updated.
+    Illustrative simulation, not real data. Triangles: observations. Squares: one-step-ahead forecasts.
+    For each future period: the forecast distribution (histogram), its median (dot), and 50% and 90% intervals (thick and thin bars).
+    Coloured triangles: observations as they arrive, before the forecast is updated.
   </p>
 </div>
 <div class="section-label">
@@ -360,14 +357,14 @@ Recent publications
     });
   }
 
-  /* 3. Rolling-origin probabilistic forecast (simulated seasonal AR(1) process).
-        The intervals are the exact h-step-ahead predictive quantiles of that process. */
+  /* 3. Rolling-origin forecast distributions (simulated weekly-seasonal AR(1) process).
+        For each future period, the distribution is a histogram of simulated future paths. */
   var cv = document.querySelector('canvas.fan');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d');
-  var HIST = 60, H = 24, STEP = 260, PAUSE = 1400, SLIDE = 1100;
-  var PHI = 0.8, SIGMA = 0.5, AMP = 1.0, Z = [1.96, 1.282, 0.674];
-  var SD_INF = SIGMA / Math.sqrt(1 - PHI * PHI), RANGE = (AMP + 3 * SD_INF) * 1.05;
+  var HIST = 14, H = 7, NPATH = 600, BINS = 44, STEP = 650, PAUSE = 1600, SLIDE = 1200;
+  var PHI = 0.6, SIGMA = 0.6, AMP = 0.6;
+  var SD_INF = SIGMA / Math.sqrt(1 - PHI * PHI), RANGE = AMP + 3.3 * SD_INF, BH = 2 * RANGE / BINS;
   var W = 0, Hh = 0, ink = '#333', accent = '#2a6fdb';
 
   function randn() {
@@ -376,10 +373,34 @@ Recent publications
   }
   var dev = [SD_INF * randn()];
   function ensure(n) { while (dev.length <= n) dev.push(PHI * dev[dev.length - 1] + SIGMA * randn()); }
-  function season(t) { return AMP * Math.sin(2 * Math.PI * t / 12); }
-  function obs(t) { return season(t) + dev[t]; }
-  function mean(o, h) { return season(o + h) + Math.pow(PHI, h) * dev[o]; }
-  function sd(h) { return SIGMA * Math.sqrt((1 - Math.pow(PHI, 2 * h)) / (1 - PHI * PHI)); }
+  function season(t) { return AMP * Math.sin(2 * Math.PI * t / 7); }
+  function observed(t) { return season(t) + dev[t]; }
+  function fitted(t) { return season(t) + PHI * dev[t - 1]; }   /* one-step-ahead forecast */
+
+  var cache = {};
+  function dist(o) {                                 /* forecast distributions from origin o */
+    if (cache[o]) return cache[o];
+    var s = [], h, k, d, peak = 0;
+    for (h = 0; h < H; h++) s.push([]);
+    for (k = 0; k < NPATH; k++) {
+      d = dev[o];
+      for (h = 0; h < H; h++) { d = PHI * d + SIGMA * randn(); s[h].push(season(o + h + 1) + d); }
+    }
+    var out = s.map(function (a) {
+      a.sort(function (x, y) { return x - y; });
+      var c = [], b;
+      for (b = 0; b < BINS; b++) c.push(0);
+      a.forEach(function (v) {
+        var j = Math.floor((v + RANGE) / BH);
+        if (j >= 0 && j < BINS) { c[j]++; if (c[j] > peak) peak = c[j]; }
+      });
+      function q(p) { return a[Math.min(a.length - 1, Math.floor(p * a.length))]; }
+      return { c: c, med: q(0.5), lo90: q(0.05), lo50: q(0.25), hi50: q(0.75), hi90: q(0.95) };
+    });
+    out.peak = peak;
+    cache[o] = out;
+    return out;
+  }
 
   function colours() {
     var cs = getComputedStyle(document.body);
@@ -395,55 +416,69 @@ Recent publications
   }
 
   function render(o, shown, e) {
-    var vs = o - HIST + e * H;                       /* left edge of the window, in time units */
-    function X(t) { return (t - vs) / (HIST + H) * W; }
+    var vs = o - HIST + e * H, dx = W / (HIST + H + 1.3);
+    function X(t) { return (t - vs + 0.6) * dx; }
     function Y(v) { return Hh / 2 - v / RANGE * (Hh / 2 - 6); }
     ctx.clearRect(0, 0, W, Hh);
 
-    function fan(org, alpha) {
-      if (alpha <= 0) return;
-      var h, k;
-      ctx.fillStyle = accent;
-      for (k = 0; k < Z.length; k++) {
-        ctx.globalAlpha = alpha * 0.14;
-        ctx.beginPath();
-        for (h = 0; h <= H; h++) ctx.lineTo(X(org + h), Y(mean(org, h) + Z[k] * sd(h)));
-        for (h = H; h >= 0; h--) ctx.lineTo(X(org + h), Y(mean(org, h) - Z[k] * sd(h)));
-        ctx.closePath(); ctx.fill();
-      }
-      ctx.globalAlpha = alpha * 0.9; ctx.strokeStyle = accent; ctx.lineWidth = 1.5;
-      ctx.beginPath();
-      for (h = 0; h <= H; h++) ctx.lineTo(X(org + h), Y(mean(org, h)));
-      ctx.stroke();
-      ctx.globalAlpha = alpha * 0.5; ctx.strokeStyle = ink; ctx.lineWidth = 1;
-      ctx.setLineDash([4, 4]);
-      ctx.beginPath(); ctx.moveTo(X(org), 0); ctx.lineTo(X(org), Hh); ctx.stroke();
-      ctx.setLineDash([]);
+    function vbar(x, a, b, lw) {
+      ctx.lineWidth = lw; ctx.beginPath(); ctx.moveTo(x, Y(a)); ctx.lineTo(x, Y(b)); ctx.stroke();
     }
-    function line(from, to, alpha) {
-      if (alpha <= 0 || to <= from) return;
-      ctx.globalAlpha = alpha; ctx.strokeStyle = ink; ctx.lineWidth = 1.6;
-      ctx.beginPath();
-      for (var t = Math.max(0, from); t <= to; t++) ctx.lineTo(X(t), Y(obs(t)));
+    function fan(org, alpha) {
+      if (alpha <= 0.01) return;
+      var D = dist(org), h, b, x, top;
+      for (h = 0; h < H; h++) {                      /* half-histograms to the right of each period */
+        x = X(org + h + 1);
+        ctx.fillStyle = accent; ctx.globalAlpha = alpha * 0.38;
+        for (b = 0; b < BINS; b++) {
+          if (!D[h].c[b]) continue;
+          top = Y(-RANGE + (b + 1) * BH);
+          ctx.fillRect(x, top, D[h].c[b] / D.peak * 0.82 * dx * alpha, Y(-RANGE + b * BH) - top + 0.5);
+        }
+      }
+      ctx.globalAlpha = alpha; ctx.strokeStyle = ink; ctx.fillStyle = ink;
+      ctx.lineWidth = 1.4; ctx.beginPath();          /* line through the medians */
+      for (h = 0; h < H; h++) ctx.lineTo(X(org + h + 1), Y(D[h].med));
       ctx.stroke();
+      for (h = 0; h < H; h++) {
+        x = X(org + h + 1);
+        vbar(x, D[h].lo90, D[h].hi90, 2);            /* 90% interval */
+        vbar(x, D[h].lo50, D[h].hi50, 5);            /* 50% interval */
+        ctx.beginPath(); ctx.arc(x, Y(D[h].med), 4.5, 0, 2 * Math.PI); ctx.fill();
+      }
+    }
+    function series(fn, from, to, mFrom, alpha, colour, shape) {
+      if (alpha <= 0.01 || to < mFrom) return;
+      var t, x, y;
+      ctx.globalAlpha = alpha; ctx.strokeStyle = colour; ctx.fillStyle = colour; ctx.lineWidth = 1.4;
+      ctx.beginPath();
+      for (t = Math.max(1, from); t <= to; t++) ctx.lineTo(X(t), Y(fn(t)));
+      ctx.stroke();
+      for (t = Math.max(1, mFrom); t <= to; t++) {
+        x = X(t); y = Y(fn(t));
+        ctx.beginPath();
+        if (shape === 'triangle') { ctx.moveTo(x, y - 5); ctx.lineTo(x + 4.6, y + 3.4); ctx.lineTo(x - 4.6, y + 3.4); ctx.closePath(); }
+        else { ctx.rect(x - 3.3, y - 3.3, 6.6, 6.6); }
+        ctx.fill();
+      }
     }
 
+    var left = Math.floor(vs) - 1;
     fan(o, 1 - e);
     fan(o + H, e);
-    line(Math.floor(vs) - 1, o, 0.85);
-    line(o, o + H, 0.85 * e);                       /* arrived observations join the history */
-    ctx.fillStyle = ink; ctx.globalAlpha = 0.9 * (1 - e);
-    for (var h = 1; h <= shown; h++) {
-      ctx.beginPath(); ctx.arc(X(o + h), Y(obs(o + h)), 2.6, 0, 2 * Math.PI); ctx.fill();
-    }
+    series(fitted, left, o, left, 0.8, ink, 'square');
+    series(observed, left, o, left, 0.9, ink, 'triangle');
+    series(observed, o, o + shown, o + 1, 1 - e, accent, 'triangle');   /* arriving observations */
+    series(fitted, o, o + H, o + 1, 0.8 * e, ink, 'square');            /* then they join the history */
+    series(observed, o, o + H, o + 1, 0.9 * e, ink, 'triangle');
     ctx.globalAlpha = 1;
   }
 
   var origin = HIST, clock = 0, last = null, phase = 'reveal', visible = true;
   ensure(origin + 2 * H); colours(); size();
-  window.addEventListener('resize', function () { size(); if (still) render(origin, H / 2, 0); });
+  window.addEventListener('resize', function () { size(); if (still) render(origin, 3, 0); });
 
-  if (still) { render(origin, H / 2, 0); return; }  /* one static frame, no motion */
+  if (still) { render(origin, 3, 0); return; }      /* one static frame, no motion */
 
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(cv);
@@ -459,7 +494,7 @@ Recent publications
       } else {
         var p = Math.min(1, clock / SLIDE);
         render(origin, H, p * p * (3 - 2 * p));
-        if (p >= 1) { origin += H; phase = 'reveal'; clock = 0; ensure(origin + 2 * H); }
+        if (p >= 1) { delete cache[origin]; origin += H; phase = 'reveal'; clock = 0; ensure(origin + 2 * H); }
       }
     }
     requestAnimationFrame(frame);
