@@ -102,3 +102,12 @@
     grid-template-columns: 1fr;
   }
 }
+
+.participant-role {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #777;
+    margin-bottom: 0.2rem;
+}
