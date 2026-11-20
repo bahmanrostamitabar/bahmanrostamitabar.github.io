@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-venue','listing-location','listing-slides-html','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-venue','listing-location','listing-slides-html','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -225,32 +225,15 @@ window.Quarto = {
 
 
 <style>
-.listing-table td.listing-slides-html a {
-  display: inline-block;
-  padding: 4px 10px;
-  background-color: #007bff;
-  color: white !important;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-decoration: none;
+td.listing-date                      { white-space: nowrap; opacity: .7; }
+td.listing-title a                   { font-weight: 600; text-decoration: none; }
+td.listing-slides-html a,
+td.listing-slides-pdf a {
+  display: inline-block; padding: 2px 10px; border: 1px solid #CA225E; border-radius: 10px;
+  color: #CA225E !important; font-size: .8rem; font-weight: 600; text-decoration: none;
 }
-
-.listing-table td.listing-slides-pdf a {
-  display: inline-block;
-  padding: 4px 10px;
-  background-color: #6c757d;
-  color: white !important;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.listing-table td.listing-slides-html a:hover,
-.listing-table td.listing-slides-pdf a:hover {
-  opacity: 0.85;
-}
+td.listing-slides-html a:hover,
+td.listing-slides-pdf a:hover        { background: #CA225E; color: #fff !important; }
 </style>
 
 
@@ -258,22 +241,6 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
@@ -284,27 +251,27 @@ window.Quarto = {
 <tr>
 
 <th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+Date
 </th>
 
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+Talk
 </th>
 
 <th>
-venue
+Event
 </th>
 
 <th>
-location
+Location
 </th>
 
 <th>
-slides-html
+Slides
 </th>
 
 <th>
-slides-pdf
+PDF
 </th>
 
 </tr>
@@ -313,10 +280,10 @@ slides-pdf
 
 <tr data-index="0" data-categories="Q29uZmVyZW5jZXMlMkNJbW11bmlzYXRpb24lMjBTdXBwbHklMjBDaGFpbg==" data-listing-date-sort="1788994800000" data-listing-file-modified-sort="1788558342154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24" data-listing-title-sort="What Drives Vaccine Availability at Health Facilities?" data-listing-filename-sort="index.qmd">
 <td>
-<a href="../talks/2026/2026-2-who/index.html" class="title listing-title">What Drives Vaccine Availability at Health Facilities?</a>
+<span class="listing-date">10 Sep 2026</span>
 </td>
 <td>
-<span class="listing-date">Sep 10, 2026</span>
+<a href="../talks/2026/2026-2-who/index.html" class="title listing-title">What Drives Vaccine Availability at Health Facilities?</a>
 </td>
 <td>
 <span class="listing-venue">University of Nottingham</span>
@@ -335,10 +302,10 @@ slides-pdf
 
 <tr data-index="1" data-categories="UGhEJTIwRm91bmRhdGlvbnM=" data-listing-date-sort="1768176000000" data-listing-file-modified-sort="1768254468877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33" data-listing-title-sort="Making slides &amp; delivery tips for scientific presentations" data-listing-filename-sort="index.qmd">
 <td>
-<a href="../talks/2026/2026-1-phdfoundation/index.html" class="title listing-title">Making slides &amp; delivery tips for scientific presentations</a>
+<span class="listing-date">12 Jan 2026</span>
 </td>
 <td>
-<span class="listing-date">Jan 12, 2026</span>
+<a href="../talks/2026/2026-1-phdfoundation/index.html" class="title listing-title">Making slides &amp; delivery tips for scientific presentations</a>
 </td>
 <td>
 <span class="listing-venue">Phd Foundations 2026</span>
@@ -357,10 +324,10 @@ slides-pdf
 
 <tr data-index="2" data-categories="UXVhcnRvJTJDU2xpZGVz" data-listing-date-sort="1757977200000" data-listing-file-modified-sort="1777751891882" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="58" data-listing-title-sort="Making slides with Quarto" data-listing-filename-sort="index.qmd">
 <td>
-<a href="../talks/2025/2025-1-refrence/index.html" class="title listing-title">Making slides with Quarto</a>
+<span class="listing-date">16 Sep 2025</span>
 </td>
 <td>
-<span class="listing-date">Sep 16, 2025</span>
+<a href="../talks/2025/2025-1-refrence/index.html" class="title listing-title">Making slides with Quarto</a>
 </td>
 <td>
 <span class="listing-venue">&nbsp;</span>
