@@ -743,9 +743,7 @@ Recent publications
       ctx.globalAlpha = 0.22; ctx.lineWidth = 1.6;
       poly(past[i].pts, ease(t / T_PAST));
     }
-    ctx.globalAlpha = 0.25 * ease((t - (T_PAST - 300)) / 600);   /* "now" */
-    ctx.lineWidth = 3;
-    ctx.beginPath(); ctx.moveTo(xp, H * 0.06); ctx.lineTo(xp, H * 0.94); ctx.stroke();
+
 
     ctx.globalAlpha = 0.42; ctx.lineWidth = 2.2;            /* the path that happened */
     poly(realPts, ease(t / T_PAST));
