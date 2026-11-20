@@ -232,10 +232,9 @@ main table td                { padding: .7rem .6rem !important; vertical-align: 
 
 /* column widths: the talk title takes the remaining space */
 main table th:nth-child(1)   { width: 7.5rem; }
-main table th:nth-child(3)   { width: 22%; }
-main table th:nth-child(4)   { width: 15%; }
-main table th:nth-child(5),
-main table th:nth-child(6)   { width: 4.6rem; }
+main table th:nth-child(3)   { width: 24%; }
+main table th:nth-child(4)   { width: 16%; }
+main table th:nth-child(5)   { width: 4.6rem; }
 
 /* header: small, quiet labels */
 main table thead th          { font-size: .72rem; font-weight: 700; letter-spacing: .08em;
@@ -247,40 +246,54 @@ main table tbody td          { border-bottom: 1px solid rgba(128,128,128,.16) !i
 main table td:nth-child(1)   { white-space: nowrap; opacity: .65; font-variant-numeric: tabular-nums; }
 main table td:nth-child(2) a { font-weight: 600; text-decoration: none; }
 main table td:nth-child(2) a:hover { text-decoration: underline; }
+main table td:nth-child(3) a { color: inherit; text-decoration: underline;
+                               text-decoration-color: rgba(128,128,128,.5); }
 main table td:nth-child(4)   { opacity: .8; }
 
-/* View and PDF buttons */
-main table td:nth-child(5) a,
-main table td:nth-child(6) a {
+/* PDF button */
+main table td:nth-child(5) a {
   display: inline-block; padding: 1px 9px; border: 1px solid #CA225E; border-radius: 10px;
   color: #CA225E !important; font-size: .72rem; font-weight: 600; text-decoration: none;
 }
-main table td:nth-child(5) a:hover,
-main table td:nth-child(6) a:hover { background: #CA225E; color: #fff !important; }
+main table td:nth-child(5) a:hover { background: #CA225E; color: #fff !important; }
 
 /* filter box and category list, slightly smaller */
 .quarto-listing-filter input,
 .quarto-listing-category     { font-size: .88rem; }
+
+/* year buttons */
+.year-bar            { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .8rem; }
+.year-bar button     { border: 1px solid rgba(128,128,128,.4); background: none; border-radius: 10px;
+                       padding: 1px 12px; font-size: .8rem; font-weight: 600; color: inherit; cursor: pointer; }
+.year-bar button.on  { border-color: #CA225E; background: #CA225E; color: #fff; }
 </style>
 <script>
-/* Adds the "Slides / View" column, using the link of the talk title */
+/* Year buttons: clicking one types the year into the filter box */
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('main table').forEach(function (table) {
-    var head = table.querySelector('thead tr');
-    if (head && head.children.length === 5) {
-      var th = document.createElement('th');
-      th.textContent = 'Slides';
-      head.insertBefore(th, head.children[4]);
-    }
-    table.querySelectorAll('tbody tr').forEach(function (row) {
-      var link = row.querySelector('td:nth-child(2) a');
-      if (!link || row.children.length !== 5) return;
-      var td = document.createElement('td'), a = document.createElement('a');
-      a.href = link.href; a.textContent = 'View'; a.target = '_blank'; a.rel = 'noopener';
-      td.appendChild(a);
-      row.insertBefore(td, row.children[4]);
-    });
+  var table = document.querySelector('main table');
+  var box = document.querySelector('main input[type="text"], main input[type="search"]');
+  if (!table || !box) return;
+  var years = [];
+  table.querySelectorAll('tbody td:first-child').forEach(function (td) {
+    var m = td.textContent.match(/\d{4}/);
+    if (m && years.indexOf(m[0]) === -1) years.push(m[0]);
   });
+  years.sort().reverse();
+  var bar = document.createElement('div');
+  bar.className = 'year-bar';
+  ['All'].concat(years).forEach(function (label) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = label;
+    if (label === 'All') b.className = 'on';
+    b.addEventListener('click', function () {
+      box.value = label === 'All' ? '' : label;
+      ['input', 'keyup'].forEach(function (ev) { box.dispatchEvent(new Event(ev, { bubbles: true })); });
+      bar.querySelectorAll('button').forEach(function (x) { x.className = x === b ? 'on' : ''; });
+    });
+    bar.appendChild(b);
+  });
+  table.parentNode.insertBefore(bar, table);
 });
 </script>
 
@@ -303,7 +316,7 @@ Date
 </th>
 
 <th>
-Talk
+Talk (slides)
 </th>
 
 <th>
