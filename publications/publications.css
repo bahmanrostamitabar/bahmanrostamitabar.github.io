@@ -19,3 +19,12 @@ a.pub-chip       { display: inline-block; font-size: .78rem; font-weight: 600; p
                    border: 1px solid #CA225E; border-radius: 10px; color: #CA225E; text-decoration: none; }
 a.pub-chip:hover { background: #CA225E; color: #fff; }
 h2               { margin-top: 2.2rem; margin-bottom: .6rem; font-weight: 600; }
+/* section heading as a dark bar, list in a rounded box below it */
+h2                    { background: #52647A; color: #fff; font-size: 1rem; font-weight: 700;
+                        padding: .6rem .9rem; margin: 2rem 0 0;
+                        border: 1px solid rgba(128,128,128,.45); border-bottom: 0;
+                        border-radius: 12px 12px 0 0; }
+h2 a                  { color: #fff !important; }
+ul.pub-list           { border: 1px solid rgba(128,128,128,.45); border-top: 0;
+                        border-radius: 0 0 12px 12px; padding: 0 .9rem; margin: 0 0 1.5rem; }
+li.pub:last-child     { border-bottom: 0; }
