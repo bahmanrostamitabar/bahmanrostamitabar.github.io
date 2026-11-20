@@ -211,7 +211,8 @@ ul.task-list li input[type="checkbox"] {
     .hero img      { width: 160px; height: 160px; order: -1; }
     .hero h1       { font-size: 2.1rem; }
     .hero .role    { min-height: 3.2em; }
-    .fan           { height: 210px; }
+    .fan-row          { grid-template-columns: 1fr; }
+    .fan, .fan-detail { height: 210px; }
   }
 </style>
 
@@ -352,15 +353,18 @@ Recent publications
     });
   }
 
-  /* 3. Rolling-origin forecast distributions (simulated weekly-seasonal AR(1) process).
-        For each future period, the distribution is a histogram of simulated future paths. */
+/* 3. Rolling-origin forecast distributions (simulated weekly-seasonal AR(1) process).
+        Left canvas: the series and one forecast distribution per future period.
+        Right canvas: the distribution of the highlighted period, updated together with the left one. */
   var cv = document.querySelector('canvas.fan');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d');
+  var cv2 = document.querySelector('canvas.fan-detail');
+  var ctx2 = cv2 && cv2.getContext ? cv2.getContext('2d') : null;
   var HIST = 14, H = 7, NPATH = 600, BINS = 44, STEP = 650, PAUSE = 1600, SLIDE = 1200;
   var PHI = 0.6, SIGMA = 0.6, AMP = 0.6;
   var SD_INF = SIGMA / Math.sqrt(1 - PHI * PHI), RANGE = AMP + 3.3 * SD_INF, BH = 2 * RANGE / BINS;
-  var W = 0, Hh = 0, ink = '#333', accent = '#CA225E';
+  var W = 0, Hh = 0, W2 = 0, H2 = 0, ink = '#333', accent = '#2a6fdb', font = 'sans-serif';
 
   function randn() {
     var u = 1 - Math.random(), v = Math.random();
@@ -383,40 +387,79 @@ Recent publications
     }
     var out = s.map(function (a) {
       a.sort(function (x, y) { return x - y; });
-      var c = [], b;
+      var c = [], b, own = 0;
       for (b = 0; b < BINS; b++) c.push(0);
       a.forEach(function (v) {
         var j = Math.floor((v + RANGE) / BH);
-        if (j >= 0 && j < BINS) { c[j]++; if (c[j] > peak) peak = c[j]; }
+        if (j >= 0 && j < BINS) { c[j]++; if (c[j] > own) own = c[j]; }
       });
+      if (own > peak) peak = own;
       function q(p) { return a[Math.min(a.length - 1, Math.floor(p * a.length))]; }
-      return { c: c, med: q(0.5), lo90: q(0.05), lo50: q(0.25), hi50: q(0.75), hi90: q(0.95) };
+      return { c: c, own: own, med: q(0.5), lo90: q(0.05), lo50: q(0.25), hi50: q(0.75), hi90: q(0.95) };
     });
     out.peak = peak;
     cache[o] = out;
     return out;
   }
 
-function colours() {
-  var cs = getComputedStyle(document.body);
-  ink = cs.color || ink;
-  var a = cs.getPropertyValue('--bs-link-color').trim();
-  if (a) accent = a;
-}
-
+  function colours() {
+    var cs = getComputedStyle(document.body);
+    ink = cs.color || ink;
+    font = cs.fontFamily || font;
+    var a = cs.getPropertyValue('--bs-link-color').trim();
+    if (a) accent = a;
+  }
+  function fit(c, g) {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2), w = c.clientWidth, h = c.clientHeight;
+    c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
+    g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    return [w, h];
+  }
   function size() {
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    W = cv.clientWidth; Hh = cv.clientHeight;
-    cv.width = Math.round(W * dpr); cv.height = Math.round(Hh * dpr);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var s = fit(cv, ctx); W = s[0]; Hh = s[1];
+    if (ctx2) { s = fit(cv2, ctx2); W2 = s[0]; H2 = s[1]; }
+  }
+
+  /* Right canvas: one forecast distribution, value on the horizontal axis */
+  function detail(org, f, arrived, alpha) {
+    if (!ctx2 || alpha <= 0.01) return;
+    var d = dist(org)[f], base = H2 - 20, top = 30, bw = W2 / BINS, b, x;
+    function XV(v) { return (v + RANGE) / (2 * RANGE) * W2; }
+    ctx2.fillStyle = accent; ctx2.globalAlpha = alpha * 0.38;
+    for (b = 0; b < BINS; b++) {
+      if (!d.c[b]) continue;
+      var bar = d.c[b] / d.own * (base - top);
+      ctx2.fillRect(b * bw, base - bar, bw + 0.5, bar);
+    }
+    ctx2.globalAlpha = alpha; ctx2.strokeStyle = ink; ctx2.fillStyle = ink;
+    ctx2.lineWidth = 2; ctx2.beginPath(); ctx2.moveTo(XV(d.lo90), base); ctx2.lineTo(XV(d.hi90), base); ctx2.stroke();
+    ctx2.lineWidth = 5; ctx2.beginPath(); ctx2.moveTo(XV(d.lo50), base); ctx2.lineTo(XV(d.hi50), base); ctx2.stroke();
+    ctx2.beginPath(); ctx2.arc(XV(d.med), base, 5, 0, 2 * Math.PI); ctx2.fill();
+    if (arrived) {                                   /* where the observation fell */
+      x = XV(observed(org + f + 1));
+      ctx2.strokeStyle = accent; ctx2.fillStyle = accent; ctx2.lineWidth = 2;
+      ctx2.beginPath(); ctx2.moveTo(x, base); ctx2.lineTo(x, top); ctx2.stroke();
+      ctx2.beginPath(); ctx2.moveTo(x, top - 7); ctx2.lineTo(x + 5, top + 1.5); ctx2.lineTo(x - 5, top + 1.5); ctx2.closePath(); ctx2.fill();
+    }
+    ctx2.fillStyle = ink; ctx2.globalAlpha = alpha * 0.7;
+    ctx2.font = '12px ' + font; ctx2.textBaseline = 'top';
+    ctx2.fillText('Forecast distribution, period t+' + (f + 1), 0, 2);
+    ctx2.globalAlpha = 1;
   }
 
   function render(o, shown, e) {
     var vs = o - HIST + e * H, dx = W / (HIST + H + 1.3);
+    var focus = Math.max(0, shown - 1);              /* period shown in the right canvas */
     function X(t) { return (t - vs + 0.6) * dx; }
     function Y(v) { return Hh / 2 - v / RANGE * (Hh / 2 - 6); }
     ctx.clearRect(0, 0, W, Hh);
+    if (ctx2) ctx2.clearRect(0, 0, W2, H2);
 
+    function band(t, alpha) {                        /* marks the highlighted period */
+      if (alpha <= 0.01) return;
+      ctx.globalAlpha = alpha * 0.07; ctx.fillStyle = ink;
+      ctx.fillRect(X(t) - 0.12 * dx, 0, dx, Hh);
+    }
     function vbar(x, a, b, lw) {
       ctx.lineWidth = lw; ctx.beginPath(); ctx.moveTo(x, Y(a)); ctx.lineTo(x, Y(b)); ctx.stroke();
     }
@@ -460,6 +503,8 @@ function colours() {
     }
 
     var left = Math.floor(vs) - 1;
+    band(o + focus + 1, 1 - e);
+    band(o + H + 1, e);
     fan(o, 1 - e);
     fan(o + H, e);
     series(fitted, left, o, left, 0.8, ink, 'square');
@@ -468,6 +513,9 @@ function colours() {
     series(fitted, o, o + H, o + 1, 0.8 * e, ink, 'square');            /* then they join the history */
     series(observed, o, o + H, o + 1, 0.9 * e, ink, 'triangle');
     ctx.globalAlpha = 1;
+
+    detail(o, focus, shown > 0, 1 - e);
+    detail(o + H, 0, false, e);
   }
 
   var origin = HIST, clock = 0, last = null, phase = 'reveal', visible = true;
