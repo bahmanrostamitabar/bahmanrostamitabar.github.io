@@ -212,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
     .hero h1       { font-size: 2.1rem; }
     .hero .role    { min-height: 3.2em; }
     .fan-row          { grid-template-columns: 1fr; }
-    .fan, .fan-detail { height: 210px; }
+    .fan             { display: block; width: 100%; height: 300px; }
   }
 </style>
 
@@ -223,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
       <span>Uncertainty &amp; Futures</span><span class="sep">→</span><span>Analytics</span><span class="sep">→</span><span>Decision quality</span>
     </div>
     <div class="role">
-      <span class="typed" data-roles="Professor of Analytics and Decision Sciences, Cardiff University|Founder and Director, Data Lab for Social Good|Theme Lead, Uncertainty &amp; the Future, DTII">Professor of Analytics and Decision Sciences, Cardiff University</span><span class="caret" aria-hidden="true"></span>
+      <span class="typed" data-roles="Professor of Analytics and Decision Sciences, Cardiff University|Founder and Director, Data Lab for Social Good|Research Excellence Framework (2029) Lead &amp; the Future, DTII">Professor of Analytics and Decision Sciences, Cardiff University</span><span class="caret" aria-hidden="true"></span>
     </div>
     <p class="lead">
       My work sits at the intersection of data, uncertainty, and decision-making.
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 <div class="fan-wrap">
-  <canvas class="fan" role="img" aria-label="Animated illustration of rolling-origin forecasting: past observations and fitted values, then a forecast distribution for each future period, with new observations arriving."></canvas>
+  <canvas class="fan" role="img" aria-label="Animated illustration of probabilistic forecasting: a time series with a forecast distribution for each future period, then one of these distributions shown alone as a histogram with its median and intervals."></canvas>
 </div>
 <div class="section-label">
 <p>Research focus</p>
@@ -353,18 +353,18 @@ Recent publications
     });
   }
 
-/* 3. Rolling-origin forecast distributions (simulated weekly-seasonal AR(1) process).
-        Left canvas: the series and one forecast distribution per future period.
-        Right canvas: the distribution of the highlighted period, updated together with the left one. */
+/* 3. One canvas, two views that alternate (simulated weekly-seasonal AR(1) process):
+        view A: the time series with one forecast distribution per future period;
+        view B: the time series disappears and one of these distributions is shown alone. */
   var cv = document.querySelector('canvas.fan');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d');
-  var cv2 = document.querySelector('canvas.fan-detail');
-  var ctx2 = cv2 && cv2.getContext ? cv2.getContext('2d') : null;
-  var HIST = 14, H = 7, NPATH = 600, BINS = 44, STEP = 650, PAUSE = 1600, SLIDE = 1200;
+  var HIST = 14, H = 7, FOCUS = 3, NPATH = 600, BINS = 44;          /* FOCUS: 0 = first future period */
+  var HOLD = 2600, FADE = 800, SHOWHIST = 4200, STEP = 650, PAUSE = 1400, SLIDE = 1200;   /* milliseconds */
+  var AXIS_MIN = 70, AXIS_MAX = 140;                                  /* value labels in view B */
   var PHI = 0.6, SIGMA = 0.6, AMP = 0.6;
   var SD_INF = SIGMA / Math.sqrt(1 - PHI * PHI), RANGE = AMP + 3.3 * SD_INF, BH = 2 * RANGE / BINS;
-  var W = 0, Hh = 0, W2 = 0, H2 = 0, ink = '#333', accent = '#2a6fdb', font = 'sans-serif';
+  var W = 0, Hh = 0, M = 1, ink = '#333', accent = '#2a6fdb', font = 'sans-serif';
 
   function randn() {
     var u = 1 - Math.random(), v = Math.random();
@@ -409,61 +409,24 @@ Recent publications
     var a = cs.getPropertyValue('--bs-link-color').trim();
     if (a) accent = a;
   }
-  function fit(c, g) {
-    var dpr = Math.min(window.devicePixelRatio || 1, 2), w = c.clientWidth, h = c.clientHeight;
-    c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
-    g.setTransform(dpr, 0, 0, dpr, 0, 0);
-    return [w, h];
-  }
   function size() {
-    var s = fit(cv, ctx); W = s[0]; Hh = s[1];
-    if (ctx2) { s = fit(cv2, ctx2); W2 = s[0]; H2 = s[1]; }
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; Hh = cv.clientHeight;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(Hh * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  /* Right canvas: one forecast distribution, value on the horizontal axis */
-  function detail(org, f, arrived, alpha) {
-    if (!ctx2 || alpha <= 0.01) return;
-    var d = dist(org)[f], base = H2 - 20, top = 30, bw = W2 / BINS, b, x;
-    function XV(v) { return (v + RANGE) / (2 * RANGE) * W2; }
-    ctx2.fillStyle = accent; ctx2.globalAlpha = alpha * 0.38;
-    for (b = 0; b < BINS; b++) {
-      if (!d.c[b]) continue;
-      var bar = d.c[b] / d.own * (base - top);
-      ctx2.fillRect(b * bw, base - bar, bw + 0.5, bar);
-    }
-    ctx2.globalAlpha = alpha; ctx2.strokeStyle = ink; ctx2.fillStyle = ink;
-    ctx2.lineWidth = 2; ctx2.beginPath(); ctx2.moveTo(XV(d.lo90), base); ctx2.lineTo(XV(d.hi90), base); ctx2.stroke();
-    ctx2.lineWidth = 5; ctx2.beginPath(); ctx2.moveTo(XV(d.lo50), base); ctx2.lineTo(XV(d.hi50), base); ctx2.stroke();
-    ctx2.beginPath(); ctx2.arc(XV(d.med), base, 5, 0, 2 * Math.PI); ctx2.fill();
-    if (arrived) {                                   /* where the observation fell */
-      x = XV(observed(org + f + 1));
-      ctx2.strokeStyle = accent; ctx2.fillStyle = accent; ctx2.lineWidth = 2;
-      ctx2.beginPath(); ctx2.moveTo(x, base); ctx2.lineTo(x, top); ctx2.stroke();
-      ctx2.beginPath(); ctx2.moveTo(x, top - 7); ctx2.lineTo(x + 5, top + 1.5); ctx2.lineTo(x - 5, top + 1.5); ctx2.closePath(); ctx2.fill();
-    }
-    ctx2.fillStyle = ink; ctx2.globalAlpha = alpha * 0.7;
-    ctx2.font = '12px ' + font; ctx2.textBaseline = 'top';
-    ctx2.fillText('Forecast distribution, period t+' + (f + 1), 0, 2);
-    ctx2.globalAlpha = 1;
-  }
-
-  function render(o, shown, e) {
+  /* View A: time series and the forecast distributions. M is the overall opacity of this view. */
+  function series_view(o, shown, e, bandAlpha) {
+    if (M <= 0.01) return;
     var vs = o - HIST + e * H, dx = W / (HIST + H + 1.3);
-    var focus = Math.max(0, shown - 1);              /* period shown in the right canvas */
     function X(t) { return (t - vs + 0.6) * dx; }
     function Y(v) { return Hh / 2 - v / RANGE * (Hh / 2 - 6); }
-    ctx.clearRect(0, 0, W, Hh);
-    if (ctx2) ctx2.clearRect(0, 0, W2, H2);
-
-    function band(t, alpha) {                        /* marks the highlighted period */
-      if (alpha <= 0.01) return;
-      ctx.globalAlpha = alpha * 0.07; ctx.fillStyle = ink;
-      ctx.fillRect(X(t) - 0.12 * dx, 0, dx, Hh);
-    }
     function vbar(x, a, b, lw) {
       ctx.lineWidth = lw; ctx.beginPath(); ctx.moveTo(x, Y(a)); ctx.lineTo(x, Y(b)); ctx.stroke();
     }
     function fan(org, alpha) {
+      alpha *= M;
       if (alpha <= 0.01) return;
       var D = dist(org), h, b, x, top;
       for (h = 0; h < H; h++) {                      /* half-histograms to the right of each period */
@@ -472,7 +435,7 @@ Recent publications
         for (b = 0; b < BINS; b++) {
           if (!D[h].c[b]) continue;
           top = Y(-RANGE + (b + 1) * BH);
-          ctx.fillRect(x, top, D[h].c[b] / D.peak * 0.82 * dx * alpha, Y(-RANGE + b * BH) - top + 0.5);
+          ctx.fillRect(x, top, D[h].c[b] / D.peak * 0.82 * dx, Y(-RANGE + b * BH) - top + 0.5);
         }
       }
       ctx.globalAlpha = alpha; ctx.strokeStyle = ink; ctx.fillStyle = ink;
@@ -487,6 +450,7 @@ Recent publications
       }
     }
     function series(fn, from, to, mFrom, alpha, colour, shape) {
+      alpha *= M;
       if (alpha <= 0.01 || to < mFrom) return;
       var t, x, y;
       ctx.globalAlpha = alpha; ctx.strokeStyle = colour; ctx.fillStyle = colour; ctx.lineWidth = 1.4;
@@ -502,9 +466,11 @@ Recent publications
       }
     }
 
+    if (bandAlpha * M > 0.01) {                      /* marks the period shown next in view B */
+      ctx.globalAlpha = bandAlpha * M * 0.09; ctx.fillStyle = ink;
+      ctx.fillRect(X(o + FOCUS + 1) - 0.12 * dx, 0, dx, Hh);
+    }
     var left = Math.floor(vs) - 1;
-    band(o + focus + 1, 1 - e);
-    band(o + H + 1, e);
     fan(o, 1 - e);
     fan(o + H, e);
     series(fitted, left, o, left, 0.8, ink, 'square');
@@ -513,32 +479,90 @@ Recent publications
     series(fitted, o, o + H, o + 1, 0.8 * e, ink, 'square');            /* then they join the history */
     series(observed, o, o + H, o + 1, 0.9 * e, ink, 'triangle');
     ctx.globalAlpha = 1;
-
-    detail(o, focus, shown > 0, 1 - e);
-    detail(o + H, 0, false, e);
   }
 
-  var origin = HIST, clock = 0, last = null, phase = 'reveal', visible = true;
-  ensure(origin + 2 * H); colours(); size();
-  window.addEventListener('resize', function () { size(); if (still) render(origin, 3, 0); });
+  /* View B: one forecast distribution, framed, with axes. */
+  function hist_view(o, alpha, grow) {
+    if (alpha <= 0.01) return;
+    var d = dist(o)[FOCUS];
+    var L = 48, R = W - 10, T = 8, B = Hh - 28, b, k, x, y;
+    var base = B - 14, span = base - (T + 14), bw = (R - L) / BINS;
+    function XV(v) { return L + (v + RANGE) / (2 * RANGE) * (R - L); }
+    function YP(p) { return base - p * span; }
 
-  if (still) { render(origin, 3, 0); return; }      /* one static frame, no motion */
+    ctx.fillStyle = ink; ctx.globalAlpha = alpha * 0.3;               /* grey bars */
+    for (b = 0; b < BINS; b++) {
+      if (!d.c[b]) continue;
+      var bar = d.c[b] / d.own * span * grow;
+      ctx.fillRect(L + b * bw, base - bar, bw + 0.5, bar);
+    }
+
+    ctx.globalAlpha = alpha * 0.65; ctx.strokeStyle = ink; ctx.fillStyle = ink; ctx.lineWidth = 1.5;
+    ctx.strokeRect(L, T, R - L, B - T);                               /* frame */
+    ctx.font = '12px ' + font;
+    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    for (k = 0; k <= 4; k++) {                                        /* vertical axis: 0% to 100% */
+      y = YP(k / 4);
+      ctx.beginPath(); ctx.moveTo(L - 5, y); ctx.lineTo(L, y); ctx.stroke();
+      ctx.fillText(k * 25 + '%', L - 8, y);
+    }
+    ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    var tick = W < 560 ? 10 : 5;
+    for (k = AXIS_MIN; k <= AXIS_MAX; k += tick) {                    /* horizontal axis: values */
+      x = L + (k - AXIS_MIN) / (AXIS_MAX - AXIS_MIN) * (R - L);
+      if (x < L + 6 || x > R - 6) continue;
+      ctx.beginPath(); ctx.moveTo(x, B); ctx.lineTo(x, B + 5); ctx.stroke();
+      ctx.fillText(k, x, B + 8);
+    }
+
+    ctx.globalAlpha = alpha;                                          /* intervals and median */
+    ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(XV(d.lo90), base); ctx.lineTo(XV(d.hi90), base); ctx.stroke();
+    ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(XV(d.lo50), base); ctx.lineTo(XV(d.hi50), base); ctx.stroke();
+    ctx.beginPath(); ctx.arc(XV(d.med), base, 6, 0, 2 * Math.PI); ctx.fill();
+    ctx.globalAlpha = 1; ctx.textAlign = 'left';
+  }
+
+  var origin = HIST, clock = 0, last = null, phase = 'hold', visible = true;
+  ensure(origin + 2 * H); colours(); size();
+  function still_frame() { ctx.clearRect(0, 0, W, Hh); M = 1; series_view(origin, 0, 0, 0); }
+  window.addEventListener('resize', function () { size(); if (still) still_frame(); });
+
+  if (still) { still_frame(); return; }             /* one static frame, no motion */
 
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(cv);
   }
+  function ease(p) { p = Math.max(0, Math.min(1, p)); return p * p * (3 - 2 * p); }
+  function next(name) { phase = name; clock = 0; }
   function frame(ts) {
     if (last === null) last = ts;
-    var dt = Math.min(100, ts - last); last = ts;
+    var dt = Math.min(100, ts - last), p; last = ts;
     if (visible) {
       clock += dt;
-      if (phase === 'reveal') {
-        render(origin, Math.min(H, Math.floor(clock / STEP)), 0);
-        if (clock > H * STEP + PAUSE) { phase = 'slide'; clock = 0; ensure(origin + 2 * H); colours(); }
-      } else {
-        var p = Math.min(1, clock / SLIDE);
-        render(origin, H, p * p * (3 - 2 * p));
-        if (p >= 1) { delete cache[origin]; origin += H; phase = 'reveal'; clock = 0; ensure(origin + 2 * H); }
+      ctx.clearRect(0, 0, W, Hh);
+      if (phase === 'hold') {                        /* A: series and all distributions */
+        M = 1; series_view(origin, 0, 0, ease((clock - (HOLD - 1000)) / 400));
+        if (clock > HOLD) next('out');
+      } else if (phase === 'out') {                  /* A fades out, B grows in */
+        p = ease(clock / FADE);
+        M = 1 - p; series_view(origin, 0, 0, 1);
+        hist_view(origin, p, p);
+        if (clock >= FADE) next('hist');
+      } else if (phase === 'hist') {                 /* B: one distribution alone */
+        hist_view(origin, 1, 1);
+        if (clock > SHOWHIST) next('in');
+      } else if (phase === 'in') {                   /* back to A */
+        p = ease(clock / FADE);
+        hist_view(origin, 1 - p, 1);
+        M = p; series_view(origin, 0, 0, 1 - p);
+        if (clock >= FADE) next('reveal');
+      } else if (phase === 'reveal') {               /* observations arrive */
+        M = 1; series_view(origin, Math.min(H, Math.floor(clock / STEP)), 0, 0);
+        if (clock > H * STEP + PAUSE) { next('slide'); ensure(origin + 2 * H); colours(); }
+      } else {                                       /* origin moves forward, new forecasts */
+        p = Math.min(1, clock / SLIDE);
+        M = 1; series_view(origin, H, ease(p), 0);
+        if (p >= 1) { delete cache[origin]; origin += H; ensure(origin + 2 * H); next('hold'); }
       }
     }
     requestAnimationFrame(frame);
