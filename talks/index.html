@@ -78,20 +78,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-talks .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-venue','listing-location',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-venue',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -136,7 +136,6 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="Talks">
-<meta property="og:description" content="">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -200,11 +199,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29uZmVyZW5jZXM=">Conferences <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW1tdW5pc2F0aW9uJTIwU3VwcGx5JTIwQ2hhaW4=">Immunisation Supply Chain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhEJTIwRm91bmRhdGlvbnM=">PhD Foundations <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -213,7 +210,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -225,14 +222,26 @@ window.Quarto = {
 </header>
 
 
-<p>I give talks, seminars and workshops on forecasting, uncertainty and decision-making, for academic, public-sector and practitioner audiences. To invite me to give a talk or a workshop, please <a href="mailto:rostami-tabarb@cardiff.ac.uk">e-mail me</a>.</p>
-<div id="listing-talks" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
+<style>
+main table                   { width: 100%; font-size: .95rem; line-height: 1.45;
+                               border: 1px solid rgba(128,128,128,.45); border-radius: 12px;
+                               border-collapse: separate; border-spacing: 0; overflow: hidden; }
+main table th,
+main table td                { padding: .6rem .9rem !important; vertical-align: top; text-align: left;
+                               border: 0 !important; box-shadow: none !important; }
+main table thead th          { background: #52647A !important; color: #fff !important; font-weight: 700; }
+main table thead th a        { color: #fff !important; text-decoration: none; }
+main table th:nth-child(1)   { width: 8rem; }
+main table th:nth-child(3)   { width: 36%; }
+main table td:nth-child(1)   { white-space: nowrap; }
+main table td:nth-child(2) a { text-decoration: none; }
+main table td:nth-child(2) a:hover { text-decoration: underline; }
+</style>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <table class="quarto-listing-table table">
 <thead>
 <tr>
@@ -242,15 +251,11 @@ Date
 </th>
 
 <th>
-Talk
+Title
 </th>
 
 <th>
-Event
-</th>
-
-<th>
-Location
+Venue
 </th>
 
 </tr>
@@ -267,9 +272,6 @@ Location
 <td>
 <span class="listing-venue">University of Nottingham</span>
 </td>
-<td>
-<span class="listing-location">Nottingham, UK</span>
-</td>
 
 </tr>
 
@@ -283,85 +285,13 @@ Location
 <td>
 <span class="listing-venue">PhD Foundations 2026</span>
 </td>
-<td>
-<span class="listing-location">Cardiff, UK</span>
-</td>
 
 </tr>
 
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
-</div>
-<style>
-/* table as a whole */
-main table                   { table-layout: fixed; width: 100%; font-size: .9rem; line-height: 1.45; }
-main table th,
-main table td                { padding: .7rem .6rem !important; vertical-align: top; text-align: left; }
-
-/* column widths: the talk title takes the remaining space */
-main table th:nth-child(1)   { width: 7.5rem; }
-main table th:nth-child(3)   { width: 26%; }
-main table th:nth-child(4)   { width: 17%; }
-
-/* header: small, quiet labels */
-main table thead th          { font-size: .72rem; font-weight: 700; letter-spacing: .08em;
-                               text-transform: uppercase; opacity: .6;
-                               border-bottom: 1px solid rgba(128,128,128,.45) !important; }
-
-/* cells */
-main table tbody td          { border-bottom: 1px solid rgba(128,128,128,.16) !important; }
-main table td:nth-child(1)   { white-space: nowrap; opacity: .65; font-variant-numeric: tabular-nums; }
-main table td:nth-child(2) a { font-weight: 600; text-decoration: none; }
-main table td:nth-child(2) a:hover { text-decoration: underline; }
-main table td:nth-child(3) a { color: inherit; text-decoration: underline;
-                               text-decoration-color: rgba(128,128,128,.5); }
-main table td:nth-child(4)   { opacity: .8; }
-
-/* filter box and category list, slightly smaller */
-.quarto-listing-filter input,
-.quarto-listing-category     { font-size: .88rem; }
-
-/* year buttons */
-.year-bar            { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .8rem; }
-.year-bar button     { border: 1px solid rgba(128,128,128,.4); background: none; border-radius: 10px;
-                       padding: 1px 12px; font-size: .8rem; font-weight: 600; color: inherit; cursor: pointer; }
-.year-bar button.on  { border-color: #CA225E; background: #CA225E; color: #fff; }
-</style>
-<script>
-/* Year buttons: clicking one types the year into the filter box */
-document.addEventListener('DOMContentLoaded', function () {
-  var table = document.querySelector('main table');
-  var box = document.querySelector('main input[type="text"], main input[type="search"]');
-  if (!table || !box) return;
-  var years = [];
-  table.querySelectorAll('tbody td:first-child').forEach(function (td) {
-    var y = td.textContent.match(/\d{4}/);
-    if (y && years.indexOf(y[0]) === -1) years.push(y[0]);
-  });
-  years.sort().reverse();
-  var bar = document.createElement('div');
-  bar.className = 'year-bar';
-  ['All'].concat(years).forEach(function (name) {
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.textContent = name;
-    if (name === 'All') b.className = 'on';
-    b.addEventListener('click', function () {
-      box.value = name === 'All' ? '' : name;
-      ['input', 'keyup'].forEach(function (ev) { box.dispatchEvent(new Event(ev, { bubbles: true })); });
-      bar.querySelectorAll('button').forEach(function (x) { x.className = x === b ? 'on' : ''; });
-    });
-    bar.appendChild(b);
-  });
-  table.parentNode.insertBefore(bar, table);
-});
-</script>
-
-
-
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
