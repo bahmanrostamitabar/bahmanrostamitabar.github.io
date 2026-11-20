@@ -85,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-venue','listing-location','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-venue','listing-location','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-subtitle","listing-author","listing-institute","listing-venue","listing-location","listing-execute","listing-categories","listing-title-slide-attributes","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -225,112 +225,81 @@ window.Quarto = {
 
 
 <style>
-main table td:nth-child(1)   { white-space: nowrap; opacity: .7; }
-main table td:nth-child(2) a { font-weight: 600; text-decoration: none; }
-main table td:nth-child(5) a {
-  display: inline-block; padding: 2px 10px; border: 1px solid #CA225E; border-radius: 10px;
-  color: #CA225E !important; font-size: .8rem; font-weight: 600; text-decoration: none;
-}
-main table td:nth-child(5) a:hover { background: #CA225E; color: #fff !important; }
+ul.talk-list   { list-style: none; padding: 0; margin: 0; }
+li.talk        { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; padding: .9rem 0;
+                 border-bottom: 1px solid rgba(128,128,128,.18); text-align: left; }
+.talk-date     { opacity: .6; font-weight: 600; font-variant-numeric: tabular-nums; }
+a.talk-title   { font-weight: 600; line-height: 1.4; color: inherit; text-decoration: none; }
+a.talk-title:hover { color: #CA225E; text-decoration: underline; }
+.talk-meta     { font-size: .92rem; opacity: .85; margin-top: .15rem; }
+.talk-links    { margin-top: .35rem; }
+a.talk-chip    { display: inline-block; font-size: .78rem; font-weight: 600; padding: 1px 10px; margin-right: .3rem;
+                 border: 1px solid #CA225E; border-radius: 10px; color: #CA225E; text-decoration: none; }
+a.talk-chip:hover { background: #CA225E; color: #fff; }
+@media (max-width: 600px) { li.talk { grid-template-columns: 1fr; gap: .2rem; } }
 </style>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
+<ul class="talk-list list">
 
-<th>
-Date
-</th>
+  <li class="talk" data-index="0" data-categories="UXVhcnRvJTJDU2xpZGVz" data-listing-file-modified-sort="1795195951383" data-listing-reading-time-sort="19" data-listing-word-count-sort="3788">
+    <span class="talk-date listing-date"></span>
+    <div class="talk-body">
+      <a class="talk-title listing-title" href="../talks/2025/2025-1-refrence/slides/2025-1-refrence_slide.html" target="_blank" rel="noopener">Making Slides with Quarto</a>
+      <div class="talk-meta">
+        <span class="listing-venue">Data Lab Seminars</span>
+         · 
+        <span class="listing-location">Cardiff, UK</span>
+      </div>
+      <div class="talk-links">
+        <a class="talk-chip" href="../talks/2025/2025-1-refrence/slides/2025-1-refrence_slide.html" target="_blank" rel="noopener">Slides</a>
+        
+      </div>
+    </div>
+  </li>
 
-<th>
-Talk
-</th>
+  <li class="talk" data-index="1" data-listing-file-modified-sort="1795196280083" data-listing-reading-time-sort="5" data-listing-word-count-sort="982">
+    <span class="talk-date listing-date"></span>
+    <div class="talk-body">
+      <a class="talk-title listing-title" href="../talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" target="_blank" rel="noopener"><br> Making slides &amp; delivery tips for scientific presentations</a>
+      <div class="talk-meta">
+        
+        
+        
+      </div>
+      <div class="talk-links">
+        <a class="talk-chip" href="../talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" target="_blank" rel="noopener">Slides</a>
+        
+      </div>
+    </div>
+  </li>
 
-<th>
-Event
-</th>
+  <li class="talk" data-index="2" data-listing-file-modified-sort="1795195527131" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012">
+    <span class="talk-date listing-date"></span>
+    <div class="talk-body">
+      <a class="talk-title listing-title" href="../talks/2026/2026-2-who/slides/2026-2-who.html" target="_blank" rel="noopener">What Drives Routine Vaccine Availability at Health Facilities?</a>
+      <div class="talk-meta">
+        
+        
+        
+      </div>
+      <div class="talk-links">
+        <a class="talk-chip" href="../talks/2026/2026-2-who/slides/2026-2-who.html" target="_blank" rel="noopener">Slides</a>
+        
+      </div>
+    </div>
+  </li>
 
-<th>
-Location
-</th>
-
-<th>
-PDF
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="UXVhcnRvJTJDU2xpZGVz" data-listing-file-modified-sort="1795195951383" data-listing-reading-time-sort="19" data-listing-word-count-sort="3788" data-listing-title-sort="Making Slides with Quarto" data-listing-filename-sort="2025-1-refrence_slide.qmd">
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-<td>
-<a href="../talks/2025/2025-1-refrence/slides/2025-1-refrence_slide.html" class="title listing-title">Making Slides with Quarto</a>
-</td>
-<td>
-<span class="listing-venue">Data Lab Seminars</span>
-</td>
-<td>
-<span class="listing-location">Cardiff, UK</span>
-</td>
-<td>
-<span class="listing-slides-pdf">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1795196280083" data-listing-reading-time-sort="5" data-listing-word-count-sort="982" data-listing-title-sort="<br> Making slides &amp; delivery tips for scientific presentations" data-listing-filename-sort="2026-1-phdfoundation.qmd">
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-<td>
-<a href="../talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" class="title listing-title"><br> Making slides &amp; delivery tips for scientific presentations</a>
-</td>
-<td>
-<span class="listing-venue">&nbsp;</span>
-</td>
-<td>
-<span class="listing-location">&nbsp;</span>
-</td>
-<td>
-<span class="listing-slides-pdf">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1795195527131" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012" data-listing-title-sort="What Drives Routine Vaccine Availability at Health Facilities?" data-listing-filename-sort="2026-2-who.qmd">
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-<td>
-<a href="../talks/2026/2026-2-who/slides/2026-2-who.html" class="title listing-title">What Drives Routine Vaccine Availability at Health Facilities?</a>
-</td>
-<td>
-<span class="listing-venue">&nbsp;</span>
-</td>
-<td>
-<span class="listing-location">&nbsp;</span>
-</td>
-<td>
-<span class="listing-slides-pdf">&nbsp;</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
