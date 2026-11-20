@@ -212,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
     .hero h1       { font-size: 2.1rem; }
     .hero .role    { min-height: 3.2em; }
     .fan-row          { grid-template-columns: 1fr; }
-    .fan             { display: block; width: 100%; height: 300px; }
+    .fan             { display: block; width: 100%; height: 300px; background: #F7F6F2; border-radius: 8px; }
   }
 </style>
 
@@ -361,7 +361,7 @@ Recent publications
   var ctx = cv.getContext('2d');
   var HIST = 14, H = 7, FOCUS = 3, NPATH = 600, BINS = 44;          /* FOCUS: 0 = first future period */
   var HOLD = 2600, FADE = 800, SHOWHIST = 4200, STEP = 650, PAUSE = 1400, SLIDE = 1200;   /* milliseconds */
-  var BAR_COLOUR = '#BFB6AC';                                         /* histogram bars in view B (warm grey) */
+  var BAR_COLOUR = '#8C8C8C';                                         /* histogram bars in view B (warm grey) */
   var LINE_COLOUR = '#CA225E';                                        /* vertical lines in view B */
   var AXIS_MIN = 70, AXIS_MAX = 140;                                  /* value labels in view B */
   var PHI = 0.6, SIGMA = 0.6, AMP = 0.6;
@@ -499,7 +499,7 @@ Recent publications
     for (b = 0; b < BINS; b++) {
       if (!d.c[b]) continue;
       var bar = d.c[b] / d.own * span * grow;
-      ctx.fillRect(L + b * bw, base - bar, bw + 0.5, bar);
+      ctx.fillRect(L + b * bw, base - bar, bw -1, bar);
     }
 
     ctx.globalAlpha = alpha * 0.65; ctx.strokeStyle = ink; ctx.fillStyle = ink; ctx.lineWidth = 1.5;
