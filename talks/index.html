@@ -85,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-venue','listing-location','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-venue','listing-location','listing-slides-html','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-subtitle","listing-author","listing-institute","listing-venue","listing-location","listing-execute","listing-categories","listing-title-slide-attributes","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -201,7 +201,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UXVhcnRv">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2xpZGVz">Slides <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -225,81 +225,60 @@ window.Quarto = {
 
 
 <style>
-ul.talk-list   { list-style: none; padding: 0; margin: 0; }
-li.talk        { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; padding: .9rem 0;
-                 border-bottom: 1px solid rgba(128,128,128,.18); text-align: left; }
-.talk-date     { opacity: .6; font-weight: 600; font-variant-numeric: tabular-nums; }
-a.talk-title   { font-weight: 600; line-height: 1.4; color: inherit; text-decoration: none; }
-a.talk-title:hover { color: #CA225E; text-decoration: underline; }
-.talk-meta     { font-size: .92rem; opacity: .85; margin-top: .15rem; }
-.talk-links    { margin-top: .35rem; }
-a.talk-chip    { display: inline-block; font-size: .78rem; font-weight: 600; padding: 1px 10px; margin-right: .3rem;
-                 border: 1px solid #CA225E; border-radius: 10px; color: #CA225E; text-decoration: none; }
-a.talk-chip:hover { background: #CA225E; color: #fff; }
-@media (max-width: 600px) { li.talk { grid-template-columns: 1fr; gap: .2rem; } }
+main table thead               { display: none; }
+main table, main table tbody   { display: block; width: 100%; }
+main table tr                  { display: grid; grid-template-columns: 7rem auto auto 1fr;
+                                 column-gap: .8rem; row-gap: .2rem; padding: 1rem 0;
+                                 border-bottom: 1px solid rgba(128,128,128,.2); }
+main table td                  { display: block; padding: 0 !important; border: 0 !important;
+                                 background: none !important; box-shadow: none !important; text-align: left; }
+main table td:nth-child(1)     { grid-column: 1; grid-row: 1 / span 3; font-weight: 600; opacity: .6; }
+main table td:nth-child(2)     { grid-column: 2 / -1; grid-row: 1; }
+main table td:nth-child(2) a   { font-size: 1.08rem; font-weight: 600; line-height: 1.4; text-decoration: none; }
+main table td:nth-child(3)     { grid-column: 2; grid-row: 2; font-size: .93rem; }
+main table td:nth-child(4)     { grid-column: 3; grid-row: 2; font-size: .93rem; opacity: .65; }
+main table td:nth-child(5)     { grid-column: 2; grid-row: 3; margin-top: .25rem; }
+main table td:nth-child(6)     { grid-column: 3; grid-row: 3; margin-top: .25rem; }
+main table td:nth-child(5) a,
+main table td:nth-child(6) a   { display: inline-block; padding: 1px 10px; border: 1px solid #CA225E; border-radius: 10px;
+                                 color: #CA225E !important; font-size: .78rem; font-weight: 600; text-decoration: none; }
+main table td:nth-child(5) a:hover,
+main table td:nth-child(6) a:hover { background: #CA225E; color: #fff !important; }
+@media (max-width: 600px) {
+  main table tr                { grid-template-columns: auto auto 1fr; }
+  main table td:nth-child(1)   { grid-column: 1 / -1; grid-row: 1; }
+  main table td:nth-child(2)   { grid-column: 1 / -1; grid-row: 2; }
+  main table td:nth-child(3)   { grid-column: 1; grid-row: 3; }
+  main table td:nth-child(4)   { grid-column: 2; grid-row: 3; }
+  main table td:nth-child(5)   { grid-column: 1; grid-row: 4; }
+  main table td:nth-child(6)   { grid-column: 2; grid-row: 4; }
+}
 </style>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<ul class="talk-list list">
-
-  <li class="talk" data-index="0" data-categories="UXVhcnRvJTJDU2xpZGVz" data-listing-file-modified-sort="1795195951383" data-listing-reading-time-sort="19" data-listing-word-count-sort="3788">
-    <span class="talk-date listing-date"></span>
-    <div class="talk-body">
-      <a class="talk-title listing-title" href="../talks/2025/2025-1-refrence/slides/2025-1-refrence_slide.html" target="_blank" rel="noopener">Making Slides with Quarto</a>
-      <div class="talk-meta">
-        <span class="listing-venue">Data Lab Seminars</span>
-         · 
-        <span class="listing-location">Cardiff, UK</span>
-      </div>
-      <div class="talk-links">
-        <a class="talk-chip" href="../talks/2025/2025-1-refrence/slides/2025-1-refrence_slide.html" target="_blank" rel="noopener">Slides</a>
-        
-      </div>
-    </div>
-  </li>
-
-  <li class="talk" data-index="1" data-listing-file-modified-sort="1795196280083" data-listing-reading-time-sort="5" data-listing-word-count-sort="982">
-    <span class="talk-date listing-date"></span>
-    <div class="talk-body">
-      <a class="talk-title listing-title" href="../talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" target="_blank" rel="noopener"><br> Making slides &amp; delivery tips for scientific presentations</a>
-      <div class="talk-meta">
-        
-        
-        
-      </div>
-      <div class="talk-links">
-        <a class="talk-chip" href="../talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" target="_blank" rel="noopener">Slides</a>
-        
-      </div>
-    </div>
-  </li>
-
-  <li class="talk" data-index="2" data-listing-file-modified-sort="1795195527131" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012">
-    <span class="talk-date listing-date"></span>
-    <div class="talk-body">
-      <a class="talk-title listing-title" href="../talks/2026/2026-2-who/slides/2026-2-who.html" target="_blank" rel="noopener">What Drives Routine Vaccine Availability at Health Facilities?</a>
-      <div class="talk-meta">
-        
-        
-        
-      </div>
-      <div class="talk-links">
-        <a class="talk-chip" href="../talks/2026/2026-2-who/slides/2026-2-who.html" target="_blank" rel="noopener">Slides</a>
-        
-      </div>
-    </div>
-  </li>
-
-</ul>
+<table class="quarto-listing-table table caption-top">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Date</th>
+<th data-quarto-table-cell-role="th">Title</th>
+<th data-quarto-table-cell-role="th">venue</th>
+<th data-quarto-table-cell-role="th">location</th>
+<th data-quarto-table-cell-role="th">slides-html</th>
+<th data-quarto-table-cell-role="th">slides-pdf</th>
+</tr>
+</thead>
+<tbody class="list">
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
