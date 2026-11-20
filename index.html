@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d68c4cf18083493ef7a08f55f41a3922.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9fcac343ab764cb84fdfabeaf32dca94.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Bahman Rostami-Tabar</h1></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Professor Bahman Rostami-Tabar</h1></header>
 
 
 
@@ -243,11 +243,6 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="fan-wrap">
   <canvas class="fan" role="img" aria-label="Animated illustration of rolling-origin forecasting: past observations and fitted values, then a forecast distribution for each future period, with new observations arriving."></canvas>
-  <p class="fan-caption">
-    Illustrative simulation, not real data. Triangles: observations. Squares: one-step-ahead forecasts.
-    For each future period: the forecast distribution (histogram), its median (dot), and 50% and 90% intervals (thick and thin bars).
-    Coloured triangles: observations as they arrive, before the forecast is updated.
-  </p>
 </div>
 <div class="section-label">
 <p>Research focus</p>
@@ -262,13 +257,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="g-col-12 g-col-md-4">
 <section id="analytics" class="level3 pillar reveal">
 <h3 class="anchored" data-anchor-id="analytics">Analytics</h3>
-<p>I develop and apply methods from Data Science, AI, and Operations Research that are methodologically rigorous and relevant to real-world decision contexts.</p>
+<p>I develop and apply methods from Data Science, AI, Forecasting and Operations Research that are methodologically rigorous and relevant to real-world decision contexts.</p>
 </section>
 </div>
 <div class="g-col-12 g-col-md-4">
 <section id="decision-quality" class="level3 pillar reveal">
 <h3 class="anchored" data-anchor-id="decision-quality">Decision quality</h3>
-<p>A forecast or a model has value only if it leads to a better decision. I evaluate analytical methods by the quality of the decisions they support, not by accuracy alone.</p>
+<p>A model has value only if it leads to a better decision. I evaluate analytical methods by the quality of the decisions they support, not by accuracy alone.</p>
 </section>
 </div>
 </div>
@@ -402,12 +397,11 @@ Recent publications
     return out;
   }
 
-  function colours() {
-    var cs = getComputedStyle(document.body);
-    ink = cs.color || ink;
-    var a = cs.getPropertyValue('--bs-link-color').trim();
-    if (a) accent = a;
-  }
+function colours() {
+  ink = getComputedStyle(document.body).color || ink;
+  accent = '#CA225E';
+}
+
   function size() {
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     W = cv.clientWidth; Hh = cv.clientHeight;
