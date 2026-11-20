@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Professor of Analytics and Decision Sciences at Cardiff University. Uncertainty, analytics, and decision quality.">
 
 <title>Bahman Rostami-Tabar</title>
 <style>
@@ -40,6 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -75,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Bahman Rostami-Tabar">
-<meta property="og:description" content="Professor at Cardiff University, UK">
+<meta property="og:description" content="Professor of Analytics and Decision Sciences at Cardiff University. Uncertainty, analytics, and decision quality.">
 <meta property="og:image" content="https://bahmanrostamitabar.github.io/images/bahman.jpg">
 </head>
 
@@ -142,54 +144,342 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-broadside column-body">
-  <div class="about-main">
-    <div class="about-entity" style="background-image: url('images/bahman.jpg')"></div>
-    <div class="about-contents"><header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Bahman Rostami-Tabar</h1>
-<p class="subtitle lead">Professor at Cardiff University, UK</p>
-</div>
-<div class="quarto-title-meta column-body">
-  </div>
-</header><main class="content column-body" id="quarto-document-content">
-<p>I am a Professor of Analytics and Decision Sciences at Cardiff Business School, Cardiff University. I founded and direct the <a href="https://www.cardiff.ac.uk/research/explore/research-units/data-lab-for-social-good">Data Lab for Social Good</a>, and I lead the <a href="https://www.cardiff.ac.uk/digital-transformation-innovation-institute/work-with-us/uncertainty-and-the-future">Uncertainty &amp; the Future</a> theme at <a href="https://www.cardiff.ac.uk/digital-transformation-innovation-institute">DTII</a>, where I work closely with academic, public, and industry partners on questions that matter for society.</p>
-<p>My work sits at the intersection of data, uncertainty, and decision-making, with a focus on how advanced analytical methods can support better choices in complex and uncertain futures. Drawing on Data Science, AI, and Operations Research (OR), I develop and apply approaches that are both methodologically rigorous and demonstrably relevant to real-world decision contexts.</p>
-<p>So far, my contributions to the field have been recognised with two medals from the <a href="https://www.theorsociety.com/">OR Society</a>: the <a href="https://www.theorsociety.com/ORS/ORS/Membership/Awards/Medals/Goodeve-Medal.aspx">Goodeve Medal</a> in 2024, awarded for outstanding contributions to the philosophy, theory, and practice of OR, and the <a href="https://www.theorsociety.com/ORS/ORS/Membership/Awards/Medals/Lyn-Thomas-Impact-Medal.aspx">Lyn Thomas Impact Medal</a> in 2025, recognising OR academic research that combines methodological innovation with clear, evidenced real-world impact.</p>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Bahman Rostami-Tabar</h1></header>
 
 
-</main></div>
+
+
+<style>
+  /* ---------- hero ---------- */
+  .hero            { display: grid; grid-template-columns: 1fr 220px; gap: 2.5rem;
+                     align-items: center; padding: 3rem 0 1.5rem; }
+  .hero h1         { font-size: 2.8rem; font-weight: 700; margin: 0 0 .4rem; border: 0; }
+  .hero .theme     { font-size: 1.35rem; font-weight: 600; letter-spacing: .01em;
+                     margin-bottom: .6rem; }
+  .hero .theme .sep{ opacity: .45; margin: 0 .45rem; font-weight: 400; }
+  .hero .role      { opacity: .75; margin-bottom: 1rem; min-height: 1.6em; }
+  .hero .caret     { display: inline-block; width: 2px; height: 1.05em; margin-left: 2px;
+                     background: currentColor; vertical-align: text-bottom; }
+  .hero .lead      { font-size: 1.08rem; line-height: 1.6; max-width: 62ch; }
+  .hero img        { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; }
+  .hero .cta       { margin-top: 1.4rem; display: flex; flex-wrap: wrap; gap: .6rem; }
+  .hero .links     { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: 1.1rem;
+                     font-size: .95rem; }
+  .hero .links a   { text-decoration: none; }
+
+  /* ---------- moving forecast chart ---------- */
+  .fan-wrap        { margin: .5rem 0 0; }
+  .fan             { display: block; width: 100%; height: 230px; }
+  .fan-caption     { font-size: .82rem; opacity: .65; margin-top: .4rem; }
+
+  /* ---------- sections and cards ---------- */
+  .section-label   { font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+                     text-transform: uppercase; opacity: .6; margin: 2.8rem 0 1rem; }
+  .pillar, .highlight
+                   { border: 1px solid rgba(128,128,128,.25); border-radius: 10px;
+                     padding: 1.3rem 1.4rem; height: 100%;
+                     transition: transform .25s ease, box-shadow .25s ease; }
+  .pillar:hover, .highlight:hover
+                   { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,.10); }
+  .pillar h3       { font-size: 1.15rem; margin: 0 0 .5rem; }
+  .pillar p, .highlight p { margin: 0; font-size: .97rem; line-height: 1.55; }
+  .highlight .tag  { font-size: .75rem; font-weight: 700; letter-spacing: .1em;
+                     text-transform: uppercase; opacity: .6; display: block;
+                     margin-bottom: .35rem; }
+  .highlight h3    { font-size: 1.05rem; margin: 0 0 .4rem; }
+
+  /* ---------- motion (switched off for visitors who ask for reduced motion) ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero .theme > span { opacity: 0; animation: theme-in .6s ease forwards; }
+    .hero .theme > span:nth-child(1) { animation-delay: .15s; }
+    .hero .theme > span:nth-child(2) { animation-delay: .55s; }
+    .hero .theme > span:nth-child(3) { animation-delay: .75s; }
+    .hero .theme > span:nth-child(4) { animation-delay: 1.15s; }
+    .hero .theme > span:nth-child(5) { animation-delay: 1.35s; }
+    .hero .caret    { animation: caret-blink 1s steps(1) infinite; }
+    .will-reveal    { opacity: 0; transform: translateY(22px);
+                      transition: opacity .7s ease, transform .7s ease; }
+    .will-reveal.is-in { opacity: 1; transform: none; }
+  }
+  @keyframes theme-in    { from { opacity: 0; transform: translateY(8px); }
+                           to   { opacity: 1; transform: none; } }
+  @keyframes caret-blink { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .hero .caret { display: none; } }
+
+  @media (max-width: 768px) {
+    .hero          { grid-template-columns: 1fr; padding-top: 1.5rem; }
+    .hero img      { width: 160px; height: 160px; order: -1; }
+    .hero h1       { font-size: 2.1rem; }
+    .hero .role    { min-height: 3.2em; }
+    .fan           { height: 170px; }
+  }
+</style>
+
+<div class="hero">
+  <div>
+    
+    <div class="theme">
+      <span>Uncertainty</span><span class="sep">→</span><span>Analytics</span><span class="sep">→</span><span>Decision quality</span>
+    </div>
+    <div class="role">
+      <span class="typed" data-roles="Professor of Analytics and Decision Sciences, Cardiff University|Founder and Director, Data Lab for Social Good|Theme Lead, Uncertainty &amp; the Future, DTII">Professor of Analytics and Decision Sciences, Cardiff University</span><span class="caret" aria-hidden="true"></span>
+    </div>
+    <p class="lead">
+      My work sits at the intersection of data, uncertainty, and decision-making.
+      Drawing on Data Science, AI, and Operations Research, I develop and apply
+      methods that support better choices in complex and uncertain futures.
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="publications.html">Publications</a>
+      <a class="btn btn-outline-primary" href="projects.html">Projects</a>
+    </div>
+    <div class="links">
+      <a href="mailto:rostami-tabarb@cardiff.ac.uk"><i class="bi bi-envelope-at-fill"></i> E-mail</a>
+      <a href="https://github.com/bahmanrostamitabar" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=PeVrdqUAAAAJ" target="_blank" rel="noopener"><i class="bi bi-bookmark-star-fill"></i> Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-3730-0045" target="_blank" rel="noopener"><i class="bi bi-person-badge"></i> ORCID</a>
+      <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" target="_blank" rel="noopener"><i class="bi bi-mortarboard-fill"></i> University profile</a>
+    </div>
   </div>
-  <div class="about-links">
-  <a href="mailto:rostami-tabarb@cardiff.ac.uk" class="about-link" rel="" target="">
-    <i class="bi bi-envelope-at-fill"></i>
-     <span class="about-link-text">E-mail</span>
-  </a>
-  <a href="https://github.com/bahmanrostamitabar" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://www.linkedin.com/in/bahman-rostami-tabar-1046171a/" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://scholar.google.com/citations?hl=en&amp;user=PeVrdqUAAAAJ" class="about-link" rel="" target="_blank">
-    <i class="bi bi-bookmark-star-fill"></i>
-     <span class="about-link-text">Google Scholar</span>
-  </a>
-  <a href="https://orcid.org/0000-0002-3730-0045" class="about-link" rel="" target="_blank">
-    <i class="bi bi-orcid"></i>
-     <span class="about-link-text">ORCID</span>
-  </a>
-  <a href="https://profiles.cardiff.ac.uk/staff/rostami-tabarb" class="about-link" rel="" target="_blank">
-    <i class="bi bi-mortarboard-fill"></i>
-     <span class="about-link-text">University profile</span>
-  </a>
+  <img src="images/bahman.jpg" alt="Bahman Rostami-Tabar">
+</div>
+
+<div class="fan-wrap">
+  <canvas class="fan" role="img" aria-label="Animated illustration of a rolling-origin probabilistic forecast: past observations, prediction intervals, and new observations arriving."></canvas>
+  <p class="fan-caption">
+    Illustrative simulation, not real data. Line: past observations. Shaded bands: 50%, 80% and 95% prediction intervals
+    from the forecast origin (dashed). Dots: observations as they arrive, before the forecast is updated.
+  </p>
+</div>
+<div class="section-label">
+<p>Research focus</p>
+</div>
+<div class="grid">
+<div class="g-col-12 g-col-md-4">
+<section id="uncertainty" class="level3 pillar reveal">
+<h3 class="anchored" data-anchor-id="uncertainty">Uncertainty</h3>
+<p>The future is not known with certainty, and a single number hides this. I quantify uncertainty and communicate it in a form that decision-makers can use.</p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-4">
+<section id="analytics" class="level3 pillar reveal">
+<h3 class="anchored" data-anchor-id="analytics">Analytics</h3>
+<p>I develop and apply methods from Data Science, AI, and Operations Research that are methodologically rigorous and relevant to real-world decision contexts.</p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-4">
+<section id="decision-quality" class="level3 pillar reveal">
+<h3 class="anchored" data-anchor-id="decision-quality">Decision quality</h3>
+<p>A forecast or a model has value only if it leads to a better decision. I evaluate analytical methods by the quality of the decisions they support, not by accuracy alone.</p>
+</section>
 </div>
 </div>
- <!-- /main -->
+<div class="section-label">
+<p>Leadership and recognition</p>
+</div>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<div class="highlight reveal">
+<p><span class="tag">2025</span></p>
+<section id="lyn-thomas-impact-medal" class="level3">
+<h3 class="anchored" data-anchor-id="lyn-thomas-impact-medal">Lyn Thomas Impact Medal</h3>
+<p>Awarded by the <a href="https://www.theorsociety.com/">OR Society</a> for OR academic research that combines methodological innovation with clear, evidenced real-world impact. <a href="https://www.theorsociety.com/ORS/ORS/Membership/Awards/Medals/Lyn-Thomas-Impact-Medal.aspx">Details</a></p>
+</section>
+</div>
+</div>
+<div class="g-col-12 g-col-md-6">
+<div class="highlight reveal">
+<p><span class="tag">2024</span></p>
+<section id="goodeve-medal" class="level3">
+<h3 class="anchored" data-anchor-id="goodeve-medal">Goodeve Medal</h3>
+<p>Awarded by the <a href="https://www.theorsociety.com/">OR Society</a> for outstanding contributions to the philosophy, theory, and practice of OR. <a href="https://www.theorsociety.com/ORS/ORS/Membership/Awards/Medals/Goodeve-Medal.aspx">Details</a></p>
+</section>
+</div>
+</div>
+<div class="g-col-12 g-col-md-6">
+<div class="highlight reveal">
+<p><span class="tag">Founder and Director</span></p>
+<section id="data-lab-for-social-good" class="level3">
+<h3 class="anchored" data-anchor-id="data-lab-for-social-good">Data Lab for Social Good</h3>
+<p>A research unit working with academic, public, and industry partners on questions that matter for society. <a href="https://www.cardiff.ac.uk/research/explore/research-units/data-lab-for-social-good">Visit the lab</a></p>
+</section>
+</div>
+</div>
+<div class="g-col-12 g-col-md-6">
+<div class="highlight reveal">
+<p><span class="tag">Theme Lead</span></p>
+<section id="uncertainty-the-future" class="level3">
+<h3 class="anchored" data-anchor-id="uncertainty-the-future">Uncertainty &amp; the Future</h3>
+<p>A research theme at the <a href="https://www.cardiff.ac.uk/digital-transformation-innovation-institute">Digital Transformation Innovation Institute</a> (DTII), Cardiff University. <a href="https://www.cardiff.ac.uk/digital-transformation-innovation-institute/work-with-us/uncertainty-and-the-future">About the theme</a></p>
+</section>
+</div>
+</div>
+</div>
+<!-- Uncomment together with the `listing:` block in the YAML header.
+
+::: {.section-label}
+Recent publications
+:::
+
+::: {#recent-publications}
+:::
+
+[All publications](publications.html)
+
+-->
+<script>
+(function () {
+  var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* 1. Role line: types, pauses, deletes, moves to the next role */
+  var el = document.querySelector('.hero .typed');
+  if (el && !still) {
+    var roles = el.dataset.roles.split('|'), r = 0, i = roles[0].length, del = false;
+    (function tick() {
+      var word = roles[r], wait = del ? 28 : 55;
+      el.textContent = word.slice(0, i);
+      if (!del && i === word.length) { del = true; wait = 2400; }
+      else if (del && i === 0) { del = false; r = (r + 1) % roles.length; wait = 350; }
+      else { i += del ? -1 : 1; }
+      setTimeout(tick, wait);
+    })();
+  }
+
+  /* 2. Cards fade and slide in when they enter the viewport */
+  if ('IntersectionObserver' in window && !still) {
+    var ro = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); ro.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (c, k) {
+      c.classList.add('will-reveal');
+      c.style.transitionDelay = (k % 3) * 0.12 + 's';
+      ro.observe(c);
+    });
+  }
+
+  /* 3. Rolling-origin probabilistic forecast (simulated seasonal AR(1) process).
+        The intervals are the exact h-step-ahead predictive quantiles of that process. */
+  var cv = document.querySelector('canvas.fan');
+  if (!cv || !cv.getContext) return;
+  var ctx = cv.getContext('2d');
+  var HIST = 60, H = 24, STEP = 260, PAUSE = 1400, SLIDE = 1100;
+  var PHI = 0.8, SIGMA = 0.5, AMP = 1.0, Z = [1.96, 1.282, 0.674];
+  var SD_INF = SIGMA / Math.sqrt(1 - PHI * PHI), RANGE = (AMP + 3 * SD_INF) * 1.05;
+  var W = 0, Hh = 0, ink = '#333', accent = '#2a6fdb';
+
+  function randn() {
+    var u = 1 - Math.random(), v = Math.random();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  }
+  var dev = [SD_INF * randn()];
+  function ensure(n) { while (dev.length <= n) dev.push(PHI * dev[dev.length - 1] + SIGMA * randn()); }
+  function season(t) { return AMP * Math.sin(2 * Math.PI * t / 12); }
+  function obs(t) { return season(t) + dev[t]; }
+  function mean(o, h) { return season(o + h) + Math.pow(PHI, h) * dev[o]; }
+  function sd(h) { return SIGMA * Math.sqrt((1 - Math.pow(PHI, 2 * h)) / (1 - PHI * PHI)); }
+
+  function colours() {
+    var cs = getComputedStyle(document.body);
+    ink = cs.color || ink;
+    var a = cs.getPropertyValue('--bs-link-color').trim();
+    if (a) accent = a;
+  }
+  function size() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; Hh = cv.clientHeight;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(Hh * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function render(o, shown, e) {
+    var vs = o - HIST + e * H;                       /* left edge of the window, in time units */
+    function X(t) { return (t - vs) / (HIST + H) * W; }
+    function Y(v) { return Hh / 2 - v / RANGE * (Hh / 2 - 6); }
+    ctx.clearRect(0, 0, W, Hh);
+
+    function fan(org, alpha) {
+      if (alpha <= 0) return;
+      var h, k;
+      ctx.fillStyle = accent;
+      for (k = 0; k < Z.length; k++) {
+        ctx.globalAlpha = alpha * 0.14;
+        ctx.beginPath();
+        for (h = 0; h <= H; h++) ctx.lineTo(X(org + h), Y(mean(org, h) + Z[k] * sd(h)));
+        for (h = H; h >= 0; h--) ctx.lineTo(X(org + h), Y(mean(org, h) - Z[k] * sd(h)));
+        ctx.closePath(); ctx.fill();
+      }
+      ctx.globalAlpha = alpha * 0.9; ctx.strokeStyle = accent; ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      for (h = 0; h <= H; h++) ctx.lineTo(X(org + h), Y(mean(org, h)));
+      ctx.stroke();
+      ctx.globalAlpha = alpha * 0.5; ctx.strokeStyle = ink; ctx.lineWidth = 1;
+      ctx.setLineDash([4, 4]);
+      ctx.beginPath(); ctx.moveTo(X(org), 0); ctx.lineTo(X(org), Hh); ctx.stroke();
+      ctx.setLineDash([]);
+    }
+    function line(from, to, alpha) {
+      if (alpha <= 0 || to <= from) return;
+      ctx.globalAlpha = alpha; ctx.strokeStyle = ink; ctx.lineWidth = 1.6;
+      ctx.beginPath();
+      for (var t = Math.max(0, from); t <= to; t++) ctx.lineTo(X(t), Y(obs(t)));
+      ctx.stroke();
+    }
+
+    fan(o, 1 - e);
+    fan(o + H, e);
+    line(Math.floor(vs) - 1, o, 0.85);
+    line(o, o + H, 0.85 * e);                       /* arrived observations join the history */
+    ctx.fillStyle = ink; ctx.globalAlpha = 0.9 * (1 - e);
+    for (var h = 1; h <= shown; h++) {
+      ctx.beginPath(); ctx.arc(X(o + h), Y(obs(o + h)), 2.6, 0, 2 * Math.PI); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  var origin = HIST, clock = 0, last = null, phase = 'reveal', visible = true;
+  ensure(origin + 2 * H); colours(); size();
+  window.addEventListener('resize', function () { size(); if (still) render(origin, H / 2, 0); });
+
+  if (still) { render(origin, H / 2, 0); return; }  /* one static frame, no motion */
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(cv);
+  }
+  function frame(ts) {
+    if (last === null) last = ts;
+    var dt = Math.min(100, ts - last); last = ts;
+    if (visible) {
+      clock += dt;
+      if (phase === 'reveal') {
+        render(origin, Math.min(H, Math.floor(clock / STEP)), 0);
+        if (clock > H * STEP + PAUSE) { phase = 'slide'; clock = 0; ensure(origin + 2 * H); colours(); }
+      } else {
+        var p = Math.min(1, clock / SLIDE);
+        render(origin, H, p * p * (3 - 2 * p));
+        if (p >= 1) { origin += H; phase = 'reveal'; clock = 0; ensure(origin + 2 * H); }
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
