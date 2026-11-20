@@ -233,6 +233,63 @@ window.Quarto = {
 </header>
 
 
+<style>
+/* Projects page: appearance only. Overrides the older projects.css. */
+
+/* same font as the rest of the site */
+body                               { font-family: var(--bs-body-font-family) !important; }
+.quarto-grid-item .listing-title,
+.quarto-grid-item .listing-description,
+.quarto-grid-item .listing-date,
+.quarto-grid-item .listing-author,
+.quarto-grid-item .listing-category { font-family: inherit !important; }
+
+/* cards */
+.quarto-grid-item {
+  border: 1px solid rgba(128,128,128,.25) !important;
+  border-radius: 10px;
+  box-shadow: none !important;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.quarto-grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.10) !important;
+}
+.quarto-grid-item img              { object-fit: cover; width: 100%; }
+.quarto-grid-item .card-body       { padding: 1.1rem 1.2rem; }
+
+/* title */
+.quarto-grid-item .listing-title {
+  font-size: 1.15rem !important; font-weight: 600; line-height: 1.3;
+  color: inherit !important; margin-bottom: .6rem;
+}
+
+/* categories: small outlined labels */
+.quarto-grid-item .listing-categories { margin: 0 0 .6rem !important; }
+.quarto-grid-item .listing-category {
+  font-size: .68rem !important; font-weight: 600; letter-spacing: .04em;
+  padding: 1px 8px !important; margin: 0 4px 4px 0; border-radius: 10px !important;
+  border: 1px solid rgba(128,128,128,.4) !important;
+  background: none !important; color: inherit !important; opacity: .8;
+}
+
+/* description: left-aligned, at most four lines */
+.quarto-grid-item .listing-description {
+  font-size: .93rem !important; line-height: 1.55 !important; color: inherit !important; opacity: .85;
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+.quarto-grid-item .listing-description,
+.quarto-grid-item .listing-description p { text-align: left !important; }
+
+/* author and date: quiet footer line */
+.quarto-grid-item .listing-author,
+.quarto-grid-item .listing-date    { font-size: .75rem !important; color: inherit !important; opacity: .6; margin-top: .6rem; }
+
+/* sort menu and filter box, slightly smaller */
+.quarto-listing-sort select,
+.quarto-listing-filter input       { font-size: .9rem; }
+</style>
 
 
 
