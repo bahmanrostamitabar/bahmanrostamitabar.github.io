@@ -227,7 +227,8 @@ ul.task-list li input[type="checkbox"] {
       <span>Uncertainty &amp; Futures</span><span class="sep">→</span><span>Analytics</span><span class="sep">→</span><span>Decision Quality</span>
     </div>
     <div class="role">
-      <span class="typed" data-roles="Professor of Analytics and Decision Sciences, Cardiff University|Founder and Director, Data Lab for Social Good|Research Excellence Framework (2029) Lead">Professor of Analytics and Decision Sciences, Cardiff University</span><span class="caret" aria-hidden="true"></span>
+      <span class="typed" data-roles="Professor of Analytics and Decision Sciences, Cardiff University|Founder and Director, Data Lab for Social Good|Research Excellence Framework (REF 2029) Lead, Business and Management|Winner of the Goodeve Medal (2024)|Winner of the Lyn Thomas Impact Medal (2025)|">Professor of Analytics and Decision Sciences, Cardiff University</span><span class="caret" aria-hidden="true"></span>
+
     </div>
     <p class="lead">
       My work sits at the intersection of data, uncertainty &amp; futures, and decision sciences.
@@ -503,7 +504,7 @@ Recent publications
   function hist_view(o, alpha, grow) {
     if (alpha <= 0.01) return;
     var d = dist(o)[FOCUS];
-    var L = 48, R = W - 10, T = 8, B = Hh - 28, b, k, x, y;
+    var L = 10, R = W - 10, T = 8, B = Hh - 28, b, k, x, y;
     var base = B - 14, top = T + 20, span = base - top;
     var pad = 0.05 * (d.x1 - d.x0), xlo = d.x0 - pad, xhi = d.x1 + pad, bw = BH / (xhi - xlo) * (R - L);
     function XV(v) { return L + (v - xlo) / (xhi - xlo) * (R - L); }
@@ -520,12 +521,6 @@ Recent publications
 
     ctx.globalAlpha = alpha * 0.65; ctx.strokeStyle = ink; ctx.fillStyle = ink; ctx.lineWidth = 1.5;
     ctx.font = '12px ' + font;
-    ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
-    for (k = 0; k <= 4; k++) {                                        /* vertical axis: 0% to 100% */
-      y = YP(k / 4);
-      ctx.beginPath(); ctx.moveTo(L - 5, y); ctx.lineTo(L, y); ctx.stroke();
-      ctx.fillText(k * 25 + '%', L - 8, y);
-    }
     ctx.textAlign = 'center'; ctx.textBaseline = 'top';
     var a0 = AXIS_0 + AXIS_K * xlo, a1 = AXIS_0 + AXIS_K * xhi, raw = (a1 - a0) / (W < 560 ? 5 : 10), tick = 20;
     [10, 5, 2, 1].forEach(function (c) { if (c >= raw) tick = c; });
