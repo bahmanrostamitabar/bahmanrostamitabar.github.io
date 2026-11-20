@@ -427,7 +427,7 @@ Recent publications
     out.peak = peak;
     var lo = Infinity, hi = -Infinity, t;            /* vertical range that fits what is on screen */
     function see(v) { if (v < lo) lo = v; if (v > hi) hi = v; }
-    for (t = Math.max(1, o - HIST); t <= o + H; t++) { see(observed(t)); see(fitted(t)); }
+    for (t = Math.max(1, o - HIST); t <= o + H; t++) { see(observed(t)); }
     for (h = 0; h < H; h++) { see(out[h].q01); see(out[h].q99); }
     out.ylo = lo - 0.05 * (hi - lo); out.yhi = hi + 0.05 * (hi - lo);
     cache[o] = out;
@@ -507,10 +507,8 @@ Recent publications
     var left = Math.floor(vs) - 1;
     fan(o, 1 - e);
     fan(o + H, e);
-    series(fitted, left, o, left, 0.8, ink, 'square');
     series(observed, left, o, left, 0.9, ink, 'triangle');
     series(observed, o, o + shown, o + 1, 1 - e, accent, 'triangle');   /* arriving observations */
-    series(fitted, o, o + H, o + 1, 0.8 * e, ink, 'square');            /* then they join the history */
     series(observed, o, o + H, o + 1, 0.9 * e, ink, 'triangle');
     ctx.globalAlpha = 1;
   }
