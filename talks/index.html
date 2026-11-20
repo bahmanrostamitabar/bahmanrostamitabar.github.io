@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-talks-2026 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -91,7 +91,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-talks-2026'] = new List('listing-talks-2026', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks-2025 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-venue','listing-location','listing-slides-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks-2025'] = new List('listing-talks-2025', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -224,43 +252,9 @@ window.Quarto = {
 </header>
 
 
-<style>
-main table thead               { display: none; }
-main table, main table tbody   { display: block; width: 100%; }
-main table tr                  { display: grid; grid-template-columns: 7rem auto auto 1fr;
-                                 column-gap: .8rem; row-gap: .2rem; padding: 1rem 0;
-                                 border-bottom: 1px solid rgba(128,128,128,.2); }
-main table td                  { display: block; padding: 0 !important; border: 0 !important;
-                                 background: none !important; box-shadow: none !important; text-align: left; }
-main table td:nth-child(1)     { grid-column: 1; grid-row: 1 / span 3; font-weight: 600; opacity: .6; }
-main table td:nth-child(2)     { grid-column: 2 / -1; grid-row: 1; }
-main table td:nth-child(2) a   { font-size: 1.08rem; font-weight: 600; line-height: 1.4; text-decoration: none; }
-main table td:nth-child(3)     { grid-column: 2; grid-row: 2; font-size: .93rem; }
-main table td:nth-child(4)     { grid-column: 3; grid-row: 2; font-size: .93rem; opacity: .65; }
-main table td:nth-child(5)     { grid-column: 2 / -1; grid-row: 3; margin-top: .25rem; }
-main table td:nth-child(5) a   { display: inline-block; padding: 1px 10px; border: 1px solid #CA225E; border-radius: 10px;
-                                 color: #CA225E !important; font-size: .78rem; font-weight: 600; text-decoration: none; }
-main table td:nth-child(5) a:hover { background: #CA225E; color: #fff !important; }
-@media (max-width: 600px) {
-  main table tr                { grid-template-columns: auto 1fr; }
-  main table td:nth-child(1)   { grid-column: 1 / -1; grid-row: 1; }
-  main table td:nth-child(2)   { grid-column: 1 / -1; grid-row: 2; }
-  main table td:nth-child(3)   { grid-column: 1; grid-row: 3; }
-  main table td:nth-child(4)   { grid-column: 2; grid-row: 3; }
-  main table td:nth-child(5)   { grid-column: 1 / -1; grid-row: 4; }
-}
-</style>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">2026</h2>
+<div id="listing-talks-2026" class="quarto-listing quarto-listing-container-table">
 <table class="quarto-listing-table table">
 <thead>
 <tr>
@@ -270,19 +264,93 @@ Date
 </th>
 
 <th>
-Title
+Talk
 </th>
 
 <th>
-venue
+Event
 </th>
 
 <th>
-location
+Location
 </th>
 
 <th>
-slides-pdf
+PDF
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1795196280083" data-listing-reading-time-sort="5" data-listing-word-count-sort="982" data-listing-title-sort="<br> Making slides &amp; delivery tips for scientific presentations" data-listing-filename-sort="2026-1-phdfoundation.qmd">
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+<td>
+<a href="../talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" class="title listing-title"><br> Making slides &amp; delivery tips for scientific presentations</a>
+</td>
+<td>
+<span class="listing-venue">&nbsp;</span>
+</td>
+<td>
+<span class="listing-location">&nbsp;</span>
+</td>
+<td>
+<span class="listing-slides-pdf">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1795195527131" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012" data-listing-title-sort="What Drives Routine Vaccine Availability at Health Facilities?" data-listing-filename-sort="2026-2-who.qmd">
+<td>
+<span class="listing-date">&nbsp;</span>
+</td>
+<td>
+<a href="../talks/2026/2026-2-who/slides/2026-2-who.html" class="title listing-title">What Drives Routine Vaccine Availability at Health Facilities?</a>
+</td>
+<td>
+<span class="listing-venue">&nbsp;</span>
+</td>
+<td>
+<span class="listing-location">&nbsp;</span>
+</td>
+<td>
+<span class="listing-slides-pdf">&nbsp;</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2025</h2>
+<div id="listing-talks-2025" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Date
+</th>
+
+<th>
+Talk
+</th>
+
+<th>
+Event
+</th>
+
+<th>
+Location
+</th>
+
+<th>
+PDF
 </th>
 
 </tr>
@@ -308,48 +376,55 @@ slides-pdf
 
 </tr>
 
-<tr data-index="1" data-listing-file-modified-sort="1795196280083" data-listing-reading-time-sort="5" data-listing-word-count-sort="982" data-listing-title-sort="<br> Making slides &amp; delivery tips for scientific presentations" data-listing-filename-sort="2026-1-phdfoundation.qmd">
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-<td>
-<a href="../talks/2026/2026-1-phdfoundation/slides/2026-1-phdfoundation.html" class="title listing-title"><br> Making slides &amp; delivery tips for scientific presentations</a>
-</td>
-<td>
-<span class="listing-venue">&nbsp;</span>
-</td>
-<td>
-<span class="listing-location">&nbsp;</span>
-</td>
-<td>
-<span class="listing-slides-pdf">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1795195527131" data-listing-reading-time-sort="6" data-listing-word-count-sort="1012" data-listing-title-sort="What Drives Routine Vaccine Availability at Health Facilities?" data-listing-filename-sort="2026-2-who.qmd">
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-<td>
-<a href="../talks/2026/2026-2-who/slides/2026-2-who.html" class="title listing-title">What Drives Routine Vaccine Availability at Health Facilities?</a>
-</td>
-<td>
-<span class="listing-venue">&nbsp;</span>
-</td>
-<td>
-<span class="listing-location">&nbsp;</span>
-</td>
-<td>
-<span class="listing-slides-pdf">&nbsp;</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+<style>
+main table                   { table-layout: fixed; width: 100%; }
+main table th:nth-child(1)   { width: 9rem; }
+main table th:nth-child(3)   { width: 22%; }
+main table th:nth-child(4)   { width: 16%; }
+main table th:nth-child(5),
+main table th:nth-child(6)   { width: 5.5rem; }
+main table td:nth-child(1)   { white-space: nowrap; opacity: .7; }
+main table td:nth-child(2) a { font-weight: 600; text-decoration: none; }
+main table td:nth-child(5) a,
+main table td:nth-child(6) a {
+  display: inline-block; padding: 2px 10px; border: 1px solid #CA225E; border-radius: 10px;
+  color: #CA225E !important; font-size: .8rem; font-weight: 600; text-decoration: none;
+}
+main table td:nth-child(5) a:hover,
+main table td:nth-child(6) a:hover { background: #CA225E; color: #fff !important; }
+h2                           { margin-top: 2rem; }
+</style>
+<script>
+/* Adds the "Slides / View" column, using the link of the talk title */
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('main table').forEach(function (table) {
+    var head = table.querySelector('thead tr');
+    if (head && head.children.length === 5) {
+      var th = document.createElement('th');
+      th.textContent = 'Slides';
+      head.insertBefore(th, head.children[4]);
+    }
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      var link = row.querySelector('td:nth-child(2) a');
+      if (!link || row.children.length !== 5) return;
+      var td = document.createElement('td'), a = document.createElement('a');
+      a.href = link.href; a.textContent = 'View'; a.target = '_blank'; a.rel = 'noopener';
+      td.appendChild(a);
+      row.insertBefore(td, row.children[4]);
+    });
+  });
+});
+</script>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
