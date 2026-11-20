@@ -224,34 +224,39 @@ window.Quarto = {
 
 
 <style>
-/* one entry */
-.quarto-post                     { gap: 1.5rem; padding: 1.3rem 0 !important; align-items: flex-start;
+/* one entry: compact */
+.quarto-post                     { gap: 1.2rem; padding: .75rem 0 !important; margin: 0 !important;
+                                   align-items: flex-start;
                                    border-bottom: 1px solid rgba(128,128,128,.2); }
 
 /* only the title is coloured; the rest uses the text colour */
 .quarto-post a                   { color: inherit !important; text-decoration: none; }
-.quarto-post .listing-title      { font-size: 1.25rem; font-weight: 600; line-height: 1.3; margin: 0 0 .3rem; }
+.quarto-post .listing-title      { font-size: 1.05rem; font-weight: 600; line-height: 1.3; margin: 0 0 .15rem; }
 .quarto-post .listing-title a    { color: #CA225E !important; }
 .quarto-post .listing-title a:hover { text-decoration: underline; }
-.quarto-post .listing-subtitle   { font-size: .95rem; opacity: .75; margin-bottom: .4rem; }
+.quarto-post .listing-subtitle   { display: none; }
 .quarto-post .listing-description,
-.quarto-post .listing-description p { font-size: .95rem; line-height: 1.55; text-align: left !important; }
+.quarto-post .listing-description p { font-size: .88rem; line-height: 1.45; margin: 0;
+                                   text-align: left !important; opacity: .85; }
+/* description limited to two lines */
+.quarto-post .listing-description { display: -webkit-box; -webkit-line-clamp: 2;
+                                   -webkit-box-orient: vertical; overflow: hidden; }
 
 /* date: narrow column on the left */
-.quarto-post .metadata           { flex: 0 0 6.5rem !important; }
-.quarto-post .listing-date       { font-size: .85rem; font-weight: 600; opacity: .6; white-space: nowrap; }
+.quarto-post .metadata           { flex: 0 0 6rem !important; }
+.quarto-post .listing-date       { font-size: .8rem; font-weight: 600; opacity: .6; white-space: nowrap; }
 
 /* text takes the remaining width */
 .quarto-post .body               { flex: 1 1 auto !important; }
 
-/* image: small, same size for every post */
-.quarto-post .thumbnail          { flex: 0 0 210px !important; }
-.quarto-post .thumbnail img      { width: 100%; height: 130px; object-fit: cover; border-radius: 8px; }
+/* image: small thumbnail, same size for every post */
+.quarto-post .thumbnail          { flex: 0 0 120px !important; }
+.quarto-post .thumbnail img      { width: 100%; height: 74px; object-fit: cover; border-radius: 6px; }
 
 /* phones: stack the parts */
 @media (max-width: 700px) {
-  .quarto-post                   { flex-direction: column; gap: .5rem; }
-  .quarto-post .thumbnail        { flex: none !important; width: 100%; }
+  .quarto-post                   { flex-direction: column; gap: .3rem; }
+  .quarto-post .thumbnail        { display: none; }
 }
 </style>
 
@@ -269,7 +274,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="0" data-categories="UGhEJTJDcmVhZGluZyUyQ3Jlc2VhcmNoJTIwc2tpbGxz" data-listing-date-sort="1795046400000" data-listing-file-modified-sort="1795179104141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1516">
 <div class="thumbnail"><a href="../blog/2026-reading-articles/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-reading-articles/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-reading-articles/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -294,7 +299,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="1" data-categories="UGhEJTIwYWR2aWNlJTJDc3VwZXJ2aXNpb24lMkNwcm9kdWN0aXZpdHk=" data-listing-date-sort="1777676400000" data-listing-file-modified-sort="1778057546253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2058">
 <div class="thumbnail"><a href="../blog/2026-phd-progress-meeting/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-phd-progress-meeting/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-phd-progress-meeting/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -319,7 +324,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="2" data-categories="UGhEJTIwYWR2aWNlJTJDVGhlc2lzJTIwd3JpdGluZyUyQ0FjYWRlbWljJTIwd3JpdGluZyUyQ1Jlc2VhcmNoJTIwU3VwZXJ2aXNpb24=" data-listing-date-sort="1776898800000" data-listing-file-modified-sort="1777752464411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2098">
 <div class="thumbnail"><a href="../blog/2026-phd-by-publication/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-phd-by-publication/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-phd-by-publication/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -344,7 +349,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="3" data-categories="UGhEJTIwYWR2aWNlJTJDc3VwZXJ2aXNpb24=" data-listing-date-sort="1776812400000" data-listing-file-modified-sort="1777752482142" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2784">
 <div class="thumbnail"><a href="../blog/2026-phd-not-taught/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-phd-not-taught/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-phd-not-taught/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -369,7 +374,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="4" data-categories="UGhEJTIwYWR2aWNlJTJDc3VwZXJ2aXNpb24=" data-listing-date-sort="1776812400000" data-listing-file-modified-sort="1777752508544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2789">
 <div class="thumbnail"><a href="../blog/2026-phd-supervision/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-phd-supervision/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-phd-supervision/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -394,7 +399,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="5" data-categories="aW1hZ2luYXRpb24lMkNjdWx0dXJlJTJDaW5ub3ZhdGlvbg==" data-listing-date-sort="1774911600000" data-listing-file-modified-sort="1775074781712" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1660">
 <div class="thumbnail"><a href="../blog/2026-imagination/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-imagination/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-imagination/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -419,7 +424,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="6" data-categories="UGhEJTIwYWR2aWNlJTJDYWNhZGVtaWMlMjBsaWZlJTJDcHJvZmVzc2lvbmFsJTIwaGFiaXRz" data-listing-date-sort="1774911600000" data-listing-file-modified-sort="1774958437873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1834">
 <div class="thumbnail"><a href="../blog/2026-phd-small-habits/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-phd-small-habits/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-phd-small-habits/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -444,7 +449,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="7" data-categories="YWNhZGVtaWMlMjB3cml0aW5nJTJDUGhEJTIwYWR2aWNl" data-listing-date-sort="1773619200000" data-listing-file-modified-sort="1773780962479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3779">
 <div class="thumbnail"><a href="../blog/2026-write-abstract/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-write-abstract/cover.png" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-write-abstract/cover.png" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -469,7 +474,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="8" data-categories="YWNhZGVtaWMlMjB3cml0aW5nJTJDUGhEJTIwYWR2aWNl" data-listing-date-sort="1773619200000" data-listing-file-modified-sort="1779856324257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="45" data-listing-word-count-sort="8991">
 <div class="thumbnail"><a href="../blog/2026-write-intro/CopyOfindex.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-write-intro/cover.png" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-write-intro/cover.png" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -494,7 +499,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="9" data-categories="YWNhZGVtaWMlMjB3cml0aW5nJTJDUGhEJTIwYWR2aWNl" data-listing-date-sort="1773619200000" data-listing-file-modified-sort="1779856313042" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="45" data-listing-word-count-sort="8991">
 <div class="thumbnail"><a href="../blog/2026-write-intro/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026-write-intro/cover.png" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026-write-intro/cover.png" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -519,7 +524,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="10" data-categories="Zm9yZWNhc3RpbmclMkNwdWJsaWMlMjBoZWFsdGglMkNwcm9ibGVtLWZyYW1pbmclMkNhbmFseXRpY2FsLXBpdGZhbGxz" data-listing-date-sort="1772150400000" data-listing-file-modified-sort="1772188622089" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2403">
 <div class="thumbnail"><a href="../blog/2025-forecasting_problem/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2025-forecasting_problem/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2025-forecasting_problem/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -544,7 +549,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="11" data-categories="ZGVjaXNpb24tbWFraW5nJTJDcHVibGljJTIwaGVhbHRoJTJDc3VwcGx5JTIwY2hhaW4lMkNwcm9ibGVtLWZyYW1pbmc=" data-listing-date-sort="1772064000000" data-listing-file-modified-sort="1772119585411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1324">
 <div class="thumbnail"><a href="../blog/2025-decision/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2025-decision/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2025-decision/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -569,7 +574,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="12" data-categories="Zm9yZWNhc3RpbmclMkNsb3NzJTIwZnVuY3Rpb25zJTJDZXJyb3IlMjBtZWFzdXJlcw==" data-listing-date-sort="1771891200000" data-listing-file-modified-sort="1772119901364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1230">
 <div class="thumbnail"><a href="../blog/first-post/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/first-post/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/first-post/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -594,7 +599,7 @@ window.Quarto = {
 <div class="quarto-post image-right" data-index="13" data-categories="a3VyZHMlMkNwb2xpdGljcw==" data-listing-date-sort="1771718400000" data-listing-file-modified-sort="1777753427109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="989">
 <div class="thumbnail"><a href="../blog/kurds/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/kurds/cover.jpg" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/kurds/cover.jpg" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
@@ -619,7 +624,7 @@ After the recent war, friends started asking me what Kurds want. This is my answ
 <div class="quarto-post image-right" data-index="14" data-categories="Y2FyZWVyJTJDaWRlbnRpdHklMkNsZWFkZXJzaGlwJTJDYWNhZGVtaWE=" data-listing-date-sort="1771200000000" data-listing-file-modified-sort="1777752767279" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2602">
 <div class="thumbnail"><a href="../blog/2026_research_leader/index.html" class="no-external">
 
-<img loading="lazy" src="../blog/2026_research_leader/cover.png" class="thumbnail-image" style="height: 130px;">
+<img loading="lazy" src="../blog/2026_research_leader/cover.png" class="thumbnail-image" style="height: 74px;">
 
 </a></div>
 <div class="body">
