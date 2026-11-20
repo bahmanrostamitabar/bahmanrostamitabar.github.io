@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#part-1-where-does-the-paper-come-from" id="toc-part-1-where-does-the-paper-come-from" class="nav-link" data-scroll-target="#part-1-where-does-the-paper-come-from">Part 1: Where does the paper come from?</a></li>
   <li><a href="#part-2-what-does-the-paper-say" id="toc-part-2-what-does-the-paper-say" class="nav-link" data-scroll-target="#part-2-what-does-the-paper-say">Part 2: What does the paper say?</a></li>
   <li><a href="#part-3-what-do-you-think-about-the-paper" id="toc-part-3-what-do-you-think-about-the-paper" class="nav-link" data-scroll-target="#part-3-what-do-you-think-about-the-paper">Part 3: What do you think about the paper?</a></li>
-  <li><a href="#part-4-overall-judgement" id="toc-part-4-overall-judgement" class="nav-link" data-scroll-target="#part-4-overall-judgement">Part 4: Overall judgement</a></li>
+  <li><a href="#part-4-overall-quality-and-impact" id="toc-part-4-overall-quality-and-impact" class="nav-link" data-scroll-target="#part-4-overall-quality-and-impact">Part 4: Overall quality and impact</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -209,10 +209,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="section" class="level1">
 <h1></h1>
 <p>Reading papers is a large part of your PhD. But reading a paper is not the same as going through it from the first page to the last. When you tell me that you have read a paper, I expect that you can answer the questions below, and that you are ready to discuss them whenever necessary: in our one-to-one meetings, in the reading group, or when the paper becomes relevant to your own work.</p>
-<p>The questions are in four parts. The first three follow the order in which you should work: first know where the paper comes from, then understand what it says, then evaluate it. The last part asks for your overall judgement of the problem itself.</p>
 <section id="which-papers-need-the-full-list" class="level2">
 <h2 class="anchored" data-anchor-id="which-papers-need-the-full-list">Which papers need the full list?</h2>
-<p>Not every paper deserves the same effort. The full list applies to papers that are central to your topic, and papers we ask you to read. For other papers, Parts 1 and 2 are enough: you should know where the paper comes from and what it says, and then decide whether it deserves a deeper reading.</p>
+<p>Not every paper deserves the same effort. The list applies to papers that are central to your topic, and papers we ask you to read, this might be at least 5-10 papers in any research you do. For other papers, Parts 1 and 2 are enough: you should know where the paper comes from and what it says, and then decide whether it deserves a deeper reading.</p>
 <p>If you want a method for deciding how deeply to read, I recommend the three-pass approach of <a href="http://ccr.sigcomm.org/online/files/p83-keshavA.pdf">Keshav</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -224,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Write down your answers, even if they are short. One or two sentences per question is enough. If you cannot answer a question, that is useful information: it tells you what to re-read, or what to ask.</p>
+<p>For each paper, you need to create a separate document (e.g., a Markdown file, Quarto files, or a Word document) to answer these questions. Write down your answers. If you cannot answer a question, that is useful information: it tells you what to re-read, or what to ask.ask.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -237,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You may use AI tools to help you understand things, but a summary produced by a tool is not your reading of the paper. Read the paper yourself first, and check everything a tool tells you against the text. The questions in Parts 3 and 4 ask for your judgement, and I expect the answers to be yours.</p>
+<p>You may use AI tools to help you understand things, but a summary produced by a tool is not your reading of the paper. Read the paper yourself first, and check everything a tool tells you against the text. I expect the answers to be yours, not AI.</p>
 </div>
 </div>
 </section>
@@ -266,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Not every dimension applies to every paper. For each one that applies, state it in one sentence. Then ask: do the authors state the scope clearly, or do you have to work it out? And do their claims stay inside it? A result is only a result inside its scope, so you need to know where the scope ends before you can evaluate anything.</p>
 <p><strong>6. What are the main contributions?</strong></p>
-<p>What exists after this paper that did not exist before? A method, a result, a dataset, a theoretical insight? Separate what the authors claim as contributions from what you think the real contributions are.</p>
+<p>What exists after this paper that did not exist before? A method, a result, a dataset, an insight? Separate what the authors claim as contributions from what you think the real contributions are.</p>
 <p><strong>7. What practical challenges does the paper address?</strong></p>
 <p>Is there a concrete problem, for a user, an industry, or another researcher, that this work helps to solve? Or is the motivation mainly theoretical?</p>
 <p><strong>8. How is the work related to the state of the art, and how do the authors position it within the literature?</strong></p>
@@ -294,16 +293,23 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>17. What does this paper mean for your own research?</strong></p>
 <p>Does it change what you plan to do? Can you use its method, its data, or its results? Does it leave a question open that you could work on?</p>
 </section>
-<section id="part-4-overall-judgement" class="level2">
-<h2 class="anchored" data-anchor-id="part-4-overall-judgement">Part 4: Overall judgement</h2>
-<p>The last questions are about the problem the paper studies, not only about the paper. For each one, I expect a good argument. The argument is the important part.</p>
-<ul>
-<li><strong>Is the problem fundamental?</strong> Does it concern a basic question of the field, so that the answer affects many other problems? Why, or why not?</li>
-<li><strong>Is it significant?</strong> If the problem is solved, how much changes, and for how many people? Why, or why not?</li>
-<li><strong>Is it novel?</strong> Has this problem, or this way of approaching it, been studied before? Why, or why not?</li>
-<li><strong>Is it relevant to society?</strong> Does it matter to people outside the research community? Why, or why not?</li>
-<li><strong>Is it actionable?</strong> Can somebody, you or others, do something with the result? Why, or why not?</li>
-</ul>
+<section id="part-4-overall-quality-and-impact" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-overall-quality-and-impact">Part 4: Overall quality and impact</h2>
+<p>The last questions are about the study’s overall quality and impact. They are about the whole paper: depending on the question, you judge the problem, the method, or the finding. For each one, I expect a good argument. The argument is the important part.</p>
+<p>You need to rely on the document I shared earlier, A guiding framework for evaluating research questions. That framework was written to judge your own research question; here you apply the same dimensions to a finished paper. For each question below:</p>
+<ol type="1">
+<li>Read the definition and the guiding questions of that dimension in the framework.</li>
+<li>Give your answer: yes, no, or partly.</li>
+<li>Justify it in two or three sentences, using evidence from the paper.</li>
+</ol>
+<p>The questions are:</p>
+<ol type="1">
+<li><strong>Is the problem studied in the paper fundamental?</strong> Would the answer still be worth knowing in ten or twenty years, and does it apply beyond the one case studied? Why, or why not?</li>
+<li><strong>Is the finding significant?</strong> What do we understand better after this paper, and does that matter? Why, or why not?</li>
+<li><strong>Is the study, including method and finding, novel?</strong> Would experts say “we did not know that”, or “we already thought so”? Does the method make possible something that could not be done before? Why, or why not?</li>
+<li><strong>Is the problem or the finding relevant to society?</strong> Who outside academia has reason to care, and which group is it? Why, or why not?</li>
+<li><strong>Is the finding actionable?</strong> Could someone make a decision, change a practice, build a tool, or set a policy because of it? Why, or why not?</li>
+</ol>
 
 
 </section>
