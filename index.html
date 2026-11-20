@@ -222,7 +222,9 @@ ul.task-list li input[type="checkbox"] {
   .hero                 { position: relative; }
   .hero > *             { position: relative; z-index: 1; }
   .hero canvas.paths    { position: absolute; inset: 0; width: 100%; height: 100%;
-                          z-index: 0; opacity: .32; pointer-events: none; }
+                          z-index: 0; opacity: .5; pointer-events: none;
+                          -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 55%, #000 72%);
+                                  mask-image: linear-gradient(to right, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 55%, #000 72%); }
   @media (max-width: 768px) { .hero canvas.paths { display: none; } }
 </style>
 
@@ -610,7 +612,8 @@ Recent publications
 })();
 
 /* Hero background: possible pasts (grey), the path that happened (dark), "now" (bar),
-   and possible futures branching out (colour). Generated at random and redrawn in a loop.
+   and possible futures branching out (colour). The paths sway continuously and small
+   dots travel along them from the past into one of the futures.
    Needs <canvas class="paths"> as the first element inside <div class="hero">. */
 (function () {
   var cv = document.querySelector('.hero canvas.paths');
@@ -621,14 +624,17 @@ Recent publications
   var FUTURE = '#CA225E';        /* colour of the futures */
   var NOW_AT = 0.58;             /* horizontal position of "now", as a share of the width */
   var PASTS = 9, DEPTH = 4;      /* number of past paths; levels of branching in the future */
-  var T_PAST = 1800, T_FUTURE = 2000, GROW = 700, T_FADE = 11000, FADE = 1500;   /* milliseconds */
+  var SWAY = 1;                  /* amount of movement: 0.5 calmer, 1.5 livelier */
+  var DOTS = 5;                  /* number of travelling dots (0 for none) */
+  var N = 48, STEPS = 28, T_PAST = 1800, T_FUTURE = 2000, GROW = 700;
 
-  var W = 0, H = 0, ink = '#333', scene = null, t0 = null, visible = true;
+  var W = 0, H = 0, ink = '#333', past = [], nodes = [], root = null, dots = [], t0 = null, visible = true;
 
   function randn() {
     var u = 1 - Math.random(), v = Math.random();
     return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
   }
+  function rnd(a, b) { return a + Math.random() * (b - a); }
   function ease(p) { p = Math.max(0, Math.min(1, p)); return p * p * (3 - 2 * p); }
 
   function size() {
@@ -639,47 +645,72 @@ Recent publications
     ink = getComputedStyle(document.body).color || ink;
   }
 
+  /* fixed random ingredients; the shapes themselves are recomputed every frame */
   function build() {
-    var xp = W * NOW_AT, yc = H * 0.5, past = [], N = 48, real = Math.floor(PASTS / 2), k, i;
-
-    /* the past: paths from one origin that spread out and end on the "now" bar */
+    var real = Math.floor(PASTS / 2), k, j;
+    past = [];
     for (k = 0; k < PASTS; k++) {
       var isReal = k === real;
-      var target = isReal ? yc + (Math.random() - 0.5) * H * 0.06
-                          : H * (0.1 + 0.8 * k / (PASTS - 1)) + (Math.random() - 0.5) * H * 0.05;
-      var a1 = (Math.random() - 0.5) * H * (isReal ? 0.05 : 0.10);
-      var a2 = (Math.random() - 0.5) * H * (isReal ? 0.03 : 0.06);
-      var p1 = Math.random() * 6.283, p2 = Math.random() * 6.283, pts = [];
-      for (i = 0; i <= N; i++) {
-        var u = i / N, env = Math.sin(Math.PI * u);
-        pts.push([xp * u, yc + (target - yc) * ease(u)
-                          + env * (a1 * Math.sin(3 * Math.PI * u + p1) + a2 * Math.sin(7 * Math.PI * u + p2))]);
-      }
-      past.push({ pts: pts, real: isReal });
+      past.push({
+        real: isReal,
+        target: isReal ? rnd(-0.03, 0.03) : -0.4 + 0.8 * k / (PASTS - 1) + rnd(-0.025, 0.025),
+        a1: rnd(-0.5, 0.5) * (isReal ? 0.05 : 0.10), a2: rnd(-0.5, 0.5) * (isReal ? 0.03 : 0.06),
+        p1: rnd(0, 6.283), p2: rnd(0, 6.283), p3: rnd(0, 6.283),
+        w1: rnd(0.00035, 0.0007), w2: rnd(0.0005, 0.0009), w3: rnd(0.0002, 0.0004),
+        pts: []
+      });
     }
+    nodes = [];
+    function make(depth, start) {
+      var node = { depth: depth, start: start, incs: [], len: rnd(0.8, 1.3), ph: rnd(0, 6.283),
+                   w: rnd(0.00035, 0.0008), spreads: [], kids: [], pts: [] };
+      for (j = 0; j < STEPS; j++) node.incs.push(randn() * 0.07);
+      nodes.push(node);
+      if (depth < DEPTH) {
+        var s = rnd(0.32, 0.62);
+        node.spreads = [-s, s * rnd(0.7, 1.3)];
+        if (depth === 0 && Math.random() < 0.6) node.spreads.push(rnd(-0.15, 0.15));
+        node.spreads.forEach(function () { node.kids.push(make(depth + 1, start + GROW)); });
+      }
+      return node;
+    }
+    root = make(0, T_FUTURE);
+    dots = [];
+    for (k = 0; k < DOTS; k++) dots.push({ p: k / DOTS, route: null });
+  }
 
-    /* the future: a tree that starts where the realised path meets "now" */
-    var branches = [], seg = (W - xp) / (DEPTH + 1.2);
-    (function grow(x, y, ang, depth, start) {
-      var n = 28, len = seg * (0.8 + 0.5 * Math.random()), step = len / n, pts = [[x, y]], j;
-      for (j = 0; j < n; j++) {
-        ang += randn() * 0.07; ang *= 0.975;
+  /* positions of all paths at time t */
+  function compute(t) {
+    var xp = W * NOW_AT, yc = H * 0.5, i, k, q, u, env, tgt, pts, endY = yc;
+    for (k = 0; k < past.length; k++) {
+      q = past[k]; pts = q.pts; pts.length = 0;
+      tgt = (q.target + SWAY * (q.real ? 0.012 : 0.03) * Math.sin(q.w3 * t + q.p3)) * H;
+      for (i = 0; i <= N; i++) {
+        u = i / N; env = Math.sin(Math.PI * u);
+        pts.push([xp * u, yc + tgt * ease(u) + env * H *
+                  (q.a1 * Math.sin(3 * Math.PI * u + q.p1 + SWAY * q.w1 * t) +
+                   q.a2 * Math.sin(7 * Math.PI * u + q.p2 - SWAY * q.w2 * t))]);
+      }
+      if (q.real) endY = pts[N][1];
+    }
+    var seg = (W - xp) / (DEPTH + 1.2);
+    (function grow(node, x, y, ang) {
+      var step = seg * node.len / STEPS, j, wave = node.w * t + node.ph;
+      pts = node.pts; pts.length = 0; pts.push([x, y]);
+      for (j = 0; j < STEPS; j++) {
+        ang += node.incs[j] + SWAY * 0.012 * Math.sin(wave + j * 0.25);
+        ang *= 0.975;
         if (y < H * 0.08) ang += 0.12;
         if (y > H * 0.92) ang -= 0.12;
         ang = Math.max(-1.15, Math.min(1.15, ang));
         x += Math.cos(ang) * step; y += Math.sin(ang) * step;
         pts.push([x, y]);
       }
-      branches.push({ pts: pts, depth: depth, start: start });
-      if (depth < DEPTH && x < W * 0.98) {
-        var spread = 0.32 + 0.3 * Math.random();
-        grow(x, y, ang - spread, depth + 1, start + GROW);
-        grow(x, y, ang + spread * (0.7 + 0.6 * Math.random()), depth + 1, start + GROW);
-        if (depth === 0 && Math.random() < 0.6) grow(x, y, ang + (Math.random() - 0.5) * 0.3, depth + 1, start + GROW);
+      for (j = 0; j < node.kids.length; j++) {
+        grow(node.kids[j], x, y, ang + node.spreads[j] * (1 + SWAY * 0.18 * Math.sin(wave + j)));
       }
-    })(xp, past[real].pts[N][1], 0, 0, T_FUTURE);
-
-    scene = { past: past, branches: branches, xp: xp };
+    })(root, xp, endY, 0);
+    return xp;
   }
 
   /* draws the first share f (0 to 1) of a path */
@@ -695,55 +726,69 @@ Recent publications
     ctx.stroke();
   }
 
-  function draw(t) {
-    var fade = t > T_FADE ? Math.max(0, 1 - (t - T_FADE) / FADE) : 1, i, b;
+  function draw(t, dt) {
+    var xp = compute(t), i, b, realPts = null;
     ctx.clearRect(0, 0, W, H);
     ctx.lineCap = 'round'; ctx.lineJoin = 'round';
 
     ctx.strokeStyle = ink;
-    for (i = 0; i < scene.past.length; i++) {               /* possible pasts */
-      if (scene.past[i].real) continue;
-      ctx.globalAlpha = fade * 0.3; ctx.lineWidth = 2;
-      poly(scene.past[i].pts, ease(t / T_PAST));
+    for (i = 0; i < past.length; i++) {                     /* possible pasts */
+      if (past[i].real) { realPts = past[i].pts; continue; }
+      ctx.globalAlpha = 0.22; ctx.lineWidth = 1.6;
+      poly(past[i].pts, ease(t / T_PAST));
     }
-    ctx.globalAlpha = fade * 0.35 * ease((t - (T_PAST - 300)) / 600);   /* "now" */
-    ctx.lineWidth = 4;
-    ctx.beginPath(); ctx.moveTo(scene.xp, H * 0.06); ctx.lineTo(scene.xp, H * 0.94); ctx.stroke();
+    ctx.globalAlpha = 0.25 * ease((t - (T_PAST - 300)) / 600);   /* "now" */
+    ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(xp, H * 0.06); ctx.lineTo(xp, H * 0.94); ctx.stroke();
 
-    for (i = 0; i < scene.past.length; i++) {               /* the path that happened */
-      if (!scene.past[i].real) continue;
-      ctx.globalAlpha = fade * 0.8; ctx.lineWidth = 3;
-      poly(scene.past[i].pts, ease(t / T_PAST));
-    }
+    ctx.globalAlpha = 0.42; ctx.lineWidth = 2.2;            /* the path that happened */
+    poly(realPts, ease(t / T_PAST));
 
     ctx.strokeStyle = FUTURE;                               /* possible futures */
-    for (i = 0; i < scene.branches.length; i++) {
-      b = scene.branches[i];
-      ctx.globalAlpha = fade * 0.85; ctx.lineWidth = Math.max(1.4, 3.2 - b.depth * 0.4);
+    for (i = 0; i < nodes.length; i++) {
+      b = nodes[i];
+      ctx.globalAlpha = 0.8; ctx.lineWidth = Math.max(1.3, 2.8 - b.depth * 0.35);
       poly(b.pts, (t - b.start) / GROW);
+    }
+
+    /* travelling dots: along the realised past, through "now", into one future */
+    if (t > T_FUTURE + GROW * (DEPTH + 1)) {
+      for (i = 0; i < dots.length; i++) {
+        var d = dots[i];
+        if (!d.route) {
+          d.route = [realPts]; b = root;
+          while (b) { d.route.push(b.pts); b = b.kids.length ? b.kids[Math.floor(Math.random() * b.kids.length)] : null; }
+        }
+        d.p += dt / 11000;
+        if (d.p >= 1) { d.p = 0; d.route = null; continue; }
+        var pos = d.p * d.route.length, s = Math.min(d.route.length - 1, Math.floor(pos));
+        var line = d.route[s], m = (pos - s) * (line.length - 1), k = Math.min(line.length - 2, Math.floor(m)), r = m - k;
+        var edge = Math.min(1, d.p * 12, (1 - d.p) * 12);   /* fade in and out at the ends */
+        ctx.globalAlpha = 0.9 * edge; ctx.fillStyle = s === 0 ? ink : FUTURE;
+        ctx.beginPath();
+        ctx.arc(line[k][0] + (line[k + 1][0] - line[k][0]) * r, line[k][1] + (line[k + 1][1] - line[k][1]) * r, 3.2, 0, 6.283);
+        ctx.fill();
+      }
     }
     ctx.globalAlpha = 1;
   }
 
   size(); build();
-  window.addEventListener('resize', function () { size(); build(); t0 = null; if (still) draw(T_FADE - 1); });
-  if (still) { draw(T_FADE - 1); return; }                  /* one complete static picture */
+  window.addEventListener('resize', function () { size(); if (still) draw(1e6, 0); });
+  if (still) { draw(1e6, 0); return; }                      /* one complete static picture */
 
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(cv);
   }
+  var last = null, clock = 0;
   function frame(ts) {
-    if (t0 === null) t0 = ts;
-    if (visible) {
-      var t = ts - t0;
-      if (t > T_FADE + FADE + 400) { build(); t0 = ts; t = 0; }
-      draw(t);
-    }
+    if (last === null) last = ts;
+    var dt = Math.min(100, ts - last); last = ts;
+    if (visible) { clock += dt; draw(clock, dt); }
     requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
 })();
-
 </script>
 
 
