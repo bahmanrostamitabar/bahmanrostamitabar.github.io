@@ -226,6 +226,11 @@ ul.task-list li input[type="checkbox"] {
                           -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 55%, #000 72%);
                                   mask-image: linear-gradient(to right, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 55%, #000 72%); }
   @media (max-width: 768px) { .hero canvas.paths { display: none; } }
+    /* hero text: darker, with a soft white halo so background lines do not cut through it */
+  .hero .lead        { color: #111; font-weight: 500;
+                       text-shadow: 0 0 6px #fff, 0 0 12px #fff; }
+  .hero .theme       { color: #111; text-shadow: 0 0 6px #fff, 0 0 12px #fff; }
+  .hero .role        { opacity: .9; text-shadow: 0 0 6px #fff; }
 </style>
 
 <div class="hero">
