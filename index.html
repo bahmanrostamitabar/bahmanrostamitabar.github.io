@@ -214,13 +214,17 @@ ul.task-list li input[type="checkbox"] {
     .fan-row          { grid-template-columns: 1fr; }
     .fan             { display: block; width: 100%; height: 300px; background: #F7F6F2; border-radius: 8px; }
   }
+    .hero     { padding-bottom: .5rem; }
+  .fan-wrap { margin-top: 0; }
+  .fan      { height: 260px; }
+  .hero .lead, .pillar p, .highlight p { text-align: left; }
 </style>
 
 <div class="hero">
   <div>
     
     <div class="theme">
-      <span>Uncertainty &amp; Futures</span><span class="sep">→</span><span>Analytics</span><span class="sep">→</span><span>Decision quality</span>
+      <span>Uncertainty &amp; Futures</span><span class="sep">→</span><span>Analytics</span><span class="sep">→</span><span>Decision Quality</span>
     </div>
     <div class="role">
       <span class="typed" data-roles="Professor of Analytics and Decision Sciences, Cardiff University|Founder and Director, Data Lab for Social Good|Research Excellence Framework (2029) Lead">Professor of Analytics and Decision Sciences, Cardiff University</span><span class="caret" aria-hidden="true"></span>
@@ -263,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="g-col-12 g-col-md-4">
 <section id="decision-quality" class="level3 pillar reveal">
-<h3 class="anchored" data-anchor-id="decision-quality">Decision quality</h3>
+<h3 class="anchored" data-anchor-id="decision-quality">Decision Quality</h3>
 <p>A model has value only if it leads to a better decision. I evaluate analytical methods by the quality of the decisions they support, not by accuracy alone, and I examine how forecasts and uncertainty information are used in planning and policy.</p>
 </section>
 </div>
@@ -359,10 +363,10 @@ Recent publications
   var cv = document.querySelector('canvas.fan');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d');
-  var HIST = 14, H = 7, FOCUS = 3, NPATH = 600, BINS = 44;          /* FOCUS: 0 = first future period */
+  var HIST = 14, H = 7, FOCUS = 3, NPATH = 600, BINS = 70;          /* FOCUS: 0 = first future period */
   var HOLD = 2600, FADE = 800, SHOWHIST = 4200, STEP = 650, PAUSE = 1400, SLIDE = 1200;   /* milliseconds */
   var LINE_COLOUR = '#CA225E';                                        /* vertical lines in view B */
-  var AXIS_MIN = 70, AXIS_MAX = 140;                                  /* value labels in view B */
+  var AXIS_0 = 100, AXIS_K = 15;                                      /* value labels in view B: label = AXIS_0 + AXIS_K * simulated value */
   var PHI = 0.6, SIGMA = 0.6, AMP = 0.6, SKEW = 0.6;                  /* SKEW: 0.3 mild, 0.6 clear, 0.9 strong */
   var SD_INF = SIGMA / Math.sqrt(1 - PHI * PHI);
   function T(x) { return (Math.exp(SKEW * x) - 1) / SKEW; }           /* makes the values right-skewed */
@@ -401,9 +405,15 @@ Recent publications
       var sum = 0;
       a.forEach(function (v) { sum += v; });
       return { c: c, own: own, mean: sum / a.length, med: q(0.5), q10: q(0.10), q90: q(0.90),
-               lo90: q(0.05), lo50: q(0.25), hi50: q(0.75), hi90: q(0.95) };
+               lo90: q(0.05), lo50: q(0.25), hi50: q(0.75), hi90: q(0.95),
+               q01: q(0.01), q99: q(0.99), x0: q(0.003), x1: q(0.997) };
     });
     out.peak = peak;
+    var lo = Infinity, hi = -Infinity, t;            /* vertical range that fits what is on screen */
+    function see(v) { if (v < lo) lo = v; if (v > hi) hi = v; }
+    for (t = Math.max(1, o - HIST); t <= o + H; t++) { see(observed(t)); see(fitted(t)); }
+    for (h = 0; h < H; h++) { see(out[h].q01); see(out[h].q99); }
+    out.ylo = lo - 0.05 * (hi - lo); out.yhi = hi + 0.05 * (hi - lo);
     cache[o] = out;
     return out;
   }
@@ -427,7 +437,9 @@ Recent publications
     if (M <= 0.01) return;
     var vs = o - HIST + e * H, dx = W / (HIST + H + 1.3);
     function X(t) { return (t - vs + 0.6) * dx; }
-    function Y(v) { return Hh - 6 - (v - VMIN) / (VMAX - VMIN) * (Hh - 12); }
+    var A = dist(o), Z = e > 0 ? dist(o + H) : A;
+    var ylo = A.ylo + (Z.ylo - A.ylo) * e, yhi = A.yhi + (Z.yhi - A.yhi) * e;
+    function Y(v) { return Hh - 8 - (v - ylo) / (yhi - ylo) * (Hh - 16); }
     function vbar(x, a, b, lw) {
       ctx.lineWidth = lw; ctx.beginPath(); ctx.moveTo(x, Y(a)); ctx.lineTo(x, Y(b)); ctx.stroke();
     }
@@ -492,15 +504,18 @@ Recent publications
     if (alpha <= 0.01) return;
     var d = dist(o)[FOCUS];
     var L = 48, R = W - 10, T = 8, B = Hh - 28, b, k, x, y;
-    var base = B - 14, top = T + 20, span = base - top, bw = (R - L) / BINS;
-    function XV(v) { return L + (v - VMIN) / (VMAX - VMIN) * (R - L); }
+    var base = B - 14, top = T + 20, span = base - top;
+    var pad = 0.05 * (d.x1 - d.x0), xlo = d.x0 - pad, xhi = d.x1 + pad, bw = BH / (xhi - xlo) * (R - L);
+    function XV(v) { return L + (v - xlo) / (xhi - xlo) * (R - L); }
     function YP(p) { return base - p * span; }
 
     ctx.fillStyle = accent; ctx.globalAlpha = alpha * 0.38;           /* same blue as the small histograms */
     for (b = 0; b < BINS; b++) {
       if (!d.c[b]) continue;
+      x = XV(VMIN + b * BH);
+      if (x < L - 0.5 || x + bw > R + 0.5) continue;
       var bar = d.c[b] / d.own * span * grow;
-      ctx.fillRect(L + b * bw, base - bar, bw + 0.5, bar);
+      ctx.fillRect(x, base - bar, bw + 0.5, bar);
     }
 
     ctx.globalAlpha = alpha * 0.65; ctx.strokeStyle = ink; ctx.fillStyle = ink; ctx.lineWidth = 1.5;
@@ -512,9 +527,10 @@ Recent publications
       ctx.fillText(k * 25 + '%', L - 8, y);
     }
     ctx.textAlign = 'center'; ctx.textBaseline = 'top';
-    var tick = W < 560 ? 10 : 5;
-    for (k = AXIS_MIN; k <= AXIS_MAX; k += tick) {                    /* horizontal axis: values */
-      x = L + (k - AXIS_MIN) / (AXIS_MAX - AXIS_MIN) * (R - L);
+    var a0 = AXIS_0 + AXIS_K * xlo, a1 = AXIS_0 + AXIS_K * xhi, raw = (a1 - a0) / (W < 560 ? 5 : 10), tick = 20;
+    [10, 5, 2, 1].forEach(function (c) { if (c >= raw) tick = c; });
+    for (k = Math.ceil(a0 / tick) * tick; k <= a1; k += tick) {       /* horizontal axis: values */
+      x = L + (k - a0) / (a1 - a0) * (R - L);
       if (x < L + 6 || x > R - 6) continue;
       ctx.beginPath(); ctx.moveTo(x, B); ctx.lineTo(x, B + 5); ctx.stroke();
       ctx.fillText(k, x, B + 8);
