@@ -395,6 +395,8 @@ Recent publications
   function T(x) { return (Math.exp(SKEW * x) - 1) / SKEW; }           /* makes the values right-skewed */
   var VMIN = T(-3.3 * SD_INF) - AMP - 0.15, VMAX = T(2.9 * SD_INF) + AMP, BH = (VMAX - VMIN) / BINS;
   var W = 0, Hh = 0, M = 1, ink = '#333', accent = '#2a6fdb', font = 'sans-serif';
+  var KBW = 2.2;                                                      /* smoothness of the density curve, in bars: 1.5 follows the bars closely, 3 is smoother */
+  var mix = 0, mixFrom = 0, mixTo = 1;                                /* 0 = histogram, 1 = density curve */
 
   function randn() {
     var u = 1 - Math.random(), v = Math.random();
@@ -427,7 +429,16 @@ Recent publications
       function q(p) { return a[Math.min(a.length - 1, Math.floor(p * a.length))]; }
       var sum = 0;
       a.forEach(function (v) { sum += v; });
-      return { c: c, own: own, mean: sum / a.length, med: q(0.5), q10: q(0.10), q90: q(0.90),
+      var kd = [], j2, wgt, wsum, acc;                 /* density: the bar heights smoothed with a normal kernel */
+      for (b = 0; b < BINS; b++) {
+        acc = 0; wsum = 0;
+        for (j2 = Math.max(0, b - 9); j2 <= Math.min(BINS - 1, b + 9); j2++) {
+          wgt = Math.exp(-0.5 * Math.pow((b - j2) / KBW, 2));
+          acc += wgt * c[j2]; wsum += wgt;
+        }
+        kd.push(acc / wsum);
+      }
+      return { c: c, k: kd, own: own, mean: sum / a.length, med: q(0.5), q10: q(0.10), q90: q(0.90),
                lo90: q(0.05), lo50: q(0.25), hi50: q(0.75), hi90: q(0.95),
                q01: q(0.01), q99: q(0.99), x0: q(0.003), x1: q(0.997) };
     });
@@ -471,11 +482,23 @@ Recent publications
       var D = dist(org), h, b, x, top;
       for (h = 0; h < H; h++) {                      /* half-histograms to the right of each period */
         x = X(org + h + 1);
-        ctx.fillStyle = accent; ctx.globalAlpha = alpha * 0.38;
-        for (b = 0; b < BINS; b++) {
-          if (!D[h].c[b]) continue;
-          top = Y(VMIN + (b + 1) * BH);
-          ctx.fillRect(x, top, D[h].c[b] / D.peak * 0.82 * dx, Y(VMIN + b * BH) - top + 0.5);
+        ctx.fillStyle = accent; ctx.globalAlpha = alpha * 0.38 * (1 - mix);
+        if (mix < 0.99) {                            /* as a histogram */
+          for (b = 0; b < BINS; b++) {
+            if (!D[h].c[b]) continue;
+            top = Y(VMIN + (b + 1) * BH);
+            ctx.fillRect(x, top, D[h].c[b] / D.peak * 0.82 * dx, Y(VMIN + b * BH) - top + 0.5);
+          }
+        }
+        if (mix > 0.01) {                            /* as a density curve */
+          var kk = D[h].k, b0 = 0, b1 = BINS - 1;
+          while (b0 < b1 && kk[b0] < 0.004 * D.peak) b0++;
+          while (b1 > b0 && kk[b1] < 0.004 * D.peak) b1--;
+          ctx.beginPath(); ctx.moveTo(x, Y(VMIN + b0 * BH));
+          for (b = b0; b <= b1; b++) ctx.lineTo(x + kk[b] / D.peak * 0.82 * dx, Y(VMIN + (b + 0.5) * BH));
+          ctx.lineTo(x, Y(VMIN + (b1 + 1) * BH));
+          ctx.globalAlpha = alpha * 0.38 * mix; ctx.fill();
+          ctx.strokeStyle = accent; ctx.lineWidth = 1.2; ctx.globalAlpha = alpha * 0.9 * mix; ctx.stroke();
         }
       }
       ctx.globalAlpha = alpha; ctx.strokeStyle = ink; ctx.fillStyle = ink;
@@ -529,13 +552,31 @@ Recent publications
     function XV(v) { return L + (v - xlo) / (xhi - xlo) * (R - L); }
     function YP(p) { return base - p * span; }
 
-    ctx.fillStyle = accent; ctx.globalAlpha = alpha * 0.38;           /* same blue as the small histograms */
-    for (b = 0; b < BINS; b++) {
-      if (!d.c[b]) continue;
-      x = XV(VMIN + b * BH);
-      if (x < L - 0.5 || x + bw > R + 0.5) continue;
-      var bar = d.c[b] / d.own * span * grow;
-      ctx.fillRect(x, base - bar, bw + 0.5, bar);
+    ctx.fillStyle = accent; ctx.globalAlpha = alpha * 0.38 * (1 - mix);   /* as a histogram */
+    if (mix < 0.99) {
+      for (b = 0; b < BINS; b++) {
+        if (!d.c[b]) continue;
+        x = XV(VMIN + b * BH);
+        if (x < L - 0.5 || x + bw > R + 0.5) continue;
+        var bar = d.c[b] / d.own * span * grow;
+        ctx.fillRect(x, base - bar, bw + 0.5, bar);
+      }
+    }
+    if (mix > 0.01) {                                                   /* as a density curve */
+      var started = false, lastX = L;
+      ctx.beginPath();
+      for (b = 0; b < BINS; b++) {
+        x = XV(VMIN + (b + 0.5) * BH);
+        if (x < L || x > R) continue;
+        if (!started) { ctx.moveTo(x, base); started = true; }
+        ctx.lineTo(x, base - d.k[b] / d.own * span * grow);
+        lastX = x;
+      }
+      if (started) {
+        ctx.lineTo(lastX, base);
+        ctx.globalAlpha = alpha * 0.38 * mix; ctx.fill();
+        ctx.strokeStyle = accent; ctx.lineWidth = 2; ctx.globalAlpha = alpha * mix; ctx.stroke();
+      }
     }
 
     ctx.globalAlpha = alpha * 0.65; ctx.strokeStyle = ink; ctx.fillStyle = ink; ctx.lineWidth = 1.5;
@@ -575,7 +616,7 @@ Recent publications
 
   var origin = HIST, clock = 0, last = null, phase = 'hold', visible = true;
   ensure(origin + 2 * H); colours(); size();
-  function still_frame() { ctx.clearRect(0, 0, W, Hh); M = 1; series_view(origin, 0, 0, 0); }
+  function still_frame() { ctx.clearRect(0, 0, W, Hh); M = 1; mix = 0; series_view(origin, 0, 0, 0); }
   window.addEventListener('resize', function () { size(); if (still) still_frame(); });
 
   if (still) { still_frame(); return; }             /* one static frame, no motion */
@@ -600,8 +641,9 @@ Recent publications
         hist_view(origin, p, p);
         if (clock >= FADE) next('hist');
       } else if (phase === 'hist') {                 /* B: one distribution alone */
+        mix = mixFrom + (mixTo - mixFrom) * ease((clock - SHOWHIST * 0.35) / (SHOWHIST * 0.3));
         hist_view(origin, 1, 1);
-        if (clock > SHOWHIST) next('in');
+        if (clock > SHOWHIST) { mixFrom = mixTo; mixTo = 1 - mixTo; mix = mixFrom; next('in'); }
       } else if (phase === 'in') {                   /* back to A */
         p = ease(clock / FADE);
         hist_view(origin, 1 - p, 1);
