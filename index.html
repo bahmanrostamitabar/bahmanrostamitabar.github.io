@@ -384,7 +384,7 @@ Recent publications
   var cv = document.querySelector('canvas.fan');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d');
-  var HIST = 14, H = 7, FOCUS = 3, NPATH = 600, BINS = 70;          /* FOCUS: 0 = first future period */
+  var HIST = 9, H = 7, FOCUS = 3, NPATH = 600, BINS = 70;          /* FOCUS: 0 = first future period */
   var HOLD = 2600, FADE = 800, SHOWHIST = 4200, STEP = 650, PAUSE = 1400, SLIDE = 1200;   /* milliseconds */
   var LINE_COLOUR = '#CA225E';                                        /* vertical lines in view B */
   var AXIS_0 = 100, AXIS_K = 15;                                      /* value labels in view B: label = AXIS_0 + AXIS_K * simulated value */
