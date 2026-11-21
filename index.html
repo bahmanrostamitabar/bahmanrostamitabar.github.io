@@ -443,8 +443,7 @@ Recent publications
     var cs = getComputedStyle(document.body);
     ink = cs.color || ink;
     font = cs.fontFamily || font;
-    var a = cs.getPropertyValue('--bs-link-color').trim();
-    if (a) accent = a;
+    accent = '#52657B';
   }
   function size() {
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -534,7 +533,7 @@ Recent publications
       x = XV(VMIN + b * BH);
       if (x < L - 0.5 || x + bw > R + 0.5) continue;
       var bar = d.c[b] / d.own * span * grow;
-      ctx.fillRect(x, base - bar, bw + 0.5, bar);
+      ctx.fillRect(x + bw * 0.2, base - bar, bw * 0.6, bar);
     }
 
     ctx.globalAlpha = alpha * 0.65; ctx.strokeStyle = ink; ctx.fillStyle = ink; ctx.lineWidth = 1.5;
