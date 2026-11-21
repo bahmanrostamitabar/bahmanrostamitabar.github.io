@@ -387,7 +387,7 @@ Recent publications
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d');
   var HIST = 9, H = 7, FOCUS = 3, NPATH = 600, BINS = 70;          /* FOCUS: 0 = first future period */
-  var HOLD = 2600, FADE = 800, SHOWHIST = 4200, STEP = 650, PAUSE = 1400, SLIDE = 1200;   /* milliseconds */
+  var HOLD = 4000, FADE = 1500, SHOWHIST = 6000, STEP = 900, PAUSE = 2500, SLIDE = 1200;   /* milliseconds */
   var LINE_COLOUR = '#CA225E';                                        /* vertical lines in view B */
   var AXIS_0 = 100, AXIS_K = 15;                                      /* value labels in view B: label = AXIS_0 + AXIS_K * simulated value */
   var PHI = 0.6, SIGMA = 0.6, AMP = 0.6, SKEW = 0.6;                  /* SKEW: 0.3 mild, 0.6 clear, 0.9 strong */
@@ -618,9 +618,9 @@ Recent publications
     }
     requestAnimationFrame(frame);
   }
-    var START_DELAY = 1500;                         /* milliseconds before the chart appears */
+    var START_DELAY = 2500;                         /* milliseconds before the chart appears */
   cv.style.opacity = 0;
-  cv.style.transition = 'opacity 1.2s ease';
+  cv.style.transition = 'opacity 2s ease';
   setTimeout(function () {
     cv.style.opacity = 1;
     requestAnimationFrame(frame);
